@@ -1,7 +1,7 @@
 {
   "name": "tr",
   "label": "Türkçe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "rules": {
     "jetskiAgent": [
       {
@@ -49,6 +49,44 @@
       {
         "search": "label:\"Antigravity IDE Settings\"",
         "replace": "label:\"Antigravity IDE Ayarları\""
+      },
+      {
+        "search": "\"antigravitySettings\",`${this.productService.nameLong} Settings`",
+        "replace": "\"antigravitySettings\",`${this.productService.nameLong} Ayarları`"
+      },
+      {
+        "search": "t.ProjectFolders=\"Project Folders\"",
+        "replace": "t.ProjectFolders=\"Proje Klasörleri\""
+      },
+      {
+        "search": "t.ProjectAgent=\"Project Agent\"",
+        "replace": "t.ProjectAgent=\"Proje Ajanı\""
+      },
+      {
+        "search": "t.Shortcuts=\"Shortcuts\"",
+        "replace": "t.Shortcuts=\"Kısayollar\""
+      },
+      {
+        "search": "t.Labs=\"Labs\"",
+        "replace": "t.Labs=\"Deneysel Özellikler\""
+      },
+      {
+        "search": "t.Citc=\"CitC Settings\"",
+        "replace": "t.Citc=\"CitC Ayarları\""
+      },
+      {
+        "search": "t.Developer=\"Developer\"",
+        "replace": "t.Developer=\"Geliştirici\""
+      }
+    ],
+    "nlsMessages": [
+      {
+        "index": 3308,
+        "replace": "Hızlı Aç"
+      },
+      {
+        "index": 11166,
+        "replace": "{0} Ayarları"
       }
     ]
   }

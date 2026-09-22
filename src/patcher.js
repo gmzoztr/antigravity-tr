@@ -120,6 +120,45 @@ function patchFile(filePath, rules) {
 }
 
 /**
+ * nls.messages.json dosyasını doğrudan indekslerle günceller.
+ */
+function patchNlsFile(filePath, nlsRules) {
+  if (!fs.existsSync(filePath)) {
+    return { success: false, reason: `Dosya bulunamadı: ${filePath}` };
+  }
+
+  const backupResult = ensureBackup(filePath);
+  const msgs = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  let matchCount = 0;
+
+  for (const rule of nlsRules) {
+    const { index, replace } = rule;
+    if (index >= 0 && index < msgs.length && msgs[index] !== replace) {
+      msgs[index] = replace;
+      matchCount++;
+    }
+  }
+
+  if (matchCount > 0) {
+    fs.writeFileSync(filePath, JSON.stringify(msgs), 'utf8');
+    return {
+      success: true,
+      modified: true,
+      matches: matchCount,
+      backupCreated: backupResult.created
+    };
+  }
+
+  return {
+    success: true,
+    modified: false,
+    matches: 0,
+    backupCreated: backupResult.created,
+    message: 'nls.messages zaten güncel.'
+  };
+}
+
+/**
  * Tüm Antigravity bundle dosyalarını yamalar ve checksums doğrulamalarını günceller.
  */
 function applyAllPatches(paths, dictionary) {
@@ -137,7 +176,13 @@ function applyAllPatches(paths, dictionary) {
     results.push({ target: 'workbench (Editör Arayüzü)', file: paths.ide.workbenchFile, ...res });
   }
 
-  // 3. product.json checksums güncellemesi (Bozuk Yükleme Uyarısını Önler)
+  // 3. nls.messages.json yaması (Hızlı Aç vb.)
+  if (paths.ide && paths.ide.nlsFile && dictionary.rules.nlsMessages) {
+    const res = patchNlsFile(paths.ide.nlsFile, dictionary.rules.nlsMessages);
+    results.push({ target: 'nls.messages (Quick Open vb.)', file: paths.ide.nlsFile, ...res });
+  }
+
+  // 4. product.json checksums güncellemesi (Bozuk Yükleme Uyarısını Önler)
   const checksumRes = updateProductChecksums(paths);
   results.push({ target: 'product.json Checksums Doğrulaması', ...checksumRes });
 
@@ -160,6 +205,11 @@ function restoreAllPatches(paths) {
     results.push({ target: 'workbench', file: paths.ide.workbenchFile, ...res });
   }
 
+  if (paths.ide && paths.ide.nlsFile) {
+    const res = restoreFile(paths.ide.nlsFile);
+    results.push({ target: 'nls.messages', file: paths.ide.nlsFile, ...res });
+  }
+
   if (paths.ide && paths.ide.productFile) {
     const res = restoreFile(paths.ide.productFile);
     results.push({ target: 'product.json', file: paths.ide.productFile, ...res });
@@ -170,6 +220,7 @@ function restoreAllPatches(paths) {
 
 module.exports = {
   patchFile,
+  patchNlsFile,
   restoreFile,
   computeChecksum,
   updateProductChecksums,
