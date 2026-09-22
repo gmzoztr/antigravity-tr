@@ -83,3 +83,14 @@ Bu doküman, kullanıcının ilettiği 9 farklı ekran görüntüsündeki her bi
 - **Kaynak Dosya:** `resources/app/product.json`
 - **Teknik Neden:** VS Code `IntegrityService` bundle dosyalarının SHA-256 hash'ini `product.json` içindeki imzalarla karşılaştırır.
 - **Çözüm:** `src/patcher.js -> updateProductChecksums()` fonksiyonu değiştirilen dosyaların Base64 SHA-256 hash'lerini otomatik hesaplayıp `product.json`'a işler.
+
+---
+
+## 9. Metin Düzenleyici Alt Ayar Başlıkları (Erişilebilirlik & Yazı Tipleri)
+- **Görsel:** `media_1790087624535.png` - Ayarlar > Metin Düzenleyici altındaki ayar başlıkları.
+- **İngilizce Metin:** `Accessibility Page Size`, `Accessibility Support`, `Allow Variable Fonts`, `Allow Variable Fonts In Accessibility Mode`, `Allow Variable Line Heights` vb.
+- **Türkçe Karşılık:** `Erişilebilirlik Sayfa Boyutu`, `Erişilebilirlik Desteği`, `Değişken Yazı Tiplerine İzin Ver`, `Erişilebilirlik Modunda Değişken Yazı Tiplerine İzin Ver`, `Değişken Satır Yüksekliklerine İzin Ver`
+- **Kaynak Dosya:** `resources/app/out/vs/workbench/workbench.desktop.main.js` (`gDe` fonksiyonu)
+- **Teknik Neden:** VS Code, ayar başlıklarını statik dil paketlerinden değil, `gDe(t, e, i)` fonksiyonu içinde `NLa(t)` ile camelCase anahtarları dinamik olarak ayırarak üretir.
+- **Çözüm:** `gDe` fonksiyonu içerisine genişletilmiş `_tr` sözlük haritası ve sözlükte doğrudan yer almayan bileşik ayarlar için otomatik örüntü çevirici (`_trF`) entegre edildi. Artık tüm alt ayar başlıkları anında Türkçeleştirilir.
+
