@@ -1,0 +1,37 @@
+{
+  "name": "antigravity-tr",
+  "version": "1.0.0",
+  "description": "Google Antigravity ve Antigravity IDE için Kapsamlı Türkçe Dil Paketi ve Otomatik Yama Aracı",
+  "main": "src/installer.js",
+  "bin": {
+    "antigravity-tr": "bin/antigravity-tr.js"
+  },
+  "scripts": {
+    "start": "node bin/antigravity-tr.js",
+    "install-tr": "node bin/antigravity-tr.js install",
+    "restore": "node bin/antigravity-tr.js restore"
+  },
+  "keywords": [
+    "antigravity",
+    "antigravity-ide",
+    "turkish",
+    "turkish-language-pack",
+    "turkce",
+    "google-antigravity",
+    "gemini",
+    "ai-ide"
+  ],
+  "author": "Antigravity Topluluğu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gmzoztr/antigravity-tr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gmzoztr/antigravity-tr/issues"
+  },
+  "homepage": "https://github.com/gmzoztr/antigravity-tr#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

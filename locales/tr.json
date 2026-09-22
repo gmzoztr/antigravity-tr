@@ -1,0 +1,55 @@
+{
+  "name": "tr",
+  "label": "Türkçe",
+  "version": "1.0.0",
+  "rules": {
+    "jetskiAgent": [
+      {
+        "search": "\"Record Audio \"",
+        "replace": "\"Ses Kaydet \""
+      },
+      {
+        "search": "\"Record Audio\"",
+        "replace": "\"Ses Kaydet\""
+      },
+      {
+        "search": "\"Stop Recording \"",
+        "replace": "\"Kaydı Durdur \""
+      },
+      {
+        "search": "\"Stop Recording\"",
+        "replace": "\"Kaydı Durdur\""
+      },
+      {
+        "search": ":\"New Conversation\"",
+        "replace": ":\"Yeni Sohbet\""
+      },
+      {
+        "search": ",title:\"Files Changed\"",
+        "replace": ",title:\"Değişen Dosyalar\""
+      },
+      {
+        "search": "\"Generating commit message...\"",
+        "replace": "\"Commit mesajı oluşturuluyor...\""
+      },
+      {
+        "search": "[\"Thinking for \",",
+        "replace": "[\"Düşünülüyor: \","
+      }
+    ],
+    "workbench": [
+      {
+        "search": "title:\"Editor-Specific Settings\"",
+        "replace": "title:\"Editöre Özel Ayarlar\""
+      },
+      {
+        "search": "title:\"Antigravity IDE Settings\"",
+        "replace": "title:\"Antigravity IDE Ayarları\""
+      },
+      {
+        "search": "label:\"Antigravity IDE Settings\"",
+        "replace": "label:\"Antigravity IDE Ayarları\""
+      }
+    ]
+  }
+}
