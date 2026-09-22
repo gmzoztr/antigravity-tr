@@ -120,4 +120,21 @@ Bu doküman, kullanıcının ilettiği 9 farklı ekran görüntüsündeki her bi
 - **Teknik Neden:** Windows üzerinde VS Code tarafından kurulan eklenti dosyaları salt okunur (`+R / ReadOnly`) öznitelikle korunur. `fs.writeFileSync` çağrısı `EPERM` hatası veriyordu.
 - **Çözüm:** Yama öncesinde `fs.chmodSync(filePath, 0o666)` çalıştırılarak dosya yazılabilir yapıldı ve `(no project)` -> `(proje seçilmedi)` kalıcı olarak uygulandı.
 
+---
+
+## 13. Çok Seviyeli Kategori Segmentleri ve Ayar Yaprak Etiketleri (Nihai Mimari)
+- **Görsel:** `media_1790093708040.png` - Ayarlar > Metin Düzenleyici altındaki `Code Action Widget: Show Headers`, `Bracket Pair Colorization: Independent Color Pool Per Bracket Type` gibi bileşik başlıklar.
+- **Teknik Neden:** VS Code `gDe(t, e, i)` fonksiyonu ayar kategorisini `r` (`Editor › Bracket Pair Colorization` gibi çok parçalı), ayar adını ise `s` (`Show Headers`, `Independent Color Pool Per Bracket Type` gibi yaprak etiket) olarak ayrı ayrı üretip UI'da iki nokta (`: `) ile birleştirir. `_trCats` sadece tek parça aradığı için çok seviyeli kategorileri kaçırıyordu.
+- **Kök Çözüm:**
+  - Tüm IDE taranarak 203 benzersiz kategori segmenti (`r_segments.json`) ve yaprak etiketler (`s_labels.json`) otomatik ayrıştırıldı.
+  - `gDe` fonksiyonuna segment-bazlı kategori çevirisi eklendi:
+    `const cat = r.split(' \u203A ').map(seg => _cat[seg] || seg).join(' \u203A ');`
+  - Bu sayede `Bracket Pair Colorization` otomatik olarak `Ayraç Çifti Renklendirmesi`, `Code Actions` -> `Kod Eylemleri`, `Code Action Widget` -> `Kod Eylemi Pencere Öğesi` haline gelir.
+  - Yaprak etiketler `_tr` ile birleştiğinde UI'da:
+    - `Ayraç Çifti Renklendirmesi: Ayraç Türü Başına Bağımsız Renk Havuzu`
+    - `Kod Eylemi Pencere Öğesi: Başlıkları Göster`
+    - `Kod Eylemleri: Odak Değiştiğinde Tetikle`
+    eksiksiz ve doğal Türkçe olarak ekrana basılır.
+
+
 
