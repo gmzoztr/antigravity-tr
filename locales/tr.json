@@ -1,7 +1,7 @@
 {
   "name": "tr",
   "label": "Türkçe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "rules": {
     "jetskiAgent": [
       {
@@ -77,6 +77,10 @@
       {
         "search": "t.Developer=\"Developer\"",
         "replace": "t.Developer=\"Geliştirici\""
+      },
+      {
+        "search": "const s=NLa(t);return{category:r,label:s}",
+        "replace": "const s=NLa(t);const _tr={Files:\"Dosyalar\",Editor:\"Metin Düzenleyici\",Workbench:\"Çalışma Yeri\",Window:\"Pencere\",Features:\"Özellikler\",Application:\"Uygulama\",Security:\"Güvenlik\",Extensions:\"Uzantılar\",Terminal:\"Terminal\",Search:\"Arama\",Git:\"Git\",Explorer:\"Gezgin\",Debug:\"Hata Ayıklama\",\"Auto Save\":\"Otomatik Kaydet\",\"Font Size\":\"Yazı Tipi Boyutu\",\"Font Family\":\"Yazı Tipi Ailesi\",\"Tab Size\":\"Sekme Boyutu\",\"Render Whitespace\":\"Boşluk Karakterlerini Göster\",\"Cursor Style\":\"İmleç Stili\",\"Cursor Blinking\":\"İmleç Yanıp Sönmesi\",\"Word Wrap\":\"Sözcük Kaydırma\",\"Line Numbers\":\"Satır Numaraları\",Minimap:\"Mini Harita\",\"Detect Indentation\":\"Girintiyi Otomatik Algıla\",\"Insert Spaces\":\"Boşluk Ekle\",\"Format On Save\":\"Kaydederken Biçimlendir\",\"Format On Paste\":\"Yapıştırırken Biçimlendir\",\"Color Theme\":\"Renk Teması\",\"Icon Theme\":\"Simge Teması\",\"Zoom Level\":\"Yakınlaştırma Düzeyi\",\"Confirm Delete\":\"Silmeyi Onayla\",\"Enable Preview\":\"Önizlemeyi Etkinleştir\"};return{category:_tr[r]||r,label:_tr[s]||s}"
       }
     ],
     "nlsMessages": [

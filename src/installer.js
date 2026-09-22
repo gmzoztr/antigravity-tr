@@ -30,11 +30,9 @@ function setupGeminiRule(paths) {
 
   let updated = '';
   if (existing.includes(startTag) && existing.includes(endTag)) {
-    // Mevcut kural bloğunu güncelle
     const regex = new RegExp(`${startTag}[\\s\\S]*?${endTag}`, 'g');
     updated = existing.replace(regex, newRuleContent);
   } else {
-    // Sona ekle
     updated = existing ? `${existing.trim()}\n\n${newRuleContent}\n` : `${newRuleContent}\n`;
   }
 
@@ -128,6 +126,61 @@ function syncLanguagePacks(paths) {
 }
 
 /**
+ * Electron derleme ve bytecode önbelleğini temizler.
+ * Böylece yamalanan dosyalar doğrudan diskten taze derlenir.
+ */
+function clearElectronCache(paths) {
+  const targets = [
+    path.join(paths.ide.userConfigPath, 'Code Cache'),
+    path.join(paths.ide.userConfigPath, 'CachedData'),
+    path.join(paths.ide.userConfigPath, 'CachedConfigurations'),
+    path.join(paths.ide.userConfigPath, 'CachedProfilesData')
+  ];
+
+  let clearedCount = 0;
+  for (const t of targets) {
+    if (fs.existsSync(t)) {
+      try {
+        fs.rmSync(t, { recursive: true, force: true });
+        clearedCount++;
+      } catch (e) {}
+    }
+  }
+  return clearedCount;
+}
+
+/**
+ * Google Cloud Data Agent Kit eklentisindeki (no project) ve menüleri yamalar.
+ */
+function patchGoogleCloudExtension(paths) {
+  if (!paths.ide || !paths.ide.extensionsDir) return;
+  const dcDir = path.join(paths.ide.extensionsDir, 'googlecloudtools.datacloud-0.11.0-universal');
+  if (!fs.existsSync(dcDir)) return;
+
+  const jsFile = path.join(dcDir, 'datacloud_vscode.js');
+  if (fs.existsSync(jsFile)) {
+    try {
+      let c = fs.readFileSync(jsFile, 'utf8');
+      if (c.includes('"(no project)"')) {
+        c = c.replaceAll('"(no project)"', '"(proje seçilmedi)"');
+        fs.writeFileSync(jsFile, c, 'utf8');
+      }
+    } catch (e) {}
+  }
+
+  const pkgFile = path.join(dcDir, 'package.json');
+  if (fs.existsSync(pkgFile)) {
+    try {
+      let p = fs.readFileSync(pkgFile, 'utf8');
+      p = p.replace('"title": "Databases"', '"title": "Veritabanları"')
+           .replace('"title": "Data Engineering"', '"title": "Veri Mühendisliği"')
+           .replace('"title": "Catalog"', '"title": "Katalog"');
+      fs.writeFileSync(pkgFile, p, 'utf8');
+    } catch (e) {}
+  }
+}
+
+/**
  * Tam kurulum yürütür.
  */
 function install() {
@@ -171,6 +224,16 @@ function install() {
     }
   }
 
+  // 5. Google Cloud Eklenti Yamaları
+  console.log('5. Google Cloud eklenti dizeleri yamalanıyor...');
+  patchGoogleCloudExtension(paths);
+  console.log('   [✓] (no project) -> (proje seçilmedi) ve menüler güncellendi.');
+
+  // 6. Önbellek Temizleme
+  console.log('6. V8 Bytecode ve Electron önbelleği temizleniyor...');
+  clearElectronCache(paths);
+  console.log('   [✓] Önbellek temizlendi, taze derleme hazır.');
+
   console.log('\n--- Kurulum Başarıyla Tamamlandı! ---');
   console.log('Değişikliklerin görünmesi için açık olan Antigravity / Antigravity IDE pencerelerini yeniden başlatın.');
 }
@@ -207,6 +270,9 @@ function uninstall() {
     setLocaleJson(paths.desktop.localeFile, 'en');
   }
   console.log('   [✓] Yerel ayarlar varsayılana döndü.');
+
+  // 4. Önbellek Temizle
+  clearElectronCache(paths);
 
   console.log('\n--- Geri Alma Tamamlandı! ---');
 }
