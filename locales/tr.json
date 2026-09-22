@@ -1,40 +1,368 @@
 {
   "name": "tr",
   "label": "Türkçe",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "rules": {
     "jetskiAgent": [
       {
-        "search": "\"Record Audio \"",
-        "replace": "\"Ses Kaydet \""
+        "search": "\"Add Custom Model\"",
+        "replace": "\"Özel Model Ekle\""
       },
       {
-        "search": "\"Record Audio\"",
-        "replace": "\"Ses Kaydet\""
+        "search": "\"Advanced File Access\"",
+        "replace": "\"Gelişmiş Dosya Erişimi\""
       },
       {
-        "search": "\"Stop Recording \"",
-        "replace": "\"Kaydı Durdur \""
+        "search": "\"Advanced Settings\"",
+        "replace": "\"Gelişmiş Ayarlar\""
       },
       {
-        "search": "\"Stop Recording\"",
-        "replace": "\"Kaydı Durdur\""
+        "search": "\"Agent Security Settings\"",
+        "replace": "\"Ajan Güvenlik Ayarları\""
       },
       {
-        "search": ":\"New Conversation\"",
-        "replace": ":\"Yeni Sohbet\""
+        "search": "\"Agent Settings (For Project)\"",
+        "replace": "\"Ajan Ayarları (Proje İçin)\""
       },
       {
-        "search": ",title:\"Files Changed\"",
-        "replace": ",title:\"Değişen Dosyalar\""
+        "search": "\"Agent Stopped\"",
+        "replace": "\"Ajan Durduruldu\""
+      },
+      {
+        "search": "\"All Files\"",
+        "replace": "\"Tüm Dosyalar\""
+      },
+      {
+        "search": "\"Analyzed Task Log\"",
+        "replace": "\"Analiz Edilen Görev Günlüğü\""
+      },
+      {
+        "search": "\"Analyzing Task Log\"",
+        "replace": "\"Görev Günlüğü Analiz Ediliyor\""
+      },
+      {
+        "search": "\"App Settings\"",
+        "replace": "\"Uygulama Ayarları\""
+      },
+      {
+        "search": "\"Artifact Viewer\"",
+        "replace": "\"Yapıt Görüntüleyici\""
+      },
+      {
+        "search": "\"Artifact not found\"",
+        "replace": "\"Yapıt bulunamadı\""
+      },
+      {
+        "search": "\"Audio File\"",
+        "replace": "\"Ses Dosyası\""
+      },
+      {
+        "search": "\"Audio attachment\"",
+        "replace": "\"Ses eki\""
+      },
+      {
+        "search": "\"Audio clip\"",
+        "replace": "\"Ses kaydı\""
+      },
+      {
+        "search": "\"Automatic Check for Updates\"",
+        "replace": "\"Güncellemeleri Otomatik Denetle\""
+      },
+      {
+        "search": "\"Auxiliary Pane\"",
+        "replace": "\"Yardımcı Panel\""
+      },
+      {
+        "search": "\"Avatar URL\"",
+        "replace": "\"Avatar URL'si\""
+      },
+      {
+        "search": "\"Background Task\"",
+        "replace": "\"Arka Plan Görevi\""
+      },
+      {
+        "search": "\"Background Task Output\"",
+        "replace": "\"Arka Plan Görev Çıktısı\""
+      },
+      {
+        "search": "\"Backup saved\"",
+        "replace": "\"Yedek kaydedildi\""
+      },
+      {
+        "search": "\"Blocked, needs input\"",
+        "replace": "\"Engellendi, giriş bekleniyor\""
+      },
+      {
+        "search": "\"Bot Name\"",
+        "replace": "\"Bot Adı\""
+      },
+      {
+        "search": "\"Browser Subagent Viewer\"",
+        "replace": "\"Tarayıcı Alt Ajan Görüntüleyici\""
+      },
+      {
+        "search": "\"Browser Task\"",
+        "replace": "\"Tarayıcı Görevi\""
+      },
+      {
+        "search": "\"Cancel Task\"",
+        "replace": "\"Görevi İptal Et\""
+      },
+      {
+        "search": "\"Cancel recording\"",
+        "replace": "\"Kaydı iptal et\""
+      },
+      {
+        "search": "\"Chat Settings\"",
+        "replace": "\"Sohbet Ayarları\""
+      },
+      {
+        "search": "\"Chat anyways\"",
+        "replace": "\"Yine de sohbet et\""
+      },
+      {
+        "search": "\"Check for Updates\"",
+        "replace": "\"Güncellemeleri Denetle\""
+      },
+      {
+        "search": "\"CitC Settings\"",
+        "replace": "\"CitC Ayarları\""
+      },
+      {
+        "search": "\"Clear filter\"",
+        "replace": "\"Filtreyi temizle\""
+      },
+      {
+        "search": "\"Clear search\"",
+        "replace": "\"Aramayı temizle\""
+      },
+      {
+        "search": "\"Clear search (Esc)\"",
+        "replace": "\"Aramayı temizle (Esc)\""
+      },
+      {
+        "search": "\"Close (Escape)\"",
+        "replace": "\"Kapat (Esc)\""
+      },
+      {
+        "search": "\"Close Logs Modal\"",
+        "replace": "\"Günlük Penceresini Kapat\""
+      },
+      {
+        "search": "\"Close Settings\"",
+        "replace": "\"Ayarları Kapat\""
+      },
+      {
+        "search": "\"Close Sidebar\"",
+        "replace": "\"Kenar Çubuğunu Kapat\""
+      },
+      {
+        "search": "\"Close Terminal Tab\"",
+        "replace": "\"Terminal Sekmesini Kapat\""
+      },
+      {
+        "search": "\"Close panel\"",
+        "replace": "\"Paneli kapat\""
+      },
+      {
+        "search": "\"Close skills panel\"",
+        "replace": "\"Beceriler panelini kapat\""
+      },
+      {
+        "search": "\"Copy Command\"",
+        "replace": "\"Komutu Kopyala\""
+      },
+      {
+        "search": "\"Copy File Name\"",
+        "replace": "\"Dosya Adını Kopyala\""
+      },
+      {
+        "search": "\"Copy File Path\"",
+        "replace": "\"Dosya Yolunu Kopyala\""
+      },
+      {
+        "search": "\"Copy code\"",
+        "replace": "\"Kodu kopyala\""
+      },
+      {
+        "search": "\"Copy config file path\"",
+        "replace": "\"Yapılandırma dosya yolunu kopyala\""
+      },
+      {
+        "search": "\"Copy debug info\"",
+        "replace": "\"Hata ayıklama bilgisini kopyala\""
+      },
+      {
+        "search": "\"Copy description\"",
+        "replace": "\"Açıklamayı kopyala\""
+      },
+      {
+        "search": "\"Create New Workflow\"",
+        "replace": "\"Yeni İş Akışı Oluştur\""
+      },
+      {
+        "search": "\"Create New Rule\"",
+        "replace": "\"Yeni Kural Oluştur\""
+      },
+      {
+        "search": "\"Custom Instructions\"",
+        "replace": "\"Özel Yönergeler\""
+      },
+      {
+        "search": "\"Delete Conversation\"",
+        "replace": "\"Sohbeti Sil\""
+      },
+      {
+        "search": "\"Delete Project\"",
+        "replace": "\"Projeyi Sil\""
+      },
+      {
+        "search": "\"Download Diagnostics\"",
+        "replace": "\"Tanılamaları İndir\""
+      },
+      {
+        "search": "\"Export Conversation\"",
+        "replace": "\"Sohbeti Dışa Aktar\""
+      },
+      {
+        "search": "\"Files Changed\"",
+        "replace": "\"Değişen Dosyalar\""
+      },
+      {
+        "search": "\"Find in page...\"",
+        "replace": "\"Sayfada bul...\""
       },
       {
         "search": "\"Generating commit message...\"",
         "replace": "\"Commit mesajı oluşturuluyor...\""
       },
       {
-        "search": "[\"Thinking for \",",
-        "replace": "[\"Düşünülüyor: \","
+        "search": "\"Keep computer awake\"",
+        "replace": "\"Bilgisayarı uyanık tut\""
+      },
+      {
+        "search": "\"Model Selection\"",
+        "replace": "\"Model Seçimi\""
+      },
+      {
+        "search": "\"New Conversation\"",
+        "replace": "\"Yeni Sohbet\""
+      },
+      {
+        "search": "\"No shortcut\"",
+        "replace": "\"Kısayol yok\""
+      },
+      {
+        "search": "\"Open Browser (Preview)\"",
+        "replace": "\"Tarayıcıyı Aç (Önizleme)\""
+      },
+      {
+        "search": "\"Open Chat with Agent\"",
+        "replace": "\"Ajanla Sohbeti Aç\""
+      },
+      {
+        "search": "\"Open Folder\"",
+        "replace": "\"Klasör Aç\""
+      },
+      {
+        "search": "\"Open Issue Reporter\"",
+        "replace": "\"Sorun Bildiriciyi Aç\""
+      },
+      {
+        "search": "\"Open Settings\"",
+        "replace": "\"Ayarları Aç\""
+      },
+      {
+        "search": "\"Please list the steps to reproduce the issue\"",
+        "replace": "\"Lütfen sorunu yeniden oluşturma adımlarını yazın\""
+      },
+      {
+        "search": "\"Prompt to execute on schedule...\"",
+        "replace": "\"Zamanlandığında çalışacak istem...\""
+      },
+      {
+        "search": "\"Quick Open\"",
+        "replace": "\"Hızlı Aç\""
+      },
+      {
+        "search": "\"Quick Settings Panel\"",
+        "replace": "\"Hızlı Ayarlar Paneli\""
+      },
+      {
+        "search": "\"Record Audio\"",
+        "replace": "\"Ses Kaydet\""
+      },
+      {
+        "search": "\"Record Audio \"",
+        "replace": "\"Ses Kaydet \""
+      },
+      {
+        "search": "\"Stop Recording\"",
+        "replace": "\"Kaydı Durdur\""
+      },
+      {
+        "search": "\"Stop Recording \"",
+        "replace": "\"Kaydı Durdur \""
+      },
+      {
+        "search": "\"Reload Window\"",
+        "replace": "\"Pencereyi Yeniden Yükle\""
+      },
+      {
+        "search": "\"Rename Conversation\"",
+        "replace": "\"Sohbeti Yeniden Adlandır\""
+      },
+      {
+        "search": "\"Report Issue\"",
+        "replace": "\"Sorun Bildir\""
+      },
+      {
+        "search": "\"Reset Onboarding\"",
+        "replace": "\"Karşılamayı Sıfırla\""
+      },
+      {
+        "search": "\"Reset to default shortcuts\"",
+        "replace": "\"Varsayılan kısayollara sıfırla\""
+      },
+      {
+        "search": "\"Run in background\"",
+        "replace": "\"Arka planda çalıştır\""
+      },
+      {
+        "search": "\"Save Changes\"",
+        "replace": "\"Değişiklikleri Kaydet\""
+      },
+      {
+        "search": "\"Scheduled Tasks\"",
+        "replace": "\"Zamanlanmış Görevler\""
+      },
+      {
+        "search": "\"Search MCP servers by name\"",
+        "replace": "\"MCP sunucularını ada göre ara\""
+      },
+      {
+        "search": "\"Search steps...\"",
+        "replace": "\"Adımları ara...\""
+      },
+      {
+        "search": "\"Search workspaces...\"",
+        "replace": "\"Çalışma alanlarını ara...\""
+      },
+      {
+        "search": "\"Show Browser Allowlist\"",
+        "replace": "\"Tarayıcı İzin Listesini Göster\""
+      },
+      {
+        "search": "\"System Prompt\"",
+        "replace": "\"Sistem İstemi\""
+      },
+      {
+        "search": "\"Terminal Sandbox\"",
+        "replace": "\"Terminal Yalıtım Alanı (Sandbox)\""
+      },
+      {
+        "search": "\"Toggle Agent\"",
+        "replace": "\"Ajanı Aç/Kapat\""
       }
     ],
     "workbench": [
