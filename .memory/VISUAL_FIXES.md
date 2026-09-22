@@ -86,11 +86,38 @@ Bu doküman, kullanıcının ilettiği 9 farklı ekran görüntüsündeki her bi
 
 ---
 
-## 9. Metin Düzenleyici Alt Ayar Başlıkları (Erişilebilirlik & Yazı Tipleri)
-- **Görsel:** `media_1790087624535.png` - Ayarlar > Metin Düzenleyici altındaki ayar başlıkları.
-- **İngilizce Metin:** `Accessibility Page Size`, `Accessibility Support`, `Allow Variable Fonts`, `Allow Variable Fonts In Accessibility Mode`, `Allow Variable Line Heights` vb.
-- **Türkçe Karşılık:** `Erişilebilirlik Sayfa Boyutu`, `Erişilebilirlik Desteği`, `Değişken Yazı Tiplerine İzin Ver`, `Erişilebilirlik Modunda Değişken Yazı Tiplerine İzin Ver`, `Değişken Satır Yüksekliklerine İzin Ver`
-- **Kaynak Dosya:** `resources/app/out/vs/workbench/workbench.desktop.main.js` (`gDe` fonksiyonu)
-- **Teknik Neden:** VS Code, ayar başlıklarını statik dil paketlerinden değil, `gDe(t, e, i)` fonksiyonu içinde `NLa(t)` ile camelCase anahtarları dinamik olarak ayırarak üretir.
-- **Çözüm:** `gDe` fonksiyonu içerisine genişletilmiş `_tr` sözlük haritası ve sözlükte doğrudan yer almayan bileşik ayarlar için otomatik örüntü çevirici (`_trF`) entegre edildi. Artık tüm alt ayar başlıkları anında Türkçeleştirilir.
+## 9. Metin Düzenleyici Ayar Başlıkları (Tam İfadeler & Frankenstein Kelime Engeli)
+- **Görsel:** `media_1790092728641.png` - Ayarlar > Metin Düzenleyici altındaki karmaşık ayar başlıkları.
+- **Sorun:** Naif regex alt dize değiştiricileri (`Indent` -> `Girinti`), `Auto Indent On Paste` gibi ifadeleri `Auto Girinti On Paste` veya `Independent Renk Pool` gibi hibrit/bozuk ifadelere dönüştürüyordu.
+- **Çözüm:** Naif regex kaldırıldı. `src/settings_dictionary.js` içinde tam ifadeler (full phrase) eşlemesi tanımlandı:
+  - `"Auto Indent On Paste"` -> `"Yapıştırırken Otomatik Girintile"`
+  - `"Auto Indent On Paste Within String"` -> `"Dizgi İçinde Yapıştırırken Otomatik Girintile"`
+  - `"Bracket Pair Colorization: Independent Color Pool Per Bracket Type"` -> `"Ayraç Çifti Renklendirmesi: Ayraç Türü Başına Bağımsız Renk Havuzu"`
+  - `"Code Actions: Trigger On Focus Change"` -> `"Kod Eylemleri: Odak Değiştiğinde Tetikle"`
+  - Eşleşmeyen terimler temiz İngilizce bırakılarak açıklama metinleri ve kod referansları (`afterDelay`) bozulmaktan korundu.
+
+---
+
+## 10. Başlık Çubuğu Büyüteç Tooltip'i (Hızlı Aç / Quick Open)
+- **Görsel:** `media_1790092679030.png` - Üst başlık çubuğu büyüteç ikonuna gelindiğinde çıkan `Quick Open` ipucu.
+- **Kaynak Dosya:** `resources/app/out/nls.messages.json` (indeks 4199: `titlebarPart.quickOpen`) ve `translations/main.i18n.json`.
+- **Teknik Neden:** Başlık çubuğu aksiyonu (`workbench.action.quickOpenWithModes`), `p(4199, null)` çağrısı yapıyordu. Daha önce sadece 3308 yamalandığı için 4199 İngilizce kalmıştı.
+- **Çözüm:** İndeks 4199 `nlsMessages` kurallarına eklendi ve Türkçe dil paketinin `main.i18n.json` dosyasına `quickOpen: "Hızlı Aç"` yazıldı.
+
+---
+
+## 11. Durum Çubuğu Antigravity Ayarları
+- **Görsel:** `media_1790092697072.png` - Sağ alttaki `Antigravity - Settings` butonu.
+- **Kaynak Dosya:** `resources/app/extensions/antigravity/dist/extension.js`.
+- **Teknik Neden:** Google Antigravity eklentisi durum çubuğu öğesini `"Antigravity - Settings"` dizesiyle hardcoded oluşturur.
+- **Çözüm:** `patchAntigravityExtension()` fonksiyonu ile eklenti dosyasında `"Antigravity - Ayarlar"` olarak yamalandı.
+
+---
+
+## 12. Eklenti Salt Okunur (Read-Only) Dosya İzinleri
+- **Görsel:** `media_1790092697072.png` - Sol alttaki `(no project)` göstergesi.
+- **Kaynak Dosya:** `extensions/googlecloudtools.datacloud-0.11.0-universal/datacloud_vscode.js`.
+- **Teknik Neden:** Windows üzerinde VS Code tarafından kurulan eklenti dosyaları salt okunur (`+R / ReadOnly`) öznitelikle korunur. `fs.writeFileSync` çağrısı `EPERM` hatası veriyordu.
+- **Çözüm:** Yama öncesinde `fs.chmodSync(filePath, 0o666)` çalıştırılarak dosya yazılabilir yapıldı ve `(no project)` -> `(proje seçilmedi)` kalıcı olarak uygulandı.
+
 

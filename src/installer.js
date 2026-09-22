@@ -102,12 +102,29 @@ function ensureLanguagePack(paths) {
       execSync(`"${cli}" --install-extension ms-ceintl.vscode-language-pack-tr`, {
         stdio: 'ignore'
       });
-      return { installed: true };
     } catch (e) {
       // Eklenti zaten yüklü veya manuel bağlantı kullanılacak
     }
   }
-  return { installed: false };
+
+  // Dil paketinde eksik olan başlık çubuğu quickOpen dizesini ekle
+  if (paths.ide && paths.ide.extensionsDir) {
+    const lpDir = path.join(paths.ide.extensionsDir, 'ms-ceintl.vscode-language-pack-tr-1.106.0-universal');
+    const mainJsonPath = path.join(lpDir, 'translations', 'main.i18n.json');
+    if (fs.existsSync(mainJsonPath)) {
+      try {
+        try { fs.chmodSync(mainJsonPath, 0o666); } catch (e) {}
+        const data = JSON.parse(fs.readFileSync(mainJsonPath, 'utf8'));
+        if (!data.contents['vs/workbench/browser/parts/titlebar/titlebarPart']) {
+          data.contents['vs/workbench/browser/parts/titlebar/titlebarPart'] = {};
+        }
+        data.contents['vs/workbench/browser/parts/titlebar/titlebarPart'].quickOpen = 'Hızlı Aç';
+        fs.writeFileSync(mainJsonPath, JSON.stringify(data), 'utf8');
+      } catch (e) {}
+    }
+  }
+
+  return { installed: true };
 }
 
 /**
@@ -150,6 +167,24 @@ function clearElectronCache(paths) {
 }
 
 /**
+ * Antigravity ana eklentisindeki (Antigravity - Settings) menüsünü yamalar.
+ */
+function patchAntigravityExtension(paths) {
+  if (!paths.ide || !paths.ide.appPath) return;
+  const extFile = path.join(paths.ide.appPath, 'resources', 'app', 'extensions', 'antigravity', 'dist', 'extension.js');
+  if (fs.existsSync(extFile)) {
+    try {
+      try { fs.chmodSync(extFile, 0o666); } catch (e) {}
+      let c = fs.readFileSync(extFile, 'utf8');
+      if (c.includes('"Antigravity - Settings"')) {
+        c = c.replaceAll('"Antigravity - Settings"', '"Antigravity - Ayarlar"');
+        fs.writeFileSync(extFile, c, 'utf8');
+      }
+    } catch (e) {}
+  }
+}
+
+/**
  * Google Cloud Data Agent Kit eklentisindeki (no project) ve menüleri yamalar.
  */
 function patchGoogleCloudExtension(paths) {
@@ -160,9 +195,10 @@ function patchGoogleCloudExtension(paths) {
   const jsFile = path.join(dcDir, 'datacloud_vscode.js');
   if (fs.existsSync(jsFile)) {
     try {
+      try { fs.chmodSync(jsFile, 0o666); } catch (e) {}
       let c = fs.readFileSync(jsFile, 'utf8');
-      if (c.includes('"(no project)"')) {
-        c = c.replaceAll('"(no project)"', '"(proje seçilmedi)"');
+      if (c.includes('(no project)')) {
+        c = c.replaceAll('(no project)', '(proje seçilmedi)');
         fs.writeFileSync(jsFile, c, 'utf8');
       }
     } catch (e) {}
@@ -171,6 +207,7 @@ function patchGoogleCloudExtension(paths) {
   const pkgFile = path.join(dcDir, 'package.json');
   if (fs.existsSync(pkgFile)) {
     try {
+      try { fs.chmodSync(pkgFile, 0o666); } catch (e) {}
       let p = fs.readFileSync(pkgFile, 'utf8');
       p = p.replace('"title": "Databases"', '"title": "Veritabanları"')
            .replace('"title": "Data Engineering"', '"title": "Veri Mühendisliği"')
@@ -224,10 +261,11 @@ function install() {
     }
   }
 
-  // 5. Google Cloud Eklenti Yamaları
-  console.log('5. Google Cloud eklenti dizeleri yamalanıyor...');
+  // 5. Google Cloud ve Antigravity Eklenti Yamaları
+  console.log('5. Eklenti arayüz dizeleri yamalanıyor...');
   patchGoogleCloudExtension(paths);
-  console.log('   [✓] (no project) -> (proje seçilmedi) ve menüler güncellendi.');
+  patchAntigravityExtension(paths);
+  console.log('   [✓] (no project) -> (proje seçilmedi) ve Antigravity - Ayarlar güncellendi.');
 
   // 6. Önbellek Temizleme
   console.log('6. V8 Bytecode ve Electron önbelleği temizleniyor...');
