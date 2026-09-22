@@ -84,8 +84,9 @@ function patchFile(filePath, rules) {
   // 1. Orijinal yedeği al
   const backupResult = ensureBackup(filePath);
 
-  // 2. Dosya içeriğini oku
-  let content = fs.readFileSync(filePath, 'utf8');
+  // 2. Dosya içeriğini oku (temiz yedekten başla)
+  const bakPath = filePath + '.bak';
+  let content = fs.existsSync(bakPath) ? fs.readFileSync(bakPath, 'utf8') : fs.readFileSync(filePath, 'utf8');
   let matchCount = 0;
 
   for (const rule of rules) {
@@ -128,7 +129,8 @@ function patchNlsFile(filePath, nlsRules) {
   }
 
   const backupResult = ensureBackup(filePath);
-  const msgs = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const bakPath = filePath + '.bak';
+  const msgs = JSON.parse(fs.existsSync(bakPath) ? fs.readFileSync(bakPath, 'utf8') : fs.readFileSync(filePath, 'utf8'));
   let matchCount = 0;
 
   for (const rule of nlsRules) {
