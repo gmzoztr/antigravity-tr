@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 /**
  * Dosya için .bak yedeği alır (eğer daha önce alınmamışsa).
@@ -23,6 +24,53 @@ function restoreFile(filePath) {
     return { restored: true, path: filePath };
   }
   return { restored: false, reason: 'Yedek dosyası bulunamadı (.bak)' };
+}
+
+/**
+ * VS Code standart SHA256 base64 checksum formatını hesaplar.
+ */
+function computeChecksum(filePath) {
+  if (!fs.existsSync(filePath)) return null;
+  const content = fs.readFileSync(filePath);
+  return crypto.createHash('sha256').update(content).digest('base64').replace(/=+$/, '');
+}
+
+/**
+ * product.json dosyasındaki checksums alanını günceller.
+ * Bu sayede VS Code 'yüklemeniz bozuk gibi görünüyor' uyarısı vermez.
+ */
+function updateProductChecksums(paths) {
+  if (!paths.ide || !paths.ide.productFile || !fs.existsSync(paths.ide.productFile)) {
+    return { success: false, reason: 'product.json bulunamadı.' };
+  }
+
+  ensureBackup(paths.ide.productFile);
+
+  const prod = JSON.parse(fs.readFileSync(paths.ide.productFile, 'utf8'));
+  if (!prod.checksums) {
+    return { success: true, message: 'checksums alanı bulunamadı.' };
+  }
+
+  const baseOut = path.join(paths.ide.appPath, 'resources', 'app', 'out');
+  let updatedCount = 0;
+
+  for (const relPath of Object.keys(prod.checksums)) {
+    const fullPath = path.join(baseOut, relPath);
+    if (fs.existsSync(fullPath)) {
+      const actualChecksum = computeChecksum(fullPath);
+      if (actualChecksum && prod.checksums[relPath] !== actualChecksum) {
+        prod.checksums[relPath] = actualChecksum;
+        updatedCount++;
+      }
+    }
+  }
+
+  if (updatedCount > 0) {
+    fs.writeFileSync(paths.ide.productFile, JSON.stringify(prod, null, '\t') + '\n', 'utf8');
+    return { success: true, updated: true, count: updatedCount };
+  }
+
+  return { success: true, updated: false, count: 0 };
 }
 
 /**
@@ -72,7 +120,7 @@ function patchFile(filePath, rules) {
 }
 
 /**
- * Tüm Antigravity bundle dosyalarını yamalar.
+ * Tüm Antigravity bundle dosyalarını yamalar ve checksums doğrulamalarını günceller.
  */
 function applyAllPatches(paths, dictionary) {
   const results = [];
@@ -89,11 +137,15 @@ function applyAllPatches(paths, dictionary) {
     results.push({ target: 'workbench (Editör Arayüzü)', file: paths.ide.workbenchFile, ...res });
   }
 
+  // 3. product.json checksums güncellemesi (Bozuk Yükleme Uyarısını Önler)
+  const checksumRes = updateProductChecksums(paths);
+  results.push({ target: 'product.json Checksums Doğrulaması', ...checksumRes });
+
   return results;
 }
 
 /**
- * Tüm Antigravity bundle dosyalarını geri yükler.
+ * Tüm Antigravity bundle dosyalarını ve product.json dosyasını geri yükler.
  */
 function restoreAllPatches(paths) {
   const results = [];
@@ -108,12 +160,19 @@ function restoreAllPatches(paths) {
     results.push({ target: 'workbench', file: paths.ide.workbenchFile, ...res });
   }
 
+  if (paths.ide && paths.ide.productFile) {
+    const res = restoreFile(paths.ide.productFile);
+    results.push({ target: 'product.json', file: paths.ide.productFile, ...res });
+  }
+
   return results;
 }
 
 module.exports = {
   patchFile,
   restoreFile,
+  computeChecksum,
+  updateProductChecksums,
   applyAllPatches,
   restoreAllPatches
 };

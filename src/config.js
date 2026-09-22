@@ -61,7 +61,8 @@ function getPaths() {
       localeFile: path.join(ideUserConfigPath, 'User', 'locale.json'),
       languagePacksFile: path.join(ideUserConfigPath, 'languagepacks.json'),
       extensionsDir: path.join(ideDataPath, 'extensions'),
-      cliCmd: path.join(ideAppPath, 'bin', 'antigravity-ide.cmd')
+      cliCmd: path.join(ideAppPath, 'bin', 'antigravity-ide.cmd'),
+      productFile: path.join(ideAppPath, 'resources', 'app', 'product.json')
     },
     desktop: {
       appPath: desktopAppPath,
