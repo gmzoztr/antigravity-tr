@@ -1,4 +1,7 @@
-// Tam kategori segmentleri ve ayar etiketleri Türkçe sözlüğü
+const fs = require('fs');
+const path = require('path');
+
+// 1. Tüm 203 kategori segmentinin Türkçe karşılıkları
 const categories = {
   "Accessible Diff Viewer": "Erişilebilir Fark Görüntüleyici",
   "Accounts": "Hesaplar",
@@ -211,7 +214,10 @@ const categories = {
   "Word Highlight": "Sözcük Vurgulama",
   "Workbench": "Çalışma Yeri"
 };
+
+// 2. Ayar yaprak etiketleri (Leaf Labels) sözlüğü
 const settings = {
+  // Görseldeki öğeler
   "Independent Color Pool Per Bracket Type": "Ayraç Türü Başına Bağımsız Renk Havuzu",
   "Trigger On Focus Change": "Odak Değiştiğinde Tetikle",
   "Include Nearby Quick Fixes": "Yakındaki Hızlı Düzeltmeleri Dahil Et",
@@ -313,4 +319,14 @@ const settings = {
   "Auto Save Delay": "Otomatik Kaydetme Gecikmesi"
 };
 
+// Çıktıyı src/settings_dictionary.js olarak yaz
+const targetFile = path.join(__dirname, '..', 'src', 'settings_dictionary.js');
+const fileContent = `// Tam kategori segmentleri ve ayar etiketleri Türkçe sözlüğü
+const categories = ${JSON.stringify(categories, null, 2)};
+const settings = ${JSON.stringify(settings, null, 2)};
+
 module.exports = { categories, settings };
+`;
+
+fs.writeFileSync(targetFile, fileContent, 'utf8');
+console.log(`Generated settings_dictionary.js with ${Object.keys(categories).length} categories and ${Object.keys(settings).length} settings.`);

@@ -16,7 +16,7 @@ trData.rules.nlsMessages = nlsList;
 const catStr = JSON.stringify(categories);
 const setStr = JSON.stringify(settings);
 
-const gDeReplace = `const s=NLa(t);const _cat=${catStr};const _tr=${setStr};const cat=_cat[r]||r;const lab=_tr[s]||_tr[s.replace(/ \\u203A /g,': ')]||_tr[t]||s;return{category:cat,label:lab}`;
+const gDeReplace = `const s=NLa(t);const _cat=${catStr};const _tr=${setStr};const cat=r.split(' \\u203A ').map(seg=>_cat[seg]||seg).join(' \\u203A ');const lab=_tr[s]||_tr[s.replace(/ \\u203A /g,': ')]||_tr[t]||s;return{category:cat,label:lab}`;
 
 const wbRules = trData.rules.workbench || [];
 const gDeRule = wbRules.find(r => r.search === 'const s=NLa(t);return{category:r,label:s}');
