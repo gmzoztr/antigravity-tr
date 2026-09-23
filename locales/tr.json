@@ -509,6 +509,118 @@
       {
         "search": "`${this.productService.nameShort} settings`)",
         "replace": "`${this.productService.nameShort} ayarlarından`)"
+      },
+      {
+        "search": "var S2;(function(t){t.ON=\"On\",t.OFF=\"Off\"})(S2||(S2={}));",
+        "replace": "var S2;(function(t){t.ON=\"Açık\",t.OFF=\"Kapalı\"})(S2||(S2={}));"
+      },
+      {
+        "search": "let o=`Snooze ${this._productService.nameLong} Tab for 10 minutes`;",
+        "replace": "let o=`${this._productService.nameLong} Tab tamamlamayı 10 dakika ertele`;"
+      },
+      {
+        "search": "o=`Snoozed for ${u} more minute${u!==1?\"s\":\"\"}`",
+        "replace": "o=`${u} dakika daha ertelendi`"
+      },
+      {
+        "search": "content:\"View and manage Agent memories, workflows, and rules\"",
+        "replace": "content:\"Ajan hafızasını, iş akışlarını ve kurallarını görüntüleyin ve yönetin\""
+      },
+      {
+        "search": "description:[\"Set the speed of tab suggestions\"]",
+        "replace": "description:[\"Tab önerilerinin hızını belirleyin\"]"
+      },
+      {
+        "search": "description:[\"Show AI autocomplete suggestions in the editor\"]",
+        "replace": "description:[\"Düzenleyicide yapay zeka otomatik tamamlama önerilerini göster\"]"
+      },
+      {
+        "search": "description:[\"Allow Tab to view and edit the files in .gitignore. Use with caution if your .gitignore lists files containing credentials, secrets, or other sensitive information.\"]",
+        "replace": "description:[\"Tab'ın .gitignore içindeki dosyaları görüntülemesine ve düzenlemesine izin verin. .gitignore dosyanız kimlik bilgileri, gizli anahtarlar veya hassas bilgiler içeren dosyaları listeliyorsa dikkatli kullanın.\"]"
+      },
+      {
+        "search": "description:[\"Predict the location of your next edit and navigates you there with a tab keypress\"]",
+        "replace": "description:[\"Bir sonraki düzenleme konumunuzu tahmin eder ve Tab tuşuyla sizi oraya yönlendirir\"]"
+      },
+      {
+        "search": "description:[\"Quickly add and update imports with a tab keypress.\"]",
+        "replace": "description:[\"Tab tuşuna basarak içe aktarmaları hızlıca ekleyin ve güncelleyin.\"]"
+      },
+      {
+        "search": "description:[\"Always Proceed - Agent never asks for confirmation before executing terminal commands (except those in the Deny List)\",\"Request Review - Agent always asks for confirmation before executing terminal commands (except those in the Allow List)\"]",
+        "replace": "description:[\"Her Zaman Devam Et - Ajan, terminal komutlarını çalıştırmadan önce asla onay istemez (Engellenenler Listesindekiler hariç)\",\"İnceleme İste - Ajan, terminal komutlarını çalıştırmadan önce her zaman onay ister (İzin Verilenler Listesindekiler hariç)\"]"
+      },
+      {
+        "search": "description:[\"Always Proceed - Trust the agent to do tasks end-to-end\",\"Agent Decides - Assist the agent to complete tasks\",\"Request Review - Collaborate with the agent to complete tasks\"]",
+        "replace": "description:[\"Her Zaman Devam Et - Görevleri uçtan uca tamamlaması için ajana güvenin\",\"Ajan Karar Versin - Görevleri tamamlaması için ajana yardımcı olun\",\"İnceleme İste - Görevleri tamamlamak için ajanla iş birliği yapın\"]"
+      },
+      {
+        "search": "description:[\"When enabled, Agent is given awareness of lint errors created by its edits and may fix them without explicit user prompting. Note that this may increase Agent's tool usage.\"]",
+        "replace": "description:[\"Etkinleştirildiğinde, Ajan yaptığı düzenlemelerden kaynaklanan lint hatalarının farkında olur ve kullanıcı uyarısı olmadan bunları düzeltebilir. Bunun Ajanın araç kullanımını artırabileceğini unutmayın.\"]"
+      },
+      {
+        "search": "description:[\"Open files in the background if the agent creates or edits them\"]",
+        "replace": "description:[\"Ajan dosyaları oluşturduğunda veya düzenlediğinde arka planda aç\"]"
+      },
+      {
+        "search": "description:[\"Open Command\"]",
+        "replace": "description:[\"Komutu Aç\"]"
+      },
+      {
+        "search": "description:[\"Open Agent\"]",
+        "replace": "description:[\"Ajanı Aç\"]"
+      },
+      {
+        "search": "description:\"Enable navigation suggestions that predict your next edit\"",
+        "replace": "description:\"Bir sonraki düzenlemenizi tahmin eden gezinti önerilerini etkinleştirin\""
+      },
+      {
+        "search": "description:\"Always auto-execute commands unless they are in your deny list. This also allows Agent to auto-execute Browser controls.\"",
+        "replace": "description:\"Engellenenler listenizde olmadığı sürece komutları her zaman otomatik çalıştırın. Bu aynı zamanda Ajanın Tarayıcı kontrollerini de otomatik yürütmesine olanak tanır.\""
+      },
+      {
+        "search": "description:\"Never auto-execute commands unless they are in your allow list.\"",
+        "replace": "description:\"İzin verilenler listenizde olmadığı sürece komutları asla otomatik çalıştırmayın.\""
+      },
+      {
+        "search": "description:\"Trust the agent to do tasks end-to-end\"",
+        "replace": "description:\"Görevleri uçtan uca tamamlaması için ajana güvenin\""
+      },
+      {
+        "search": "description:\"Assist the agent to complete tasks\"",
+        "replace": "description:\"Görevleri tamamlaması için ajana yardımcı olun\""
+      },
+      {
+        "search": "description:\"Collaborate with the agent to complete tasks\"",
+        "replace": "description:\"Görevleri tamamlamak için ajanla iş birliği yapın\""
+      },
+      {
+        "search": "label:\"Highlight After Accept\"",
+        "replace": "label:\"Kabulden Sonra Vurgula\""
+      },
+      {
+        "search": "description:[\"Highlight newly inserted text after accepting a Tab completion.\"]",
+        "replace": "description:[\"Bir Tab tamamlamasını kabul ettikten sonra yeni eklenen metni vurgulayın.\"]"
+      },
+      {
+        "search": "label:\"Enable Tab Sounds (Beta)\"",
+        "replace": "label:\"Tab Seslerini Etkinleştir (Beta)\""
+      },
+      {
+        "search": "description:[\"Turn this on for some sick beats. The more Tab suggestions you accept in a row, the better.\"]",
+        "replace": "description:[\"Harika ritimler için bunu açın. Arka arkaya ne kadar çok Tab önerisi kabul ederseniz o kadar iyi.\"]"
+      },
+      {
+        "search": "resetAll:n,viewAll:r}=e;n.textContent=p(5014,null)",
+        "replace": "resetAll:n,viewAll:r}=e;n.textContent=\"Tümünü Sıfırla\""
+      },
+      {
+        "search": "r.textContent=p(5015,null),r.classList.add(\"no-keybinding\")",
+        "replace": "r.textContent=\"Atanmadı\",r.classList.add(\"no-keybinding\")"
+      },
+      {
+        "search": "{title:\"Security\",settings:[vo.SECURE_MODE_ENABLED]}",
+        "replace": "{title:\"Güvenlik\",settings:[vo.SECURE_MODE_ENABLED]}"
       }
     ],
     "nlsMessages": [

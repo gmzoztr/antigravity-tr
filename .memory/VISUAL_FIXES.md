@@ -183,6 +183,43 @@ Bu doküman, kullanıcının ilettiği 9 farklı ekran görüntüsündeki her bi
 - **Türkçe Karşılık:** `Şununla oturum açıldı: user@gmail.com`
 - **Kaynak Dosya:** `extensions/googlecloudtools.datacloud-0.11.0-universal/datacloud_vscode.js`
 
+---
+
+## 18. Antigravity Hızlı Ayarlar Buton İçi Açık/Kapalı (On/Off) Değerleri
+- **Görsel:** `media_1790175715966.png` - Hızlı Ayarlar açılır menüsündeki açılır butonların içindeki durum metinleri.
+- **İngilizce Metin:** `On` / `Off`
+- **Türkçe Karşılık:** `Açık` / `Kapalı`
+- **Kaynak Dosya:** `resources/app/out/vs/workbench/workbench.desktop.main.js` (`var S2;(function(t){t.ON="On",t.OFF="Off"})(S2||(S2={}));`)
+- **Teknik Neden:** Ayarların boolean seçenekleri `S2` enum nesnesinden etiket (`label`) alır.
+- **Çözüm:** `t.ON="Açık",t.OFF="Kapalı"` olarak güncellendi.
+- **Etkilenen Butonlar:**
+  - `Ajan Lint Hatalarını Otomatik Düzeltsin`
+  - `Atlama İçin Tab`
+  - `Düzenleyicide Öneriler`
+  - `İçe Aktarmalar İçin Tab`
+  - `Tab Gitignore Erişimi`
+  - `Düzenlenen Dosyaları Otomatik Aç`
+  - `Highlight After Accept`
+  - `Enable Tab Sounds`
+
+---
+
+## 19. Antigravity Hızlı Ayarlar Buton ve Bilgi Simgesi (i) Araç İpuçları (Hover Tooltips)
+- **Görsel:** `media_1790175715966.png` ve `media_1790175751399.png` - Butonların ve `(i)` simgelerinin üzerine gelindiğinde çıkan İngilizce kutucuklar.
+- **Kaynak Dosya:** `resources/app/out/vs/workbench/workbench.desktop.main.js` (`FSr`, `NSr`, `_getSettingsItems()`).
+- **Düzeltilen Araç İpuçları ve Metinler:**
+  - **Ertele Butonu Hover:** `Snooze Antigravity IDE Tab for 10 minutes` ➔ `Antigravity IDE Tab tamamlamayı 10 dakika ertele` ve `X dakika daha ertelendi`
+  - **Özelleştirmeler Hover:** `View and manage Agent memories, workflows, and rules` ➔ `Ajan hafızasını, iş akışlarını ve kurallarını görüntüleyin ve yönetin`
+  - **Tab Hızı (i):** `Set the speed of tab suggestions` ➔ `Tab önerilerinin hızını belirleyin`
+  - **Düzenleyicide Öneriler (i):** `Show AI autocomplete suggestions in the editor` ➔ `Düzenleyicide yapay zeka otomatik tamamlama önerilerini göster`
+  - **Atlama İçin Tab (i):** `Predict the location of your next edit and navigates you there with a tab keypress` ➔ `Bir sonraki düzenleme konumunuzu tahmin eder ve Tab tuşuyla sizi oraya yönlendirir`
+  - **İçe Aktarmalar İçin Tab (i):** `Quickly add and update imports with a tab keypress.` ➔ `Tab tuşuna basarak içe aktarmaları hızlıca ekleyin ve güncelleyin.`
+  - **Tab Gitignore Erişimi (i):** `Allow Tab to view and edit the files in .gitignore...` ➔ `Tab'ın .gitignore içindeki dosyaları görüntülemesine ve düzenlemesine izin verin...`
+  - **Ajan Lint Hataları (i):** `When enabled, Agent is given awareness of lint errors...` ➔ `Etkinleştirildiğinde, Ajan yaptığı düzenlemelerden kaynaklanan lint hatalarının farkında olur...`
+  - **Otomatik Çalıştırma & İnceleme İlkesi Seçenek Açıklamaları:** Uçtan uca Türkçe açıklamalar.
+  - **Kısayollar Sekmesi Butonları:** `p(5014,null)` ➔ `Tümünü Sıfırla`, `p(5015,null)` ➔ `Atanmadı`
+
+
 
 
 
