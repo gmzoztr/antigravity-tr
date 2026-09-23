@@ -136,5 +136,53 @@ Bu doküman, kullanıcının ilettiği 9 farklı ekran görüntüsündeki her bi
     - `Kod Eylemleri: Odak Değiştiğinde Tetikle`
     eksiksiz ve doğal Türkçe olarak ekrana basılır.
 
+---
+
+## 14. Antigravity Durum Çubuğu Hızlı Menüsü (Ajan, Sekme ve Ayarlar)
+- **Görsel:** `media_1790172897898.png` ve `media_1790172906870.png` - Sağ alttaki `Antigravity - Ayarlar` tıklandığında açılan menü.
+- **Kaynak Dosya:** `resources/app/out/vs/workbench/workbench.desktop.main.js` (`FSr`, `NSr`, `_getSettingsItems()`).
+- **Yamalanan Alanlar:**
+  - `S8.CASCADE` başlığı: `Agent` -> `Ajan`
+  - `Auto Execution` -> `Otomatik Çalıştırma`
+  - `Review Policy` -> `İnceleme İlkesi` (`Agent Decides` -> `Ajan Karar Versin`)
+  - `Suggestions in Editor` -> `Düzenleyicide Öneriler`
+  - `Tab Gitignore Access` -> `Tab Gitignore Erişimi`
+  - `Tab Speed` -> `Tab Hızı` (`Slow` -> `Yavaş`, `Fast` -> `Hızlı`)
+  - `Tab to Import` -> `İçe Aktarmalar İçin Tab`
+  - `Tab to Jump` -> `Atlama İçin Tab`
+  - `Open Command` -> `Komutu Aç`
+  - `Open Agent` -> `Ajanı Aç`
+  - `Customizations` -> `Özelleştirmeler`, `Manage` -> `Yönet`
+  - `Snooze` -> `Ertele`, `Start` -> `Başlat`, `Cancel` -> `İptal`
+  - `Advanced Settings` -> `Gelişmiş Ayarlar`
+  - Sekme Adı: `AI Shortcuts` -> `Yapay Zeka Kısayolları`
+  - Alt Bağlantı: `View all Antigravity IDE shortcuts` -> `Tüm Antigravity IDE kısayollarını görüntüle`
+
+---
+
+## 15. Başlık Çubuğu Kullanıcı Profil Butonu
+- **Görsel:** `media_1790172933744.png` - Sağ üstteki kullanıcı avatarı ikonu üzerine gelindiğinde çıkan tooltip.
+- **İngilizce Metin:** `Profile`
+- **Türkçe Karşılık:** `Profil`
+- **Kaynak Dosya:** `resources/app/out/vs/workbench/workbench.desktop.main.js` (`name: p(4027, null)`)
+- **Çözüm:** `name: "Profil"` olarak doğrudan yamalandı.
+
+---
+
+## 16. Uzantılar Pazar Yeri Open VSX Bilgilendirme Metni
+- **Görsel:** `media_1790172858973.png` - Uzantılar kenar çubuğunda arama kutusu altındaki bilgilendirme metni.
+- **İngilizce Metin:** `By default, Antigravity IDE uses Open VSX as a marketplace. This can be changed in Antigravity IDE settings.`
+- **Türkçe Karşılık:** `Varsayılan olarak Antigravity IDE, pazar yeri olarak Open VSX kullanır. Bu ayar, Antigravity IDE ayarlarından değiştirilebilir.`
+- **Kaynak Dosya:** `resources/app/out/vs/workbench/workbench.desktop.main.js`
+
+---
+
+## 17. Durum Çubuğu Google Hesabı Tooltip'i
+- **Görsel:** `media_1790172868521.png` - Sağ alttaki e-posta üzerine gelindiğinde çıkan tooltip.
+- **İngilizce Metin:** `Signed in as user@gmail.com`
+- **Türkçe Karşılık:** `Şununla oturum açıldı: user@gmail.com`
+- **Kaynak Dosya:** `extensions/googlecloudtools.datacloud-0.11.0-universal/datacloud_vscode.js`
+
+
 
 
