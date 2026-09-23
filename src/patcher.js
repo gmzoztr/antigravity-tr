@@ -161,6 +161,30 @@ function patchNlsFile(filePath, nlsRules) {
 }
 
 /**
+ * Kullanıcı profilindeki önbelleğe alınmış dil paketi (CLP) dosyalarını bulur.
+ */
+function findClpNlsFiles(configPath) {
+  if (!configPath) return [];
+  const clpDir = path.join(configPath, 'clp');
+  if (!fs.existsSync(clpDir)) return [];
+  const results = [];
+  function walk(dir) {
+    try {
+      const entries = fs.readdirSync(dir, { withFileTypes: true });
+      for (const e of entries) {
+        const full = path.join(dir, e.name);
+        if (e.isDirectory()) walk(full);
+        else if (e.isFile() && e.name === 'nls.messages.json') {
+          results.push(full);
+        }
+      }
+    } catch (err) {}
+  }
+  walk(clpDir);
+  return results;
+}
+
+/**
  * Tüm Antigravity bundle dosyalarını yamalar ve checksums doğrulamalarını günceller.
  */
 function applyAllPatches(paths, dictionary) {
@@ -182,6 +206,18 @@ function applyAllPatches(paths, dictionary) {
   if (paths.ide && paths.ide.nlsFile && dictionary.rules.nlsMessages) {
     const res = patchNlsFile(paths.ide.nlsFile, dictionary.rules.nlsMessages);
     results.push({ target: 'nls.messages (Quick Open vb.)', file: paths.ide.nlsFile, ...res });
+  }
+
+  // 3b. Cached Language Pack (CLP) nls.messages yaması (Çalışma Zamanı Menüleri)
+  if (dictionary.rules.nlsMessages) {
+    const clpFiles = [
+      ...findClpNlsFiles(paths.ide?.userConfigPath),
+      ...findClpNlsFiles(paths.desktop?.userConfigPath)
+    ];
+    for (const cf of clpFiles) {
+      const res = patchNlsFile(cf, dictionary.rules.nlsMessages);
+      results.push({ target: `nls önbelleği (${path.basename(path.dirname(cf))})`, file: cf, ...res });
+    }
   }
 
   // 4. product.json checksums güncellemesi (Bozuk Yükleme Uyarısını Önler)
@@ -210,6 +246,15 @@ function restoreAllPatches(paths) {
   if (paths.ide && paths.ide.nlsFile) {
     const res = restoreFile(paths.ide.nlsFile);
     results.push({ target: 'nls.messages', file: paths.ide.nlsFile, ...res });
+  }
+
+  const clpFiles = [
+    ...findClpNlsFiles(paths.ide?.userConfigPath),
+    ...findClpNlsFiles(paths.desktop?.userConfigPath)
+  ];
+  for (const cf of clpFiles) {
+    const res = restoreFile(cf);
+    results.push({ target: `nls önbelleği (${path.basename(path.dirname(cf))})`, file: cf, ...res });
   }
 
   if (paths.ide && paths.ide.productFile) {
