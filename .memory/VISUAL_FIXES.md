@@ -253,6 +253,50 @@ Bu doküman, kullanıcının ilettiği 9 farklı ekran görüntüsündeki her bi
   - Kapat İkonu Hover: `Close Agent View` ➔ `Ajan Görünümünü Kapat`
   - `...` Menüsü İçi: `Customization` ➔ `Özelleştirmeler`, `Export` ➔ `Dışa Aktar`, `Toggle Dev View` ➔ `Geliştirici Görünümünü Aç/Kapat`
   - Alt/Üst Ajan Navigasyonu: `Back to Agent` ➔ `Ajana Geri Dön`, `Back to parent agent` ➔ `Üst ajana geri dön`
-- **Kaynak Dosya:** `resources/app/out/vs/workbench/workbench.desktop.main.js`
-- **Çözüm:** React header bileşenindeki JSX metinleri ve `bra(d, "Agent")` varsayılan başlığı Türkçeleştirildi.
+---
 
+## 23. Google Cloud Data Agent Kit Proje Seçim Menüsü ve Durum Çubuğu
+- **Görsel:** `media_1790178873905.png` - Durum çubuğunda `(proje seçilmedi)` tıklandığında açılan hızlı seçim listesi ve komutlar.
+- **İngilizce Metinler:**
+  - `Google Cloud Data Agent Kit - No Project Selected` ➔ `Google Cloud Data Agent Kit - Proje Seçilmedi`
+  - `Select a Google Cloud project` ➔ `Bir Google Cloud projesi seçin`
+  - `Google Cloud: Switch Project` ➔ `Google Cloud: Proje Değiştir`
+  - `Google Cloud: Set Billing/Quota Project` ➔ `Google Cloud: Faturalandırma/Kota Projesini Belirle`
+  - `Default (Same as Project)` ➔ `Varsayılan (Proje ile Aynı)`
+  - `Google Cloud: Sign Out` ➔ `Google Cloud: Oturumu Kapat`
+  - `Starred Projects` ➔ `Yıldızlı Projeler`
+  - `Recent Projects` ➔ `Son Kullanılan Projeler`
+  - `Select Billing/Quota Project` ➔ `Faturalandırma/Kota Projesini Seçin`
+  - `Sign Out of Google Cloud` ➔ `Google Cloud Oturumunu Kapat`
+  - `Quick Start Guide` ➔ `Hızlı Başlangıç Kılavuzu`
+- **Kaynak Dosya:** `extensions/googlecloudtools.datacloud-0.11.0-universal/datacloud_vscode.js` ve `package.json`
+- **Çözüm:** `src/installer.js -> patchGoogleCloudExtension()` genişletilerek 32 farklı arayüz ve menü dizesi Türkçeleştirildi.
+
+---
+
+## 24. Ayarlar Düzenleyicisi Eksik EditorOption Başlıkları
+- **Görsel:** `media_1790178785107.png` ve `media_1790178826496.png` - Metin Düzenleyici ayar listesinde İngilizce kalan spesifik başlıklar.
+- **İngilizce Metinler:**
+  - `Code Lens Font Family` ➔ `CodeLens Yazı Tipi Ailesi`
+  - `Code Lens Font Size` ➔ `CodeLens Yazı Tipi Boyutu`
+  - `Color Decorators Activated On` ➔ `Renk Dekoratörlerinin Etkinleştirilme Koşulu`
+  - `Color Decorators Limit` ➔ `Renk Dekoratörü Sınırı`
+  - `Default Color Decorators` ➔ `Varsayılan Renk Dekoratörleri`
+  - `Cursor Surrounding Lines Style` ➔ `İmleç Çevre Satırları Stili`
+  - `Column Selection` ➔ `Sütun Seçimi`
+  - `Drop Into Editor: Show Drop Selector` ➔ `Düzenleyiciye Bırak: Bırakma Seçicisini Göster`
+- **Kaynak Dosya:** `src/settings_dictionary.js` (`_tr` sözlüğü) ve `resources/app/out/vs/workbench/workbench.desktop.main.js` (`gDe`).
+- **Teknik Neden:** Monaco Editor'ün `EditorOption` enum'ı altında tanımlanan ayarlar, `gDe` fonksiyonunda `NLa(t)` ile İngilizce kelimelere bölünür. Sözlükte birebir karşılık bulunmadığında ham İngilizce başlık düşüyordu.
+- **Çözüm:** 170+ Monaco `EditorOption` terimi analiz edilerek eksik olan tüm 84 başlık `settings_dictionary.js` içine eklendi.
+
+---
+
+## 25. Ayarlar Açılır Menüleri (Dropdown Enum) ve GUI Buton / Araç İpuçları
+- **Görsel:** `media_1790178826496.png` - Ayarlar açılır kutularındaki seçenekler (`off`, `selection`, `afterDelay` vb.) ve ayar kartlarındaki butonlar/tooltip'ler.
+- **İngilizce Metinler:**
+  - Seçenekler: `off` ➔ `kapalı (off)`, `selection` ➔ `seçim (selection)`, `afterDelay` ➔ `gecikmeden sonra (afterDelay)`, `on` ➔ `açık (on)`, `always` ➔ `her zaman (always)`, `never` ➔ `asla (never)` vb.
+  - Butonlar ve Tooltip'ler: `More Actions...` ➔ `Daha Fazla Eylem...`, `Reset Setting` ➔ `Ayarı Sıfırla`, `Edit in settings.json` ➔ `settings.json Dosyasında Düzenle`, `default` ➔ `varsayılan`, `OK` ➔ `Tamam`, `Cancel` ➔ `İptal`.
+- **Kaynak Dosya:** `resources/app/out/vs/workbench/workbench.desktop.main.js` (`k2h.renderValue`), `nls.messages.json` (11161–11375) ve `locales/tr.json`.
+- **Teknik Neden ve Güvenli Tasarım:**
+  - Seçenekler: Enum değerleri doğrudan `settings.json` konfigürasyonuna kaydedildiği için ham değerlerin değiştirilmesi teknik ayarları bozabilirdi. Bu nedenle `k2h.renderValue` içinde güvenli bir çeviri katmanı kuruldu: `text: n[g] ? n[g] : (_eTr[f] || f), detail: n[g] ? f : (_eTr[f] ? f : "")`. Orijinal değer (`s[f]`) ve indeks (`f`) aynen korundu, font adları ve teknik değerler koruma altına alındı, sadece UI görünümü Türkçeleştirildi.
+  - Butonlar ve Tooltip'ler: NLS indeksleri 11161–11375 aralığındaki 202 dize Türkçe dil paketine ve NLS mesajlarına entegre edildi.

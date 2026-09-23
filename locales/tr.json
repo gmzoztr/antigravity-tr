@@ -408,7 +408,7 @@
       },
       {
         "search": "const s=NLa(t);return{category:r,label:s}",
-        "replace": "const s=NLa(t);const _cat={\"Accessible Diff Viewer\":\"Erişilebilir Fark Görüntüleyici\",\"Accounts\":\"Hesaplar\",\"Action\":\"Eylem\",\"Actions\":\"Eylemler\",\"Activity\":\"Aktivite\",\"Activity Bar\":\"Aktivite Çubuğu\",\"Activity Bar Location\":\"Aktivite Çubuğu Konumu\",\"Attach\":\"Ekle\",\"Automation Profile\":\"Otomasyon Profili\",\"Auxiliary Activity Bar\":\"İkincil Aktivite Çubuğu\",\"Auxiliary Activity Bar Location\":\"İkincil Aktivite Çubuğu Konumu\",\"Auxiliaryactivity\":\"İkincil Aktivite\",\"Auxiliarybar\":\"İkincil Çubuk\",\"Banner\":\"Başlık Bandı\",\"Bracket Pair Colorization\":\"Ayraç Çifti Renklendirmesi\",\"Chat\":\"Sohbet\",\"Chat Agent Tools\":\"Sohbet Ajanı Araçları\",\"Cloud Changes\":\"Bulut Değişiklikleri\",\"Code Action Widget\":\"Kod Eylemi Pencere Öğesi\",\"Code Actions\":\"Kod Eylemleri\",\"Command\":\"Komut\",\"Command Palette\":\"Komut Paleti\",\"Comments\":\"Yorumlar\",\"Compare Editor\":\"Karşılaştırma Düzenleyicisi\",\"Config\":\"Yapılandırma\",\"Configure\":\"Yapılandır\",\"Contexts\":\"Bağlamlar\",\"Continue Chat In Session\":\"Oturumda Sohbete Devam Et\",\"Continue On\":\"Şurada Devam Et\",\"Contrib\":\"Katkı\",\"Contribution\":\"Katkı\",\"Contributions\":\"Katkılar\",\"Controller\":\"Denetleyici\",\"Custom Labels\":\"Özel Etiketler\",\"Debug\":\"Hata Ayıklama\",\"Decorations\":\"Süslemeler\",\"Default\":\"Varsayılan\",\"Default Profile\":\"Varsayılan Profil\",\"Density\":\"Yoğunluk\",\"Dev\":\"Geliştirici\",\"Developer\":\"Geliştirici\",\"Dialog\":\"İletişim Kutusu\",\"Diff Editor\":\"Fark Düzenleyici\",\"Diff Review\":\"Fark İncelemesi\",\"Dirtydiff\":\"Kaydedilmemiş Farklar\",\"Drop Into Editor\":\"Düzenleyiciye Bırakma\",\"Edit\":\"Düzenle\",\"Edit Sessions\":\"Düzenleme Oturumları\",\"Editor\":\"Metin Düzenleyici\",\"Editor Dictation\":\"Düzenleyici Dikte\",\"Editorinputs\":\"Düzenleyici Girdileri\",\"Editors\":\"Düzenleyiciler\",\"Edits\":\"Düzenlemeler\",\"Emmet\":\"Emmet\",\"Empty\":\"Boş\",\"Env\":\"Ortam\",\"Experimental\":\"Deneysel\",\"Explorer\":\"Gezgin\",\"Extension\":\"Uzantı\",\"Extension Host Profiler\":\"Uzantı Ana Bilgisayarı Profil Oluşturucu\",\"Extensioneditor\":\"Uzantı Düzenleyicisi\",\"Extensions\":\"Uzantılar\",\"External\":\"Harici\",\"Features\":\"Özellikler\",\"File Nesting\":\"Dosya Yuvalama\",\"File View\":\"Dosya Görünümü\",\"Files\":\"Dosyalar\",\"Find\":\"Bul\",\"Focus\":\"Odak\",\"Font\":\"Yazı Tipi\",\"Font Ligatures\":\"Yazı Tipi Bitiştirmeleri\",\"Format Document\":\"Belgeyi Biçimlendir\",\"Format Selection\":\"Seçimi Biçimlendir\",\"Formatting\":\"Biçimlendirme\",\"Gallery\":\"Galeri\",\"Git\":\"Git\",\"Goto Location\":\"Konuma Git\",\"Goto Next Symbol From Result\":\"Sonuçtan Sonraki Simgeye Git\",\"Graph\":\"Grafik\",\"Guides\":\"Kılavuzlar\",\"History\":\"Geçmiş\",\"Hover\":\"Üzerine Gelme (Hover)\",\"In Place Replace\":\"Yerinde Değiştir\",\"Initial Hint\":\"İlk İpucu\",\"Inlay Hints\":\"Satır İçi İpuçları\",\"Inline Suggest\":\"Satır İçi Öneriler\",\"Input\":\"Girdi\",\"Install\":\"Yükle\",\"Integrated\":\"Tümleşik\",\"Interactive Playground\":\"Etkileşimli Alan\",\"Language\":\"Dil\",\"Language Detection Opened Languages\":\"Dil Algılama Açık Diller\",\"Layout\":\"Düzen\",\"Layout Control\":\"Düzen Denetimi\",\"Lightbulb\":\"Ampul Önerisi\",\"Limit\":\"Sınır\",\"List\":\"Liste\",\"Local History\":\"Yerel Geçmiş\",\"Log Change Reason\":\"Değişiklik Nedenini Günlüğe Kaydet\",\"Log Fetch\":\"Günlük Getirme\",\"Marker\":\"İşaretleyici\",\"Markers\":\"İşaretleyiciler\",\"Mcp\":\"MCP\",\"Mcp Server\":\"MCP Sunucusu\",\"Menu\":\"Menü\",\"Menubar\":\"Menü Çubuğu\",\"Minimap\":\"Mini Harita\",\"Models\":\"Modeller\",\"Multi Diff Editor\":\"Çoklu Dosya Fark Düzenleyicisi\",\"Navigation Control\":\"Gezinme Denetimi\",\"Navigible Container\":\"Gezinilebilir Kapsayıcı\",\"New\":\"Yeni\",\"Notebook\":\"Not Defteri\",\"Notification\":\"Bildirim\",\"Notifications\":\"Bildirimler\",\"Open Editors\":\"Açık Düzenleyiciler\",\"Open Url\":\"URL Aç\",\"Output\":\"Çıktı\",\"Overlay Widget\":\"Katman Pencere Öğesi\",\"Padding\":\"İç Boşluk\",\"Panel\":\"Panel\",\"Panelpart\":\"Panel Bölümü\",\"Parameter Hints\":\"Parametre İpuçları\",\"Partial Matches\":\"Kısmi Eşleşmeler\",\"Participants\":\"Katılımcılar\",\"Parts\":\"Bölümler\",\"Paste As\":\"Farklı Yapıştır\",\"Placeholder\":\"Yer Tutucu\",\"Prefer Tree Sitter\":\"Tree-sitter Tercih Et\",\"Preferences\":\"Tercihler\",\"Problems\":\"Sorunlar\",\"Profile\":\"Profil\",\"Profiles\":\"Profiller\",\"Pty Host\":\"Pty Ana Bilgisayarı\",\"Quick Access\":\"Hızlı Erişim\",\"Quick Diff Providers\":\"Hızlı Fark Sağlayıcıları\",\"Quick Input\":\"Hızlı Girdi\",\"Quick Open\":\"Hızlı Aç\",\"Quickchat\":\"Hızlı Sohbet\",\"Refactoring\":\"Yeniden Düzenleme\",\"Reference Search\":\"Başvuru Araması\",\"Registry\":\"Kayıt Defteri\",\"Remote\":\"Uzak (Remote)\",\"Remote Indicator\":\"Uzak Bağlantı Göstergesi\",\"Remote Tunnel\":\"Uzak Tünel\",\"Rename\":\"Yeniden Adlandır\",\"Repl\":\"REPL\",\"Replace\":\"Değiştir\",\"Restricted Mode\":\"Kısıtlı Mod\",\"Ripgrep\":\"Ripgrep\",\"Runtime Extensions\":\"Çalışma Zamanı Uzantıları\",\"Sash\":\"Ayırıcı Çizgi (Sash)\",\"Scm\":\"Kaynak Denetimi\",\"Scrollbar\":\"Kaydırma Çubuğu\",\"Search\":\"Arama\",\"Search Editor\":\"Arama Düzenleyicisi\",\"Search View\":\"Arama Görünümü\",\"Secondary Side Bar\":\"İkincil Kenar Çubuğu\",\"Security\":\"Güvenlik\",\"Semantic Highlighting\":\"Anlamsal Vurgulama\",\"Servers\":\"Sunucular\",\"Settings\":\"Ayarlar\",\"Share\":\"Paylaş\",\"Shell Integration\":\"Kabuk Tümleştirmesi\",\"Side Bar\":\"Kenar Çubuğu\",\"Sidebar\":\"Kenar Çubuğu\",\"Simple Dialog\":\"Basit İletişim Kutusu\",\"Smart Select\":\"Akıllı Seçim\",\"Snippets\":\"Kod Parçacıkları\",\"Speech\":\"Konuşma\",\"Status Bar\":\"Durum Çubuğu\",\"Statusbar\":\"Durum Çubuğu\",\"Sticky Scroll\":\"Sabit Kaydırma (Sticky Scroll)\",\"Suggest\":\"Öneriler\",\"Suggestions\":\"Öneriler\",\"Sync\":\"Eşitleme\",\"Sync Data\":\"Veri Eşitleme\",\"Tab\":\"Sekme\",\"Tabs\":\"Sekmeler\",\"Tasks\":\"Görevler\",\"Terminal\":\"Terminal\",\"Test Explorer\":\"Test Gezgini\",\"Test Results\":\"Test Sonuçları\",\"Testing\":\"Test\",\"Tips\":\"İpuçları\",\"Tree\":\"Ağaç Görünümü\",\"Tree View\":\"Ağaç Görünümü\",\"Troubleshoot Issue\":\"Sorun Gider\",\"Trust\":\"Güven\",\"Trusted Domains\":\"Güvenilen Etki Alanları\",\"Unicode Highlight\":\"Unicode Vurgulama\",\"Unsupported Connection\":\"Desteklenmeyen Bağlantı\",\"Untitled\":\"Başlıksız\",\"Url\":\"URL\",\"User Data\":\"Kullanıcı Verileri\",\"User Data Sync\":\"Kullanıcı Verisi Eşitleme\",\"Valid Overlay\":\"Geçerli Katman\",\"View\":\"Görünüm\",\"View Container\":\"Görünüm Kapsayıcısı\",\"Viewlet\":\"Görünüm Bölümü\",\"Views\":\"Görünümler\",\"Walkthroughs\":\"Tanıtımlar\",\"Webview\":\"Web Görünümü\",\"Webvieweditor\":\"Web Görünümü Düzenleyicisi\",\"Welcome\":\"Karşılama\",\"Welcome Page\":\"Karşılama Sayfası\",\"Widget\":\"Pencere Öğesi\",\"Window\":\"Pencere\",\"Word Highlight\":\"Sözcük Vurgulama\",\"Workbench\":\"Çalışma Yeri\"};const _tr={\"Independent Color Pool Per Bracket Type\":\"Ayraç Türü Başına Bağımsız Renk Havuzu\",\"Trigger On Focus Change\":\"Odak Değiştiğinde Tetikle\",\"Include Nearby Quick Fixes\":\"Yakındaki Hızlı Düzeltmeleri Dahil Et\",\"Show Headers\":\"Başlıkları Göster\",\"Enabled\":\"Etkin\",\"Auto Indent\":\"Otomatik Girintileme\",\"Auto Indent On Paste\":\"Yapıştırırken Otomatik Girintile\",\"Auto Indent On Paste Within String\":\"Dizgi İçinde Yapıştırırken Otomatik Girintile\",\"Auto Surround\":\"Otomatik Çevreleme\",\"Auto Closing Brackets\":\"Ayraçları Otomatik Kapat\",\"Auto Closing Comments\":\"Yorumları Otomatik Kapat\",\"Auto Closing Delete\":\"Ayraç Silmeyi Otomatikleştir\",\"Auto Closing Overtype\":\"Üzerine Yazmayı Otomatikleştir\",\"Auto Closing Quotes\":\"Tırnakları Otomatik Kapat\",\"Accessibility Page Size\":\"Erişilebilirlik Sayfa Boyutu\",\"Accessibility Support\":\"Erişilebilirlik Desteği\",\"Allow Variable Fonts\":\"Değişken Yazı Tiplerine İzin Ver\",\"Allow Variable Fonts In Accessibility Mode\":\"Erişilebilirlik Modunda Değişken Yazı Tiplerine İzin Ver\",\"Allow Variable Line Heights\":\"Değişken Satır Yüksekliklerine İzin Ver\",\"Code Actions On Save\":\"Kaydederken Kod Eylemleri\",\"Code Lens\":\"CodeLens\",\"Color Decorators\":\"Renk Dekoratörleri\",\"Color Theme\":\"Renk Teması\",\"Column Selection\":\"Sütun Seçimi\",\"Comments\":\"Yorumlar\",\"Confirm Delete\":\"Silmeyi Onayla\",\"Copy With Syntax Highlighting\":\"Sözdizimi Vurgusuyla Kopyala\",\"Cursor Blinking\":\"İmleç Yanıp Sönmesi\",\"Cursor Smooth Caret Animation\":\"İmleç Yumuşak Hareket Animasyonu\",\"Cursor Style\":\"İmleç Stili\",\"Cursor Surrounding Lines\":\"İmleç Çevre Satırları\",\"Cursor Width\":\"İmleç Genişliği\",\"Default Formatter\":\"Varsayılan Biçimlendirici\",\"Definition Link Opens In Peek\":\"Tanım Bağlantısını Göz Atma Panelinde Aç\",\"Detect Indentation\":\"Girintiyi Otomatik Algıla\",\"Drag And Drop\":\"Sürükle ve Bırak\",\"Empty Selection Clipboard\":\"Boş Seçimde Satırı Kopyala\",\"Enable Preview\":\"Önizlemeyi Etkinleştir\",\"Fast Scroll Sensitivity\":\"Hızlı Kaydırma Duyarlılığı\",\"Find\":\"Bul\",\"Folding\":\"Kod Katlama\",\"Folding Imports By Default\":\"İçeri Aktarmaları Varsayılan Olarak Katla\",\"Folding Strategy\":\"Katlama Stratejisi\",\"Font Family\":\"Yazı Tipi Ailesi\",\"Font Ligatures\":\"Yazı Tipi Bitiştirmeleri\",\"Font Size\":\"Yazı Tipi Boyutu\",\"Font Weight\":\"Yazı Tipi Kalınlığı\",\"Format On Paste\":\"Yapıştırırken Biçimlendir\",\"Format On Save\":\"Kaydederken Biçimlendir\",\"Format On Save Mode\":\"Kaydederken Biçimlendirme Modu\",\"Format On Type\":\"Yazarken Biçimlendir\",\"Glyph Margin\":\"Simge Kenar Boşluğu\",\"Guides\":\"Kılavuzlar\",\"Hover\":\"Üzerine Gelme (Hover)\",\"Icon Theme\":\"Simge Teması\",\"Inlay Hints\":\"Satır İçi İpuçları\",\"Inline Suggest\":\"Satır İçi Öneriler\",\"Insert Spaces\":\"Boşluk Ekle\",\"Letter Spacing\":\"Harf Boşluğu\",\"Lightbulb\":\"Ampul Önerisi\",\"Line Height\":\"Satır Yüksekliği\",\"Line Numbers\":\"Satır Numaraları\",\"Linked Editing\":\"Bağlantılı Düzenleme\",\"Links\":\"Bağlantılar\",\"Match Brackets\":\"Eşleşen Ayraçları Vurgula\",\"Minimap\":\"Mini Harita\",\"Mouse Wheel Scroll Sensitivity\":\"Fare Tekerleği Kaydırma Duyarlılığı\",\"Mouse Wheel Zoom\":\"Fare Tekerleğiyle Yakınlaştırma\",\"Multi Cursor Modifier\":\"Çoklu İmleç Değiştirici Tuşu\",\"Occurrences Highlight\":\"Eşleşmeleri Vurgula\",\"Padding\":\"İç Boşluk\",\"Quick Suggestions\":\"Hızlı Öneriler\",\"Render Control Characters\":\"Denetim Karakterlerini Göster\",\"Render Line Highlight\":\"Etkin Satırı Vurgula\",\"Render Whitespace\":\"Boşluk Karakterlerini Göster\",\"Rulers\":\"Cetveller\",\"Scroll Beyond Last Column\":\"Son Sütunun Ötesine Kaydır\",\"Scroll Beyond Last Line\":\"Son Satırın Ötesine Kaydır\",\"Selection Highlight\":\"Seçimi Vurgula\",\"Semantic Highlighting\":\"Anlamsal Vurgulama\",\"Show Folding Controls\":\"Katlama Denetimlerini Göster\",\"Smooth Scrolling\":\"Yumuşak Kaydırma\",\"Snippet Suggestions\":\"Kod Parçacığı Önerileri\",\"Sticky Scroll\":\"Sabit Kaydırma (Sticky Scroll)\",\"Suggest\":\"Öneriler\",\"Suggest On Trigger Characters\":\"Tetikleyici Karakterlerde Öner\",\"Suggest Selection\":\"Öneri Seçimi\",\"Tab Completion\":\"Sekmeyle Tamamlama\",\"Tab Size\":\"Sekme Boyutu\",\"Unicode Highlight\":\"Unicode Karakter Vurgulama\",\"Unusual Line Terminators\":\"Olağan Dışı Satır Sonlandırıcılar\",\"Word Based Suggestions\":\"Kelime Tabanlı Öneriler\",\"Word Separators\":\"Kelime Ayırıcılar\",\"Word Wrap\":\"Sözcük Kaydırma\",\"Word Wrap Column\":\"Sözcük Kaydırma Sütunu\",\"Wrapping Indent\":\"Kaydırma Girintisi\",\"Zoom Level\":\"Yakınlaştırma Düzeyi\",\"Auto Save\":\"Otomatik Kaydet\",\"Auto Save Delay\":\"Otomatik Kaydetme Gecikmesi\"};const cat=r.split(' \\u203A ').map(seg=>_cat[seg]||seg).join(' \\u203A ');const lab=_tr[s]||_tr[s.replace(/ \\u203A /g,': ')]||_tr[t]||s;return{category:cat,label:lab}"
+        "replace": "const s=NLa(t);const _cat={\"Accessible Diff Viewer\":\"Erişilebilir Fark Görüntüleyici\",\"Accounts\":\"Hesaplar\",\"Action\":\"Eylem\",\"Actions\":\"Eylemler\",\"Activity\":\"Aktivite\",\"Activity Bar\":\"Aktivite Çubuğu\",\"Activity Bar Location\":\"Aktivite Çubuğu Konumu\",\"Attach\":\"Ekle\",\"Automation Profile\":\"Otomasyon Profili\",\"Auxiliary Activity Bar\":\"İkincil Aktivite Çubuğu\",\"Auxiliary Activity Bar Location\":\"İkincil Aktivite Çubuğu Konumu\",\"Auxiliaryactivity\":\"İkincil Aktivite\",\"Auxiliarybar\":\"İkincil Çubuk\",\"Banner\":\"Başlık Bandı\",\"Bracket Pair Colorization\":\"Ayraç Çifti Renklendirmesi\",\"Chat\":\"Sohbet\",\"Chat Agent Tools\":\"Sohbet Ajanı Araçları\",\"Cloud Changes\":\"Bulut Değişiklikleri\",\"Code Action Widget\":\"Kod Eylemi Pencere Öğesi\",\"Code Actions\":\"Kod Eylemleri\",\"Command\":\"Komut\",\"Command Palette\":\"Komut Paleti\",\"Comments\":\"Yorumlar\",\"Compare Editor\":\"Karşılaştırma Düzenleyicisi\",\"Config\":\"Yapılandırma\",\"Configure\":\"Yapılandır\",\"Contexts\":\"Bağlamlar\",\"Continue Chat In Session\":\"Oturumda Sohbete Devam Et\",\"Continue On\":\"Şurada Devam Et\",\"Contrib\":\"Katkı\",\"Contribution\":\"Katkı\",\"Contributions\":\"Katkılar\",\"Controller\":\"Denetleyici\",\"Custom Labels\":\"Özel Etiketler\",\"Debug\":\"Hata Ayıklama\",\"Decorations\":\"Süslemeler\",\"Default\":\"Varsayılan\",\"Default Profile\":\"Varsayılan Profil\",\"Density\":\"Yoğunluk\",\"Dev\":\"Geliştirici\",\"Developer\":\"Geliştirici\",\"Dialog\":\"İletişim Kutusu\",\"Diff Editor\":\"Fark Düzenleyici\",\"Diff Review\":\"Fark İncelemesi\",\"Dirtydiff\":\"Kaydedilmemiş Farklar\",\"Drop Into Editor\":\"Düzenleyiciye Bırakma\",\"Edit\":\"Düzenle\",\"Edit Sessions\":\"Düzenleme Oturumları\",\"Editor\":\"Metin Düzenleyici\",\"Editor Dictation\":\"Düzenleyici Dikte\",\"Editorinputs\":\"Düzenleyici Girdileri\",\"Editors\":\"Düzenleyiciler\",\"Edits\":\"Düzenlemeler\",\"Emmet\":\"Emmet\",\"Empty\":\"Boş\",\"Env\":\"Ortam\",\"Experimental\":\"Deneysel\",\"Explorer\":\"Gezgin\",\"Extension\":\"Uzantı\",\"Extension Host Profiler\":\"Uzantı Ana Bilgisayarı Profil Oluşturucu\",\"Extensioneditor\":\"Uzantı Düzenleyicisi\",\"Extensions\":\"Uzantılar\",\"External\":\"Harici\",\"Features\":\"Özellikler\",\"File Nesting\":\"Dosya Yuvalama\",\"File View\":\"Dosya Görünümü\",\"Files\":\"Dosyalar\",\"Find\":\"Bul\",\"Focus\":\"Odak\",\"Font\":\"Yazı Tipi\",\"Font Ligatures\":\"Yazı Tipi Bitiştirmeleri\",\"Format Document\":\"Belgeyi Biçimlendir\",\"Format Selection\":\"Seçimi Biçimlendir\",\"Formatting\":\"Biçimlendirme\",\"Gallery\":\"Galeri\",\"Git\":\"Git\",\"Goto Location\":\"Konuma Git\",\"Goto Next Symbol From Result\":\"Sonuçtan Sonraki Simgeye Git\",\"Graph\":\"Grafik\",\"Guides\":\"Kılavuzlar\",\"History\":\"Geçmiş\",\"Hover\":\"Üzerine Gelme (Hover)\",\"In Place Replace\":\"Yerinde Değiştir\",\"Initial Hint\":\"İlk İpucu\",\"Inlay Hints\":\"Satır İçi İpuçları\",\"Inline Suggest\":\"Satır İçi Öneriler\",\"Input\":\"Girdi\",\"Install\":\"Yükle\",\"Integrated\":\"Tümleşik\",\"Interactive Playground\":\"Etkileşimli Alan\",\"Language\":\"Dil\",\"Language Detection Opened Languages\":\"Dil Algılama Açık Diller\",\"Layout\":\"Düzen\",\"Layout Control\":\"Düzen Denetimi\",\"Lightbulb\":\"Ampul Önerisi\",\"Limit\":\"Sınır\",\"List\":\"Liste\",\"Local History\":\"Yerel Geçmiş\",\"Log Change Reason\":\"Değişiklik Nedenini Günlüğe Kaydet\",\"Log Fetch\":\"Günlük Getirme\",\"Marker\":\"İşaretleyici\",\"Markers\":\"İşaretleyiciler\",\"Mcp\":\"MCP\",\"Mcp Server\":\"MCP Sunucusu\",\"Menu\":\"Menü\",\"Menubar\":\"Menü Çubuğu\",\"Minimap\":\"Mini Harita\",\"Models\":\"Modeller\",\"Multi Diff Editor\":\"Çoklu Dosya Fark Düzenleyicisi\",\"Navigation Control\":\"Gezinme Denetimi\",\"Navigible Container\":\"Gezinilebilir Kapsayıcı\",\"New\":\"Yeni\",\"Notebook\":\"Not Defteri\",\"Notification\":\"Bildirim\",\"Notifications\":\"Bildirimler\",\"Open Editors\":\"Açık Düzenleyiciler\",\"Open Url\":\"URL Aç\",\"Output\":\"Çıktı\",\"Overlay Widget\":\"Katman Pencere Öğesi\",\"Padding\":\"İç Boşluk\",\"Panel\":\"Panel\",\"Panelpart\":\"Panel Bölümü\",\"Parameter Hints\":\"Parametre İpuçları\",\"Partial Matches\":\"Kısmi Eşleşmeler\",\"Participants\":\"Katılımcılar\",\"Parts\":\"Bölümler\",\"Paste As\":\"Farklı Yapıştır\",\"Placeholder\":\"Yer Tutucu\",\"Prefer Tree Sitter\":\"Tree-sitter Tercih Et\",\"Preferences\":\"Tercihler\",\"Problems\":\"Sorunlar\",\"Profile\":\"Profil\",\"Profiles\":\"Profiller\",\"Pty Host\":\"Pty Ana Bilgisayarı\",\"Quick Access\":\"Hızlı Erişim\",\"Quick Diff Providers\":\"Hızlı Fark Sağlayıcıları\",\"Quick Input\":\"Hızlı Girdi\",\"Quick Open\":\"Hızlı Aç\",\"Quickchat\":\"Hızlı Sohbet\",\"Refactoring\":\"Yeniden Düzenleme\",\"Reference Search\":\"Başvuru Araması\",\"Registry\":\"Kayıt Defteri\",\"Remote\":\"Uzak (Remote)\",\"Remote Indicator\":\"Uzak Bağlantı Göstergesi\",\"Remote Tunnel\":\"Uzak Tünel\",\"Rename\":\"Yeniden Adlandır\",\"Repl\":\"REPL\",\"Replace\":\"Değiştir\",\"Restricted Mode\":\"Kısıtlı Mod\",\"Ripgrep\":\"Ripgrep\",\"Runtime Extensions\":\"Çalışma Zamanı Uzantıları\",\"Sash\":\"Ayırıcı Çizgi (Sash)\",\"Scm\":\"Kaynak Denetimi\",\"Scrollbar\":\"Kaydırma Çubuğu\",\"Search\":\"Arama\",\"Search Editor\":\"Arama Düzenleyicisi\",\"Search View\":\"Arama Görünümü\",\"Secondary Side Bar\":\"İkincil Kenar Çubuğu\",\"Security\":\"Güvenlik\",\"Semantic Highlighting\":\"Anlamsal Vurgulama\",\"Servers\":\"Sunucular\",\"Settings\":\"Ayarlar\",\"Share\":\"Paylaş\",\"Shell Integration\":\"Kabuk Tümleştirmesi\",\"Side Bar\":\"Kenar Çubuğu\",\"Sidebar\":\"Kenar Çubuğu\",\"Simple Dialog\":\"Basit İletişim Kutusu\",\"Smart Select\":\"Akıllı Seçim\",\"Snippets\":\"Kod Parçacıkları\",\"Speech\":\"Konuşma\",\"Status Bar\":\"Durum Çubuğu\",\"Statusbar\":\"Durum Çubuğu\",\"Sticky Scroll\":\"Sabit Kaydırma (Sticky Scroll)\",\"Suggest\":\"Öneriler\",\"Suggestions\":\"Öneriler\",\"Sync\":\"Eşitleme\",\"Sync Data\":\"Veri Eşitleme\",\"Tab\":\"Sekme\",\"Tabs\":\"Sekmeler\",\"Tasks\":\"Görevler\",\"Terminal\":\"Terminal\",\"Test Explorer\":\"Test Gezgini\",\"Test Results\":\"Test Sonuçları\",\"Testing\":\"Test\",\"Tips\":\"İpuçları\",\"Tree\":\"Ağaç Görünümü\",\"Tree View\":\"Ağaç Görünümü\",\"Troubleshoot Issue\":\"Sorun Gider\",\"Trust\":\"Güven\",\"Trusted Domains\":\"Güvenilen Etki Alanları\",\"Unicode Highlight\":\"Unicode Vurgulama\",\"Unsupported Connection\":\"Desteklenmeyen Bağlantı\",\"Untitled\":\"Başlıksız\",\"Url\":\"URL\",\"User Data\":\"Kullanıcı Verileri\",\"User Data Sync\":\"Kullanıcı Verisi Eşitleme\",\"Valid Overlay\":\"Geçerli Katman\",\"View\":\"Görünüm\",\"View Container\":\"Görünüm Kapsayıcısı\",\"Viewlet\":\"Görünüm Bölümü\",\"Views\":\"Görünümler\",\"Walkthroughs\":\"Tanıtımlar\",\"Webview\":\"Web Görünümü\",\"Webvieweditor\":\"Web Görünümü Düzenleyicisi\",\"Welcome\":\"Karşılama\",\"Welcome Page\":\"Karşılama Sayfası\",\"Widget\":\"Pencere Öğesi\",\"Window\":\"Pencere\",\"Word Highlight\":\"Sözcük Vurgulama\",\"Workbench\":\"Çalışma Yeri\"};const _tr={\"Independent Color Pool Per Bracket Type\":\"Ayraç Türü Başına Bağımsız Renk Havuzu\",\"Trigger On Focus Change\":\"Odak Değiştiğinde Tetikle\",\"Include Nearby Quick Fixes\":\"Yakındaki Hızlı Düzeltmeleri Dahil Et\",\"Show Headers\":\"Başlıkları Göster\",\"Enabled\":\"Etkin\",\"Auto Indent\":\"Otomatik Girintileme\",\"Auto Indent On Paste\":\"Yapıştırırken Otomatik Girintile\",\"Auto Indent On Paste Within String\":\"Dizgi İçinde Yapıştırırken Otomatik Girintile\",\"Auto Surround\":\"Otomatik Çevreleme\",\"Auto Closing Brackets\":\"Ayraçları Otomatik Kapat\",\"Auto Closing Comments\":\"Yorumları Otomatik Kapat\",\"Auto Closing Delete\":\"Ayraç Silmeyi Otomatikleştir\",\"Auto Closing Overtype\":\"Üzerine Yazmayı Otomatikleştir\",\"Auto Closing Quotes\":\"Tırnakları Otomatik Kapat\",\"Accessibility Page Size\":\"Erişilebilirlik Sayfa Boyutu\",\"Accessibility Support\":\"Erişilebilirlik Desteği\",\"Allow Variable Fonts\":\"Değişken Yazı Tiplerine İzin Ver\",\"Allow Variable Fonts In Accessibility Mode\":\"Erişilebilirlik Modunda Değişken Yazı Tiplerine İzin Ver\",\"Allow Variable Line Heights\":\"Değişken Satır Yüksekliklerine İzin Ver\",\"Code Actions On Save\":\"Kaydederken Kod Eylemleri\",\"Code Lens\":\"CodeLens\",\"Color Decorators\":\"Renk Dekoratörleri\",\"Color Theme\":\"Renk Teması\",\"Column Selection\":\"Sütun Seçimi\",\"Comments\":\"Yorumlar\",\"Confirm Delete\":\"Silmeyi Onayla\",\"Copy With Syntax Highlighting\":\"Sözdizimi Vurgusuyla Kopyala\",\"Cursor Blinking\":\"İmleç Yanıp Sönmesi\",\"Cursor Smooth Caret Animation\":\"İmleç Yumuşak Hareket Animasyonu\",\"Cursor Style\":\"İmleç Stili\",\"Cursor Surrounding Lines\":\"İmleç Çevre Satırları\",\"Cursor Width\":\"İmleç Genişliği\",\"Default Formatter\":\"Varsayılan Biçimlendirici\",\"Definition Link Opens In Peek\":\"Tanım Bağlantısını Göz Atma Panelinde Aç\",\"Detect Indentation\":\"Girintiyi Otomatik Algıla\",\"Drag And Drop\":\"Sürükle ve Bırak\",\"Empty Selection Clipboard\":\"Boş Seçimde Satırı Kopyala\",\"Enable Preview\":\"Önizlemeyi Etkinleştir\",\"Fast Scroll Sensitivity\":\"Hızlı Kaydırma Duyarlılığı\",\"Find\":\"Bul\",\"Folding\":\"Kod Katlama\",\"Folding Imports By Default\":\"İçeri Aktarmaları Varsayılan Olarak Katla\",\"Folding Strategy\":\"Katlama Stratejisi\",\"Font Family\":\"Yazı Tipi Ailesi\",\"Font Ligatures\":\"Yazı Tipi Bitiştirmeleri\",\"Font Size\":\"Yazı Tipi Boyutu\",\"Font Weight\":\"Yazı Tipi Kalınlığı\",\"Format On Paste\":\"Yapıştırırken Biçimlendir\",\"Format On Save\":\"Kaydederken Biçimlendir\",\"Format On Save Mode\":\"Kaydederken Biçimlendirme Modu\",\"Format On Type\":\"Yazarken Biçimlendir\",\"Glyph Margin\":\"Simge Kenar Boşluğu\",\"Guides\":\"Kılavuzlar\",\"Hover\":\"Üzerine Gelme (Hover)\",\"Icon Theme\":\"Simge Teması\",\"Inlay Hints\":\"Satır İçi İpuçları\",\"Inline Suggest\":\"Satır İçi Öneriler\",\"Insert Spaces\":\"Boşluk Ekle\",\"Letter Spacing\":\"Harf Boşluğu\",\"Lightbulb\":\"Ampul Önerisi\",\"Line Height\":\"Satır Yüksekliği\",\"Line Numbers\":\"Satır Numaraları\",\"Linked Editing\":\"Bağlantılı Düzenleme\",\"Links\":\"Bağlantılar\",\"Match Brackets\":\"Eşleşen Ayraçları Vurgula\",\"Minimap\":\"Mini Harita\",\"Mouse Wheel Scroll Sensitivity\":\"Fare Tekerleği Kaydırma Duyarlılığı\",\"Mouse Wheel Zoom\":\"Fare Tekerleğiyle Yakınlaştırma\",\"Multi Cursor Modifier\":\"Çoklu İmleç Değiştirici Tuşu\",\"Occurrences Highlight\":\"Eşleşmeleri Vurgula\",\"Padding\":\"İç Boşluk\",\"Quick Suggestions\":\"Hızlı Öneriler\",\"Render Control Characters\":\"Denetim Karakterlerini Göster\",\"Render Line Highlight\":\"Etkin Satırı Vurgula\",\"Render Whitespace\":\"Boşluk Karakterlerini Göster\",\"Rulers\":\"Cetveller\",\"Scroll Beyond Last Column\":\"Son Sütunun Ötesine Kaydır\",\"Scroll Beyond Last Line\":\"Son Satırın Ötesine Kaydır\",\"Selection Highlight\":\"Seçimi Vurgula\",\"Semantic Highlighting\":\"Anlamsal Vurgulama\",\"Show Folding Controls\":\"Katlama Denetimlerini Göster\",\"Smooth Scrolling\":\"Yumuşak Kaydırma\",\"Snippet Suggestions\":\"Kod Parçacığı Önerileri\",\"Sticky Scroll\":\"Sabit Kaydırma (Sticky Scroll)\",\"Suggest\":\"Öneriler\",\"Suggest On Trigger Characters\":\"Tetikleyici Karakterlerde Öner\",\"Suggest Selection\":\"Öneri Seçimi\",\"Tab Completion\":\"Sekmeyle Tamamlama\",\"Tab Size\":\"Sekme Boyutu\",\"Unicode Highlight\":\"Unicode Karakter Vurgulama\",\"Unusual Line Terminators\":\"Olağan Dışı Satır Sonlandırıcılar\",\"Word Based Suggestions\":\"Kelime Tabanlı Öneriler\",\"Word Separators\":\"Kelime Ayırıcılar\",\"Word Wrap\":\"Sözcük Kaydırma\",\"Word Wrap Column\":\"Sözcük Kaydırma Sütunu\",\"Wrapping Indent\":\"Kaydırma Girintisi\",\"Zoom Level\":\"Yakınlaştırma Düzeyi\",\"Auto Save\":\"Otomatik Kaydet\",\"Auto Save Delay\":\"Otomatik Kaydetme Gecikmesi\",\"Code Lens Font Family\":\"CodeLens Yazı Tipi Ailesi\",\"Code Lens Font Size\":\"CodeLens Yazı Tipi Boyutu\",\"Color Decorators Activated On\":\"Renk Dekoratörlerinin Etkinleştirilme Koşulu\",\"Default Color Decorators\":\"Varsayılan Renk Dekoratörleri\",\"Color Decorators Limit\":\"Renk Dekoratörü Sınırı\",\"Cursor Surrounding Lines Style\":\"İmleç Çevre Satırları Stili\",\"Cursor Height\":\"İmleç Yüksekliği\",\"Disable Layer Hinting\":\"Katman İpucunu Devre Dışı Bırak\",\"Disable Monospace Optimizations\":\"Eşaralıklı Yazı Tipi İyileştirmelerini Devre Dışı Bırak\",\"Dom Read Only\":\"DOM Salt Okunur\",\"Drop Into Editor\":\"Düzenleyiciye Bırakma\",\"Edit Context\":\"Düzenleme Bağlamı\",\"Experimental Gpu Acceleration\":\"Deneysel GPU Hızlandırması\",\"Experimental Whitespace Rendering\":\"Deneysel Boşluk Oluşturma\",\"Fixed Overflow Widgets\":\"Sabit Taşma Pencere Öğeleri\",\"Folding Highlight\":\"Katlama Vurgusu\",\"Folding Maximum Regions\":\"En Fazla Katlanabilir Bölge Sayısı\",\"Unfold On Click After End Of Line\":\"Satır Sonuna Tıklandığında Katlamayı Aç\",\"Font Info\":\"Yazı Tipi Bilgisi\",\"Font Variations\":\"Yazı Tipi Çeşitleri\",\"Goto Location\":\"Konuma Git\",\"Hide Cursor In Overview Ruler\":\"Genel Bakış Cetvelinde İmleci Gizle\",\"In Diff Editor\":\"Fark Düzenleyicisinde\",\"Line Decorations Width\":\"Satır Süslemeleri Genişliği\",\"Line Numbers Min Chars\":\"Satır Numaraları En Az Karakter Sayısı\",\"Mouse Style\":\"Fare Stili\",\"Multi Cursor Merge Overlapping\":\"Üst Üste Binen Çoklu İmleçleri Birleştir\",\"Mouse Middle Click Action\":\"Fare Orta Tuş Eylemi\",\"Multi Cursor Paste\":\"Çoklu İmleç Yapıştırma\",\"Multi Cursor Limit\":\"Çoklu İmleç Sınırı\",\"Occurrences Highlight Delay\":\"Eşleşmeleri Vurgulama Gecikmesi\",\"Overtype Cursor Style\":\"Üzerine Yazma İmleç Stili\",\"Overtype On Paste\":\"Yapıştırırken Üzerine Yaz\",\"Overview Ruler Border\":\"Genel Bakış Cetveli Kenarlığı\",\"Overview Ruler Lanes\":\"Genel Bakış Cetveli Şeritleri\",\"Paste As\":\"Farklı Yapıştır\",\"Parameter Hints\":\"Parametre İpuçları\",\"Peek Widget Default Focus\":\"Göz Atma Pencere Öğesi Varsayılan Odağı\",\"Placeholder\":\"Yer Tutucu\",\"Quick Suggestions Delay\":\"Hızlı Öneriler Gecikmesi\",\"Read Only\":\"Salt Okunur\",\"Read Only Message\":\"Salt Okunur İletisi\",\"Rename On Type\":\"Yazarken Yeniden Adlandır\",\"Render Rich Screen Reader Content\":\"Zengin Ekran Okuyucu İçeriğini Göster\",\"Render Final Newline\":\"Son Satır Sonunu Göster\",\"Render Line Highlight Only When Focus\":\"Etkin Satırı Yalnızca Odaklandığında Vurgula\",\"Render Validation Decorations\":\"Doğrulama Süslemelerini Göster\",\"Reveal Horizontal Right Padding\":\"Yatay Sağ İç Boşluğu Göster\",\"Rounded Selection\":\"Yuvarlatılmış Seçim Köşeleri\",\"Scrollbar\":\"Kaydırma Çubuğu\",\"Scroll Predominant Axis\":\"Baskın Eksende Kaydır\",\"Selection Clipboard\":\"Seçim Panosu\",\"Selection Highlight Max Length\":\"Seçim Vurgusu En Fazla Uzunluğu\",\"Selection Highlight Multiline\":\"Çok Satırlı Seçimleri Vurgula\",\"Select On Line Numbers\":\"Satır Numaralarından Seç\",\"Show Unused\":\"Kullanılmayanları Göster\",\"Smart Select\":\"Akıllı Seçim\",\"Sticky Tab Stops\":\"Sabit Sekme Durakları\",\"Stop Rendering Line After\":\"Satırı Şu Karakterden Sonra İşlemeyi Durdur\",\"Suggest Font Size\":\"Öneri Yazı Tipi Boyutu\",\"Suggest Line Height\":\"Öneri Satır Yüksekliği\",\"Tab Index\":\"Sekme İndeksi\",\"Trim Whitespace On Delete\":\"Silerken Boşlukları Kırp\",\"Unicode Highlighting\":\"Unicode Vurgulama\",\"Use Shadow DOM\":\"Shadow DOM Kullan\",\"Use Tab Stops\":\"Sekme Duraklarını Kullan\",\"Word Break\":\"Sözcük Bölme\",\"Word Segmenter Locales\":\"Sözcük Bölücü Yerel Ayarları\",\"Word Wrap Break After Characters\":\"Sözcük Kaydırmada Sonrasına Bölünecek Karakterler\",\"Word Wrap Break Before Characters\":\"Sözcük Kaydırmada Öncesine Bölünecek Karakterler\",\"Word Wrap Override1\":\"Sözcük Kaydırma Geçersiz Kılma 1\",\"Word Wrap Override2\":\"Sözcük Kaydırma Geçersiz Kılma 2\",\"Wrapping Strategy\":\"Kaydırma Stratejisi\",\"Show Deprecated\":\"Kullanımdan Kaldırılanları Göster\",\"Inertial Scroll\":\"Eylemsizlik Kaydırması\",\"Wrap On Escaped Line Feeds\":\"Kaçışlı Satır Sonlarında Kaydır\",\"Effective Cursor Style\":\"Geçerli İmleç Stili\",\"Editor Class Name\":\"Düzenleyici Sınıf Adı\",\"Pixel Ratio\":\"Piksel Oranı\",\"Tab Focus Mode\":\"Sekme Odaklama Modu\",\"Layout Info\":\"Düzen Bilgisi\",\"Wrapping Info\":\"Kaydırma Bilgisi\",\"Inline Completions Accessibility Verbose\":\"Satır İçi Tamamlamalar Ayrıntılı Erişilebilirlik\",\"Effective Edit Context\":\"Geçerli Düzenleme Bağlamı\",\"Scroll On Middle Click\":\"Orta Tuşla Kaydır\",\"Effective Allow Variable Fonts\":\"Geçerli Değişken Yazı Tiplerine İzin Ver\",\"Accept Suggestion On Commit Character\":\"İşleme Karakterinde Öneriyi Kabul Et\",\"Accept Suggestion On Enter\":\"Enter Tuşuna Basıldığında Öneriyi Kabul Et\",\"Allow Overflow\":\"Taşmaya İzin Ver\",\"Aria Label\":\"Aria Etiketi\",\"Aria Required\":\"Aria Zorunlu\",\"Screen Reader Announce Inline Suggestion\":\"Ekran Okuyucu Satır İçi Öneriyi Seslendirsin\",\"Automatic Layout\":\"Otomatik Düzen\",\"Bracket Pair Colorization\":\"Ayraç Çifti Renklendirmesi\"};const cat=r.split(' \\u203A ').map(seg=>_cat[seg]||seg).join(' \\u203A ');const lab=_tr[s]||_tr[s.replace(/ \\u203A /g,': ')]||_tr[t]||s;return{category:cat,label:lab}"
       },
       {
         "search": "t.CASCADE=\"Agent\"",
@@ -709,100 +709,820 @@
       {
         "search": "children:\"Back to parent agent\"",
         "replace": "children:\"Üst ajana geri dön\""
+      },
+      {
+        "search": "u=s.map(String).map(wBa).map((f,g)=>{const m=r[g]&&(o?cQn(r[g],!1):r[g]);return{text:n[g]?n[g]:f,detail:n[g]?f:\"\",description:m",
+        "replace": "const _eTr={\"off\":\"kapalı\",\"on\":\"açık\",\"afterDelay\":\"gecikmeden sonra\",\"onFocusChange\":\"odak değiştiğinde\",\"onWindowChange\":\"pencere değiştiğinde\",\"none\":\"yok\",\"boundary\":\"sınır\",\"selection\":\"seçim\",\"trailing\":\"sondaki\",\"all\":\"tümü\",\"line\":\"çizgi\",\"block\":\"blok\",\"underline\":\"alt çizgi\",\"line-thin\":\"ince çizgi\",\"block-outline\":\"blok anahat\",\"underline-thin\":\"ince alt çizgi\",\"blink\":\"yanıp sönme\",\"smooth\":\"yumuşak\",\"phase\":\"evre\",\"expand\":\"genişleme\",\"solid\":\"sabit\",\"never\":\"asla\",\"near\":\"yakın\",\"always\":\"her zaman\",\"first\":\"ilk\",\"recentlyUsed\":\"son kullanılan\",\"recentlyUsedByPrefix\":\"önek ile son kullanılan\",\"onlySnippets\":\"yalnızca kod parçacıkları\",\"wordWrapColumn\":\"sözcük kaydırma sütunu\",\"bounded\":\"sınırlı\",\"clickAndHover\":\"tıklama ve üzerine gelme\",\"click\":\"tıklama\",\"hover\":\"üzerine gelme\",\"active\":\"etkin\",\"default\":\"varsayılan\",\"top\":\"üst\",\"bottom\":\"alt\",\"left\":\"sol\",\"right\":\"sağ\",\"auto\":\"otomatik\",\"hidden\":\"gizli\",\"visible\":\"görünür\",\"manual\":\"manuel\",\"ask\":\"sor\",\"prompt\":\"sor\"};u=s.map(String).map(wBa).map((f,g)=>{const m=r[g]&&(o?cQn(r[g],!1):r[g]);const _disp=n[g]?n[g]:(_eTr[f]||f);return{text:_disp,detail:n[g]?f:(_eTr[f]?f:\"\"),description:m"
       }
     ],
     "nlsMessages": [
-      {
-        "index": 3308,
-        "replace": "Hızlı Aç"
-      },
-      {
-        "index": 11166,
-        "replace": "{0} Ayarları"
-      },
       {
         "index": 4199,
         "replace": "Hızlı Aç"
       },
       {
-        "index": 3141,
-        "replace": "&&Geri Bildirimde Bulun"
+        "index": 11161,
+        "replace": "Kullanıcı"
       },
       {
-        "index": 3154,
-        "replace": "Geri Bildirimde Bulun"
+        "index": 11162,
+        "replace": "Kullanıcı (Uzak)"
       },
       {
-        "index": 3155,
-        "replace": "Tanılama Bilgilerini İndir"
+        "index": 11163,
+        "replace": "Çalışma Alanı"
       },
       {
-        "index": 3156,
-        "replace": "Tanılama Bilgilerini İndir"
+        "index": 11164,
+        "replace": "Klasör"
       },
       {
-        "index": 3406,
-        "replace": "İkincil Etkinlik Çubuğu Pozisyonu"
+        "index": 11165,
+        "replace": "Ayarlar Değiştirici"
       },
       {
-        "index": 3407,
-        "replace": "&&Varsayılan"
+        "index": 11167,
+        "replace": "Kullanıcı Ayarları"
       },
       {
-        "index": 3408,
-        "replace": "Varsayılan"
+        "index": 11168,
+        "replace": "Uzak Ayarlar"
       },
       {
-        "index": 3409,
-        "replace": "&&Üst"
+        "index": 11169,
+        "replace": "Çalışma Alanı"
       },
       {
-        "index": 3410,
-        "replace": "Üst"
+        "index": 11170,
+        "replace": "Kullanıcı"
       },
       {
-        "index": 3411,
-        "replace": "&&Alt"
+        "index": 11171,
+        "replace": "Çalışma Alanı"
       },
       {
-        "index": 3412,
-        "replace": "Alt"
+        "index": 11172,
+        "replace": "Ayarları ara"
       },
       {
-        "index": 3413,
-        "replace": "&&Gizli"
+        "index": 11173,
+        "replace": "Yapay zeka tarafından önerilen sonuçları göster"
       },
       {
-        "index": 3414,
-        "replace": "Gizli"
+        "index": 11174,
+        "replace": "Şu anda kullanılabilir yapay zeka sonucu yok..."
       },
       {
-        "index": 3415,
-        "replace": "İkincil Etkinlik Çubuğu Pozisyonu"
+        "index": 11175,
+        "replace": "Arama Girdisini Temizle"
       },
       {
-        "index": 3416,
-        "replace": "İkincil Etkinlik Çubuğu Pozisyonu"
+        "index": 11176,
+        "replace": "Ayarları Filtrele"
       },
       {
-        "index": 3417,
-        "replace": "İkincil Etkinlik Çubuğu Pozisyonu"
+        "index": 11177,
+        "replace": "Şu anda kullanılabilir yapay zeka sonucu yok."
       },
       {
-        "index": 3418,
-        "replace": "İkincil Etkinlik Çubuğunu Yan Tarafa Taşı"
+        "index": 11178,
+        "replace": "Ayar Bulunamadı"
       },
       {
-        "index": 3419,
-        "replace": "İkincil Etkinlik Çubuğunu En Üste Taşı"
+        "index": 11179,
+        "replace": "Filtreleri Temizle"
       },
       {
-        "index": 3420,
-        "replace": "İkincil Etkinlik Çubuğunu Alta Taşı"
+        "index": 11180,
+        "replace": "Ayarlar"
       },
       {
-        "index": 3421,
-        "replace": "İkincil Etkinlik Çubuğunu Gizle"
+        "index": 11181,
+        "replace": "Çalışma Alanı Güveni"
+      },
+      {
+        "index": 11182,
+        "replace": "Ayar Bulunamadı. Yapay Zeka Sonuçları Mevcut"
+      },
+      {
+        "index": 11183,
+        "replace": "1 Ayar Bulundu. Yapay Zeka Sonuçları Mevcut"
+      },
+      {
+        "index": 11184,
+        "replace": "{0} Ayar Bulundu. Yapay Zeka Sonuçları Mevcut"
+      },
+      {
+        "index": 11185,
+        "replace": "Ayar Bulunamadı"
+      },
+      {
+        "index": 11186,
+        "replace": "1 Ayar Bulundu"
+      },
+      {
+        "index": 11187,
+        "replace": "{0} Ayar Bulundu"
+      },
+      {
+        "index": 11188,
+        "replace": "Ayarları Yedekle ve Eşitle"
+      },
+      {
+        "index": 11189,
+        "replace": "Son eşitleme: {0}"
+      },
+      {
+        "index": 11190,
+        "replace": "Çalışma alanı güveni gerektirir"
+      },
+      {
+        "index": 11191,
+        "replace": "Ayar değeri yalnızca güvenilen bir çalışma alanında uygulanabilir."
+      },
+      {
+        "index": 11192,
+        "replace": "Çalışma Alanı Güvenini Yönet"
+      },
+      {
+        "index": 11193,
+        "replace": "Eşitlenmedi"
+      },
+      {
+        "index": 11194,
+        "replace": "Bu ayar eşitleme sırasında yoksayılır"
+      },
+      {
+        "index": 11195,
+        "replace": "Varsayılan değer değiştirildi"
+      },
+      {
+        "index": 11196,
+        "replace": "Önizleme"
+      },
+      {
+        "index": 11197,
+        "replace": "Deneysel"
+      },
+      {
+        "index": 11198,
+        "replace": "Gelişmiş"
+      },
+      {
+        "index": 11199,
+        "replace": "Kullanıcı"
+      },
+      {
+        "index": 11200,
+        "replace": "Çalışma Alanı"
+      },
+      {
+        "index": 11201,
+        "replace": "Uzak"
+      },
+      {
+        "index": 11202,
+        "replace": "Kuruluş tarafından yönetiliyor"
+      },
+      {
+        "index": 11203,
+        "replace": "Bu ayar kuruluşunuz tarafından yönetilmektedir ve gerçek değeri değiştirilemez."
+      },
+      {
+        "index": 11204,
+        "replace": "İlke ayarlarını görüntüle"
+      },
+      {
+        "index": 11205,
+        "replace": "Tüm profillere uygulanır"
+      },
+      {
+        "index": 11206,
+        "replace": "Bu ayar geçerli profile özgü değildir ve profiller arasında geçiş yapılırken değerini korur."
+      },
+      {
+        "index": 11207,
+        "replace": "Ayrıca şurada değiştirildi:"
+      },
+      {
+        "index": 11208,
+        "replace": "Şurada değiştirildi:"
+      },
+      {
+        "index": 11209,
+        "replace": "Ayrıca başka bir yerde değiştirildi"
+      },
+      {
+        "index": 11210,
+        "replace": "Başka bir yerde değiştirildi"
+      },
+      {
+        "index": 11211,
+        "replace": "Ayar ayrıca aşağıdaki kapsamlarda değiştirildi:"
+      },
+      {
+        "index": 11212,
+        "replace": "Ayar aşağıdaki kapsamlarda değiştirildi:"
+      },
+      {
+        "index": 11213,
+        "replace": "Aşağıdaki diller varsayılan geçersiz kılmalara sahip:"
+      },
+      {
+        "index": 11214,
+        "replace": "Varsayılan ayar değeri `{0}` tarafından geçersiz kılındı"
+      },
+      {
+        "index": 11215,
+        "replace": "{0} tarafından varsayılan bir değer belirlendi"
+      },
+      {
+        "index": 11216,
+        "replace": "Kullanıcı"
+      },
+      {
+        "index": 11217,
+        "replace": "Çalışma Alanı"
+      },
+      {
+        "index": 11218,
+        "replace": "Uzak"
+      },
+      {
+        "index": 11220,
+        "replace": "Kullanıcı"
+      },
+      {
+        "index": 11221,
+        "replace": "Çalışma Alanı"
+      },
+      {
+        "index": 11222,
+        "replace": "Uzak"
+      },
+      {
+        "index": 11224,
+        "replace": "Önizleme"
+      },
+      {
+        "index": 11225,
+        "replace": "Deneysel"
+      },
+      {
+        "index": 11226,
+        "replace": "Gelişmiş"
+      },
+      {
+        "index": 11227,
+        "replace": "Çalışma alanı güvenilmiyor; ayar değeri uygulanmadı"
+      },
+      {
+        "index": 11228,
+        "replace": "Kuruluş ilkesi tarafından yönetiliyor; ayar değeri uygulanmadı"
+      },
+      {
+        "index": 11229,
+        "replace": "Profiller arasında geçiş yapılırken ayar değeri korunur"
+      },
+      {
+        "index": 11230,
+        "replace": "Ayrıca şurada değiştirildi:"
+      },
+      {
+        "index": 11231,
+        "replace": "Şurada değiştirildi:"
+      },
+      {
+        "index": 11232,
+        "replace": "Ayar eşitleme sırasında yoksayılır"
+      },
+      {
+        "index": 11233,
+        "replace": "{0} varsayılan değeri geçersiz kılıyor"
+      },
+      {
+        "index": 11234,
+        "replace": "{0} varsayılan değeri geçersiz kılıyor"
+      },
+      {
+        "index": 11235,
+        "replace": "{0} için dile özgü varsayılan değerler var"
+      },
+      {
+        "index": 11236,
+        "replace": "Sık Kullanılan"
+      },
+      {
+        "index": 11237,
+        "replace": "Metin Düzenleyici"
+      },
+      {
+        "index": 11238,
+        "replace": "İmleç"
+      },
+      {
+        "index": 11239,
+        "replace": "Bul"
+      },
+      {
+        "index": 11240,
+        "replace": "Yazı Tipi"
+      },
+      {
+        "index": 11241,
+        "replace": "Biçimlendirme"
+      },
+      {
+        "index": 11242,
+        "replace": "Fark Düzenleyici"
+      },
+      {
+        "index": 11243,
+        "replace": "Çoklu Dosya Fark Düzenleyicisi"
+      },
+      {
+        "index": 11244,
+        "replace": "Mini Harita"
+      },
+      {
+        "index": 11245,
+        "replace": "Öneriler"
+      },
+      {
+        "index": 11246,
+        "replace": "Dosyalar"
+      },
+      {
+        "index": 11247,
+        "replace": "Çalışma Yeri"
+      },
+      {
+        "index": 11248,
+        "replace": "Görünüm"
+      },
+      {
+        "index": 11249,
+        "replace": "İçerik Haritaları"
+      },
+      {
+        "index": 11250,
+        "replace": "Düzenleyici Yönetimi"
+      },
+      {
+        "index": 11251,
+        "replace": "Ayar Düzenleyicisi"
+      },
+      {
+        "index": 11252,
+        "replace": "Zen Modu"
+      },
+      {
+        "index": 11253,
+        "replace": "Ekran Kaydı Modu"
+      },
+      {
+        "index": 11254,
+        "replace": "Pencere"
+      },
+      {
+        "index": 11255,
+        "replace": "Yeni Pencere"
+      },
+      {
+        "index": 11256,
+        "replace": "Özellikler"
+      },
+      {
+        "index": 11257,
+        "replace": "Erişilebilirlik Sinyalleri"
+      },
+      {
+        "index": 11258,
+        "replace": "Erişilebilirlik"
+      },
+      {
+        "index": 11259,
+        "replace": "Gezgin"
+      },
+      {
+        "index": 11260,
+        "replace": "Arama"
+      },
+      {
+        "index": 11261,
+        "replace": "Hata Ayıklama"
+      },
+      {
+        "index": 11262,
+        "replace": "Test"
+      },
+      {
+        "index": 11263,
+        "replace": "Kaynak Denetimi"
+      },
+      {
+        "index": 11264,
+        "replace": "Uzantılar"
+      },
+      {
+        "index": 11265,
+        "replace": "Terminal"
+      },
+      {
+        "index": 11266,
+        "replace": "Görev"
+      },
+      {
+        "index": 11267,
+        "replace": "Sorunlar"
+      },
+      {
+        "index": 11268,
+        "replace": "Çıktı"
+      },
+      {
+        "index": 11269,
+        "replace": "Yorumlar"
+      },
+      {
+        "index": 11270,
+        "replace": "Uzak"
+      },
+      {
+        "index": 11271,
+        "replace": "Zaman Çizelgesi"
+      },
+      {
+        "index": 11272,
+        "replace": "Not Defteri"
+      },
+      {
+        "index": 11273,
+        "replace": "Birleştirme Düzenleyicisi"
+      },
+      {
+        "index": 11274,
+        "replace": "Sorun Bildirici"
+      },
+      {
+        "index": 11275,
+        "replace": "Uygulama"
+      },
+      {
+        "index": 11276,
+        "replace": "Proxy"
+      },
+      {
+        "index": 11277,
+        "replace": "Klavye"
+      },
+      {
+        "index": 11278,
+        "replace": "Güncelleme"
+      },
+      {
+        "index": 11279,
+        "replace": "Telemetri"
+      },
+      {
+        "index": 11280,
+        "replace": "Ayar Eşitleme"
+      },
+      {
+        "index": 11281,
+        "replace": "Deneysel"
+      },
+      {
+        "index": 11282,
+        "replace": "Diğer"
+      },
+      {
+        "index": 11283,
+        "replace": "Güvenlik"
+      },
+      {
+        "index": 11284,
+        "replace": "Çalışma Alanı"
+      },
+      {
+        "index": 11285,
+        "replace": "Değiştirildi"
+      },
+      {
+        "index": 11286,
+        "replace": "Değiştirilen ayarlar filtresini ekle veya kaldır"
+      },
+      {
+        "index": 11287,
+        "replace": "Uzantı Kimliği..."
+      },
+      {
+        "index": 11288,
+        "replace": "Uzantı kimliği filtresi ekle"
+      },
+      {
+        "index": 11289,
+        "replace": "Özellik..."
+      },
+      {
+        "index": 11290,
+        "replace": "Özellik filtresi ekle"
+      },
+      {
+        "index": 11291,
+        "replace": "Etiket..."
+      },
+      {
+        "index": 11292,
+        "replace": "Etiket filtresi ekle"
+      },
+      {
+        "index": 11293,
+        "replace": "Dil..."
+      },
+      {
+        "index": 11294,
+        "replace": "Dil kimliği filtresi ekle"
+      },
+      {
+        "index": 11295,
+        "replace": "Ayar Kimliği..."
+      },
+      {
+        "index": 11296,
+        "replace": "Ayar kimliği filtresi ekle"
+      },
+      {
+        "index": 11297,
+        "replace": "Çevrimiçi hizmetler"
+      },
+      {
+        "index": 11298,
+        "replace": "Çevrimiçi hizmetler için ayarları göster"
+      },
+      {
+        "index": 11299,
+        "replace": "Kuruluş ilkeleri"
+      },
+      {
+        "index": 11300,
+        "replace": "Kuruluş ilkesi ayarlarını göster"
+      },
+      {
+        "index": 11301,
+        "replace": "Kararlı"
+      },
+      {
+        "index": 11302,
+        "replace": "Kararlı ayarları göster"
+      },
+      {
+        "index": 11303,
+        "replace": "Önizleme"
+      },
+      {
+        "index": 11304,
+        "replace": "Önizleme ayarlarını göster"
+      },
+      {
+        "index": 11305,
+        "replace": "Deneysel"
+      },
+      {
+        "index": 11306,
+        "replace": "Deneysel ayarları göster"
+      },
+      {
+        "index": 11307,
+        "replace": "Gelişmiş"
+      },
+      {
+        "index": 11308,
+        "replace": "Gelişmiş ayarları göster"
+      },
+      {
+        "index": 11309,
+        "replace": "Uzantılar"
+      },
+      {
+        "index": 11310,
+        "replace": "Ayar geçerli kapsamda yapılandırıldı."
+      },
+      {
+        "index": 11311,
+        "replace": "Diğer Eylemler... "
+      },
+      {
+        "index": 11312,
+        "replace": "Eşleşen uzantıları göster"
+      },
+      {
+        "index": 11313,
+        "replace": "settings.json dosyasında düzenle"
+      },
+      {
+        "index": 11314,
+        "replace": "{0} ayarlarını düzenle"
+      },
+      {
+        "index": 11315,
+        "replace": "varsayılan"
+      },
+      {
+        "index": 11316,
+        "replace": "Ayar geçerli kapsamda yapılandırıldı."
+      },
+      {
+        "index": 11317,
+        "replace": "Uzantıyı Göster"
+      },
+      {
+        "index": 11318,
+        "replace": "Kapat"
+      },
+      {
+        "index": 11319,
+        "replace": "Ayarı Sıfırla"
+      },
+      {
+        "index": 11320,
+        "replace": "Doğrulama Hatası."
+      },
+      {
+        "index": 11321,
+        "replace": "Doğrulama Hatası."
+      },
+      {
+        "index": 11322,
+        "replace": "Değiştirildi."
+      },
+      {
+        "index": 11323,
+        "replace": "Ayarlar"
+      },
+      {
+        "index": 11324,
+        "replace": "Ayar Kimliğini Kopyala"
+      },
+      {
+        "index": 11325,
+        "replace": "Ayarı JSON Olarak Kopyala"
+      },
+      {
+        "index": 11326,
+        "replace": "Ayarı URL Olarak Kopyala"
+      },
+      {
+        "index": 11327,
+        "replace": "Bu Ayarı Eşitle"
+      },
+      {
+        "index": 11328,
+        "replace": "Ayarı Tüm Profillere Uygula"
+      },
+      {
+        "index": 11329,
+        "replace": "Tamam"
+      },
+      {
+        "index": 11330,
+        "replace": "İptal"
+      },
+      {
+        "index": 11333,
+        "replace": "Öğeyi Kaldır"
+      },
+      {
+        "index": 11334,
+        "replace": "Öğeyi Düzenle"
+      },
+      {
+        "index": 11335,
+        "replace": "Öğe Ekle"
+      },
+      {
+        "index": 11336,
+        "replace": "Öğe..."
+      },
+      {
+        "index": 11337,
+        "replace": "Kardeş Öğe..."
+      },
+      {
+        "index": 11341,
+        "replace": "Dışlama Öğesini Kaldır"
+      },
+      {
+        "index": 11342,
+        "replace": "Dışlama Öğesini Düzenle"
+      },
+      {
+        "index": 11343,
+        "replace": "Desen Ekle"
+      },
+      {
+        "index": 11344,
+        "replace": "Dışlama Deseni..."
+      },
+      {
+        "index": 11345,
+        "replace": "Desen Mevcut Olduğunda..."
+      },
+      {
+        "index": 11349,
+        "replace": "Dahil Etme Öğesini Kaldır"
+      },
+      {
+        "index": 11350,
+        "replace": "Dahil Etme Öğesini Düzenle"
+      },
+      {
+        "index": 11351,
+        "replace": "Desen Ekle"
+      },
+      {
+        "index": 11352,
+        "replace": "Dahil Etme Deseni..."
+      },
+      {
+        "index": 11353,
+        "replace": "Desen Mevcut Olduğunda..."
+      },
+      {
+        "index": 11354,
+        "replace": "Tamam"
+      },
+      {
+        "index": 11355,
+        "replace": "İptal"
+      },
+      {
+        "index": 11356,
+        "replace": "Anahtar"
+      },
+      {
+        "index": 11357,
+        "replace": "Değer"
+      },
+      {
+        "index": 11360,
+        "replace": "Öğeyi Kaldır"
+      },
+      {
+        "index": 11361,
+        "replace": "Öğeyi Sıfırla"
+      },
+      {
+        "index": 11362,
+        "replace": "Öğeyi Düzenle"
+      },
+      {
+        "index": 11363,
+        "replace": "Öğe Ekle"
+      },
+      {
+        "index": 11364,
+        "replace": "Öğe"
+      },
+      {
+        "index": 11365,
+        "replace": "Değer"
+      },
+      {
+        "index": 11367,
+        "replace": "Öğeyi Kaldır"
+      },
+      {
+        "index": 11368,
+        "replace": "Öğeyi Sıfırla"
+      },
+      {
+        "index": 11369,
+        "replace": "Öğeyi Düzenle"
+      },
+      {
+        "index": 11370,
+        "replace": "Öğe Ekle"
+      },
+      {
+        "index": 11371,
+        "replace": "Öğe"
+      },
+      {
+        "index": 11372,
+        "replace": "Değer"
+      },
+      {
+        "index": 11373,
+        "replace": "Ayarlar İçindekiler Tablosu"
+      },
+      {
+        "index": 11374,
+        "replace": "{0}, grup"
+      },
+      {
+        "index": 11375,
+        "replace": "Önizleme ayarı: Bu ayar, henüz geliştirme aşamasında olan ancak kullanıma hazır yeni bir özelliği denetler. Geri bildirimlerinizi bekleriz."
       }
     ]
   }
