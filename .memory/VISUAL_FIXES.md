@@ -219,7 +219,25 @@ Bu doküman, kullanıcının ilettiği 9 farklı ekran görüntüsündeki her bi
   - **Otomatik Çalıştırma & İnceleme İlkesi Seçenek Açıklamaları:** Uçtan uca Türkçe açıklamalar.
   - **Kısayollar Sekmesi Butonları:** `p(5014,null)` ➔ `Tümünü Sıfırla`, `p(5015,null)` ➔ `Atanmadı`
 
+---
 
+## 20. Yardım Menüsü: Provide Feedback ve Download Diagnostics
+- **Görsel:** `media_1790175895833.png` - Üst Yardım (Help) menüsü altındaki İngilizce komutlar.
+- **İngilizce Metin:** `Provide Feedback`, `Download Diagnostics`
+- **Türkçe Karşılık:** `Geri Bildirimde Bulun`, `Tanılama Bilgilerini İndir`
+- **Kaynak Dosya:** `resources/app/out/nls.messages.json` (indeksler: 3141, 3154, 3155, 3156), `main.i18n.json` (`helpActions`), `workbench.desktop.main.js` (`re(3154)`, `re(3155)`, `re(3156)`).
+- **Çözüm:** NLS ve dil paketi eş zamanlı yamalandı; geri bildirim modalındaki kategoriler (`pVn`) de Türkçeleştirildi.
 
+---
 
-
+## 21. Görünüm Menüsü: İkincil Etkinlik Çubuğu (Secondary Activity Bar Position)
+- **Görsel:** `media_1790175926186.png` - Görünüm > Görünüm altındaki menü ve açılır seçenekleri.
+- **İngilizce Metinler:**
+  - `Secondary Activity Bar Position` ➔ `İkincil Etkinlik Çubuğu Pozisyonu`
+  - `Default` ➔ `Varsayılan`
+  - `Top` ➔ `Üst`
+  - `Bottom` ➔ `Alt`
+  - `Hidden` ➔ `Gizli`
+- **Kaynak Dosya:** `resources/app/out/nls.messages.json` (indeksler: 3406-3421), `main.i18n.json` (`auxiliaryactivitybarPart`), `workbench.desktop.main.js` (`re(3418-3421)`).
+- **Teknik Neden:** Yeni VS Code sürümü ile gelen `auxiliaryactivitybarPart` modülü resmi Türkçe dil paketinde henüz yer almıyordu.
+- **Çözüm:** Hem `nls.messages.json` içindeki indeksler hem de dil paketindeki `auxiliaryactivitybarPart` modülü eksiksiz Türkçeleştirildi.

@@ -93,7 +93,56 @@ function setLocaleJson(localePath, locale = 'tr') {
 }
 
 /**
- * Resmi VS Code Türkçe dil paketini Antigravity IDE'ye kurar veya bağlar.
+ * Dil paketinde eksik olan Google ve yeni VS Code dizelerini (quickOpen, helpActions, auxiliaryactivitybar) ekler.
+ */
+function enrichLanguagePackFile(mainJsonPath) {
+  if (!fs.existsSync(mainJsonPath)) return;
+  try {
+    try { fs.chmodSync(mainJsonPath, 0o666); } catch (e) {}
+    const data = JSON.parse(fs.readFileSync(mainJsonPath, 'utf8'));
+
+    // 1. Başlık çubuğu quickOpen
+    if (!data.contents['vs/workbench/browser/parts/titlebar/titlebarPart']) {
+      data.contents['vs/workbench/browser/parts/titlebar/titlebarPart'] = {};
+    }
+    data.contents['vs/workbench/browser/parts/titlebar/titlebarPart'].quickOpen = 'Hızlı Aç';
+
+    // 2. Yardım menüsü (Provide Feedback, Download Diagnostics)
+    if (!data.contents['vs/workbench/browser/actions/helpActions']) {
+      data.contents['vs/workbench/browser/actions/helpActions'] = {};
+    }
+    const help = data.contents['vs/workbench/browser/actions/helpActions'];
+    help.miProvideFeedback = '&&Geri Bildirimde Bulun';
+    help.provideFeedback = 'Geri Bildirimde Bulun';
+    help.downloadDiagnostics = 'Tanılama Bilgilerini İndir';
+
+    // 3. İkincil Etkinlik Çubuğu (Secondary Activity Bar Position & Menus)
+    if (!data.contents['vs/workbench/browser/parts/auxiliaryactivitybar/auxiliaryactivitybarPart']) {
+      data.contents['vs/workbench/browser/parts/auxiliaryactivitybar/auxiliaryactivitybarPart'] = {};
+    }
+    const aux = data.contents['vs/workbench/browser/parts/auxiliaryactivitybar/auxiliaryactivitybarPart'];
+    aux.hideMenu = 'Menüyü Gizle';
+    aux['auxiliary activity bar position'] = 'İkincil Etkinlik Çubuğu Pozisyonu';
+    aux.miDefaultAuxiliaryActivityBar = '&&Varsayılan';
+    aux.default = 'Varsayılan';
+    aux.miTopAuxiliaryActivityBar = '&&Üst';
+    aux.top = 'Üst';
+    aux.miBottomAuxiliaryActivityBar = '&&Alt';
+    aux.bottom = 'Alt';
+    aux.miHideAuxiliaryActivityBar = '&&Gizli';
+    aux.hide = 'Gizli';
+    aux.positionAuxiliaryActivituBar = 'İkincil Etkinlik Çubuğu Pozisyonu';
+    aux.positionAuxiliaryActivityBarDefault = 'İkincil Etkinlik Çubuğunu Yan Tarafa Taşı';
+    aux.positionAuxiliaryActivityBarTop = 'İkincil Etkinlik Çubuğunu En Üste Taşı';
+    aux.positionAuxiliaryActivityBarBottom = 'İkincil Etkinlik Çubuğunu Alta Taşı';
+    aux.hideAuxiliaryActivityBar = 'İkincil Etkinlik Çubuğunu Gizle';
+
+    fs.writeFileSync(mainJsonPath, JSON.stringify(data), 'utf8');
+  } catch (e) {}
+}
+
+/**
+ * Resmi VS Code Türkçe dil paketini Antigravity IDE ve Masaüstü uygulamasına bağlar/zenginleştirir.
  */
 function ensureLanguagePack(paths) {
   const cli = paths.ide.cliCmd;
@@ -107,21 +156,14 @@ function ensureLanguagePack(paths) {
     }
   }
 
-  // Dil paketinde eksik olan başlık çubuğu quickOpen dizesini ekle
   if (paths.ide && paths.ide.extensionsDir) {
-    const lpDir = path.join(paths.ide.extensionsDir, 'ms-ceintl.vscode-language-pack-tr-1.106.0-universal');
-    const mainJsonPath = path.join(lpDir, 'translations', 'main.i18n.json');
-    if (fs.existsSync(mainJsonPath)) {
-      try {
-        try { fs.chmodSync(mainJsonPath, 0o666); } catch (e) {}
-        const data = JSON.parse(fs.readFileSync(mainJsonPath, 'utf8'));
-        if (!data.contents['vs/workbench/browser/parts/titlebar/titlebarPart']) {
-          data.contents['vs/workbench/browser/parts/titlebar/titlebarPart'] = {};
-        }
-        data.contents['vs/workbench/browser/parts/titlebar/titlebarPart'].quickOpen = 'Hızlı Aç';
-        fs.writeFileSync(mainJsonPath, JSON.stringify(data), 'utf8');
-      } catch (e) {}
-    }
+    const mainJsonPath = path.join(paths.ide.extensionsDir, 'ms-ceintl.vscode-language-pack-tr-1.106.0-universal', 'translations', 'main.i18n.json');
+    enrichLanguagePackFile(mainJsonPath);
+  }
+
+  if (paths.desktop && paths.desktop.extensionsDir) {
+    const mainJsonPath = path.join(paths.desktop.extensionsDir, 'ms-ceintl.vscode-language-pack-tr-1.106.0-universal', 'translations', 'main.i18n.json');
+    enrichLanguagePackFile(mainJsonPath);
   }
 
   return { installed: true };
