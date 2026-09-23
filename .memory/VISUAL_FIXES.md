@@ -241,3 +241,18 @@ Bu doküman, kullanıcının ilettiği 9 farklı ekran görüntüsündeki her bi
 - **Kaynak Dosya:** `resources/app/out/nls.messages.json` (indeksler: 3406-3421), `main.i18n.json` (`auxiliaryactivitybarPart`), `workbench.desktop.main.js` (`re(3418-3421)`).
 - **Teknik Neden:** Yeni VS Code sürümü ile gelen `auxiliaryactivitybarPart` modülü resmi Türkçe dil paketinde henüz yer almıyordu.
 - **Çözüm:** Hem `nls.messages.json` içindeki indeksler hem de dil paketindeki `auxiliaryactivitybarPart` modülü eksiksiz Türkçeleştirildi.
+
+---
+
+## 22. Ajan Paneli Başlığı ve Üst Eylem Butonları
+- **Görsel:** `media_1790178492356.png` ve `media_1790178498974.png` - Ajan panelinin en üst başlığı ve buton araç ipuçları.
+- **İngilizce Metinler:**
+  - Panel Başlığı: `Agent` ➔ `Ajan`
+  - Geçmiş İkonu Hover: `Past Conversations` ➔ `Geçmiş Sohbetler`
+  - `...` İkonu Hover: `Additional Options` ➔ `Ek Seçenekler`
+  - Kapat İkonu Hover: `Close Agent View` ➔ `Ajan Görünümünü Kapat`
+  - `...` Menüsü İçi: `Customization` ➔ `Özelleştirmeler`, `Export` ➔ `Dışa Aktar`, `Toggle Dev View` ➔ `Geliştirici Görünümünü Aç/Kapat`
+  - Alt/Üst Ajan Navigasyonu: `Back to Agent` ➔ `Ajana Geri Dön`, `Back to parent agent` ➔ `Üst ajana geri dön`
+- **Kaynak Dosya:** `resources/app/out/vs/workbench/workbench.desktop.main.js`
+- **Çözüm:** React header bileşenindeki JSX metinleri ve `bra(d, "Agent")` varsayılan başlığı Türkçeleştirildi.
+
