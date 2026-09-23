@@ -199,8 +199,11 @@ function patchGoogleCloudExtension(paths) {
       let c = fs.readFileSync(jsFile, 'utf8');
       if (c.includes('(no project)')) {
         c = c.replaceAll('(no project)', '(proje seçilmedi)');
-        fs.writeFileSync(jsFile, c, 'utf8');
       }
+      if (c.includes('Signed in as ')) {
+        c = c.replaceAll('`Signed in as ', '`Şununla oturum açıldı: ');
+      }
+      fs.writeFileSync(jsFile, c, 'utf8');
     } catch (e) {}
   }
 
