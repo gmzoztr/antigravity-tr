@@ -352,6 +352,44 @@ function patchWslExtension(paths) {
   }
 }
 
+function patchClaudeExtension(paths) {
+  const dirs = [
+    paths.ide?.extensionsDir,
+    path.join(process.env.USERPROFILE || 'C:\\Users\\Work-D', '.vscode', 'extensions')
+  ];
+  const replacements = [
+    ['Claude Code: Open in New Tab', 'Claude Code: Yeni Sekmede Aç'],
+    ['Claude Code: Open in Primary Editor', 'Claude Code: Birincil Düzenleyicide Aç'],
+    ['Claude Code: Open in Side Bar', 'Claude Code: Kenar Çubuğunda Aç'],
+    ['Claude Code: Open in Terminal', 'Claude Code: Terminalde Aç'],
+    ['Claude Code: Open in New Window', 'Claude Code: Yeni Pencerede Aç'],
+    ['Claude Code: Open', 'Claude Code: Aç'],
+    ['Claude Code: New Conversation', 'Claude Code: Yeni Konuşma'],
+    ['Claude Code: Reopen Closed Session', 'Claude Code: Kapatılan Oturumu Yeniden Aç'],
+    ['Claude Code: Accept Proposed Changes', 'Claude Code: Önerilen Değişiklikleri Kabul Et'],
+    ['Claude Code: Reject Proposed Changes', 'Claude Code: Önerilen Değişiklikleri Reddet']
+  ];
+
+  for (const d of dirs) {
+    if (!d || !fs.existsSync(d)) continue;
+    try {
+      for (const sub of fs.readdirSync(d)) {
+        if (sub.startsWith('anthropic.claude-code')) {
+          const pkgPath = path.join(d, sub, 'package.json');
+          if (fs.existsSync(pkgPath)) {
+            try { fs.chmodSync(pkgPath, 0o666); } catch (e) {}
+            let content = fs.readFileSync(pkgPath, 'utf8');
+            for (const [en, tr] of replacements) {
+              content = content.replaceAll(en, tr);
+            }
+            fs.writeFileSync(pkgPath, content, 'utf8');
+          }
+        }
+      }
+    } catch (e) {}
+  }
+}
+
 /**
  * Tam kurulum yürütür.
  */
@@ -396,11 +434,12 @@ function install() {
     }
   }
 
-  // 5. Google Cloud, Antigravity ve WSL Eklenti Yamaları
+  // 5. Google Cloud, Antigravity, Claude ve WSL Eklenti Yamaları
   console.log('5. Eklenti arayüz dizeleri yamalanıyor...');
   patchGoogleCloudExtension(paths);
   patchAntigravityExtension(paths);
   patchWslExtension(paths);
+  patchClaudeExtension(paths);
   console.log('   [✓] Eklenti arayüzleri ve durum çubuğu güncellendi.');
 
   // 6. Önbellek Temizleme
