@@ -713,6 +713,42 @@
       {
         "search": "const d=wBa(String(t.defaultValue)),u=s.map(String).map(wBa).map((f,g)=>{const m=r[g]&&(o?cQn(r[g],!1):r[g]);return{text:n[g]?n[g]:f,detail:n[g]?f:\"\",description:m",
         "replace": "const _eTr={\"off\":\"Kapalı\",\"on\":\"Açık\",\"true\":\"Açık\",\"false\":\"Kapalı\",\"none\":\"Yok\",\"auto\":\"Otomatik\",\"default\":\"Varsayılan\",\"inherit\":\"Devral\",\"disabled\":\"Devre Dışı\",\"enabled\":\"Etkin\",\"active\":\"Etkin\",\"custom\":\"Özel\",\"afterDelay\":\"Gecikmeden Sonra\",\"onFocusChange\":\"Odak Değiştiğinde\",\"onWindowChange\":\"Pencere Değiştiğinde\",\"smart\":\"Akıllı\",\"subwordSmart\":\"Alt Sözcük Akıllı\",\"languageDefined\":\"Dile Göre Tanımlı\",\"beforeWhitespace\":\"Boşluk Öncesinde\",\"mouseover\":\"Fare Üzerinde\",\"click\":\"Tıklama\",\"hover\":\"Üzerine Gelme\",\"clickAndHover\":\"Tıklama ve Üzerine Gelme\",\"singleClick\":\"Tek Tıklama\",\"doubleClick\":\"Çift Tıklama\",\"boundary\":\"Sınır\",\"selection\":\"Seçim\",\"trailing\":\"Sondaki\",\"all\":\"Tümü\",\"never\":\"Asla\",\"near\":\"Yakın\",\"always\":\"Her Zaman\",\"first\":\"İlk\",\"recentlyUsed\":\"Son Kullanılan\",\"recentlyUsedByPrefix\":\"Önek ile Son Kullanılan\",\"onlySnippets\":\"Yalnızca Kod Parçacıkları\",\"wordWrapColumn\":\"Sözcük Kaydırma Sütunu\",\"bounded\":\"Sınırlı\",\"line\":\"Çizgi\",\"block\":\"Blok\",\"underline\":\"Alt Çizgi\",\"line-thin\":\"İnce Çizgi\",\"block-outline\":\"Blok Anahat\",\"underline-thin\":\"İnce Alt Çizgi\",\"blink\":\"Yanıp Sönme\",\"smooth\":\"Yumuşak\",\"phase\":\"Evre\",\"expand\":\"Genişleme\",\"solid\":\"Sabit\",\"top\":\"Üst\",\"bottom\":\"Alt\",\"left\":\"Sol\",\"right\":\"Sağ\",\"center\":\"Orta\",\"horizontal\":\"Yatay\",\"vertical\":\"Dikey\",\"both\":\"Her İkisi\",\"inline\":\"Satır İçi\",\"float\":\"Kayan\",\"sticky\":\"Sabit\",\"semiSticky\":\"Yarı Sabit\",\"hidden\":\"Gizli\",\"visible\":\"Görünür\",\"manual\":\"Manuel\",\"ask\":\"Sor\",\"prompt\":\"Sor\",\"promptUser\":\"Kullanıcıya Sor\",\"askUser\":\"Kullanıcıya Sor\",\"dontAsk\":\"Sorma\",\"ctrlCmd\":\"Ctrl / Cmd\",\"alt\":\"Alt\",\"terminal\":\"Terminal\",\"external\":\"Harici\",\"internal\":\"Dahili\",\"singleQuote\":\"Tek Tırnak\",\"doubleQuote\":\"Çift Tırnak\",\"quotes\":\"Tırnaklar\",\"brackets\":\"Ayraçlar\",\"bracketPairs\":\"Ayraç Çiftleri\",\"bracketPairsHorizontal\":\"Yatay Ayraç Çiftleri\",\"indentation\":\"Girinti\",\"autoIndent\":\"Otomatik Girintile\",\"words\":\"Sözcükler\",\"word\":\"Sözcük\",\"character\":\"Karakter\",\"multiline\":\"Çok Satırlı\",\"gutter\":\"Kenar Boşluğu\",\"same\":\"Aynı\",\"relative\":\"Göreceli\",\"absolute\":\"Mutlak\",\"autoDetect\":\"Otomatik Algıla\",\"offDOM\":\"Kapalı\",\"simple\":\"Basit\",\"advanced\":\"Gelişmiş\",\"file\":\"Dosya\",\"modifications\":\"Değişiklikler\",\"modificationsIfAvailable\":\"Kullanılabilir Olduğunda Değişiklikler\",\"compact\":\"Kompakt\",\"expanded\":\"Genişletilmiş\",\"collapsed\":\"Daraltılmış\",\"tree\":\"Ağaç Görünümü\",\"list\":\"Liste Görünümü\",\"sideBySide\":\"Yan Yana\",\"offScreen\":\"Ekran Dışı\",\"truncate\":\"Kısalt\",\"wrap\":\"Kaydır\",\"nowrap\":\"Kaydırma\",\"keep\":\"Koru\",\"remove\":\"Kaldır\",\"preserve\":\"Koru\",\"keepQuotes\":\"Tırnakları Koru\",\"warn\":\"Uyar\",\"error\":\"Hata\",\"info\":\"Bilgi\",\"warning\":\"Uyarı\",\"critical\":\"Kritik\",\"high\":\"Yüksek\",\"medium\":\"Orta\",\"low\":\"Düşük\",\"ignore\":\"Yoksay\",\"replace\":\"Değiştir\",\"full\":\"Tam\",\"partial\":\"Kısmi\",\"minimal\":\"Minimal\",\"standard\":\"Standart\",\"lineByLine\":\"Satır Satır\",\"allMatches\":\"Tüm Eşleşmeler\",\"preview\":\"Önizleme\",\"open\":\"Aç\",\"close\":\"Kapat\",\"show\":\"Göster\",\"hide\":\"Gizle\",\"reopen\":\"Yeniden Aç\",\"reload\":\"Yeniden Yükle\",\"restart\":\"Yeniden Başlat\",\"exact\":\"Birebir\",\"fuzzy\":\"Bulanık\",\"prefix\":\"Önek\",\"contains\":\"İçerir\"},d=wBa(String(t.defaultValue)),u=s.map(String).map(wBa).map((f,g)=>{const m=r[g]&&(o?cQn(r[g],!1):r[g]);const _disp=n[g]?n[g]:(_eTr[f]||(typeof f===\"string\"?f.replace(/([a-z])([A-Z])/g,\"$1 $2\").replace(/[-_]/g,\" \").replace(/^./,c=>c.toUpperCase()):f));return{text:_disp,detail:n[g]?f:(_eTr[f]?f:\"\"),description:m"
+      },
+      {
+        "search": "\"Customize Agent to get a better, more personalized experience.\"",
+        "replace": "\"Daha iyi ve kişiselleştirilmiş bir deneyim için Ajanı özelleştirin.\""
+      },
+      {
+        "search": "{id:\"workflows\",label:\"Workflows\",enabled:!0}",
+        "replace": "{id:\"workflows\",label:\"İş Akışları\",enabled:!0}"
+      },
+      {
+        "search": "\"Rules help guide the behavior of Agent.\"",
+        "replace": "\"Kurallar, Ajanın davranışını yönlendirmeye yardımcı olur.\""
+      },
+      {
+        "search": "children:\"Refresh rules\"",
+        "replace": "children:\"Kuralları Yenile\""
+      },
+      {
+        "search": "icon:E($e,{name:\"add\",size:12}),onClick:()=>void o(!0),children:\"Global\"}",
+        "replace": "icon:E($e,{name:\"add\",size:12}),onClick:()=>void o(!0),children:\"Genel\"}"
+      },
+      {
+        "search": "\"div\",{className:\"mr-1 font-medium\",children:\"Workflows\"}",
+        "replace": "\"div\",{className:\"mr-1 font-medium\",children:\"İş Akışları\"}"
+      },
+      {
+        "search": "children:\"Refresh workflows\"",
+        "replace": "children:\"İş Akışlarını Yenile\""
+      },
+      {
+        "search": "'Workflows are saved prompts that Agent can follow. To trigger a workflow, type \"/\" in Agent.'",
+        "replace": "'İş akışları, Ajanın izleyebileceği kayıtlı yönlendirmelerdir. Bir iş akışını tetiklemek için Ajanda \"/\" yazın.'"
+      },
+      {
+        "search": "title:\"Send Terminal to Chat\"",
+        "replace": "title:\"Terminali Sohbete Gönder\""
       }
     ],
     "nlsMessages": [
@@ -807,6 +843,18 @@
       {
         "index": 4199,
         "replace": "Hızlı Aç"
+      },
+      {
+        "index": 4206,
+        "replace": "Görünüm verisi sağlayabilecek kayıtlı bir veri sağlayıcı yok."
+      },
+      {
+        "index": 7897,
+        "replace": "Çalıştırma ve Hata Ayıklamayı özelleştirmek için [bir launch.json dosyası oluşturun]({0})."
+      },
+      {
+        "index": 7898,
+        "replace": "Çalıştırma ve Hata Ayıklamayı özelleştirmek için [bir klasör açın]({0}) ve bir launch.json dosyası oluşturun."
       },
       {
         "index": 11161,
@@ -1619,6 +1667,10 @@
       {
         "index": 11375,
         "replace": "Önizleme ayarı: Bu ayar, henüz geliştirme aşamasında olan ancak kullanıma hazır yeni bir özelliği denetler. Geri bildirimlerinizi bekleriz."
+      },
+      {
+        "index": 12967,
+        "replace": "Terminali Sohbete Gönder"
       }
     ]
   }

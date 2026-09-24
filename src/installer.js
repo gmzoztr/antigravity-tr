@@ -321,6 +321,24 @@ function patchGoogleCloudExtension(paths) {
 }
 
 /**
+ * Gömülü WSL uzantısındaki (default distro) metnini yamalar.
+ */
+function patchWslExtension(paths) {
+  if (!paths.ide || !paths.ide.appPath) return;
+  const wslFile = path.join(paths.ide.appPath, 'resources', 'app', 'extensions', 'antigravity-remote-wsl', 'dist', 'extension.js');
+  if (fs.existsSync(wslFile)) {
+    try {
+      try { fs.chmodSync(wslFile, 0o666); } catch (e) {}
+      let c = fs.readFileSync(wslFile, 'utf8');
+      if (c.includes('"default distro"')) {
+        c = c.replaceAll('"default distro"', '"Varsayılan Dağıtım"');
+        fs.writeFileSync(wslFile, c, 'utf8');
+      }
+    } catch (e) {}
+  }
+}
+
+/**
  * Tam kurulum yürütür.
  */
 function install() {
@@ -364,11 +382,12 @@ function install() {
     }
   }
 
-  // 5. Google Cloud ve Antigravity Eklenti Yamaları
+  // 5. Google Cloud, Antigravity ve WSL Eklenti Yamaları
   console.log('5. Eklenti arayüz dizeleri yamalanıyor...');
   patchGoogleCloudExtension(paths);
   patchAntigravityExtension(paths);
-  console.log('   [✓] (no project) -> (proje seçilmedi) ve Antigravity - Ayarlar güncellendi.');
+  patchWslExtension(paths);
+  console.log('   [✓] Eklenti arayüzleri ve durum çubuğu güncellendi.');
 
   // 6. Önbellek Temizleme
   console.log('6. V8 Bytecode ve Electron önbelleği temizleniyor...');
