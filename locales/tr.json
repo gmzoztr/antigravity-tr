@@ -712,7 +712,7 @@
       },
       {
         "search": "const d=wBa(String(t.defaultValue)),u=s.map(String).map(wBa).map((f,g)=>{const m=r[g]&&(o?cQn(r[g],!1):r[g]);return{text:n[g]?n[g]:f,detail:n[g]?f:\"\",description:m",
-        "replace": "const _eTr={\"off\":\"Kapalı\",\"on\":\"Açık\",\"afterDelay\":\"Gecikmeden Sonra\",\"onFocusChange\":\"Odak Değiştiğinde\",\"onWindowChange\":\"Pencere Değiştiğinde\",\"none\":\"Yok\",\"boundary\":\"Sınır\",\"selection\":\"Seçim\",\"trailing\":\"Sondaki\",\"all\":\"Tümü\",\"line\":\"Çizgi\",\"block\":\"Blok\",\"underline\":\"Alt Çizgi\",\"line-thin\":\"İnce Çizgi\",\"block-outline\":\"Blok Anahat\",\"underline-thin\":\"İnce Alt Çizgi\",\"blink\":\"Yanıp Sönme\",\"smooth\":\"Yumuşak\",\"phase\":\"Evre\",\"expand\":\"Genişleme\",\"solid\":\"Sabit\",\"never\":\"Asla\",\"near\":\"Yakın\",\"always\":\"Her Zaman\",\"first\":\"İlk\",\"recentlyUsed\":\"Son Kullanılan\",\"recentlyUsedByPrefix\":\"Önek ile Son Kullanılan\",\"onlySnippets\":\"Yalnızca Kod Parçacıkları\",\"wordWrapColumn\":\"Sözcük Kaydırma Sütunu\",\"bounded\":\"Sınırlı\",\"clickAndHover\":\"Tıklama ve Üzerine Gelme\",\"click\":\"Tıklama\",\"hover\":\"Üzerine Gelme\",\"active\":\"Etkin\",\"default\":\"Varsayılan\",\"top\":\"Üst\",\"bottom\":\"Alt\",\"left\":\"Sol\",\"right\":\"Sağ\",\"auto\":\"Otomatik\",\"hidden\":\"Gizli\",\"visible\":\"Görünür\",\"manual\":\"Manuel\",\"ask\":\"Sor\",\"prompt\":\"Sor\",\"true\":\"Açık\",\"false\":\"Kapalı\",\"inherit\":\"Devral\",\"terminal\":\"Terminal\",\"external\":\"Harici\",\"internal\":\"Dahili\",\"singleQuote\":\"Tek Tırnak\",\"doubleQuote\":\"Çift Tırnak\",\"same\":\"Aynı\",\"relative\":\"Göreceli\",\"absolute\":\"Mutlak\",\"autoDetect\":\"Otomatik Algıla\",\"offDOM\":\"Kapalı\",\"brackets\":\"Ayraçlar\",\"indentation\":\"Girinti\",\"words\":\"Sözcükler\",\"multiline\":\"Çok Satırlı\",\"gutter\":\"Kenar Boşluğu\",\"simple\":\"Basit\",\"advanced\":\"Gelişmiş\",\"disabled\":\"Devre Dışı\",\"enabled\":\"Etkin\",\"custom\":\"Özel\",\"horizontal\":\"Yatay\",\"vertical\":\"Dikey\",\"both\":\"Her İkisi\"},d=wBa(String(t.defaultValue)),u=s.map(String).map(wBa).map((f,g)=>{const m=r[g]&&(o?cQn(r[g],!1):r[g]);const _disp=n[g]?n[g]:(_eTr[f]||f);return{text:_disp,detail:n[g]?f:(_eTr[f]?f:\"\"),description:m"
+        "replace": "const _eTr={\"off\":\"Kapalı\",\"on\":\"Açık\",\"true\":\"Açık\",\"false\":\"Kapalı\",\"none\":\"Yok\",\"auto\":\"Otomatik\",\"default\":\"Varsayılan\",\"inherit\":\"Devral\",\"disabled\":\"Devre Dışı\",\"enabled\":\"Etkin\",\"active\":\"Etkin\",\"custom\":\"Özel\",\"afterDelay\":\"Gecikmeden Sonra\",\"onFocusChange\":\"Odak Değiştiğinde\",\"onWindowChange\":\"Pencere Değiştiğinde\",\"smart\":\"Akıllı\",\"subwordSmart\":\"Alt Sözcük Akıllı\",\"languageDefined\":\"Dile Göre Tanımlı\",\"beforeWhitespace\":\"Boşluk Öncesinde\",\"mouseover\":\"Fare Üzerinde\",\"click\":\"Tıklama\",\"hover\":\"Üzerine Gelme\",\"clickAndHover\":\"Tıklama ve Üzerine Gelme\",\"singleClick\":\"Tek Tıklama\",\"doubleClick\":\"Çift Tıklama\",\"boundary\":\"Sınır\",\"selection\":\"Seçim\",\"trailing\":\"Sondaki\",\"all\":\"Tümü\",\"never\":\"Asla\",\"near\":\"Yakın\",\"always\":\"Her Zaman\",\"first\":\"İlk\",\"recentlyUsed\":\"Son Kullanılan\",\"recentlyUsedByPrefix\":\"Önek ile Son Kullanılan\",\"onlySnippets\":\"Yalnızca Kod Parçacıkları\",\"wordWrapColumn\":\"Sözcük Kaydırma Sütunu\",\"bounded\":\"Sınırlı\",\"line\":\"Çizgi\",\"block\":\"Blok\",\"underline\":\"Alt Çizgi\",\"line-thin\":\"İnce Çizgi\",\"block-outline\":\"Blok Anahat\",\"underline-thin\":\"İnce Alt Çizgi\",\"blink\":\"Yanıp Sönme\",\"smooth\":\"Yumuşak\",\"phase\":\"Evre\",\"expand\":\"Genişleme\",\"solid\":\"Sabit\",\"top\":\"Üst\",\"bottom\":\"Alt\",\"left\":\"Sol\",\"right\":\"Sağ\",\"center\":\"Orta\",\"horizontal\":\"Yatay\",\"vertical\":\"Dikey\",\"both\":\"Her İkisi\",\"inline\":\"Satır İçi\",\"float\":\"Kayan\",\"sticky\":\"Sabit\",\"semiSticky\":\"Yarı Sabit\",\"hidden\":\"Gizli\",\"visible\":\"Görünür\",\"manual\":\"Manuel\",\"ask\":\"Sor\",\"prompt\":\"Sor\",\"promptUser\":\"Kullanıcıya Sor\",\"askUser\":\"Kullanıcıya Sor\",\"dontAsk\":\"Sorma\",\"ctrlCmd\":\"Ctrl / Cmd\",\"alt\":\"Alt\",\"terminal\":\"Terminal\",\"external\":\"Harici\",\"internal\":\"Dahili\",\"singleQuote\":\"Tek Tırnak\",\"doubleQuote\":\"Çift Tırnak\",\"quotes\":\"Tırnaklar\",\"brackets\":\"Ayraçlar\",\"bracketPairs\":\"Ayraç Çiftleri\",\"bracketPairsHorizontal\":\"Yatay Ayraç Çiftleri\",\"indentation\":\"Girinti\",\"autoIndent\":\"Otomatik Girintile\",\"words\":\"Sözcükler\",\"word\":\"Sözcük\",\"character\":\"Karakter\",\"multiline\":\"Çok Satırlı\",\"gutter\":\"Kenar Boşluğu\",\"same\":\"Aynı\",\"relative\":\"Göreceli\",\"absolute\":\"Mutlak\",\"autoDetect\":\"Otomatik Algıla\",\"offDOM\":\"Kapalı\",\"simple\":\"Basit\",\"advanced\":\"Gelişmiş\",\"file\":\"Dosya\",\"modifications\":\"Değişiklikler\",\"modificationsIfAvailable\":\"Kullanılabilir Olduğunda Değişiklikler\",\"compact\":\"Kompakt\",\"expanded\":\"Genişletilmiş\",\"collapsed\":\"Daraltılmış\",\"tree\":\"Ağaç Görünümü\",\"list\":\"Liste Görünümü\",\"sideBySide\":\"Yan Yana\",\"offScreen\":\"Ekran Dışı\",\"truncate\":\"Kısalt\",\"wrap\":\"Kaydır\",\"nowrap\":\"Kaydırma\",\"keep\":\"Koru\",\"remove\":\"Kaldır\",\"preserve\":\"Koru\",\"keepQuotes\":\"Tırnakları Koru\",\"warn\":\"Uyar\",\"error\":\"Hata\",\"info\":\"Bilgi\",\"warning\":\"Uyarı\",\"critical\":\"Kritik\",\"high\":\"Yüksek\",\"medium\":\"Orta\",\"low\":\"Düşük\",\"ignore\":\"Yoksay\",\"replace\":\"Değiştir\",\"full\":\"Tam\",\"partial\":\"Kısmi\",\"minimal\":\"Minimal\",\"standard\":\"Standart\",\"lineByLine\":\"Satır Satır\",\"allMatches\":\"Tüm Eşleşmeler\",\"preview\":\"Önizleme\",\"open\":\"Aç\",\"close\":\"Kapat\",\"show\":\"Göster\",\"hide\":\"Gizle\",\"reopen\":\"Yeniden Aç\",\"reload\":\"Yeniden Yükle\",\"restart\":\"Yeniden Başlat\",\"exact\":\"Birebir\",\"fuzzy\":\"Bulanık\",\"prefix\":\"Önek\",\"contains\":\"İçerir\"},d=wBa(String(t.defaultValue)),u=s.map(String).map(wBa).map((f,g)=>{const m=r[g]&&(o?cQn(r[g],!1):r[g]);const _disp=n[g]?n[g]:(_eTr[f]||(typeof f===\"string\"?f.replace(/([a-z])([A-Z])/g,\"$1 $2\").replace(/[-_]/g,\" \").replace(/^./,c=>c.toUpperCase()):f));return{text:_disp,detail:n[g]?f:(_eTr[f]?f:\"\"),description:m"
       }
     ],
     "nlsMessages": [
@@ -850,7 +850,7 @@
       },
       {
         "index": 11172,
-        "replace": "Ayarları ara"
+        "replace": "Ayarlarda Ara"
       },
       {
         "index": 11173,
@@ -862,7 +862,7 @@
       },
       {
         "index": 11175,
-        "replace": "Arama Girdisini Temizle"
+        "replace": "Arama Kutusunu Temizle"
       },
       {
         "index": 11176,
@@ -1418,75 +1418,83 @@
       },
       {
         "index": 11316,
-        "replace": "Ayar geçerli kapsamda yapılandırıldı."
+        "replace": "Varsayılan Değer: {0}"
       },
       {
         "index": 11317,
-        "replace": "Uzantıyı Göster"
+        "replace": "Değiştirildi"
       },
       {
         "index": 11318,
-        "replace": "Kapat"
+        "replace": "Başka Bir Hedefte Değiştirildi"
       },
       {
         "index": 11319,
-        "replace": "Ayarı Sıfırla"
+        "replace": "Ayar Denetimi Yapılandırıldı"
       },
       {
         "index": 11320,
-        "replace": "Doğrulama Hatası."
+        "replace": "Daha Fazla Eylem..."
       },
       {
         "index": 11321,
-        "replace": "Doğrulama Hatası."
+        "replace": "Ayarı Sıfırla"
       },
       {
         "index": 11322,
-        "replace": "Değiştirildi."
+        "replace": "Genişlet"
       },
       {
         "index": 11323,
-        "replace": "Ayarlar"
+        "replace": "Daralt"
       },
       {
         "index": 11324,
-        "replace": "Ayar Kimliğini Kopyala"
+        "replace": "Kaldır"
       },
       {
         "index": 11325,
-        "replace": "Ayarı JSON Olarak Kopyala"
+        "replace": "Öğe Ekle"
       },
       {
         "index": 11326,
-        "replace": "Ayarı URL Olarak Kopyala"
+        "replace": "Öğe Düzenle"
       },
       {
         "index": 11327,
-        "replace": "Bu Ayarı Eşitle"
-      },
-      {
-        "index": 11328,
-        "replace": "Ayarı Tüm Profillere Uygula"
-      },
-      {
-        "index": 11329,
-        "replace": "Tamam"
-      },
-      {
-        "index": 11330,
-        "replace": "İptal"
-      },
-      {
-        "index": 11333,
         "replace": "Öğeyi Kaldır"
       },
       {
+        "index": 11328,
+        "replace": "Tamam"
+      },
+      {
+        "index": 11329,
+        "replace": "İptal"
+      },
+      {
+        "index": 11330,
+        "replace": "Sıfırla"
+      },
+      {
+        "index": 11331,
+        "replace": "Varsayılan Değere Sıfırla"
+      },
+      {
+        "index": 11332,
+        "replace": "Kopyala"
+      },
+      {
+        "index": 11333,
+        "replace": "Ayar Kimliğini Kopyala"
+      },
+      {
         "index": 11334,
-        "replace": "Öğeyi Düzenle"
+        "replace": "Ayar JSON Olarak Kopyala"
       },
       {
         "index": 11335,
-        "replace": "Öğe Ekle"
+        "replace": "Ayar URL'sini Kopyala"
       },
       {
         "index": 11336,
