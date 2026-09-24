@@ -712,7 +712,7 @@
       },
       {
         "search": "const d=wBa(String(t.defaultValue)),u=s.map(String).map(wBa).map((f,g)=>{const m=r[g]&&(o?cQn(r[g],!1):r[g]);return{text:n[g]?n[g]:f,detail:n[g]?f:\"\",description:m",
-        "replace": "const _eTr={\"off\":\"kapalı\",\"on\":\"açık\",\"afterDelay\":\"gecikmeden sonra\",\"onFocusChange\":\"odak değiştiğinde\",\"onWindowChange\":\"pencere değiştiğinde\",\"none\":\"yok\",\"boundary\":\"sınır\",\"selection\":\"seçim\",\"trailing\":\"sondaki\",\"all\":\"tümü\",\"line\":\"çizgi\",\"block\":\"blok\",\"underline\":\"alt çizgi\",\"line-thin\":\"ince çizgi\",\"block-outline\":\"blok anahat\",\"underline-thin\":\"ince alt çizgi\",\"blink\":\"yanıp sönme\",\"smooth\":\"yumuşak\",\"phase\":\"evre\",\"expand\":\"genişleme\",\"solid\":\"sabit\",\"never\":\"asla\",\"near\":\"yakın\",\"always\":\"her zaman\",\"first\":\"ilk\",\"recentlyUsed\":\"son kullanılan\",\"recentlyUsedByPrefix\":\"önek ile son kullanılan\",\"onlySnippets\":\"yalnızca kod parçacıkları\",\"wordWrapColumn\":\"sözcük kaydırma sütunu\",\"bounded\":\"sınırlı\",\"clickAndHover\":\"tıklama ve üzerine gelme\",\"click\":\"tıklama\",\"hover\":\"üzerine gelme\",\"active\":\"etkin\",\"default\":\"varsayılan\",\"top\":\"üst\",\"bottom\":\"alt\",\"left\":\"sol\",\"right\":\"sağ\",\"auto\":\"otomatik\",\"hidden\":\"gizli\",\"visible\":\"görünür\",\"manual\":\"manuel\",\"ask\":\"sor\",\"prompt\":\"sor\"},d=wBa(String(t.defaultValue)),u=s.map(String).map(wBa).map((f,g)=>{const m=r[g]&&(o?cQn(r[g],!1):r[g]);const _disp=n[g]?n[g]:(_eTr[f]||f);return{text:_disp,detail:n[g]?f:(_eTr[f]?f:\"\"),description:m"
+        "replace": "const _eTr={\"off\":\"Kapalı\",\"on\":\"Açık\",\"afterDelay\":\"Gecikmeden Sonra\",\"onFocusChange\":\"Odak Değiştiğinde\",\"onWindowChange\":\"Pencere Değiştiğinde\",\"none\":\"Yok\",\"boundary\":\"Sınır\",\"selection\":\"Seçim\",\"trailing\":\"Sondaki\",\"all\":\"Tümü\",\"line\":\"Çizgi\",\"block\":\"Blok\",\"underline\":\"Alt Çizgi\",\"line-thin\":\"İnce Çizgi\",\"block-outline\":\"Blok Anahat\",\"underline-thin\":\"İnce Alt Çizgi\",\"blink\":\"Yanıp Sönme\",\"smooth\":\"Yumuşak\",\"phase\":\"Evre\",\"expand\":\"Genişleme\",\"solid\":\"Sabit\",\"never\":\"Asla\",\"near\":\"Yakın\",\"always\":\"Her Zaman\",\"first\":\"İlk\",\"recentlyUsed\":\"Son Kullanılan\",\"recentlyUsedByPrefix\":\"Önek ile Son Kullanılan\",\"onlySnippets\":\"Yalnızca Kod Parçacıkları\",\"wordWrapColumn\":\"Sözcük Kaydırma Sütunu\",\"bounded\":\"Sınırlı\",\"clickAndHover\":\"Tıklama ve Üzerine Gelme\",\"click\":\"Tıklama\",\"hover\":\"Üzerine Gelme\",\"active\":\"Etkin\",\"default\":\"Varsayılan\",\"top\":\"Üst\",\"bottom\":\"Alt\",\"left\":\"Sol\",\"right\":\"Sağ\",\"auto\":\"Otomatik\",\"hidden\":\"Gizli\",\"visible\":\"Görünür\",\"manual\":\"Manuel\",\"ask\":\"Sor\",\"prompt\":\"Sor\",\"true\":\"Açık\",\"false\":\"Kapalı\",\"inherit\":\"Devral\",\"terminal\":\"Terminal\",\"external\":\"Harici\",\"internal\":\"Dahili\",\"singleQuote\":\"Tek Tırnak\",\"doubleQuote\":\"Çift Tırnak\",\"same\":\"Aynı\",\"relative\":\"Göreceli\",\"absolute\":\"Mutlak\",\"autoDetect\":\"Otomatik Algıla\",\"offDOM\":\"Kapalı\",\"brackets\":\"Ayraçlar\",\"indentation\":\"Girinti\",\"words\":\"Sözcükler\",\"multiline\":\"Çok Satırlı\",\"gutter\":\"Kenar Boşluğu\",\"simple\":\"Basit\",\"advanced\":\"Gelişmiş\",\"disabled\":\"Devre Dışı\",\"enabled\":\"Etkin\",\"custom\":\"Özel\",\"horizontal\":\"Yatay\",\"vertical\":\"Dikey\",\"both\":\"Her İkisi\"},d=wBa(String(t.defaultValue)),u=s.map(String).map(wBa).map((f,g)=>{const m=r[g]&&(o?cQn(r[g],!1):r[g]);const _disp=n[g]?n[g]:(_eTr[f]||f);return{text:_disp,detail:n[g]?f:(_eTr[f]?f:\"\"),description:m"
       }
     ],
     "nlsMessages": [
@@ -1406,7 +1406,7 @@
       },
       {
         "index": 11313,
-        "replace": "settings.json dosyasında düzenle"
+        "replace": "settings.json Dosyasında Düzenle"
       },
       {
         "index": 11314,
@@ -1414,7 +1414,7 @@
       },
       {
         "index": 11315,
-        "replace": "varsayılan"
+        "replace": "Varsayılan"
       },
       {
         "index": 11316,
