@@ -717,6 +717,94 @@
     ],
     "nlsMessages": [
       {
+        "index": 3141,
+        "replace": "&&Geri Bildirimde Bulun"
+      },
+      {
+        "index": 3154,
+        "replace": "Geri Bildirimde Bulun"
+      },
+      {
+        "index": 3155,
+        "replace": "Tanılama Bilgilerini İndir"
+      },
+      {
+        "index": 3156,
+        "replace": "Tanılama Bilgilerini İndir"
+      },
+      {
+        "index": 3308,
+        "replace": "Hızlı Aç"
+      },
+      {
+        "index": 3406,
+        "replace": "İkincil Etkinlik Çubuğu Pozisyonu"
+      },
+      {
+        "index": 3407,
+        "replace": "&&Varsayılan"
+      },
+      {
+        "index": 3408,
+        "replace": "Varsayılan"
+      },
+      {
+        "index": 3409,
+        "replace": "&&Üst"
+      },
+      {
+        "index": 3410,
+        "replace": "Üst"
+      },
+      {
+        "index": 3411,
+        "replace": "&&Alt"
+      },
+      {
+        "index": 3412,
+        "replace": "Alt"
+      },
+      {
+        "index": 3413,
+        "replace": "&&Gizli"
+      },
+      {
+        "index": 3414,
+        "replace": "Gizli"
+      },
+      {
+        "index": 3415,
+        "replace": "İkincil Etkinlik Çubuğu Pozisyonu"
+      },
+      {
+        "index": 3416,
+        "replace": "İkincil Etkinlik Çubuğu Pozisyonu"
+      },
+      {
+        "index": 3417,
+        "replace": "İkincil Etkinlik Çubuğu Pozisyonu"
+      },
+      {
+        "index": 3418,
+        "replace": "İkincil Etkinlik Çubuğunu Yan Tarafa Taşı"
+      },
+      {
+        "index": 3419,
+        "replace": "İkincil Etkinlik Çubuğunu En Üste Taşı"
+      },
+      {
+        "index": 3420,
+        "replace": "İkincil Etkinlik Çubuğunu Alta Taşı"
+      },
+      {
+        "index": 3421,
+        "replace": "İkincil Etkinlik Çubuğunu Gizle"
+      },
+      {
+        "index": 4027,
+        "replace": "Profil"
+      },
+      {
         "index": 4199,
         "replace": "Hızlı Aç"
       },
