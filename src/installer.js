@@ -135,7 +135,21 @@ function enrichLanguagePackFile(mainJsonPath) {
     aux.positionAuxiliaryActivityBarDefault = 'İkincil Etkinlik Çubuğunu Yan Tarafa Taşı';
     aux.positionAuxiliaryActivityBarTop = 'İkincil Etkinlik Çubuğunu En Üste Taşı';
     aux.positionAuxiliaryActivityBarBottom = 'İkincil Etkinlik Çubuğunu Alta Taşı';
-    aux.hideAuxiliaryActivityBar = 'İkincil Etkinlik Çubuğunu Gizle';
+    // 4. Birincil Kenar Çubuğu (Primary Side Bar Menus)
+    if (!data.contents['vs/workbench/browser/parts/sidebar/sidebarPart']) {
+      data.contents['vs/workbench/browser/parts/sidebar/sidebarPart'] = {};
+    }
+    const sb = data.contents['vs/workbench/browser/parts/sidebar/sidebarPart'];
+    sb.showSideBar = 'Birincil Kenar Çubuğunu Göster';
+    sb.hideSideBar = 'Birincil Kenar Çubuğunu Gizle';
+    sb.sideBar = 'Birincil Kenar Çubuğu';
+    sb.miSidebar = '&&Birincil Kenar Çubuğu';
+    sb.toggleSideBar = 'Birincil Kenar Çubuğunu Aç/Kapat';
+    sb.moveSideBarRight = 'Birincil Kenar Çubuğunu Sağa Taşı';
+    sb.moveSideBarLeft = 'Birincil Kenar Çubuğunu Sola Taşı';
+    sb.miMoveSideBarRight = '&&Birincil Kenar Çubuğunu Sağa Taşı';
+    sb.miMoveSideBarLeft = '&&Birincil Kenar Çubuğunu Sola Taşı';
+    sb.toggleSideBarPosition = 'Birincil Kenar Çubuğu Pozisyonunu Değiştir';
 
     fs.writeFileSync(mainJsonPath, JSON.stringify(data), 'utf8');
   } catch (e) {}

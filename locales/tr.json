@@ -749,6 +749,10 @@
       {
         "search": "title:\"Send Terminal to Chat\"",
         "replace": "title:\"Terminali Sohbete Gönder\""
+      },
+      {
+        "search": "prompt:\"Enter workflow name\",placeHolder:\"e.g. debug-memory-leak\",validateInput:async n=>Axa(n)?null:\"Invalid workflow name. Only lowercase letters, numbers, and hyphens are allowed.\"",
+        "replace": "prompt:\"İş akışı adını girin\",placeHolder:\"örn. bellek-sızıntısı-ayıklama\",validateInput:async n=>Axa(n)?null:\"Geçersiz iş akışı adı. Yalnızca küçük harfler, sayılar ve kısa çizgiler kullanılabilir.\""
       }
     ],
     "nlsMessages": [
@@ -767,6 +771,82 @@
       {
         "index": 3156,
         "replace": "Tanılama Bilgilerini İndir"
+      },
+      {
+        "index": 3176,
+        "replace": "Birincil Kenar Çubuğu Pozisyonunu Değiştir"
+      },
+      {
+        "index": 3179,
+        "replace": "Birincil Kenar Çubuğunu Sağa Taşı"
+      },
+      {
+        "index": 3180,
+        "replace": "Birincil Kenar Çubuğunu Sola Taşı"
+      },
+      {
+        "index": 3187,
+        "replace": "&&Birincil Kenar Çubuğunu Sağa Taşı"
+      },
+      {
+        "index": 3188,
+        "replace": "&&Birincil Kenar Çubuğunu Sola Taşı"
+      },
+      {
+        "index": 3191,
+        "replace": "Birincil Kenar Çubuğunu Gizle"
+      },
+      {
+        "index": 3192,
+        "replace": "Birincil Kenar Çubuğunu Gizle"
+      },
+      {
+        "index": 3193,
+        "replace": "Birincil Kenar Çubuğunu Göster"
+      },
+      {
+        "index": 3194,
+        "replace": "Birincil Kenar Çubuğu"
+      },
+      {
+        "index": 3195,
+        "replace": "&&Birincil Kenar Çubuğu"
+      },
+      {
+        "index": 3197,
+        "replace": "Birincil Kenar Çubuğu gizlendi"
+      },
+      {
+        "index": 3198,
+        "replace": "Birincil Kenar Çubuğu gösterildi"
+      },
+      {
+        "index": 3199,
+        "replace": "Birincil Kenar Çubuğunu Gizle"
+      },
+      {
+        "index": 3200,
+        "replace": "Birincil Kenar Çubuğunu Aç/Kapat"
+      },
+      {
+        "index": 3201,
+        "replace": "Birincil Kenar Çubuğunu Aç/Kapat"
+      },
+      {
+        "index": 3254,
+        "replace": "Birincil Kenar Çubuğunu Sağa Taşı"
+      },
+      {
+        "index": 3255,
+        "replace": "Birincil Kenar Çubuğunu Sola Taşı"
+      },
+      {
+        "index": 3256,
+        "replace": "Birincil Kenar Çubuğu Pozisyonunu Değiştir"
+      },
+      {
+        "index": 3258,
+        "replace": "Birincil Kenar Çubuğu Görünürlüğünü Aç/Kapat"
       },
       {
         "index": 3308,
@@ -837,8 +917,84 @@
         "replace": "İkincil Etkinlik Çubuğunu Gizle"
       },
       {
+        "index": 3428,
+        "replace": "İkincil Kenar Çubuğunu Gizle"
+      },
+      {
+        "index": 3429,
+        "replace": "İkincil Kenar Çubuğunu Göster"
+      },
+      {
+        "index": 3430,
+        "replace": "İkincil Kenar Çubuğunu Gizle"
+      },
+      {
+        "index": 3431,
+        "replace": "&&İkincil Kenar Çubuğu"
+      },
+      {
+        "index": 3433,
+        "replace": "İkincil Kenar Çubuğu gizlendi"
+      },
+      {
+        "index": 3434,
+        "replace": "İkincil Kenar Çubuğu gösterildi"
+      },
+      {
+        "index": 3435,
+        "replace": "İkincil Kenar Çubuğunu Gizle"
+      },
+      {
+        "index": 3436,
+        "replace": "İkincil Kenar Çubuğunu Aç/Kapat"
+      },
+      {
+        "index": 3437,
+        "replace": "İkincil Kenar Çubuğunu Aç/Kapat"
+      },
+      {
+        "index": 3440,
+        "replace": "İkincil Kenar Çubuğu Görünürlüğünü Aç/Kapat"
+      },
+      {
+        "index": 3441,
+        "replace": "İkincil Kenar Çubuğunu Gizle"
+      },
+      {
+        "index": 3442,
+        "replace": "İkincil Kenar Çubuğuna Odaklan"
+      },
+      {
+        "index": 3446,
+        "replace": "İkincil Kenar Çubuğunu Ekranı Kapla"
+      },
+      {
+        "index": 3447,
+        "replace": "İkincil Kenar Çubuğunu Önceki Boyutuna Döndür"
+      },
+      {
+        "index": 3452,
+        "replace": "İkincil Kenar Çubuğunu Sola Taşı"
+      },
+      {
+        "index": 3453,
+        "replace": "İkincil Kenar Çubuğunu Sağa Taşı"
+      },
+      {
+        "index": 3454,
+        "replace": "İkincil Kenar Çubuğunu Gizle"
+      },
+      {
         "index": 4027,
         "replace": "Profil"
+      },
+      {
+        "index": 4155,
+        "replace": "Birincil Kenar Çubuğunu Kapat"
+      },
+      {
+        "index": 4156,
+        "replace": "Birincil Kenar Çubuğuna Odaklan"
       },
       {
         "index": 4199,
