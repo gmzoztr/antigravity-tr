@@ -8,19 +8,15 @@ const text = [
   '',
   '---',
   '',
-  '## 24.09.2026 - Özel Paneller, Ajan Özelleştirmeleri ve Terminal Entegrasyonu Yerelleştirmesi',
-  '- **Kullanıcı Geri Bildirimi:** Çalıştırma & Hata Ayıklama, Uzak Gezgin WSL, Ajan Özelleştirmeleri, İş Akışları/Workflows ve Terminal @ butonu eksiklikleri ve bunların neden eksik kaldığının açıklanması talebi.',
-  '- **Teknik Nedenler:**',
-  '  1. Ajan paneli, Özelleştirmeler, Workflows ve Terminal @ eylemi Microsoft açık kaynak kodunda olmayıp doğrudan Google tarafından React ile Antigravity IDE içerisine geliştirildiği için resmi dil paketinde yer almaz.',
-  '  2. Run & Debug ve Uzak Gezgin metinleri dinamik parametreli ({0}) NLS dizileridir; Google paketleyicisi dil paketiyle eşleme bağını kopardığı için varsayılan İngilizceye düşer.',
-  '  3. WSL default distro etiketi gömülü antigravity-remote-wsl eklentisinde hardcoded olarak kodlanmıştır.',
+  '## 24.09.2026 - İş Akışı Giriş İstemi ve Aktivite Çubuğu Kenar Çubuğu Menüsü Düzeltmesi',
+  '- **Kullanıcı Geri Bildirimi:**',
+  '  1. İş Akışları sayfasında yeni iş akışı eklerken Enter workflow name promptunun İngilizce olması.',
+  '  2. Sol kenar çubuğuna sağ tıklandığında menüde Show Primary Side Bar öğesinin İngilizce kalması.',
   '- **Uygulanan Çözümler:**',
-  '  1. Run & Debug (NLS 7897, 7898): Çalıştırma ve Hata Ayıklamayı özelleştirmek için [bir klasör açın]({0}) ve bir launch.json dosyası oluşturun.',
-  '  2. Uzak Gezgin (NLS 4206 + WSL Eklentisi): Görünüm verisi sağlayabilecek kayıtlı bir veri sağlayıcı yok. ve Varsayılan Dağıtım.',
-  '  3. Ajan Özelleştirmeleri: Daha iyi ve kişiselleştirilmiş bir deneyim için Ajanı özelleştirin., Kurallar, Ajanın davranışını yönlendirmeye yardımcı olur., Kuralları Yenile, + Genel.',
-  '  4. İş Akışları Sekmesi: Workflows -> İş Akışları, İş Akışlarını Yenile, İş akışları, Ajanın izleyebileceği kayıtlı yönlendirmelerdir. Bir iş akışını tetiklemek için Ajanda "/" yazın.',
-  '  5. Terminal @ Butonu: Terminali Sohbete Gönder (Ctrl+L).',
-  '  6. Bütünlük: V8 modül derlemesi tam geçerli, product.json SHA-256 hash doğrulandı, önbellekler temizlendi.'
+  '  1. createWorkflow metodu: prompt: "İş akışı adını girin", placeHolder: "örn. bellek-sızıntısı-ayıklama", validateInput: "Geçersiz iş akışı adı. Yalnızca küçük harfler, sayılar ve kısa çizgiler kullanılabilir."',
+  '  2. Kenar Çubuğu NLS kuralları (3176-3258, 3428-3454): Show Primary Side Bar -> Birincil Kenar Çubuğunu Göster, Hide Primary Side Bar -> Birincil Kenar Çubuğunu Gizle, Toggle Primary Side Bar -> Birincil Kenar Çubuğunu Aç/Kapat, Sağa/Sola Taşı vb.',
+  '  3. enrichLanguagePackFile fonksiyonuna sidebarPart modülü entegre edildi.',
+  '  4. V8 modül derlemesi doğrulandı (HATASIZ), product.json SHA-256 hash eşitlendi, önbellekler temizlendi.'
 ].join('\n');
 
 fs.appendFileSync(fullPath, text, 'utf8');

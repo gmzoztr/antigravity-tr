@@ -1,0 +1,3917 @@
+[
+  {
+    "full": "contributions",
+    "leaf": "contributions",
+    "label": "Contributions"
+  },
+  {
+    "full": "action.selectAll",
+    "leaf": "selectAll",
+    "label": "Select All"
+  },
+  {
+    "full": "modesRegistry",
+    "leaf": "modesRegistry",
+    "label": "Modes Registry"
+  },
+  {
+    "full": "unicodeHighlight.ambiguousCharacters",
+    "leaf": "ambiguousCharacters",
+    "label": "Ambiguous Characters"
+  },
+  {
+    "full": "unicodeHighlight.invisibleCharacters",
+    "leaf": "invisibleCharacters",
+    "label": "Invisible Characters"
+  },
+  {
+    "full": "language.brackets",
+    "leaf": "brackets",
+    "label": "Brackets"
+  },
+  {
+    "full": "language.colorizedBracketPairs",
+    "leaf": "colorizedBracketPairs",
+    "label": "Colorized Bracket Pairs"
+  },
+  {
+    "full": "contrib.markerDecorations",
+    "leaf": "markerDecorations",
+    "label": "Marker Decorations"
+  },
+  {
+    "full": "comments.insertSpace",
+    "leaf": "insertSpace",
+    "label": "Insert Space"
+  },
+  {
+    "full": "comments.ignoreEmptyLines",
+    "leaf": "ignoreEmptyLines",
+    "label": "Ignore Empty Lines"
+  },
+  {
+    "full": "find.cursorMoveOnType",
+    "leaf": "cursorMoveOnType",
+    "label": "Cursor Move On Type"
+  },
+  {
+    "full": "find.seedSearchStringFromSelection",
+    "leaf": "seedSearchStringFromSelection",
+    "label": "Seed Search String From Selection"
+  },
+  {
+    "full": "find.autoFindInSelection",
+    "leaf": "autoFindInSelection",
+    "label": "Auto Find In Selection"
+  },
+  {
+    "full": "find.globalFindClipboard",
+    "leaf": "globalFindClipboard",
+    "label": "Global Find Clipboard"
+  },
+  {
+    "full": "find.addExtraSpaceOnTop",
+    "leaf": "addExtraSpaceOnTop",
+    "label": "Add Extra Space On Top"
+  },
+  {
+    "full": "find.loop",
+    "leaf": "loop",
+    "label": "Loop"
+  },
+  {
+    "full": "find.history",
+    "leaf": "history",
+    "label": "History"
+  },
+  {
+    "full": "find.replaceHistory",
+    "leaf": "replaceHistory",
+    "label": "Replace History"
+  },
+  {
+    "full": "find.findOnType",
+    "leaf": "findOnType",
+    "label": "Find On Type"
+  },
+  {
+    "full": "action.goToReferences",
+    "leaf": "goToReferences",
+    "label": "Go To References"
+  },
+  {
+    "full": "action.goToReferences",
+    "leaf": "goToReferences",
+    "label": "Go To References"
+  },
+  {
+    "full": "action.goToReferences",
+    "leaf": "goToReferences",
+    "label": "Go To References"
+  },
+  {
+    "full": "action.referenceSearch.trigger",
+    "leaf": "trigger",
+    "label": "Trigger"
+  },
+  {
+    "full": "action.goToReferences",
+    "leaf": "goToReferences",
+    "label": "Go To References"
+  },
+  {
+    "full": "action.peekImplementation",
+    "leaf": "peekImplementation",
+    "label": "Peek Implementation"
+  },
+  {
+    "full": "action.goToImplementation",
+    "leaf": "goToImplementation",
+    "label": "Go To Implementation"
+  },
+  {
+    "full": "action.peekTypeDefinition",
+    "leaf": "peekTypeDefinition",
+    "label": "Peek Type Definition"
+  },
+  {
+    "full": "action.goToTypeDefinition",
+    "leaf": "goToTypeDefinition",
+    "label": "Go To Type Definition"
+  },
+  {
+    "full": "action.peekDeclaration",
+    "leaf": "peekDeclaration",
+    "label": "Peek Declaration"
+  },
+  {
+    "full": "action.revealDeclaration",
+    "leaf": "revealDeclaration",
+    "label": "Reveal Declaration"
+  },
+  {
+    "full": "action.peekDefinition",
+    "leaf": "peekDefinition",
+    "label": "Peek Definition"
+  },
+  {
+    "full": "action.revealDefinitionAside",
+    "leaf": "revealDefinitionAside",
+    "label": "Reveal Definition Aside"
+  },
+  {
+    "full": "action.revealDefinition",
+    "leaf": "revealDefinition",
+    "label": "Reveal Definition"
+  },
+  {
+    "full": "gotoLocation.multiple",
+    "leaf": "multiple",
+    "label": "Multiple"
+  },
+  {
+    "full": "gotoLocation.multipleDefinitions",
+    "leaf": "multipleDefinitions",
+    "label": "Multiple Definitions"
+  },
+  {
+    "full": "gotoLocation.multipleTypeDefinitions",
+    "leaf": "multipleTypeDefinitions",
+    "label": "Multiple Type Definitions"
+  },
+  {
+    "full": "gotoLocation.multipleDeclarations",
+    "leaf": "multipleDeclarations",
+    "label": "Multiple Declarations"
+  },
+  {
+    "full": "gotoLocation.multipleImplementations",
+    "leaf": "multipleImplementations",
+    "label": "Multiple Implementations"
+  },
+  {
+    "full": "gotoLocation.multipleReferences",
+    "leaf": "multipleReferences",
+    "label": "Multiple References"
+  },
+  {
+    "full": "gotoLocation.alternativeDefinitionCommand",
+    "leaf": "alternativeDefinitionCommand",
+    "label": "Alternative Definition Command"
+  },
+  {
+    "full": "gotoLocation.alternativeTypeDefinitionCommand",
+    "leaf": "alternativeTypeDefinitionCommand",
+    "label": "Alternative Type Definition Command"
+  },
+  {
+    "full": "gotoLocation.alternativeDeclarationCommand",
+    "leaf": "alternativeDeclarationCommand",
+    "label": "Alternative Declaration Command"
+  },
+  {
+    "full": "gotoLocation.alternativeImplementationCommand",
+    "leaf": "alternativeImplementationCommand",
+    "label": "Alternative Implementation Command"
+  },
+  {
+    "full": "gotoLocation.alternativeReferenceCommand",
+    "leaf": "alternativeReferenceCommand",
+    "label": "Alternative Reference Command"
+  },
+  {
+    "full": "hover.delay",
+    "leaf": "delay",
+    "label": "Delay"
+  },
+  {
+    "full": "hover.sticky",
+    "leaf": "sticky",
+    "label": "Sticky"
+  },
+  {
+    "full": "hover.hidingDelay",
+    "leaf": "hidingDelay",
+    "label": "Hiding Delay"
+  },
+  {
+    "full": "hover.above",
+    "leaf": "above",
+    "label": "Above"
+  },
+  {
+    "full": "stickyScroll.maxLineCount",
+    "leaf": "maxLineCount",
+    "label": "Max Line Count"
+  },
+  {
+    "full": "stickyScroll.defaultModel",
+    "leaf": "defaultModel",
+    "label": "Default Model"
+  },
+  {
+    "full": "stickyScroll.scrollWithEditor",
+    "leaf": "scrollWithEditor",
+    "label": "Scroll With Editor"
+  },
+  {
+    "full": "inlayHints.maximumLength",
+    "leaf": "maximumLength",
+    "label": "Maximum Length"
+  },
+  {
+    "full": "minimap.autohide",
+    "leaf": "autohide",
+    "label": "Autohide"
+  },
+  {
+    "full": "minimap.size",
+    "leaf": "size",
+    "label": "Size"
+  },
+  {
+    "full": "minimap.side",
+    "leaf": "side",
+    "label": "Side"
+  },
+  {
+    "full": "minimap.showSlider",
+    "leaf": "showSlider",
+    "label": "Show Slider"
+  },
+  {
+    "full": "minimap.scale",
+    "leaf": "scale",
+    "label": "Scale"
+  },
+  {
+    "full": "minimap.renderCharacters",
+    "leaf": "renderCharacters",
+    "label": "Render Characters"
+  },
+  {
+    "full": "minimap.maxColumn",
+    "leaf": "maxColumn",
+    "label": "Max Column"
+  },
+  {
+    "full": "minimap.showRegionSectionHeaders",
+    "leaf": "showRegionSectionHeaders",
+    "label": "Show Region Section Headers"
+  },
+  {
+    "full": "minimap.showMarkSectionHeaders",
+    "leaf": "showMarkSectionHeaders",
+    "label": "Show Mark Section Headers"
+  },
+  {
+    "full": "minimap.markSectionHeaderRegex",
+    "leaf": "markSectionHeaderRegex",
+    "label": "Mark Section Header Regex"
+  },
+  {
+    "full": "minimap.sectionHeaderFontSize",
+    "leaf": "sectionHeaderFontSize",
+    "label": "Section Header Font Size"
+  },
+  {
+    "full": "minimap.sectionHeaderLetterSpacing",
+    "leaf": "sectionHeaderLetterSpacing",
+    "label": "Section Header Letter Spacing"
+  },
+  {
+    "full": "padding.top",
+    "leaf": "top",
+    "label": "Top"
+  },
+  {
+    "full": "padding.bottom",
+    "leaf": "bottom",
+    "label": "Bottom"
+  },
+  {
+    "full": "parameterHints.cycle",
+    "leaf": "cycle",
+    "label": "Cycle"
+  },
+  {
+    "full": "scrollbar.vertical",
+    "leaf": "vertical",
+    "label": "Vertical"
+  },
+  {
+    "full": "scrollbar.horizontal",
+    "leaf": "horizontal",
+    "label": "Horizontal"
+  },
+  {
+    "full": "scrollbar.verticalScrollbarSize",
+    "leaf": "verticalScrollbarSize",
+    "label": "Vertical Scrollbar Size"
+  },
+  {
+    "full": "scrollbar.horizontalScrollbarSize",
+    "leaf": "horizontalScrollbarSize",
+    "label": "Horizontal Scrollbar Size"
+  },
+  {
+    "full": "scrollbar.scrollByPage",
+    "leaf": "scrollByPage",
+    "label": "Scroll By Page"
+  },
+  {
+    "full": "scrollbar.ignoreHorizontalScrollbarInContentHeight",
+    "leaf": "ignoreHorizontalScrollbarInContentHeight",
+    "label": "Ignore Horizontal Scrollbar In Content Height"
+  },
+  {
+    "full": "unicodeHighlight.allowedCharacters",
+    "leaf": "allowedCharacters",
+    "label": "Allowed Characters"
+  },
+  {
+    "full": "unicodeHighlight.invisibleCharacters",
+    "leaf": "invisibleCharacters",
+    "label": "Invisible Characters"
+  },
+  {
+    "full": "unicodeHighlight.nonBasicASCII",
+    "leaf": "nonBasicASCII",
+    "label": "Non Basic ASCII"
+  },
+  {
+    "full": "unicodeHighlight.ambiguousCharacters",
+    "leaf": "ambiguousCharacters",
+    "label": "Ambiguous Characters"
+  },
+  {
+    "full": "unicodeHighlight.includeComments",
+    "leaf": "includeComments",
+    "label": "Include Comments"
+  },
+  {
+    "full": "unicodeHighlight.includeStrings",
+    "leaf": "includeStrings",
+    "label": "Include Strings"
+  },
+  {
+    "full": "unicodeHighlight.allowedLocales",
+    "leaf": "allowedLocales",
+    "label": "Allowed Locales"
+  },
+  {
+    "full": "inlineSuggest.showToolbar",
+    "leaf": "showToolbar",
+    "label": "Show Toolbar"
+  },
+  {
+    "full": "inlineSuggest.syntaxHighlightingEnabled",
+    "leaf": "syntaxHighlightingEnabled",
+    "label": "Syntax Highlighting Enabled"
+  },
+  {
+    "full": "inlineSuggest.suppressSuggestions",
+    "leaf": "suppressSuggestions",
+    "label": "Suppress Suggestions"
+  },
+  {
+    "full": "inlineSuggest.suppressInSnippetMode",
+    "leaf": "suppressInSnippetMode",
+    "label": "Suppress In Snippet Mode"
+  },
+  {
+    "full": "inlineSuggest.minShowDelay",
+    "leaf": "minShowDelay",
+    "label": "Min Show Delay"
+  },
+  {
+    "full": "inlineSuggest.experimental.suppressInlineSuggestions",
+    "leaf": "suppressInlineSuggestions",
+    "label": "Suppress Inline Suggestions"
+  },
+  {
+    "full": "inlineSuggest.experimental.emptyResponseInformation",
+    "leaf": "emptyResponseInformation",
+    "label": "Empty Response Information"
+  },
+  {
+    "full": "inlineSuggest.triggerCommandOnProviderChange",
+    "leaf": "triggerCommandOnProviderChange",
+    "label": "Trigger Command On Provider Change"
+  },
+  {
+    "full": "inlineSuggest.experimental.showOnSuggestConflict",
+    "leaf": "showOnSuggestConflict",
+    "label": "Show On Suggest Conflict"
+  },
+  {
+    "full": "inlineSuggest.edits.allowCodeShifting",
+    "leaf": "allowCodeShifting",
+    "label": "Allow Code Shifting"
+  },
+  {
+    "full": "inlineSuggest.edits.showLongDistanceHint",
+    "leaf": "showLongDistanceHint",
+    "label": "Show Long Distance Hint"
+  },
+  {
+    "full": "inlineSuggest.edits.renderSideBySide",
+    "leaf": "renderSideBySide",
+    "label": "Render Side By Side"
+  },
+  {
+    "full": "inlineSuggest.edits.showCollapsed",
+    "leaf": "showCollapsed",
+    "label": "Show Collapsed"
+  },
+  {
+    "full": "guides.bracketPairs",
+    "leaf": "bracketPairs",
+    "label": "Bracket Pairs"
+  },
+  {
+    "full": "guides.bracketPairsHorizontal",
+    "leaf": "bracketPairsHorizontal",
+    "label": "Bracket Pairs Horizontal"
+  },
+  {
+    "full": "guides.highlightActiveBracketPair",
+    "leaf": "highlightActiveBracketPair",
+    "label": "Highlight Active Bracket Pair"
+  },
+  {
+    "full": "guides.indentation",
+    "leaf": "indentation",
+    "label": "Indentation"
+  },
+  {
+    "full": "guides.highlightActiveIndentation",
+    "leaf": "highlightActiveIndentation",
+    "label": "Highlight Active Indentation"
+  },
+  {
+    "full": "suggest.insertMode",
+    "leaf": "insertMode",
+    "label": "Insert Mode"
+  },
+  {
+    "full": "suggest.filterGraceful",
+    "leaf": "filterGraceful",
+    "label": "Filter Graceful"
+  },
+  {
+    "full": "suggest.localityBonus",
+    "leaf": "localityBonus",
+    "label": "Locality Bonus"
+  },
+  {
+    "full": "suggest.shareSuggestSelections",
+    "leaf": "shareSuggestSelections",
+    "label": "Share Suggest Selections"
+  },
+  {
+    "full": "suggest.selectionMode",
+    "leaf": "selectionMode",
+    "label": "Selection Mode"
+  },
+  {
+    "full": "suggest.snippetsPreventQuickSuggestions",
+    "leaf": "snippetsPreventQuickSuggestions",
+    "label": "Snippets Prevent Quick Suggestions"
+  },
+  {
+    "full": "suggest.showIcons",
+    "leaf": "showIcons",
+    "label": "Show Icons"
+  },
+  {
+    "full": "suggest.showStatusBar",
+    "leaf": "showStatusBar",
+    "label": "Show Status Bar"
+  },
+  {
+    "full": "suggest.preview",
+    "leaf": "preview",
+    "label": "Preview"
+  },
+  {
+    "full": "suggest.showInlineDetails",
+    "leaf": "showInlineDetails",
+    "label": "Show Inline Details"
+  },
+  {
+    "full": "suggest.maxVisibleSuggestions",
+    "leaf": "maxVisibleSuggestions",
+    "label": "Max Visible Suggestions"
+  },
+  {
+    "full": "suggest.filteredTypes",
+    "leaf": "filteredTypes",
+    "label": "Filtered Types"
+  },
+  {
+    "full": "suggest.showMethods",
+    "leaf": "showMethods",
+    "label": "Show Methods"
+  },
+  {
+    "full": "suggest.showFunctions",
+    "leaf": "showFunctions",
+    "label": "Show Functions"
+  },
+  {
+    "full": "suggest.showConstructors",
+    "leaf": "showConstructors",
+    "label": "Show Constructors"
+  },
+  {
+    "full": "suggest.matchOnWordStartOnly",
+    "leaf": "matchOnWordStartOnly",
+    "label": "Match On Word Start Only"
+  },
+  {
+    "full": "suggest.showFields",
+    "leaf": "showFields",
+    "label": "Show Fields"
+  },
+  {
+    "full": "suggest.showVariables",
+    "leaf": "showVariables",
+    "label": "Show Variables"
+  },
+  {
+    "full": "suggest.showClasses",
+    "leaf": "showClasses",
+    "label": "Show Classes"
+  },
+  {
+    "full": "suggest.showStructs",
+    "leaf": "showStructs",
+    "label": "Show Structs"
+  },
+  {
+    "full": "suggest.showInterfaces",
+    "leaf": "showInterfaces",
+    "label": "Show Interfaces"
+  },
+  {
+    "full": "suggest.showModules",
+    "leaf": "showModules",
+    "label": "Show Modules"
+  },
+  {
+    "full": "suggest.showProperties",
+    "leaf": "showProperties",
+    "label": "Show Properties"
+  },
+  {
+    "full": "suggest.showEvents",
+    "leaf": "showEvents",
+    "label": "Show Events"
+  },
+  {
+    "full": "suggest.showOperators",
+    "leaf": "showOperators",
+    "label": "Show Operators"
+  },
+  {
+    "full": "suggest.showUnits",
+    "leaf": "showUnits",
+    "label": "Show Units"
+  },
+  {
+    "full": "suggest.showValues",
+    "leaf": "showValues",
+    "label": "Show Values"
+  },
+  {
+    "full": "suggest.showConstants",
+    "leaf": "showConstants",
+    "label": "Show Constants"
+  },
+  {
+    "full": "suggest.showEnums",
+    "leaf": "showEnums",
+    "label": "Show Enums"
+  },
+  {
+    "full": "suggest.showEnumMembers",
+    "leaf": "showEnumMembers",
+    "label": "Show Enum Members"
+  },
+  {
+    "full": "suggest.showKeywords",
+    "leaf": "showKeywords",
+    "label": "Show Keywords"
+  },
+  {
+    "full": "suggest.showWords",
+    "leaf": "showWords",
+    "label": "Show Words"
+  },
+  {
+    "full": "suggest.showColors",
+    "leaf": "showColors",
+    "label": "Show Colors"
+  },
+  {
+    "full": "suggest.showFiles",
+    "leaf": "showFiles",
+    "label": "Show Files"
+  },
+  {
+    "full": "suggest.showReferences",
+    "leaf": "showReferences",
+    "label": "Show References"
+  },
+  {
+    "full": "suggest.showCustomcolors",
+    "leaf": "showCustomcolors",
+    "label": "Show Customcolors"
+  },
+  {
+    "full": "suggest.showFolders",
+    "leaf": "showFolders",
+    "label": "Show Folders"
+  },
+  {
+    "full": "suggest.showTypeParameters",
+    "leaf": "showTypeParameters",
+    "label": "Show Type Parameters"
+  },
+  {
+    "full": "suggest.showSnippets",
+    "leaf": "showSnippets",
+    "label": "Show Snippets"
+  },
+  {
+    "full": "suggest.showUsers",
+    "leaf": "showUsers",
+    "label": "Show Users"
+  },
+  {
+    "full": "suggest.showIssues",
+    "leaf": "showIssues",
+    "label": "Show Issues"
+  },
+  {
+    "full": "smartSelect.selectLeadingAndTrailingWhitespace",
+    "leaf": "selectLeadingAndTrailingWhitespace",
+    "label": "Select Leading And Trailing Whitespace"
+  },
+  {
+    "full": "smartSelect.selectSubwords",
+    "leaf": "selectSubwords",
+    "label": "Select Subwords"
+  },
+  {
+    "full": "dropIntoEditor.showDropSelector",
+    "leaf": "showDropSelector",
+    "label": "Show Drop Selector"
+  },
+  {
+    "full": "pasteAs.showPasteSelector",
+    "leaf": "showPasteSelector",
+    "label": "Show Paste Selector"
+  },
+  {
+    "full": "experimentalEditContextEnabled",
+    "leaf": "experimentalEditContextEnabled",
+    "label": "Experimental Edit Context Enabled"
+  },
+  {
+    "full": "experimentalEditContextEnabled",
+    "leaf": "experimentalEditContextEnabled",
+    "label": "Experimental Edit Context Enabled"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "foreground",
+    "leaf": "foreground",
+    "label": "Foreground"
+  },
+  {
+    "full": "selectionBackground",
+    "leaf": "selectionBackground",
+    "label": "Selection Background"
+  },
+  {
+    "full": "selectionForeground",
+    "leaf": "selectionForeground",
+    "label": "Selection Foreground"
+  },
+  {
+    "full": "inactiveSelectionBackground",
+    "leaf": "inactiveSelectionBackground",
+    "label": "Inactive Selection Background"
+  },
+  {
+    "full": "selectionHighlightBackground",
+    "leaf": "selectionHighlightBackground",
+    "label": "Selection Highlight Background"
+  },
+  {
+    "full": "selectionHighlightBorder",
+    "leaf": "selectionHighlightBorder",
+    "label": "Selection Highlight Border"
+  },
+  {
+    "full": "compositionBorder",
+    "leaf": "compositionBorder",
+    "label": "Composition Border"
+  },
+  {
+    "full": "findMatchBackground",
+    "leaf": "findMatchBackground",
+    "label": "Find Match Background"
+  },
+  {
+    "full": "findMatchForeground",
+    "leaf": "findMatchForeground",
+    "label": "Find Match Foreground"
+  },
+  {
+    "full": "findMatchHighlightBackground",
+    "leaf": "findMatchHighlightBackground",
+    "label": "Find Match Highlight Background"
+  },
+  {
+    "full": "findMatchHighlightForeground",
+    "leaf": "findMatchHighlightForeground",
+    "label": "Find Match Highlight Foreground"
+  },
+  {
+    "full": "findRangeHighlightBackground",
+    "leaf": "findRangeHighlightBackground",
+    "label": "Find Range Highlight Background"
+  },
+  {
+    "full": "findMatchBorder",
+    "leaf": "findMatchBorder",
+    "label": "Find Match Border"
+  },
+  {
+    "full": "findMatchHighlightBorder",
+    "leaf": "findMatchHighlightBorder",
+    "label": "Find Match Highlight Border"
+  },
+  {
+    "full": "findRangeHighlightBorder",
+    "leaf": "findRangeHighlightBorder",
+    "label": "Find Range Highlight Border"
+  },
+  {
+    "full": "hoverHighlightBackground",
+    "leaf": "hoverHighlightBackground",
+    "label": "Hover Highlight Background"
+  },
+  {
+    "full": "snippetTabstopHighlightBackground",
+    "leaf": "snippetTabstopHighlightBackground",
+    "label": "Snippet Tabstop Highlight Background"
+  },
+  {
+    "full": "snippetTabstopHighlightBorder",
+    "leaf": "snippetTabstopHighlightBorder",
+    "label": "Snippet Tabstop Highlight Border"
+  },
+  {
+    "full": "snippetFinalTabstopHighlightBackground",
+    "leaf": "snippetFinalTabstopHighlightBackground",
+    "label": "Snippet Final Tabstop Highlight Background"
+  },
+  {
+    "full": "snippetFinalTabstopHighlightBorder",
+    "leaf": "snippetFinalTabstopHighlightBorder",
+    "label": "Snippet Final Tabstop Highlight Border"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "lineHighlightBackground",
+    "leaf": "lineHighlightBackground",
+    "label": "Line Highlight Background"
+  },
+  {
+    "full": "inactiveLineHighlightBackground",
+    "leaf": "inactiveLineHighlightBackground",
+    "label": "Inactive Line Highlight Background"
+  },
+  {
+    "full": "lineHighlightBorder",
+    "leaf": "lineHighlightBorder",
+    "label": "Line Highlight Border"
+  },
+  {
+    "full": "rangeHighlightBackground",
+    "leaf": "rangeHighlightBackground",
+    "label": "Range Highlight Background"
+  },
+  {
+    "full": "rangeHighlightBorder",
+    "leaf": "rangeHighlightBorder",
+    "label": "Range Highlight Border"
+  },
+  {
+    "full": "symbolHighlightBackground",
+    "leaf": "symbolHighlightBackground",
+    "label": "Symbol Highlight Background"
+  },
+  {
+    "full": "symbolHighlightBorder",
+    "leaf": "symbolHighlightBorder",
+    "label": "Symbol Highlight Border"
+  },
+  {
+    "full": "scrollbar.verticalScrollbarSize",
+    "leaf": "verticalScrollbarSize",
+    "label": "Vertical Scrollbar Size"
+  },
+  {
+    "full": "action.toggleScreenReaderAccessibilityMode",
+    "leaf": "toggleScreenReaderAccessibilityMode",
+    "label": "Toggle Screen Reader Accessibility Mode"
+  },
+  {
+    "full": "action.startFindReplaceAction",
+    "leaf": "startFindReplaceAction",
+    "label": "Start Find Replace Action"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "action.accessibleDiffViewer.next",
+    "leaf": "next",
+    "label": "Next"
+  },
+  {
+    "full": "action.accessibleDiffViewer.prev",
+    "leaf": "prev",
+    "label": "Prev"
+  },
+  {
+    "full": "action.diffReview.next",
+    "leaf": "next",
+    "label": "Next"
+  },
+  {
+    "full": "action.diffReview.prev",
+    "leaf": "prev",
+    "label": "Prev"
+  },
+  {
+    "full": "hasSelection",
+    "leaf": "hasSelection",
+    "label": "Has Selection"
+  },
+  {
+    "full": "contrib.customCompletionOrchestrator",
+    "leaf": "customCompletionOrchestrator",
+    "label": "Custom Completion Orchestrator"
+  },
+  {
+    "full": "widget.antigravitySideHint",
+    "leaf": "antigravitySideHint",
+    "label": "Antigravity Side Hint"
+  },
+  {
+    "full": "contrib.selectionAnchorController",
+    "leaf": "selectionAnchorController",
+    "label": "Selection Anchor Controller"
+  },
+  {
+    "full": "action.setSelectionAnchor",
+    "leaf": "setSelectionAnchor",
+    "label": "Set Selection Anchor"
+  },
+  {
+    "full": "action.goToSelectionAnchor",
+    "leaf": "goToSelectionAnchor",
+    "label": "Go To Selection Anchor"
+  },
+  {
+    "full": "action.selectFromAnchorToCursor",
+    "leaf": "selectFromAnchorToCursor",
+    "label": "Select From Anchor To Cursor"
+  },
+  {
+    "full": "action.cancelSelectionAnchor",
+    "leaf": "cancelSelectionAnchor",
+    "label": "Cancel Selection Anchor"
+  },
+  {
+    "full": "action.jumpToBracket",
+    "leaf": "jumpToBracket",
+    "label": "Jump To Bracket"
+  },
+  {
+    "full": "action.selectToBracket",
+    "leaf": "selectToBracket",
+    "label": "Select To Bracket"
+  },
+  {
+    "full": "action.removeBrackets",
+    "leaf": "removeBrackets",
+    "label": "Remove Brackets"
+  },
+  {
+    "full": "contrib.bracketMatchingController",
+    "leaf": "bracketMatchingController",
+    "label": "Bracket Matching Controller"
+  },
+  {
+    "full": "action.jumpToBracket",
+    "leaf": "jumpToBracket",
+    "label": "Jump To Bracket"
+  },
+  {
+    "full": "action.moveCarretLeftAction",
+    "leaf": "moveCarretLeftAction",
+    "label": "Move Carret Left Action"
+  },
+  {
+    "full": "action.moveCarretRightAction",
+    "leaf": "moveCarretRightAction",
+    "label": "Move Carret Right Action"
+  },
+  {
+    "full": "action.transposeLetters",
+    "leaf": "transposeLetters",
+    "label": "Transpose Letters"
+  },
+  {
+    "full": "cancelOperation",
+    "leaf": "cancelOperation",
+    "label": "Cancel Operation"
+  },
+  {
+    "full": "widget.inlineProgressWidget",
+    "leaf": "inlineProgressWidget",
+    "label": "Inline Progress Widget"
+  },
+  {
+    "full": "contrib.messageController",
+    "leaf": "messageController",
+    "label": "Message Controller"
+  },
+  {
+    "full": "widget.postEditWidget",
+    "leaf": "postEditWidget",
+    "label": "Post Edit Widget"
+  },
+  {
+    "full": "changePasteType",
+    "leaf": "changePasteType",
+    "label": "Change Paste Type"
+  },
+  {
+    "full": "pasteAs.preferences",
+    "leaf": "preferences",
+    "label": "Preferences"
+  },
+  {
+    "full": "contrib.copyPasteActionController",
+    "leaf": "copyPasteActionController",
+    "label": "Copy Paste Action Controller"
+  },
+  {
+    "full": "action.clipboardPasteAction",
+    "leaf": "clipboardPasteAction",
+    "label": "Clipboard Paste Action"
+  },
+  {
+    "full": "pasteAs.default",
+    "leaf": "default",
+    "label": "Default"
+  },
+  {
+    "full": "action.clipboardCutAction",
+    "leaf": "clipboardCutAction",
+    "label": "Clipboard Cut Action"
+  },
+  {
+    "full": "action.clipboardCopyAction",
+    "leaf": "clipboardCopyAction",
+    "label": "Clipboard Copy Action"
+  },
+  {
+    "full": "action.clipboardPasteAction",
+    "leaf": "clipboardPasteAction",
+    "label": "Clipboard Paste Action"
+  },
+  {
+    "full": "action.clipboardCopyWithSyntaxHighlightingAction",
+    "leaf": "clipboardCopyWithSyntaxHighlightingAction",
+    "label": "Clipboard Copy With Syntax Highlighting Action"
+  },
+  {
+    "full": "indentSize",
+    "leaf": "indentSize",
+    "label": "Indent Size"
+  },
+  {
+    "full": "trimAutoWhitespace",
+    "leaf": "trimAutoWhitespace",
+    "label": "Trim Auto Whitespace"
+  },
+  {
+    "full": "largeFileOptimizations",
+    "leaf": "largeFileOptimizations",
+    "label": "Large File Optimizations"
+  },
+  {
+    "full": "stablePeek",
+    "leaf": "stablePeek",
+    "label": "Stable Peek"
+  },
+  {
+    "full": "maxTokenizationLineLength",
+    "leaf": "maxTokenizationLineLength",
+    "label": "Max Tokenization Line Length"
+  },
+  {
+    "full": "experimental.asyncTokenization",
+    "leaf": "asyncTokenization",
+    "label": "Async Tokenization"
+  },
+  {
+    "full": "experimental.asyncTokenizationLogging",
+    "leaf": "asyncTokenizationLogging",
+    "label": "Async Tokenization Logging"
+  },
+  {
+    "full": "experimental.asyncTokenizationVerification",
+    "leaf": "asyncTokenizationVerification",
+    "label": "Async Tokenization Verification"
+  },
+  {
+    "full": "experimental.treeSitterTelemetry",
+    "leaf": "treeSitterTelemetry",
+    "label": "Tree Sitter Telemetry"
+  },
+  {
+    "full": "experimental.preferTreeSitter.css",
+    "leaf": "css",
+    "label": "Css"
+  },
+  {
+    "full": "experimental.preferTreeSitter.typescript",
+    "leaf": "typescript",
+    "label": "Typescript"
+  },
+  {
+    "full": "experimental.preferTreeSitter.ini",
+    "leaf": "ini",
+    "label": "Ini"
+  },
+  {
+    "full": "experimental.preferTreeSitter.regex",
+    "leaf": "regex",
+    "label": "Regex"
+  },
+  {
+    "full": "language.brackets",
+    "leaf": "brackets",
+    "label": "Brackets"
+  },
+  {
+    "full": "language.colorizedBracketPairs",
+    "leaf": "colorizedBracketPairs",
+    "label": "Colorized Bracket Pairs"
+  },
+  {
+    "full": "action.codeAction",
+    "leaf": "codeAction",
+    "label": "Code Action"
+  },
+  {
+    "full": "action.quickFix",
+    "leaf": "quickFix",
+    "label": "Quick Fix"
+  },
+  {
+    "full": "action.autoFix",
+    "leaf": "autoFix",
+    "label": "Auto Fix"
+  },
+  {
+    "full": "action.refactor",
+    "leaf": "refactor",
+    "label": "Refactor"
+  },
+  {
+    "full": "action.sourceAction",
+    "leaf": "sourceAction",
+    "label": "Source Action"
+  },
+  {
+    "full": "action.organizeImports",
+    "leaf": "organizeImports",
+    "label": "Organize Imports"
+  },
+  {
+    "full": "action.fixAll",
+    "leaf": "fixAll",
+    "label": "Fix All"
+  },
+  {
+    "full": "contrib.lightbulbWidget",
+    "leaf": "lightbulbWidget",
+    "label": "Lightbulb Widget"
+  },
+  {
+    "full": "contrib.codeActionController",
+    "leaf": "codeActionController",
+    "label": "Code Action Controller"
+  },
+  {
+    "full": "contrib.colorDetector",
+    "leaf": "colorDetector",
+    "label": "Color Detector"
+  },
+  {
+    "full": "action.showHover",
+    "leaf": "showHover",
+    "label": "Show Hover"
+  },
+  {
+    "full": "action.showDefinitionPreviewHover",
+    "leaf": "showDefinitionPreviewHover",
+    "label": "Show Definition Preview Hover"
+  },
+  {
+    "full": "action.hideHover",
+    "leaf": "hideHover",
+    "label": "Hide Hover"
+  },
+  {
+    "full": "action.scrollUpHover",
+    "leaf": "scrollUpHover",
+    "label": "Scroll Up Hover"
+  },
+  {
+    "full": "action.scrollDownHover",
+    "leaf": "scrollDownHover",
+    "label": "Scroll Down Hover"
+  },
+  {
+    "full": "action.scrollLeftHover",
+    "leaf": "scrollLeftHover",
+    "label": "Scroll Left Hover"
+  },
+  {
+    "full": "action.scrollRightHover",
+    "leaf": "scrollRightHover",
+    "label": "Scroll Right Hover"
+  },
+  {
+    "full": "action.pageUpHover",
+    "leaf": "pageUpHover",
+    "label": "Page Up Hover"
+  },
+  {
+    "full": "action.pageDownHover",
+    "leaf": "pageDownHover",
+    "label": "Page Down Hover"
+  },
+  {
+    "full": "action.goToTopHover",
+    "leaf": "goToTopHover",
+    "label": "Go To Top Hover"
+  },
+  {
+    "full": "action.goToBottomHover",
+    "leaf": "goToBottomHover",
+    "label": "Go To Bottom Hover"
+  },
+  {
+    "full": "action.increaseHoverVerbosityLevel",
+    "leaf": "increaseHoverVerbosityLevel",
+    "label": "Increase Hover Verbosity Level"
+  },
+  {
+    "full": "action.increaseHoverVerbosityLevelFromAccessibleView",
+    "leaf": "increaseHoverVerbosityLevelFromAccessibleView",
+    "label": "Increase Hover Verbosity Level From Accessible View"
+  },
+  {
+    "full": "action.decreaseHoverVerbosityLevel",
+    "leaf": "decreaseHoverVerbosityLevel",
+    "label": "Decrease Hover Verbosity Level"
+  },
+  {
+    "full": "action.decreaseHoverVerbosityLevelFromAccessibleView",
+    "leaf": "decreaseHoverVerbosityLevelFromAccessibleView",
+    "label": "Decrease Hover Verbosity Level From Accessible View"
+  },
+  {
+    "full": "action.inlineSuggest.commit",
+    "leaf": "commit",
+    "label": "Commit"
+  },
+  {
+    "full": "action.inlineSuggest.commitAlternativeAction",
+    "leaf": "commitAlternativeAction",
+    "label": "Commit Alternative Action"
+  },
+  {
+    "full": "action.inlineSuggest.showPrevious",
+    "leaf": "showPrevious",
+    "label": "Show Previous"
+  },
+  {
+    "full": "action.inlineSuggest.showNext",
+    "leaf": "showNext",
+    "label": "Show Next"
+  },
+  {
+    "full": "action.inlineSuggest.jump",
+    "leaf": "jump",
+    "label": "Jump"
+  },
+  {
+    "full": "action.inlineSuggest.hide",
+    "leaf": "hide",
+    "label": "Hide"
+  },
+  {
+    "full": "action.inlineSuggest.toggleShowCollapsed",
+    "leaf": "toggleShowCollapsed",
+    "label": "Toggle Show Collapsed"
+  },
+  {
+    "full": "action.inlineSuggest.renameSymbol",
+    "leaf": "renameSymbol",
+    "label": "Rename Symbol"
+  },
+  {
+    "full": "contrib.resizableContentHoverWidget",
+    "leaf": "resizableContentHoverWidget",
+    "label": "Resizable Content Hover Widget"
+  },
+  {
+    "full": "action.accessibleView",
+    "leaf": "accessibleView",
+    "label": "Accessible View"
+  },
+  {
+    "full": "actions.findWithArgs",
+    "leaf": "findWithArgs",
+    "label": "Find With Args"
+  },
+  {
+    "full": "action.nextMatchFindAction",
+    "leaf": "nextMatchFindAction",
+    "label": "Next Match Find Action"
+  },
+  {
+    "full": "action.previousMatchFindAction",
+    "leaf": "previousMatchFindAction",
+    "label": "Previous Match Find Action"
+  },
+  {
+    "full": "action.goToMatchFindAction",
+    "leaf": "goToMatchFindAction",
+    "label": "Go To Match Find Action"
+  },
+  {
+    "full": "action.nextSelectionMatchFindAction",
+    "leaf": "nextSelectionMatchFindAction",
+    "label": "Next Selection Match Find Action"
+  },
+  {
+    "full": "action.previousSelectionMatchFindAction",
+    "leaf": "previousSelectionMatchFindAction",
+    "label": "Previous Selection Match Find Action"
+  },
+  {
+    "full": "action.startFindReplaceAction",
+    "leaf": "startFindReplaceAction",
+    "label": "Start Find Replace Action"
+  },
+  {
+    "full": "action.replaceOne",
+    "leaf": "replaceOne",
+    "label": "Replace One"
+  },
+  {
+    "full": "action.replaceAll",
+    "leaf": "replaceAll",
+    "label": "Replace All"
+  },
+  {
+    "full": "action.selectAllMatches",
+    "leaf": "selectAllMatches",
+    "label": "Select All Matches"
+  },
+  {
+    "full": "contrib.findWidget",
+    "leaf": "findWidget",
+    "label": "Find Widget"
+  },
+  {
+    "full": "maxTokenizationLineLength",
+    "leaf": "maxTokenizationLineLength",
+    "label": "Max Tokenization Line Length"
+  },
+  {
+    "full": "contrib.colorPickerWidget",
+    "leaf": "colorPickerWidget",
+    "label": "Color Picker Widget"
+  },
+  {
+    "full": "contrib.referenceController",
+    "leaf": "referenceController",
+    "label": "Reference Controller"
+  },
+  {
+    "full": "contrib.referencesController",
+    "leaf": "referencesController",
+    "label": "References Controller"
+  },
+  {
+    "full": "stablePeek",
+    "leaf": "stablePeek",
+    "label": "Stable Peek"
+  },
+  {
+    "full": "gotoNextSymbolFromResult",
+    "leaf": "gotoNextSymbolFromResult",
+    "label": "Goto Next Symbol From Result"
+  },
+  {
+    "full": "gotoNextSymbolFromResult",
+    "leaf": "gotoNextSymbolFromResult",
+    "label": "Goto Next Symbol From Result"
+  },
+  {
+    "full": "gotoNextSymbolFromResult.cancel",
+    "leaf": "cancel",
+    "label": "Cancel"
+  },
+  {
+    "full": "action.revealDefinition",
+    "leaf": "revealDefinition",
+    "label": "Reveal Definition"
+  },
+  {
+    "full": "action.goToDeclaration",
+    "leaf": "goToDeclaration",
+    "label": "Go To Declaration"
+  },
+  {
+    "full": "action.revealDefinitionAside",
+    "leaf": "revealDefinitionAside",
+    "label": "Reveal Definition Aside"
+  },
+  {
+    "full": "action.openDeclarationToTheSide",
+    "leaf": "openDeclarationToTheSide",
+    "label": "Open Declaration To The Side"
+  },
+  {
+    "full": "action.peekDefinition",
+    "leaf": "peekDefinition",
+    "label": "Peek Definition"
+  },
+  {
+    "full": "action.previewDeclaration",
+    "leaf": "previewDeclaration",
+    "label": "Preview Declaration"
+  },
+  {
+    "full": "action.revealDeclaration",
+    "leaf": "revealDeclaration",
+    "label": "Reveal Declaration"
+  },
+  {
+    "full": "action.peekDeclaration",
+    "leaf": "peekDeclaration",
+    "label": "Peek Declaration"
+  },
+  {
+    "full": "action.goToTypeDefinition",
+    "leaf": "goToTypeDefinition",
+    "label": "Go To Type Definition"
+  },
+  {
+    "full": "action.peekTypeDefinition",
+    "leaf": "peekTypeDefinition",
+    "label": "Peek Type Definition"
+  },
+  {
+    "full": "action.goToImplementation",
+    "leaf": "goToImplementation",
+    "label": "Go To Implementation"
+  },
+  {
+    "full": "action.peekImplementation",
+    "leaf": "peekImplementation",
+    "label": "Peek Implementation"
+  },
+  {
+    "full": "action.goToReferences",
+    "leaf": "goToReferences",
+    "label": "Go To References"
+  },
+  {
+    "full": "action.referenceSearch.trigger",
+    "leaf": "trigger",
+    "label": "Trigger"
+  },
+  {
+    "full": "action.goToLocation",
+    "leaf": "goToLocation",
+    "label": "Go To Location"
+  },
+  {
+    "full": "action.goToLocations",
+    "leaf": "goToLocations",
+    "label": "Go To Locations"
+  },
+  {
+    "full": "action.peekLocations",
+    "leaf": "peekLocations",
+    "label": "Peek Locations"
+  },
+  {
+    "full": "action.goToLocations",
+    "leaf": "goToLocations",
+    "label": "Go To Locations"
+  },
+  {
+    "full": "action.findReferences",
+    "leaf": "findReferences",
+    "label": "Find References"
+  },
+  {
+    "full": "action.showReferences",
+    "leaf": "showReferences",
+    "label": "Show References"
+  },
+  {
+    "full": "action.peekLocations",
+    "leaf": "peekLocations",
+    "label": "Peek Locations"
+  },
+  {
+    "full": "contrib.markerController",
+    "leaf": "markerController",
+    "label": "Marker Controller"
+  },
+  {
+    "full": "action.marker.next",
+    "leaf": "next",
+    "label": "Next"
+  },
+  {
+    "full": "action.marker.prev",
+    "leaf": "prev",
+    "label": "Prev"
+  },
+  {
+    "full": "action.marker.nextInFiles",
+    "leaf": "nextInFiles",
+    "label": "Next In Files"
+  },
+  {
+    "full": "action.marker.prevInFiles",
+    "leaf": "prevInFiles",
+    "label": "Prev In Files"
+  },
+  {
+    "full": "contrib.contentHover",
+    "leaf": "contentHover",
+    "label": "Content Hover"
+  },
+  {
+    "full": "contrib.colorContribution",
+    "leaf": "colorContribution",
+    "label": "Color Contribution"
+  },
+  {
+    "full": "contrib.standaloneColorPickerWidget",
+    "leaf": "standaloneColorPickerWidget",
+    "label": "Standalone Color Picker Widget"
+  },
+  {
+    "full": "contrib.standaloneColorPickerController",
+    "leaf": "standaloneColorPickerController",
+    "label": "Standalone Color Picker Controller"
+  },
+  {
+    "full": "action.showOrFocusStandaloneColorPicker",
+    "leaf": "showOrFocusStandaloneColorPicker",
+    "label": "Show Or Focus Standalone Color Picker"
+  },
+  {
+    "full": "action.hideColorPicker",
+    "leaf": "hideColorPicker",
+    "label": "Hide Color Picker"
+  },
+  {
+    "full": "action.insertColorWithStandaloneColorPicker",
+    "leaf": "insertColorWithStandaloneColorPicker",
+    "label": "Insert Color With Standalone Color Picker"
+  },
+  {
+    "full": "action.commentLine",
+    "leaf": "commentLine",
+    "label": "Comment Line"
+  },
+  {
+    "full": "action.addCommentLine",
+    "leaf": "addCommentLine",
+    "label": "Add Comment Line"
+  },
+  {
+    "full": "action.removeCommentLine",
+    "leaf": "removeCommentLine",
+    "label": "Remove Comment Line"
+  },
+  {
+    "full": "action.blockComment",
+    "leaf": "blockComment",
+    "label": "Block Comment"
+  },
+  {
+    "full": "contrib.contextmenu",
+    "leaf": "contextmenu",
+    "label": "Contextmenu"
+  },
+  {
+    "full": "minimap.renderCharacters",
+    "leaf": "renderCharacters",
+    "label": "Render Characters"
+  },
+  {
+    "full": "minimap.size",
+    "leaf": "size",
+    "label": "Size"
+  },
+  {
+    "full": "minimap.showSlider",
+    "leaf": "showSlider",
+    "label": "Show Slider"
+  },
+  {
+    "full": "action.showContextMenu",
+    "leaf": "showContextMenu",
+    "label": "Show Context Menu"
+  },
+  {
+    "full": "contrib.cursorUndoRedoController",
+    "leaf": "cursorUndoRedoController",
+    "label": "Cursor Undo Redo Controller"
+  },
+  {
+    "full": "hidePasteWidget",
+    "leaf": "hidePasteWidget",
+    "label": "Hide Paste Widget"
+  },
+  {
+    "full": "action.pasteAsText",
+    "leaf": "pasteAsText",
+    "label": "Paste As Text"
+  },
+  {
+    "full": "dropIntoEditor.preferences",
+    "leaf": "preferences",
+    "label": "Preferences"
+  },
+  {
+    "full": "changeDropType",
+    "leaf": "changeDropType",
+    "label": "Change Drop Type"
+  },
+  {
+    "full": "contrib.dropIntoEditorController",
+    "leaf": "dropIntoEditorController",
+    "label": "Drop Into Editor Controller"
+  },
+  {
+    "full": "hideDropWidget",
+    "leaf": "hideDropWidget",
+    "label": "Hide Drop Widget"
+  },
+  {
+    "full": "contrib.findOptionsWidget",
+    "leaf": "findOptionsWidget",
+    "label": "Find Options Widget"
+  },
+  {
+    "full": "contrib.findController",
+    "leaf": "findController",
+    "label": "Find Controller"
+  },
+  {
+    "full": "matchCase",
+    "leaf": "matchCase",
+    "label": "Match Case"
+  },
+  {
+    "full": "wholeWord",
+    "leaf": "wholeWord",
+    "label": "Whole Word"
+  },
+  {
+    "full": "isRegex",
+    "leaf": "isRegex",
+    "label": "Is Regex"
+  },
+  {
+    "full": "preserveCase",
+    "leaf": "preserveCase",
+    "label": "Preserve Case"
+  },
+  {
+    "full": "isRegex",
+    "leaf": "isRegex",
+    "label": "Is Regex"
+  },
+  {
+    "full": "wholeWord",
+    "leaf": "wholeWord",
+    "label": "Whole Word"
+  },
+  {
+    "full": "matchCase",
+    "leaf": "matchCase",
+    "label": "Match Case"
+  },
+  {
+    "full": "preserveCase",
+    "leaf": "preserveCase",
+    "label": "Preserve Case"
+  },
+  {
+    "full": "matchCase",
+    "leaf": "matchCase",
+    "label": "Match Case"
+  },
+  {
+    "full": "wholeWord",
+    "leaf": "wholeWord",
+    "label": "Whole Word"
+  },
+  {
+    "full": "isRegex",
+    "leaf": "isRegex",
+    "label": "Is Regex"
+  },
+  {
+    "full": "preserveCase",
+    "leaf": "preserveCase",
+    "label": "Preserve Case"
+  },
+  {
+    "full": "foldBackground",
+    "leaf": "foldBackground",
+    "label": "Fold Background"
+  },
+  {
+    "full": "foldPlaceholderForeground",
+    "leaf": "foldPlaceholderForeground",
+    "label": "Fold Placeholder Foreground"
+  },
+  {
+    "full": "unfold",
+    "leaf": "unfold",
+    "label": "Unfold"
+  },
+  {
+    "full": "unfoldRecursively",
+    "leaf": "unfoldRecursively",
+    "label": "Unfold Recursively"
+  },
+  {
+    "full": "fold",
+    "leaf": "fold",
+    "label": "Fold"
+  },
+  {
+    "full": "toggleFold",
+    "leaf": "toggleFold",
+    "label": "Toggle Fold"
+  },
+  {
+    "full": "foldRecursively",
+    "leaf": "foldRecursively",
+    "label": "Fold Recursively"
+  },
+  {
+    "full": "toggleFoldRecursively",
+    "leaf": "toggleFoldRecursively",
+    "label": "Toggle Fold Recursively"
+  },
+  {
+    "full": "foldAllBlockComments",
+    "leaf": "foldAllBlockComments",
+    "label": "Fold All Block Comments"
+  },
+  {
+    "full": "foldAllMarkerRegions",
+    "leaf": "foldAllMarkerRegions",
+    "label": "Fold All Marker Regions"
+  },
+  {
+    "full": "unfoldAllMarkerRegions",
+    "leaf": "unfoldAllMarkerRegions",
+    "label": "Unfold All Marker Regions"
+  },
+  {
+    "full": "foldAllExcept",
+    "leaf": "foldAllExcept",
+    "label": "Fold All Except"
+  },
+  {
+    "full": "unfoldAllExcept",
+    "leaf": "unfoldAllExcept",
+    "label": "Unfold All Except"
+  },
+  {
+    "full": "foldAll",
+    "leaf": "foldAll",
+    "label": "Fold All"
+  },
+  {
+    "full": "unfoldAll",
+    "leaf": "unfoldAll",
+    "label": "Unfold All"
+  },
+  {
+    "full": "foldLevel",
+    "leaf": "foldLevel",
+    "label": "Fold Level"
+  },
+  {
+    "full": "gotoParentFold",
+    "leaf": "gotoParentFold",
+    "label": "Goto Parent Fold"
+  },
+  {
+    "full": "gotoPreviousFold",
+    "leaf": "gotoPreviousFold",
+    "label": "Goto Previous Fold"
+  },
+  {
+    "full": "gotoNextFold",
+    "leaf": "gotoNextFold",
+    "label": "Goto Next Fold"
+  },
+  {
+    "full": "createFoldingRangeFromSelection",
+    "leaf": "createFoldingRangeFromSelection",
+    "label": "Create Folding Range From Selection"
+  },
+  {
+    "full": "removeManualFoldingRanges",
+    "leaf": "removeManualFoldingRanges",
+    "label": "Remove Manual Folding Ranges"
+  },
+  {
+    "full": "toggleImportFold",
+    "leaf": "toggleImportFold",
+    "label": "Toggle Import Fold"
+  },
+  {
+    "full": "action.fontZoomIn",
+    "leaf": "fontZoomIn",
+    "label": "Font Zoom In"
+  },
+  {
+    "full": "action.fontZoomOut",
+    "leaf": "fontZoomOut",
+    "label": "Font Zoom Out"
+  },
+  {
+    "full": "action.fontZoomReset",
+    "leaf": "fontZoomReset",
+    "label": "Font Zoom Reset"
+  },
+  {
+    "full": "contrib.autoFormat",
+    "leaf": "autoFormat",
+    "label": "Auto Format"
+  },
+  {
+    "full": "action.formatDocument",
+    "leaf": "formatDocument",
+    "label": "Format Document"
+  },
+  {
+    "full": "action.formatSelection",
+    "leaf": "formatSelection",
+    "label": "Format Selection"
+  },
+  {
+    "full": "action.format",
+    "leaf": "format",
+    "label": "Format"
+  },
+  {
+    "full": "action.formatDocument",
+    "leaf": "formatDocument",
+    "label": "Format Document"
+  },
+  {
+    "full": "action.formatSelection",
+    "leaf": "formatSelection",
+    "label": "Format Selection"
+  },
+  {
+    "full": "contrib.suggestController",
+    "leaf": "suggestController",
+    "label": "Suggest Controller"
+  },
+  {
+    "full": "action.copyLinesUpAction",
+    "leaf": "copyLinesUpAction",
+    "label": "Copy Lines Up Action"
+  },
+  {
+    "full": "action.copyLinesDownAction",
+    "leaf": "copyLinesDownAction",
+    "label": "Copy Lines Down Action"
+  },
+  {
+    "full": "action.duplicateSelection",
+    "leaf": "duplicateSelection",
+    "label": "Duplicate Selection"
+  },
+  {
+    "full": "action.moveLinesUpAction",
+    "leaf": "moveLinesUpAction",
+    "label": "Move Lines Up Action"
+  },
+  {
+    "full": "action.moveLinesDownAction",
+    "leaf": "moveLinesDownAction",
+    "label": "Move Lines Down Action"
+  },
+  {
+    "full": "action.sortLinesAscending",
+    "leaf": "sortLinesAscending",
+    "label": "Sort Lines Ascending"
+  },
+  {
+    "full": "action.sortLinesDescending",
+    "leaf": "sortLinesDescending",
+    "label": "Sort Lines Descending"
+  },
+  {
+    "full": "action.removeDuplicateLines",
+    "leaf": "removeDuplicateLines",
+    "label": "Remove Duplicate Lines"
+  },
+  {
+    "full": "action.reverseLines",
+    "leaf": "reverseLines",
+    "label": "Reverse Lines"
+  },
+  {
+    "full": "action.trimTrailingWhitespace",
+    "leaf": "trimTrailingWhitespace",
+    "label": "Trim Trailing Whitespace"
+  },
+  {
+    "full": "action.deleteLines",
+    "leaf": "deleteLines",
+    "label": "Delete Lines"
+  },
+  {
+    "full": "action.indentLines",
+    "leaf": "indentLines",
+    "label": "Indent Lines"
+  },
+  {
+    "full": "action.outdentLines",
+    "leaf": "outdentLines",
+    "label": "Outdent Lines"
+  },
+  {
+    "full": "action.insertLineBefore",
+    "leaf": "insertLineBefore",
+    "label": "Insert Line Before"
+  },
+  {
+    "full": "action.insertLineAfter",
+    "leaf": "insertLineAfter",
+    "label": "Insert Line After"
+  },
+  {
+    "full": "action.joinLines",
+    "leaf": "joinLines",
+    "label": "Join Lines"
+  },
+  {
+    "full": "action.transpose",
+    "leaf": "transpose",
+    "label": "Transpose"
+  },
+  {
+    "full": "action.transformToUppercase",
+    "leaf": "transformToUppercase",
+    "label": "Transform To Uppercase"
+  },
+  {
+    "full": "action.transformToLowercase",
+    "leaf": "transformToLowercase",
+    "label": "Transform To Lowercase"
+  },
+  {
+    "full": "action.transformToTitlecase",
+    "leaf": "transformToTitlecase",
+    "label": "Transform To Titlecase"
+  },
+  {
+    "full": "action.transformToSnakecase",
+    "leaf": "transformToSnakecase",
+    "label": "Transform To Snakecase"
+  },
+  {
+    "full": "action.transformToCamelcase",
+    "leaf": "transformToCamelcase",
+    "label": "Transform To Camelcase"
+  },
+  {
+    "full": "action.transformToPascalcase",
+    "leaf": "transformToPascalcase",
+    "label": "Transform To Pascalcase"
+  },
+  {
+    "full": "action.transformToKebabcase",
+    "leaf": "transformToKebabcase",
+    "label": "Transform To Kebabcase"
+  },
+  {
+    "full": "inlineSuggest.logChangeReason.commandId",
+    "leaf": "commandId",
+    "label": "Command Id"
+  },
+  {
+    "full": "onDidBlurEditorWidget",
+    "leaf": "onDidBlurEditorWidget",
+    "label": "On Did Blur Editor Widget"
+  },
+  {
+    "full": "contrib.renameController",
+    "leaf": "renameController",
+    "label": "Rename Controller"
+  },
+  {
+    "full": "action.rename",
+    "leaf": "rename",
+    "label": "Rename"
+  },
+  {
+    "full": "inlineSuggest.logFetch",
+    "leaf": "logFetch",
+    "label": "Log Fetch"
+  },
+  {
+    "full": "inlineSuggest.emptyResponseInformation",
+    "leaf": "emptyResponseInformation",
+    "label": "Empty Response Information"
+  },
+  {
+    "full": "inlineSuggest.logFetch.commandId",
+    "leaf": "commandId",
+    "label": "Command Id"
+  },
+  {
+    "full": "action.inlineSuggest.snooze",
+    "leaf": "snooze",
+    "label": "Snooze"
+  },
+  {
+    "full": "action.inlineSuggest.cancelSnooze",
+    "leaf": "cancelSnooze",
+    "label": "Cancel Snooze"
+  },
+  {
+    "full": "suggest.shareSuggestSelections",
+    "leaf": "shareSuggestSelections",
+    "label": "Share Suggest Selections"
+  },
+  {
+    "full": "suggest.shareSuggestSelections",
+    "leaf": "shareSuggestSelections",
+    "label": "Share Suggest Selections"
+  },
+  {
+    "full": "widget.suggestWidget",
+    "leaf": "suggestWidget",
+    "label": "Suggest Widget"
+  },
+  {
+    "full": "contrib.suggestController",
+    "leaf": "suggestController",
+    "label": "Suggest Controller"
+  },
+  {
+    "full": "action.triggerSuggest",
+    "leaf": "triggerSuggest",
+    "label": "Trigger Suggest"
+  },
+  {
+    "full": "action.resetSuggestSize",
+    "leaf": "resetSuggestSize",
+    "label": "Reset Suggest Size"
+  },
+  {
+    "full": "contrib.stickyScrollWidget",
+    "leaf": "stickyScrollWidget",
+    "label": "Sticky Scroll Widget"
+  },
+  {
+    "full": "validOverlay.width",
+    "leaf": "width",
+    "label": "Width"
+  },
+  {
+    "full": "validOverlay.height",
+    "leaf": "height",
+    "label": "Height"
+  },
+  {
+    "full": "validOverlay",
+    "leaf": "validOverlay",
+    "label": "Valid Overlay"
+  },
+  {
+    "full": "validOverlay.left",
+    "leaf": "left",
+    "label": "Left"
+  },
+  {
+    "full": "validOverlay.top",
+    "leaf": "top",
+    "label": "Top"
+  },
+  {
+    "full": "validOverlay.width",
+    "leaf": "width",
+    "label": "Width"
+  },
+  {
+    "full": "validOverlay.height",
+    "leaf": "height",
+    "label": "Height"
+  },
+  {
+    "full": "action.inlineSuggest.snooze",
+    "leaf": "snooze",
+    "label": "Snooze"
+  },
+  {
+    "full": "inlineSuggest.edits.resetNewUserExperience",
+    "leaf": "resetNewUserExperience",
+    "label": "Reset New User Experience"
+  },
+  {
+    "full": "contrib.inlineCompletionsController",
+    "leaf": "inlineCompletionsController",
+    "label": "Inline Completions Controller"
+  },
+  {
+    "full": "inlineSuggest.keepOnBlur",
+    "leaf": "keepOnBlur",
+    "label": "Keep On Blur"
+  },
+  {
+    "full": "action.accessibleView",
+    "leaf": "accessibleView",
+    "label": "Accessible View"
+  },
+  {
+    "full": "action.inlineSuggest.trigger",
+    "leaf": "trigger",
+    "label": "Trigger"
+  },
+  {
+    "full": "action.inlineSuggest.acceptNextWord",
+    "leaf": "acceptNextWord",
+    "label": "Accept Next Word"
+  },
+  {
+    "full": "action.inlineSuggest.acceptNextLine",
+    "leaf": "acceptNextLine",
+    "label": "Accept Next Line"
+  },
+  {
+    "full": "inlineSuggest.edits.showCollapsed",
+    "leaf": "showCollapsed",
+    "label": "Show Collapsed"
+  },
+  {
+    "full": "inlineSuggest.edits.showCollapsed",
+    "leaf": "showCollapsed",
+    "label": "Show Collapsed"
+  },
+  {
+    "full": "action.inlineSuggest.toggleAlwaysShowToolbar",
+    "leaf": "toggleAlwaysShowToolbar",
+    "label": "Toggle Always Show Toolbar"
+  },
+  {
+    "full": "inlineSuggest.showToolbar",
+    "leaf": "showToolbar",
+    "label": "Show Toolbar"
+  },
+  {
+    "full": "inlineSuggest.showToolbar",
+    "leaf": "showToolbar",
+    "label": "Show Toolbar"
+  },
+  {
+    "full": "action.inlineSuggest.dev.extractRepro",
+    "leaf": "extractRepro",
+    "label": "Extract Repro"
+  },
+  {
+    "full": "contrib.antigravityLineHighlighter",
+    "leaf": "antigravityLineHighlighter",
+    "label": "Antigravity Line Highlighter"
+  },
+  {
+    "full": "contrib.antigravityInlineCompletionsController",
+    "leaf": "antigravityInlineCompletionsController",
+    "label": "Antigravity Inline Completions Controller"
+  },
+  {
+    "full": "contrib.gotodefinitionatposition",
+    "leaf": "gotodefinitionatposition",
+    "label": "Gotodefinitionatposition"
+  },
+  {
+    "full": "action.debugEditorGpuRenderer",
+    "leaf": "debugEditorGpuRenderer",
+    "label": "Debug Editor Gpu Renderer"
+  },
+  {
+    "full": "contrib.modesGlyphHoverWidget",
+    "leaf": "modesGlyphHoverWidget",
+    "label": "Modes Glyph Hover Widget"
+  },
+  {
+    "full": "contrib.marginHover",
+    "leaf": "marginHover",
+    "label": "Margin Hover"
+  },
+  {
+    "full": "action.indentationToSpaces",
+    "leaf": "indentationToSpaces",
+    "label": "Indentation To Spaces"
+  },
+  {
+    "full": "action.indentationToTabs",
+    "leaf": "indentationToTabs",
+    "label": "Indentation To Tabs"
+  },
+  {
+    "full": "action.indentUsingTabs",
+    "leaf": "indentUsingTabs",
+    "label": "Indent Using Tabs"
+  },
+  {
+    "full": "action.indentUsingSpaces",
+    "leaf": "indentUsingSpaces",
+    "label": "Indent Using Spaces"
+  },
+  {
+    "full": "action.changeTabDisplaySize",
+    "leaf": "changeTabDisplaySize",
+    "label": "Change Tab Display Size"
+  },
+  {
+    "full": "action.reindentlines",
+    "leaf": "reindentlines",
+    "label": "Reindentlines"
+  },
+  {
+    "full": "action.reindentselectedlines",
+    "leaf": "reindentselectedlines",
+    "label": "Reindentselectedlines"
+  },
+  {
+    "full": "contrib.inPlaceReplaceController",
+    "leaf": "inPlaceReplaceController",
+    "label": "In Place Replace Controller"
+  },
+  {
+    "full": "action.inPlaceReplace.up",
+    "leaf": "up",
+    "label": "Up"
+  },
+  {
+    "full": "action.inPlaceReplace.down",
+    "leaf": "down",
+    "label": "Down"
+  },
+  {
+    "full": "action.insertFinalNewLine",
+    "leaf": "insertFinalNewLine",
+    "label": "Insert Final New Line"
+  },
+  {
+    "full": "linkedEditingBackground",
+    "leaf": "linkedEditingBackground",
+    "label": "Linked Editing Background"
+  },
+  {
+    "full": "linkDetector",
+    "leaf": "linkDetector",
+    "label": "Link Detector"
+  },
+  {
+    "full": "action.openLink",
+    "leaf": "openLink",
+    "label": "Open Link"
+  },
+  {
+    "full": "contrib.longLinesHelper",
+    "leaf": "longLinesHelper",
+    "label": "Long Lines Helper"
+  },
+  {
+    "full": "contrib.middleScroll",
+    "leaf": "middleScroll",
+    "label": "Middle Scroll"
+  },
+  {
+    "full": "wordHighlightBackground",
+    "leaf": "wordHighlightBackground",
+    "label": "Word Highlight Background"
+  },
+  {
+    "full": "wordHighlightStrongBackground",
+    "leaf": "wordHighlightStrongBackground",
+    "label": "Word Highlight Strong Background"
+  },
+  {
+    "full": "wordHighlightTextBackground",
+    "leaf": "wordHighlightTextBackground",
+    "label": "Word Highlight Text Background"
+  },
+  {
+    "full": "wordHighlightBorder",
+    "leaf": "wordHighlightBorder",
+    "label": "Word Highlight Border"
+  },
+  {
+    "full": "wordHighlightStrongBorder",
+    "leaf": "wordHighlightStrongBorder",
+    "label": "Word Highlight Strong Border"
+  },
+  {
+    "full": "wordHighlightTextBorder",
+    "leaf": "wordHighlightTextBorder",
+    "label": "Word Highlight Text Border"
+  },
+  {
+    "full": "action.insertCursorAbove",
+    "leaf": "insertCursorAbove",
+    "label": "Insert Cursor Above"
+  },
+  {
+    "full": "action.insertCursorBelow",
+    "leaf": "insertCursorBelow",
+    "label": "Insert Cursor Below"
+  },
+  {
+    "full": "action.insertCursorAtEndOfEachLineSelected",
+    "leaf": "insertCursorAtEndOfEachLineSelected",
+    "label": "Insert Cursor At End Of Each Line Selected"
+  },
+  {
+    "full": "action.addCursorsToBottom",
+    "leaf": "addCursorsToBottom",
+    "label": "Add Cursors To Bottom"
+  },
+  {
+    "full": "action.addCursorsToTop",
+    "leaf": "addCursorsToTop",
+    "label": "Add Cursors To Top"
+  },
+  {
+    "full": "contrib.multiCursorController",
+    "leaf": "multiCursorController",
+    "label": "Multi Cursor Controller"
+  },
+  {
+    "full": "action.addSelectionToNextFindMatch",
+    "leaf": "addSelectionToNextFindMatch",
+    "label": "Add Selection To Next Find Match"
+  },
+  {
+    "full": "action.addSelectionToPreviousFindMatch",
+    "leaf": "addSelectionToPreviousFindMatch",
+    "label": "Add Selection To Previous Find Match"
+  },
+  {
+    "full": "action.moveSelectionToNextFindMatch",
+    "leaf": "moveSelectionToNextFindMatch",
+    "label": "Move Selection To Next Find Match"
+  },
+  {
+    "full": "action.moveSelectionToPreviousFindMatch",
+    "leaf": "moveSelectionToPreviousFindMatch",
+    "label": "Move Selection To Previous Find Match"
+  },
+  {
+    "full": "action.selectHighlights",
+    "leaf": "selectHighlights",
+    "label": "Select Highlights"
+  },
+  {
+    "full": "action.changeAll",
+    "leaf": "changeAll",
+    "label": "Change All"
+  },
+  {
+    "full": "contrib.selectionHighlighter",
+    "leaf": "selectionHighlighter",
+    "label": "Selection Highlighter"
+  },
+  {
+    "full": "action.focusNextCursor",
+    "leaf": "focusNextCursor",
+    "label": "Focus Next Cursor"
+  },
+  {
+    "full": "action.focusPreviousCursor",
+    "leaf": "focusPreviousCursor",
+    "label": "Focus Previous Cursor"
+  },
+  {
+    "full": "widget.parameterHintsWidget",
+    "leaf": "parameterHintsWidget",
+    "label": "Parameter Hints Widget"
+  },
+  {
+    "full": "action.triggerParameterHints",
+    "leaf": "triggerParameterHints",
+    "label": "Trigger Parameter Hints"
+  },
+  {
+    "full": "contrib.placeholderText",
+    "leaf": "placeholderText",
+    "label": "Placeholder Text"
+  },
+  {
+    "full": "placeholder.foreground",
+    "leaf": "foreground",
+    "label": "Foreground"
+  },
+  {
+    "full": "sectionHeaderDetector",
+    "leaf": "sectionHeaderDetector",
+    "label": "Section Header Detector"
+  },
+  {
+    "full": "contrib.viewportSemanticTokens",
+    "leaf": "viewportSemanticTokens",
+    "label": "Viewport Semantic Tokens"
+  },
+  {
+    "full": "contrib.smartSelectController",
+    "leaf": "smartSelectController",
+    "label": "Smart Select Controller"
+  },
+  {
+    "full": "action.smartSelect.expand",
+    "leaf": "expand",
+    "label": "Expand"
+  },
+  {
+    "full": "action.smartSelect.grow",
+    "leaf": "grow",
+    "label": "Grow"
+  },
+  {
+    "full": "action.smartSelect.expand",
+    "leaf": "expand",
+    "label": "Expand"
+  },
+  {
+    "full": "action.smartSelect.shrink",
+    "leaf": "shrink",
+    "label": "Shrink"
+  },
+  {
+    "full": "action.toggleStickyScroll",
+    "leaf": "toggleStickyScroll",
+    "label": "Toggle Sticky Scroll"
+  },
+  {
+    "full": "action.focusStickyScroll",
+    "leaf": "focusStickyScroll",
+    "label": "Focus Sticky Scroll"
+  },
+  {
+    "full": "action.selectNextStickyScrollLine",
+    "leaf": "selectNextStickyScrollLine",
+    "label": "Select Next Sticky Scroll Line"
+  },
+  {
+    "full": "action.selectPreviousStickyScrollLine",
+    "leaf": "selectPreviousStickyScrollLine",
+    "label": "Select Previous Sticky Scroll Line"
+  },
+  {
+    "full": "action.goToFocusedStickyScrollLine",
+    "leaf": "goToFocusedStickyScrollLine",
+    "label": "Go To Focused Sticky Scroll Line"
+  },
+  {
+    "full": "action.selectEditor",
+    "leaf": "selectEditor",
+    "label": "Select Editor"
+  },
+  {
+    "full": "action.forceRetokenize",
+    "leaf": "forceRetokenize",
+    "label": "Force Retokenize"
+  },
+  {
+    "full": "action.toggleTabFocusMode",
+    "leaf": "toggleTabFocusMode",
+    "label": "Toggle Tab Focus Mode"
+  },
+  {
+    "full": "contrib.unicodeHighlighter",
+    "leaf": "unicodeHighlighter",
+    "label": "Unicode Highlighter"
+  },
+  {
+    "full": "action.unicodeHighlight.disableHighlightingInComments",
+    "leaf": "disableHighlightingInComments",
+    "label": "Disable Highlighting In Comments"
+  },
+  {
+    "full": "action.unicodeHighlight.disableHighlightingInStrings",
+    "leaf": "disableHighlightingInStrings",
+    "label": "Disable Highlighting In Strings"
+  },
+  {
+    "full": "action.unicodeHighlight.disableHighlightingOfAmbiguousCharacters",
+    "leaf": "disableHighlightingOfAmbiguousCharacters",
+    "label": "Disable Highlighting Of Ambiguous Characters"
+  },
+  {
+    "full": "action.unicodeHighlight.disableHighlightingOfInvisibleCharacters",
+    "leaf": "disableHighlightingOfInvisibleCharacters",
+    "label": "Disable Highlighting Of Invisible Characters"
+  },
+  {
+    "full": "action.unicodeHighlight.disableHighlightingOfNonBasicAsciiCharacters",
+    "leaf": "disableHighlightingOfNonBasicAsciiCharacters",
+    "label": "Disable Highlighting Of Non Basic Ascii Characters"
+  },
+  {
+    "full": "action.unicodeHighlight.showExcludeOptions",
+    "leaf": "showExcludeOptions",
+    "label": "Show Exclude Options"
+  },
+  {
+    "full": "contrib.unusualLineTerminatorsDetector",
+    "leaf": "unusualLineTerminatorsDetector",
+    "label": "Unusual Line Terminators Detector"
+  },
+  {
+    "full": "contrib.wordHighlighter",
+    "leaf": "wordHighlighter",
+    "label": "Word Highlighter"
+  },
+  {
+    "full": "action.wordHighlight.next",
+    "leaf": "next",
+    "label": "Next"
+  },
+  {
+    "full": "action.wordHighlight.prev",
+    "leaf": "prev",
+    "label": "Prev"
+  },
+  {
+    "full": "action.wordHighlight.trigger",
+    "leaf": "trigger",
+    "label": "Trigger"
+  },
+  {
+    "full": "contrib.readOnlyMessageController",
+    "leaf": "readOnlyMessageController",
+    "label": "Read Only Message Controller"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "foreground",
+    "leaf": "foreground",
+    "label": "Foreground"
+  },
+  {
+    "full": "lineHighlightBackground",
+    "leaf": "lineHighlightBackground",
+    "label": "Line Highlight Background"
+  },
+  {
+    "full": "selectionBackground",
+    "leaf": "selectionBackground",
+    "label": "Selection Background"
+  },
+  {
+    "full": "findMatchHighlightBackground",
+    "leaf": "findMatchHighlightBackground",
+    "label": "Find Match Highlight Background"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "foreground",
+    "leaf": "foreground",
+    "label": "Foreground"
+  },
+  {
+    "full": "lineHighlightBackground",
+    "leaf": "lineHighlightBackground",
+    "label": "Line Highlight Background"
+  },
+  {
+    "full": "selectionBackground",
+    "leaf": "selectionBackground",
+    "label": "Selection Background"
+  },
+  {
+    "full": "findMatchHighlightBackground",
+    "leaf": "findMatchHighlightBackground",
+    "label": "Find Match Highlight Background"
+  },
+  {
+    "full": "font.family",
+    "leaf": "family",
+    "label": "Family"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "foreground",
+    "leaf": "foreground",
+    "label": "Foreground"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "foreground",
+    "leaf": "foreground",
+    "label": "Foreground"
+  },
+  {
+    "full": "selectionBackground",
+    "leaf": "selectionBackground",
+    "label": "Selection Background"
+  },
+  {
+    "full": "selectionForeground",
+    "leaf": "selectionForeground",
+    "label": "Selection Foreground"
+  },
+  {
+    "full": "inactiveSelectionBackground",
+    "leaf": "inactiveSelectionBackground",
+    "label": "Inactive Selection Background"
+  },
+  {
+    "full": "selectionHighlightBackground",
+    "leaf": "selectionHighlightBackground",
+    "label": "Selection Highlight Background"
+  },
+  {
+    "full": "selectionHighlightBorder",
+    "leaf": "selectionHighlightBorder",
+    "label": "Selection Highlight Border"
+  },
+  {
+    "full": "compositionBorder",
+    "leaf": "compositionBorder",
+    "label": "Composition Border"
+  },
+  {
+    "full": "findMatchBackground",
+    "leaf": "findMatchBackground",
+    "label": "Find Match Background"
+  },
+  {
+    "full": "findMatchForeground",
+    "leaf": "findMatchForeground",
+    "label": "Find Match Foreground"
+  },
+  {
+    "full": "findMatchHighlightBackground",
+    "leaf": "findMatchHighlightBackground",
+    "label": "Find Match Highlight Background"
+  },
+  {
+    "full": "findMatchHighlightForeground",
+    "leaf": "findMatchHighlightForeground",
+    "label": "Find Match Highlight Foreground"
+  },
+  {
+    "full": "findRangeHighlightBackground",
+    "leaf": "findRangeHighlightBackground",
+    "label": "Find Range Highlight Background"
+  },
+  {
+    "full": "findMatchBorder",
+    "leaf": "findMatchBorder",
+    "label": "Find Match Border"
+  },
+  {
+    "full": "findMatchHighlightBorder",
+    "leaf": "findMatchHighlightBorder",
+    "label": "Find Match Highlight Border"
+  },
+  {
+    "full": "findRangeHighlightBorder",
+    "leaf": "findRangeHighlightBorder",
+    "label": "Find Range Highlight Border"
+  },
+  {
+    "full": "hoverHighlightBackground",
+    "leaf": "hoverHighlightBackground",
+    "label": "Hover Highlight Background"
+  },
+  {
+    "full": "snippetTabstopHighlightBackground",
+    "leaf": "snippetTabstopHighlightBackground",
+    "label": "Snippet Tabstop Highlight Background"
+  },
+  {
+    "full": "snippetTabstopHighlightBorder",
+    "leaf": "snippetTabstopHighlightBorder",
+    "label": "Snippet Tabstop Highlight Border"
+  },
+  {
+    "full": "snippetFinalTabstopHighlightBackground",
+    "leaf": "snippetFinalTabstopHighlightBackground",
+    "label": "Snippet Final Tabstop Highlight Background"
+  },
+  {
+    "full": "snippetFinalTabstopHighlightBorder",
+    "leaf": "snippetFinalTabstopHighlightBorder",
+    "label": "Snippet Final Tabstop Highlight Border"
+  },
+  {
+    "full": "lineHighlightBackground",
+    "leaf": "lineHighlightBackground",
+    "label": "Line Highlight Background"
+  },
+  {
+    "full": "inactiveLineHighlightBackground",
+    "leaf": "inactiveLineHighlightBackground",
+    "label": "Inactive Line Highlight Background"
+  },
+  {
+    "full": "lineHighlightBorder",
+    "leaf": "lineHighlightBorder",
+    "label": "Line Highlight Border"
+  },
+  {
+    "full": "rangeHighlightBackground",
+    "leaf": "rangeHighlightBackground",
+    "label": "Range Highlight Background"
+  },
+  {
+    "full": "rangeHighlightBorder",
+    "leaf": "rangeHighlightBorder",
+    "label": "Range Highlight Border"
+  },
+  {
+    "full": "symbolHighlightBackground",
+    "leaf": "symbolHighlightBackground",
+    "label": "Symbol Highlight Background"
+  },
+  {
+    "full": "symbolHighlightBorder",
+    "leaf": "symbolHighlightBorder",
+    "label": "Symbol Highlight Border"
+  },
+  {
+    "full": "wordHighlightBackground",
+    "leaf": "wordHighlightBackground",
+    "label": "Word Highlight Background"
+  },
+  {
+    "full": "wordHighlightStrongBackground",
+    "leaf": "wordHighlightStrongBackground",
+    "label": "Word Highlight Strong Background"
+  },
+  {
+    "full": "contrib.floatingToolbar",
+    "leaf": "floatingToolbar",
+    "label": "Floating Toolbar"
+  },
+  {
+    "full": "overlayToolbar",
+    "leaf": "overlayToolbar",
+    "label": "Overlay Toolbar"
+  },
+  {
+    "full": "contrib.debug",
+    "leaf": "debug",
+    "label": "Debug"
+  },
+  {
+    "full": "contrib.breakpoint",
+    "leaf": "breakpoint",
+    "label": "Breakpoint"
+  },
+  {
+    "full": "contrib.editorDockerManager",
+    "leaf": "editorDockerManager",
+    "label": "Editor Docker Manager"
+  },
+  {
+    "full": "contrib.gutterTabToJumpWidget",
+    "leaf": "gutterTabToJumpWidget",
+    "label": "Gutter Tab To Jump Widget"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "action.toggleTabFocusMode",
+    "leaf": "toggleTabFocusMode",
+    "label": "Toggle Tab Focus Mode"
+  },
+  {
+    "full": "contrib.defineKeybinding",
+    "leaf": "defineKeybinding",
+    "label": "Define Keybinding"
+  },
+  {
+    "full": "action.submitComment",
+    "leaf": "submitComment",
+    "label": "Submit Comment"
+  },
+  {
+    "full": "contrib.menuPreventer",
+    "leaf": "menuPreventer",
+    "label": "Menu Preventer"
+  },
+  {
+    "full": "tabCompletionController",
+    "leaf": "tabCompletionController",
+    "label": "Tab Completion Controller"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "contrib.review",
+    "leaf": "review",
+    "label": "Review"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "action.accessibleViewNext",
+    "leaf": "accessibleViewNext",
+    "label": "Accessible View Next"
+  },
+  {
+    "full": "action.accessibleViewNextCodeBlock",
+    "leaf": "accessibleViewNextCodeBlock",
+    "label": "Accessible View Next Code Block"
+  },
+  {
+    "full": "action.accessibleViewPreviousCodeBlock",
+    "leaf": "accessibleViewPreviousCodeBlock",
+    "label": "Accessible View Previous Code Block"
+  },
+  {
+    "full": "action.accessibleViewPrevious",
+    "leaf": "accessibleViewPrevious",
+    "label": "Accessible View Previous"
+  },
+  {
+    "full": "action.accessibleViewGoToSymbol",
+    "leaf": "accessibleViewGoToSymbol",
+    "label": "Accessible View Go To Symbol"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "action.accessibleView",
+    "leaf": "accessibleView",
+    "label": "Accessible View"
+  },
+  {
+    "full": "action.accessibleViewDisableHint",
+    "leaf": "accessibleViewDisableHint",
+    "label": "Accessible View Disable Hint"
+  },
+  {
+    "full": "action.accessibilityHelpConfigureKeybindings",
+    "leaf": "accessibilityHelpConfigureKeybindings",
+    "label": "Accessibility Help Configure Keybindings"
+  },
+  {
+    "full": "action.accessibilityHelpConfigureAssignedKeybindings",
+    "leaf": "accessibilityHelpConfigureAssignedKeybindings",
+    "label": "Accessibility Help Configure Assigned Keybindings"
+  },
+  {
+    "full": "action.accessibilityHelpOpenHelpLink",
+    "leaf": "accessibilityHelpOpenHelpLink",
+    "label": "Accessibility Help Open Help Link"
+  },
+  {
+    "full": "action.accessibleViewAcceptInlineCompletion",
+    "leaf": "accessibleViewAcceptInlineCompletion",
+    "label": "Accessible View Accept Inline Completion"
+  },
+  {
+    "full": "tokenColorCustomizations",
+    "leaf": "tokenColorCustomizations",
+    "label": "Token Color Customizations"
+  },
+  {
+    "full": "semanticTokenColorCustomizations",
+    "leaf": "semanticTokenColorCustomizations",
+    "label": "Semantic Token Color Customizations"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "findMatchBackground",
+    "leaf": "findMatchBackground",
+    "label": "Find Match Background"
+  },
+  {
+    "full": "foreground",
+    "leaf": "foreground",
+    "label": "Foreground"
+  },
+  {
+    "full": "inactiveSelectionBackground",
+    "leaf": "inactiveSelectionBackground",
+    "label": "Inactive Selection Background"
+  },
+  {
+    "full": "selectionHighlightBackground",
+    "leaf": "selectionHighlightBackground",
+    "label": "Selection Highlight Background"
+  },
+  {
+    "full": "background",
+    "leaf": "background",
+    "label": "Background"
+  },
+  {
+    "full": "foreground",
+    "leaf": "foreground",
+    "label": "Foreground"
+  },
+  {
+    "full": "inactiveSelectionBackground",
+    "leaf": "inactiveSelectionBackground",
+    "label": "Inactive Selection Background"
+  },
+  {
+    "full": "selectionHighlightBackground",
+    "leaf": "selectionHighlightBackground",
+    "label": "Selection Highlight Background"
+  },
+  {
+    "full": "experimental.asyncTokenizationLogging",
+    "leaf": "asyncTokenizationLogging",
+    "label": "Async Tokenization Logging"
+  },
+  {
+    "full": "experimental.asyncTokenization",
+    "leaf": "asyncTokenization",
+    "label": "Async Tokenization"
+  },
+  {
+    "full": "experimental.asyncTokenizationVerification",
+    "leaf": "asyncTokenizationVerification",
+    "label": "Async Tokenization Verification"
+  },
+  {
+    "full": "maxTokenizationLineLength",
+    "leaf": "maxTokenizationLineLength",
+    "label": "Max Tokenization Line Length"
+  },
+  {
+    "full": "tokenizedLine",
+    "leaf": "tokenizedLine",
+    "label": "Tokenized Line"
+  },
+  {
+    "full": "action.clipboardCutAction",
+    "leaf": "clipboardCutAction",
+    "label": "Clipboard Cut Action"
+  },
+  {
+    "full": "action.clipboardCopyAction",
+    "leaf": "clipboardCopyAction",
+    "label": "Clipboard Copy Action"
+  },
+  {
+    "full": "action.clipboardPasteAction",
+    "leaf": "clipboardPasteAction",
+    "label": "Clipboard Paste Action"
+  },
+  {
+    "full": "action.selectAll",
+    "leaf": "selectAll",
+    "label": "Select All"
+  },
+  {
+    "full": "action.toggleTabFocusMode",
+    "leaf": "toggleTabFocusMode",
+    "label": "Toggle Tab Focus Mode"
+  },
+  {
+    "full": "action.toggleOvertypeInsertMode",
+    "leaf": "toggleOvertypeInsertMode",
+    "label": "Toggle Overtype Insert Mode"
+  },
+  {
+    "full": "action.toggleColumnSelection",
+    "leaf": "toggleColumnSelection",
+    "label": "Toggle Column Selection"
+  },
+  {
+    "full": "workingSets",
+    "leaf": "workingSets",
+    "label": "Working Sets"
+  },
+  {
+    "full": "action.selectAll",
+    "leaf": "selectAll",
+    "label": "Select All"
+  },
+  {
+    "full": "action.clipboardCopyAction",
+    "leaf": "clipboardCopyAction",
+    "label": "Clipboard Copy Action"
+  },
+  {
+    "full": "action.clipboardCutAction",
+    "leaf": "clipboardCutAction",
+    "label": "Clipboard Cut Action"
+  },
+  {
+    "full": "action.clipboardPasteAction",
+    "leaf": "clipboardPasteAction",
+    "label": "Clipboard Paste Action"
+  },
+  {
+    "full": "wordHighlightBackground",
+    "leaf": "wordHighlightBackground",
+    "label": "Word Highlight Background"
+  },
+  {
+    "full": "wordHighlightStrongBackground",
+    "leaf": "wordHighlightStrongBackground",
+    "label": "Word Highlight Strong Background"
+  },
+  {
+    "full": "semanticTokenColorCustomizations",
+    "leaf": "semanticTokenColorCustomizations",
+    "label": "Semantic Token Color Customizations"
+  },
+  {
+    "full": "action.accessibleView",
+    "leaf": "accessibleView",
+    "label": "Accessible View"
+  },
+  {
+    "full": "experimental.preferTreeSitter",
+    "leaf": "preferTreeSitter",
+    "label": "Prefer Tree Sitter"
+  },
+  {
+    "full": "contrib.defineKeybindingWidget",
+    "leaf": "defineKeybindingWidget",
+    "label": "Define Keybinding Widget"
+  },
+  {
+    "full": "overlayWidget.floatingClickWidget",
+    "leaf": "floatingClickWidget",
+    "label": "Floating Click Widget"
+  },
+  {
+    "full": "contrib.floatingClickMenu",
+    "leaf": "floatingClickMenu",
+    "label": "Floating Click Menu"
+  },
+  {
+    "full": "action.defineKeybinding",
+    "leaf": "defineKeybinding",
+    "label": "Define Keybinding"
+  },
+  {
+    "full": "contrib.settings",
+    "leaf": "settings",
+    "label": "Settings"
+  },
+  {
+    "full": "action.toggleWordWrap",
+    "leaf": "toggleWordWrap",
+    "label": "Toggle Word Wrap"
+  },
+  {
+    "full": "contrib.toggleWordWrapController",
+    "leaf": "toggleWordWrapController",
+    "label": "Toggle Word Wrap Controller"
+  },
+  {
+    "full": "indentSize",
+    "leaf": "indentSize",
+    "label": "Indent Size"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "contrib.review",
+    "leaf": "review",
+    "label": "Review"
+  },
+  {
+    "full": "contrib.dirtydiff",
+    "leaf": "dirtydiff",
+    "label": "Dirtydiff"
+  },
+  {
+    "full": "contrib.testingOutputPeek",
+    "leaf": "testingOutputPeek",
+    "label": "Testing Output Peek"
+  },
+  {
+    "full": "contrib.testingDecorations",
+    "leaf": "testingDecorations",
+    "label": "Testing Decorations"
+  },
+  {
+    "full": "contrib.findController",
+    "leaf": "findController",
+    "label": "Find Controller"
+  },
+  {
+    "full": "contrib.emptyTextEditorHint",
+    "leaf": "emptyTextEditorHint",
+    "label": "Empty Text Editor Hint"
+  },
+  {
+    "full": "contrib.emptyTextEditorHint",
+    "leaf": "emptyTextEditorHint",
+    "label": "Empty Text Editor Hint"
+  },
+  {
+    "full": "contrib.review",
+    "leaf": "review",
+    "label": "Review"
+  },
+  {
+    "full": "contrib.floatingClickMenu",
+    "leaf": "floatingClickMenu",
+    "label": "Floating Click Menu"
+  },
+  {
+    "full": "contrib.dirtydiff",
+    "leaf": "dirtydiff",
+    "label": "Dirtydiff"
+  },
+  {
+    "full": "contrib.testingOutputPeek",
+    "leaf": "testingOutputPeek",
+    "label": "Testing Output Peek"
+  },
+  {
+    "full": "contrib.testingDecorations",
+    "leaf": "testingDecorations",
+    "label": "Testing Decorations"
+  },
+  {
+    "full": "contrib.findController",
+    "leaf": "findController",
+    "label": "Find Controller"
+  },
+  {
+    "full": "contrib.emptyTextEditorHint",
+    "leaf": "emptyTextEditorHint",
+    "label": "Empty Text Editor Hint"
+  },
+  {
+    "full": "contrib.inspectEditorTokens",
+    "leaf": "inspectEditorTokens",
+    "label": "Inspect Editor Tokens"
+  },
+  {
+    "full": "action.inspectTMScopes",
+    "leaf": "inspectTMScopes",
+    "label": "Inspect TM Scopes"
+  },
+  {
+    "full": "contrib.inspectEditorTokensWidget",
+    "leaf": "inspectEditorTokensWidget",
+    "label": "Inspect Editor Tokens Widget"
+  },
+  {
+    "full": "action.goToTypeDefinition",
+    "leaf": "goToTypeDefinition",
+    "label": "Go To Type Definition"
+  },
+  {
+    "full": "action.goToImplementation",
+    "leaf": "goToImplementation",
+    "label": "Go To Implementation"
+  },
+  {
+    "full": "action.goToReferences",
+    "leaf": "goToReferences",
+    "label": "Go To References"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "contrib.inlineChatController",
+    "leaf": "inlineChatController",
+    "label": "Inline Chat Controller"
+  },
+  {
+    "full": "contrib.inlineChatController2",
+    "leaf": "inlineChatController2",
+    "label": "Inline Chat Controller2"
+  },
+  {
+    "full": "indentSize",
+    "leaf": "indentSize",
+    "label": "Indent Size"
+  },
+  {
+    "full": "indentSize",
+    "leaf": "indentSize",
+    "label": "Indent Size"
+  },
+  {
+    "full": "indentSize",
+    "leaf": "indentSize",
+    "label": "Indent Size"
+  },
+  {
+    "full": "indentSize",
+    "leaf": "indentSize",
+    "label": "Indent Size"
+  },
+  {
+    "full": "indentSize",
+    "leaf": "indentSize",
+    "label": "Indent Size"
+  },
+  {
+    "full": "indentSize",
+    "leaf": "indentSize",
+    "label": "Indent Size"
+  },
+  {
+    "full": "debug.action.copyAddress",
+    "leaf": "copyAddress",
+    "label": "Copy Address"
+  },
+  {
+    "full": "debug.action.toggleBreakpoint",
+    "leaf": "toggleBreakpoint",
+    "label": "Toggle Breakpoint"
+  },
+  {
+    "full": "debug.action.toggleInlineBreakpoint",
+    "leaf": "toggleInlineBreakpoint",
+    "label": "Toggle Inline Breakpoint"
+  },
+  {
+    "full": "closeExceptionWidget",
+    "leaf": "closeExceptionWidget",
+    "label": "Close Exception Widget"
+  },
+  {
+    "full": "inlineValuesForeground",
+    "leaf": "inlineValuesForeground",
+    "label": "Inline Values Foreground"
+  },
+  {
+    "full": "inlineValuesBackground",
+    "leaf": "inlineValuesBackground",
+    "label": "Inline Values Background"
+  },
+  {
+    "full": "action.triggerSuggest",
+    "leaf": "triggerSuggest",
+    "label": "Trigger Suggest"
+  },
+  {
+    "full": "find.history",
+    "leaf": "history",
+    "label": "History"
+  },
+  {
+    "full": "find.replaceHistory",
+    "leaf": "replaceHistory",
+    "label": "Replace History"
+  },
+  {
+    "full": "contrib.emptyTextEditorHint",
+    "leaf": "emptyTextEditorHint",
+    "label": "Empty Text Editor Hint"
+  },
+  {
+    "full": "widget.emptyHint",
+    "leaf": "emptyHint",
+    "label": "Empty Hint"
+  },
+  {
+    "full": "indentSize",
+    "leaf": "indentSize",
+    "label": "Indent Size"
+  },
+  {
+    "full": "stackFrameHighlightBackground",
+    "leaf": "stackFrameHighlightBackground",
+    "label": "Stack Frame Highlight Background"
+  },
+  {
+    "full": "focusedStackFrameHighlightBackground",
+    "leaf": "focusedStackFrameHighlightBackground",
+    "label": "Focused Stack Frame Highlight Background"
+  },
+  {
+    "full": "action.formatDocument.multiple",
+    "leaf": "multiple",
+    "label": "Multiple"
+  },
+  {
+    "full": "action.formatSelection.multiple",
+    "leaf": "multiple",
+    "label": "Multiple"
+  },
+  {
+    "full": "action.triggerSuggest",
+    "leaf": "triggerSuggest",
+    "label": "Trigger Suggest"
+  },
+  {
+    "full": "action.triggerSuggest",
+    "leaf": "triggerSuggest",
+    "label": "Trigger Suggest"
+  },
+  {
+    "full": "action.extensioneditor.showfind",
+    "leaf": "showfind",
+    "label": "Showfind"
+  },
+  {
+    "full": "action.extensioneditor.findNext",
+    "leaf": "findNext",
+    "label": "Find Next"
+  },
+  {
+    "full": "action.extensioneditor.findPrevious",
+    "leaf": "findPrevious",
+    "label": "Find Previous"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "contrib.inlineCompletionsController",
+    "leaf": "inlineCompletionsController",
+    "label": "Inline Completions Controller"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "contrib.coverageDecorations",
+    "leaf": "coverageDecorations",
+    "label": "Coverage Decorations"
+  },
+  {
+    "full": "contrib.testingOutputPeek",
+    "leaf": "testingOutputPeek",
+    "label": "Testing Output Peek"
+  },
+  {
+    "full": "contrib.testingDecorations",
+    "leaf": "testingDecorations",
+    "label": "Testing Decorations"
+  },
+  {
+    "full": "contrib.coverageDecorations",
+    "leaf": "coverageDecorations",
+    "label": "Coverage Decorations"
+  },
+  {
+    "full": "contrib.testingOutputPeek",
+    "leaf": "testingOutputPeek",
+    "label": "Testing Output Peek"
+  },
+  {
+    "full": "contrib.testingOutputPeek",
+    "leaf": "testingOutputPeek",
+    "label": "Testing Output Peek"
+  },
+  {
+    "full": "closeTestPeek",
+    "leaf": "closeTestPeek",
+    "label": "Close Test Peek"
+  },
+  {
+    "full": "contrib.testingDecorations",
+    "leaf": "testingDecorations",
+    "label": "Testing Decorations"
+  },
+  {
+    "full": "contrib.testingOutputPeek",
+    "leaf": "testingOutputPeek",
+    "label": "Testing Output Peek"
+  },
+  {
+    "full": "contrib.testingDecorations",
+    "leaf": "testingDecorations",
+    "label": "Testing Decorations"
+  },
+  {
+    "full": "contrib.coverageDecorations",
+    "leaf": "coverageDecorations",
+    "label": "Coverage Decorations"
+  },
+  {
+    "full": "find.seedSearchStringFromSelection",
+    "leaf": "seedSearchStringFromSelection",
+    "label": "Seed Search String From Selection"
+  },
+  {
+    "full": "action.peekDefinition",
+    "leaf": "peekDefinition",
+    "label": "Peek Definition"
+  },
+  {
+    "full": "action.goToDeclaration",
+    "leaf": "goToDeclaration",
+    "label": "Go To Declaration"
+  },
+  {
+    "full": "action.openDeclarationToTheSide",
+    "leaf": "openDeclarationToTheSide",
+    "label": "Open Declaration To The Side"
+  },
+  {
+    "full": "action.peekDefinition",
+    "leaf": "peekDefinition",
+    "label": "Peek Definition"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "contrib.quickdiff",
+    "leaf": "quickdiff",
+    "label": "Quickdiff"
+  },
+  {
+    "full": "action.dirtydiff.previous",
+    "leaf": "previous",
+    "label": "Previous"
+  },
+  {
+    "full": "action.dirtydiff.next",
+    "leaf": "next",
+    "label": "Next"
+  },
+  {
+    "full": "action.dirtydiff.next",
+    "leaf": "next",
+    "label": "Next"
+  },
+  {
+    "full": "action.dirtydiff.previous",
+    "leaf": "previous",
+    "label": "Previous"
+  },
+  {
+    "full": "debug.action.conditionalBreakpoint",
+    "leaf": "conditionalBreakpoint",
+    "label": "Conditional Breakpoint"
+  },
+  {
+    "full": "debug.action.addLogPoint",
+    "leaf": "addLogPoint",
+    "label": "Add Log Point"
+  },
+  {
+    "full": "debug.action.triggerByBreakpoint",
+    "leaf": "triggerByBreakpoint",
+    "label": "Trigger By Breakpoint"
+  },
+  {
+    "full": "debug.action.editBreakpoint",
+    "leaf": "editBreakpoint",
+    "label": "Edit Breakpoint"
+  },
+  {
+    "full": "debug.action.runToCursor",
+    "leaf": "runToCursor",
+    "label": "Run To Cursor"
+  },
+  {
+    "full": "debug.action.selectionToRepl",
+    "leaf": "selectionToRepl",
+    "label": "Selection To Repl"
+  },
+  {
+    "full": "debug.action.selectionToWatch",
+    "leaf": "selectionToWatch",
+    "label": "Selection To Watch"
+  },
+  {
+    "full": "debug.action.showDebugHover",
+    "leaf": "showDebugHover",
+    "label": "Show Debug Hover"
+  },
+  {
+    "full": "debug.action.stepIntoTargets",
+    "leaf": "stepIntoTargets",
+    "label": "Step Into Targets"
+  },
+  {
+    "full": "debug.action.goToNextBreakpoint",
+    "leaf": "goToNextBreakpoint",
+    "label": "Go To Next Breakpoint"
+  },
+  {
+    "full": "debug.action.goToPreviousBreakpoint",
+    "leaf": "goToPreviousBreakpoint",
+    "label": "Go To Previous Breakpoint"
+  },
+  {
+    "full": "debug.action.closeExceptionWidget",
+    "leaf": "closeExceptionWidget",
+    "label": "Close Exception Widget"
+  },
+  {
+    "full": "contrib.callStack",
+    "leaf": "callStack",
+    "label": "Call Stack"
+  },
+  {
+    "full": "action.nextCommentThreadAction",
+    "leaf": "nextCommentThreadAction",
+    "label": "Next Comment Thread Action"
+  },
+  {
+    "full": "action.previousCommentThreadAction",
+    "leaf": "previousCommentThreadAction",
+    "label": "Previous Comment Thread Action"
+  },
+  {
+    "full": "action.nextCommentedRangeAction",
+    "leaf": "nextCommentedRangeAction",
+    "label": "Next Commented Range Action"
+  },
+  {
+    "full": "action.previousCommentedRangeAction",
+    "leaf": "previousCommentedRangeAction",
+    "label": "Previous Commented Range Action"
+  },
+  {
+    "full": "action.nextCommentingRange",
+    "leaf": "nextCommentingRange",
+    "label": "Next Commenting Range"
+  },
+  {
+    "full": "action.previousCommentingRange",
+    "leaf": "previousCommentingRange",
+    "label": "Previous Commenting Range"
+  },
+  {
+    "full": "action.submitComment",
+    "leaf": "submitComment",
+    "label": "Submit Comment"
+  },
+  {
+    "full": "action.webvieweditor.showFind",
+    "leaf": "showFind",
+    "label": "Show Find"
+  },
+  {
+    "full": "action.webvieweditor.hideFind",
+    "leaf": "hideFind",
+    "label": "Hide Find"
+  },
+  {
+    "full": "action.webvieweditor.findNext",
+    "leaf": "findNext",
+    "label": "Find Next"
+  },
+  {
+    "full": "action.webvieweditor.findPrevious",
+    "leaf": "findPrevious",
+    "label": "Find Previous"
+  },
+  {
+    "full": "action.accessibilityHelp",
+    "leaf": "accessibilityHelp",
+    "label": "Accessibility Help"
+  },
+  {
+    "full": "action.accessibleViewGoToSymbol",
+    "leaf": "accessibleViewGoToSymbol",
+    "label": "Accessible View Go To Symbol"
+  },
+  {
+    "full": "action.accessibleView",
+    "leaf": "accessibleView",
+    "label": "Accessible View"
+  },
+  {
+    "full": "suggest.showIcons",
+    "leaf": "showIcons",
+    "label": "Show Icons"
+  },
+  {
+    "full": "suggest.showIcons",
+    "leaf": "showIcons",
+    "label": "Show Icons"
+  },
+  {
+    "full": "action.inlineSuggest.commit",
+    "leaf": "commit",
+    "label": "Commit"
+  },
+  {
+    "full": "action.inlineSuggest.commit",
+    "leaf": "commit",
+    "label": "Commit"
+  },
+  {
+    "full": "emmet.action.expandAbbreviation",
+    "leaf": "expandAbbreviation",
+    "label": "Expand Abbreviation"
+  },
+  {
+    "full": "emmet.action.expandAbbreviation",
+    "leaf": "expandAbbreviation",
+    "label": "Expand Abbreviation"
+  },
+  {
+    "full": "action.toggleScreenReaderAccessibilityMode",
+    "leaf": "toggleScreenReaderAccessibilityMode",
+    "label": "Toggle Screen Reader Accessibility Mode"
+  },
+  {
+    "full": "contrib.diffEditorHelper",
+    "leaf": "diffEditorHelper",
+    "label": "Diff Editor Helper"
+  },
+  {
+    "full": "contrib.largeFileOptimizationsWarner",
+    "leaf": "largeFileOptimizationsWarner",
+    "label": "Large File Optimizations Warner"
+  },
+  {
+    "full": "largeFileOptimizations",
+    "leaf": "largeFileOptimizations",
+    "label": "Large File Optimizations"
+  },
+  {
+    "full": "contrib.largeFileOptimizationsWarner",
+    "leaf": "largeFileOptimizationsWarner",
+    "label": "Large File Optimizations Warner"
+  },
+  {
+    "full": "action.formatChanges",
+    "leaf": "formatChanges",
+    "label": "Format Changes"
+  },
+  {
+    "full": "action.toggleColumnSelection",
+    "leaf": "toggleColumnSelection",
+    "label": "Toggle Column Selection"
+  },
+  {
+    "full": "action.toggleMinimap",
+    "leaf": "toggleMinimap",
+    "label": "Toggle Minimap"
+  },
+  {
+    "full": "action.toggleOvertypeInsertMode",
+    "leaf": "toggleOvertypeInsertMode",
+    "label": "Toggle Overtype Insert Mode"
+  },
+  {
+    "full": "action.toggleRenderControlCharacter",
+    "leaf": "toggleRenderControlCharacter",
+    "label": "Toggle Render Control Character"
+  },
+  {
+    "full": "action.toggleRenderWhitespace",
+    "leaf": "toggleRenderWhitespace",
+    "label": "Toggle Render Whitespace"
+  },
+  {
+    "full": "action.insertSnippet",
+    "leaf": "insertSnippet",
+    "label": "Insert Snippet"
+  },
+  {
+    "full": "action.surroundWithSnippet",
+    "leaf": "surroundWithSnippet",
+    "label": "Surround With Snippet"
+  },
+  {
+    "full": "action.showSnippets",
+    "leaf": "showSnippets",
+    "label": "Show Snippets"
+  },
+  {
+    "full": "action.insertSnippet",
+    "leaf": "insertSnippet",
+    "label": "Insert Snippet"
+  },
+  {
+    "full": "action.formatDocument.none",
+    "leaf": "none",
+    "label": "None"
+  },
+  {
+    "full": "action.formatDocument.multiple",
+    "leaf": "multiple",
+    "label": "Multiple"
+  },
+  {
+    "full": "action.formatDocument",
+    "leaf": "formatDocument",
+    "label": "Format Document"
+  },
+  {
+    "full": "defaultFoldingRangeProvider",
+    "leaf": "defaultFoldingRangeProvider",
+    "label": "Default Folding Range Provider"
+  },
+  {
+    "full": "contrib.InlayHintsAccessibility",
+    "leaf": "InlayHintsAccessibility",
+    "label": "Inlay Hints Accessibility"
+  },
+  {
+    "full": "showCallHierarchy",
+    "leaf": "showCallHierarchy",
+    "label": "Show Call Hierarchy"
+  },
+  {
+    "full": "showIncomingCalls",
+    "leaf": "showIncomingCalls",
+    "label": "Show Incoming Calls"
+  },
+  {
+    "full": "showOutgoingCalls",
+    "leaf": "showOutgoingCalls",
+    "label": "Show Outgoing Calls"
+  },
+  {
+    "full": "refocusCallHierarchy",
+    "leaf": "refocusCallHierarchy",
+    "label": "Refocus Call Hierarchy"
+  },
+  {
+    "full": "closeCallHierarchy",
+    "leaf": "closeCallHierarchy",
+    "label": "Close Call Hierarchy"
+  },
+  {
+    "full": "showTypeHierarchy",
+    "leaf": "showTypeHierarchy",
+    "label": "Show Type Hierarchy"
+  },
+  {
+    "full": "showSupertypes",
+    "leaf": "showSupertypes",
+    "label": "Show Supertypes"
+  },
+  {
+    "full": "showSubtypes",
+    "leaf": "showSubtypes",
+    "label": "Show Subtypes"
+  },
+  {
+    "full": "refocusTypeHierarchy",
+    "leaf": "refocusTypeHierarchy",
+    "label": "Refocus Type Hierarchy"
+  },
+  {
+    "full": "closeTypeHierarchy",
+    "leaf": "closeTypeHierarchy",
+    "label": "Close Type Hierarchy"
+  },
+  {
+    "full": "detectLanguage",
+    "leaf": "detectLanguage",
+    "label": "Detect Language"
+  },
+  {
+    "full": "inlayHints.Reset",
+    "leaf": "Reset",
+    "label": "Reset"
+  },
+  {
+    "full": "action.openLink",
+    "leaf": "openLink",
+    "label": "Open Link"
+  },
+  {
+    "full": "action.accessibilityHelpConfigureKeybindings",
+    "leaf": "accessibilityHelpConfigureKeybindings",
+    "label": "Accessibility Help Configure Keybindings"
+  },
+  {
+    "full": "action.accessibilityHelpConfigureAssignedKeybindings",
+    "leaf": "accessibilityHelpConfigureAssignedKeybindings",
+    "label": "Accessibility Help Configure Assigned Keybindings"
+  },
+  {
+    "full": "action.accessibleView",
+    "leaf": "accessibleView",
+    "label": "Accessible View"
+  },
+  {
+    "full": "action.accessibleView",
+    "leaf": "accessibleView",
+    "label": "Accessible View"
+  },
+  {
+    "full": "centered",
+    "leaf": "centered",
+    "label": "Centered"
+  },
+  {
+    "full": "hidden",
+    "leaf": "hidden",
+    "label": "Hidden"
+  },
+  {
+    "full": "action.selectAll",
+    "leaf": "selectAll",
+    "label": "Select All"
+  },
+  {
+    "full": "action.clipboardCopyAction",
+    "leaf": "clipboardCopyAction",
+    "label": "Clipboard Copy Action"
+  },
+  {
+    "full": "action.clipboardCutAction",
+    "leaf": "clipboardCutAction",
+    "label": "Clipboard Cut Action"
+  },
+  {
+    "full": "action.clipboardPasteAction",
+    "leaf": "clipboardPasteAction",
+    "label": "Clipboard Paste Action"
+  },
+  {
+    "full": "action.measureExtHostLatency",
+    "leaf": "measureExtHostLatency",
+    "label": "Measure Ext Host Latency"
+  },
+  {
+    "full": "action.selectionClipboardPaste",
+    "leaf": "selectionClipboardPaste",
+    "label": "Selection Clipboard Paste"
+  },
+  {
+    "full": "action.startDebugTextMate",
+    "leaf": "startDebugTextMate",
+    "label": "Start Debug Text Mate"
+  }
+]
