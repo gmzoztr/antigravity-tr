@@ -1,78 +1,8 @@
 [
   {
-    "full": "contributions",
-    "leaf": "contributions",
-    "label": "Contributions"
-  },
-  {
-    "full": "action.selectAll",
-    "leaf": "selectAll",
-    "label": "Select All"
-  },
-  {
-    "full": "modesRegistry",
-    "leaf": "modesRegistry",
-    "label": "Modes Registry"
-  },
-  {
-    "full": "unicodeHighlight.ambiguousCharacters",
-    "leaf": "ambiguousCharacters",
-    "label": "Ambiguous Characters"
-  },
-  {
-    "full": "unicodeHighlight.invisibleCharacters",
-    "leaf": "invisibleCharacters",
-    "label": "Invisible Characters"
-  },
-  {
     "full": "language.brackets",
     "leaf": "brackets",
     "label": "Brackets"
-  },
-  {
-    "full": "language.colorizedBracketPairs",
-    "leaf": "colorizedBracketPairs",
-    "label": "Colorized Bracket Pairs"
-  },
-  {
-    "full": "contrib.markerDecorations",
-    "leaf": "markerDecorations",
-    "label": "Marker Decorations"
-  },
-  {
-    "full": "comments.insertSpace",
-    "leaf": "insertSpace",
-    "label": "Insert Space"
-  },
-  {
-    "full": "comments.ignoreEmptyLines",
-    "leaf": "ignoreEmptyLines",
-    "label": "Ignore Empty Lines"
-  },
-  {
-    "full": "find.cursorMoveOnType",
-    "leaf": "cursorMoveOnType",
-    "label": "Cursor Move On Type"
-  },
-  {
-    "full": "find.seedSearchStringFromSelection",
-    "leaf": "seedSearchStringFromSelection",
-    "label": "Seed Search String From Selection"
-  },
-  {
-    "full": "find.autoFindInSelection",
-    "leaf": "autoFindInSelection",
-    "label": "Auto Find In Selection"
-  },
-  {
-    "full": "find.globalFindClipboard",
-    "leaf": "globalFindClipboard",
-    "label": "Global Find Clipboard"
-  },
-  {
-    "full": "find.addExtraSpaceOnTop",
-    "leaf": "addExtraSpaceOnTop",
-    "label": "Add Extra Space On Top"
   },
   {
     "full": "find.loop",
@@ -83,16 +13,6 @@
     "full": "find.history",
     "leaf": "history",
     "label": "History"
-  },
-  {
-    "full": "find.replaceHistory",
-    "leaf": "replaceHistory",
-    "label": "Replace History"
-  },
-  {
-    "full": "find.findOnType",
-    "leaf": "findOnType",
-    "label": "Find On Type"
   },
   {
     "full": "action.goToReferences",
@@ -120,104 +40,9 @@
     "label": "Go To References"
   },
   {
-    "full": "action.peekImplementation",
-    "leaf": "peekImplementation",
-    "label": "Peek Implementation"
-  },
-  {
-    "full": "action.goToImplementation",
-    "leaf": "goToImplementation",
-    "label": "Go To Implementation"
-  },
-  {
-    "full": "action.peekTypeDefinition",
-    "leaf": "peekTypeDefinition",
-    "label": "Peek Type Definition"
-  },
-  {
-    "full": "action.goToTypeDefinition",
-    "leaf": "goToTypeDefinition",
-    "label": "Go To Type Definition"
-  },
-  {
-    "full": "action.peekDeclaration",
-    "leaf": "peekDeclaration",
-    "label": "Peek Declaration"
-  },
-  {
-    "full": "action.revealDeclaration",
-    "leaf": "revealDeclaration",
-    "label": "Reveal Declaration"
-  },
-  {
-    "full": "action.peekDefinition",
-    "leaf": "peekDefinition",
-    "label": "Peek Definition"
-  },
-  {
-    "full": "action.revealDefinitionAside",
-    "leaf": "revealDefinitionAside",
-    "label": "Reveal Definition Aside"
-  },
-  {
-    "full": "action.revealDefinition",
-    "leaf": "revealDefinition",
-    "label": "Reveal Definition"
-  },
-  {
     "full": "gotoLocation.multiple",
     "leaf": "multiple",
     "label": "Multiple"
-  },
-  {
-    "full": "gotoLocation.multipleDefinitions",
-    "leaf": "multipleDefinitions",
-    "label": "Multiple Definitions"
-  },
-  {
-    "full": "gotoLocation.multipleTypeDefinitions",
-    "leaf": "multipleTypeDefinitions",
-    "label": "Multiple Type Definitions"
-  },
-  {
-    "full": "gotoLocation.multipleDeclarations",
-    "leaf": "multipleDeclarations",
-    "label": "Multiple Declarations"
-  },
-  {
-    "full": "gotoLocation.multipleImplementations",
-    "leaf": "multipleImplementations",
-    "label": "Multiple Implementations"
-  },
-  {
-    "full": "gotoLocation.multipleReferences",
-    "leaf": "multipleReferences",
-    "label": "Multiple References"
-  },
-  {
-    "full": "gotoLocation.alternativeDefinitionCommand",
-    "leaf": "alternativeDefinitionCommand",
-    "label": "Alternative Definition Command"
-  },
-  {
-    "full": "gotoLocation.alternativeTypeDefinitionCommand",
-    "leaf": "alternativeTypeDefinitionCommand",
-    "label": "Alternative Type Definition Command"
-  },
-  {
-    "full": "gotoLocation.alternativeDeclarationCommand",
-    "leaf": "alternativeDeclarationCommand",
-    "label": "Alternative Declaration Command"
-  },
-  {
-    "full": "gotoLocation.alternativeImplementationCommand",
-    "leaf": "alternativeImplementationCommand",
-    "label": "Alternative Implementation Command"
-  },
-  {
-    "full": "gotoLocation.alternativeReferenceCommand",
-    "leaf": "alternativeReferenceCommand",
-    "label": "Alternative Reference Command"
   },
   {
     "full": "hover.delay",
@@ -230,24 +55,9 @@
     "label": "Sticky"
   },
   {
-    "full": "hover.hidingDelay",
-    "leaf": "hidingDelay",
-    "label": "Hiding Delay"
-  },
-  {
     "full": "hover.above",
     "leaf": "above",
     "label": "Above"
-  },
-  {
-    "full": "stickyScroll.maxLineCount",
-    "leaf": "maxLineCount",
-    "label": "Max Line Count"
-  },
-  {
-    "full": "stickyScroll.defaultModel",
-    "leaf": "defaultModel",
-    "label": "Default Model"
   },
   {
     "full": "stickyScroll.scrollWithEditor",
@@ -370,19 +180,9 @@
     "label": "Allowed Characters"
   },
   {
-    "full": "unicodeHighlight.invisibleCharacters",
-    "leaf": "invisibleCharacters",
-    "label": "Invisible Characters"
-  },
-  {
     "full": "unicodeHighlight.nonBasicASCII",
     "leaf": "nonBasicASCII",
     "label": "Non Basic ASCII"
-  },
-  {
-    "full": "unicodeHighlight.ambiguousCharacters",
-    "leaf": "ambiguousCharacters",
-    "label": "Ambiguous Characters"
   },
   {
     "full": "unicodeHighlight.includeComments",
@@ -1085,26 +885,6 @@
     "label": "Max Tokenization Line Length"
   },
   {
-    "full": "experimental.asyncTokenization",
-    "leaf": "asyncTokenization",
-    "label": "Async Tokenization"
-  },
-  {
-    "full": "experimental.asyncTokenizationLogging",
-    "leaf": "asyncTokenizationLogging",
-    "label": "Async Tokenization Logging"
-  },
-  {
-    "full": "experimental.asyncTokenizationVerification",
-    "leaf": "asyncTokenizationVerification",
-    "label": "Async Tokenization Verification"
-  },
-  {
-    "full": "experimental.treeSitterTelemetry",
-    "leaf": "treeSitterTelemetry",
-    "label": "Tree Sitter Telemetry"
-  },
-  {
     "full": "experimental.preferTreeSitter.css",
     "leaf": "css",
     "label": "Css"
@@ -1128,11 +908,6 @@
     "full": "language.brackets",
     "leaf": "brackets",
     "label": "Brackets"
-  },
-  {
-    "full": "language.colorizedBracketPairs",
-    "leaf": "colorizedBracketPairs",
-    "label": "Colorized Bracket Pairs"
   },
   {
     "full": "action.codeAction",
@@ -1405,19 +1180,9 @@
     "label": "Cancel"
   },
   {
-    "full": "action.revealDefinition",
-    "leaf": "revealDefinition",
-    "label": "Reveal Definition"
-  },
-  {
     "full": "action.goToDeclaration",
     "leaf": "goToDeclaration",
     "label": "Go To Declaration"
-  },
-  {
-    "full": "action.revealDefinitionAside",
-    "leaf": "revealDefinitionAside",
-    "label": "Reveal Definition Aside"
   },
   {
     "full": "action.openDeclarationToTheSide",
@@ -1425,44 +1190,9 @@
     "label": "Open Declaration To The Side"
   },
   {
-    "full": "action.peekDefinition",
-    "leaf": "peekDefinition",
-    "label": "Peek Definition"
-  },
-  {
     "full": "action.previewDeclaration",
     "leaf": "previewDeclaration",
     "label": "Preview Declaration"
-  },
-  {
-    "full": "action.revealDeclaration",
-    "leaf": "revealDeclaration",
-    "label": "Reveal Declaration"
-  },
-  {
-    "full": "action.peekDeclaration",
-    "leaf": "peekDeclaration",
-    "label": "Peek Declaration"
-  },
-  {
-    "full": "action.goToTypeDefinition",
-    "leaf": "goToTypeDefinition",
-    "label": "Go To Type Definition"
-  },
-  {
-    "full": "action.peekTypeDefinition",
-    "leaf": "peekTypeDefinition",
-    "label": "Peek Type Definition"
-  },
-  {
-    "full": "action.goToImplementation",
-    "leaf": "goToImplementation",
-    "label": "Go To Implementation"
-  },
-  {
-    "full": "action.peekImplementation",
-    "leaf": "peekImplementation",
-    "label": "Peek Implementation"
   },
   {
     "full": "action.goToReferences",
@@ -2975,21 +2705,6 @@
     "label": "Selection Highlight Background"
   },
   {
-    "full": "experimental.asyncTokenizationLogging",
-    "leaf": "asyncTokenizationLogging",
-    "label": "Async Tokenization Logging"
-  },
-  {
-    "full": "experimental.asyncTokenization",
-    "leaf": "asyncTokenization",
-    "label": "Async Tokenization"
-  },
-  {
-    "full": "experimental.asyncTokenizationVerification",
-    "leaf": "asyncTokenizationVerification",
-    "label": "Async Tokenization Verification"
-  },
-  {
     "full": "maxTokenizationLineLength",
     "leaf": "maxTokenizationLineLength",
     "label": "Max Tokenization Line Length"
@@ -3015,11 +2730,6 @@
     "label": "Clipboard Paste Action"
   },
   {
-    "full": "action.selectAll",
-    "leaf": "selectAll",
-    "label": "Select All"
-  },
-  {
     "full": "action.toggleTabFocusMode",
     "leaf": "toggleTabFocusMode",
     "label": "Toggle Tab Focus Mode"
@@ -3038,11 +2748,6 @@
     "full": "workingSets",
     "leaf": "workingSets",
     "label": "Working Sets"
-  },
-  {
-    "full": "action.selectAll",
-    "leaf": "selectAll",
-    "label": "Select All"
   },
   {
     "full": "action.clipboardCopyAction",
@@ -3078,11 +2783,6 @@
     "full": "action.accessibleView",
     "leaf": "accessibleView",
     "label": "Accessible View"
-  },
-  {
-    "full": "experimental.preferTreeSitter",
-    "leaf": "preferTreeSitter",
-    "label": "Prefer Tree Sitter"
   },
   {
     "full": "contrib.defineKeybindingWidget",
@@ -3215,16 +2915,6 @@
     "label": "Inspect Editor Tokens Widget"
   },
   {
-    "full": "action.goToTypeDefinition",
-    "leaf": "goToTypeDefinition",
-    "label": "Go To Type Definition"
-  },
-  {
-    "full": "action.goToImplementation",
-    "leaf": "goToImplementation",
-    "label": "Go To Implementation"
-  },
-  {
     "full": "action.goToReferences",
     "leaf": "goToReferences",
     "label": "Go To References"
@@ -3318,11 +3008,6 @@
     "full": "find.history",
     "leaf": "history",
     "label": "History"
-  },
-  {
-    "full": "find.replaceHistory",
-    "leaf": "replaceHistory",
-    "label": "Replace History"
   },
   {
     "full": "contrib.emptyTextEditorHint",
@@ -3460,16 +3145,6 @@
     "label": "Coverage Decorations"
   },
   {
-    "full": "find.seedSearchStringFromSelection",
-    "leaf": "seedSearchStringFromSelection",
-    "label": "Seed Search String From Selection"
-  },
-  {
-    "full": "action.peekDefinition",
-    "leaf": "peekDefinition",
-    "label": "Peek Definition"
-  },
-  {
     "full": "action.goToDeclaration",
     "leaf": "goToDeclaration",
     "label": "Go To Declaration"
@@ -3478,11 +3153,6 @@
     "full": "action.openDeclarationToTheSide",
     "leaf": "openDeclarationToTheSide",
     "label": "Open Declaration To The Side"
-  },
-  {
-    "full": "action.peekDefinition",
-    "leaf": "peekDefinition",
-    "label": "Peek Definition"
   },
   {
     "full": "action.accessibilityHelp",
@@ -3878,11 +3548,6 @@
     "full": "hidden",
     "leaf": "hidden",
     "label": "Hidden"
-  },
-  {
-    "full": "action.selectAll",
-    "leaf": "selectAll",
-    "label": "Select All"
   },
   {
     "full": "action.clipboardCopyAction",

@@ -448,7 +448,14 @@ const settings = {
   "Contributions": "Katkılar",
   "Modes Registry": "Modlar Kayıt Defteri",
   "Replace History": "Değiştirme Geçmişi",
-  "Hiding Delay": "Gizleme Gecikmesi"
+  "Hiding Delay": "Gizleme Gecikmesi",
+  "Default Folding Range Provider": "Varsayılan Katlama Aralığı Sağlayıcısı",
+  "Preferences": "Tercihler",
+  "Show Drop Selector": "Bırakma Seçicisini Göster",
+  "Bracket Pairs Horizontal": "Yatay Ayraç Çiftleri",
+  "Highlight Active Bracket Pair": "Etkin Ayraç Çiftini Vurgula",
+  "Highlight Active Indentation": "Etkin Girintiyi Vurgula",
+  "Indentation": "Girinti"
 };
 
 module.exports = { categories, settings };

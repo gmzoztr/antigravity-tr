@@ -1,0 +1,3327 @@
+[
+  {
+    "key": "accessibility.accessibleView.closeOnKeyPress",
+    "rLabel": "Accessibility › Accessible View",
+    "sLabel": "Close On Key Press"
+  },
+  {
+    "key": "accessibility.debugWatchVariableAnnouncements",
+    "rLabel": "Accessibility",
+    "sLabel": "Debug Watch Variable Announcements"
+  },
+  {
+    "key": "accessibility.dimUnfocused.opacity",
+    "rLabel": "Accessibility › Dim Unfocused",
+    "sLabel": "Opacity"
+  },
+  {
+    "key": "accessibility.hideAccessibleView",
+    "rLabel": "Accessibility",
+    "sLabel": "Hide Accessible View"
+  },
+  {
+    "key": "accessibility.openChatEditedFiles",
+    "rLabel": "Accessibility",
+    "sLabel": "Open Chat Edited Files"
+  },
+  {
+    "key": "accessibility.replEditor.autoFocusReplExecution",
+    "rLabel": "Accessibility › Repl Editor",
+    "sLabel": "Auto Focus Repl Execution"
+  },
+  {
+    "key": "accessibility.replEditor.readLastExecutionOutput",
+    "rLabel": "Accessibility › Repl Editor",
+    "sLabel": "Read Last Execution Output"
+  },
+  {
+    "key": "accessibility.signalOptions.debouncePositionChanges",
+    "rLabel": "Accessibility › Signal Options",
+    "sLabel": "Debounce Position Changes"
+  },
+  {
+    "key": "accessibility.signalOptions.experimental.delays.errorAtPosition",
+    "rLabel": "Accessibility › Signal Options › Experimental › Delays",
+    "sLabel": "Error At Position"
+  },
+  {
+    "key": "accessibility.signalOptions.experimental.delays.general",
+    "rLabel": "Accessibility › Signal Options › Experimental › Delays",
+    "sLabel": "General"
+  },
+  {
+    "key": "accessibility.signalOptions.experimental.delays.warningAtPosition",
+    "rLabel": "Accessibility › Signal Options › Experimental › Delays",
+    "sLabel": "Warning At Position"
+  },
+  {
+    "key": "accessibility.signalOptions.volume",
+    "rLabel": "Accessibility › Signal Options",
+    "sLabel": "Volume"
+  },
+  {
+    "key": "accessibility.signals.chatEditModifiedFile",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Chat Edit Modified File"
+  },
+  {
+    "key": "accessibility.signals.chatRequestSent",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Chat Request Sent"
+  },
+  {
+    "key": "accessibility.signals.chatResponseReceived",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Chat Response Received"
+  },
+  {
+    "key": "accessibility.signals.chatUserActionRequired",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Chat User Action Required"
+  },
+  {
+    "key": "accessibility.signals.clear",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Clear"
+  },
+  {
+    "key": "accessibility.signals.codeActionApplied",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Code Action Applied"
+  },
+  {
+    "key": "accessibility.signals.codeActionTriggered",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Code Action Triggered"
+  },
+  {
+    "key": "accessibility.signals.diffLineDeleted",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Diff Line Deleted"
+  },
+  {
+    "key": "accessibility.signals.diffLineInserted",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Diff Line Inserted"
+  },
+  {
+    "key": "accessibility.signals.diffLineModified",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Diff Line Modified"
+  },
+  {
+    "key": "accessibility.signals.editsKept",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Edits Kept"
+  },
+  {
+    "key": "accessibility.signals.editsUndone",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Edits Undone"
+  },
+  {
+    "key": "accessibility.signals.format",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Format"
+  },
+  {
+    "key": "accessibility.signals.lineHasBreakpoint",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Line Has Breakpoint"
+  },
+  {
+    "key": "accessibility.signals.lineHasError",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Line Has Error"
+  },
+  {
+    "key": "accessibility.signals.lineHasFoldedArea",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Line Has Folded Area"
+  },
+  {
+    "key": "accessibility.signals.lineHasInlineSuggestion",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Line Has Inline Suggestion"
+  },
+  {
+    "key": "accessibility.signals.lineHasWarning",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Line Has Warning"
+  },
+  {
+    "key": "accessibility.signals.nextEditSuggestion",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Next Edit Suggestion"
+  },
+  {
+    "key": "accessibility.signals.noInlayHints",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "No Inlay Hints"
+  },
+  {
+    "key": "accessibility.signals.notebookCellCompleted",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Notebook Cell Completed"
+  },
+  {
+    "key": "accessibility.signals.notebookCellFailed",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Notebook Cell Failed"
+  },
+  {
+    "key": "accessibility.signals.onDebugBreak",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "On Debug Break"
+  },
+  {
+    "key": "accessibility.signals.positionHasError",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Position Has Error"
+  },
+  {
+    "key": "accessibility.signals.positionHasWarning",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Position Has Warning"
+  },
+  {
+    "key": "accessibility.signals.progress",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Progress"
+  },
+  {
+    "key": "accessibility.signals.save",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Save"
+  },
+  {
+    "key": "accessibility.signals.taskCompleted",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Task Completed"
+  },
+  {
+    "key": "accessibility.signals.taskFailed",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Task Failed"
+  },
+  {
+    "key": "accessibility.signals.terminalBell",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Terminal Bell"
+  },
+  {
+    "key": "accessibility.signals.terminalCommandFailed",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Terminal Command Failed"
+  },
+  {
+    "key": "accessibility.signals.terminalCommandSucceeded",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Terminal Command Succeeded"
+  },
+  {
+    "key": "accessibility.signals.terminalQuickFix",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Terminal Quick Fix"
+  },
+  {
+    "key": "accessibility.signals.voiceRecordingStarted",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Voice Recording Started"
+  },
+  {
+    "key": "accessibility.signals.voiceRecordingStopped",
+    "rLabel": "Accessibility › Signals",
+    "sLabel": "Voice Recording Stopped"
+  },
+  {
+    "key": "accessibility.underlineLinks",
+    "rLabel": "Accessibility",
+    "sLabel": "Underline Links"
+  },
+  {
+    "key": "accessibility.verboseChatProgressUpdates",
+    "rLabel": "Accessibility",
+    "sLabel": "Verbose Chat Progress Updates"
+  },
+  {
+    "key": "accessibility.verbosity.debug",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Debug"
+  },
+  {
+    "key": "accessibility.verbosity.diffEditor",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Diff Editor"
+  },
+  {
+    "key": "accessibility.verbosity.diffEditorActive",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Diff Editor Active"
+  },
+  {
+    "key": "accessibility.verbosity.emptyEditorHint",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Empty Editor Hint"
+  },
+  {
+    "key": "accessibility.verbosity.inlineChat",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Inline Chat"
+  },
+  {
+    "key": "accessibility.verbosity.inlineCompletions",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Inline Completions"
+  },
+  {
+    "key": "accessibility.verbosity.keybindingsEditor",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Keybindings Editor"
+  },
+  {
+    "key": "accessibility.verbosity.notebook",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Notebook"
+  },
+  {
+    "key": "accessibility.verbosity.notification",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Notification"
+  },
+  {
+    "key": "accessibility.verbosity.panelChat",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Panel Chat"
+  },
+  {
+    "key": "accessibility.verbosity.replEditor",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Repl Editor"
+  },
+  {
+    "key": "accessibility.verbosity.sourceControl",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Source Control"
+  },
+  {
+    "key": "accessibility.verbosity.terminal",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Terminal"
+  },
+  {
+    "key": "accessibility.verbosity.terminalChatOutput",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Terminal Chat Output"
+  },
+  {
+    "key": "accessibility.verbosity.walkthrough",
+    "rLabel": "Accessibility › Verbosity",
+    "sLabel": "Walkthrough"
+  },
+  {
+    "key": "accessibility.voice.autoSynthesize",
+    "rLabel": "Accessibility › Voice",
+    "sLabel": "Auto Synthesize"
+  },
+  {
+    "key": "accessibility.voice.ignoreCodeBlocks",
+    "rLabel": "Accessibility › Voice",
+    "sLabel": "Ignore Code Blocks"
+  },
+  {
+    "key": "accessibility.voice.speechLanguage",
+    "rLabel": "Accessibility › Voice",
+    "sLabel": "Speech Language"
+  },
+  {
+    "key": "accessibility.voice.speechTimeout",
+    "rLabel": "Accessibility › Voice",
+    "sLabel": "Speech Timeout"
+  },
+  {
+    "key": "accessibility.windowTitleOptimized",
+    "rLabel": "Accessibility",
+    "sLabel": "Window Title Optimized"
+  },
+  {
+    "key": "chat.agent.maxRequests",
+    "rLabel": "Chat › Agent",
+    "sLabel": "Max Requests"
+  },
+  {
+    "key": "chat.agent.thinking.collapsedTools",
+    "rLabel": "Chat › Agent › Thinking",
+    "sLabel": "Collapsed Tools"
+  },
+  {
+    "key": "chat.allowAnonymousAccess",
+    "rLabel": "Chat",
+    "sLabel": "Allow Anonymous Access"
+  },
+  {
+    "key": "chat.checkpoints.showFileChanges",
+    "rLabel": "Chat › Checkpoints",
+    "sLabel": "Show File Changes"
+  },
+  {
+    "key": "chat.disableAIFeatures",
+    "rLabel": "Chat",
+    "sLabel": "Disable AI Features"
+  },
+  {
+    "key": "chat.editRequests",
+    "rLabel": "Chat",
+    "sLabel": "Edit Requests"
+  },
+  {
+    "key": "chat.editing.autoAcceptDelay",
+    "rLabel": "Chat › Editing",
+    "sLabel": "Auto Accept Delay"
+  },
+  {
+    "key": "chat.editing.confirmEditRequestRemoval",
+    "rLabel": "Chat › Editing",
+    "sLabel": "Confirm Edit Request Removal"
+  },
+  {
+    "key": "chat.editing.confirmEditRequestRetry",
+    "rLabel": "Chat › Editing",
+    "sLabel": "Confirm Edit Request Retry"
+  },
+  {
+    "key": "chat.implicitContext.suggestedContext",
+    "rLabel": "Chat › Implicit Context",
+    "sLabel": "Suggested Context"
+  },
+  {
+    "key": "chat.internal.fix",
+    "rLabel": "Chat › Internal",
+    "sLabel": "Fix"
+  },
+  {
+    "key": "chat.notifyWindowOnConfirmation",
+    "rLabel": "Chat",
+    "sLabel": "Notify Window On Confirmation"
+  },
+  {
+    "key": "chat.renderRelatedFiles",
+    "rLabel": "Chat",
+    "sLabel": "Render Related Files"
+  },
+  {
+    "key": "chat.sendElementsToChat.attachCSS",
+    "rLabel": "Chat › Send Elements To Chat",
+    "sLabel": "Attach CSS"
+  },
+  {
+    "key": "chat.sendElementsToChat.attachImages",
+    "rLabel": "Chat › Send Elements To Chat",
+    "sLabel": "Attach Images"
+  },
+  {
+    "key": "chat.statusWidget.sku",
+    "rLabel": "Chat › Status Widget",
+    "sLabel": "Sku"
+  },
+  {
+    "key": "chat.todoListTool.descriptionField",
+    "rLabel": "Chat › Todo List Tool",
+    "sLabel": "Description Field"
+  },
+  {
+    "key": "chat.todoListTool.writeOnly",
+    "rLabel": "Chat › Todo List Tool",
+    "sLabel": "Write Only"
+  },
+  {
+    "key": "chat.tools.terminal.autoApprove",
+    "rLabel": "Chat › Tools › Terminal",
+    "sLabel": "Auto Approve"
+  },
+  {
+    "key": "chat.tools.terminal.autoReplyToPrompts",
+    "rLabel": "Chat › Tools › Terminal",
+    "sLabel": "Auto Reply To Prompts"
+  },
+  {
+    "key": "chat.tools.terminal.blockDetectedFileWrites",
+    "rLabel": "Chat › Tools › Terminal",
+    "sLabel": "Block Detected File Writes"
+  },
+  {
+    "key": "chat.tools.terminal.enableAutoApprove",
+    "rLabel": "Chat › Tools › Terminal",
+    "sLabel": "Enable Auto Approve"
+  },
+  {
+    "key": "chat.tools.terminal.ignoreDefaultAutoApproveRules",
+    "rLabel": "Chat › Tools › Terminal",
+    "sLabel": "Ignore Default Auto Approve Rules"
+  },
+  {
+    "key": "chat.tools.terminal.outputLocation",
+    "rLabel": "Chat › Tools › Terminal",
+    "sLabel": "Output Location"
+  },
+  {
+    "key": "chat.tools.terminal.shellIntegrationTimeout",
+    "rLabel": "Chat › Tools › Terminal",
+    "sLabel": "Shell Integration Timeout"
+  },
+  {
+    "key": "chat.tools.terminal.terminalProfile.linux",
+    "rLabel": "Chat › Tools › Terminal › Terminal Profile",
+    "sLabel": "Linux"
+  },
+  {
+    "key": "chat.tools.terminal.terminalProfile.osx",
+    "rLabel": "Chat › Tools › Terminal › Terminal Profile",
+    "sLabel": "Osx"
+  },
+  {
+    "key": "chat.tools.terminal.terminalProfile.windows",
+    "rLabel": "Chat › Tools › Terminal › Terminal Profile",
+    "sLabel": "Windows"
+  },
+  {
+    "key": "chat.undoRequests.restoreInput",
+    "rLabel": "Chat › Undo Requests",
+    "sLabel": "Restore Input"
+  },
+  {
+    "key": "comments.collapseOnResolve",
+    "rLabel": "Comments",
+    "sLabel": "Collapse On Resolve"
+  },
+  {
+    "key": "comments.maxHeight",
+    "rLabel": "Comments",
+    "sLabel": "Max Height"
+  },
+  {
+    "key": "comments.openPanel",
+    "rLabel": "Comments",
+    "sLabel": "Open Panel"
+  },
+  {
+    "key": "comments.openView",
+    "rLabel": "Comments",
+    "sLabel": "Open View"
+  },
+  {
+    "key": "comments.thread.confirmOnCollapse",
+    "rLabel": "Comments › Thread",
+    "sLabel": "Confirm On Collapse"
+  },
+  {
+    "key": "comments.useRelativeTime",
+    "rLabel": "Comments",
+    "sLabel": "Use Relative Time"
+  },
+  {
+    "key": "comments.visible",
+    "rLabel": "Comments",
+    "sLabel": "Visible"
+  },
+  {
+    "key": "debug.allowBreakpointsEverywhere",
+    "rLabel": "Debug",
+    "sLabel": "Allow Breakpoints Everywhere"
+  },
+  {
+    "key": "debug.autoExpandLazyVariables",
+    "rLabel": "Debug",
+    "sLabel": "Auto Expand Lazy Variables"
+  },
+  {
+    "key": "debug.closeReadonlyTabsOnEnd",
+    "rLabel": "Debug",
+    "sLabel": "Close Readonly Tabs On End"
+  },
+  {
+    "key": "debug.confirmOnExit",
+    "rLabel": "Debug",
+    "sLabel": "Confirm On Exit"
+  },
+  {
+    "key": "debug.console.closeOnEnd",
+    "rLabel": "Debug › Console",
+    "sLabel": "Close On End"
+  },
+  {
+    "key": "debug.console.collapseIdenticalLines",
+    "rLabel": "Debug › Console",
+    "sLabel": "Collapse Identical Lines"
+  },
+  {
+    "key": "debug.console.historySuggestions",
+    "rLabel": "Debug › Console",
+    "sLabel": "History Suggestions"
+  },
+  {
+    "key": "debug.console.maximumLines",
+    "rLabel": "Debug › Console",
+    "sLabel": "Maximum Lines"
+  },
+  {
+    "key": "debug.disassemblyView.showSourceCode",
+    "rLabel": "Debug › Disassembly View",
+    "sLabel": "Show Source Code"
+  },
+  {
+    "key": "debug.enableStatusBarColor",
+    "rLabel": "Debug",
+    "sLabel": "Enable Status Bar Color"
+  },
+  {
+    "key": "debug.focusEditorOnBreak",
+    "rLabel": "Debug",
+    "sLabel": "Focus Editor On Break"
+  },
+  {
+    "key": "debug.focusWindowOnBreak",
+    "rLabel": "Debug",
+    "sLabel": "Focus Window On Break"
+  },
+  {
+    "key": "debug.gutterMiddleClickAction",
+    "rLabel": "Debug",
+    "sLabel": "Gutter Middle Click Action"
+  },
+  {
+    "key": "debug.hideLauncherWhileDebugging",
+    "rLabel": "Debug",
+    "sLabel": "Hide Launcher While Debugging"
+  },
+  {
+    "key": "debug.hideSlowPreLaunchWarning",
+    "rLabel": "Debug",
+    "sLabel": "Hide Slow Pre Launch Warning"
+  },
+  {
+    "key": "debug.inlineValues",
+    "rLabel": "Debug",
+    "sLabel": "Inline Values"
+  },
+  {
+    "key": "debug.onTaskErrors",
+    "rLabel": "Debug",
+    "sLabel": "On Task Errors"
+  },
+  {
+    "key": "debug.openDebug",
+    "rLabel": "Debug",
+    "sLabel": "Open Debug"
+  },
+  {
+    "key": "debug.openExplorerOnEnd",
+    "rLabel": "Debug",
+    "sLabel": "Open Explorer On End"
+  },
+  {
+    "key": "debug.saveBeforeStart",
+    "rLabel": "Debug",
+    "sLabel": "Save Before Start"
+  },
+  {
+    "key": "debug.showBreakpointsInOverviewRuler",
+    "rLabel": "Debug",
+    "sLabel": "Show Breakpoints In Overview Ruler"
+  },
+  {
+    "key": "debug.showInStatusBar",
+    "rLabel": "Debug",
+    "sLabel": "Show In Status Bar"
+  },
+  {
+    "key": "debug.showInlineBreakpointCandidates",
+    "rLabel": "Debug",
+    "sLabel": "Show Inline Breakpoint Candidates"
+  },
+  {
+    "key": "debug.showSubSessionsInToolBar",
+    "rLabel": "Debug",
+    "sLabel": "Show Sub Sessions In Tool Bar"
+  },
+  {
+    "key": "debug.showVariableTypes",
+    "rLabel": "Debug",
+    "sLabel": "Show Variable Types"
+  },
+  {
+    "key": "debug.terminal.clearBeforeReusing",
+    "rLabel": "Debug › Terminal",
+    "sLabel": "Clear Before Reusing"
+  },
+  {
+    "key": "debug.toolBarLocation",
+    "rLabel": "Debug",
+    "sLabel": "Tool Bar Location"
+  },
+  {
+    "key": "diffEditor.diffAlgorithm",
+    "rLabel": "Diff Editor",
+    "sLabel": "Diff Algorithm"
+  },
+  {
+    "key": "diffEditor.experimental.showEmptyDecorations",
+    "rLabel": "Diff Editor › Experimental",
+    "sLabel": "Show Empty Decorations"
+  },
+  {
+    "key": "diffEditor.experimental.showMoves",
+    "rLabel": "Diff Editor › Experimental",
+    "sLabel": "Show Moves"
+  },
+  {
+    "key": "diffEditor.experimental.useTrueInlineView",
+    "rLabel": "Diff Editor › Experimental",
+    "sLabel": "Use True Inline View"
+  },
+  {
+    "key": "diffEditor.hideUnchangedRegions.contextLineCount",
+    "rLabel": "Diff Editor › Hide Unchanged Regions",
+    "sLabel": "Context Line Count"
+  },
+  {
+    "key": "diffEditor.hideUnchangedRegions.minimumLineCount",
+    "rLabel": "Diff Editor › Hide Unchanged Regions",
+    "sLabel": "Minimum Line Count"
+  },
+  {
+    "key": "diffEditor.hideUnchangedRegions.revealLineCount",
+    "rLabel": "Diff Editor › Hide Unchanged Regions",
+    "sLabel": "Reveal Line Count"
+  },
+  {
+    "key": "diffEditor.ignoreTrimWhitespace",
+    "rLabel": "Diff Editor",
+    "sLabel": "Ignore Trim Whitespace"
+  },
+  {
+    "key": "diffEditor.maxComputationTime",
+    "rLabel": "Diff Editor",
+    "sLabel": "Max Computation Time"
+  },
+  {
+    "key": "diffEditor.maxFileSize",
+    "rLabel": "Diff Editor",
+    "sLabel": "Max File Size"
+  },
+  {
+    "key": "diffEditor.renderGutterMenu",
+    "rLabel": "Diff Editor",
+    "sLabel": "Render Gutter Menu"
+  },
+  {
+    "key": "diffEditor.renderIndicators",
+    "rLabel": "Diff Editor",
+    "sLabel": "Render Indicators"
+  },
+  {
+    "key": "diffEditor.renderMarginRevertIcon",
+    "rLabel": "Diff Editor",
+    "sLabel": "Render Margin Revert Icon"
+  },
+  {
+    "key": "diffEditor.renderSideBySide",
+    "rLabel": "Diff Editor",
+    "sLabel": "Render Side By Side"
+  },
+  {
+    "key": "diffEditor.renderSideBySideInlineBreakpoint",
+    "rLabel": "Diff Editor",
+    "sLabel": "Render Side By Side Inline Breakpoint"
+  },
+  {
+    "key": "diffEditor.useInlineViewWhenSpaceIsLimited",
+    "rLabel": "Diff Editor",
+    "sLabel": "Use Inline View When Space Is Limited"
+  },
+  {
+    "key": "editor.dropIntoEditor.showDropSelector",
+    "rLabel": "Editor › Drop Into Editor",
+    "sLabel": "Show Drop Selector"
+  },
+  {
+    "key": "editor.experimental.preferTreeSitter.css",
+    "rLabel": "Editor › Experimental › Prefer Tree Sitter",
+    "sLabel": "Css"
+  },
+  {
+    "key": "editor.experimental.preferTreeSitter.ini",
+    "rLabel": "Editor › Experimental › Prefer Tree Sitter",
+    "sLabel": "Ini"
+  },
+  {
+    "key": "editor.experimental.preferTreeSitter.regex",
+    "rLabel": "Editor › Experimental › Prefer Tree Sitter",
+    "sLabel": "Regex"
+  },
+  {
+    "key": "editor.experimental.preferTreeSitter.typescript",
+    "rLabel": "Editor › Experimental › Prefer Tree Sitter",
+    "sLabel": "Typescript"
+  },
+  {
+    "key": "editor.find.history",
+    "rLabel": "Editor › Find",
+    "sLabel": "History"
+  },
+  {
+    "key": "editor.find.loop",
+    "rLabel": "Editor › Find",
+    "sLabel": "Loop"
+  },
+  {
+    "key": "editor.gotoLocation.multiple",
+    "rLabel": "Editor › Goto Location",
+    "sLabel": "Multiple"
+  },
+  {
+    "key": "editor.guides.bracketPairs",
+    "rLabel": "Editor › Guides",
+    "sLabel": "Bracket Pairs"
+  },
+  {
+    "key": "editor.guides.bracketPairsHorizontal",
+    "rLabel": "Editor › Guides",
+    "sLabel": "Bracket Pairs Horizontal"
+  },
+  {
+    "key": "editor.guides.highlightActiveBracketPair",
+    "rLabel": "Editor › Guides",
+    "sLabel": "Highlight Active Bracket Pair"
+  },
+  {
+    "key": "editor.guides.highlightActiveIndentation",
+    "rLabel": "Editor › Guides",
+    "sLabel": "Highlight Active Indentation"
+  },
+  {
+    "key": "editor.guides.indentation",
+    "rLabel": "Editor › Guides",
+    "sLabel": "Indentation"
+  },
+  {
+    "key": "editor.hover.above",
+    "rLabel": "Editor › Hover",
+    "sLabel": "Above"
+  },
+  {
+    "key": "editor.hover.delay",
+    "rLabel": "Editor › Hover",
+    "sLabel": "Delay"
+  },
+  {
+    "key": "editor.hover.sticky",
+    "rLabel": "Editor › Hover",
+    "sLabel": "Sticky"
+  },
+  {
+    "key": "editor.indentSize",
+    "rLabel": "Editor",
+    "sLabel": "Indent Size"
+  },
+  {
+    "key": "editor.inlayHints.maximumLength",
+    "rLabel": "Editor › Inlay Hints",
+    "sLabel": "Maximum Length"
+  },
+  {
+    "key": "editor.inlineSuggest.edits.allowCodeShifting",
+    "rLabel": "Editor › Inline Suggest › Edits",
+    "sLabel": "Allow Code Shifting"
+  },
+  {
+    "key": "editor.inlineSuggest.edits.renderSideBySide",
+    "rLabel": "Editor › Inline Suggest › Edits",
+    "sLabel": "Render Side By Side"
+  },
+  {
+    "key": "editor.inlineSuggest.edits.showCollapsed",
+    "rLabel": "Editor › Inline Suggest › Edits",
+    "sLabel": "Show Collapsed"
+  },
+  {
+    "key": "editor.inlineSuggest.edits.showLongDistanceHint",
+    "rLabel": "Editor › Inline Suggest › Edits",
+    "sLabel": "Show Long Distance Hint"
+  },
+  {
+    "key": "editor.inlineSuggest.experimental.emptyResponseInformation",
+    "rLabel": "Editor › Inline Suggest › Experimental",
+    "sLabel": "Empty Response Information"
+  },
+  {
+    "key": "editor.inlineSuggest.experimental.showOnSuggestConflict",
+    "rLabel": "Editor › Inline Suggest › Experimental",
+    "sLabel": "Show On Suggest Conflict"
+  },
+  {
+    "key": "editor.inlineSuggest.experimental.suppressInlineSuggestions",
+    "rLabel": "Editor › Inline Suggest › Experimental",
+    "sLabel": "Suppress Inline Suggestions"
+  },
+  {
+    "key": "editor.inlineSuggest.minShowDelay",
+    "rLabel": "Editor › Inline Suggest",
+    "sLabel": "Min Show Delay"
+  },
+  {
+    "key": "editor.inlineSuggest.showToolbar",
+    "rLabel": "Editor › Inline Suggest",
+    "sLabel": "Show Toolbar"
+  },
+  {
+    "key": "editor.inlineSuggest.suppressInSnippetMode",
+    "rLabel": "Editor › Inline Suggest",
+    "sLabel": "Suppress In Snippet Mode"
+  },
+  {
+    "key": "editor.inlineSuggest.suppressSuggestions",
+    "rLabel": "Editor › Inline Suggest",
+    "sLabel": "Suppress Suggestions"
+  },
+  {
+    "key": "editor.inlineSuggest.syntaxHighlightingEnabled",
+    "rLabel": "Editor › Inline Suggest",
+    "sLabel": "Syntax Highlighting Enabled"
+  },
+  {
+    "key": "editor.inlineSuggest.triggerCommandOnProviderChange",
+    "rLabel": "Editor › Inline Suggest",
+    "sLabel": "Trigger Command On Provider Change"
+  },
+  {
+    "key": "editor.language.brackets",
+    "rLabel": "Editor › Language",
+    "sLabel": "Brackets"
+  },
+  {
+    "key": "editor.largeFileOptimizations",
+    "rLabel": "Editor",
+    "sLabel": "Large File Optimizations"
+  },
+  {
+    "key": "editor.maxTokenizationLineLength",
+    "rLabel": "Editor",
+    "sLabel": "Max Tokenization Line Length"
+  },
+  {
+    "key": "editor.minimap.autohide",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Autohide"
+  },
+  {
+    "key": "editor.minimap.markSectionHeaderRegex",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Mark Section Header Regex"
+  },
+  {
+    "key": "editor.minimap.maxColumn",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Max Column"
+  },
+  {
+    "key": "editor.minimap.renderCharacters",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Render Characters"
+  },
+  {
+    "key": "editor.minimap.scale",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Scale"
+  },
+  {
+    "key": "editor.minimap.sectionHeaderFontSize",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Section Header Font Size"
+  },
+  {
+    "key": "editor.minimap.sectionHeaderLetterSpacing",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Section Header Letter Spacing"
+  },
+  {
+    "key": "editor.minimap.showMarkSectionHeaders",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Show Mark Section Headers"
+  },
+  {
+    "key": "editor.minimap.showRegionSectionHeaders",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Show Region Section Headers"
+  },
+  {
+    "key": "editor.minimap.showSlider",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Show Slider"
+  },
+  {
+    "key": "editor.minimap.side",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Side"
+  },
+  {
+    "key": "editor.minimap.size",
+    "rLabel": "Editor › Minimap",
+    "sLabel": "Size"
+  },
+  {
+    "key": "editor.padding.bottom",
+    "rLabel": "Editor › Padding",
+    "sLabel": "Bottom"
+  },
+  {
+    "key": "editor.padding.top",
+    "rLabel": "Editor › Padding",
+    "sLabel": "Top"
+  },
+  {
+    "key": "editor.parameterHints.cycle",
+    "rLabel": "Editor › Parameter Hints",
+    "sLabel": "Cycle"
+  },
+  {
+    "key": "editor.pasteAs.showPasteSelector",
+    "rLabel": "Editor › Paste As",
+    "sLabel": "Show Paste Selector"
+  },
+  {
+    "key": "editor.scrollbar.horizontal",
+    "rLabel": "Editor › Scrollbar",
+    "sLabel": "Horizontal"
+  },
+  {
+    "key": "editor.scrollbar.horizontalScrollbarSize",
+    "rLabel": "Editor › Scrollbar",
+    "sLabel": "Horizontal Scrollbar Size"
+  },
+  {
+    "key": "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight",
+    "rLabel": "Editor › Scrollbar",
+    "sLabel": "Ignore Horizontal Scrollbar In Content Height"
+  },
+  {
+    "key": "editor.scrollbar.scrollByPage",
+    "rLabel": "Editor › Scrollbar",
+    "sLabel": "Scroll By Page"
+  },
+  {
+    "key": "editor.scrollbar.vertical",
+    "rLabel": "Editor › Scrollbar",
+    "sLabel": "Vertical"
+  },
+  {
+    "key": "editor.scrollbar.verticalScrollbarSize",
+    "rLabel": "Editor › Scrollbar",
+    "sLabel": "Vertical Scrollbar Size"
+  },
+  {
+    "key": "editor.smartSelect.selectLeadingAndTrailingWhitespace",
+    "rLabel": "Editor › Smart Select",
+    "sLabel": "Select Leading And Trailing Whitespace"
+  },
+  {
+    "key": "editor.smartSelect.selectSubwords",
+    "rLabel": "Editor › Smart Select",
+    "sLabel": "Select Subwords"
+  },
+  {
+    "key": "editor.stablePeek",
+    "rLabel": "Editor",
+    "sLabel": "Stable Peek"
+  },
+  {
+    "key": "editor.stickyScroll.scrollWithEditor",
+    "rLabel": "Editor › Sticky Scroll",
+    "sLabel": "Scroll With Editor"
+  },
+  {
+    "key": "editor.suggest.filterGraceful",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Filter Graceful"
+  },
+  {
+    "key": "editor.suggest.filteredTypes",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Filtered Types"
+  },
+  {
+    "key": "editor.suggest.insertMode",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Insert Mode"
+  },
+  {
+    "key": "editor.suggest.localityBonus",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Locality Bonus"
+  },
+  {
+    "key": "editor.suggest.matchOnWordStartOnly",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Match On Word Start Only"
+  },
+  {
+    "key": "editor.suggest.maxVisibleSuggestions",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Max Visible Suggestions"
+  },
+  {
+    "key": "editor.suggest.preview",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Preview"
+  },
+  {
+    "key": "editor.suggest.selectionMode",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Selection Mode"
+  },
+  {
+    "key": "editor.suggest.shareSuggestSelections",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Share Suggest Selections"
+  },
+  {
+    "key": "editor.suggest.showClasses",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Classes"
+  },
+  {
+    "key": "editor.suggest.showColors",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Colors"
+  },
+  {
+    "key": "editor.suggest.showConstants",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Constants"
+  },
+  {
+    "key": "editor.suggest.showConstructors",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Constructors"
+  },
+  {
+    "key": "editor.suggest.showCustomcolors",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Customcolors"
+  },
+  {
+    "key": "editor.suggest.showEnumMembers",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Enum Members"
+  },
+  {
+    "key": "editor.suggest.showEnums",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Enums"
+  },
+  {
+    "key": "editor.suggest.showEvents",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Events"
+  },
+  {
+    "key": "editor.suggest.showFields",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Fields"
+  },
+  {
+    "key": "editor.suggest.showFiles",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Files"
+  },
+  {
+    "key": "editor.suggest.showFolders",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Folders"
+  },
+  {
+    "key": "editor.suggest.showFunctions",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Functions"
+  },
+  {
+    "key": "editor.suggest.showIcons",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Icons"
+  },
+  {
+    "key": "editor.suggest.showInlineDetails",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Inline Details"
+  },
+  {
+    "key": "editor.suggest.showInterfaces",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Interfaces"
+  },
+  {
+    "key": "editor.suggest.showIssues",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Issues"
+  },
+  {
+    "key": "editor.suggest.showKeywords",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Keywords"
+  },
+  {
+    "key": "editor.suggest.showMethods",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Methods"
+  },
+  {
+    "key": "editor.suggest.showModules",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Modules"
+  },
+  {
+    "key": "editor.suggest.showOperators",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Operators"
+  },
+  {
+    "key": "editor.suggest.showProperties",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Properties"
+  },
+  {
+    "key": "editor.suggest.showReferences",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show References"
+  },
+  {
+    "key": "editor.suggest.showSnippets",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Snippets"
+  },
+  {
+    "key": "editor.suggest.showStatusBar",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Status Bar"
+  },
+  {
+    "key": "editor.suggest.showStructs",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Structs"
+  },
+  {
+    "key": "editor.suggest.showTypeParameters",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Type Parameters"
+  },
+  {
+    "key": "editor.suggest.showUnits",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Units"
+  },
+  {
+    "key": "editor.suggest.showUsers",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Users"
+  },
+  {
+    "key": "editor.suggest.showValues",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Values"
+  },
+  {
+    "key": "editor.suggest.showVariables",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Variables"
+  },
+  {
+    "key": "editor.suggest.showWords",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Show Words"
+  },
+  {
+    "key": "editor.suggest.snippetsPreventQuickSuggestions",
+    "rLabel": "Editor › Suggest",
+    "sLabel": "Snippets Prevent Quick Suggestions"
+  },
+  {
+    "key": "editor.trimAutoWhitespace",
+    "rLabel": "Editor",
+    "sLabel": "Trim Auto Whitespace"
+  },
+  {
+    "key": "explorer.autoOpenDroppedFile",
+    "rLabel": "Explorer",
+    "sLabel": "Auto Open Dropped File"
+  },
+  {
+    "key": "explorer.autoReveal",
+    "rLabel": "Explorer",
+    "sLabel": "Auto Reveal"
+  },
+  {
+    "key": "explorer.autoRevealExclude",
+    "rLabel": "Explorer",
+    "sLabel": "Auto Reveal Exclude"
+  },
+  {
+    "key": "explorer.compactFolders",
+    "rLabel": "Explorer",
+    "sLabel": "Compact Folders"
+  },
+  {
+    "key": "explorer.confirmDragAndDrop",
+    "rLabel": "Explorer",
+    "sLabel": "Confirm Drag And Drop"
+  },
+  {
+    "key": "explorer.confirmPasteNative",
+    "rLabel": "Explorer",
+    "sLabel": "Confirm Paste Native"
+  },
+  {
+    "key": "explorer.confirmUndo",
+    "rLabel": "Explorer",
+    "sLabel": "Confirm Undo"
+  },
+  {
+    "key": "explorer.copyPathSeparator",
+    "rLabel": "Explorer",
+    "sLabel": "Copy Path Separator"
+  },
+  {
+    "key": "explorer.copyRelativePathSeparator",
+    "rLabel": "Explorer",
+    "sLabel": "Copy Relative Path Separator"
+  },
+  {
+    "key": "explorer.decorations.badges",
+    "rLabel": "Explorer › Decorations",
+    "sLabel": "Badges"
+  },
+  {
+    "key": "explorer.decorations.colors",
+    "rLabel": "Explorer › Decorations",
+    "sLabel": "Colors"
+  },
+  {
+    "key": "explorer.enableDragAndDrop",
+    "rLabel": "Explorer",
+    "sLabel": "Enable Drag And Drop"
+  },
+  {
+    "key": "explorer.enableUndo",
+    "rLabel": "Explorer",
+    "sLabel": "Enable Undo"
+  },
+  {
+    "key": "explorer.excludeGitIgnore",
+    "rLabel": "Explorer",
+    "sLabel": "Exclude Git Ignore"
+  },
+  {
+    "key": "explorer.expandSingleFolderWorkspaces",
+    "rLabel": "Explorer",
+    "sLabel": "Expand Single Folder Workspaces"
+  },
+  {
+    "key": "explorer.fileNesting.expand",
+    "rLabel": "Explorer › File Nesting",
+    "sLabel": "Expand"
+  },
+  {
+    "key": "explorer.fileNesting.patterns",
+    "rLabel": "Explorer › File Nesting",
+    "sLabel": "Patterns"
+  },
+  {
+    "key": "explorer.incrementalNaming",
+    "rLabel": "Explorer",
+    "sLabel": "Incremental Naming"
+  },
+  {
+    "key": "explorer.openEditors.minVisible",
+    "rLabel": "Explorer › Open Editors",
+    "sLabel": "Min Visible"
+  },
+  {
+    "key": "explorer.openEditors.sortOrder",
+    "rLabel": "Explorer › Open Editors",
+    "sLabel": "Sort Order"
+  },
+  {
+    "key": "explorer.openEditors.visible",
+    "rLabel": "Explorer › Open Editors",
+    "sLabel": "Visible"
+  },
+  {
+    "key": "explorer.sortOrder",
+    "rLabel": "Explorer",
+    "sLabel": "Sort Order"
+  },
+  {
+    "key": "explorer.sortOrderLexicographicOptions",
+    "rLabel": "Explorer",
+    "sLabel": "Sort Order Lexicographic Options"
+  },
+  {
+    "key": "explorer.sortOrderReverse",
+    "rLabel": "Explorer",
+    "sLabel": "Sort Order Reverse"
+  },
+  {
+    "key": "extensions.autoCheckUpdates",
+    "rLabel": "Extensions",
+    "sLabel": "Auto Check Updates"
+  },
+  {
+    "key": "extensions.autoUpdate",
+    "rLabel": "Extensions",
+    "sLabel": "Auto Update"
+  },
+  {
+    "key": "extensions.closeExtensionDetailsOnViewChange",
+    "rLabel": "Extensions",
+    "sLabel": "Close Extension Details On View Change"
+  },
+  {
+    "key": "extensions.confirmedUriHandlerExtensionIds",
+    "rLabel": "Extensions",
+    "sLabel": "Confirmed Uri Handler Extension Ids"
+  },
+  {
+    "key": "extensions.experimental.affinity",
+    "rLabel": "Extensions › Experimental",
+    "sLabel": "Affinity"
+  },
+  {
+    "key": "extensions.experimental.deferredStartupFinishedActivation",
+    "rLabel": "Extensions › Experimental",
+    "sLabel": "Deferred Startup Finished Activation"
+  },
+  {
+    "key": "extensions.experimental.issueQuickAccess",
+    "rLabel": "Extensions › Experimental",
+    "sLabel": "Issue Quick Access"
+  },
+  {
+    "key": "extensions.ignoreRecommendations",
+    "rLabel": "Extensions",
+    "sLabel": "Ignore Recommendations"
+  },
+  {
+    "key": "extensions.showRecommendationsOnlyOnDemand",
+    "rLabel": "Extensions",
+    "sLabel": "Show Recommendations Only On Demand"
+  },
+  {
+    "key": "extensions.supportNodeGlobalNavigator",
+    "rLabel": "Extensions",
+    "sLabel": "Support Node Global Navigator"
+  },
+  {
+    "key": "extensions.supportVirtualWorkspaces",
+    "rLabel": "Extensions",
+    "sLabel": "Support Virtual Workspaces"
+  },
+  {
+    "key": "extensions.webWorker",
+    "rLabel": "Extensions",
+    "sLabel": "Web Worker"
+  },
+  {
+    "key": "files.autoGuessEncoding",
+    "rLabel": "Files",
+    "sLabel": "Auto Guess Encoding"
+  },
+  {
+    "key": "files.autoSaveWhenNoErrors",
+    "rLabel": "Files",
+    "sLabel": "Auto Save When No Errors"
+  },
+  {
+    "key": "files.autoSaveWorkspaceFilesOnly",
+    "rLabel": "Files",
+    "sLabel": "Auto Save Workspace Files Only"
+  },
+  {
+    "key": "files.candidateGuessEncodings",
+    "rLabel": "Files",
+    "sLabel": "Candidate Guess Encodings"
+  },
+  {
+    "key": "files.defaultLanguage",
+    "rLabel": "Files",
+    "sLabel": "Default Language"
+  },
+  {
+    "key": "files.dialog.defaultPath",
+    "rLabel": "Files › Dialog",
+    "sLabel": "Default Path"
+  },
+  {
+    "key": "files.enableTrash",
+    "rLabel": "Files",
+    "sLabel": "Enable Trash"
+  },
+  {
+    "key": "files.encoding",
+    "rLabel": "Files",
+    "sLabel": "Encoding"
+  },
+  {
+    "key": "files.eol",
+    "rLabel": "Files",
+    "sLabel": "Eol"
+  },
+  {
+    "key": "files.insertFinalNewline",
+    "rLabel": "Files",
+    "sLabel": "Insert Final Newline"
+  },
+  {
+    "key": "files.participants.timeout",
+    "rLabel": "Files › Participants",
+    "sLabel": "Timeout"
+  },
+  {
+    "key": "files.restoreUndoStack",
+    "rLabel": "Files",
+    "sLabel": "Restore Undo Stack"
+  },
+  {
+    "key": "files.saveConflictResolution",
+    "rLabel": "Files",
+    "sLabel": "Save Conflict Resolution"
+  },
+  {
+    "key": "files.simpleDialog.enable",
+    "rLabel": "Files › Simple Dialog",
+    "sLabel": "Enable"
+  },
+  {
+    "key": "files.trimFinalNewlines",
+    "rLabel": "Files",
+    "sLabel": "Trim Final Newlines"
+  },
+  {
+    "key": "files.trimTrailingWhitespace",
+    "rLabel": "Files",
+    "sLabel": "Trim Trailing Whitespace"
+  },
+  {
+    "key": "files.trimTrailingWhitespaceInRegexAndStrings",
+    "rLabel": "Files",
+    "sLabel": "Trim Trailing Whitespace In Regex And Strings"
+  },
+  {
+    "key": "files.watcherExclude",
+    "rLabel": "Files",
+    "sLabel": "Watcher Exclude"
+  },
+  {
+    "key": "files.watcherInclude",
+    "rLabel": "Files",
+    "sLabel": "Watcher Include"
+  },
+  {
+    "key": "git.clone",
+    "rLabel": "Git",
+    "sLabel": "Clone"
+  },
+  {
+    "key": "inlineChat.accessibleDiffView",
+    "rLabel": "Inline Chat",
+    "sLabel": "Accessible Diff View"
+  },
+  {
+    "key": "inlineChat.enableV2",
+    "rLabel": "Inline Chat",
+    "sLabel": "Enable V2"
+  },
+  {
+    "key": "inlineChat.finishOnType",
+    "rLabel": "Inline Chat",
+    "sLabel": "Finish On Type"
+  },
+  {
+    "key": "inlineChat.holdToSpeech",
+    "rLabel": "Inline Chat",
+    "sLabel": "Hold To Speech"
+  },
+  {
+    "key": "inlineChat.notebookAgent",
+    "rLabel": "Inline Chat",
+    "sLabel": "Notebook Agent"
+  },
+  {
+    "key": "notebook.diff.experimental.toggleInline",
+    "rLabel": "Notebook › Diff › Experimental",
+    "sLabel": "Toggle Inline"
+  },
+  {
+    "key": "notebook.diff.ignoreMetadata",
+    "rLabel": "Notebook › Diff",
+    "sLabel": "Ignore Metadata"
+  },
+  {
+    "key": "notebook.diff.ignoreOutputs",
+    "rLabel": "Notebook › Diff",
+    "sLabel": "Ignore Outputs"
+  },
+  {
+    "key": "notebook.navigation.allowNavigateToSurroundingCells",
+    "rLabel": "Notebook › Navigation",
+    "sLabel": "Allow Navigate To Surrounding Cells"
+  },
+  {
+    "key": "scm.alwaysShowActions",
+    "rLabel": "Scm",
+    "sLabel": "Always Show Actions"
+  },
+  {
+    "key": "scm.alwaysShowRepositories",
+    "rLabel": "Scm",
+    "sLabel": "Always Show Repositories"
+  },
+  {
+    "key": "scm.autoReveal",
+    "rLabel": "Scm",
+    "sLabel": "Auto Reveal"
+  },
+  {
+    "key": "scm.compactFolders",
+    "rLabel": "Scm",
+    "sLabel": "Compact Folders"
+  },
+  {
+    "key": "scm.countBadge",
+    "rLabel": "Scm",
+    "sLabel": "Count Badge"
+  },
+  {
+    "key": "scm.defaultViewMode",
+    "rLabel": "Scm",
+    "sLabel": "Default View Mode"
+  },
+  {
+    "key": "scm.defaultViewSortKey",
+    "rLabel": "Scm",
+    "sLabel": "Default View Sort Key"
+  },
+  {
+    "key": "scm.diffDecorations",
+    "rLabel": "Scm",
+    "sLabel": "Diff Decorations"
+  },
+  {
+    "key": "scm.diffDecorationsGutterAction",
+    "rLabel": "Scm",
+    "sLabel": "Diff Decorations Gutter Action"
+  },
+  {
+    "key": "scm.diffDecorationsGutterPattern",
+    "rLabel": "Scm",
+    "sLabel": "Diff Decorations Gutter Pattern"
+  },
+  {
+    "key": "scm.diffDecorationsGutterVisibility",
+    "rLabel": "Scm",
+    "sLabel": "Diff Decorations Gutter Visibility"
+  },
+  {
+    "key": "scm.diffDecorationsGutterWidth",
+    "rLabel": "Scm",
+    "sLabel": "Diff Decorations Gutter Width"
+  },
+  {
+    "key": "scm.diffDecorationsIgnoreTrimWhitespace",
+    "rLabel": "Scm",
+    "sLabel": "Diff Decorations Ignore Trim Whitespace"
+  },
+  {
+    "key": "scm.graph.badges",
+    "rLabel": "Scm › Graph",
+    "sLabel": "Badges"
+  },
+  {
+    "key": "scm.graph.pageOnScroll",
+    "rLabel": "Scm › Graph",
+    "sLabel": "Page On Scroll"
+  },
+  {
+    "key": "scm.graph.pageSize",
+    "rLabel": "Scm › Graph",
+    "sLabel": "Page Size"
+  },
+  {
+    "key": "scm.graph.showIncomingChanges",
+    "rLabel": "Scm › Graph",
+    "sLabel": "Show Incoming Changes"
+  },
+  {
+    "key": "scm.graph.showOutgoingChanges",
+    "rLabel": "Scm › Graph",
+    "sLabel": "Show Outgoing Changes"
+  },
+  {
+    "key": "scm.inputFontFamily",
+    "rLabel": "Scm",
+    "sLabel": "Input Font Family"
+  },
+  {
+    "key": "scm.inputFontSize",
+    "rLabel": "Scm",
+    "sLabel": "Input Font Size"
+  },
+  {
+    "key": "scm.inputMaxLineCount",
+    "rLabel": "Scm",
+    "sLabel": "Input Max Line Count"
+  },
+  {
+    "key": "scm.inputMinLineCount",
+    "rLabel": "Scm",
+    "sLabel": "Input Min Line Count"
+  },
+  {
+    "key": "scm.providerCountBadge",
+    "rLabel": "Scm",
+    "sLabel": "Provider Count Badge"
+  },
+  {
+    "key": "scm.repositories.explorer",
+    "rLabel": "Scm › Repositories",
+    "sLabel": "Explorer"
+  },
+  {
+    "key": "scm.repositories.selectionMode",
+    "rLabel": "Scm › Repositories",
+    "sLabel": "Selection Mode"
+  },
+  {
+    "key": "scm.repositories.sortOrder",
+    "rLabel": "Scm › Repositories",
+    "sLabel": "Sort Order"
+  },
+  {
+    "key": "scm.repositories.visible",
+    "rLabel": "Scm › Repositories",
+    "sLabel": "Visible"
+  },
+  {
+    "key": "scm.showActionButton",
+    "rLabel": "Scm",
+    "sLabel": "Show Action Button"
+  },
+  {
+    "key": "scm.showInputActionButton",
+    "rLabel": "Scm",
+    "sLabel": "Show Input Action Button"
+  },
+  {
+    "key": "scm.workingSets.default",
+    "rLabel": "Scm › Working Sets",
+    "sLabel": "Default"
+  },
+  {
+    "key": "screencastMode.keyboardOptions",
+    "rLabel": "Screencast Mode",
+    "sLabel": "Keyboard Options"
+  },
+  {
+    "key": "screencastMode.keyboardOverlayTimeout",
+    "rLabel": "Screencast Mode",
+    "sLabel": "Keyboard Overlay Timeout"
+  },
+  {
+    "key": "screencastMode.mouseIndicatorColor",
+    "rLabel": "Screencast Mode",
+    "sLabel": "Mouse Indicator Color"
+  },
+  {
+    "key": "screencastMode.mouseIndicatorSize",
+    "rLabel": "Screencast Mode",
+    "sLabel": "Mouse Indicator Size"
+  },
+  {
+    "key": "screencastMode.verticalOffset",
+    "rLabel": "Screencast Mode",
+    "sLabel": "Vertical Offset"
+  },
+  {
+    "key": "search.actionsPosition",
+    "rLabel": "Search",
+    "sLabel": "Actions Position"
+  },
+  {
+    "key": "search.collapseResults",
+    "rLabel": "Search",
+    "sLabel": "Collapse Results"
+  },
+  {
+    "key": "search.decorations.badges",
+    "rLabel": "Search › Decorations",
+    "sLabel": "Badges"
+  },
+  {
+    "key": "search.decorations.colors",
+    "rLabel": "Search › Decorations",
+    "sLabel": "Colors"
+  },
+  {
+    "key": "search.defaultViewMode",
+    "rLabel": "Search",
+    "sLabel": "Default View Mode"
+  },
+  {
+    "key": "search.experimental.closedNotebookRichContentResults",
+    "rLabel": "Search › Experimental",
+    "sLabel": "Closed Notebook Rich Content Results"
+  },
+  {
+    "key": "search.followSymlinks",
+    "rLabel": "Search",
+    "sLabel": "Follow Symlinks"
+  },
+  {
+    "key": "search.location",
+    "rLabel": "Search",
+    "sLabel": "Location"
+  },
+  {
+    "key": "search.maintainFileSearchCache",
+    "rLabel": "Search",
+    "sLabel": "Maintain File Search Cache"
+  },
+  {
+    "key": "search.maxResults",
+    "rLabel": "Search",
+    "sLabel": "Max Results"
+  },
+  {
+    "key": "search.quickAccess.preserveInput",
+    "rLabel": "Search › Quick Access",
+    "sLabel": "Preserve Input"
+  },
+  {
+    "key": "search.quickOpen.history.filterSortOrder",
+    "rLabel": "Search › Quick Open › History",
+    "sLabel": "Filter Sort Order"
+  },
+  {
+    "key": "search.quickOpen.includeHistory",
+    "rLabel": "Search › Quick Open",
+    "sLabel": "Include History"
+  },
+  {
+    "key": "search.quickOpen.includeSymbols",
+    "rLabel": "Search › Quick Open",
+    "sLabel": "Include Symbols"
+  },
+  {
+    "key": "search.ripgrep.maxThreads",
+    "rLabel": "Search › Ripgrep",
+    "sLabel": "Max Threads"
+  },
+  {
+    "key": "search.searchEditor.defaultNumberOfContextLines",
+    "rLabel": "Search › Search Editor",
+    "sLabel": "Default Number Of Context Lines"
+  },
+  {
+    "key": "search.searchEditor.doubleClickBehaviour",
+    "rLabel": "Search › Search Editor",
+    "sLabel": "Double Click Behaviour"
+  },
+  {
+    "key": "search.searchEditor.focusResultsOnSearch",
+    "rLabel": "Search › Search Editor",
+    "sLabel": "Focus Results On Search"
+  },
+  {
+    "key": "search.searchEditor.reusePriorSearchConfiguration",
+    "rLabel": "Search › Search Editor",
+    "sLabel": "Reuse Prior Search Configuration"
+  },
+  {
+    "key": "search.searchEditor.singleClickBehaviour",
+    "rLabel": "Search › Search Editor",
+    "sLabel": "Single Click Behaviour"
+  },
+  {
+    "key": "search.searchOnType",
+    "rLabel": "Search",
+    "sLabel": "Search On Type"
+  },
+  {
+    "key": "search.searchOnTypeDebouncePeriod",
+    "rLabel": "Search",
+    "sLabel": "Search On Type Debounce Period"
+  },
+  {
+    "key": "search.searchView.keywordSuggestions",
+    "rLabel": "Search › Search View",
+    "sLabel": "Keyword Suggestions"
+  },
+  {
+    "key": "search.searchView.semanticSearchBehavior",
+    "rLabel": "Search › Search View",
+    "sLabel": "Semantic Search Behavior"
+  },
+  {
+    "key": "search.seedOnFocus",
+    "rLabel": "Search",
+    "sLabel": "Seed On Focus"
+  },
+  {
+    "key": "search.seedWithNearestWord",
+    "rLabel": "Search",
+    "sLabel": "Seed With Nearest Word"
+  },
+  {
+    "key": "search.showLineNumbers",
+    "rLabel": "Search",
+    "sLabel": "Show Line Numbers"
+  },
+  {
+    "key": "search.smartCase",
+    "rLabel": "Search",
+    "sLabel": "Smart Case"
+  },
+  {
+    "key": "search.sortOrder",
+    "rLabel": "Search",
+    "sLabel": "Sort Order"
+  },
+  {
+    "key": "search.useGlobalIgnoreFiles",
+    "rLabel": "Search",
+    "sLabel": "Use Global Ignore Files"
+  },
+  {
+    "key": "search.useIgnoreFiles",
+    "rLabel": "Search",
+    "sLabel": "Use Ignore Files"
+  },
+  {
+    "key": "search.usePCRE2",
+    "rLabel": "Search",
+    "sLabel": "Use PCRE2"
+  },
+  {
+    "key": "search.useParentIgnoreFiles",
+    "rLabel": "Search",
+    "sLabel": "Use Parent Ignore Files"
+  },
+  {
+    "key": "search.useReplacePreview",
+    "rLabel": "Search",
+    "sLabel": "Use Replace Preview"
+  },
+  {
+    "key": "search.useRipgrep",
+    "rLabel": "Search",
+    "sLabel": "Use Ripgrep"
+  },
+  {
+    "key": "security.allowedUNCHosts",
+    "rLabel": "Security",
+    "sLabel": "Allowed UNC Hosts"
+  },
+  {
+    "key": "security.promptForLocalFileProtocolHandling",
+    "rLabel": "Security",
+    "sLabel": "Prompt For Local File Protocol Handling"
+  },
+  {
+    "key": "security.promptForRemoteFileProtocolHandling",
+    "rLabel": "Security",
+    "sLabel": "Prompt For Remote File Protocol Handling"
+  },
+  {
+    "key": "security.restrictUNCAccess",
+    "rLabel": "Security",
+    "sLabel": "Restrict UNC Access"
+  },
+  {
+    "key": "telemetry.enableCrashReporter",
+    "rLabel": "Telemetry",
+    "sLabel": "Enable Crash Reporter"
+  },
+  {
+    "key": "terminal.ansiBlack",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Black"
+  },
+  {
+    "key": "terminal.ansiBlue",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Blue"
+  },
+  {
+    "key": "terminal.ansiBrightBlack",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Bright Black"
+  },
+  {
+    "key": "terminal.ansiBrightBlue",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Bright Blue"
+  },
+  {
+    "key": "terminal.ansiBrightCyan",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Bright Cyan"
+  },
+  {
+    "key": "terminal.ansiBrightGreen",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Bright Green"
+  },
+  {
+    "key": "terminal.ansiBrightMagenta",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Bright Magenta"
+  },
+  {
+    "key": "terminal.ansiBrightRed",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Bright Red"
+  },
+  {
+    "key": "terminal.ansiBrightWhite",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Bright White"
+  },
+  {
+    "key": "terminal.ansiBrightYellow",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Bright Yellow"
+  },
+  {
+    "key": "terminal.ansiCyan",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Cyan"
+  },
+  {
+    "key": "terminal.ansiGreen",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Green"
+  },
+  {
+    "key": "terminal.ansiMagenta",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Magenta"
+  },
+  {
+    "key": "terminal.ansiRed",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Red"
+  },
+  {
+    "key": "terminal.ansiWhite",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi White"
+  },
+  {
+    "key": "terminal.ansiYellow",
+    "rLabel": "Terminal",
+    "sLabel": "Ansi Yellow"
+  },
+  {
+    "key": "terminal.explorerKind",
+    "rLabel": "Terminal",
+    "sLabel": "Explorer Kind"
+  },
+  {
+    "key": "terminal.external.linuxExec",
+    "rLabel": "Terminal › External",
+    "sLabel": "Linux Exec"
+  },
+  {
+    "key": "terminal.external.osxExec",
+    "rLabel": "Terminal › External",
+    "sLabel": "Osx Exec"
+  },
+  {
+    "key": "terminal.external.windowsExec",
+    "rLabel": "Terminal › External",
+    "sLabel": "Windows Exec"
+  },
+  {
+    "key": "terminal.integrated.accessibleViewFocusOnCommandExecution",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Accessible View Focus On Command Execution"
+  },
+  {
+    "key": "terminal.integrated.accessibleViewPreserveCursorPosition",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Accessible View Preserve Cursor Position"
+  },
+  {
+    "key": "terminal.integrated.allowChords",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Allow Chords"
+  },
+  {
+    "key": "terminal.integrated.allowMnemonics",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Allow Mnemonics"
+  },
+  {
+    "key": "terminal.integrated.allowedLinkSchemes",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Allowed Link Schemes"
+  },
+  {
+    "key": "terminal.integrated.altClickMovesCursor",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Alt Click Moves Cursor"
+  },
+  {
+    "key": "terminal.integrated.autoReplies",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Auto Replies"
+  },
+  {
+    "key": "terminal.integrated.automationProfile.linux",
+    "rLabel": "Terminal › Integrated › Automation Profile",
+    "sLabel": "Linux"
+  },
+  {
+    "key": "terminal.integrated.automationProfile.osx",
+    "rLabel": "Terminal › Integrated › Automation Profile",
+    "sLabel": "Osx"
+  },
+  {
+    "key": "terminal.integrated.automationProfile.windows",
+    "rLabel": "Terminal › Integrated › Automation Profile",
+    "sLabel": "Windows"
+  },
+  {
+    "key": "terminal.integrated.bellDuration",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Bell Duration"
+  },
+  {
+    "key": "terminal.integrated.commandsToSkipShell",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Commands To Skip Shell"
+  },
+  {
+    "key": "terminal.integrated.confirmOnExit",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Confirm On Exit"
+  },
+  {
+    "key": "terminal.integrated.confirmOnKill",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Confirm On Kill"
+  },
+  {
+    "key": "terminal.integrated.copyOnSelection",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Copy On Selection"
+  },
+  {
+    "key": "terminal.integrated.cursorStyleInactive",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Cursor Style Inactive"
+  },
+  {
+    "key": "terminal.integrated.customGlyphs",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Custom Glyphs"
+  },
+  {
+    "key": "terminal.integrated.cwd",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Cwd"
+  },
+  {
+    "key": "terminal.integrated.defaultLocation",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Default Location"
+  },
+  {
+    "key": "terminal.integrated.defaultProfile.linux",
+    "rLabel": "Terminal › Integrated › Default Profile",
+    "sLabel": "Linux"
+  },
+  {
+    "key": "terminal.integrated.defaultProfile.osx",
+    "rLabel": "Terminal › Integrated › Default Profile",
+    "sLabel": "Osx"
+  },
+  {
+    "key": "terminal.integrated.defaultProfile.windows",
+    "rLabel": "Terminal › Integrated › Default Profile",
+    "sLabel": "Windows"
+  },
+  {
+    "key": "terminal.integrated.detectLocale",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Detect Locale"
+  },
+  {
+    "key": "terminal.integrated.developer.devMode",
+    "rLabel": "Terminal › Integrated › Developer",
+    "sLabel": "Dev Mode"
+  },
+  {
+    "key": "terminal.integrated.developer.ptyHost.latency",
+    "rLabel": "Terminal › Integrated › Developer › Pty Host",
+    "sLabel": "Latency"
+  },
+  {
+    "key": "terminal.integrated.developer.ptyHost.startupDelay",
+    "rLabel": "Terminal › Integrated › Developer › Pty Host",
+    "sLabel": "Startup Delay"
+  },
+  {
+    "key": "terminal.integrated.drawBoldTextInBrightColors",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Draw Bold Text In Bright Colors"
+  },
+  {
+    "key": "terminal.integrated.enableBell",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Enable Bell"
+  },
+  {
+    "key": "terminal.integrated.enableFileLinks",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Enable File Links"
+  },
+  {
+    "key": "terminal.integrated.enableImages",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Enable Images"
+  },
+  {
+    "key": "terminal.integrated.enableMultiLinePasteWarning",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Enable Multi Line Paste Warning"
+  },
+  {
+    "key": "terminal.integrated.enablePersistentSessions",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Enable Persistent Sessions"
+  },
+  {
+    "key": "terminal.integrated.enableVisualBell",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Enable Visual Bell"
+  },
+  {
+    "key": "terminal.integrated.env.linux",
+    "rLabel": "Terminal › Integrated › Env",
+    "sLabel": "Linux"
+  },
+  {
+    "key": "terminal.integrated.env.osx",
+    "rLabel": "Terminal › Integrated › Env",
+    "sLabel": "Osx"
+  },
+  {
+    "key": "terminal.integrated.env.windows",
+    "rLabel": "Terminal › Integrated › Env",
+    "sLabel": "Windows"
+  },
+  {
+    "key": "terminal.integrated.environmentChangesRelaunch",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Environment Changes Relaunch"
+  },
+  {
+    "key": "terminal.integrated.focusAfterRun",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Focus After Run"
+  },
+  {
+    "key": "terminal.integrated.fontLigatures.fallbackLigatures",
+    "rLabel": "Terminal › Integrated › Font Ligatures",
+    "sLabel": "Fallback Ligatures"
+  },
+  {
+    "key": "terminal.integrated.fontLigatures.featureSettings",
+    "rLabel": "Terminal › Integrated › Font Ligatures",
+    "sLabel": "Feature Settings"
+  },
+  {
+    "key": "terminal.integrated.fontWeightBold",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Font Weight Bold"
+  },
+  {
+    "key": "terminal.integrated.gpuAcceleration",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Gpu Acceleration"
+  },
+  {
+    "key": "terminal.integrated.hideOnLastClosed",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Hide On Last Closed"
+  },
+  {
+    "key": "terminal.integrated.hideOnStartup",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Hide On Startup"
+  },
+  {
+    "key": "terminal.integrated.ignoreBracketedPasteMode",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Ignore Bracketed Paste Mode"
+  },
+  {
+    "key": "terminal.integrated.ignoreProcessNames",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Ignore Process Names"
+  },
+  {
+    "key": "terminal.integrated.inheritEnv",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Inherit Env"
+  },
+  {
+    "key": "terminal.integrated.initialHint",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Initial Hint"
+  },
+  {
+    "key": "terminal.integrated.localEchoEnabled",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Local Echo Enabled"
+  },
+  {
+    "key": "terminal.integrated.localEchoExcludePrograms",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Local Echo Exclude Programs"
+  },
+  {
+    "key": "terminal.integrated.localEchoLatencyThreshold",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Local Echo Latency Threshold"
+  },
+  {
+    "key": "terminal.integrated.localEchoStyle",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Local Echo Style"
+  },
+  {
+    "key": "terminal.integrated.macOptionClickForcesSelection",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Mac Option Click Forces Selection"
+  },
+  {
+    "key": "terminal.integrated.macOptionIsMeta",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Mac Option Is Meta"
+  },
+  {
+    "key": "terminal.integrated.middleClickBehavior",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Middle Click Behavior"
+  },
+  {
+    "key": "terminal.integrated.minimumContrastRatio",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Minimum Contrast Ratio"
+  },
+  {
+    "key": "terminal.integrated.persistentSessionReviveProcess",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Persistent Session Revive Process"
+  },
+  {
+    "key": "terminal.integrated.persistentSessionScrollback",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Persistent Session Scrollback"
+  },
+  {
+    "key": "terminal.integrated.profiles.linux",
+    "rLabel": "Terminal › Integrated › Profiles",
+    "sLabel": "Linux"
+  },
+  {
+    "key": "terminal.integrated.profiles.osx",
+    "rLabel": "Terminal › Integrated › Profiles",
+    "sLabel": "Osx"
+  },
+  {
+    "key": "terminal.integrated.profiles.windows",
+    "rLabel": "Terminal › Integrated › Profiles",
+    "sLabel": "Windows"
+  },
+  {
+    "key": "terminal.integrated.rescaleOverlappingGlyphs",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Rescale Overlapping Glyphs"
+  },
+  {
+    "key": "terminal.integrated.rightClickBehavior",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Right Click Behavior"
+  },
+  {
+    "key": "terminal.integrated.scrollback",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Scrollback"
+  },
+  {
+    "key": "terminal.integrated.sendKeybindingsToShell",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Send Keybindings To Shell"
+  },
+  {
+    "key": "terminal.integrated.shellIntegration.decorationsEnabled",
+    "rLabel": "Terminal › Integrated › Shell Integration",
+    "sLabel": "Decorations Enabled"
+  },
+  {
+    "key": "terminal.integrated.shellIntegration.environmentReporting",
+    "rLabel": "Terminal › Integrated › Shell Integration",
+    "sLabel": "Environment Reporting"
+  },
+  {
+    "key": "terminal.integrated.shellIntegration.history",
+    "rLabel": "Terminal › Integrated › Shell Integration",
+    "sLabel": "History"
+  },
+  {
+    "key": "terminal.integrated.shellIntegration.quickFixEnabled",
+    "rLabel": "Terminal › Integrated › Shell Integration",
+    "sLabel": "Quick Fix Enabled"
+  },
+  {
+    "key": "terminal.integrated.shellIntegration.showCommandGuide",
+    "rLabel": "Terminal › Integrated › Shell Integration",
+    "sLabel": "Show Command Guide"
+  },
+  {
+    "key": "terminal.integrated.shellIntegration.timeout",
+    "rLabel": "Terminal › Integrated › Shell Integration",
+    "sLabel": "Timeout"
+  },
+  {
+    "key": "terminal.integrated.showExitAlert",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Show Exit Alert"
+  },
+  {
+    "key": "terminal.integrated.showLinkHover",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Show Link Hover"
+  },
+  {
+    "key": "terminal.integrated.splitCwd",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Split Cwd"
+  },
+  {
+    "key": "terminal.integrated.suggest.cdPath",
+    "rLabel": "Terminal › Integrated › Suggest",
+    "sLabel": "Cd Path"
+  },
+  {
+    "key": "terminal.integrated.suggest.inlineSuggestion",
+    "rLabel": "Terminal › Integrated › Suggest",
+    "sLabel": "Inline Suggestion"
+  },
+  {
+    "key": "terminal.integrated.suggest.insertTrailingSpace",
+    "rLabel": "Terminal › Integrated › Suggest",
+    "sLabel": "Insert Trailing Space"
+  },
+  {
+    "key": "terminal.integrated.suggest.providers",
+    "rLabel": "Terminal › Integrated › Suggest",
+    "sLabel": "Providers"
+  },
+  {
+    "key": "terminal.integrated.suggest.runOnEnter",
+    "rLabel": "Terminal › Integrated › Suggest",
+    "sLabel": "Run On Enter"
+  },
+  {
+    "key": "terminal.integrated.suggest.selectionMode",
+    "rLabel": "Terminal › Integrated › Suggest",
+    "sLabel": "Selection Mode"
+  },
+  {
+    "key": "terminal.integrated.suggest.showStatusBar",
+    "rLabel": "Terminal › Integrated › Suggest",
+    "sLabel": "Show Status Bar"
+  },
+  {
+    "key": "terminal.integrated.suggest.upArrowNavigatesHistory",
+    "rLabel": "Terminal › Integrated › Suggest",
+    "sLabel": "Up Arrow Navigates History"
+  },
+  {
+    "key": "terminal.integrated.suggest.windowsExecutableExtensions",
+    "rLabel": "Terminal › Integrated › Suggest",
+    "sLabel": "Windows Executable Extensions"
+  },
+  {
+    "key": "terminal.integrated.tabStopWidth",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Tab Stop Width"
+  },
+  {
+    "key": "terminal.integrated.tabs.defaultColor",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Default Color"
+  },
+  {
+    "key": "terminal.integrated.tabs.defaultIcon",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Default Icon"
+  },
+  {
+    "key": "terminal.integrated.tabs.description",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Description"
+  },
+  {
+    "key": "terminal.integrated.tabs.enableAnimation",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Enable Animation"
+  },
+  {
+    "key": "terminal.integrated.tabs.focusMode",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Focus Mode"
+  },
+  {
+    "key": "terminal.integrated.tabs.hideCondition",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Hide Condition"
+  },
+  {
+    "key": "terminal.integrated.tabs.location",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Location"
+  },
+  {
+    "key": "terminal.integrated.tabs.separator",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Separator"
+  },
+  {
+    "key": "terminal.integrated.tabs.showActions",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Show Actions"
+  },
+  {
+    "key": "terminal.integrated.tabs.showActiveTerminal",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Show Active Terminal"
+  },
+  {
+    "key": "terminal.integrated.tabs.title",
+    "rLabel": "Terminal › Integrated › Tabs",
+    "sLabel": "Title"
+  },
+  {
+    "key": "terminal.integrated.unicodeVersion",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Unicode Version"
+  },
+  {
+    "key": "terminal.integrated.useWslProfiles",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Use Wsl Profiles"
+  },
+  {
+    "key": "terminal.integrated.windowsEnableConpty",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Windows Enable Conpty"
+  },
+  {
+    "key": "terminal.integrated.windowsUseConptyDll",
+    "rLabel": "Terminal › Integrated",
+    "sLabel": "Windows Use Conpty Dll"
+  },
+  {
+    "key": "terminal.sendSelectionToAgent",
+    "rLabel": "Terminal",
+    "sLabel": "Send Selection To Agent"
+  },
+  {
+    "key": "terminal.sourceControlRepositoriesKind",
+    "rLabel": "Terminal",
+    "sLabel": "Source Control Repositories Kind"
+  },
+  {
+    "key": "testing.alwaysRevealTestOnStateChange",
+    "rLabel": "Testing",
+    "sLabel": "Always Reveal Test On State Change"
+  },
+  {
+    "key": "testing.automaticallyOpenPeekView",
+    "rLabel": "Testing",
+    "sLabel": "Automatically Open Peek View"
+  },
+  {
+    "key": "testing.automaticallyOpenPeekViewDuringAutoRun",
+    "rLabel": "Testing",
+    "sLabel": "Automatically Open Peek View During Auto Run"
+  },
+  {
+    "key": "testing.automaticallyOpenTestResults",
+    "rLabel": "Testing",
+    "sLabel": "Automatically Open Test Results"
+  },
+  {
+    "key": "testing.countBadge",
+    "rLabel": "Testing",
+    "sLabel": "Count Badge"
+  },
+  {
+    "key": "testing.coverageBarThresholds",
+    "rLabel": "Testing",
+    "sLabel": "Coverage Bar Thresholds"
+  },
+  {
+    "key": "testing.coverageToolbarEnabled",
+    "rLabel": "Testing",
+    "sLabel": "Coverage Toolbar Enabled"
+  },
+  {
+    "key": "testing.defaultGutterClickAction",
+    "rLabel": "Testing",
+    "sLabel": "Default Gutter Click Action"
+  },
+  {
+    "key": "testing.displayedCoveragePercent",
+    "rLabel": "Testing",
+    "sLabel": "Displayed Coverage Percent"
+  },
+  {
+    "key": "testing.followRunningTest",
+    "rLabel": "Testing",
+    "sLabel": "Follow Running Test"
+  },
+  {
+    "key": "testing.gutterEnabled",
+    "rLabel": "Testing",
+    "sLabel": "Gutter Enabled"
+  },
+  {
+    "key": "testing.resultsView.layout",
+    "rLabel": "Testing › Results View",
+    "sLabel": "Layout"
+  },
+  {
+    "key": "testing.saveBeforeTest",
+    "rLabel": "Testing",
+    "sLabel": "Save Before Test"
+  },
+  {
+    "key": "testing.showAllMessages",
+    "rLabel": "Testing",
+    "sLabel": "Show All Messages"
+  },
+  {
+    "key": "testing.showCoverageInExplorer",
+    "rLabel": "Testing",
+    "sLabel": "Show Coverage In Explorer"
+  },
+  {
+    "key": "update.channel",
+    "rLabel": "Update",
+    "sLabel": "Channel"
+  },
+  {
+    "key": "update.enableWindowsBackgroundUpdates",
+    "rLabel": "Update",
+    "sLabel": "Enable Windows Background Updates"
+  },
+  {
+    "key": "update.mode",
+    "rLabel": "Update",
+    "sLabel": "Mode"
+  },
+  {
+    "key": "window.border",
+    "rLabel": "Window",
+    "sLabel": "Border"
+  },
+  {
+    "key": "window.clickThroughInactive",
+    "rLabel": "Window",
+    "sLabel": "Click Through Inactive"
+  },
+  {
+    "key": "window.closeWhenEmpty",
+    "rLabel": "Window",
+    "sLabel": "Close When Empty"
+  },
+  {
+    "key": "window.confirmBeforeClose",
+    "rLabel": "Window",
+    "sLabel": "Confirm Before Close"
+  },
+  {
+    "key": "window.confirmSaveUntitledWorkspace",
+    "rLabel": "Window",
+    "sLabel": "Confirm Save Untitled Workspace"
+  },
+  {
+    "key": "window.controlsStyle",
+    "rLabel": "Window",
+    "sLabel": "Controls Style"
+  },
+  {
+    "key": "window.customMenuBarAltFocus",
+    "rLabel": "Window",
+    "sLabel": "Custom Menu Bar Alt Focus"
+  },
+  {
+    "key": "window.customTitleBarVisibility",
+    "rLabel": "Window",
+    "sLabel": "Custom Title Bar Visibility"
+  },
+  {
+    "key": "window.density.editorTabHeight",
+    "rLabel": "Window › Density",
+    "sLabel": "Editor Tab Height"
+  },
+  {
+    "key": "window.dialogStyle",
+    "rLabel": "Window",
+    "sLabel": "Dialog Style"
+  },
+  {
+    "key": "window.doubleClickIconToClose",
+    "rLabel": "Window",
+    "sLabel": "Double Click Icon To Close"
+  },
+  {
+    "key": "window.enableMenuBarMnemonics",
+    "rLabel": "Window",
+    "sLabel": "Enable Menu Bar Mnemonics"
+  },
+  {
+    "key": "window.menuBarVisibility",
+    "rLabel": "Window",
+    "sLabel": "Menu Bar Visibility"
+  },
+  {
+    "key": "window.menuStyle",
+    "rLabel": "Window",
+    "sLabel": "Menu Style"
+  },
+  {
+    "key": "window.nativeFullScreen",
+    "rLabel": "Window",
+    "sLabel": "Native Full Screen"
+  },
+  {
+    "key": "window.nativeTabs",
+    "rLabel": "Window",
+    "sLabel": "Native Tabs"
+  },
+  {
+    "key": "window.newWindowDimensions",
+    "rLabel": "Window",
+    "sLabel": "New Window Dimensions"
+  },
+  {
+    "key": "window.newWindowProfile",
+    "rLabel": "Window",
+    "sLabel": "New Window Profile"
+  },
+  {
+    "key": "window.openFilesInNewWindow",
+    "rLabel": "Window",
+    "sLabel": "Open Files In New Window"
+  },
+  {
+    "key": "window.openFoldersInNewWindow",
+    "rLabel": "Window",
+    "sLabel": "Open Folders In New Window"
+  },
+  {
+    "key": "window.openWithoutArgumentsInNewWindow",
+    "rLabel": "Window",
+    "sLabel": "Open Without Arguments In New Window"
+  },
+  {
+    "key": "window.restoreFullscreen",
+    "rLabel": "Window",
+    "sLabel": "Restore Fullscreen"
+  },
+  {
+    "key": "window.restoreWindows",
+    "rLabel": "Window",
+    "sLabel": "Restore Windows"
+  },
+  {
+    "key": "window.title",
+    "rLabel": "Window",
+    "sLabel": "Title"
+  },
+  {
+    "key": "window.titleBarStyle",
+    "rLabel": "Window",
+    "sLabel": "Title Bar Style"
+  },
+  {
+    "key": "window.titleSeparator",
+    "rLabel": "Window",
+    "sLabel": "Title Separator"
+  },
+  {
+    "key": "window.zoomPerWindow",
+    "rLabel": "Window",
+    "sLabel": "Zoom Per Window"
+  },
+  {
+    "key": "workbench.action.terminal.focus",
+    "rLabel": "Workbench › Action › Terminal",
+    "sLabel": "Focus"
+  },
+  {
+    "key": "workbench.action.terminal.split",
+    "rLabel": "Workbench › Action › Terminal",
+    "sLabel": "Split"
+  },
+  {
+    "key": "workbench.action.terminal.switchTerminal",
+    "rLabel": "Workbench › Action › Terminal",
+    "sLabel": "Switch Terminal"
+  },
+  {
+    "key": "workbench.activityBar.iconClickBehavior",
+    "rLabel": "Workbench › Activity Bar",
+    "sLabel": "Icon Click Behavior"
+  },
+  {
+    "key": "workbench.activityBar.location",
+    "rLabel": "Workbench › Activity Bar",
+    "sLabel": "Location"
+  },
+  {
+    "key": "workbench.auxiliaryActivityBar.location",
+    "rLabel": "Workbench › Auxiliary Activity Bar",
+    "sLabel": "Location"
+  },
+  {
+    "key": "workbench.cloudChanges.autoResume",
+    "rLabel": "Workbench › Cloud Changes",
+    "sLabel": "Auto Resume"
+  },
+  {
+    "key": "workbench.cloudChanges.continueOn",
+    "rLabel": "Workbench › Cloud Changes",
+    "sLabel": "Continue On"
+  },
+  {
+    "key": "workbench.commandPalette.experimental.askChatLocation",
+    "rLabel": "Workbench › Command Palette › Experimental",
+    "sLabel": "Ask Chat Location"
+  },
+  {
+    "key": "workbench.commandPalette.experimental.enableNaturalLanguageSearch",
+    "rLabel": "Workbench › Command Palette › Experimental",
+    "sLabel": "Enable Natural Language Search"
+  },
+  {
+    "key": "workbench.commandPalette.experimental.suggestCommands",
+    "rLabel": "Workbench › Command Palette › Experimental",
+    "sLabel": "Suggest Commands"
+  },
+  {
+    "key": "workbench.commandPalette.history",
+    "rLabel": "Workbench › Command Palette",
+    "sLabel": "History"
+  },
+  {
+    "key": "workbench.commandPalette.preserveInput",
+    "rLabel": "Workbench › Command Palette",
+    "sLabel": "Preserve Input"
+  },
+  {
+    "key": "workbench.commandPalette.showAskInChat",
+    "rLabel": "Workbench › Command Palette",
+    "sLabel": "Show Ask In Chat"
+  },
+  {
+    "key": "workbench.editor.alwaysShowEditorActions",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Always Show Editor Actions"
+  },
+  {
+    "key": "workbench.editor.autoLockGroups",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Auto Lock Groups"
+  },
+  {
+    "key": "workbench.editor.centeredLayoutAutoResize",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Centered Layout Auto Resize"
+  },
+  {
+    "key": "workbench.editor.centeredLayoutFixedWidth",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Centered Layout Fixed Width"
+  },
+  {
+    "key": "workbench.editor.closeEmptyGroups",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Close Empty Groups"
+  },
+  {
+    "key": "workbench.editor.closeOnFileDelete",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Close On File Delete"
+  },
+  {
+    "key": "workbench.editor.decorations.badges",
+    "rLabel": "Workbench › Editor › Decorations",
+    "sLabel": "Badges"
+  },
+  {
+    "key": "workbench.editor.decorations.colors",
+    "rLabel": "Workbench › Editor › Decorations",
+    "sLabel": "Colors"
+  },
+  {
+    "key": "workbench.editor.defaultBinaryEditor",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Default Binary Editor"
+  },
+  {
+    "key": "workbench.editor.doubleClickTabToToggleEditorGroupSizes",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Double Click Tab To Toggle Editor Group Sizes"
+  },
+  {
+    "key": "workbench.editor.dragToOpenWindow",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Drag To Open Window"
+  },
+  {
+    "key": "workbench.editor.editorActionsLocation",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Editor Actions Location"
+  },
+  {
+    "key": "workbench.editor.empty.hint",
+    "rLabel": "Workbench › Editor › Empty",
+    "sLabel": "Hint"
+  },
+  {
+    "key": "workbench.editor.enablePreviewFromCodeNavigation",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Enable Preview From Code Navigation"
+  },
+  {
+    "key": "workbench.editor.enablePreviewFromQuickOpen",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Enable Preview From Quick Open"
+  },
+  {
+    "key": "workbench.editor.focusRecentEditorAfterClose",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Focus Recent Editor After Close"
+  },
+  {
+    "key": "workbench.editor.highlightModifiedTabs",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Highlight Modified Tabs"
+  },
+  {
+    "key": "workbench.editor.historyBasedLanguageDetection",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "History Based Language Detection"
+  },
+  {
+    "key": "workbench.editor.labelFormat",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Label Format"
+  },
+  {
+    "key": "workbench.editor.languageDetection",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Language Detection"
+  },
+  {
+    "key": "workbench.editor.languageDetectionHints",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Language Detection Hints"
+  },
+  {
+    "key": "workbench.editor.limit.excludeDirty",
+    "rLabel": "Workbench › Editor › Limit",
+    "sLabel": "Exclude Dirty"
+  },
+  {
+    "key": "workbench.editor.limit.perEditorGroup",
+    "rLabel": "Workbench › Editor › Limit",
+    "sLabel": "Per Editor Group"
+  },
+  {
+    "key": "workbench.editor.limit.value",
+    "rLabel": "Workbench › Editor › Limit",
+    "sLabel": "Value"
+  },
+  {
+    "key": "workbench.editor.mouseBackForwardToNavigate",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Mouse Back Forward To Navigate"
+  },
+  {
+    "key": "workbench.editor.navigationScope",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Navigation Scope"
+  },
+  {
+    "key": "workbench.editor.openPositioning",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Open Positioning"
+  },
+  {
+    "key": "workbench.editor.openSideBySideDirection",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Open Side By Side Direction"
+  },
+  {
+    "key": "workbench.editor.pinnedTabSizing",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Pinned Tab Sizing"
+  },
+  {
+    "key": "workbench.editor.pinnedTabsOnSeparateRow",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Pinned Tabs On Separate Row"
+  },
+  {
+    "key": "workbench.editor.preferHistoryBasedLanguageDetection",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Prefer History Based Language Detection"
+  },
+  {
+    "key": "workbench.editor.preventPinnedEditorClose",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Prevent Pinned Editor Close"
+  },
+  {
+    "key": "workbench.editor.restoreViewState",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Restore View State"
+  },
+  {
+    "key": "workbench.editor.revealIfOpen",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Reveal If Open"
+  },
+  {
+    "key": "workbench.editor.scrollToSwitchTabs",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Scroll To Switch Tabs"
+  },
+  {
+    "key": "workbench.editor.sharedViewState",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Shared View State"
+  },
+  {
+    "key": "workbench.editor.showIcons",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Show Icons"
+  },
+  {
+    "key": "workbench.editor.showTabIndex",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Show Tab Index"
+  },
+  {
+    "key": "workbench.editor.showTabs",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Show Tabs"
+  },
+  {
+    "key": "workbench.editor.splitInGroupLayout",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Split In Group Layout"
+  },
+  {
+    "key": "workbench.editor.splitOnDragAndDrop",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Split On Drag And Drop"
+  },
+  {
+    "key": "workbench.editor.splitSizing",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Split Sizing"
+  },
+  {
+    "key": "workbench.editor.swipeToNavigate",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Swipe To Navigate"
+  },
+  {
+    "key": "workbench.editor.tabActionCloseVisibility",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Tab Action Close Visibility"
+  },
+  {
+    "key": "workbench.editor.tabActionLocation",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Tab Action Location"
+  },
+  {
+    "key": "workbench.editor.tabActionUnpinVisibility",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Tab Action Unpin Visibility"
+  },
+  {
+    "key": "workbench.editor.tabSizing",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Tab Sizing"
+  },
+  {
+    "key": "workbench.editor.tabSizingFixedMaxWidth",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Tab Sizing Fixed Max Width"
+  },
+  {
+    "key": "workbench.editor.tabSizingFixedMinWidth",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Tab Sizing Fixed Min Width"
+  },
+  {
+    "key": "workbench.editor.titleScrollbarSizing",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Title Scrollbar Sizing"
+  },
+  {
+    "key": "workbench.editor.titleScrollbarVisibility",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Title Scrollbar Visibility"
+  },
+  {
+    "key": "workbench.editor.untitled.labelFormat",
+    "rLabel": "Workbench › Editor › Untitled",
+    "sLabel": "Label Format"
+  },
+  {
+    "key": "workbench.editor.wrapTabs",
+    "rLabel": "Workbench › Editor",
+    "sLabel": "Wrap Tabs"
+  },
+  {
+    "key": "workbench.editorAssociations",
+    "rLabel": "Workbench",
+    "sLabel": "Editor Associations"
+  },
+  {
+    "key": "workbench.editorLargeFileConfirmation",
+    "rLabel": "Workbench",
+    "sLabel": "Editor Large File Confirmation"
+  },
+  {
+    "key": "workbench.enableExperiments",
+    "rLabel": "Workbench",
+    "sLabel": "Enable Experiments"
+  },
+  {
+    "key": "workbench.experimental.cloudChanges.autoStore",
+    "rLabel": "Workbench › Experimental › Cloud Changes",
+    "sLabel": "Auto Store"
+  },
+  {
+    "key": "workbench.externalBrowser",
+    "rLabel": "Workbench",
+    "sLabel": "External Browser"
+  },
+  {
+    "key": "workbench.fontAliasing",
+    "rLabel": "Workbench",
+    "sLabel": "Font Aliasing"
+  },
+  {
+    "key": "workbench.hover.delay",
+    "rLabel": "Workbench › Hover",
+    "sLabel": "Delay"
+  },
+  {
+    "key": "workbench.layoutControl.type",
+    "rLabel": "Workbench › Layout Control",
+    "sLabel": "Type"
+  },
+  {
+    "key": "workbench.localHistory.exclude",
+    "rLabel": "Workbench › Local History",
+    "sLabel": "Exclude"
+  },
+  {
+    "key": "workbench.localHistory.maxFileEntries",
+    "rLabel": "Workbench › Local History",
+    "sLabel": "Max File Entries"
+  },
+  {
+    "key": "workbench.localHistory.maxFileSize",
+    "rLabel": "Workbench › Local History",
+    "sLabel": "Max File Size"
+  },
+  {
+    "key": "workbench.localHistory.mergeWindow",
+    "rLabel": "Workbench › Local History",
+    "sLabel": "Merge Window"
+  },
+  {
+    "key": "workbench.panel.defaultLocation",
+    "rLabel": "Workbench › Panel",
+    "sLabel": "Default Location"
+  },
+  {
+    "key": "workbench.panel.opensMaximized",
+    "rLabel": "Workbench › Panel",
+    "sLabel": "Opens Maximized"
+  },
+  {
+    "key": "workbench.panel.output",
+    "rLabel": "Workbench › Panel",
+    "sLabel": "Output"
+  },
+  {
+    "key": "workbench.panel.showLabels",
+    "rLabel": "Workbench › Panel",
+    "sLabel": "Show Labels"
+  },
+  {
+    "key": "workbench.parts.auxiliarybar",
+    "rLabel": "Workbench › Parts",
+    "sLabel": "Auxiliarybar"
+  },
+  {
+    "key": "workbench.parts.panel",
+    "rLabel": "Workbench › Parts",
+    "sLabel": "Panel"
+  },
+  {
+    "key": "workbench.parts.sidebar",
+    "rLabel": "Workbench › Parts",
+    "sLabel": "Sidebar"
+  },
+  {
+    "key": "workbench.quickOpen.closeOnFocusLost",
+    "rLabel": "Workbench › Quick Open",
+    "sLabel": "Close On Focus Lost"
+  },
+  {
+    "key": "workbench.quickOpen.preserveInput",
+    "rLabel": "Workbench › Quick Open",
+    "sLabel": "Preserve Input"
+  },
+  {
+    "key": "workbench.reduceMotion",
+    "rLabel": "Workbench",
+    "sLabel": "Reduce Motion"
+  },
+  {
+    "key": "workbench.remoteIndicator.showExtensionRecommendations",
+    "rLabel": "Workbench › Remote Indicator",
+    "sLabel": "Show Extension Recommendations"
+  },
+  {
+    "key": "workbench.sash.hoverDelay",
+    "rLabel": "Workbench › Sash",
+    "sLabel": "Hover Delay"
+  },
+  {
+    "key": "workbench.sash.size",
+    "rLabel": "Workbench › Sash",
+    "sLabel": "Size"
+  },
+  {
+    "key": "workbench.secondarySideBar.defaultVisibility",
+    "rLabel": "Workbench › Secondary Side Bar",
+    "sLabel": "Default Visibility"
+  },
+  {
+    "key": "workbench.secondarySideBar.showLabels",
+    "rLabel": "Workbench › Secondary Side Bar",
+    "sLabel": "Show Labels"
+  },
+  {
+    "key": "workbench.settings.editor",
+    "rLabel": "Workbench › Settings",
+    "sLabel": "Editor"
+  },
+  {
+    "key": "workbench.settings.enableNaturalLanguageSearch",
+    "rLabel": "Workbench › Settings",
+    "sLabel": "Enable Natural Language Search"
+  },
+  {
+    "key": "workbench.settings.openDefaultKeybindings",
+    "rLabel": "Workbench › Settings",
+    "sLabel": "Open Default Keybindings"
+  },
+  {
+    "key": "workbench.settings.openDefaultSettings",
+    "rLabel": "Workbench › Settings",
+    "sLabel": "Open Default Settings"
+  },
+  {
+    "key": "workbench.settings.settingsSearchTocBehavior",
+    "rLabel": "Workbench › Settings",
+    "sLabel": "Settings Search Toc Behavior"
+  },
+  {
+    "key": "workbench.settings.showAISearchToggle",
+    "rLabel": "Workbench › Settings",
+    "sLabel": "Show AI Search Toggle"
+  },
+  {
+    "key": "workbench.settings.useSplitJSON",
+    "rLabel": "Workbench › Settings",
+    "sLabel": "Use Split JSON"
+  },
+  {
+    "key": "workbench.sideBar.location",
+    "rLabel": "Workbench › Side Bar",
+    "sLabel": "Location"
+  },
+  {
+    "key": "workbench.startupEditor",
+    "rLabel": "Workbench",
+    "sLabel": "Startup Editor"
+  },
+  {
+    "key": "workbench.statusBar.visible",
+    "rLabel": "Workbench › Status Bar",
+    "sLabel": "Visible"
+  },
+  {
+    "key": "workbench.trustedDomains.promptInTrustedWorkspace",
+    "rLabel": "Workbench › Trusted Domains",
+    "sLabel": "Prompt In Trusted Workspace"
+  },
+  {
+    "key": "workbench.view.alwaysShowHeaderActions",
+    "rLabel": "Workbench › View",
+    "sLabel": "Always Show Header Actions"
+  },
+  {
+    "key": "workbench.view.showQuietly",
+    "rLabel": "Workbench › View",
+    "sLabel": "Show Quietly"
+  },
+  {
+    "key": "workbench.welcomePage.preferReducedMotion",
+    "rLabel": "Workbench › Welcome Page",
+    "sLabel": "Prefer Reduced Motion"
+  },
+  {
+    "key": "workbench.welcomePage.walkthroughs.openOnInstall",
+    "rLabel": "Workbench › Welcome Page › Walkthroughs",
+    "sLabel": "Open On Install"
+  }
+]

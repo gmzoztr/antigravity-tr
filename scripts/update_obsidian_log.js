@@ -8,15 +8,14 @@ const text = [
   '',
   '---',
   '',
-  '## 24.09.2026 - İş Akışı Giriş İstemi ve Aktivite Çubuğu Kenar Çubuğu Menüsü Düzeltmesi',
+  '## 24.09.2026 - Açılır Kutu Sadeleştirmesi ve Metin Düzenleyici Ayar Başlıkları Yerelleştirmesi',
   '- **Kullanıcı Geri Bildirimi:**',
-  '  1. İş Akışları sayfasında yeni iş akışı eklerken Enter workflow name promptunun İngilizce olması.',
-  '  2. Sol kenar çubuğuna sağ tıklandığında menüde Show Primary Side Bar öğesinin İngilizce kalması.',
+  '  1. Açılır menüde Türkçe seçeneklerin yanında gereksiz gri İngilizce teknik anahtarların (Otomatik auto, Her Zaman always, Asla never) çıkması.',
+  '  2. Metin Düzenleyici ayarlarında fareyi aşağı kaydırdıkça Async Tokenization Logging, Async Tokenization Verification vb. başlıkların İngilizce kalması.',
   '- **Uygulanan Çözümler:**',
-  '  1. createWorkflow metodu: prompt: "İş akışı adını girin", placeHolder: "örn. bellek-sızıntısı-ayıklama", validateInput: "Geçersiz iş akışı adı. Yalnızca küçük harfler, sayılar ve kısa çizgiler kullanılabilir."',
-  '  2. Kenar Çubuğu NLS kuralları (3176-3258, 3428-3454): Show Primary Side Bar -> Birincil Kenar Çubuğunu Göster, Hide Primary Side Bar -> Birincil Kenar Çubuğunu Gizle, Toggle Primary Side Bar -> Birincil Kenar Çubuğunu Aç/Kapat, Sağa/Sola Taşı vb.',
-  '  3. enrichLanguagePackFile fonksiyonuna sidebarPart modülü entegre edildi.',
-  '  4. V8 modül derlemesi doğrulandı (HATASIZ), product.json SHA-256 hash eşitlendi, önbellekler temizlendi.'
+  '  1. k2h.renderValue fonksiyonunda detail: n[g] ? f : (_eTr[f] ? f : "") mantığı detail: n[g] ? f : "" olarak düzeltildi. Artık yanında asla auto, always, never çıkmaz; sadece saf Otomatik, Her Zaman, Asla görünür.',
+  '  2. Metin Düzenleyici altındaki eksik ayarlar eklendi: Zaman Uyumsuz Belirteç Ayırma Günlüğü, Zaman Uyumsuz Belirteç Ayırma Doğrulaması, Renklendirilmiş Ayraç Çiftleri, Maksimum Satır Sayısı, Çoklu Tanımlar, Uygulamaya Gözat, Tanıma Gözat vb.',
+  '  3. V8 modül derlemesi doğrulandı (TAMAMEN GEÇERLİ), product.json SHA-256 hash eşitlendi, önbellekler temizlendi.'
 ].join('\n');
 
 fs.appendFileSync(fullPath, text, 'utf8');
