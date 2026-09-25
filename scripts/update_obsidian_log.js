@@ -8,14 +8,16 @@ const text = [
   '',
   '---',
   '',
-  '## 24.09.2026 - Açılır Kutu Sadeleştirmesi ve Metin Düzenleyici Ayar Başlıkları Yerelleştirmesi',
+  '## 25.09.2026 - Ayarlar Paneli ve Açılır Seçeneklerin Kapsamlı Türkçeleştirilmesi',
   '- **Kullanıcı Geri Bildirimi:**',
-  '  1. Açılır menüde Türkçe seçeneklerin yanında gereksiz gri İngilizce teknik anahtarların (Otomatik auto, Her Zaman always, Asla never) çıkması.',
-  '  2. Metin Düzenleyici ayarlarında fareyi aşağı kaydırdıkça Async Tokenization Logging, Async Tokenization Verification vb. başlıkların İngilizce kalması.',
+  '  1. Metin Düzenleyici altındaki açılır seçeneklerde İngilizce değerler: `On Code`, `Spread`, `Single File`, `In Untrusted Workspace` vb.',
+  '  2. Kalan İngilizce ayar başlıkları: `Semantic Token Color Customizations`, `Allowed Characters`, `Allowed Locales`, `Include Comments`, `Include Strings`, `Non Basic ASCII` vb.',
+  '  3. Ekran görüntüsü beklemeden dosyalar üzerinde doğrudan planlama ve uçtan uca kontrol talebi.',
   '- **Uygulanan Çözümler:**',
-  '  1. k2h.renderValue fonksiyonunda detail: n[g] ? f : (_eTr[f] ? f : "") mantığı detail: n[g] ? f : "" olarak düzeltildi. Artık yanında asla auto, always, never çıkmaz; sadece saf Otomatik, Her Zaman, Asla görünür.',
-  '  2. Metin Düzenleyici altındaki eksik ayarlar eklendi: Zaman Uyumsuz Belirteç Ayırma Günlüğü, Zaman Uyumsuz Belirteç Ayırma Doğrulaması, Renklendirilmiş Ayraç Çiftleri, Maksimum Satır Sayısı, Çoklu Tanımlar, Uygulamaya Gözat, Tanıma Gözat vb.',
-  '  3. V8 modül derlemesi doğrulandı (TAMAMEN GEÇERLİ), product.json SHA-256 hash eşitlendi, önbellekler temizlendi.'
+  '  1. Workbench içerisindeki 899 kayıtlı ayar ve 265 enum seçeneği taranarak uçtan uca analiz edildi.',
+  '  2. Görsellerdeki tüm eksikler ve ek 106 ayar başlığı (İçerik Haritası / Breadcrumbs, Zen Modu, Terminal, Erişilebilirlik, Görevler, Uzak Bağlantı) temiz Title Case Türkçe karşılıklarıyla güncellendi.',
+  '  3. Açılır liste (dropdown) `renderValue` mantığı `_eTr` öncelikli hale getirildi; `onCode` -> "Kod Üzerinde", `spread` -> "Dağıt", `singleFile` -> "Tek Dosya", `inUntrustedWorkspace` -> "Güvenilmeyen Çalışma Alanında", `discovery time` -> "Keşif Zamanı" eklendi.',
+  '  4. V8 modül derlemesi doğrulandı (1050 ayar ve 258 kategori), `product.json` SHA-256 sağlama toplamı güncellendi ve Electron önbelleği temizlendi.'
 ].join('\n');
 
 fs.appendFileSync(fullPath, text, 'utf8');

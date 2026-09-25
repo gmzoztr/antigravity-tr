@@ -1,31 +1,44 @@
 const fs = require('fs');
 
-const benchCode = fs.readFileSync('C:\\Users\\Work-D\\AppData\\Local\\Programs\\Antigravity IDE\\resources\\app\\out\\vs\\workbench\\workbench.desktop.main.js', 'utf8');
+const wbPath = 'C:/Users/Work-D/AppData/Local/Programs/Antigravity IDE/resources/app/out/vs/workbench/workbench.desktop.main.js';
+const content = fs.readFileSync(wbPath, 'utf8');
 
-// Gerçek gDe fonksiyonunu benchCode içinden alalım
-const gdeIdx = benchCode.indexOf('function gDe(');
-const gdeEnd = benchCode.indexOf('function jIh(', gdeIdx);
-const gdeCode = benchCode.slice(gdeIdx, gdeEnd);
+const gDeIdx = content.indexOf('function gDe(');
+const gDeEnd = content.indexOf('function ', gDeIdx + 20);
 
-const FLa = new Set(["css", "html", "json", "url", "uri", "api", "id", "git", "gpu", "ui", "ip", "cpu", "sdk", "ai", "sql", "ssh", "ftp", "http", "https", "svg", "pdf", "xml", "ansi", "rgb", "rgba"]);
-const Lee = new Map([["jetbrains", "JetBrains"], ["re sharper", "ReSharper"], ["resharper", "ReSharper"]]);
+const jihIdx = content.indexOf('function jIh(');
+const jihEnd = content.indexOf('function ', jihIdx + 20);
 
-function NLa(t){t=t.replace(/\.([a-z0-9])/g,(e,i)=>` \u203A ${i.toUpperCase()}`).replace(/([a-z0-9])([A-Z])/g,"$1 $2").replace(/([A-Z]{1,})([A-Z][a-z])/g,"$1 $2").replace(/^[a-z]/g,e=>e.toUpperCase()).replace(/\b\w+\b/g,e=>FLa.has(e.toLowerCase())?e.toUpperCase():e);for(const[e,i]of Lee)t=t.replace(new RegExp(`\\b${e}\\b`,"gi"),i);return t}
-function oln(t) { return t; }
-function jIh(r, e) { return r; }
+const jihCode = content.substring(jihIdx, jihEnd);
+const gDeCode = content.substring(gDeIdx, gDeEnd);
 
-eval(gdeCode);
-
-const testKeys = [
-  'editor.tabSize',
-  'editor.defaultFoldingRangeProvider',
-  'editor.guides.bracketPairsHorizontal',
-  'editor.dropIntoEditor.showDropSelector',
-  'terminal.integrated.fontSize',
-  'workbench.colorTheme'
-];
-
-for (const k of testKeys) {
-  const res = gDe(k);
-  console.log(k, '=>', res);
+const fullCode = `
+const FLa = new Set(["html","scss","less","json","js","ts","ie","id","php","scm"]);
+const Lee = new Map();
+Lee.set("power shell","PowerShell");
+function NLa(t){
+  t=t.replace(/\\.([a-z0-9])/g,(e,i)=>' \\u203A '+i.toUpperCase())
+     .replace(/([a-z0-9])([A-Z])/g,"$1 $2")
+     .replace(/([A-Z]{1,})([A-Z][a-z])/g,"$1 $2")
+     .replace(/^[a-z]/g,e=>e.toUpperCase())
+     .replace(/\\b\\w+\\b/g,e=>FLa.has(e.toLowerCase())?e.toUpperCase():e);
+  for(const[e,i]of Lee)t=t.replace(new RegExp('\\\\b'+e+'\\\\b',"gi"),i);
+  return t;
 }
+${jihCode}
+function oln(t) { return t; }
+${gDeCode}
+return { gDe, NLa, jIh };
+`;
+
+const fn = new Function(fullCode);
+const { gDe, NLa, jIh } = fn();
+
+console.log('Testing gDe:');
+console.log('1. allowedCharacters:', gDe('editor.unicodeHighlight.allowedCharacters', 'editor'));
+console.log('2. allowedLocales:', gDe('editor.unicodeHighlight.allowedLocales', 'editor'));
+console.log('3. includeComments:', gDe('editor.unicodeHighlight.includeComments', 'editor'));
+console.log('4. includeStrings:', gDe('editor.unicodeHighlight.includeStrings', 'editor'));
+console.log('5. nonBasicASCII:', gDe('editor.unicodeHighlight.nonBasicASCII', 'editor'));
+console.log('6. semanticTokenColorCustomizations:', gDe('editor.semanticTokenColorCustomizations', 'editor'));
+console.log('7. lightbulb.enabled:', gDe('editor.lightbulb.enabled', 'editor'));
