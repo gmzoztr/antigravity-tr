@@ -1,0 +1,576 @@
+{
+  "Loop": [
+    "mediaPreview.video.loop"
+  ],
+  "Telemetry": [
+    "geminicodeassist.debug.telemetry"
+  ],
+  "Force Oob Login": [
+    "geminicodeassist.beta.forceOobLogin",
+    "cloudcode.beta.forceOobLogin"
+  ],
+  "Enable Sidebar Chat Diff": [
+    "geminicodeassist.beta.enableSidebarChatDiff",
+    "cloudcode.beta.enableSidebarChatDiff"
+  ],
+  "Max Cited Length": [
+    "geminicodeassist.recitation.maxCitedLength"
+  ],
+  "Display Inline Context Hint": [
+    "geminicodeassist.displayInlineContextHint"
+  ],
+  "Enable Auto": [
+    "geminicodeassist.inlineSuggestions.enableAuto"
+  ],
+  "Suggestion Speed": [
+    "geminicodeassist.inlineSuggestions.suggestionSpeed"
+  ],
+  "Next Edit Predictions": [
+    "geminicodeassist.inlineSuggestions.nextEditPredictions"
+  ],
+  "Code Generation Pane View Enabled": [
+    "geminicodeassist.codeGenerationPaneViewEnabled"
+  ],
+  "Context Exclusion Gitignore": [
+    "geminicodeassist.contextExclusionGitignore"
+  ],
+  "Context Exclusion File": [
+    "geminicodeassist.contextExclusionFile"
+  ],
+  "Local Codebase Awareness": [
+    "geminicodeassist.localCodebaseAwareness"
+  ],
+  "Automatic Outline Generation": [
+    "geminicodeassist.outlines.automaticOutlineGeneration"
+  ],
+  "Custom Commands": [
+    "geminicodeassist.customCommands"
+  ],
+  "Rules": [
+    "geminicodeassist.rules"
+  ],
+  "Automatic Scrolling": [
+    "geminicodeassist.chat.automaticScrolling"
+  ],
+  "File Processing Batch Size": [
+    "geminicodeassist.chat.fileProcessingBatchSize"
+  ],
+  "Folder Expansion Batch Size": [
+    "geminicodeassist.chat.folderExpansionBatchSize"
+  ],
+  "Folder Processing Batch Size": [
+    "geminicodeassist.chat.folderProcessingBatchSize"
+  ],
+  "Languages": [
+    "geminicodeassist.languages"
+  ],
+  "Update Channel": [
+    "geminicodeassist.updateChannel",
+    "cloudcode.updateChannel"
+  ],
+  "Default Code Block Display": [
+    "geminicodeassist.chat.defaultCodeBlockDisplay"
+  ],
+  "Enable Streaming": [
+    "geminicodeassist.chat.enableStreaming"
+  ],
+  "Change View": [
+    "geminicodeassist.chat.changeView"
+  ],
+  "Address": [
+    "geminicodeassist.a2a.address"
+  ],
+  "Agent Yolo Mode": [
+    "geminicodeassist.agentYoloMode"
+  ],
+  "Agent Debug Mode": [
+    "geminicodeassist.agentDebugMode"
+  ],
+  "Additional Trusted Certificates": [
+    "geminicodeassist.agent.additionalTrustedCertificates"
+  ],
+  "Debug-kubernetes": [
+    "cloudcode.debug-kubernetes"
+  ],
+  "Kubeconfigs": [
+    "cloudcode.kubeconfigs"
+  ],
+  "Emulators": [
+    "cloudcode.apigee.emulators"
+  ],
+  "Options": [
+    "cloudcode.apigee.gemini.options"
+  ],
+  "Docker Options": [
+    "cloudcode.apigee.dockerOptions"
+  ],
+  "Active-kubeconfig": [
+    "cloudcode.active-kubeconfig"
+  ],
+  "Dataproc Region": [
+    "cloudcode.beta.dataprocRegion"
+  ],
+  "Kubectl Exec Shell": [
+    "cloudcode.kubectlExecShell"
+  ],
+  "Kubectl Request Timeout": [
+    "cloudcode.kubectlRequestTimeout"
+  ],
+  "Samples Branch": [
+    "cloudcode.samplesBranch"
+  ],
+  "Enable Skaffold Modules": [
+    "cloudcode.beta.enableSkaffoldModules"
+  ],
+  "Enable Gcloud On Demand": [
+    "cloudcode.beta.enableGcloudOnDemand"
+  ],
+  "Enable Build Environments Init": [
+    "cloudcode.beta.enableBuildEnvironmentsInit"
+  ],
+  "Enable Send Logs": [
+    "cloudcode.beta.enableSendLogs"
+  ],
+  "Enable Getting Started Page": [
+    "cloudcode.beta.enableGettingStartedPage"
+  ],
+  "Skaffold Submit Logs Failure Reasons": [
+    "cloudcode.beta.skaffoldSubmitLogsFailureReasons"
+  ],
+  "Enable Cloud Storage": [
+    "cloudcode.beta.enableCloudStorage"
+  ],
+  "Enable Buildpacks": [
+    "cloudcode.enableBuildpacks"
+  ],
+  "Enable Apigee Trace": [
+    "cloudcode.beta.enableApigeeTrace"
+  ],
+  "Enable Multi Skaffold Configs Key": [
+    "cloudcode.enableMultiSkaffoldConfigsKey"
+  ],
+  "Enable Skaffold Skip Unreachable Dirs": [
+    "cloudcode.enableSkaffoldSkipUnreachableDirs"
+  ],
+  "Update Adc On Login": [
+    "cloudcode.updateAdcOnLogin"
+  ],
+  "Enable Minikube Gcp Auth Plugin": [
+    "cloudcode.enableMinikubeGcpAuthPlugin"
+  ],
+  "Enable Config LESS Experience": [
+    "cloudcode.enableConfigLessExperience"
+  ],
+  "Enable Bigquery Explorer": [
+    "cloudcode.beta.enableBigqueryExplorer"
+  ],
+  "Enable Gcs Explorer": [
+    "cloudcode.beta.enableGcsExplorer"
+  ],
+  "Single Quote": [
+    "cloudcode.yaml.format.singleQuote"
+  ],
+  "Bracket Spacing": [
+    "cloudcode.yaml.format.bracketSpacing"
+  ],
+  "Prose Wrap": [
+    "cloudcode.yaml.format.proseWrap"
+  ],
+  "Completion": [
+    "cloudcode.yaml.completion"
+  ],
+  "Custom Tags": [
+    "cloudcode.yaml.customTags"
+  ],
+  "Cluster Resource Completion": [
+    "cloudcode.yaml.clusterResourceCompletion"
+  ],
+  "Yaml File Matcher": [
+    "cloudcode.yaml.yamlFileMatcher"
+  ],
+  "Enable Kubernetes Support": [
+    "cloudcode.yaml.enableKubernetesSupport"
+  ],
+  "Kubernetes Version": [
+    "cloudcode.yaml.kubernetesVersion"
+  ],
+  "Crd Schema Locations": [
+    "cloudcode.yaml.crdSchemaLocations"
+  ],
+  "Auto Dependencies": [
+    "cloudcode.autoDependencies"
+  ],
+  "Cloud Sdk Verbosity Level": [
+    "cloudcode.cloudSdkVerbosityLevel"
+  ],
+  "Enable Custom Applications": [
+    "cloudcode.enableCustomApplications"
+  ],
+  "Custom Applications": [
+    "cloudcode.customApplications"
+  ],
+  "Use Gcloud Auth Skaffold": [
+    "cloudcode.useGcloudAuthSkaffold"
+  ],
+  "Enable Gke Autopilot Support": [
+    "cloudcode.enableGkeAutopilotSupport"
+  ],
+  "Enable Crash Reporting": [
+    "cloudcode.enableCrashReporting"
+  ],
+  "Show Welcome Or Release Notes": [
+    "cloudcode.showWelcomeOrReleaseNotes"
+  ],
+  "Mcdc Executable": [
+    "cloudcode.migrateToContainers.mcdcExecutable"
+  ],
+  "M2c Executable": [
+    "cloudcode.migrateToContainers.m2cExecutable"
+  ],
+  "Dependency Paths": [
+    "cloudcode.dependencyPaths"
+  ],
+  "Ssh Internal Ip": [
+    "cloudcode.compute.sshInternalIp"
+  ],
+  "Gemini Code Assist Update": [
+    "_cloudcode.beta.geminiCodeAssistUpdate"
+  ],
+  "Arg Tenant": [
+    "@azure.argTenant"
+  ],
+  "Ms Learn Query Type": [
+    "@azure.msLearnQueryType"
+  ],
+  "Deploy Model": [
+    "@azure.deployModel"
+  ],
+  "Enable Azure Verified Module Search": [
+    "@azure.enableAzureVerifiedModuleSearch"
+  ],
+  "Enabled Services": [
+    "azureMcp.enabledServices"
+  ],
+  "Server Mode": [
+    "azureMcp.serverMode"
+  ],
+  "Dangerously Write Support Logs To Dir": [
+    "azureMcp.dangerouslyWriteSupportLogsToDir"
+  ],
+  "Enable Output Timestamps": [
+    "azureResourceGroups.enableOutputTimestamps"
+  ],
+  "Delete Confirmation": [
+    "azureResourceGroups.deleteConfirmation"
+  ],
+  "Show Hidden Types": [
+    "azureResourceGroups.showHiddenTypes"
+  ],
+  "Group By": [
+    "azureResourceGroups.groupBy"
+  ],
+  "Suppress Activity Notifications": [
+    "azureResourceGroups.suppressActivityNotifications"
+  ],
+  "Auto Open Activity Panel": [
+    "azureResourceGroups.autoOpenActivityPanel"
+  ],
+  "Selected Subscriptions": [
+    "azureResourceGroups.selectedSubscriptions"
+  ],
+  "Enable Chat Stand In": [
+    "azureResourceGroups.enableChatStandIn"
+  ],
+  "Duplicate Subscription Mode": [
+    "azureResourceGroups.duplicateSubscriptionMode"
+  ],
+  "Variable Types": [
+    "python.analysis.inlayHints.variableTypes"
+  ],
+  "Function Return Types": [
+    "python.analysis.inlayHints.functionReturnTypes"
+  ],
+  "Call Argument Names": [
+    "python.analysis.inlayHints.callArgumentNames"
+  ],
+  "Pytest Parameters": [
+    "python.analysis.inlayHints.pytestParameters"
+  ],
+  "Show Only Direct Dependencies In Auto Import": [
+    "python.analysis.showOnlyDirectDependenciesInAutoImport"
+  ],
+  "Auto Format Strings": [
+    "python.analysis.autoFormatStrings"
+  ],
+  "Auto Search Paths": [
+    "python.analysis.autoSearchPaths"
+  ],
+  "Stub Path": [
+    "python.analysis.stubPath"
+  ],
+  "Exclude Library Diagnostics": [
+    "python.analysis.excludeLibraryDiagnostics"
+  ],
+  "Include Extra Path Symbols In Symbol Search": [
+    "python.analysis.includeExtraPathSymbolsInSymbolSearch"
+  ],
+  "Include Venv In Workspace Symbols": [
+    "python.analysis.includeVenvInWorkspaceSymbols"
+  ],
+  "Use Nearest Configuration": [
+    "python.analysis.useNearestConfiguration"
+  ],
+  "Use Per Project Environments": [
+    "python.analysis.usePerProjectEnvironments"
+  ],
+  "Add Folders For Python Projects": [
+    "python.analysis.addFoldersForPythonProjects"
+  ],
+  "Add Extra Paths For Python Projects": [
+    "python.analysis.addExtraPathsForPythonProjects"
+  ],
+  "Extra Paths For Python Projects": [
+    "python.analysis.extraPathsForPythonProjects"
+  ],
+  "Ignore": [
+    "python.analysis.ignore"
+  ],
+  "User File Index Follow Symlinked Folders": [
+    "python.analysis.userFileIndexFollowSymlinkedFolders"
+  ],
+  "Enable Parallel Indexing": [
+    "python.analysis.enableParallelIndexing"
+  ],
+  "User File Indexing Limit": [
+    "python.analysis.userFileIndexingLimit"
+  ],
+  "Persist All Indices": [
+    "python.analysis.persistAllIndices"
+  ],
+  "Include Aliases From User Files": [
+    "python.analysis.includeAliasesFromUserFiles"
+  ],
+  "Extra Commit Chars": [
+    "python.analysis.extraCommitChars"
+  ],
+  "Use Library Code For Types": [
+    "python.analysis.useLibraryCodeForTypes"
+  ],
+  "Auto Split Strings": [
+    "python.analysis.autoSplitStrings"
+  ],
+  "Auto Translate Docstrings": [
+    "python.analysis.autoTranslateDocstrings"
+  ],
+  "Fix All": [
+    "python.analysis.fixAll"
+  ],
+  "Package Index Depths": [
+    "python.analysis.packageIndexDepths"
+  ],
+  "Strict List Inference": [
+    "python.analysis.typeEvaluation.strictListInference"
+  ],
+  "Strict Dictionary Inference": [
+    "python.analysis.typeEvaluation.strictDictionaryInference"
+  ],
+  "Strict Set Inference": [
+    "python.analysis.typeEvaluation.strictSetInference"
+  ],
+  "Analyze Unannotated Functions": [
+    "python.analysis.typeEvaluation.analyzeUnannotatedFunctions"
+  ],
+  "Strict Parameter None Value": [
+    "python.analysis.typeEvaluation.strictParameterNoneValue"
+  ],
+  "Enable Type Ignore Comments": [
+    "python.analysis.typeEvaluation.enableTypeIgnoreComments"
+  ],
+  "Deprecate Typing Aliases": [
+    "python.analysis.typeEvaluation.deprecateTypingAliases"
+  ],
+  "Enable Reachability Analysis": [
+    "python.analysis.typeEvaluation.enableReachabilityAnalysis"
+  ],
+  "Enable Experimental Features": [
+    "python.analysis.typeEvaluation.enableExperimentalFeatures"
+  ],
+  "Disable Bytes Type Promotions": [
+    "python.analysis.typeEvaluation.disableBytesTypePromotions"
+  ],
+  "Diagnostic Severity Overrides": [
+    "python.analysis.diagnosticSeverityOverrides"
+  ],
+  "Disable Tagged Hints": [
+    "python.analysis.disableTaggedHints"
+  ],
+  "Log Level": [
+    "python.analysis.logLevel",
+    "windowsaistudio.foundry.logLevel"
+  ],
+  "Typeshed Paths": [
+    "python.analysis.typeshedPaths"
+  ],
+  "Report Extra Telemetry": [
+    "python.analysis.reportExtraTelemetry"
+  ],
+  "Enable Pytest Support": [
+    "python.analysis.enablePytestSupport"
+  ],
+  "Enable Django Support": [
+    "python.analysis.enableDjangoSupport"
+  ],
+  "Goto Definition In String Literal": [
+    "python.analysis.gotoDefinitionInStringLiteral"
+  ],
+  "Node Executable": [
+    "python.analysis.nodeExecutable"
+  ],
+  "Node Arguments": [
+    "python.analysis.nodeArguments"
+  ],
+  "Support Restructured Text": [
+    "python.analysis.supportRestructuredText"
+  ],
+  "Regenerate Std Lib Indices": [
+    "python.analysis.regenerateStdLibIndices"
+  ],
+  "Ai Code Actions": [
+    "python.analysis.aiCodeActions"
+  ],
+  "Generate With Type Annotation": [
+    "python.analysis.generateWithTypeAnnotation"
+  ],
+  "Language Server Mode": [
+    "python.analysis.languageServerMode"
+  ],
+  "Support Docstring Template": [
+    "python.analysis.supportDocstringTemplate"
+  ],
+  "Display English Diagnostics": [
+    "python.analysis.displayEnglishDiagnostics"
+  ],
+  "Enable Editable Installs": [
+    "python.analysis.enableEditableInstalls"
+  ],
+  "Diagnostics Source": [
+    "python.analysis.diagnosticsSource"
+  ],
+  "Pyright Version": [
+    "python.analysis.pyrightVersion"
+  ],
+  "Pyrefly Version": [
+    "python.analysis.pyreflyVersion"
+  ],
+  "Enable Pyrefly Notification": [
+    "python.analysis.enablePyreflyNotification"
+  ],
+  "Enable Mangle Name": [
+    "python.analysis.enableMangleName"
+  ],
+  "Enable Perf Telemetry": [
+    "python.analysis.enablePerfTelemetry"
+  ],
+  "Support All Python Documents": [
+    "python.analysis.supportAllPythonDocuments"
+  ],
+  "Enable Color Picker": [
+    "python.analysis.enableColorPicker"
+  ],
+  "Ai Hover Summaries": [
+    "python.analysis.aiHoverSummaries"
+  ],
+  "Enable Troubleshoot Missing Imports": [
+    "python.analysis.enableTroubleshootMissingImports"
+  ],
+  "Enable Async Program": [
+    "python.analysis.enableAsyncProgram"
+  ],
+  "Enable External Type Server": [
+    "python.analysis.enableExternalTypeServer"
+  ],
+  "Install Python Dependency Remediation": [
+    "python.analysis.installPythonDependencyRemediation"
+  ],
+  "Find Refs In Background Thread": [
+    "python.analysis.findRefsInBackgroundThread"
+  ],
+  "Type Server Executable": [
+    "python.analysis.typeServerExecutable"
+  ],
+  "Type Server Arguments": [
+    "python.analysis.typeServerArguments"
+  ],
+  "Log Type Server Messages": [
+    "python.analysis.logTypeServerMessages"
+  ],
+  "Enable Snippet Extra Telemetry": [
+    "python.analysis.enableSnippetExtraTelemetry"
+  ],
+  "References Code Lens": [
+    "python.analysis.referencesCodeLens"
+  ],
+  "Goto Override Code Lens": [
+    "python.analysis.gotoOverrideCodeLens"
+  ],
+  "Enable Toolbox In Prompt Agent": [
+    "windowsaistudio.enableToolboxInPromptAgent"
+  ],
+  "Tracing Grpc Port": [
+    "windowsaistudio.tracingGrpcPort"
+  ],
+  "Tracing Http Port": [
+    "windowsaistudio.tracingHttpPort"
+  ],
+  "Enable Remote Fine-tuning And Inference": [
+    "windowsaistudio.enableRemoteFine-tuningAndInference"
+  ],
+  "Template Ref": [
+    "windowsaistudio.templateRef"
+  ],
+  "Open AI Inference Port": [
+    "windowsaistudio.openAIInferencePort"
+  ],
+  "Workspace Agent Pipe": [
+    "windowsaistudio.workspaceAgentPipe"
+  ],
+  "Playground Agent Pipe": [
+    "windowsaistudio.playgroundAgentPipe"
+  ],
+  "Playground Agent Model Storage": [
+    "windowsaistudio.playgroundAgentModelStorage"
+  ],
+  "Playground Show Resource Usage": [
+    "windowsaistudio.playgroundShowResourceUsage"
+  ],
+  "Enable Cuda For Resource Usage": [
+    "windowsaistudio.enableCudaForResourceUsage"
+  ],
+  "Interval For Resource Usage": [
+    "windowsaistudio.intervalForResourceUsage"
+  ],
+  "Remote Inferene Endpoints": [
+    "windowsaistudio.remoteInfereneEndpoints"
+  ],
+  "External Open AI Providers": [
+    "windowsaistudio.externalOpenAIProviders"
+  ],
+  "Model Lab Accepted Datasets": [
+    "windowsaistudio.modelLabAcceptedDatasets"
+  ],
+  "Model Lab Global Cache Path": [
+    "windowsaistudio.modelLabGlobalCachePath"
+  ],
+  "Model Lab Intel Unified Telemetry Path": [
+    "windowsaistudio.modelLabIntelUnifiedTelemetryPath"
+  ],
+  "Auto Check Foundry Skill": [
+    "windowsaistudio.autoCheckFoundrySkill"
+  ],
+  "Model Lab Gradio Port": [
+    "windowsaistudio.modelLabGradioPort"
+  ],
+  "Workflow Visualization Port": [
+    "windowsaistudio.foundry.workflowVisualizationPort"
+  ]
+}
