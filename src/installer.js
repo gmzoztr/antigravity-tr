@@ -390,6 +390,43 @@ function patchClaudeExtension(paths) {
   }
 }
 
+function patchCodexExtension(paths) {
+  const dirs = [
+    paths.ide?.extensionsDir,
+    path.join(process.env.USERPROFILE || 'C:\\Users\\Work-D', '.vscode', 'extensions')
+  ];
+  const replacements = [
+    ['"Open Codex Sidebar"', '"Codex Kenar Çubuğunu Aç"'],
+    ['"Open Codex Command Menu"', '"Codex Komut Menüsünü Aç"'],
+    ['"Implement with Codex"', '"Codex ile Uygula"'],
+    ['"New Codex Agent"', '"Yeni Codex Ajanı"'],
+    ['"Add to Codex Thread"', '"Codex İş Parçacığına Ekle"'],
+    ['"Add File to Codex Thread"', '"Dosyayı Codex İş Parçacığına Ekle"'],
+    ['"New Chat in ChatGPT Sidebar"', '"ChatGPT Kenar Çubuğunda Yeni Sohbet"'],
+    ['"Copy Codex CLI args for LSP MCP"', '"LSP MCP için Codex CLI Bağımsız Değişkenlerini Kopyala"'],
+    ['"Codex Settings"', '"Codex Ayarları"']
+  ];
+
+  for (const d of dirs) {
+    if (!d || !fs.existsSync(d)) continue;
+    try {
+      for (const sub of fs.readdirSync(d)) {
+        if (sub.startsWith('openai.chatgpt')) {
+          const pkgPath = path.join(d, sub, 'package.json');
+          if (fs.existsSync(pkgPath)) {
+            try { fs.chmodSync(pkgPath, 0o666); } catch (e) {}
+            let content = fs.readFileSync(pkgPath, 'utf8');
+            for (const [en, tr] of replacements) {
+              content = content.replaceAll(en, tr);
+            }
+            fs.writeFileSync(pkgPath, content, 'utf8');
+          }
+        }
+      }
+    } catch (e) {}
+  }
+}
+
 /**
  * Tam kurulum yürütür.
  */
@@ -434,12 +471,13 @@ function install() {
     }
   }
 
-  // 5. Google Cloud, Antigravity, Claude ve WSL Eklenti Yamaları
+  // 5. Google Cloud, Antigravity, Claude, Codex ve WSL Eklenti Yamaları
   console.log('5. Eklenti arayüz dizeleri yamalanıyor...');
   patchGoogleCloudExtension(paths);
   patchAntigravityExtension(paths);
   patchWslExtension(paths);
   patchClaudeExtension(paths);
+  patchCodexExtension(paths);
   console.log('   [✓] Eklenti arayüzleri ve durum çubuğu güncellendi.');
 
   // 6. Önbellek Temizleme
