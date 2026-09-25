@@ -352,10 +352,14 @@
   "Feedback": "Geri Bildirim",
   "feedback": "Geri Bildirim",
   "Clangd": "Clangd",
-  "Antigravity": "Antigravity",
-  "antigravity": "Antigravity",
-  "remote": "Uzak (Remote)",
   "pasteImagesAsAttachments": "Resimleri Ek Olarak Yapıştır",
+  "Remote.WSL": "Uzak (Remote) › WSL",
+  "remote": "Uzak (Remote)",
+  "experimental": "Deneysel",
   "clangd": "Clangd",
-  "Remote.WSL": "Uzak (Remote) › WSL"
+  "Media Preview": "Medya Önizlemesi",
+  "Merge-conflict": "Birleştirme Çakışması",
+  "Mermaid-chat": "Mermaid Sohbeti",
+  "Npm": "npm",
+  "npm": "npm"
 }
