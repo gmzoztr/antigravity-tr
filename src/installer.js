@@ -428,6 +428,114 @@ function patchCodexExtension(paths) {
 }
 
 /**
+ * Antigravity yerleşik uzak ve çekirdek uzantıların (Dev Containers, SSH, WSL, Antigravity)
+ * package.json açıklamalarını ve başlıklarını Türkçeleştirir.
+ */
+function patchAntigravityRemoteExtensions(paths) {
+  if (!paths.ide || !paths.ide.appPath) return;
+  const extsDir = path.join(paths.ide.appPath, 'resources', 'app', 'extensions');
+
+  const configs = [
+    {
+      dir: 'antigravity-dev-containers',
+      replacements: [
+        ['"Enable SSH agent forwarding when connecting to devcontainers."', '"Dev container\'lara bağlanırken SSH aracısı iletimini etkinleştirin."'],
+        ['"Disable the server checksum verification. This is only recommended for development and testing."', '"Sunucu sağlama toplamı doğrulamasını devre dışı bırakın. Bu yalnızca geliştirme ve test için önerilir."'],
+        ['"Use devcontainers within Antigravity"', '"Antigravity içinde dev container\'ları kullanın"']
+      ]
+    },
+    {
+      dir: 'antigravity-remote-openssh',
+      replacements: [
+        ['"The absolute file path to a custom SSH config file."', '"Özel bir SSH yapılandırma dosyasının mutlak dosya yolu."'],
+        ['"The absolute file path to the SSH executable. If empty, will use the ssh on the PATH."', '"SSH yürütülebilir dosyasının mutlak dosya yolu. Boşsa PATH üzerindeki ssh kullanılır."'],
+        ['"Experimental: The URL from where the Antigravity server will be downloaded. The following variables can be substituted: ${os}, ${arch}, ${ideVersion}, ${vscodeVersion} ${commit}, ${quality}."', '"Deneysel: Antigravity sunucusunun indirileceği URL. Şu değişkenler yerine konulabilir: ${os}, ${arch}, ${ideVersion}, ${vscodeVersion} ${commit}, ${quality}."'],
+        ['"Experimental: The name of the server binary, use this if you are using a client without a corresponding server release, or if you are iterating on remote extensions."', '"Deneysel: Sunucu ikili dosyasının adı; ilgili sunucu sürümü olmayan bir istemci kullanıyorsanız veya uzak uzantılar üzerinde çalışıyorsanız bunu kullanın."'],
+        ['"Experimental: Disable the server checksum verification. This is only recommended for development and testing."', '"Deneysel: Sunucu sağlama toplamı doğrulamasını devre dışı bırakın. Bu yalnızca geliştirme ve test için önerilir."'],
+        ['"Connect to remote machines over SSH using Antigravity"', '"Antigravity kullanarak SSH üzerinden uzak makinelere bağlanın"']
+      ]
+    },
+    {
+      dir: 'antigravity-remote-wsl',
+      replacements: [
+        ['"The URL from where the Antigravity server will be downloaded. The following variables can be substituted: ${os}, ${arch}, ${ideVersion}, ${vscodeVersion} ${commit}, ${quality}."', '"Antigravity sunucusunun indirileceği URL. Şu değişkenler yerine konulabilir: ${os}, ${arch}, ${ideVersion}, ${vscodeVersion} ${commit}, ${quality}."'],
+        ['"Experimental: Disable the server checksum verification. This is only recommended for development and testing."', '"Deneysel: Sunucu sağlama toplamı doğrulamasını devre dışı bırakın. Bu yalnızca geliştirme ve test için önerilir."']
+      ]
+    },
+    {
+      dir: 'antigravity',
+      replacements: [
+        ['"Changes the base URL for marketplace search results. [Available Options](https://github.com/VSCodium/vscodium/blob/master/docs/index.md#extensions-marketplace). You must restart Antigravity to use the new marketplace after changing this value."', '"Marketplace arama sonuçları için temel URL\'yi değiştirir. [Kullanılabilir Seçenekler](https://github.com/VSCodium/vscodium/blob/master/docs/index.md#extensions-marketplace). Bu değeri değiştirdikten sonra yeni marketplace\'i kullanmak için Antigravity\'yi yeniden başlatmanız gerekir."'],
+        ['"Changes the base URL on each extension page. [Available Options](https://github.com/VSCodium/vscodium/blob/master/docs/index.md#extensions-marketplace). You must restart Antigravity to use the new marketplace after changing this value."', '"Her uzantı sayfasındaki temel URL\'yi değiştirir. [Kullanılabilir Seçenekler](https://github.com/VSCodium/vscodium/blob/master/docs/index.md#extensions-marketplace). Bu değeri değiştirdikten sonra yeni marketplace\'i kullanmak için Antigravity\'yi yeniden başlatmanız gerekir."'],
+        ['"Jetski will attempt to compute embeddings for workspaces up to this many files. This file count ignores .gitignore and binary files. Raising this limit from the default value may lead to performance issues. Values 0 or below will be treated as unlimited."', '"Jetski, bu sayıya kadar dosyaya sahip çalışma alanları için yerleştirmeleri (embeddings) hesaplamaya çalışır. Bu dosya sayısı .gitignore ve ikili (binary) dosyaları yoksayar. Bu sınırın varsayılan değerin üzerine çıkarılması performans sorunlarına yol açabilir. 0 veya daha düşük değerler sınırsız kabul edilir."'],
+        ['"Enable the Cursor-import commands in the palette"', '"Komut paletinde Cursor içe aktarma komutlarını etkinleştirin"'],
+        ['"Keep the Language Server running after the editor is closed."', '"Düzenleyici kapatıldıktan sonra Dil Sunucusunun çalışmaya devam etmesini sağlayın."']
+      ]
+    }
+  ];
+
+  for (const cfg of configs) {
+    const pkgPath = path.join(extsDir, cfg.dir, 'package.json');
+    if (fs.existsSync(pkgPath)) {
+      try {
+        try { fs.chmodSync(pkgPath, 0o666); } catch (e) {}
+        let content = fs.readFileSync(pkgPath, 'utf8');
+        for (const [en, tr] of cfg.replacements) {
+          content = content.replaceAll(en, tr);
+        }
+        fs.writeFileSync(pkgPath, content, 'utf8');
+      } catch (e) {}
+    }
+  }
+}
+
+/**
+ * clangd eklentisinin package.json açıklamalarını Türkçeleştirir.
+ */
+function patchClangdExtension(paths) {
+  const dirs = [
+    paths.ide?.extensionsDir,
+    path.join(process.env.USERPROFILE || 'C:\\Users\\Work-D', '.vscode', 'extensions')
+  ];
+
+  const replacements = [
+    ['"Arguments for clangd server."', '"clangd sunucusu için bağımsız değişkenler."'],
+    ['"Check for language server updates on startup."', '"Başlangıçta dil sunucusu güncellemelerini denetleyin."'],
+    ['"Warn about conflicting extensions and suggest disabling them."', '"Çakışan uzantılar hakkında uyarın ve bunları devre dışı bırakmayı önerin."'],
+    ['"Enable code completion provided by the language server"', '"Dil sunucusu tarafından sağlanan kod tamamlamayı etkinleştirin"'],
+    ['"Enable hovers provided by the language server"', '"Dil sunucusu tarafından sağlanan üzerine gelme ipuçlarını etkinleştirin"'],
+    ['"Extra clang flags used to parse files when no compilation database is found."', '"Derleme veritabanı bulunamadığında dosyaları ayrıştırmak için kullanılan ek clang bayrakları."'],
+    ['"The path to clangd executable, e.g.: /usr/bin/clangd."', '"clangd yürütülebilir dosyasının yolu, örn.: /usr/bin/clangd."'],
+    ['"Names a file that clangd should log a performance trace to, in chrome trace-viewer JSON format."', '"clangd\'nin chrome trace-viewer JSON biçiminde performans izi kaydedeceği dosyanın adı."'],
+    ['"Auto restart clangd (up to 4 times) if it crashes."', '"clangd çökerse otomatik olarak (en fazla 4 kez) yeniden başlatın."'],
+    ['"Always rank completion items on the server as you type. This produces more accurate results, at the cost of higher latency."', '"Yazarken her zaman tamamlama öğelerini sunucuda sıralayın. Bu, daha yüksek gecikme pahasına daha doğru sonuçlar üretir."'],
+    ['"What to do when clangd configuration files are changed. Ignored if clangd does not support config file watching."', '"clangd yapılandırma dosyaları değiştirildiğinde ne yapılacağı. clangd yapılandırma dosyası izlemeyi desteklemiyorsa yoksayılır."'],
+    ['"Force enable of \\"On Config Changed\\" option regardless of clangd version."', '"clangd sürümünden bağımsız olarak \\"Yapılandırma Değiştiğinde\\" seçeneğini zorla etkinleştirin."'],
+    ['"Allows the path to be a script e.g.: clangd.sh."', '"Yolun clangd.sh gibi bir komut dosyası olmasına izin verir."'],
+    ['"Use a background highlight rather than opacity to identify inactive code."', '"Etkin olmayan kodu belirtmek için opaklık yerine arka plan vurgulaması kullanın."']
+  ];
+
+  for (const d of dirs) {
+    if (!d || !fs.existsSync(d)) continue;
+    try {
+      for (const sub of fs.readdirSync(d)) {
+        if (sub.includes('clangd')) {
+          const pkgPath = path.join(d, sub, 'package.json');
+          if (fs.existsSync(pkgPath)) {
+            try { fs.chmodSync(pkgPath, 0o666); } catch (e) {}
+            let content = fs.readFileSync(pkgPath, 'utf8');
+            for (const [en, tr] of replacements) {
+              content = content.replaceAll(en, tr);
+            }
+            fs.writeFileSync(pkgPath, content, 'utf8');
+          }
+        }
+      }
+    } catch (e) {}
+  }
+}
+
+/**
  * Tam kurulum yürütür.
  */
 function install() {
@@ -471,10 +579,12 @@ function install() {
     }
   }
 
-  // 5. Google Cloud, Antigravity, Claude, Codex ve WSL Eklenti Yamaları
+  // 5. Google Cloud, Antigravity, Remote, Clangd, Claude, Codex ve WSL Eklenti Yamaları
   console.log('5. Eklenti arayüz dizeleri yamalanıyor...');
   patchGoogleCloudExtension(paths);
   patchAntigravityExtension(paths);
+  patchAntigravityRemoteExtensions(paths);
+  patchClangdExtension(paths);
   patchWslExtension(paths);
   patchClaudeExtension(paths);
   patchCodexExtension(paths);

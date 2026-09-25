@@ -1,0 +1,3835 @@
+{
+  "antigravity": [
+    {
+      "key": "antigravity.marketplaceExtensionGalleryServiceURL",
+      "label": "Marketplace Extension Gallery Service URL",
+      "desc": "Changes the base URL for marketplace search results. [Availa"
+    },
+    {
+      "key": "antigravity.marketplaceGalleryItemURL",
+      "label": "Marketplace Gallery Item URL",
+      "desc": "Changes the base URL on each extension page. [Available Opti"
+    },
+    {
+      "key": "antigravity.searchMaxWorkspaceFileCount",
+      "label": "Search Max Workspace File Count",
+      "desc": "Jetski will attempt to compute embeddings for workspaces up "
+    },
+    {
+      "key": "antigravity.enableCursorImportCursor",
+      "label": "Enable Cursor Import Cursor",
+      "desc": "Enable the Cursor-import commands in the palette"
+    },
+    {
+      "key": "antigravity.persistentLanguageServer",
+      "label": "Persistent Language Server",
+      "desc": "Keep the Language Server running after the editor is closed."
+    }
+  ],
+  "antigravity-dev-containers": [
+    {
+      "key": "remote.antigravityDevContainers.enableSSHAgentForwarding",
+      "label": "Enable SSH Agent Forwarding",
+      "desc": "Enable SSH agent forwarding when connecting to devcontainers"
+    },
+    {
+      "key": "remote.antigravityDevContainers.experimental.disableServerChecksum",
+      "label": "Disable Server Checksum",
+      "desc": "Disable the server checksum verification. This is only recom"
+    }
+  ],
+  "antigravity-remote-openssh": [
+    {
+      "key": "remote.antigravitySSH.configFile",
+      "label": "Config File",
+      "desc": "The absolute file path to a custom SSH config file."
+    },
+    {
+      "key": "remote.antigravitySSH.path",
+      "label": "Path",
+      "desc": "The absolute file path to the SSH executable. If empty, will"
+    },
+    {
+      "key": "remote.antigravitySSH.experimental.serverDownloadUrlTemplate",
+      "label": "Server Download Url Template",
+      "desc": "Experimental: The URL from where the Antigravity server will"
+    },
+    {
+      "key": "remote.antigravitySSH.experimental.serverBinaryName",
+      "label": "Server Binary Name",
+      "desc": "Experimental: The name of the server binary, use this if you"
+    },
+    {
+      "key": "remote.antigravitySSH.experimental.disableServerChecksum",
+      "label": "Disable Server Checksum",
+      "desc": "Experimental: Disable the server checksum verification. This"
+    }
+  ],
+  "antigravity-remote-wsl": [
+    {
+      "key": "remote.WSL.serverDownloadUrlTemplate",
+      "label": "Server Download Url Template",
+      "desc": "The URL from where the Antigravity server will be downloaded"
+    },
+    {
+      "key": "remote.WSL.experimental.disableServerChecksum",
+      "label": "Disable Server Checksum",
+      "desc": "Experimental: Disable the server checksum verification. This"
+    }
+  ],
+  "css-language-features": [
+    {
+      "key": "css.customData",
+      "label": "Custom Data",
+      "desc": "%css.customData.desc%"
+    },
+    {
+      "key": "css.completion.triggerPropertyValueCompletion",
+      "label": "Trigger Property Value Completion",
+      "desc": "%css.completion.triggerPropertyValueCompletion.desc%"
+    },
+    {
+      "key": "css.completion.completePropertyWithSemicolon",
+      "label": "Complete Property With Semicolon",
+      "desc": "%css.completion.completePropertyWithSemicolon.desc%"
+    },
+    {
+      "key": "css.validate",
+      "label": "Validate",
+      "desc": "%css.validate.desc%"
+    },
+    {
+      "key": "css.hover.documentation",
+      "label": "Documentation",
+      "desc": "%css.hover.documentation%"
+    },
+    {
+      "key": "css.hover.references",
+      "label": "References",
+      "desc": "%css.hover.references%"
+    },
+    {
+      "key": "css.lint.compatibleVendorPrefixes",
+      "label": "Compatible Vendor Prefixes",
+      "desc": "%css.lint.compatibleVendorPrefixes.desc%"
+    },
+    {
+      "key": "css.lint.vendorPrefix",
+      "label": "Vendor Prefix",
+      "desc": "%css.lint.vendorPrefix.desc%"
+    },
+    {
+      "key": "css.lint.duplicateProperties",
+      "label": "Duplicate Properties",
+      "desc": "%css.lint.duplicateProperties.desc%"
+    },
+    {
+      "key": "css.lint.emptyRules",
+      "label": "Empty Rules",
+      "desc": "%css.lint.emptyRules.desc%"
+    },
+    {
+      "key": "css.lint.importStatement",
+      "label": "Import Statement",
+      "desc": "%css.lint.importStatement.desc%"
+    },
+    {
+      "key": "css.lint.boxModel",
+      "label": "Box Model",
+      "desc": "%css.lint.boxModel.desc%"
+    },
+    {
+      "key": "css.lint.universalSelector",
+      "label": "Universal Selector",
+      "desc": "%css.lint.universalSelector.desc%"
+    },
+    {
+      "key": "css.lint.zeroUnits",
+      "label": "Zero Units",
+      "desc": "%css.lint.zeroUnits.desc%"
+    },
+    {
+      "key": "css.lint.fontFaceProperties",
+      "label": "Font Face Properties",
+      "desc": "%css.lint.fontFaceProperties.desc%"
+    },
+    {
+      "key": "css.lint.hexColorLength",
+      "label": "Hex Color Length",
+      "desc": "%css.lint.hexColorLength.desc%"
+    },
+    {
+      "key": "css.lint.argumentsInColorFunction",
+      "label": "Arguments In Color Function",
+      "desc": "%css.lint.argumentsInColorFunction.desc%"
+    },
+    {
+      "key": "css.lint.unknownProperties",
+      "label": "Unknown Properties",
+      "desc": "%css.lint.unknownProperties.desc%"
+    },
+    {
+      "key": "css.lint.validProperties",
+      "label": "Valid Properties",
+      "desc": "%css.lint.validProperties.desc%"
+    },
+    {
+      "key": "css.lint.ieHack",
+      "label": "IE Hack",
+      "desc": "%css.lint.ieHack.desc%"
+    },
+    {
+      "key": "css.lint.unknownVendorSpecificProperties",
+      "label": "Unknown Vendor Specific Properties",
+      "desc": "%css.lint.unknownVendorSpecificProperties.desc%"
+    },
+    {
+      "key": "css.lint.propertyIgnoredDueToDisplay",
+      "label": "Property Ignored Due To Display",
+      "desc": "%css.lint.propertyIgnoredDueToDisplay.desc%"
+    },
+    {
+      "key": "css.lint.important",
+      "label": "Important",
+      "desc": "%css.lint.important.desc%"
+    },
+    {
+      "key": "css.lint.float",
+      "label": "Float",
+      "desc": "%css.lint.float.desc%"
+    },
+    {
+      "key": "css.lint.idSelector",
+      "label": "ID Selector",
+      "desc": "%css.lint.idSelector.desc%"
+    },
+    {
+      "key": "css.lint.unknownAtRules",
+      "label": "Unknown At Rules",
+      "desc": "%css.lint.unknownAtRules.desc%"
+    },
+    {
+      "key": "css.trace.server",
+      "label": "Server",
+      "desc": "%css.trace.server.desc%"
+    },
+    {
+      "key": "css.format.enable",
+      "label": "Etkinleştir",
+      "desc": "%css.format.enable.desc%"
+    },
+    {
+      "key": "css.format.newlineBetweenSelectors",
+      "label": "Newline Between Selectors",
+      "desc": "%css.format.newlineBetweenSelectors.desc%"
+    },
+    {
+      "key": "css.format.newlineBetweenRules",
+      "label": "Newline Between Rules",
+      "desc": "%css.format.newlineBetweenRules.desc%"
+    },
+    {
+      "key": "css.format.spaceAroundSelectorSeparator",
+      "label": "Space Around Selector Separator",
+      "desc": "%css.format.spaceAroundSelectorSeparator.desc%"
+    },
+    {
+      "key": "css.format.braceStyle",
+      "label": "Brace Style",
+      "desc": "%css.format.braceStyle.desc%"
+    },
+    {
+      "key": "css.format.preserveNewLines",
+      "label": "Preserve New Lines",
+      "desc": "%css.format.preserveNewLines.desc%"
+    },
+    {
+      "key": "css.format.maxPreserveNewLines",
+      "label": "Max Preserve New Lines",
+      "desc": "%css.format.maxPreserveNewLines.desc%"
+    },
+    {
+      "key": "scss.completion.triggerPropertyValueCompletion",
+      "label": "Trigger Property Value Completion",
+      "desc": "%scss.completion.triggerPropertyValueCompletion.desc%"
+    },
+    {
+      "key": "scss.completion.completePropertyWithSemicolon",
+      "label": "Complete Property With Semicolon",
+      "desc": "%scss.completion.completePropertyWithSemicolon.desc%"
+    },
+    {
+      "key": "scss.validate",
+      "label": "Validate",
+      "desc": "%scss.validate.desc%"
+    },
+    {
+      "key": "scss.hover.documentation",
+      "label": "Documentation",
+      "desc": "%scss.hover.documentation%"
+    },
+    {
+      "key": "scss.hover.references",
+      "label": "References",
+      "desc": "%scss.hover.references%"
+    },
+    {
+      "key": "scss.lint.compatibleVendorPrefixes",
+      "label": "Compatible Vendor Prefixes",
+      "desc": "%scss.lint.compatibleVendorPrefixes.desc%"
+    },
+    {
+      "key": "scss.lint.vendorPrefix",
+      "label": "Vendor Prefix",
+      "desc": "%scss.lint.vendorPrefix.desc%"
+    },
+    {
+      "key": "scss.lint.duplicateProperties",
+      "label": "Duplicate Properties",
+      "desc": "%scss.lint.duplicateProperties.desc%"
+    },
+    {
+      "key": "scss.lint.emptyRules",
+      "label": "Empty Rules",
+      "desc": "%scss.lint.emptyRules.desc%"
+    },
+    {
+      "key": "scss.lint.importStatement",
+      "label": "Import Statement",
+      "desc": "%scss.lint.importStatement.desc%"
+    },
+    {
+      "key": "scss.lint.boxModel",
+      "label": "Box Model",
+      "desc": "%scss.lint.boxModel.desc%"
+    },
+    {
+      "key": "scss.lint.universalSelector",
+      "label": "Universal Selector",
+      "desc": "%scss.lint.universalSelector.desc%"
+    },
+    {
+      "key": "scss.lint.zeroUnits",
+      "label": "Zero Units",
+      "desc": "%scss.lint.zeroUnits.desc%"
+    },
+    {
+      "key": "scss.lint.fontFaceProperties",
+      "label": "Font Face Properties",
+      "desc": "%scss.lint.fontFaceProperties.desc%"
+    },
+    {
+      "key": "scss.lint.hexColorLength",
+      "label": "Hex Color Length",
+      "desc": "%scss.lint.hexColorLength.desc%"
+    },
+    {
+      "key": "scss.lint.argumentsInColorFunction",
+      "label": "Arguments In Color Function",
+      "desc": "%scss.lint.argumentsInColorFunction.desc%"
+    },
+    {
+      "key": "scss.lint.unknownProperties",
+      "label": "Unknown Properties",
+      "desc": "%scss.lint.unknownProperties.desc%"
+    },
+    {
+      "key": "scss.lint.validProperties",
+      "label": "Valid Properties",
+      "desc": "%scss.lint.validProperties.desc%"
+    },
+    {
+      "key": "scss.lint.ieHack",
+      "label": "IE Hack",
+      "desc": "%scss.lint.ieHack.desc%"
+    },
+    {
+      "key": "scss.lint.unknownVendorSpecificProperties",
+      "label": "Unknown Vendor Specific Properties",
+      "desc": "%scss.lint.unknownVendorSpecificProperties.desc%"
+    },
+    {
+      "key": "scss.lint.propertyIgnoredDueToDisplay",
+      "label": "Property Ignored Due To Display",
+      "desc": "%scss.lint.propertyIgnoredDueToDisplay.desc%"
+    },
+    {
+      "key": "scss.lint.important",
+      "label": "Important",
+      "desc": "%scss.lint.important.desc%"
+    },
+    {
+      "key": "scss.lint.float",
+      "label": "Float",
+      "desc": "%scss.lint.float.desc%"
+    },
+    {
+      "key": "scss.lint.idSelector",
+      "label": "ID Selector",
+      "desc": "%scss.lint.idSelector.desc%"
+    },
+    {
+      "key": "scss.lint.unknownAtRules",
+      "label": "Unknown At Rules",
+      "desc": "%scss.lint.unknownAtRules.desc%"
+    },
+    {
+      "key": "scss.format.enable",
+      "label": "Etkinleştir",
+      "desc": "%scss.format.enable.desc%"
+    },
+    {
+      "key": "scss.format.newlineBetweenSelectors",
+      "label": "Newline Between Selectors",
+      "desc": "%scss.format.newlineBetweenSelectors.desc%"
+    },
+    {
+      "key": "scss.format.newlineBetweenRules",
+      "label": "Newline Between Rules",
+      "desc": "%scss.format.newlineBetweenRules.desc%"
+    },
+    {
+      "key": "scss.format.spaceAroundSelectorSeparator",
+      "label": "Space Around Selector Separator",
+      "desc": "%scss.format.spaceAroundSelectorSeparator.desc%"
+    },
+    {
+      "key": "scss.format.braceStyle",
+      "label": "Brace Style",
+      "desc": "%scss.format.braceStyle.desc%"
+    },
+    {
+      "key": "scss.format.preserveNewLines",
+      "label": "Preserve New Lines",
+      "desc": "%scss.format.preserveNewLines.desc%"
+    },
+    {
+      "key": "scss.format.maxPreserveNewLines",
+      "label": "Max Preserve New Lines",
+      "desc": "%scss.format.maxPreserveNewLines.desc%"
+    },
+    {
+      "key": "less.completion.triggerPropertyValueCompletion",
+      "label": "Trigger Property Value Completion",
+      "desc": "%less.completion.triggerPropertyValueCompletion.desc%"
+    },
+    {
+      "key": "less.completion.completePropertyWithSemicolon",
+      "label": "Complete Property With Semicolon",
+      "desc": "%less.completion.completePropertyWithSemicolon.desc%"
+    },
+    {
+      "key": "less.validate",
+      "label": "Validate",
+      "desc": "%less.validate.desc%"
+    },
+    {
+      "key": "less.hover.documentation",
+      "label": "Documentation",
+      "desc": "%less.hover.documentation%"
+    },
+    {
+      "key": "less.hover.references",
+      "label": "References",
+      "desc": "%less.hover.references%"
+    },
+    {
+      "key": "less.lint.compatibleVendorPrefixes",
+      "label": "Compatible Vendor Prefixes",
+      "desc": "%less.lint.compatibleVendorPrefixes.desc%"
+    },
+    {
+      "key": "less.lint.vendorPrefix",
+      "label": "Vendor Prefix",
+      "desc": "%less.lint.vendorPrefix.desc%"
+    },
+    {
+      "key": "less.lint.duplicateProperties",
+      "label": "Duplicate Properties",
+      "desc": "%less.lint.duplicateProperties.desc%"
+    },
+    {
+      "key": "less.lint.emptyRules",
+      "label": "Empty Rules",
+      "desc": "%less.lint.emptyRules.desc%"
+    },
+    {
+      "key": "less.lint.importStatement",
+      "label": "Import Statement",
+      "desc": "%less.lint.importStatement.desc%"
+    },
+    {
+      "key": "less.lint.boxModel",
+      "label": "Box Model",
+      "desc": "%less.lint.boxModel.desc%"
+    },
+    {
+      "key": "less.lint.universalSelector",
+      "label": "Universal Selector",
+      "desc": "%less.lint.universalSelector.desc%"
+    },
+    {
+      "key": "less.lint.zeroUnits",
+      "label": "Zero Units",
+      "desc": "%less.lint.zeroUnits.desc%"
+    },
+    {
+      "key": "less.lint.fontFaceProperties",
+      "label": "Font Face Properties",
+      "desc": "%less.lint.fontFaceProperties.desc%"
+    },
+    {
+      "key": "less.lint.hexColorLength",
+      "label": "Hex Color Length",
+      "desc": "%less.lint.hexColorLength.desc%"
+    },
+    {
+      "key": "less.lint.argumentsInColorFunction",
+      "label": "Arguments In Color Function",
+      "desc": "%less.lint.argumentsInColorFunction.desc%"
+    },
+    {
+      "key": "less.lint.unknownProperties",
+      "label": "Unknown Properties",
+      "desc": "%less.lint.unknownProperties.desc%"
+    },
+    {
+      "key": "less.lint.validProperties",
+      "label": "Valid Properties",
+      "desc": "%less.lint.validProperties.desc%"
+    },
+    {
+      "key": "less.lint.ieHack",
+      "label": "IE Hack",
+      "desc": "%less.lint.ieHack.desc%"
+    },
+    {
+      "key": "less.lint.unknownVendorSpecificProperties",
+      "label": "Unknown Vendor Specific Properties",
+      "desc": "%less.lint.unknownVendorSpecificProperties.desc%"
+    },
+    {
+      "key": "less.lint.propertyIgnoredDueToDisplay",
+      "label": "Property Ignored Due To Display",
+      "desc": "%less.lint.propertyIgnoredDueToDisplay.desc%"
+    },
+    {
+      "key": "less.lint.important",
+      "label": "Important",
+      "desc": "%less.lint.important.desc%"
+    },
+    {
+      "key": "less.lint.float",
+      "label": "Float",
+      "desc": "%less.lint.float.desc%"
+    },
+    {
+      "key": "less.lint.idSelector",
+      "label": "ID Selector",
+      "desc": "%less.lint.idSelector.desc%"
+    },
+    {
+      "key": "less.lint.unknownAtRules",
+      "label": "Unknown At Rules",
+      "desc": "%less.lint.unknownAtRules.desc%"
+    },
+    {
+      "key": "less.format.enable",
+      "label": "Etkinleştir",
+      "desc": "%less.format.enable.desc%"
+    },
+    {
+      "key": "less.format.newlineBetweenSelectors",
+      "label": "Newline Between Selectors",
+      "desc": "%less.format.newlineBetweenSelectors.desc%"
+    },
+    {
+      "key": "less.format.newlineBetweenRules",
+      "label": "Newline Between Rules",
+      "desc": "%less.format.newlineBetweenRules.desc%"
+    },
+    {
+      "key": "less.format.spaceAroundSelectorSeparator",
+      "label": "Space Around Selector Separator",
+      "desc": "%less.format.spaceAroundSelectorSeparator.desc%"
+    },
+    {
+      "key": "less.format.braceStyle",
+      "label": "Brace Style",
+      "desc": "%less.format.braceStyle.desc%"
+    },
+    {
+      "key": "less.format.preserveNewLines",
+      "label": "Preserve New Lines",
+      "desc": "%less.format.preserveNewLines.desc%"
+    },
+    {
+      "key": "less.format.maxPreserveNewLines",
+      "label": "Max Preserve New Lines",
+      "desc": "%less.format.maxPreserveNewLines.desc%"
+    }
+  ],
+  "emmet": [
+    {
+      "key": "emmet.showExpandedAbbreviation",
+      "label": "Show Expanded Abbreviation",
+      "desc": "%emmetShowExpandedAbbreviation%"
+    },
+    {
+      "key": "emmet.showAbbreviationSuggestions",
+      "label": "Show Abbreviation Suggestions",
+      "desc": "%emmetShowAbbreviationSuggestions%"
+    },
+    {
+      "key": "emmet.includeLanguages",
+      "label": "Include Languages",
+      "desc": "%emmetIncludeLanguages%"
+    },
+    {
+      "key": "emmet.variables",
+      "label": "Variables",
+      "desc": "%emmetVariables%"
+    },
+    {
+      "key": "emmet.syntaxProfiles",
+      "label": "Syntax Profiles",
+      "desc": "%emmetSyntaxProfiles%"
+    },
+    {
+      "key": "emmet.excludeLanguages",
+      "label": "Exclude Languages",
+      "desc": "%emmetExclude%"
+    },
+    {
+      "key": "emmet.extensionsPath",
+      "label": "Extensions Path",
+      "desc": "%emmetExtensionsPath%"
+    },
+    {
+      "key": "emmet.triggerExpansionOnTab",
+      "label": "Trigger Expansion On Tab",
+      "desc": "%emmetTriggerExpansionOnTab%"
+    },
+    {
+      "key": "emmet.useInlineCompletions",
+      "label": "Use Inline Completions",
+      "desc": "%emmetUseInlineCompletions%"
+    },
+    {
+      "key": "emmet.showSuggestionsAsSnippets",
+      "label": "Show Suggestions As Snippets",
+      "desc": "%emmetShowSuggestionsAsSnippets%"
+    },
+    {
+      "key": "emmet.optimizeStylesheetParsing",
+      "label": "Optimize Stylesheet Parsing",
+      "desc": "%emmetOptimizeStylesheetParsing%"
+    }
+  ],
+  "git": [
+    {
+      "key": "git.path",
+      "label": "Path",
+      "desc": "%config.path%"
+    },
+    {
+      "key": "git.autoRepositoryDetection",
+      "label": "Auto Repository Detection",
+      "desc": "%config.autoRepositoryDetection%"
+    },
+    {
+      "key": "git.autorefresh",
+      "label": "Autorefresh",
+      "desc": "%config.autorefresh%"
+    },
+    {
+      "key": "git.autofetch",
+      "label": "Autofetch",
+      "desc": "%config.autofetch%"
+    },
+    {
+      "key": "git.autofetchPeriod",
+      "label": "Autofetch Period",
+      "desc": "%config.autofetchPeriod%"
+    },
+    {
+      "key": "git.defaultBranchName",
+      "label": "Default Branch Name",
+      "desc": "%config.defaultBranchName%"
+    },
+    {
+      "key": "git.branchPrefix",
+      "label": "Branch Prefix",
+      "desc": "%config.branchPrefix%"
+    },
+    {
+      "key": "git.branchProtection",
+      "label": "Branch Protection",
+      "desc": "%config.branchProtection%"
+    },
+    {
+      "key": "git.branchProtectionPrompt",
+      "label": "Branch Protection Prompt",
+      "desc": "%config.branchProtectionPrompt%"
+    },
+    {
+      "key": "git.branchValidationRegex",
+      "label": "Branch Validation Regex",
+      "desc": "%config.branchValidationRegex%"
+    },
+    {
+      "key": "git.branchWhitespaceChar",
+      "label": "Branch Whitespace Char",
+      "desc": "%config.branchWhitespaceChar%"
+    },
+    {
+      "key": "git.branchRandomName.enable",
+      "label": "Etkinleştir",
+      "desc": "%config.branchRandomNameEnable%"
+    },
+    {
+      "key": "git.branchRandomName.dictionary",
+      "label": "Dictionary",
+      "desc": "%config.branchRandomNameDictionary%"
+    },
+    {
+      "key": "git.confirmSync",
+      "label": "Confirm Sync",
+      "desc": "%config.confirmSync%"
+    },
+    {
+      "key": "git.checkoutType",
+      "label": "Checkout Type",
+      "desc": "%config.checkoutType%"
+    },
+    {
+      "key": "git.ignoreLegacyWarning",
+      "label": "Ignore Legacy Warning",
+      "desc": "%config.ignoreLegacyWarning%"
+    },
+    {
+      "key": "git.ignoreMissingGitWarning",
+      "label": "Ignore Missing Git Warning",
+      "desc": "%config.ignoreMissingGitWarning%"
+    },
+    {
+      "key": "git.ignoreWindowsGit27Warning",
+      "label": "Ignore Windows Git27 Warning",
+      "desc": "%config.ignoreWindowsGit27Warning%"
+    },
+    {
+      "key": "git.ignoreLimitWarning",
+      "label": "Ignore Limit Warning",
+      "desc": "%config.ignoreLimitWarning%"
+    },
+    {
+      "key": "git.ignoreRebaseWarning",
+      "label": "Ignore Rebase Warning",
+      "desc": "%config.ignoreRebaseWarning%"
+    },
+    {
+      "key": "git.defaultCloneDirectory",
+      "label": "Default Clone Directory",
+      "desc": "%config.defaultCloneDirectory%"
+    },
+    {
+      "key": "git.useEditorAsCommitInput",
+      "label": "Use Editor As Commit Input",
+      "desc": "%config.useEditorAsCommitInput%"
+    },
+    {
+      "key": "git.verboseCommit",
+      "label": "Verbose Commit",
+      "desc": "%config.verboseCommit%"
+    },
+    {
+      "key": "git.enableSmartCommit",
+      "label": "Enable Smart Commit",
+      "desc": "%config.enableSmartCommit%"
+    },
+    {
+      "key": "git.smartCommitChanges",
+      "label": "Smart Commit Changes",
+      "desc": "%config.smartCommitChanges%"
+    },
+    {
+      "key": "git.suggestSmartCommit",
+      "label": "Suggest Smart Commit",
+      "desc": "%config.suggestSmartCommit%"
+    },
+    {
+      "key": "git.enableCommitSigning",
+      "label": "Enable Commit Signing",
+      "desc": "%config.enableCommitSigning%"
+    },
+    {
+      "key": "git.confirmEmptyCommits",
+      "label": "Confirm Empty Commits",
+      "desc": "%config.confirmEmptyCommits%"
+    },
+    {
+      "key": "git.decorations.enabled",
+      "label": "Etkin",
+      "desc": "%config.decorations.enabled%"
+    },
+    {
+      "key": "git.enableStatusBarSync",
+      "label": "Enable Status Bar Sync",
+      "desc": "%config.enableStatusBarSync%"
+    },
+    {
+      "key": "git.followTagsWhenSync",
+      "label": "Follow Tags When Sync",
+      "desc": "%config.followTagsWhenSync%"
+    },
+    {
+      "key": "git.replaceTagsWhenPull",
+      "label": "Replace Tags When Pull",
+      "desc": "%config.replaceTagsWhenPull%"
+    },
+    {
+      "key": "git.promptToSaveFilesBeforeStash",
+      "label": "Prompt To Save Files Before Stash",
+      "desc": "%config.promptToSaveFilesBeforeStash%"
+    },
+    {
+      "key": "git.promptToSaveFilesBeforeCommit",
+      "label": "Prompt To Save Files Before Commit",
+      "desc": "%config.promptToSaveFilesBeforeCommit%"
+    },
+    {
+      "key": "git.postCommitCommand",
+      "label": "Post Commit Command",
+      "desc": "%config.postCommitCommand%"
+    },
+    {
+      "key": "git.rememberPostCommitCommand",
+      "label": "Remember Post Commit Command",
+      "desc": "%config.rememberPostCommitCommand%"
+    },
+    {
+      "key": "git.openAfterClone",
+      "label": "Open After Clone",
+      "desc": "%config.openAfterClone%"
+    },
+    {
+      "key": "git.showInlineOpenFileAction",
+      "label": "Show Inline Open File Action",
+      "desc": "%config.showInlineOpenFileAction%"
+    },
+    {
+      "key": "git.showPushSuccessNotification",
+      "label": "Show Push Success Notification",
+      "desc": "%config.showPushSuccessNotification%"
+    },
+    {
+      "key": "git.inputValidation",
+      "label": "Input Validation",
+      "desc": "%config.inputValidation%"
+    },
+    {
+      "key": "git.inputValidationLength",
+      "label": "Input Validation Length",
+      "desc": "%config.inputValidationLength%"
+    },
+    {
+      "key": "git.inputValidationSubjectLength",
+      "label": "Input Validation Subject Length",
+      "desc": "%config.inputValidationSubjectLength%"
+    },
+    {
+      "key": "git.detectSubmodules",
+      "label": "Detect Submodules",
+      "desc": "%config.detectSubmodules%"
+    },
+    {
+      "key": "git.detectSubmodulesLimit",
+      "label": "Detect Submodules Limit",
+      "desc": "%config.detectSubmodulesLimit%"
+    },
+    {
+      "key": "git.detectWorktrees",
+      "label": "Detect Worktrees",
+      "desc": "%config.detectWorktrees%"
+    },
+    {
+      "key": "git.detectWorktreesLimit",
+      "label": "Detect Worktrees Limit",
+      "desc": "%config.detectWorktreesLimit%"
+    },
+    {
+      "key": "git.alwaysShowStagedChangesResourceGroup",
+      "label": "Always Show Staged Changes Resource Group",
+      "desc": "%config.alwaysShowStagedChangesResourceGroup%"
+    },
+    {
+      "key": "git.alwaysSignOff",
+      "label": "Always Sign Off",
+      "desc": "%config.alwaysSignOff%"
+    },
+    {
+      "key": "git.ignoreSubmodules",
+      "label": "Ignore Submodules",
+      "desc": "%config.ignoreSubmodules%"
+    },
+    {
+      "key": "git.ignoredRepositories",
+      "label": "Ignored Repositories",
+      "desc": "%config.ignoredRepositories%"
+    },
+    {
+      "key": "git.scanRepositories",
+      "label": "Scan Repositories",
+      "desc": "%config.scanRepositories%"
+    },
+    {
+      "key": "git.showProgress",
+      "label": "Show Progress",
+      "desc": "%config.showProgress%"
+    },
+    {
+      "key": "git.rebaseWhenSync",
+      "label": "Rebase When Sync",
+      "desc": "%config.rebaseWhenSync%"
+    },
+    {
+      "key": "git.pullBeforeCheckout",
+      "label": "Pull Before Checkout",
+      "desc": "%config.pullBeforeCheckout%"
+    },
+    {
+      "key": "git.fetchOnPull",
+      "label": "Fetch On Pull",
+      "desc": "%config.fetchOnPull%"
+    },
+    {
+      "key": "git.pruneOnFetch",
+      "label": "Prune On Fetch",
+      "desc": "%config.pruneOnFetch%"
+    },
+    {
+      "key": "git.pullTags",
+      "label": "Pull Tags",
+      "desc": "%config.pullTags%"
+    },
+    {
+      "key": "git.autoStash",
+      "label": "Auto Stash",
+      "desc": "%config.autoStash%"
+    },
+    {
+      "key": "git.allowForcePush",
+      "label": "Allow Force Push",
+      "desc": "%config.allowForcePush%"
+    },
+    {
+      "key": "git.useForcePushWithLease",
+      "label": "Use Force Push With Lease",
+      "desc": "%config.useForcePushWithLease%"
+    },
+    {
+      "key": "git.useForcePushIfIncludes",
+      "label": "Use Force Push If Includes",
+      "desc": "%config.useForcePushIfIncludes%"
+    },
+    {
+      "key": "git.confirmForcePush",
+      "label": "Confirm Force Push",
+      "desc": "%config.confirmForcePush%"
+    },
+    {
+      "key": "git.allowNoVerifyCommit",
+      "label": "Allow No Verify Commit",
+      "desc": "%config.allowNoVerifyCommit%"
+    },
+    {
+      "key": "git.confirmNoVerifyCommit",
+      "label": "Confirm No Verify Commit",
+      "desc": "%config.confirmNoVerifyCommit%"
+    },
+    {
+      "key": "git.closeDiffOnOperation",
+      "label": "Close Diff On Operation",
+      "desc": "%config.closeDiffOnOperation%"
+    },
+    {
+      "key": "git.openDiffOnClick",
+      "label": "Open Diff On Click",
+      "desc": "%config.openDiffOnClick%"
+    },
+    {
+      "key": "git.supportCancellation",
+      "label": "Support Cancellation",
+      "desc": "%config.supportCancellation%"
+    },
+    {
+      "key": "git.branchSortOrder",
+      "label": "Branch Sort Order",
+      "desc": "%config.branchSortOrder%"
+    },
+    {
+      "key": "git.untrackedChanges",
+      "label": "Untracked Changes",
+      "desc": "%config.untrackedChanges%"
+    },
+    {
+      "key": "git.requireGitUserConfig",
+      "label": "Require Git User Config",
+      "desc": "%config.requireGitUserConfig%"
+    },
+    {
+      "key": "git.showCommitInput",
+      "label": "Show Commit Input",
+      "desc": "%config.showCommitInput%"
+    },
+    {
+      "key": "git.terminalAuthentication",
+      "label": "Terminal Authentication",
+      "desc": "%config.terminalAuthentication%"
+    },
+    {
+      "key": "git.terminalGitEditor",
+      "label": "Terminal Git Editor",
+      "desc": "%config.terminalGitEditor%"
+    },
+    {
+      "key": "git.useCommitInputAsStashMessage",
+      "label": "Use Commit Input As Stash Message",
+      "desc": "%config.useCommitInputAsStashMessage%"
+    },
+    {
+      "key": "git.useIntegratedAskPass",
+      "label": "Use Integrated Ask Pass",
+      "desc": "%config.useIntegratedAskPass%"
+    },
+    {
+      "key": "git.githubAuthentication",
+      "label": "GitHub Authentication",
+      "desc": ""
+    },
+    {
+      "key": "git.timeline.date",
+      "label": "Date",
+      "desc": "%config.timeline.date%"
+    },
+    {
+      "key": "git.timeline.showAuthor",
+      "label": "Show Author",
+      "desc": "%config.timeline.showAuthor%"
+    },
+    {
+      "key": "git.timeline.showUncommitted",
+      "label": "Show Uncommitted",
+      "desc": "%config.timeline.showUncommitted%"
+    },
+    {
+      "key": "git.statusLimit",
+      "label": "Status Limit",
+      "desc": "%config.statusLimit%"
+    },
+    {
+      "key": "git.repositoryScanIgnoredFolders",
+      "label": "Repository Scan Ignored Folders",
+      "desc": "%config.repositoryScanIgnoredFolders%"
+    },
+    {
+      "key": "git.repositoryScanMaxDepth",
+      "label": "Repository Scan Max Depth",
+      "desc": "%config.repositoryScanMaxDepth%"
+    },
+    {
+      "key": "git.commandsToLog",
+      "label": "Commands To Log",
+      "desc": "%config.commandsToLog%"
+    },
+    {
+      "key": "git.mergeEditor",
+      "label": "Merge Editor",
+      "desc": "%config.mergeEditor%"
+    },
+    {
+      "key": "git.optimisticUpdate",
+      "label": "Optimistic Update",
+      "desc": "%config.optimisticUpdate%"
+    },
+    {
+      "key": "git.openRepositoryInParentFolders",
+      "label": "Open Repository In Parent Folders",
+      "desc": "%config.openRepositoryInParentFolders%"
+    },
+    {
+      "key": "git.similarityThreshold",
+      "label": "Similarity Threshold",
+      "desc": "%config.similarityThreshold%"
+    },
+    {
+      "key": "git.blame.editorDecoration.enabled",
+      "label": "Etkin",
+      "desc": "%config.blameEditorDecoration.enabled%"
+    },
+    {
+      "key": "git.blame.editorDecoration.template",
+      "label": "Template",
+      "desc": "%config.blameEditorDecoration.template%"
+    },
+    {
+      "key": "git.blame.statusBarItem.enabled",
+      "label": "Etkin",
+      "desc": "%config.blameStatusBarItem.enabled%"
+    },
+    {
+      "key": "git.blame.statusBarItem.template",
+      "label": "Template",
+      "desc": "%config.blameStatusBarItem.template%"
+    },
+    {
+      "key": "git.commitShortHashLength",
+      "label": "Commit Short Hash Length",
+      "desc": "%config.commitShortHashLength%"
+    },
+    {
+      "key": "git.diagnosticsCommitHook.enabled",
+      "label": "Etkin",
+      "desc": "%config.diagnosticsCommitHook.enabled%"
+    },
+    {
+      "key": "git.diagnosticsCommitHook.sources",
+      "label": "Sources",
+      "desc": "%config.diagnosticsCommitHook.sources%"
+    },
+    {
+      "key": "git.discardUntrackedChangesToTrash",
+      "label": "Discard Untracked Changes To Trash",
+      "desc": "%config.discardUntrackedChangesToTrash%"
+    },
+    {
+      "key": "git.showReferenceDetails",
+      "label": "Show Reference Details",
+      "desc": "%config.showReferenceDetails%"
+    }
+  ],
+  "github": [
+    {
+      "key": "github.branchProtection",
+      "label": "Branch Protection",
+      "desc": "%config.branchProtection%"
+    },
+    {
+      "key": "github.gitAuthentication",
+      "label": "Git Authentication",
+      "desc": "%config.gitAuthentication%"
+    },
+    {
+      "key": "github.gitProtocol",
+      "label": "Git Protocol",
+      "desc": "%config.gitProtocol%"
+    },
+    {
+      "key": "github.showAvatar",
+      "label": "Show Avatar",
+      "desc": "%config.showAvatar%"
+    }
+  ],
+  "github-authentication": [
+    {
+      "key": "github-enterprise.uri",
+      "label": "Uri",
+      "desc": "%config.github-enterprise.uri.description%"
+    },
+    {
+      "key": "github-authentication.useElectronFetch",
+      "label": "Use Electron Fetch",
+      "desc": "%config.github-authentication.useElectronFetch.description%"
+    },
+    {
+      "key": "github-authentication.preferDeviceCodeFlow",
+      "label": "Prefer Device Code Flow",
+      "desc": "%config.github-authentication.preferDeviceCodeFlow.descripti"
+    }
+  ],
+  "html-language-features": [
+    {
+      "key": "html.completion.attributeDefaultValue",
+      "label": "Attribute Default Value",
+      "desc": "%html.completion.attributeDefaultValue%"
+    },
+    {
+      "key": "html.customData",
+      "label": "Custom Data",
+      "desc": "%html.customData.desc%"
+    },
+    {
+      "key": "html.format.enable",
+      "label": "Etkinleştir",
+      "desc": "%html.format.enable.desc%"
+    },
+    {
+      "key": "html.format.wrapLineLength",
+      "label": "Wrap Line Length",
+      "desc": "%html.format.wrapLineLength.desc%"
+    },
+    {
+      "key": "html.format.unformatted",
+      "label": "Unformatted",
+      "desc": "%html.format.unformatted.desc%"
+    },
+    {
+      "key": "html.format.contentUnformatted",
+      "label": "Content Unformatted",
+      "desc": "%html.format.contentUnformatted.desc%"
+    },
+    {
+      "key": "html.format.indentInnerHtml",
+      "label": "Indent Inner HTML",
+      "desc": "%html.format.indentInnerHtml.desc%"
+    },
+    {
+      "key": "html.format.preserveNewLines",
+      "label": "Preserve New Lines",
+      "desc": "%html.format.preserveNewLines.desc%"
+    },
+    {
+      "key": "html.format.maxPreserveNewLines",
+      "label": "Max Preserve New Lines",
+      "desc": "%html.format.maxPreserveNewLines.desc%"
+    },
+    {
+      "key": "html.format.indentHandlebars",
+      "label": "Indent Handlebars",
+      "desc": "%html.format.indentHandlebars.desc%"
+    },
+    {
+      "key": "html.format.extraLiners",
+      "label": "Extra Liners",
+      "desc": "%html.format.extraLiners.desc%"
+    },
+    {
+      "key": "html.format.wrapAttributes",
+      "label": "Wrap Attributes",
+      "desc": "%html.format.wrapAttributes.desc%"
+    },
+    {
+      "key": "html.format.wrapAttributesIndentSize",
+      "label": "Wrap Attributes Indent Size",
+      "desc": "%html.format.wrapAttributesIndentSize.desc%"
+    },
+    {
+      "key": "html.format.templating",
+      "label": "Templating",
+      "desc": "%html.format.templating.desc%"
+    },
+    {
+      "key": "html.format.unformattedContentDelimiter",
+      "label": "Unformatted Content Delimiter",
+      "desc": "%html.format.unformattedContentDelimiter.desc%"
+    },
+    {
+      "key": "html.suggest.html5",
+      "label": "Html5",
+      "desc": "%html.suggest.html5.desc%"
+    },
+    {
+      "key": "html.suggest.hideEndTagSuggestions",
+      "label": "Hide End Tag Suggestions",
+      "desc": "%html.suggest.hideEndTagSuggestions.desc%"
+    },
+    {
+      "key": "html.validate.scripts",
+      "label": "Scripts",
+      "desc": "%html.validate.scripts%"
+    },
+    {
+      "key": "html.validate.styles",
+      "label": "Styles",
+      "desc": "%html.validate.styles%"
+    },
+    {
+      "key": "html.autoCreateQuotes",
+      "label": "Auto Create Quotes",
+      "desc": "%html.autoCreateQuotes%"
+    },
+    {
+      "key": "html.autoClosingTags",
+      "label": "Auto Closing Tags",
+      "desc": "%html.autoClosingTags%"
+    },
+    {
+      "key": "html.hover.documentation",
+      "label": "Documentation",
+      "desc": "%html.hover.documentation%"
+    },
+    {
+      "key": "html.hover.references",
+      "label": "References",
+      "desc": "%html.hover.references%"
+    },
+    {
+      "key": "html.mirrorCursorOnMatchingTag",
+      "label": "Mirror Cursor On Matching Tag",
+      "desc": "%html.mirrorCursorOnMatchingTag%"
+    },
+    {
+      "key": "html.trace.server",
+      "label": "Server",
+      "desc": "%html.trace.server.desc%"
+    }
+  ],
+  "ipynb": [
+    {
+      "key": "ipynb.pasteImagesAsAttachments.enabled",
+      "label": "Etkin",
+      "desc": "%ipynb.pasteImagesAsAttachments.enabled%"
+    },
+    {
+      "key": "ipynb.experimental.serialization",
+      "label": "Serialization",
+      "desc": "%ipynb.experimental.serialization%"
+    }
+  ],
+  "json-language-features": [
+    {
+      "key": "json.schemas",
+      "label": "Schemas",
+      "desc": "%json.schemas.desc%"
+    },
+    {
+      "key": "json.validate.enable",
+      "label": "Etkinleştir",
+      "desc": "%json.validate.enable.desc%"
+    },
+    {
+      "key": "json.format.enable",
+      "label": "Etkinleştir",
+      "desc": "%json.format.enable.desc%"
+    },
+    {
+      "key": "json.format.keepLines",
+      "label": "Keep Lines",
+      "desc": "%json.format.keepLines.desc%"
+    },
+    {
+      "key": "json.trace.server",
+      "label": "Server",
+      "desc": "%json.tracing.desc%"
+    },
+    {
+      "key": "json.colorDecorators.enable",
+      "label": "Etkinleştir",
+      "desc": "%json.colorDecorators.enable.desc%"
+    },
+    {
+      "key": "json.maxItemsComputed",
+      "label": "Max Items Computed",
+      "desc": "%json.maxItemsComputed.desc%"
+    },
+    {
+      "key": "json.schemaDownload.enable",
+      "label": "Etkinleştir",
+      "desc": "%json.enableSchemaDownload.desc%"
+    }
+  ],
+  "markdown-language-features": [
+    {
+      "key": "markdown.styles",
+      "label": "Styles",
+      "desc": "%markdown.styles.dec%"
+    },
+    {
+      "key": "markdown.preview.breaks",
+      "label": "Breaks",
+      "desc": "%markdown.preview.breaks.desc%"
+    },
+    {
+      "key": "markdown.preview.linkify",
+      "label": "Linkify",
+      "desc": "%markdown.preview.linkify%"
+    },
+    {
+      "key": "markdown.preview.typographer",
+      "label": "Typographer",
+      "desc": "%markdown.preview.typographer%"
+    },
+    {
+      "key": "markdown.preview.fontFamily",
+      "label": "Yazı Tipi Ailesi",
+      "desc": "%markdown.preview.fontFamily.desc%"
+    },
+    {
+      "key": "markdown.preview.fontSize",
+      "label": "Yazı Tipi Boyutu",
+      "desc": "%markdown.preview.fontSize.desc%"
+    },
+    {
+      "key": "markdown.preview.lineHeight",
+      "label": "Satır Yüksekliği",
+      "desc": "%markdown.preview.lineHeight.desc%"
+    },
+    {
+      "key": "markdown.preview.scrollPreviewWithEditor",
+      "label": "Scroll Preview With Editor",
+      "desc": "%markdown.preview.scrollPreviewWithEditor.desc%"
+    },
+    {
+      "key": "markdown.preview.markEditorSelection",
+      "label": "Mark Editor Selection",
+      "desc": "%markdown.preview.markEditorSelection.desc%"
+    },
+    {
+      "key": "markdown.preview.scrollEditorWithPreview",
+      "label": "Scroll Editor With Preview",
+      "desc": "%markdown.preview.scrollEditorWithPreview.desc%"
+    },
+    {
+      "key": "markdown.preview.doubleClickToSwitchToEditor",
+      "label": "Double Click To Switch To Editor",
+      "desc": "%markdown.preview.doubleClickToSwitchToEditor.desc%"
+    },
+    {
+      "key": "markdown.preview.openMarkdownLinks",
+      "label": "Open Markdown Links",
+      "desc": "%configuration.markdown.preview.openMarkdownLinks.descriptio"
+    },
+    {
+      "key": "markdown.links.openLocation",
+      "label": "Open Location",
+      "desc": "%configuration.markdown.links.openLocation.description%"
+    },
+    {
+      "key": "markdown.suggest.paths.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.suggest.paths.enabled.description%"
+    },
+    {
+      "key": "markdown.suggest.paths.includeWorkspaceHeaderCompletions",
+      "label": "Include Workspace Header Completions",
+      "desc": "%configuration.markdown.suggest.paths.includeWorkspaceHeader"
+    },
+    {
+      "key": "markdown.trace.server",
+      "label": "Server",
+      "desc": "%markdown.trace.server.desc%"
+    },
+    {
+      "key": "markdown.server.log",
+      "label": "Log",
+      "desc": "%markdown.server.log.desc%"
+    },
+    {
+      "key": "markdown.editor.drop.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.editor.drop.enabled%"
+    },
+    {
+      "key": "markdown.editor.drop.copyIntoWorkspace",
+      "label": "Copy Into Workspace",
+      "desc": "%configuration.markdown.editor.drop.copyIntoWorkspace%"
+    },
+    {
+      "key": "markdown.editor.filePaste.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.editor.filePaste.enabled%"
+    },
+    {
+      "key": "markdown.editor.filePaste.copyIntoWorkspace",
+      "label": "Copy Into Workspace",
+      "desc": "%configuration.markdown.editor.filePaste.copyIntoWorkspace%"
+    },
+    {
+      "key": "markdown.editor.filePaste.videoSnippet",
+      "label": "Video Snippet",
+      "desc": "%configuration.markdown.editor.filePaste.videoSnippet%"
+    },
+    {
+      "key": "markdown.editor.filePaste.audioSnippet",
+      "label": "Audio Snippet",
+      "desc": "%configuration.markdown.editor.filePaste.audioSnippet%"
+    },
+    {
+      "key": "markdown.editor.pasteUrlAsFormattedLink.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.editor.pasteUrlAsFormattedLink.enabl"
+    },
+    {
+      "key": "markdown.validate.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.validate.enabled.description%"
+    },
+    {
+      "key": "markdown.validate.referenceLinks.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.validate.referenceLinks.enabled.desc"
+    },
+    {
+      "key": "markdown.validate.fragmentLinks.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.validate.fragmentLinks.enabled.descr"
+    },
+    {
+      "key": "markdown.validate.fileLinks.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.validate.fileLinks.enabled.descripti"
+    },
+    {
+      "key": "markdown.validate.fileLinks.markdownFragmentLinks",
+      "label": "Markdown Fragment Links",
+      "desc": "%configuration.markdown.validate.fileLinks.markdownFragmentL"
+    },
+    {
+      "key": "markdown.validate.ignoredLinks",
+      "label": "Ignored Links",
+      "desc": "%configuration.markdown.validate.ignoredLinks.description%"
+    },
+    {
+      "key": "markdown.validate.unusedLinkDefinitions.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.validate.unusedLinkDefinitions.descr"
+    },
+    {
+      "key": "markdown.validate.duplicateLinkDefinitions.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.validate.duplicateLinkDefinitions.de"
+    },
+    {
+      "key": "markdown.updateLinksOnFileMove.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.updateLinksOnFileMove.enabled%"
+    },
+    {
+      "key": "markdown.updateLinksOnFileMove.include",
+      "label": "Include",
+      "desc": "%configuration.markdown.updateLinksOnFileMove.include%"
+    },
+    {
+      "key": "markdown.updateLinksOnFileMove.enableForDirectories",
+      "label": "Enable For Directories",
+      "desc": "%configuration.markdown.updateLinksOnFileMove.enableForDirec"
+    },
+    {
+      "key": "markdown.occurrencesHighlight.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.occurrencesHighlight.enabled%"
+    },
+    {
+      "key": "markdown.copyFiles.destination",
+      "label": "Destination",
+      "desc": "%configuration.markdown.copyFiles.destination%"
+    },
+    {
+      "key": "markdown.copyFiles.overwriteBehavior",
+      "label": "Overwrite Behavior",
+      "desc": "%configuration.markdown.copyFiles.overwriteBehavior%"
+    },
+    {
+      "key": "markdown.preferredMdPathExtensionStyle",
+      "label": "Preferred Md Path Extension Style",
+      "desc": "%configuration.markdown.preferredMdPathExtensionStyle%"
+    },
+    {
+      "key": "markdown.editor.updateLinksOnPaste.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.markdown.editor.updateLinksOnPaste.enabled%"
+    }
+  ],
+  "markdown-math": [
+    {
+      "key": "markdown.math.enabled",
+      "label": "Etkin",
+      "desc": "%config.markdown.math.enabled%"
+    },
+    {
+      "key": "markdown.math.macros",
+      "label": "Macros",
+      "desc": "%config.markdown.math.macros%"
+    }
+  ],
+  "media-preview": [
+    {
+      "key": "mediaPreview.video.autoPlay",
+      "label": "Auto Play",
+      "desc": "%videoPreviewerAutoPlay%"
+    },
+    {
+      "key": "mediaPreview.video.loop",
+      "label": "Loop",
+      "desc": "%videoPreviewerLoop%"
+    }
+  ],
+  "merge-conflict": [
+    {
+      "key": "merge-conflict.codeLens.enabled",
+      "label": "Etkin",
+      "desc": "%config.codeLensEnabled%"
+    },
+    {
+      "key": "merge-conflict.decorators.enabled",
+      "label": "Etkin",
+      "desc": "%config.decoratorsEnabled%"
+    },
+    {
+      "key": "merge-conflict.autoNavigateNextConflict.enabled",
+      "label": "Etkin",
+      "desc": "%config.autoNavigateNextConflictEnabled%"
+    },
+    {
+      "key": "merge-conflict.diffViewPosition",
+      "label": "Diff View Position",
+      "desc": "%config.diffViewPosition%"
+    }
+  ],
+  "microsoft-authentication": [
+    {
+      "key": "microsoft-sovereign-cloud.environment",
+      "label": "Environment",
+      "desc": "%microsoft-sovereign-cloud.environment.description%"
+    },
+    {
+      "key": "microsoft-sovereign-cloud.customEnvironment",
+      "label": "Custom Environment",
+      "desc": "%microsoft-sovereign-cloud.customEnvironment.description%"
+    },
+    {
+      "key": "microsoft-authentication.implementation",
+      "label": "Implementation",
+      "desc": "%microsoft-authentication.implementation.description%"
+    }
+  ],
+  "js-debug": [
+    {
+      "key": "debug.javascript.codelens.npmScripts",
+      "label": "Npm Scripts",
+      "desc": "%configuration.npmScriptLensLocation%"
+    },
+    {
+      "key": "debug.javascript.terminalOptions",
+      "label": "Terminal Options",
+      "desc": "%configuration.terminalOptions%"
+    },
+    {
+      "key": "debug.javascript.automaticallyTunnelRemoteServer",
+      "label": "Automatically Tunnel Remote Server",
+      "desc": "%configuration.automaticallyTunnelRemoteServer%"
+    },
+    {
+      "key": "debug.javascript.debugByLinkOptions",
+      "label": "Debug By Link Options",
+      "desc": "%configuration.debugByLinkOptions%"
+    },
+    {
+      "key": "debug.javascript.pickAndAttachOptions",
+      "label": "Pick And Attach Options",
+      "desc": "%configuration.pickAndAttachOptions%"
+    },
+    {
+      "key": "debug.javascript.autoAttachFilter",
+      "label": "Auto Attach Filter",
+      "desc": "%configuration.autoAttachMode%"
+    },
+    {
+      "key": "debug.javascript.autoAttachSmartPattern",
+      "label": "Auto Attach Smart Pattern",
+      "desc": "%configuration.autoAttachSmartPatterns%"
+    },
+    {
+      "key": "debug.javascript.breakOnConditionalError",
+      "label": "Break On Conditional Error",
+      "desc": "%configuration.breakOnConditionalError%"
+    },
+    {
+      "key": "debug.javascript.unmapMissingSources",
+      "label": "Unmap Missing Sources",
+      "desc": "%configuration.unmapMissingSources%"
+    },
+    {
+      "key": "debug.javascript.defaultRuntimeExecutable",
+      "label": "Default Runtime Executable",
+      "desc": "%configuration.defaultRuntimeExecutables%"
+    },
+    {
+      "key": "debug.javascript.resourceRequestOptions",
+      "label": "Resource Request Options",
+      "desc": "%configuration.resourceRequestOptions%"
+    },
+    {
+      "key": "debug.javascript.enableNetworkView",
+      "label": "Enable Network View",
+      "desc": "%configuration.enableNetworkView%"
+    }
+  ],
+  "npm": [
+    {
+      "key": "npm.runSilent",
+      "label": "Run Silent",
+      "desc": "%config.npm.runSilent%"
+    },
+    {
+      "key": "npm.packageManager",
+      "label": "Package Manager",
+      "desc": "%config.npm.packageManager%"
+    },
+    {
+      "key": "npm.scriptRunner",
+      "label": "Script Runner",
+      "desc": "%config.npm.scriptRunner%"
+    },
+    {
+      "key": "npm.enableScriptExplorer",
+      "label": "Enable Script Explorer",
+      "desc": "%config.npm.enableScriptExplorer%"
+    },
+    {
+      "key": "npm.enableRunFromFolder",
+      "label": "Enable Run From Folder",
+      "desc": "%config.npm.enableRunFromFolder%"
+    },
+    {
+      "key": "npm.scriptExplorerAction",
+      "label": "Script Explorer Action",
+      "desc": "%config.npm.scriptExplorerAction%"
+    },
+    {
+      "key": "npm.scriptExplorerExclude",
+      "label": "Script Explorer Exclude",
+      "desc": "%config.npm.scriptExplorerExclude%"
+    },
+    {
+      "key": "npm.fetchOnlinePackageInfo",
+      "label": "Fetch Online Package Info",
+      "desc": "%config.npm.fetchOnlinePackageInfo%"
+    },
+    {
+      "key": "npm.scriptHover",
+      "label": "Script Hover",
+      "desc": "%config.npm.scriptHover%"
+    }
+  ],
+  "php-language-features": [
+    {
+      "key": "php.suggest.basic",
+      "label": "Basic",
+      "desc": "%configuration.suggest.basic%"
+    },
+    {
+      "key": "php.validate.enable",
+      "label": "Etkinleştir",
+      "desc": "%configuration.validate.enable%"
+    },
+    {
+      "key": "php.validate.executablePath",
+      "label": "Executable Path",
+      "desc": "%configuration.validate.executablePath%"
+    },
+    {
+      "key": "php.validate.run",
+      "label": "Run",
+      "desc": "%configuration.validate.run%"
+    }
+  ],
+  "references-view": [
+    {
+      "key": "references.preferredLocation",
+      "label": "Preferred Location",
+      "desc": "%config.references.preferredLocation%"
+    }
+  ],
+  "simple-browser": [
+    {
+      "key": "simpleBrowser.focusLockIndicator.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.focusLockIndicator.enabled.description%"
+    }
+  ],
+  "typescript-language-features": [
+    {
+      "key": "typescript.tsdk",
+      "label": "Tsdk",
+      "desc": "%typescript.tsdk.desc%"
+    },
+    {
+      "key": "typescript.disableAutomaticTypeAcquisition",
+      "label": "Disable Automatic Type Acquisition",
+      "desc": "%typescript.disableAutomaticTypeAcquisition%"
+    },
+    {
+      "key": "typescript.enablePromptUseWorkspaceTsdk",
+      "label": "Enable Prompt Use Workspace Tsdk",
+      "desc": "%typescript.enablePromptUseWorkspaceTsdk%"
+    },
+    {
+      "key": "javascript.referencesCodeLens.enabled",
+      "label": "Etkin",
+      "desc": "%javascript.referencesCodeLens.enabled%"
+    },
+    {
+      "key": "javascript.referencesCodeLens.showOnAllFunctions",
+      "label": "Show On All Functions",
+      "desc": "%javascript.referencesCodeLens.showOnAllFunctions%"
+    },
+    {
+      "key": "typescript.referencesCodeLens.enabled",
+      "label": "Etkin",
+      "desc": "%typescript.referencesCodeLens.enabled%"
+    },
+    {
+      "key": "typescript.referencesCodeLens.showOnAllFunctions",
+      "label": "Show On All Functions",
+      "desc": "%typescript.referencesCodeLens.showOnAllFunctions%"
+    },
+    {
+      "key": "typescript.implementationsCodeLens.enabled",
+      "label": "Etkin",
+      "desc": "%typescript.implementationsCodeLens.enabled%"
+    },
+    {
+      "key": "typescript.experimental.useTsgo",
+      "label": "Use Tsgo",
+      "desc": "%typescript.useTsgo%"
+    },
+    {
+      "key": "typescript.implementationsCodeLens.showOnInterfaceMethods",
+      "label": "Show On Interface Methods",
+      "desc": "%typescript.implementationsCodeLens.showOnInterfaceMethods%"
+    },
+    {
+      "key": "typescript.implementationsCodeLens.showOnAllClassMethods",
+      "label": "Show On All Class Methods",
+      "desc": "%typescript.implementationsCodeLens.showOnAllClassMethods%"
+    },
+    {
+      "key": "typescript.reportStyleChecksAsWarnings",
+      "label": "Report Style Checks As Warnings",
+      "desc": "%typescript.reportStyleChecksAsWarnings%"
+    },
+    {
+      "key": "typescript.validate.enable",
+      "label": "Etkinleştir",
+      "desc": "%typescript.validate.enable%"
+    },
+    {
+      "key": "javascript.validate.enable",
+      "label": "Etkinleştir",
+      "desc": "%javascript.validate.enable%"
+    },
+    {
+      "key": "js/ts.implicitProjectConfig.module",
+      "label": "Module",
+      "desc": "%configuration.implicitProjectConfig.module%"
+    },
+    {
+      "key": "js/ts.implicitProjectConfig.target",
+      "label": "Target",
+      "desc": "%configuration.implicitProjectConfig.target%"
+    },
+    {
+      "key": "js/ts.implicitProjectConfig.checkJs",
+      "label": "Check JS",
+      "desc": "%configuration.implicitProjectConfig.checkJs%"
+    },
+    {
+      "key": "js/ts.implicitProjectConfig.experimentalDecorators",
+      "label": "Experimental Decorators",
+      "desc": "%configuration.implicitProjectConfig.experimentalDecorators%"
+    },
+    {
+      "key": "js/ts.implicitProjectConfig.strictNullChecks",
+      "label": "Strict Null Checks",
+      "desc": "%configuration.implicitProjectConfig.strictNullChecks%"
+    },
+    {
+      "key": "js/ts.implicitProjectConfig.strictFunctionTypes",
+      "label": "Strict Function Types",
+      "desc": "%configuration.implicitProjectConfig.strictFunctionTypes%"
+    },
+    {
+      "key": "js/ts.implicitProjectConfig.strict",
+      "label": "Strict",
+      "desc": "%configuration.implicitProjectConfig.strict%"
+    },
+    {
+      "key": "typescript.tsc.autoDetect",
+      "label": "Görevleri Otomatik Algıla",
+      "desc": "%typescript.tsc.autoDetect%"
+    },
+    {
+      "key": "typescript.locale",
+      "label": "Locale",
+      "desc": "%typescript.locale%"
+    },
+    {
+      "key": "javascript.suggestionActions.enabled",
+      "label": "Etkin",
+      "desc": "%javascript.suggestionActions.enabled%"
+    },
+    {
+      "key": "typescript.suggestionActions.enabled",
+      "label": "Etkin",
+      "desc": "%typescript.suggestionActions.enabled%"
+    },
+    {
+      "key": "typescript.updateImportsOnFileMove.enabled",
+      "label": "Etkin",
+      "desc": "%typescript.updateImportsOnFileMove.enabled%"
+    },
+    {
+      "key": "javascript.updateImportsOnFileMove.enabled",
+      "label": "Etkin",
+      "desc": "%typescript.updateImportsOnFileMove.enabled%"
+    },
+    {
+      "key": "typescript.autoClosingTags",
+      "label": "Auto Closing Tags",
+      "desc": "%typescript.autoClosingTags%"
+    },
+    {
+      "key": "javascript.autoClosingTags",
+      "label": "Auto Closing Tags",
+      "desc": "%typescript.autoClosingTags%"
+    },
+    {
+      "key": "typescript.workspaceSymbols.scope",
+      "label": "Scope",
+      "desc": "%typescript.workspaceSymbols.scope%"
+    },
+    {
+      "key": "typescript.preferGoToSourceDefinition",
+      "label": "Prefer Go To Source Definition",
+      "desc": "%configuration.preferGoToSourceDefinition%"
+    },
+    {
+      "key": "javascript.preferGoToSourceDefinition",
+      "label": "Prefer Go To Source Definition",
+      "desc": "%configuration.preferGoToSourceDefinition%"
+    },
+    {
+      "key": "typescript.workspaceSymbols.excludeLibrarySymbols",
+      "label": "Exclude Library Symbols",
+      "desc": "%typescript.workspaceSymbols.excludeLibrarySymbols%"
+    },
+    {
+      "key": "typescript.tsserver.enableRegionDiagnostics",
+      "label": "Enable Region Diagnostics",
+      "desc": "%typescript.tsserver.enableRegionDiagnostics%"
+    },
+    {
+      "key": "javascript.updateImportsOnPaste.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.updateImportsOnPaste%"
+    },
+    {
+      "key": "typescript.updateImportsOnPaste.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.updateImportsOnPaste%"
+    },
+    {
+      "key": "js/ts.hover.maximumLength",
+      "label": "Maksimum Uzunluğu",
+      "desc": "%configuration.hover.maximumLength%"
+    },
+    {
+      "key": "javascript.suggest.enabled",
+      "label": "Etkin",
+      "desc": "%typescript.suggest.enabled%"
+    },
+    {
+      "key": "typescript.suggest.enabled",
+      "label": "Etkin",
+      "desc": "%typescript.suggest.enabled%"
+    },
+    {
+      "key": "javascript.suggest.autoImports",
+      "label": "Auto Imports",
+      "desc": "%configuration.suggest.autoImports%"
+    },
+    {
+      "key": "typescript.suggest.autoImports",
+      "label": "Auto Imports",
+      "desc": "%configuration.suggest.autoImports%"
+    },
+    {
+      "key": "javascript.suggest.names",
+      "label": "Names",
+      "desc": "%configuration.suggest.names%"
+    },
+    {
+      "key": "javascript.suggest.completeFunctionCalls",
+      "label": "Complete Function Calls",
+      "desc": "%configuration.suggest.completeFunctionCalls%"
+    },
+    {
+      "key": "typescript.suggest.completeFunctionCalls",
+      "label": "Complete Function Calls",
+      "desc": "%configuration.suggest.completeFunctionCalls%"
+    },
+    {
+      "key": "javascript.suggest.paths",
+      "label": "Paths",
+      "desc": "%configuration.suggest.paths%"
+    },
+    {
+      "key": "typescript.suggest.paths",
+      "label": "Paths",
+      "desc": "%configuration.suggest.paths%"
+    },
+    {
+      "key": "javascript.suggest.completeJSDocs",
+      "label": "Complete JS Docs",
+      "desc": "%configuration.suggest.completeJSDocs%"
+    },
+    {
+      "key": "typescript.suggest.completeJSDocs",
+      "label": "Complete JS Docs",
+      "desc": "%configuration.suggest.completeJSDocs%"
+    },
+    {
+      "key": "javascript.suggest.jsdoc.generateReturns",
+      "label": "Generate Returns",
+      "desc": "%configuration.suggest.jsdoc.generateReturns%"
+    },
+    {
+      "key": "typescript.suggest.jsdoc.generateReturns",
+      "label": "Generate Returns",
+      "desc": "%configuration.suggest.jsdoc.generateReturns%"
+    },
+    {
+      "key": "javascript.suggest.includeAutomaticOptionalChainCompletions",
+      "label": "Include Automatic Optional Chain Completions",
+      "desc": "%configuration.suggest.includeAutomaticOptionalChainCompleti"
+    },
+    {
+      "key": "typescript.suggest.includeAutomaticOptionalChainCompletions",
+      "label": "Include Automatic Optional Chain Completions",
+      "desc": "%configuration.suggest.includeAutomaticOptionalChainCompleti"
+    },
+    {
+      "key": "javascript.suggest.includeCompletionsForImportStatements",
+      "label": "Include Completions For Import Statements",
+      "desc": "%configuration.suggest.includeCompletionsForImportStatements"
+    },
+    {
+      "key": "typescript.suggest.includeCompletionsForImportStatements",
+      "label": "Include Completions For Import Statements",
+      "desc": "%configuration.suggest.includeCompletionsForImportStatements"
+    },
+    {
+      "key": "javascript.suggest.classMemberSnippets.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.suggest.classMemberSnippets.enabled%"
+    },
+    {
+      "key": "typescript.suggest.classMemberSnippets.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.suggest.classMemberSnippets.enabled%"
+    },
+    {
+      "key": "typescript.suggest.objectLiteralMethodSnippets.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.suggest.objectLiteralMethodSnippets.enabled%"
+    },
+    {
+      "key": "javascript.preferences.quoteStyle",
+      "label": "Quote Style",
+      "desc": "%typescript.preferences.quoteStyle%"
+    },
+    {
+      "key": "typescript.preferences.quoteStyle",
+      "label": "Quote Style",
+      "desc": "%typescript.preferences.quoteStyle%"
+    },
+    {
+      "key": "javascript.preferences.importModuleSpecifier",
+      "label": "Import Module Specifier",
+      "desc": "%typescript.preferences.importModuleSpecifier%"
+    },
+    {
+      "key": "typescript.preferences.importModuleSpecifier",
+      "label": "Import Module Specifier",
+      "desc": "%typescript.preferences.importModuleSpecifier%"
+    },
+    {
+      "key": "javascript.preferences.importModuleSpecifierEnding",
+      "label": "Import Module Specifier Ending",
+      "desc": "%typescript.preferences.importModuleSpecifierEnding%"
+    },
+    {
+      "key": "typescript.preferences.importModuleSpecifierEnding",
+      "label": "Import Module Specifier Ending",
+      "desc": "%typescript.preferences.importModuleSpecifierEnding%"
+    },
+    {
+      "key": "javascript.preferences.jsxAttributeCompletionStyle",
+      "label": "Jsx Attribute Completion Style",
+      "desc": "%typescript.preferences.jsxAttributeCompletionStyle%"
+    },
+    {
+      "key": "typescript.preferences.jsxAttributeCompletionStyle",
+      "label": "Jsx Attribute Completion Style",
+      "desc": "%typescript.preferences.jsxAttributeCompletionStyle%"
+    },
+    {
+      "key": "typescript.preferences.includePackageJsonAutoImports",
+      "label": "Include Package JSON Auto Imports",
+      "desc": "%typescript.preferences.includePackageJsonAutoImports%"
+    },
+    {
+      "key": "javascript.preferences.autoImportFileExcludePatterns",
+      "label": "Auto Import File Exclude Patterns",
+      "desc": "%typescript.preferences.autoImportFileExcludePatterns%"
+    },
+    {
+      "key": "typescript.preferences.autoImportFileExcludePatterns",
+      "label": "Auto Import File Exclude Patterns",
+      "desc": "%typescript.preferences.autoImportFileExcludePatterns%"
+    },
+    {
+      "key": "javascript.preferences.autoImportSpecifierExcludeRegexes",
+      "label": "Auto Import Specifier Exclude Regexes",
+      "desc": "%typescript.preferences.autoImportSpecifierExcludeRegexes%"
+    },
+    {
+      "key": "typescript.preferences.autoImportSpecifierExcludeRegexes",
+      "label": "Auto Import Specifier Exclude Regexes",
+      "desc": "%typescript.preferences.autoImportSpecifierExcludeRegexes%"
+    },
+    {
+      "key": "typescript.preferences.preferTypeOnlyAutoImports",
+      "label": "Prefer Type Only Auto Imports",
+      "desc": "%typescript.preferences.preferTypeOnlyAutoImports%"
+    },
+    {
+      "key": "javascript.preferences.useAliasesForRenames",
+      "label": "Use Aliases For Renames",
+      "desc": "%typescript.preferences.useAliasesForRenames%"
+    },
+    {
+      "key": "typescript.preferences.useAliasesForRenames",
+      "label": "Use Aliases For Renames",
+      "desc": "%typescript.preferences.useAliasesForRenames%"
+    },
+    {
+      "key": "javascript.preferences.renameMatchingJsxTags",
+      "label": "Rename Matching Jsx Tags",
+      "desc": "%typescript.preferences.renameMatchingJsxTags%"
+    },
+    {
+      "key": "typescript.preferences.renameMatchingJsxTags",
+      "label": "Rename Matching Jsx Tags",
+      "desc": "%typescript.preferences.renameMatchingJsxTags%"
+    },
+    {
+      "key": "javascript.preferences.organizeImports",
+      "label": "Organize Imports",
+      "desc": "%typescript.preferences.organizeImports%"
+    },
+    {
+      "key": "typescript.preferences.organizeImports",
+      "label": "Organize Imports",
+      "desc": "%typescript.preferences.organizeImports%"
+    },
+    {
+      "key": "javascript.format.enable",
+      "label": "Etkinleştir",
+      "desc": "%javascript.format.enable%"
+    },
+    {
+      "key": "typescript.format.enable",
+      "label": "Etkinleştir",
+      "desc": "%typescript.format.enable%"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterCommaDelimiter",
+      "label": "Insert Space After Comma Delimiter",
+      "desc": "%format.insertSpaceAfterCommaDelimiter%"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterCommaDelimiter",
+      "label": "Insert Space After Comma Delimiter",
+      "desc": "%format.insertSpaceAfterCommaDelimiter%"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterConstructor",
+      "label": "Insert Space After Constructor",
+      "desc": "%format.insertSpaceAfterConstructor%"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterConstructor",
+      "label": "Insert Space After Constructor",
+      "desc": "%format.insertSpaceAfterConstructor%"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterSemicolonInForStatements",
+      "label": "Insert Space After Semicolon In For Statements",
+      "desc": "%format.insertSpaceAfterSemicolonInForStatements%"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterSemicolonInForStatements",
+      "label": "Insert Space After Semicolon In For Statements",
+      "desc": "%format.insertSpaceAfterSemicolonInForStatements%"
+    },
+    {
+      "key": "javascript.format.insertSpaceBeforeAndAfterBinaryOperators",
+      "label": "Insert Space Before And After Binary Operators",
+      "desc": "%format.insertSpaceBeforeAndAfterBinaryOperators%"
+    },
+    {
+      "key": "typescript.format.insertSpaceBeforeAndAfterBinaryOperators",
+      "label": "Insert Space Before And After Binary Operators",
+      "desc": "%format.insertSpaceBeforeAndAfterBinaryOperators%"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements",
+      "label": "Insert Space After Keywords In Control Flow Statements",
+      "desc": "%format.insertSpaceAfterKeywordsInControlFlowStatements%"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements",
+      "label": "Insert Space After Keywords In Control Flow Statements",
+      "desc": "%format.insertSpaceAfterKeywordsInControlFlowStatements%"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions",
+      "label": "Insert Space After Function Keyword For Anonymous Functions",
+      "desc": "%format.insertSpaceAfterFunctionKeywordForAnonymousFunctions"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions",
+      "label": "Insert Space After Function Keyword For Anonymous Functions",
+      "desc": "%format.insertSpaceAfterFunctionKeywordForAnonymousFunctions"
+    },
+    {
+      "key": "javascript.format.insertSpaceBeforeFunctionParenthesis",
+      "label": "Insert Space Before Function Parenthesis",
+      "desc": "%format.insertSpaceBeforeFunctionParenthesis%"
+    },
+    {
+      "key": "typescript.format.insertSpaceBeforeFunctionParenthesis",
+      "label": "Insert Space Before Function Parenthesis",
+      "desc": "%format.insertSpaceBeforeFunctionParenthesis%"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis",
+      "label": "Insert Space After Opening And Before Closing Nonempty Parenthesis",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParen"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis",
+      "label": "Insert Space After Opening And Before Closing Nonempty Parenthesis",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParen"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets",
+      "label": "Insert Space After Opening And Before Closing Nonempty Brackets",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrack"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets",
+      "label": "Insert Space After Opening And Before Closing Nonempty Brackets",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrack"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces",
+      "label": "Insert Space After Opening And Before Closing Nonempty Braces",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrace"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces",
+      "label": "Insert Space After Opening And Before Closing Nonempty Braces",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrace"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces",
+      "label": "Insert Space After Opening And Before Closing Empty Braces",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces%"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces",
+      "label": "Insert Space After Opening And Before Closing Empty Braces",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces%"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces",
+      "label": "Insert Space After Opening And Before Closing Template String Braces",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingTemplateStrin"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces",
+      "label": "Insert Space After Opening And Before Closing Template String Braces",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingTemplateStrin"
+    },
+    {
+      "key": "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces",
+      "label": "Insert Space After Opening And Before Closing Jsx Expression Braces",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingJsxExpression"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces",
+      "label": "Insert Space After Opening And Before Closing Jsx Expression Braces",
+      "desc": "%format.insertSpaceAfterOpeningAndBeforeClosingJsxExpression"
+    },
+    {
+      "key": "typescript.format.insertSpaceAfterTypeAssertion",
+      "label": "Insert Space After Type Assertion",
+      "desc": "%format.insertSpaceAfterTypeAssertion%"
+    },
+    {
+      "key": "javascript.format.placeOpenBraceOnNewLineForFunctions",
+      "label": "Place Open Brace On New Line For Functions",
+      "desc": "%format.placeOpenBraceOnNewLineForFunctions%"
+    },
+    {
+      "key": "typescript.format.placeOpenBraceOnNewLineForFunctions",
+      "label": "Place Open Brace On New Line For Functions",
+      "desc": "%format.placeOpenBraceOnNewLineForFunctions%"
+    },
+    {
+      "key": "javascript.format.placeOpenBraceOnNewLineForControlBlocks",
+      "label": "Place Open Brace On New Line For Control Blocks",
+      "desc": "%format.placeOpenBraceOnNewLineForControlBlocks%"
+    },
+    {
+      "key": "typescript.format.placeOpenBraceOnNewLineForControlBlocks",
+      "label": "Place Open Brace On New Line For Control Blocks",
+      "desc": "%format.placeOpenBraceOnNewLineForControlBlocks%"
+    },
+    {
+      "key": "javascript.format.semicolons",
+      "label": "Semicolons",
+      "desc": "%format.semicolons%"
+    },
+    {
+      "key": "typescript.format.semicolons",
+      "label": "Semicolons",
+      "desc": "%format.semicolons%"
+    },
+    {
+      "key": "javascript.format.indentSwitchCase",
+      "label": "Indent Switch Case",
+      "desc": "%format.indentSwitchCase%"
+    },
+    {
+      "key": "typescript.format.indentSwitchCase",
+      "label": "Indent Switch Case",
+      "desc": "%format.indentSwitchCase%"
+    },
+    {
+      "key": "typescript.inlayHints.parameterNames.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.parameterNames.enabled%"
+    },
+    {
+      "key": "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName",
+      "label": "Suppress When Argument Matches Name",
+      "desc": "%configuration.inlayHints.parameterNames.suppressWhenArgumen"
+    },
+    {
+      "key": "typescript.inlayHints.parameterTypes.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.parameterTypes.enabled%"
+    },
+    {
+      "key": "typescript.inlayHints.variableTypes.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.variableTypes.enabled%"
+    },
+    {
+      "key": "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName",
+      "label": "Suppress When Type Matches Name",
+      "desc": "%configuration.inlayHints.variableTypes.suppressWhenTypeMatc"
+    },
+    {
+      "key": "typescript.inlayHints.propertyDeclarationTypes.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.propertyDeclarationTypes.enabled%"
+    },
+    {
+      "key": "typescript.inlayHints.functionLikeReturnTypes.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.functionLikeReturnTypes.enabled%"
+    },
+    {
+      "key": "typescript.inlayHints.enumMemberValues.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.enumMemberValues.enabled%"
+    },
+    {
+      "key": "javascript.inlayHints.parameterNames.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.parameterNames.enabled%"
+    },
+    {
+      "key": "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName",
+      "label": "Suppress When Argument Matches Name",
+      "desc": "%configuration.inlayHints.parameterNames.suppressWhenArgumen"
+    },
+    {
+      "key": "javascript.inlayHints.parameterTypes.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.parameterTypes.enabled%"
+    },
+    {
+      "key": "javascript.inlayHints.variableTypes.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.variableTypes.enabled%"
+    },
+    {
+      "key": "javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName",
+      "label": "Suppress When Type Matches Name",
+      "desc": "%configuration.inlayHints.variableTypes.suppressWhenTypeMatc"
+    },
+    {
+      "key": "javascript.inlayHints.propertyDeclarationTypes.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.propertyDeclarationTypes.enabled%"
+    },
+    {
+      "key": "javascript.inlayHints.functionLikeReturnTypes.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.inlayHints.functionLikeReturnTypes.enabled%"
+    },
+    {
+      "key": "typescript.tsserver.nodePath",
+      "label": "Node Path",
+      "desc": "%configuration.tsserver.nodePath%"
+    },
+    {
+      "key": "typescript.npm",
+      "label": "Npm",
+      "desc": "%typescript.npm%"
+    },
+    {
+      "key": "typescript.check.npmIsInstalled",
+      "label": "Npm Is Installed",
+      "desc": "%typescript.check.npmIsInstalled%"
+    },
+    {
+      "key": "typescript.tsserver.web.projectWideIntellisense.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.tsserver.web.projectWideIntellisense.enabled%"
+    },
+    {
+      "key": "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors",
+      "label": "Suppress Semantic Errors",
+      "desc": "%configuration.tsserver.web.projectWideIntellisense.suppress"
+    },
+    {
+      "key": "typescript.tsserver.web.typeAcquisition.enabled",
+      "label": "Etkin",
+      "desc": "%configuration.tsserver.web.typeAcquisition.enabled%"
+    },
+    {
+      "key": "typescript.tsserver.useSyntaxServer",
+      "label": "Use Syntax Server",
+      "desc": "%configuration.tsserver.useSyntaxServer%"
+    },
+    {
+      "key": "typescript.tsserver.maxTsServerMemory",
+      "label": "Max TS Server Memory",
+      "desc": "%configuration.tsserver.maxTsServerMemory%"
+    },
+    {
+      "key": "typescript.tsserver.experimental.enableProjectDiagnostics",
+      "label": "Enable Project Diagnostics",
+      "desc": "%configuration.tsserver.experimental.enableProjectDiagnostic"
+    },
+    {
+      "key": "typescript.tsserver.watchOptions",
+      "label": "Watch Options",
+      "desc": "%configuration.tsserver.watchOptions%"
+    },
+    {
+      "key": "typescript.tsserver.enableTracing",
+      "label": "Enable Tracing",
+      "desc": "%typescript.tsserver.enableTracing%"
+    },
+    {
+      "key": "typescript.tsserver.log",
+      "label": "Log",
+      "desc": "%typescript.tsserver.log%"
+    },
+    {
+      "key": "typescript.tsserver.pluginPaths",
+      "label": "Plugin Paths",
+      "desc": "%typescript.tsserver.pluginPaths%"
+    }
+  ],
+  "claude-code": [
+    {
+      "key": "claudeCode.environmentVariables",
+      "label": "Environment Variables",
+      "desc": "Environment variables to set when launching Claude.\n\nPrefer "
+    },
+    {
+      "key": "claudeCode.useTerminal",
+      "label": "Use Terminal",
+      "desc": "Launch Claude in the terminal instead of the native UI."
+    },
+    {
+      "key": "claudeCode.allowDangerouslySkipPermissions",
+      "label": "Allow Dangerously Skip Permissions",
+      "desc": "Allow bypass permissions mode. Recommended only for sandboxe"
+    },
+    {
+      "key": "claudeCode.claudeProcessWrapper",
+      "label": "Claude Process Wrapper",
+      "desc": "Executable path used to launch the Claude process."
+    },
+    {
+      "key": "claudeCode.respectGitIgnore",
+      "label": "Respect Git Ignore",
+      "desc": "Respect .gitignore files when performing file searches. Tip:"
+    },
+    {
+      "key": "claudeCode.initialPermissionMode",
+      "label": "Initial Permission Mode",
+      "desc": "Initial permission mode for new conversations. Unset defers "
+    },
+    {
+      "key": "claudeCode.disableLoginPrompt",
+      "label": "Disable Login Prompt",
+      "desc": "When true, never prompt for login/authentication in the exte"
+    },
+    {
+      "key": "claudeCode.autosave",
+      "label": "Autosave",
+      "desc": "Automatically save files before Claude reads or writes them."
+    },
+    {
+      "key": "claudeCode.focusView",
+      "label": "Focus View",
+      "desc": "Focus view: hide tool calls and other in-progress activity i"
+    },
+    {
+      "key": "claudeCode.useCtrlEnterToSend",
+      "label": "Use Ctrl Enter To Send",
+      "desc": "When enabled, use Ctrl/Cmd+Enter to send prompts instead of "
+    },
+    {
+      "key": "claudeCode.preferredLocation",
+      "label": "Preferred Location",
+      "desc": "Where Claude opens by default. This setting updates automati"
+    },
+    {
+      "key": "claudeCode.lockEditorGroups",
+      "label": "Lock Editor Groups",
+      "desc": "Lock the editor groups Claude starts for its tabs, so files "
+    },
+    {
+      "key": "claudeCode.enableNewConversationShortcut",
+      "label": "Enable New Conversation Shortcut",
+      "desc": "Use the Cmd/Ctrl+N keyboard shortcut to start a new conversa"
+    },
+    {
+      "key": "claudeCode.enableReopenClosedSessionShortcut",
+      "label": "Enable Reopen Closed Session Shortcut",
+      "desc": "Use Cmd/Ctrl+Shift+T to reopen the most recently closed Clau"
+    },
+    {
+      "key": "claudeCode.hideOnboarding",
+      "label": "Hide Onboarding",
+      "desc": "Hide the onboarding checklist in Claude Code."
+    },
+    {
+      "key": "claudeCode.attachOpenFile",
+      "label": "Attach Open File",
+      "desc": "Add the file that is open in the editor to your messages, an"
+    },
+    {
+      "key": "claudeCode.continueAfterReload",
+      "label": "Continue After Reload",
+      "desc": "After a window reload, a restored session continues the step"
+    },
+    {
+      "key": "claudeCode.scrollToBottomOnSend",
+      "label": "Scroll To Bottom On Send",
+      "desc": "Scroll the conversation to the bottom when you send a messag"
+    },
+    {
+      "key": "claudeCode.archiveInactiveSessions",
+      "label": "Archive Inactive Sessions",
+      "desc": "Archive a session after this long with no activity. Sessions"
+    },
+    {
+      "key": "claudeCode.usePythonEnvironment",
+      "label": "Use Python Environment",
+      "desc": "Automatically activate the workspace's Python environment wh"
+    }
+  ],
+  "go": [
+    {
+      "key": "go.showWelcome",
+      "label": "Show Welcome",
+      "desc": "Specifies whether to show the Welcome experience on first in"
+    },
+    {
+      "key": "go.buildOnSave",
+      "label": "Build On Save",
+      "desc": "Compiles code on file save using 'go build' or 'go test -c'."
+    },
+    {
+      "key": "go.buildFlags",
+      "label": "Build Flags",
+      "desc": "Flags to `go build`/`go test` used during build-on-save or r"
+    },
+    {
+      "key": "go.buildTags",
+      "label": "Build Tags",
+      "desc": "The Go build tags to use for all commands, that support a `-"
+    },
+    {
+      "key": "go.testTags",
+      "label": "Test Tags",
+      "desc": "The Go build tags to use for when running tests. If null, th"
+    },
+    {
+      "key": "go.disableConcurrentTests",
+      "label": "Disable Concurrent Tests",
+      "desc": "If true, tests will not run concurrently. When a new test ru"
+    },
+    {
+      "key": "go.installDependenciesWhenBuilding",
+      "label": "Install Dependencies When Building",
+      "desc": "If true, then `-i` flag will be passed to `go build` everyti"
+    },
+    {
+      "key": "go.lintOnSave",
+      "label": "Lint On Save",
+      "desc": "Lints code on file save using the configured Lint tool. Opti"
+    },
+    {
+      "key": "go.lintTool",
+      "label": "Lint Tool",
+      "desc": "Specifies an additional client-side linting tool that should"
+    },
+    {
+      "key": "go.lintFlags",
+      "label": "Lint Flags",
+      "desc": "Flags to pass to Lint tool (e.g. [\"-min_confidence=.8\"])"
+    },
+    {
+      "key": "go.vetOnSave",
+      "label": "Vet On Save",
+      "desc": "Vets code on file save using 'go tool vet'. Not applicable w"
+    },
+    {
+      "key": "go.vetFlags",
+      "label": "Vet Flags",
+      "desc": "Flags to pass to `go tool vet` (e.g. [\"-all\", \"-shadow\"]). N"
+    },
+    {
+      "key": "go.formatTool",
+      "label": "Format Tool",
+      "desc": "Specifies the tool for formatting Go code. The default is `d"
+    },
+    {
+      "key": "go.formatFlags",
+      "label": "Format Flags",
+      "desc": "Flags to pass to format tool (e.g. [\"-s\"]). Not applicable w"
+    },
+    {
+      "key": "go.inferGopath",
+      "label": "Infer Gopath",
+      "desc": "Infer GOPATH from the workspace root. This is ignored when u"
+    },
+    {
+      "key": "go.gopath",
+      "label": "Gopath",
+      "desc": "Specify GOPATH here to override the one that is set as envir"
+    },
+    {
+      "key": "go.toolsGopath",
+      "label": "Tools Gopath",
+      "desc": "Location to install the Go tools that the extension depends "
+    },
+    {
+      "key": "go.goroot",
+      "label": "Goroot",
+      "desc": "Specifies the GOROOT to use when no environment variable is "
+    },
+    {
+      "key": "go.testOnSave",
+      "label": "Test On Save",
+      "desc": "Run 'go test' on save for current package. It is not advised"
+    },
+    {
+      "key": "go.coverOnSave",
+      "label": "Cover On Save",
+      "desc": "If true, runs 'go test -coverprofile' on save and shows test"
+    },
+    {
+      "key": "go.coverOnTestPackage",
+      "label": "Cover On Test Package",
+      "desc": "If true, shows test coverage when Go: Test Package command i"
+    },
+    {
+      "key": "go.coverOnSingleTest",
+      "label": "Cover On Single Test",
+      "desc": "If true, shows test coverage when Go: Test Function at curso"
+    },
+    {
+      "key": "go.coverOnSingleTestFile",
+      "label": "Cover On Single Test File",
+      "desc": "If true, shows test coverage when Go: Test Single File comma"
+    },
+    {
+      "key": "go.coverMode",
+      "label": "Cover Mode",
+      "desc": "When generating code coverage, the value for -covermode. 'de"
+    },
+    {
+      "key": "go.coverShowCounts",
+      "label": "Cover Show Counts",
+      "desc": "When generating code coverage, should counts be shown as --3"
+    },
+    {
+      "key": "go.coverageOptions",
+      "label": "Coverage Options",
+      "desc": "Use these options to control whether only covered or only un"
+    },
+    {
+      "key": "go.coverageDecorator",
+      "label": "Coverage Decorator",
+      "desc": "This option lets you choose the way to display code coverage"
+    },
+    {
+      "key": "go.testTimeout",
+      "label": "Test Timeout",
+      "desc": "Specifies the timeout for go test in ParseDuration format."
+    },
+    {
+      "key": "go.testEnvVars",
+      "label": "Test Env Vars",
+      "desc": "Environment variables that will be passed to the process tha"
+    },
+    {
+      "key": "go.testEnvFile",
+      "label": "Test Env File",
+      "desc": "Absolute path to a file containing environment variables def"
+    },
+    {
+      "key": "go.testFlags",
+      "label": "Test Flags",
+      "desc": "Flags to pass to `go test`. If null, then buildFlags will be"
+    },
+    {
+      "key": "go.testExplorer.enable",
+      "label": "Etkinleştir",
+      "desc": "Enable the Go test explorer"
+    },
+    {
+      "key": "go.testExplorer.packageDisplayMode",
+      "label": "Package Display Mode",
+      "desc": "Present packages in the test explorer flat or nested."
+    },
+    {
+      "key": "go.testExplorer.alwaysRunBenchmarks",
+      "label": "Always Run Benchmarks",
+      "desc": "Run benchmarks when running all tests in a file or folder."
+    },
+    {
+      "key": "go.testExplorer.concatenateMessages",
+      "label": "Concatenate Messages",
+      "desc": "Concatenate all test log messages for a given location into "
+    },
+    {
+      "key": "go.testExplorer.showDynamicSubtestsInEditor",
+      "label": "Show Dynamic Subtests In Editor",
+      "desc": "Set the source location of dynamically discovered subtests t"
+    },
+    {
+      "key": "go.testExplorer.showOutput",
+      "label": "Show Output",
+      "desc": "Open the test output terminal when a test run is started."
+    },
+    {
+      "key": "go.experiments",
+      "label": "Experiments",
+      "desc": "Disable experimental features. These features are only avail"
+    },
+    {
+      "key": "go.generateTestsFlags",
+      "label": "Generate Tests Flags",
+      "desc": "Additional command line flags to pass to `gotests` for gener"
+    },
+    {
+      "key": "go.toolsEnvVars",
+      "label": "Tools Env Vars",
+      "desc": "Environment variables that will be passed to the tools that "
+    },
+    {
+      "key": "go.useLanguageServer",
+      "label": "Use Language Server",
+      "desc": "Enable intellisense, code navigation, refactoring, formattin"
+    },
+    {
+      "key": "go.languageServerFlags",
+      "label": "Language Server Flags",
+      "desc": "Flags like -rpc.trace and -logfile to be used while running "
+    },
+    {
+      "key": "go.trace.server",
+      "label": "Server",
+      "desc": "Trace the communication between VS Code and the Go language "
+    },
+    {
+      "key": "go.logging.level",
+      "label": "Level",
+      "desc": ""
+    },
+    {
+      "key": "go.toolsManagement.go",
+      "label": "Go",
+      "desc": "The path to the `go` binary used to install the Go tools. If"
+    },
+    {
+      "key": "go.toolsManagement.checkForUpdates",
+      "label": "Check For Updates",
+      "desc": "Specify whether to prompt about new versions of Go and the G"
+    },
+    {
+      "key": "go.toolsManagement.autoUpdate",
+      "label": "Otomatik Güncelle",
+      "desc": "Automatically update the tools used by the extension, withou"
+    },
+    {
+      "key": "go.enableCodeLens",
+      "label": "Enable Code Lens",
+      "desc": "Feature level setting to enable/disable code lens for refere"
+    },
+    {
+      "key": "go.addTags",
+      "label": "Add Tags",
+      "desc": "Tags and options configured here will be used by the Add Tag"
+    },
+    {
+      "key": "go.removeTags",
+      "label": "Remove Tags",
+      "desc": "Tags and options configured here will be used by the Remove "
+    },
+    {
+      "key": "go.playground",
+      "label": "Playground",
+      "desc": "The flags configured here will be passed through to command "
+    },
+    {
+      "key": "go.survey.prompt",
+      "label": "Prompt",
+      "desc": "Prompt for surveys, including the gopls survey and the Go de"
+    },
+    {
+      "key": "go.editorContextMenuCommands",
+      "label": "Editor Context Menu Commands",
+      "desc": "Experimental Feature: Enable/Disable entries from the contex"
+    },
+    {
+      "key": "go.delveConfig",
+      "label": "Delve Config",
+      "desc": "Delve settings that applies to all debugging sessions. Debug"
+    },
+    {
+      "key": "go.alternateTools",
+      "label": "Alternate Tools",
+      "desc": "Alternate tools or alternate paths for the same tools used b"
+    },
+    {
+      "key": "go.tasks.provideDefault",
+      "label": "Provide Default",
+      "desc": "enable the default go build/test task provider."
+    },
+    {
+      "key": "go.terminal.activateEnvironment",
+      "label": "Activate Environment",
+      "desc": "Apply the Go & PATH environment variables used by the extens"
+    },
+    {
+      "key": "gopls",
+      "label": "Gopls",
+      "desc": "Configure the default Go language server ('gopls'). In most "
+    },
+    {
+      "key": "go.diagnostic.vulncheck",
+      "label": "Vulncheck",
+      "desc": "(Experimental) vulncheck enables vulnerability scanning.\n"
+    },
+    {
+      "key": "go.inlayHints.assignVariableTypes",
+      "label": "Assign Variable Types",
+      "desc": "`\"assignVariableTypes\"` controls inlay hints for variable ty"
+    },
+    {
+      "key": "go.inlayHints.compositeLiteralFields",
+      "label": "Composite Literal Fields",
+      "desc": "`\"compositeLiteralFields\"` inlay hints for composite literal"
+    },
+    {
+      "key": "go.inlayHints.compositeLiteralTypes",
+      "label": "Composite Literal Types",
+      "desc": "`\"compositeLiteralTypes\"` controls inlay hints for composite"
+    },
+    {
+      "key": "go.inlayHints.constantValues",
+      "label": "Constant Values",
+      "desc": "`\"constantValues\"` controls inlay hints for constant values:"
+    },
+    {
+      "key": "go.inlayHints.functionTypeParameters",
+      "label": "Function Type Parameters",
+      "desc": "`\"functionTypeParameters\"` inlay hints for implicit type par"
+    },
+    {
+      "key": "go.inlayHints.parameterNames",
+      "label": "Parameter Names",
+      "desc": "`\"parameterNames\"` controls inlay hints for parameter names:"
+    },
+    {
+      "key": "go.inlayHints.rangeVariableTypes",
+      "label": "Range Variable Types",
+      "desc": "`\"rangeVariableTypes\"` controls inlay hints for variable typ"
+    },
+    {
+      "key": "go.inlayHints.ignoredError",
+      "label": "Ignored Error",
+      "desc": "`\"ignoredError\"` inlay hints for implicitly discarded errors"
+    }
+  ],
+  "datacloud": [
+    {
+      "key": "google.datacloud.expandMenus",
+      "label": "Expand Menus",
+      "desc": "Expand tree view items by default."
+    },
+    {
+      "key": "google.datacloud.recentProjectsEnabled",
+      "label": "Recent Projects Enabled",
+      "desc": "Enable recent projects in project switcher."
+    },
+    {
+      "key": "google.datacloud.project",
+      "label": "Project",
+      "desc": "Enter a Google Cloud project to use for the Data-Cloud exten"
+    },
+    {
+      "key": "google.datacloud.enableTelemetry",
+      "label": "Telemetriyi Etkinleştir",
+      "desc": "Enable usage and error reporting for the Google Cloud Data A"
+    },
+    {
+      "key": "google.datacloud.starredProjects",
+      "label": "Starred Projects",
+      "desc": "A list of starred project IDs"
+    },
+    {
+      "key": "google.cloud.project",
+      "label": "Project",
+      "desc": "Enter a Google Cloud project to use for the Data-Cloud exten"
+    },
+    {
+      "key": "google.cloud.billingQuotaProject",
+      "label": "Billing Quota Project",
+      "desc": "The Google Cloud project used for billing and quota purposes"
+    },
+    {
+      "key": "google.datacloud.gcloudPath",
+      "label": "Gcloud Path",
+      "desc": "Filesystem path to the Google Cloud CLI executable (e.g. /us"
+    },
+    {
+      "key": "google.datacloud.bigqueryRegion",
+      "label": "Bigquery Region",
+      "desc": "BigQuery dataset explorer location."
+    },
+    {
+      "key": "google.datacloud.composer.project",
+      "label": "Project",
+      "desc": "The Google Cloud project to use for Managed Service for Apac"
+    },
+    {
+      "key": "google.datacloud.composer.region",
+      "label": "Region",
+      "desc": "The region to use for Managed Service for Apache Airflow ope"
+    },
+    {
+      "key": "google.datacloud.composer.environment",
+      "label": "Environment",
+      "desc": "The Managed Service for Apache Airflow environment to use fo"
+    },
+    {
+      "key": "google.cloud.region",
+      "label": "Region",
+      "desc": "Enter a Google Cloud region to use for the Data-Cloud extens"
+    },
+    {
+      "key": "google.datacloud.agent.skills.autoUpdate",
+      "label": "Otomatik Güncelle",
+      "desc": "When enabled, skills are automatically updated."
+    },
+    {
+      "key": "google.datacloud.agent.skills.installLocation",
+      "label": "Install Location",
+      "desc": "Choose whether agent skills should be installed globally or "
+    },
+    {
+      "key": "google.datacloud.spark.notebooks.inCellMonitoringEnabled",
+      "label": "In Cell Monitoring Enabled",
+      "desc": "Enable in-cell monitoring"
+    },
+    {
+      "key": "google.datacloud.executeCellToolForNotebookMCP",
+      "label": "Execute Cell Tool For Notebook MCP",
+      "desc": "Enable execute_cell tool for Notebook MCP. Requires restarti"
+    },
+    {
+      "key": "google.datacloud.executeCellToolConsent",
+      "label": "Execute Cell Tool Consent",
+      "desc": "Enable explicit user consent prompt before executing cells v"
+    }
+  ],
+  "vscode-clangd": [
+    {
+      "key": "clangd.path",
+      "label": "Path",
+      "desc": "The path to clangd executable, e.g.: /usr/bin/clangd."
+    },
+    {
+      "key": "clangd.useScriptAsExecutable",
+      "label": "Use Script As Executable",
+      "desc": "Allows the path to be a script e.g.: clangd.sh."
+    },
+    {
+      "key": "clangd.arguments",
+      "label": "Arguments",
+      "desc": "Arguments for clangd server."
+    },
+    {
+      "key": "clangd.trace",
+      "label": "Trace",
+      "desc": "Names a file that clangd should log a performance trace to, "
+    },
+    {
+      "key": "clangd.fallbackFlags",
+      "label": "Fallback Flags",
+      "desc": "Extra clang flags used to parse files when no compilation da"
+    },
+    {
+      "key": "clangd.serverCompletionRanking",
+      "label": "Server Completion Ranking",
+      "desc": "Always rank completion items on the server as you type. This"
+    },
+    {
+      "key": "clangd.restartAfterCrash",
+      "label": "Restart After Crash",
+      "desc": "Auto restart clangd (up to 4 times) if it crashes."
+    },
+    {
+      "key": "clangd.checkUpdates",
+      "label": "Check Updates",
+      "desc": "Check for language server updates on startup."
+    },
+    {
+      "key": "clangd.onConfigChanged",
+      "label": "On Config Changed",
+      "desc": "What to do when clangd configuration files are changed. Igno"
+    },
+    {
+      "key": "clangd.onConfigChangedForceEnable",
+      "label": "On Config Changed Force Enable",
+      "desc": "Force enable of \"On Config Changed\" option regardless of cla"
+    },
+    {
+      "key": "clangd.detectExtensionConflicts",
+      "label": "Detect Extension Conflicts",
+      "desc": "Warn about conflicting extensions and suggest disabling them"
+    },
+    {
+      "key": "clangd.inactiveRegions.useBackgroundHighlight",
+      "label": "Use Background Highlight",
+      "desc": "Use a background highlight rather than opacity to identify i"
+    },
+    {
+      "key": "clangd.inactiveRegions.opacity",
+      "label": "Opaklık",
+      "desc": "Opacity of inactive regions (used only if clangd.inactiveReg"
+    },
+    {
+      "key": "clangd.enableCodeCompletion",
+      "label": "Enable Code Completion",
+      "desc": "Enable code completion provided by the language server"
+    },
+    {
+      "key": "clangd.enableHover",
+      "label": "Enable Hover",
+      "desc": "Enable hovers provided by the language server"
+    }
+  ],
+  "pyrefly": [
+    {
+      "key": "pyrefly.lspPath",
+      "label": "Lsp Path",
+      "desc": "The command to run for the language server. Accepts an absol"
+    },
+    {
+      "key": "pyrefly.lspArguments",
+      "label": "Lsp Arguments",
+      "desc": "Additional arguments that should be passed to the binary at "
+    },
+    {
+      "key": "python.pyrefly.disableLanguageServices",
+      "label": "Disable Language Services",
+      "desc": "If true, Pyrefly will not provide other IDE services like co"
+    },
+    {
+      "key": "python.pyrefly.disableTypeErrors",
+      "label": "Disable Type Errors",
+      "desc": "If true, Pyrefly will not provide diagnostics for files in t"
+    },
+    {
+      "key": "python.pyrefly.typeCheckingMode",
+      "label": "Type Checking Mode",
+      "desc": "[Preset](https://pyrefly.org/en/docs/configuration/#preset) "
+    },
+    {
+      "key": "python.pyrefly.displayTypeErrors",
+      "label": "Display Type Errors",
+      "desc": "If 'default', Pyrefly will only provide type check squiggles"
+    },
+    {
+      "key": "pyrefly.trace.server",
+      "label": "Server",
+      "desc": "Set to 'verbose' to enable LSP trace in the console"
+    },
+    {
+      "key": "python.pyrefly.disabledLanguageServices",
+      "label": "Disabled Language Services",
+      "desc": "Disable specific language services. Set individual services "
+    },
+    {
+      "key": "python.analysis.showHoverGoToLinks",
+      "label": "Show Hover Go To Links",
+      "desc": "Controls whether hover tooltips include 'Go to definition' a"
+    },
+    {
+      "key": "python.analysis.completeFunctionParens",
+      "label": "Complete Function Parens",
+      "desc": "Automatically insert parentheses when completing a function "
+    },
+    {
+      "key": "python.analysis.autoImportCompletions",
+      "label": "Auto Import Completions",
+      "desc": "Controls whether completions include symbols that are not ye"
+    },
+    {
+      "key": "python.analysis.diagnosticMode",
+      "label": "Diagnostic Mode",
+      "desc": "Controls the scope of diagnostic analysis. When set to 'open"
+    },
+    {
+      "key": "python.analysis.importFormat",
+      "label": "Import Format",
+      "desc": "Format used when Pyrefly auto-inserts an import."
+    },
+    {
+      "key": "python.analysis.inlayHints",
+      "label": "Satır İçi İpuçları",
+      "desc": "Controls which inlay hints Pyrefly displays."
+    },
+    {
+      "key": "python.analysis.inlayHintDebounceMs",
+      "label": "Inlay Hint Debounce Ms",
+      "desc": "Debounce window, in milliseconds, for inlay hints. While a f"
+    },
+    {
+      "key": "python.pyrefly.syncNotebooks",
+      "label": "Sync Notebooks",
+      "desc": "If true, Pyrefly will sync notebook documents with the langu"
+    },
+    {
+      "key": "python.pyrefly.runnableCodeLens",
+      "label": "Runnable Code Lens",
+      "desc": "Enable Pyrefly's Run/Test CodeLens actions for Python files."
+    },
+    {
+      "key": "python.pyrefly.streamDiagnostics",
+      "label": "Stream Diagnostics",
+      "desc": "If true (default), Pyrefly will stream diagnostics as they b"
+    },
+    {
+      "key": "python.pyrefly.diagnosticMode",
+      "label": "Diagnostic Mode",
+      "desc": "Controls the scope of Pyrefly's diagnostic analysis. When se"
+    },
+    {
+      "key": "pyrefly.commentFoldingRanges",
+      "label": "Comment Folding Ranges",
+      "desc": "Controls whether comment section folding ranges are included"
+    },
+    {
+      "key": "python.pyrefly.configPath",
+      "label": "Config Path",
+      "desc": "Path to a pyrefly.toml or pyproject.toml configuration file."
+    }
+  ],
+  "debugpy": [
+    {
+      "key": "debugpy.debugJustMyCode",
+      "label": "Debug Just My Code",
+      "desc": "%debugpy.debugJustMyCode.description%"
+    },
+    {
+      "key": "debugpy.showPythonInlineValues",
+      "label": "Show Python Inline Values",
+      "desc": "%debugpy.showPythonInlineValues.description%"
+    }
+  ],
+  "python": [
+    {
+      "key": "python.activeStateToolPath",
+      "label": "Active State Tool Path",
+      "desc": "%python.activeStateToolPath.description%"
+    },
+    {
+      "key": "python.autoComplete.extraPaths",
+      "label": "Extra Paths",
+      "desc": "%python.autoComplete.extraPaths.description%"
+    },
+    {
+      "key": "python.createEnvironment.contentButton",
+      "label": "Content Button",
+      "desc": "%python.createEnvironment.contentButton.description%"
+    },
+    {
+      "key": "python.createEnvironment.trigger",
+      "label": "Trigger",
+      "desc": "%python.createEnvironment.trigger.description%"
+    },
+    {
+      "key": "python.condaPath",
+      "label": "Conda Path",
+      "desc": "%python.condaPath.description%"
+    },
+    {
+      "key": "python.defaultInterpreterPath",
+      "label": "Default Interpreter Path",
+      "desc": "%python.defaultInterpreterPath.description%"
+    },
+    {
+      "key": "python.envFile",
+      "label": "Env File",
+      "desc": "%python.envFile.description%"
+    },
+    {
+      "key": "python.useEnvironmentsExtension",
+      "label": "Use Environments Extension",
+      "desc": "%python.useEnvironmentsExtension.description%"
+    },
+    {
+      "key": "python.experiments.enabled",
+      "label": "Etkin",
+      "desc": "%python.experiments.enabled.description%"
+    },
+    {
+      "key": "python.experiments.optInto",
+      "label": "Opt Into",
+      "desc": "%python.experiments.optInto.description%"
+    },
+    {
+      "key": "python.experiments.optOutFrom",
+      "label": "Opt Out From",
+      "desc": "%python.experiments.optOutFrom.description%"
+    },
+    {
+      "key": "python.globalModuleInstallation",
+      "label": "Global Module Installation",
+      "desc": "%python.globalModuleInstallation.description%"
+    },
+    {
+      "key": "python.languageServer",
+      "label": "Language Server",
+      "desc": "%python.languageServer.description%"
+    },
+    {
+      "key": "python.interpreter.infoVisibility",
+      "label": "Info Visibility",
+      "desc": "%python.interpreter.infoVisibility.description%"
+    },
+    {
+      "key": "python.logging.level",
+      "label": "Level",
+      "desc": "%python.logging.level.description%"
+    },
+    {
+      "key": "python.missingPackage.severity",
+      "label": "Severity",
+      "desc": "%python.missingPackage.severity.description%"
+    },
+    {
+      "key": "python.locator",
+      "label": "Locator",
+      "desc": "%python.locator.description%"
+    },
+    {
+      "key": "python.pipenvPath",
+      "label": "Pipenv Path",
+      "desc": "%python.pipenvPath.description%"
+    },
+    {
+      "key": "python.poetryPath",
+      "label": "Poetry Path",
+      "desc": "%python.poetryPath.description%"
+    },
+    {
+      "key": "python.pixiToolPath",
+      "label": "Pixi Tool Path",
+      "desc": "%python.pixiToolPath.description%"
+    },
+    {
+      "key": "python.terminal.activateEnvInCurrentTerminal",
+      "label": "Activate Env In Current Terminal",
+      "desc": "%python.terminal.activateEnvInCurrentTerminal.description%"
+    },
+    {
+      "key": "python.terminal.activateEnvironment",
+      "label": "Activate Environment",
+      "desc": "%python.terminal.activateEnvironment.description%"
+    },
+    {
+      "key": "python.terminal.executeInFileDir",
+      "label": "Execute In File Dir",
+      "desc": "%python.terminal.executeInFileDir.description%"
+    },
+    {
+      "key": "python.terminal.focusAfterLaunch",
+      "label": "Focus After Launch",
+      "desc": "%python.terminal.focusAfterLaunch.description%"
+    },
+    {
+      "key": "python.terminal.launchArgs",
+      "label": "Launch Args",
+      "desc": "%python.terminal.launchArgs.description%"
+    },
+    {
+      "key": "python.terminal.shellIntegration.enabled",
+      "label": "Etkin",
+      "desc": "%python.terminal.shellIntegration.enabled.description%"
+    },
+    {
+      "key": "python.REPL.enableREPLSmartSend",
+      "label": "Enable REPL Smart Send",
+      "desc": "%python.EnableREPLSmartSend.description%"
+    },
+    {
+      "key": "python.REPL.sendToNativeREPL",
+      "label": "Send To Native REPL",
+      "desc": "%python.REPL.sendToNativeREPL.description%"
+    },
+    {
+      "key": "python.REPL.provideVariables",
+      "label": "Provide Variables",
+      "desc": "%python.REPL.provideVariables.description%"
+    },
+    {
+      "key": "python.testing.autoTestDiscoverOnSaveEnabled",
+      "label": "Auto Test Discover On Save Enabled",
+      "desc": "%python.testing.autoTestDiscoverOnSaveEnabled.description%"
+    },
+    {
+      "key": "python.testing.autoTestDiscoverOnSavePattern",
+      "label": "Auto Test Discover On Save Pattern",
+      "desc": "%python.testing.autoTestDiscoverOnSavePattern.description%"
+    },
+    {
+      "key": "python.testing.cwd",
+      "label": "Çalışma Dizini",
+      "desc": "%python.testing.cwd.description%"
+    },
+    {
+      "key": "python.testing.debugPort",
+      "label": "Debug Port",
+      "desc": "%python.testing.debugPort.description%"
+    },
+    {
+      "key": "python.testing.promptToConfigure",
+      "label": "Prompt To Configure",
+      "desc": "%python.testing.promptToConfigure.description%"
+    },
+    {
+      "key": "python.testing.pytestArgs",
+      "label": "Pytest Args",
+      "desc": "%python.testing.pytestArgs.description%"
+    },
+    {
+      "key": "python.testing.pytestEnabled",
+      "label": "Pytest Enabled",
+      "desc": "%python.testing.pytestEnabled.description%"
+    },
+    {
+      "key": "python.testing.pytestPath",
+      "label": "Pytest Path",
+      "desc": "%python.testing.pytestPath.description%"
+    },
+    {
+      "key": "python.testing.unittestArgs",
+      "label": "Unittest Args",
+      "desc": "%python.testing.unittestArgs.description%"
+    },
+    {
+      "key": "python.testing.unittestEnabled",
+      "label": "Unittest Enabled",
+      "desc": "%python.testing.unittestEnabled.description%"
+    },
+    {
+      "key": "python.venvFolders",
+      "label": "Venv Folders",
+      "desc": "%python.venvFolders.description%"
+    },
+    {
+      "key": "python.venvPath",
+      "label": "Venv Path",
+      "desc": "%python.venvPath.description%"
+    }
+  ],
+  "vscode-python-envs": [
+    {
+      "key": "python-envs.defaultEnvManager",
+      "label": "Default Env Manager",
+      "desc": "%python-envs.defaultEnvManager.description%"
+    },
+    {
+      "key": "python-envs.defaultPackageManager",
+      "label": "Default Package Manager",
+      "desc": "%python-envs.defaultPackageManager.description%"
+    },
+    {
+      "key": "python-envs.pythonProjects",
+      "label": "Python Projects",
+      "desc": "%python-envs.pythonProjects.description%"
+    },
+    {
+      "key": "python-envs.terminal.showActivateButton",
+      "label": "Show Activate Button",
+      "desc": "%python-envs.terminal.showActivateButton.description%"
+    },
+    {
+      "key": "python-envs.terminal.autoActivationType",
+      "label": "Auto Activation Type",
+      "desc": "%python-envs.terminal.autoActivationType.description%"
+    },
+    {
+      "key": "python.terminal.useEnvFile",
+      "label": "Use Env File",
+      "desc": "%python-envs.terminal.useEnvFile.description%"
+    },
+    {
+      "key": "python-envs.globalSearchPaths",
+      "label": "Global Search Paths",
+      "desc": "%python-envs.globalSearchPaths.description%"
+    },
+    {
+      "key": "python-envs.workspaceSearchPaths",
+      "label": "Workspace Search Paths",
+      "desc": "%python-envs.workspaceSearchPaths.description%"
+    },
+    {
+      "key": "python-envs.alwaysUseUv",
+      "label": "Always Use Uv",
+      "desc": "%python-envs.alwaysUseUv.description%"
+    }
+  ],
+  "jupyter": [
+    {
+      "key": "jupyter.experiments.enabled",
+      "label": "Etkin",
+      "desc": "%jupyter.configuration.jupyter.experiments.enabled.descripti"
+    },
+    {
+      "key": "jupyter.showVariableViewWhenDebugging",
+      "label": "Show Variable View When Debugging",
+      "desc": "%jupyter.configuration.jupyter.showVariableViewWhenDebugging"
+    },
+    {
+      "key": "jupyter.logging.level",
+      "label": "Level",
+      "desc": "%jupyter.configuration.jupyter.logging.level.description%"
+    },
+    {
+      "key": "jupyter.experiments.optInto",
+      "label": "Opt Into",
+      "desc": "%jupyter.configuration.jupyter.experiments.optInto.markdownD"
+    },
+    {
+      "key": "jupyter.experiments.optOutFrom",
+      "label": "Opt Out From",
+      "desc": "%jupyter.configuration.jupyter.experiments.optOutFrom.markdo"
+    },
+    {
+      "key": "jupyter.widgetScriptSources",
+      "label": "Widget Script Sources",
+      "desc": "%jupyter.configuration.jupyter.widgetScriptSources.markdownD"
+    },
+    {
+      "key": "jupyter.askForLargeDataFrames",
+      "label": "Ask For Large Data Frames",
+      "desc": "%jupyter.configuration.jupyter.askForLargeDataFrames.descrip"
+    },
+    {
+      "key": "jupyter.askForKernelRestart",
+      "label": "Ask For Kernel Restart",
+      "desc": "%jupyter.configuration.jupyter.askForKernelRestart.descripti"
+    },
+    {
+      "key": "jupyter.exportWithOutputEnabled",
+      "label": "Export With Output Enabled",
+      "desc": "%jupyter.configuration.jupyter.exportWithOutputEnabled.descr"
+    },
+    {
+      "key": "jupyter.jupyterLaunchTimeout",
+      "label": "Jupyter Launch Timeout",
+      "desc": "%jupyter.configuration.jupyter.jupyterLaunchTimeout.descript"
+    },
+    {
+      "key": "jupyter.jupyterLaunchRetries",
+      "label": "Jupyter Launch Retries",
+      "desc": "%jupyter.configuration.jupyter.jupyterLaunchRetries.descript"
+    },
+    {
+      "key": "jupyter.jupyterCommandLineArguments",
+      "label": "Jupyter Command Line Arguments",
+      "desc": "%jupyter.configuration.jupyter.jupyterCommandLineArguments.d"
+    },
+    {
+      "key": "jupyter.notebookFileRoot",
+      "label": "Notebook File Root",
+      "desc": "%jupyter.configuration.jupyter.notebookFileRoot.description%"
+    },
+    {
+      "key": "jupyter.useDefaultConfigForJupyter",
+      "label": "Use Default Config For Jupyter",
+      "desc": "%jupyter.configuration.jupyter.useDefaultConfigForJupyter.de"
+    },
+    {
+      "key": "jupyter.jupyterInterruptTimeout",
+      "label": "Jupyter Interrupt Timeout",
+      "desc": "%jupyter.configuration.jupyter.jupyterInterruptTimeout.descr"
+    },
+    {
+      "key": "jupyter.interactiveWindow.textEditor.executeSelection",
+      "label": "Execute Selection",
+      "desc": "%jupyter.configuration.jupyter.sendSelectionToInteractiveWin"
+    },
+    {
+      "key": "jupyter.interactiveWindow.textEditor.normalizeSelection",
+      "label": "Normalize Selection",
+      "desc": "%jupyter.configuration.jupyter.normalizeSelectionForInteract"
+    },
+    {
+      "key": "jupyter.interactiveWindow.splitRunFileIntoCells",
+      "label": "Split Run File Into Cells",
+      "desc": "%jupyter.configuration.jupyter.splitRunFileIntoCells.descrip"
+    },
+    {
+      "key": "jupyter.variableExplorerExclude",
+      "label": "Variable Explorer Exclude",
+      "desc": "%jupyter.configuration.jupyter.variableExplorerExclude.descr"
+    },
+    {
+      "key": "jupyter.interactiveWindow.cellMarker.codeRegex",
+      "label": "Code Regex",
+      "desc": "%jupyter.configuration.jupyter.codeRegularExpression.descrip"
+    },
+    {
+      "key": "jupyter.interactiveWindow.cellMarker.default",
+      "label": "Varsayılan",
+      "desc": "%jupyter.configuration.jupyter.defaultCellMarker.description"
+    },
+    {
+      "key": "jupyter.interactiveWindow.cellMarker.markdownRegex",
+      "label": "Markdown Regex",
+      "desc": "%jupyter.configuration.jupyter.markdownRegularExpression.des"
+    },
+    {
+      "key": "jupyter.themeMatplotlibPlots",
+      "label": "Theme Matplotlib Plots",
+      "desc": "%jupyter.configuration.jupyter.themeMatplotlibPlots.descript"
+    },
+    {
+      "key": "jupyter.interactiveWindow.cellMarker.decorateCells",
+      "label": "Decorate Cells",
+      "desc": "%jupyter.configuration.jupyter.decorateCells.description%"
+    },
+    {
+      "key": "jupyter.interactiveWindow.codeLens.enable",
+      "label": "Etkinleştir",
+      "desc": "%jupyter.configuration.jupyter.enableCellCodeLens.descriptio"
+    },
+    {
+      "key": "jupyter.interactiveWindow.textEditor.autoMoveToNextCell",
+      "label": "Auto Move To Next Cell",
+      "desc": "%jupyter.configuration.jupyter.enableAutoMoveToNextCell.desc"
+    },
+    {
+      "key": "jupyter.allowUnauthorizedRemoteConnection",
+      "label": "Allow Unauthorized Remote Connection",
+      "desc": "%jupyter.configuration.jupyter.allowUnauthorizedRemoteConnec"
+    },
+    {
+      "key": "jupyter.interactiveWindow.codeLens.commands",
+      "label": "Commands",
+      "desc": "%jupyter.configuration.jupyter.codeLenses.description%"
+    },
+    {
+      "key": "jupyter.interactiveWindow.codeLens.debugCommands",
+      "label": "Debug Commands",
+      "desc": "%jupyter.configuration.jupyter.debugCodeLenses.description%"
+    },
+    {
+      "key": "jupyter.debugpyDistPath",
+      "label": "Debugpy Dist Path",
+      "desc": "%jupyter.configuration.jupyter.debugpyDistPath.description%"
+    },
+    {
+      "key": "jupyter.stopOnFirstLineWhileDebugging",
+      "label": "Stop On First Line While Debugging",
+      "desc": "%jupyter.configuration.jupyter.stopOnFirstLineWhileDebugging"
+    },
+    {
+      "key": "jupyter.disableJupyterAutoStart",
+      "label": "Disable Jupyter Auto Start",
+      "desc": "%jupyter.configuration.jupyter.disableJupyterAutoStart.descr"
+    },
+    {
+      "key": "jupyter.interactiveWindow.codeLens.enableGotoCell",
+      "label": "Enable Goto Cell",
+      "desc": "%jupyter.configuration.jupyter.addGotoCodeLenses.description"
+    },
+    {
+      "key": "jupyter.kernels.excludePythonEnvironments",
+      "label": "Exclude Python Environments",
+      "desc": "%jupyter.configuration.jupyter.kernels.filter.markdownDescri"
+    },
+    {
+      "key": "jupyter.kernels.trusted",
+      "label": "Trusted",
+      "desc": "%jupyter.configuration.jupyter.kernels.trusted.markdownDescr"
+    },
+    {
+      "key": "jupyter.interactiveWindow.creationMode",
+      "label": "Creation Mode",
+      "desc": "%jupyter.configuration.jupyter.interactiveWindowMode.descrip"
+    },
+    {
+      "key": "jupyter.interactiveWindow.notebookRepl",
+      "label": "Notebook Repl",
+      "desc": "%jupyter.configuration.jupyter.interactiveWindowNotebookRepl"
+    },
+    {
+      "key": "jupyter.interactiveWindow.textEditor.cellFolding",
+      "label": "Cell Folding",
+      "desc": "%jupyter.configuration.jupyter.pythonCellFolding.description"
+    },
+    {
+      "key": "jupyter.interactiveWindow.viewColumn",
+      "label": "View Column",
+      "desc": "%jupyter.configuration.jupyter.interactiveWindowViewColumn.d"
+    },
+    {
+      "key": "jupyter.interactiveWindow.textEditor.magicCommandsAsComments",
+      "label": "Magic Commands As Comments",
+      "desc": "%jupyter.configuration.jupyter.magicCommandsAsComments.descr"
+    },
+    {
+      "key": "jupyter.pythonExportMethod",
+      "label": "Python Export Method",
+      "desc": "%jupyter.configuration.jupyter.pythonExportMethod.descriptio"
+    },
+    {
+      "key": "jupyter.runStartupCommands",
+      "label": "Run Startup Commands",
+      "desc": "%jupyter.configuration.jupyter.runStartupCommands.descriptio"
+    },
+    {
+      "key": "jupyter.debugJustMyCode",
+      "label": "Debug Just My Code",
+      "desc": "%jupyter.configuration.jupyter.debugJustMyCode.description%"
+    },
+    {
+      "key": "jupyter.showOutlineButtonInNotebookToolbar",
+      "label": "Show Outline Button In Notebook Toolbar",
+      "desc": "%jupyter.configuration.jupyter.showOutlineButtonInNotebookTo"
+    },
+    {
+      "key": "jupyter.interactiveWindow.textEditor.autoAddNewCell",
+      "label": "Auto Add New Cell",
+      "desc": "%jupyter.configuration.jupyter.newCellOnRunLast.description%"
+    },
+    {
+      "key": "jupyter.pythonCompletionTriggerCharacters",
+      "label": "Python Completion Trigger Characters",
+      "desc": "%jupyter.configuration.jupyter.pythonCompletionTriggerCharac"
+    },
+    {
+      "key": "jupyter.logKernelOutputSeparately",
+      "label": "Log Kernel Output Separately",
+      "desc": "%jupyter.configuration.jupyter.logKernelOutputSeparately.des"
+    },
+    {
+      "key": "jupyter.excludeUserSitePackages",
+      "label": "Exclude User Site Packages",
+      "desc": "%jupyter.configuration.jupyter.excludeUserSitePackages.descr"
+    },
+    {
+      "key": "jupyter.enableExtendedKernelCompletions",
+      "label": "Enable Extended Kernel Completions",
+      "desc": "%jupyter.configuration.jupyter.enableExtendedKernelCompletio"
+    },
+    {
+      "key": "jupyter.enableExtendedPythonKernelCompletions",
+      "label": "Enable Extended Python Kernel Completions",
+      "desc": "%jupyter.configuration.jupyter.enableExtendedKernelCompletio"
+    },
+    {
+      "key": "jupyter.executionAnalysis.enabled",
+      "label": "Etkin",
+      "desc": "Experimental feature to enable execution analysis in noteboo"
+    },
+    {
+      "key": "jupyter.enableKernelCompletions",
+      "label": "Enable Kernel Completions",
+      "desc": "%jupyter.configuration.jupyter.enableKernelCompletions.markd"
+    },
+    {
+      "key": "jupyter.formatStackTraces",
+      "label": "Format Stack Traces",
+      "desc": "%jupyter.configuration.jupyter.formatStackTraces.description"
+    },
+    {
+      "key": "jupyter.completionTriggerCharacters",
+      "label": "Completion Trigger Characters",
+      "desc": "%jupyter.configuration.jupyter.completionTriggerCharacters.m"
+    }
+  ],
+  "chatgpt": [
+    {
+      "key": "chatgpt.commentCodeLensEnabled",
+      "label": "Comment Code Lens Enabled",
+      "desc": "Enable CodeLens above TODO comments to implement with Codex."
+    },
+    {
+      "key": "chatgpt.cliExecutable",
+      "label": "Cli Executable",
+      "desc": "DEVELOPMENT ONLY: Path to the Codex CLI executable. You do N"
+    },
+    {
+      "key": "chatgpt.openOnStartup",
+      "label": "Open On Startup",
+      "desc": "Focus the Codex sidebar when the extension finishes starting"
+    },
+    {
+      "key": "chatgpt.followUpQueueMode",
+      "label": "Follow Up Queue Mode",
+      "desc": "Control whether follow-up messages are queued or steer the c"
+    },
+    {
+      "key": "chatgpt.composerEnterBehavior",
+      "label": "Composer Enter Behavior",
+      "desc": "Enter behavior for the Codex composer."
+    },
+    {
+      "key": "chatgpt.reviewDelivery",
+      "label": "Review Delivery",
+      "desc": "Start /review inline in the current chat when possible or la"
+    },
+    {
+      "key": "chatgpt.localeOverride",
+      "label": "Locale Override",
+      "desc": "Preferred language for the Codex UI. Leave empty to auto det"
+    },
+    {
+      "key": "chatgpt.runCodexInWindowsSubsystemForLinux",
+      "label": "Run Codex In Windows Subsystem For Linux",
+      "desc": "Windows only: when Windows Subsystem for Linux (WSL) is inst"
+    }
+  ],
+  "ruby-lsp": [
+    {
+      "key": "rubyLsp.enabledFeatures",
+      "label": "Enabled Features",
+      "desc": "List of enabled LSP features"
+    },
+    {
+      "key": "rubyLsp.featuresConfiguration",
+      "label": "Features Configuration",
+      "desc": "Turn on/off specific features from request"
+    },
+    {
+      "key": "rubyLsp.addonSettings",
+      "label": "Addon Settings",
+      "desc": "Settings that will be forwarded to configure the behavior of"
+    },
+    {
+      "key": "rubyLsp.rubyVersionManager",
+      "label": "Ruby Version Manager",
+      "desc": ""
+    },
+    {
+      "key": "rubyLsp.customRubyCommand",
+      "label": "Custom Ruby Command",
+      "desc": "A shell command to activate the right Ruby version or add a "
+    },
+    {
+      "key": "rubyLsp.formatter",
+      "label": "Formatter",
+      "desc": "Which tool the Ruby LSP should use for formatting files"
+    },
+    {
+      "key": "rubyLsp.linters",
+      "label": "Linters",
+      "desc": "List of linter tools that the Ruby LSP should use for diagno"
+    },
+    {
+      "key": "rubyLsp.bundleGemfile",
+      "label": "Bundle Gemfile",
+      "desc": "Relative or absolute path to the Gemfile to use for bundling"
+    },
+    {
+      "key": "rubyLsp.testTimeout",
+      "label": "Test Timeout",
+      "desc": "The amount of time in seconds to wait for a test to finish b"
+    },
+    {
+      "key": "rubyLsp.pullDiagnosticsOn",
+      "label": "Pull Diagnostics On",
+      "desc": "When to pull diagnostics from the server (on change, save or"
+    },
+    {
+      "key": "rubyLsp.useBundlerCompose",
+      "label": "Use Bundler Compose",
+      "desc": "This is a temporary setting for testing purposes, do not use"
+    },
+    {
+      "key": "rubyLsp.bypassTypechecker",
+      "label": "Bypass Typechecker",
+      "desc": "Ignores if the project uses a typechecker. Only intended to "
+    },
+    {
+      "key": "rubyLsp.rubyExecutablePath",
+      "label": "Ruby Executable Path",
+      "desc": "Path to the Ruby installation. This is used as a fallback if"
+    },
+    {
+      "key": "rubyLsp.indexing",
+      "label": "Indexing",
+      "desc": "Indexing configurations. Modifying these will impact which d"
+    },
+    {
+      "key": "rubyLsp.erbSupport",
+      "label": "Erb Support",
+      "desc": "Enable ERB support. This can only work with server versions "
+    },
+    {
+      "key": "rubyLsp.featureFlags",
+      "label": "Feature Flags",
+      "desc": "Allows opting in or out of feature flags"
+    },
+    {
+      "key": "rubyLsp.sigOpacityLevel",
+      "label": "Sig Opacity Level",
+      "desc": "Controls the level of opacity for inline RBS comment signatu"
+    }
+  ]
+}

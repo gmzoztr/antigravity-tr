@@ -1,0 +1,536 @@
+Activate Env In Current Terminal
+Activate Environment
+Active State Tool Path
+Add Tags
+Addon Settings
+Allow Dangerously Skip Permissions
+Allow Force Push
+Allow No Verify Commit
+Allow Unauthorized Remote Connection
+Alternate Tools
+Always Run Benchmarks
+Always Show Staged Changes Resource Group
+Always Sign Off
+Always Use Uv
+Archive Inactive Sessions
+Arguments
+Arguments In Color Function
+Ask For Kernel Restart
+Ask For Large Data Frames
+Assign Variable Types
+Attach Open File
+Attribute Default Value
+Audio Snippet
+Auto Activation Type
+Auto Add New Cell
+Auto Attach Filter
+Auto Attach Smart Pattern
+Auto Closing Tags
+Auto Create Quotes
+Auto Import Completions
+Auto Import File Exclude Patterns
+Auto Import Specifier Exclude Regexes
+Auto Imports
+Auto Move To Next Cell
+Auto Play
+Auto Repository Detection
+Auto Stash
+Auto Test Discover On Save Enabled
+Auto Test Discover On Save Pattern
+Autofetch
+Autofetch Period
+Automatically Tunnel Remote Server
+Autorefresh
+Autosave
+Basic
+Bigquery Region
+Billing Quota Project
+Box Model
+Brace Style
+Branch Prefix
+Branch Protection
+Branch Protection Prompt
+Branch Sort Order
+Branch Validation Regex
+Branch Whitespace Char
+Break On Conditional Error
+Breaks
+Build Flags
+Build On Save
+Build Tags
+Bundle Gemfile
+Bypass Typechecker
+Cell Folding
+Check For Updates
+Check JS
+Check Updates
+Checkout Type
+Claude Process Wrapper
+Cli Executable
+Close Diff On Operation
+Code Regex
+Commands
+Commands To Log
+Comment Code Lens Enabled
+Comment Folding Ranges
+Commit Short Hash Length
+Compatible Vendor Prefixes
+Complete Function Calls
+Complete Function Parens
+Complete JS Docs
+Complete Property With Semicolon
+Completion Trigger Characters
+Composer Enter Behavior
+Composite Literal Fields
+Composite Literal Types
+Concatenate Messages
+Conda Path
+Config File
+Config Path
+Confirm Empty Commits
+Confirm Force Push
+Confirm No Verify Commit
+Confirm Sync
+Constant Values
+Content Button
+Content Unformatted
+Continue After Reload
+Copy Into Workspace
+Cover Mode
+Cover On Save
+Cover On Single Test
+Cover On Single Test File
+Cover On Test Package
+Cover Show Counts
+Coverage Decorator
+Coverage Options
+Creation Mode
+Custom Data
+Custom Environment
+Custom Ruby Command
+Date
+Debug By Link Options
+Debug Commands
+Debug Just My Code
+Debug Port
+Debugpy Dist Path
+Decorate Cells
+Default Branch Name
+Default Clone Directory
+Default Env Manager
+Default Interpreter Path
+Default Package Manager
+Default Runtime Executable
+Delve Config
+Destination
+Detect Extension Conflicts
+Detect Submodules
+Detect Submodules Limit
+Detect Worktrees
+Detect Worktrees Limit
+Diagnostic Mode
+Dictionary
+Diff View Position
+Disable Automatic Type Acquisition
+Disable Concurrent Tests
+Disable Jupyter Auto Start
+Disable Language Services
+Disable Login Prompt
+Disable Server Checksum
+Disable Type Errors
+Disabled Language Services
+Discard Untracked Changes To Trash
+Display Type Errors
+Documentation
+Double Click To Switch To Editor
+Duplicate Properties
+Editor Context Menu Commands
+Empty Rules
+Enable Code Completion
+Enable Code Lens
+Enable Commit Signing
+Enable Cursor Import Cursor
+Enable Extended Kernel Completions
+Enable Extended Python Kernel Completions
+Enable For Directories
+Enable Goto Cell
+Enable Hover
+Enable Kernel Completions
+Enable Network View
+Enable New Conversation Shortcut
+Enable Project Diagnostics
+Enable Prompt Use Workspace Tsdk
+Enable REPL Smart Send
+Enable Region Diagnostics
+Enable Reopen Closed Session Shortcut
+Enable Run From Folder
+Enable SSH Agent Forwarding
+Enable Script Explorer
+Enable Smart Commit
+Enable Status Bar Sync
+Enable Tracing
+Enabled Features
+Env File
+Environment
+Environment Variables
+Erb Support
+Exclude Languages
+Exclude Library Symbols
+Exclude Python Environments
+Exclude User Site Packages
+Executable Path
+Execute Cell Tool Consent
+Execute Cell Tool For Notebook MCP
+Execute In File Dir
+Execute Selection
+Expand Menus
+Experimental Decorators
+Experiments
+Export With Output Enabled
+Extensions Path
+Extra Liners
+Extra Paths
+Fallback Flags
+Feature Flags
+Features Configuration
+Fetch On Pull
+Fetch Online Package Info
+Float
+Focus After Launch
+Focus View
+Follow Tags When Sync
+Follow Up Queue Mode
+Font Face Properties
+Format Flags
+Format Stack Traces
+Format Tool
+Formatter
+Function Type Parameters
+Gcloud Path
+Generate Returns
+Generate Tests Flags
+Git Authentication
+Git Protocol
+GitHub Authentication
+Global Module Installation
+Global Search Paths
+Go
+Gopath
+Gopls
+Goroot
+Hex Color Length
+Hide End Tag Suggestions
+Hide Onboarding
+Html5
+ID Selector
+IE Hack
+Ignore Legacy Warning
+Ignore Limit Warning
+Ignore Missing Git Warning
+Ignore Rebase Warning
+Ignore Submodules
+Ignore Windows Git27 Warning
+Ignored Error
+Ignored Links
+Ignored Repositories
+Implementation
+Import Format
+Import Module Specifier
+Import Module Specifier Ending
+Import Statement
+Important
+In Cell Monitoring Enabled
+Include
+Include Automatic Optional Chain Completions
+Include Completions For Import Statements
+Include Languages
+Include Package JSON Auto Imports
+Include Workspace Header Completions
+Indent Handlebars
+Indent Inner HTML
+Indent Switch Case
+Indexing
+Infer Gopath
+Info Visibility
+Initial Permission Mode
+Inlay Hint Debounce Ms
+Input Validation
+Input Validation Length
+Input Validation Subject Length
+Insert Space After Comma Delimiter
+Insert Space After Constructor
+Insert Space After Function Keyword For Anonymous Functions
+Insert Space After Keywords In Control Flow Statements
+Insert Space After Opening And Before Closing Empty Braces
+Insert Space After Opening And Before Closing Jsx Expression Braces
+Insert Space After Opening And Before Closing Nonempty Braces
+Insert Space After Opening And Before Closing Nonempty Brackets
+Insert Space After Opening And Before Closing Nonempty Parenthesis
+Insert Space After Opening And Before Closing Template String Braces
+Insert Space After Semicolon In For Statements
+Insert Space After Type Assertion
+Insert Space Before And After Binary Operators
+Insert Space Before Function Parenthesis
+Install Dependencies When Building
+Install Location
+Jsx Attribute Completion Style
+Jupyter Command Line Arguments
+Jupyter Interrupt Timeout
+Jupyter Launch Retries
+Jupyter Launch Timeout
+Keep Lines
+Language Server
+Language Server Flags
+Launch Args
+Level
+Linkify
+Lint Flags
+Lint On Save
+Lint Tool
+Linters
+Locale
+Locale Override
+Locator
+Lock Editor Groups
+Log
+Log Kernel Output Separately
+Lsp Arguments
+Lsp Path
+Macros
+Magic Commands As Comments
+Mark Editor Selection
+Markdown Fragment Links
+Markdown Regex
+Marketplace Extension Gallery Service URL
+Marketplace Gallery Item URL
+Max Items Computed
+Max Preserve New Lines
+Max TS Server Memory
+Merge Editor
+Mirror Cursor On Matching Tag
+Module
+Names
+Newline Between Rules
+Newline Between Selectors
+Node Path
+Normalize Selection
+Notebook File Root
+Notebook Repl
+Npm
+Npm Is Installed
+Npm Scripts
+On Config Changed
+On Config Changed Force Enable
+Open After Clone
+Open Diff On Click
+Open Location
+Open Markdown Links
+Open On Startup
+Open Repository In Parent Folders
+Opt Into
+Opt Out From
+Optimistic Update
+Optimize Stylesheet Parsing
+Organize Imports
+Overwrite Behavior
+Package Display Mode
+Package Manager
+Parameter Names
+Path
+Paths
+Persistent Language Server
+Pick And Attach Options
+Pipenv Path
+Pixi Tool Path
+Place Open Brace On New Line For Control Blocks
+Place Open Brace On New Line For Functions
+Playground
+Plugin Paths
+Poetry Path
+Post Commit Command
+Prefer Device Code Flow
+Prefer Go To Source Definition
+Prefer Type Only Auto Imports
+Preferred Location
+Preferred Md Path Extension Style
+Preserve New Lines
+Project
+Prompt
+Prompt To Configure
+Prompt To Save Files Before Commit
+Prompt To Save Files Before Stash
+Property Ignored Due To Display
+Provide Default
+Provide Variables
+Prune On Fetch
+Pull Before Checkout
+Pull Diagnostics On
+Pull Tags
+Pytest Args
+Pytest Enabled
+Pytest Path
+Python Completion Trigger Characters
+Python Export Method
+Python Projects
+Quote Style
+Range Variable Types
+Rebase When Sync
+Recent Projects Enabled
+References
+Region
+Remember Post Commit Command
+Remove Tags
+Rename Matching Jsx Tags
+Replace Tags When Pull
+Report Style Checks As Warnings
+Repository Scan Ignored Folders
+Repository Scan Max Depth
+Require Git User Config
+Resource Request Options
+Respect Git Ignore
+Restart After Crash
+Review Delivery
+Ruby Executable Path
+Ruby Version Manager
+Run
+Run Codex In Windows Subsystem For Linux
+Run Silent
+Run Startup Commands
+Runnable Code Lens
+Scan Repositories
+Schemas
+Scope
+Script Explorer Action
+Script Explorer Exclude
+Script Hover
+Script Runner
+Scripts
+Scroll Editor With Preview
+Scroll Preview With Editor
+Scroll To Bottom On Send
+Search Max Workspace File Count
+Semicolons
+Send To Native REPL
+Serialization
+Server
+Server Binary Name
+Server Completion Ranking
+Server Download Url Template
+Severity
+Show Abbreviation Suggestions
+Show Activate Button
+Show Author
+Show Avatar
+Show Commit Input
+Show Dynamic Subtests In Editor
+Show Expanded Abbreviation
+Show Hover Go To Links
+Show Inline Open File Action
+Show On All Class Methods
+Show On All Functions
+Show On Interface Methods
+Show Outline Button In Notebook Toolbar
+Show Output
+Show Progress
+Show Push Success Notification
+Show Python Inline Values
+Show Reference Details
+Show Suggestions As Snippets
+Show Uncommitted
+Show Variable View When Debugging
+Show Welcome
+Sig Opacity Level
+Similarity Threshold
+Smart Commit Changes
+Sources
+Space Around Selector Separator
+Split Run File Into Cells
+Starred Projects
+Status Limit
+Stop On First Line While Debugging
+Stream Diagnostics
+Strict
+Strict Function Types
+Strict Null Checks
+Styles
+Suggest Smart Commit
+Support Cancellation
+Suppress Semantic Errors
+Suppress When Argument Matches Name
+Suppress When Type Matches Name
+Sync Notebooks
+Syntax Profiles
+Target
+Template
+Templating
+Terminal Authentication
+Terminal Git Editor
+Terminal Options
+Test Env File
+Test Env Vars
+Test Flags
+Test On Save
+Test Tags
+Test Timeout
+Theme Matplotlib Plots
+Tools Env Vars
+Tools Gopath
+Trace
+Trigger
+Trigger Expansion On Tab
+Trigger Property Value Completion
+Trusted
+Tsdk
+Type Checking Mode
+Typographer
+Unformatted
+Unformatted Content Delimiter
+Unittest Args
+Unittest Enabled
+Universal Selector
+Unknown At Rules
+Unknown Properties
+Unknown Vendor Specific Properties
+Unmap Missing Sources
+Untracked Changes
+Uri
+Use Aliases For Renames
+Use Background Highlight
+Use Bundler Compose
+Use Commit Input As Stash Message
+Use Ctrl Enter To Send
+Use Default Config For Jupyter
+Use Editor As Commit Input
+Use Electron Fetch
+Use Env File
+Use Environments Extension
+Use Force Push If Includes
+Use Force Push With Lease
+Use Inline Completions
+Use Integrated Ask Pass
+Use Language Server
+Use Python Environment
+Use Script As Executable
+Use Syntax Server
+Use Terminal
+Use Tsgo
+Valid Properties
+Validate
+Variable Explorer Exclude
+Variables
+Vendor Prefix
+Venv Folders
+Venv Path
+Verbose Commit
+Vet Flags
+Vet On Save
+Video Snippet
+View Column
+Vulncheck
+Watch Options
+Widget Script Sources
+Workspace Search Paths
+Wrap Attributes
+Wrap Attributes Indent Size
+Wrap Line Length
+Zero Units

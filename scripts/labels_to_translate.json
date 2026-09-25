@@ -1,0 +1,1744 @@
+{
+  "Marketplace Extension Gallery Service URL": [
+    "antigravity.marketplaceExtensionGalleryServiceURL"
+  ],
+  "Marketplace Gallery Item URL": [
+    "antigravity.marketplaceGalleryItemURL"
+  ],
+  "Search Max Workspace File Count": [
+    "antigravity.searchMaxWorkspaceFileCount"
+  ],
+  "Enable Cursor Import Cursor": [
+    "antigravity.enableCursorImportCursor"
+  ],
+  "Persistent Language Server": [
+    "antigravity.persistentLanguageServer"
+  ],
+  "Enable SSH Agent Forwarding": [
+    "remote.antigravityDevContainers.enableSSHAgentForwarding"
+  ],
+  "Disable Server Checksum": [
+    "remote.antigravityDevContainers.experimental.disableServerChecksum",
+    "remote.antigravitySSH.experimental.disableServerChecksum",
+    "remote.WSL.experimental.disableServerChecksum"
+  ],
+  "Config File": [
+    "remote.antigravitySSH.configFile"
+  ],
+  "Path": [
+    "remote.antigravitySSH.path",
+    "git.path",
+    "clangd.path"
+  ],
+  "Server Download Url Template": [
+    "remote.antigravitySSH.experimental.serverDownloadUrlTemplate",
+    "remote.WSL.serverDownloadUrlTemplate"
+  ],
+  "Server Binary Name": [
+    "remote.antigravitySSH.experimental.serverBinaryName"
+  ],
+  "Custom Data": [
+    "css.customData",
+    "html.customData"
+  ],
+  "Trigger Property Value Completion": [
+    "css.completion.triggerPropertyValueCompletion",
+    "scss.completion.triggerPropertyValueCompletion",
+    "less.completion.triggerPropertyValueCompletion"
+  ],
+  "Complete Property With Semicolon": [
+    "css.completion.completePropertyWithSemicolon",
+    "scss.completion.completePropertyWithSemicolon",
+    "less.completion.completePropertyWithSemicolon"
+  ],
+  "Validate": [
+    "css.validate",
+    "scss.validate",
+    "less.validate"
+  ],
+  "Documentation": [
+    "css.hover.documentation",
+    "scss.hover.documentation",
+    "less.hover.documentation",
+    "html.hover.documentation"
+  ],
+  "References": [
+    "css.hover.references",
+    "scss.hover.references",
+    "less.hover.references",
+    "html.hover.references"
+  ],
+  "Compatible Vendor Prefixes": [
+    "css.lint.compatibleVendorPrefixes",
+    "scss.lint.compatibleVendorPrefixes",
+    "less.lint.compatibleVendorPrefixes"
+  ],
+  "Vendor Prefix": [
+    "css.lint.vendorPrefix",
+    "scss.lint.vendorPrefix",
+    "less.lint.vendorPrefix"
+  ],
+  "Duplicate Properties": [
+    "css.lint.duplicateProperties",
+    "scss.lint.duplicateProperties",
+    "less.lint.duplicateProperties"
+  ],
+  "Empty Rules": [
+    "css.lint.emptyRules",
+    "scss.lint.emptyRules",
+    "less.lint.emptyRules"
+  ],
+  "Import Statement": [
+    "css.lint.importStatement",
+    "scss.lint.importStatement",
+    "less.lint.importStatement"
+  ],
+  "Box Model": [
+    "css.lint.boxModel",
+    "scss.lint.boxModel",
+    "less.lint.boxModel"
+  ],
+  "Universal Selector": [
+    "css.lint.universalSelector",
+    "scss.lint.universalSelector",
+    "less.lint.universalSelector"
+  ],
+  "Zero Units": [
+    "css.lint.zeroUnits",
+    "scss.lint.zeroUnits",
+    "less.lint.zeroUnits"
+  ],
+  "Font Face Properties": [
+    "css.lint.fontFaceProperties",
+    "scss.lint.fontFaceProperties",
+    "less.lint.fontFaceProperties"
+  ],
+  "Hex Color Length": [
+    "css.lint.hexColorLength",
+    "scss.lint.hexColorLength",
+    "less.lint.hexColorLength"
+  ],
+  "Arguments In Color Function": [
+    "css.lint.argumentsInColorFunction",
+    "scss.lint.argumentsInColorFunction",
+    "less.lint.argumentsInColorFunction"
+  ],
+  "Unknown Properties": [
+    "css.lint.unknownProperties",
+    "scss.lint.unknownProperties",
+    "less.lint.unknownProperties"
+  ],
+  "Valid Properties": [
+    "css.lint.validProperties",
+    "scss.lint.validProperties",
+    "less.lint.validProperties"
+  ],
+  "IE Hack": [
+    "css.lint.ieHack",
+    "scss.lint.ieHack",
+    "less.lint.ieHack"
+  ],
+  "Unknown Vendor Specific Properties": [
+    "css.lint.unknownVendorSpecificProperties",
+    "scss.lint.unknownVendorSpecificProperties",
+    "less.lint.unknownVendorSpecificProperties"
+  ],
+  "Property Ignored Due To Display": [
+    "css.lint.propertyIgnoredDueToDisplay",
+    "scss.lint.propertyIgnoredDueToDisplay",
+    "less.lint.propertyIgnoredDueToDisplay"
+  ],
+  "Important": [
+    "css.lint.important",
+    "scss.lint.important",
+    "less.lint.important"
+  ],
+  "Float": [
+    "css.lint.float",
+    "scss.lint.float",
+    "less.lint.float"
+  ],
+  "ID Selector": [
+    "css.lint.idSelector",
+    "scss.lint.idSelector",
+    "less.lint.idSelector"
+  ],
+  "Unknown At Rules": [
+    "css.lint.unknownAtRules",
+    "scss.lint.unknownAtRules",
+    "less.lint.unknownAtRules"
+  ],
+  "Server": [
+    "css.trace.server",
+    "html.trace.server",
+    "json.trace.server",
+    "markdown.trace.server",
+    "go.trace.server",
+    "pyrefly.trace.server"
+  ],
+  "Newline Between Selectors": [
+    "css.format.newlineBetweenSelectors",
+    "scss.format.newlineBetweenSelectors",
+    "less.format.newlineBetweenSelectors"
+  ],
+  "Newline Between Rules": [
+    "css.format.newlineBetweenRules",
+    "scss.format.newlineBetweenRules",
+    "less.format.newlineBetweenRules"
+  ],
+  "Space Around Selector Separator": [
+    "css.format.spaceAroundSelectorSeparator",
+    "scss.format.spaceAroundSelectorSeparator",
+    "less.format.spaceAroundSelectorSeparator"
+  ],
+  "Brace Style": [
+    "css.format.braceStyle",
+    "scss.format.braceStyle",
+    "less.format.braceStyle"
+  ],
+  "Preserve New Lines": [
+    "css.format.preserveNewLines",
+    "scss.format.preserveNewLines",
+    "less.format.preserveNewLines",
+    "html.format.preserveNewLines"
+  ],
+  "Max Preserve New Lines": [
+    "css.format.maxPreserveNewLines",
+    "scss.format.maxPreserveNewLines",
+    "less.format.maxPreserveNewLines",
+    "html.format.maxPreserveNewLines"
+  ],
+  "Show Expanded Abbreviation": [
+    "emmet.showExpandedAbbreviation"
+  ],
+  "Show Abbreviation Suggestions": [
+    "emmet.showAbbreviationSuggestions"
+  ],
+  "Include Languages": [
+    "emmet.includeLanguages"
+  ],
+  "Variables": [
+    "emmet.variables"
+  ],
+  "Syntax Profiles": [
+    "emmet.syntaxProfiles"
+  ],
+  "Exclude Languages": [
+    "emmet.excludeLanguages"
+  ],
+  "Extensions Path": [
+    "emmet.extensionsPath"
+  ],
+  "Trigger Expansion On Tab": [
+    "emmet.triggerExpansionOnTab"
+  ],
+  "Use Inline Completions": [
+    "emmet.useInlineCompletions"
+  ],
+  "Show Suggestions As Snippets": [
+    "emmet.showSuggestionsAsSnippets"
+  ],
+  "Optimize Stylesheet Parsing": [
+    "emmet.optimizeStylesheetParsing"
+  ],
+  "Auto Repository Detection": [
+    "git.autoRepositoryDetection"
+  ],
+  "Autorefresh": [
+    "git.autorefresh"
+  ],
+  "Autofetch": [
+    "git.autofetch"
+  ],
+  "Autofetch Period": [
+    "git.autofetchPeriod"
+  ],
+  "Default Branch Name": [
+    "git.defaultBranchName"
+  ],
+  "Branch Prefix": [
+    "git.branchPrefix"
+  ],
+  "Branch Protection": [
+    "git.branchProtection",
+    "github.branchProtection"
+  ],
+  "Branch Protection Prompt": [
+    "git.branchProtectionPrompt"
+  ],
+  "Branch Validation Regex": [
+    "git.branchValidationRegex"
+  ],
+  "Branch Whitespace Char": [
+    "git.branchWhitespaceChar"
+  ],
+  "Dictionary": [
+    "git.branchRandomName.dictionary"
+  ],
+  "Confirm Sync": [
+    "git.confirmSync"
+  ],
+  "Checkout Type": [
+    "git.checkoutType"
+  ],
+  "Ignore Legacy Warning": [
+    "git.ignoreLegacyWarning"
+  ],
+  "Ignore Missing Git Warning": [
+    "git.ignoreMissingGitWarning"
+  ],
+  "Ignore Windows Git27 Warning": [
+    "git.ignoreWindowsGit27Warning"
+  ],
+  "Ignore Limit Warning": [
+    "git.ignoreLimitWarning"
+  ],
+  "Ignore Rebase Warning": [
+    "git.ignoreRebaseWarning"
+  ],
+  "Default Clone Directory": [
+    "git.defaultCloneDirectory"
+  ],
+  "Use Editor As Commit Input": [
+    "git.useEditorAsCommitInput"
+  ],
+  "Verbose Commit": [
+    "git.verboseCommit"
+  ],
+  "Enable Smart Commit": [
+    "git.enableSmartCommit"
+  ],
+  "Smart Commit Changes": [
+    "git.smartCommitChanges"
+  ],
+  "Suggest Smart Commit": [
+    "git.suggestSmartCommit"
+  ],
+  "Enable Commit Signing": [
+    "git.enableCommitSigning"
+  ],
+  "Confirm Empty Commits": [
+    "git.confirmEmptyCommits"
+  ],
+  "Enable Status Bar Sync": [
+    "git.enableStatusBarSync"
+  ],
+  "Follow Tags When Sync": [
+    "git.followTagsWhenSync"
+  ],
+  "Replace Tags When Pull": [
+    "git.replaceTagsWhenPull"
+  ],
+  "Prompt To Save Files Before Stash": [
+    "git.promptToSaveFilesBeforeStash"
+  ],
+  "Prompt To Save Files Before Commit": [
+    "git.promptToSaveFilesBeforeCommit"
+  ],
+  "Post Commit Command": [
+    "git.postCommitCommand"
+  ],
+  "Remember Post Commit Command": [
+    "git.rememberPostCommitCommand"
+  ],
+  "Open After Clone": [
+    "git.openAfterClone"
+  ],
+  "Show Inline Open File Action": [
+    "git.showInlineOpenFileAction"
+  ],
+  "Show Push Success Notification": [
+    "git.showPushSuccessNotification"
+  ],
+  "Input Validation": [
+    "git.inputValidation"
+  ],
+  "Input Validation Length": [
+    "git.inputValidationLength"
+  ],
+  "Input Validation Subject Length": [
+    "git.inputValidationSubjectLength"
+  ],
+  "Detect Submodules": [
+    "git.detectSubmodules"
+  ],
+  "Detect Submodules Limit": [
+    "git.detectSubmodulesLimit"
+  ],
+  "Detect Worktrees": [
+    "git.detectWorktrees"
+  ],
+  "Detect Worktrees Limit": [
+    "git.detectWorktreesLimit"
+  ],
+  "Always Show Staged Changes Resource Group": [
+    "git.alwaysShowStagedChangesResourceGroup"
+  ],
+  "Always Sign Off": [
+    "git.alwaysSignOff"
+  ],
+  "Ignore Submodules": [
+    "git.ignoreSubmodules"
+  ],
+  "Ignored Repositories": [
+    "git.ignoredRepositories"
+  ],
+  "Scan Repositories": [
+    "git.scanRepositories"
+  ],
+  "Show Progress": [
+    "git.showProgress"
+  ],
+  "Rebase When Sync": [
+    "git.rebaseWhenSync"
+  ],
+  "Pull Before Checkout": [
+    "git.pullBeforeCheckout"
+  ],
+  "Fetch On Pull": [
+    "git.fetchOnPull"
+  ],
+  "Prune On Fetch": [
+    "git.pruneOnFetch"
+  ],
+  "Pull Tags": [
+    "git.pullTags"
+  ],
+  "Auto Stash": [
+    "git.autoStash"
+  ],
+  "Allow Force Push": [
+    "git.allowForcePush"
+  ],
+  "Use Force Push With Lease": [
+    "git.useForcePushWithLease"
+  ],
+  "Use Force Push If Includes": [
+    "git.useForcePushIfIncludes"
+  ],
+  "Confirm Force Push": [
+    "git.confirmForcePush"
+  ],
+  "Allow No Verify Commit": [
+    "git.allowNoVerifyCommit"
+  ],
+  "Confirm No Verify Commit": [
+    "git.confirmNoVerifyCommit"
+  ],
+  "Close Diff On Operation": [
+    "git.closeDiffOnOperation"
+  ],
+  "Open Diff On Click": [
+    "git.openDiffOnClick"
+  ],
+  "Support Cancellation": [
+    "git.supportCancellation"
+  ],
+  "Branch Sort Order": [
+    "git.branchSortOrder"
+  ],
+  "Untracked Changes": [
+    "git.untrackedChanges"
+  ],
+  "Require Git User Config": [
+    "git.requireGitUserConfig"
+  ],
+  "Show Commit Input": [
+    "git.showCommitInput"
+  ],
+  "Terminal Authentication": [
+    "git.terminalAuthentication"
+  ],
+  "Terminal Git Editor": [
+    "git.terminalGitEditor"
+  ],
+  "Use Commit Input As Stash Message": [
+    "git.useCommitInputAsStashMessage"
+  ],
+  "Use Integrated Ask Pass": [
+    "git.useIntegratedAskPass"
+  ],
+  "GitHub Authentication": [
+    "git.githubAuthentication"
+  ],
+  "Date": [
+    "git.timeline.date"
+  ],
+  "Show Author": [
+    "git.timeline.showAuthor"
+  ],
+  "Show Uncommitted": [
+    "git.timeline.showUncommitted"
+  ],
+  "Status Limit": [
+    "git.statusLimit"
+  ],
+  "Repository Scan Ignored Folders": [
+    "git.repositoryScanIgnoredFolders"
+  ],
+  "Repository Scan Max Depth": [
+    "git.repositoryScanMaxDepth"
+  ],
+  "Commands To Log": [
+    "git.commandsToLog"
+  ],
+  "Merge Editor": [
+    "git.mergeEditor"
+  ],
+  "Optimistic Update": [
+    "git.optimisticUpdate"
+  ],
+  "Open Repository In Parent Folders": [
+    "git.openRepositoryInParentFolders"
+  ],
+  "Similarity Threshold": [
+    "git.similarityThreshold"
+  ],
+  "Template": [
+    "git.blame.editorDecoration.template",
+    "git.blame.statusBarItem.template"
+  ],
+  "Commit Short Hash Length": [
+    "git.commitShortHashLength"
+  ],
+  "Sources": [
+    "git.diagnosticsCommitHook.sources"
+  ],
+  "Discard Untracked Changes To Trash": [
+    "git.discardUntrackedChangesToTrash"
+  ],
+  "Show Reference Details": [
+    "git.showReferenceDetails"
+  ],
+  "Git Authentication": [
+    "github.gitAuthentication"
+  ],
+  "Git Protocol": [
+    "github.gitProtocol"
+  ],
+  "Show Avatar": [
+    "github.showAvatar"
+  ],
+  "Uri": [
+    "github-enterprise.uri"
+  ],
+  "Use Electron Fetch": [
+    "github-authentication.useElectronFetch"
+  ],
+  "Prefer Device Code Flow": [
+    "github-authentication.preferDeviceCodeFlow"
+  ],
+  "Attribute Default Value": [
+    "html.completion.attributeDefaultValue"
+  ],
+  "Wrap Line Length": [
+    "html.format.wrapLineLength"
+  ],
+  "Unformatted": [
+    "html.format.unformatted"
+  ],
+  "Content Unformatted": [
+    "html.format.contentUnformatted"
+  ],
+  "Indent Inner HTML": [
+    "html.format.indentInnerHtml"
+  ],
+  "Indent Handlebars": [
+    "html.format.indentHandlebars"
+  ],
+  "Extra Liners": [
+    "html.format.extraLiners"
+  ],
+  "Wrap Attributes": [
+    "html.format.wrapAttributes"
+  ],
+  "Wrap Attributes Indent Size": [
+    "html.format.wrapAttributesIndentSize"
+  ],
+  "Templating": [
+    "html.format.templating"
+  ],
+  "Unformatted Content Delimiter": [
+    "html.format.unformattedContentDelimiter"
+  ],
+  "Html5": [
+    "html.suggest.html5"
+  ],
+  "Hide End Tag Suggestions": [
+    "html.suggest.hideEndTagSuggestions"
+  ],
+  "Scripts": [
+    "html.validate.scripts"
+  ],
+  "Styles": [
+    "html.validate.styles",
+    "markdown.styles"
+  ],
+  "Auto Create Quotes": [
+    "html.autoCreateQuotes"
+  ],
+  "Auto Closing Tags": [
+    "html.autoClosingTags",
+    "typescript.autoClosingTags",
+    "javascript.autoClosingTags"
+  ],
+  "Mirror Cursor On Matching Tag": [
+    "html.mirrorCursorOnMatchingTag"
+  ],
+  "Serialization": [
+    "ipynb.experimental.serialization"
+  ],
+  "Schemas": [
+    "json.schemas"
+  ],
+  "Keep Lines": [
+    "json.format.keepLines"
+  ],
+  "Max Items Computed": [
+    "json.maxItemsComputed"
+  ],
+  "Breaks": [
+    "markdown.preview.breaks"
+  ],
+  "Linkify": [
+    "markdown.preview.linkify"
+  ],
+  "Typographer": [
+    "markdown.preview.typographer"
+  ],
+  "Scroll Preview With Editor": [
+    "markdown.preview.scrollPreviewWithEditor"
+  ],
+  "Mark Editor Selection": [
+    "markdown.preview.markEditorSelection"
+  ],
+  "Scroll Editor With Preview": [
+    "markdown.preview.scrollEditorWithPreview"
+  ],
+  "Double Click To Switch To Editor": [
+    "markdown.preview.doubleClickToSwitchToEditor"
+  ],
+  "Open Markdown Links": [
+    "markdown.preview.openMarkdownLinks"
+  ],
+  "Open Location": [
+    "markdown.links.openLocation"
+  ],
+  "Include Workspace Header Completions": [
+    "markdown.suggest.paths.includeWorkspaceHeaderCompletions"
+  ],
+  "Log": [
+    "markdown.server.log",
+    "typescript.tsserver.log"
+  ],
+  "Copy Into Workspace": [
+    "markdown.editor.drop.copyIntoWorkspace",
+    "markdown.editor.filePaste.copyIntoWorkspace"
+  ],
+  "Video Snippet": [
+    "markdown.editor.filePaste.videoSnippet"
+  ],
+  "Audio Snippet": [
+    "markdown.editor.filePaste.audioSnippet"
+  ],
+  "Markdown Fragment Links": [
+    "markdown.validate.fileLinks.markdownFragmentLinks"
+  ],
+  "Ignored Links": [
+    "markdown.validate.ignoredLinks"
+  ],
+  "Include": [
+    "markdown.updateLinksOnFileMove.include"
+  ],
+  "Enable For Directories": [
+    "markdown.updateLinksOnFileMove.enableForDirectories"
+  ],
+  "Destination": [
+    "markdown.copyFiles.destination"
+  ],
+  "Overwrite Behavior": [
+    "markdown.copyFiles.overwriteBehavior"
+  ],
+  "Preferred Md Path Extension Style": [
+    "markdown.preferredMdPathExtensionStyle"
+  ],
+  "Macros": [
+    "markdown.math.macros"
+  ],
+  "Auto Play": [
+    "mediaPreview.video.autoPlay"
+  ],
+  "Diff View Position": [
+    "merge-conflict.diffViewPosition"
+  ],
+  "Environment": [
+    "microsoft-sovereign-cloud.environment",
+    "google.datacloud.composer.environment"
+  ],
+  "Custom Environment": [
+    "microsoft-sovereign-cloud.customEnvironment"
+  ],
+  "Implementation": [
+    "microsoft-authentication.implementation"
+  ],
+  "Npm Scripts": [
+    "debug.javascript.codelens.npmScripts"
+  ],
+  "Terminal Options": [
+    "debug.javascript.terminalOptions"
+  ],
+  "Automatically Tunnel Remote Server": [
+    "debug.javascript.automaticallyTunnelRemoteServer"
+  ],
+  "Debug By Link Options": [
+    "debug.javascript.debugByLinkOptions"
+  ],
+  "Pick And Attach Options": [
+    "debug.javascript.pickAndAttachOptions"
+  ],
+  "Auto Attach Filter": [
+    "debug.javascript.autoAttachFilter"
+  ],
+  "Auto Attach Smart Pattern": [
+    "debug.javascript.autoAttachSmartPattern"
+  ],
+  "Break On Conditional Error": [
+    "debug.javascript.breakOnConditionalError"
+  ],
+  "Unmap Missing Sources": [
+    "debug.javascript.unmapMissingSources"
+  ],
+  "Default Runtime Executable": [
+    "debug.javascript.defaultRuntimeExecutable"
+  ],
+  "Resource Request Options": [
+    "debug.javascript.resourceRequestOptions"
+  ],
+  "Enable Network View": [
+    "debug.javascript.enableNetworkView"
+  ],
+  "Run Silent": [
+    "npm.runSilent"
+  ],
+  "Package Manager": [
+    "npm.packageManager"
+  ],
+  "Script Runner": [
+    "npm.scriptRunner"
+  ],
+  "Enable Script Explorer": [
+    "npm.enableScriptExplorer"
+  ],
+  "Enable Run From Folder": [
+    "npm.enableRunFromFolder"
+  ],
+  "Script Explorer Action": [
+    "npm.scriptExplorerAction"
+  ],
+  "Script Explorer Exclude": [
+    "npm.scriptExplorerExclude"
+  ],
+  "Fetch Online Package Info": [
+    "npm.fetchOnlinePackageInfo"
+  ],
+  "Script Hover": [
+    "npm.scriptHover"
+  ],
+  "Basic": [
+    "php.suggest.basic"
+  ],
+  "Executable Path": [
+    "php.validate.executablePath"
+  ],
+  "Run": [
+    "php.validate.run"
+  ],
+  "Preferred Location": [
+    "references.preferredLocation",
+    "claudeCode.preferredLocation"
+  ],
+  "Tsdk": [
+    "typescript.tsdk"
+  ],
+  "Disable Automatic Type Acquisition": [
+    "typescript.disableAutomaticTypeAcquisition"
+  ],
+  "Enable Prompt Use Workspace Tsdk": [
+    "typescript.enablePromptUseWorkspaceTsdk"
+  ],
+  "Show On All Functions": [
+    "javascript.referencesCodeLens.showOnAllFunctions",
+    "typescript.referencesCodeLens.showOnAllFunctions"
+  ],
+  "Use Tsgo": [
+    "typescript.experimental.useTsgo"
+  ],
+  "Show On Interface Methods": [
+    "typescript.implementationsCodeLens.showOnInterfaceMethods"
+  ],
+  "Show On All Class Methods": [
+    "typescript.implementationsCodeLens.showOnAllClassMethods"
+  ],
+  "Report Style Checks As Warnings": [
+    "typescript.reportStyleChecksAsWarnings"
+  ],
+  "Module": [
+    "js/ts.implicitProjectConfig.module"
+  ],
+  "Target": [
+    "js/ts.implicitProjectConfig.target"
+  ],
+  "Check JS": [
+    "js/ts.implicitProjectConfig.checkJs"
+  ],
+  "Experimental Decorators": [
+    "js/ts.implicitProjectConfig.experimentalDecorators"
+  ],
+  "Strict Null Checks": [
+    "js/ts.implicitProjectConfig.strictNullChecks"
+  ],
+  "Strict Function Types": [
+    "js/ts.implicitProjectConfig.strictFunctionTypes"
+  ],
+  "Strict": [
+    "js/ts.implicitProjectConfig.strict"
+  ],
+  "Locale": [
+    "typescript.locale"
+  ],
+  "Scope": [
+    "typescript.workspaceSymbols.scope"
+  ],
+  "Prefer Go To Source Definition": [
+    "typescript.preferGoToSourceDefinition",
+    "javascript.preferGoToSourceDefinition"
+  ],
+  "Exclude Library Symbols": [
+    "typescript.workspaceSymbols.excludeLibrarySymbols"
+  ],
+  "Enable Region Diagnostics": [
+    "typescript.tsserver.enableRegionDiagnostics"
+  ],
+  "Auto Imports": [
+    "javascript.suggest.autoImports",
+    "typescript.suggest.autoImports"
+  ],
+  "Names": [
+    "javascript.suggest.names"
+  ],
+  "Complete Function Calls": [
+    "javascript.suggest.completeFunctionCalls",
+    "typescript.suggest.completeFunctionCalls"
+  ],
+  "Paths": [
+    "javascript.suggest.paths",
+    "typescript.suggest.paths"
+  ],
+  "Complete JS Docs": [
+    "javascript.suggest.completeJSDocs",
+    "typescript.suggest.completeJSDocs"
+  ],
+  "Generate Returns": [
+    "javascript.suggest.jsdoc.generateReturns",
+    "typescript.suggest.jsdoc.generateReturns"
+  ],
+  "Include Automatic Optional Chain Completions": [
+    "javascript.suggest.includeAutomaticOptionalChainCompletions",
+    "typescript.suggest.includeAutomaticOptionalChainCompletions"
+  ],
+  "Include Completions For Import Statements": [
+    "javascript.suggest.includeCompletionsForImportStatements",
+    "typescript.suggest.includeCompletionsForImportStatements"
+  ],
+  "Quote Style": [
+    "javascript.preferences.quoteStyle",
+    "typescript.preferences.quoteStyle"
+  ],
+  "Import Module Specifier": [
+    "javascript.preferences.importModuleSpecifier",
+    "typescript.preferences.importModuleSpecifier"
+  ],
+  "Import Module Specifier Ending": [
+    "javascript.preferences.importModuleSpecifierEnding",
+    "typescript.preferences.importModuleSpecifierEnding"
+  ],
+  "Jsx Attribute Completion Style": [
+    "javascript.preferences.jsxAttributeCompletionStyle",
+    "typescript.preferences.jsxAttributeCompletionStyle"
+  ],
+  "Include Package JSON Auto Imports": [
+    "typescript.preferences.includePackageJsonAutoImports"
+  ],
+  "Auto Import File Exclude Patterns": [
+    "javascript.preferences.autoImportFileExcludePatterns",
+    "typescript.preferences.autoImportFileExcludePatterns"
+  ],
+  "Auto Import Specifier Exclude Regexes": [
+    "javascript.preferences.autoImportSpecifierExcludeRegexes",
+    "typescript.preferences.autoImportSpecifierExcludeRegexes"
+  ],
+  "Prefer Type Only Auto Imports": [
+    "typescript.preferences.preferTypeOnlyAutoImports"
+  ],
+  "Use Aliases For Renames": [
+    "javascript.preferences.useAliasesForRenames",
+    "typescript.preferences.useAliasesForRenames"
+  ],
+  "Rename Matching Jsx Tags": [
+    "javascript.preferences.renameMatchingJsxTags",
+    "typescript.preferences.renameMatchingJsxTags"
+  ],
+  "Organize Imports": [
+    "javascript.preferences.organizeImports",
+    "typescript.preferences.organizeImports"
+  ],
+  "Insert Space After Comma Delimiter": [
+    "javascript.format.insertSpaceAfterCommaDelimiter",
+    "typescript.format.insertSpaceAfterCommaDelimiter"
+  ],
+  "Insert Space After Constructor": [
+    "javascript.format.insertSpaceAfterConstructor",
+    "typescript.format.insertSpaceAfterConstructor"
+  ],
+  "Insert Space After Semicolon In For Statements": [
+    "javascript.format.insertSpaceAfterSemicolonInForStatements",
+    "typescript.format.insertSpaceAfterSemicolonInForStatements"
+  ],
+  "Insert Space Before And After Binary Operators": [
+    "javascript.format.insertSpaceBeforeAndAfterBinaryOperators",
+    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators"
+  ],
+  "Insert Space After Keywords In Control Flow Statements": [
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements",
+    "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements"
+  ],
+  "Insert Space After Function Keyword For Anonymous Functions": [
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions",
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions"
+  ],
+  "Insert Space Before Function Parenthesis": [
+    "javascript.format.insertSpaceBeforeFunctionParenthesis",
+    "typescript.format.insertSpaceBeforeFunctionParenthesis"
+  ],
+  "Insert Space After Opening And Before Closing Nonempty Parenthesis": [
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis",
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis"
+  ],
+  "Insert Space After Opening And Before Closing Nonempty Brackets": [
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets",
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets"
+  ],
+  "Insert Space After Opening And Before Closing Nonempty Braces": [
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces",
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces"
+  ],
+  "Insert Space After Opening And Before Closing Empty Braces": [
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces",
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces"
+  ],
+  "Insert Space After Opening And Before Closing Template String Braces": [
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces",
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces"
+  ],
+  "Insert Space After Opening And Before Closing Jsx Expression Braces": [
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces",
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces"
+  ],
+  "Insert Space After Type Assertion": [
+    "typescript.format.insertSpaceAfterTypeAssertion"
+  ],
+  "Place Open Brace On New Line For Functions": [
+    "javascript.format.placeOpenBraceOnNewLineForFunctions",
+    "typescript.format.placeOpenBraceOnNewLineForFunctions"
+  ],
+  "Place Open Brace On New Line For Control Blocks": [
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks",
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks"
+  ],
+  "Semicolons": [
+    "javascript.format.semicolons",
+    "typescript.format.semicolons"
+  ],
+  "Indent Switch Case": [
+    "javascript.format.indentSwitchCase",
+    "typescript.format.indentSwitchCase"
+  ],
+  "Suppress When Argument Matches Name": [
+    "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName",
+    "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName"
+  ],
+  "Suppress When Type Matches Name": [
+    "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName",
+    "javascript.inlayHints.variableTypes.suppressWhenTypeMatchesName"
+  ],
+  "Node Path": [
+    "typescript.tsserver.nodePath"
+  ],
+  "Npm": [
+    "typescript.npm"
+  ],
+  "Npm Is Installed": [
+    "typescript.check.npmIsInstalled"
+  ],
+  "Suppress Semantic Errors": [
+    "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors"
+  ],
+  "Use Syntax Server": [
+    "typescript.tsserver.useSyntaxServer"
+  ],
+  "Max TS Server Memory": [
+    "typescript.tsserver.maxTsServerMemory"
+  ],
+  "Enable Project Diagnostics": [
+    "typescript.tsserver.experimental.enableProjectDiagnostics"
+  ],
+  "Watch Options": [
+    "typescript.tsserver.watchOptions"
+  ],
+  "Enable Tracing": [
+    "typescript.tsserver.enableTracing"
+  ],
+  "Plugin Paths": [
+    "typescript.tsserver.pluginPaths"
+  ],
+  "Environment Variables": [
+    "claudeCode.environmentVariables"
+  ],
+  "Use Terminal": [
+    "claudeCode.useTerminal"
+  ],
+  "Allow Dangerously Skip Permissions": [
+    "claudeCode.allowDangerouslySkipPermissions"
+  ],
+  "Claude Process Wrapper": [
+    "claudeCode.claudeProcessWrapper"
+  ],
+  "Respect Git Ignore": [
+    "claudeCode.respectGitIgnore"
+  ],
+  "Initial Permission Mode": [
+    "claudeCode.initialPermissionMode"
+  ],
+  "Disable Login Prompt": [
+    "claudeCode.disableLoginPrompt"
+  ],
+  "Autosave": [
+    "claudeCode.autosave"
+  ],
+  "Focus View": [
+    "claudeCode.focusView"
+  ],
+  "Use Ctrl Enter To Send": [
+    "claudeCode.useCtrlEnterToSend"
+  ],
+  "Lock Editor Groups": [
+    "claudeCode.lockEditorGroups"
+  ],
+  "Enable New Conversation Shortcut": [
+    "claudeCode.enableNewConversationShortcut"
+  ],
+  "Enable Reopen Closed Session Shortcut": [
+    "claudeCode.enableReopenClosedSessionShortcut"
+  ],
+  "Hide Onboarding": [
+    "claudeCode.hideOnboarding"
+  ],
+  "Attach Open File": [
+    "claudeCode.attachOpenFile"
+  ],
+  "Continue After Reload": [
+    "claudeCode.continueAfterReload"
+  ],
+  "Scroll To Bottom On Send": [
+    "claudeCode.scrollToBottomOnSend"
+  ],
+  "Archive Inactive Sessions": [
+    "claudeCode.archiveInactiveSessions"
+  ],
+  "Use Python Environment": [
+    "claudeCode.usePythonEnvironment"
+  ],
+  "Show Welcome": [
+    "go.showWelcome"
+  ],
+  "Build On Save": [
+    "go.buildOnSave"
+  ],
+  "Build Flags": [
+    "go.buildFlags"
+  ],
+  "Build Tags": [
+    "go.buildTags"
+  ],
+  "Test Tags": [
+    "go.testTags"
+  ],
+  "Disable Concurrent Tests": [
+    "go.disableConcurrentTests"
+  ],
+  "Install Dependencies When Building": [
+    "go.installDependenciesWhenBuilding"
+  ],
+  "Lint On Save": [
+    "go.lintOnSave"
+  ],
+  "Lint Tool": [
+    "go.lintTool"
+  ],
+  "Lint Flags": [
+    "go.lintFlags"
+  ],
+  "Vet On Save": [
+    "go.vetOnSave"
+  ],
+  "Vet Flags": [
+    "go.vetFlags"
+  ],
+  "Format Tool": [
+    "go.formatTool"
+  ],
+  "Format Flags": [
+    "go.formatFlags"
+  ],
+  "Infer Gopath": [
+    "go.inferGopath"
+  ],
+  "Gopath": [
+    "go.gopath"
+  ],
+  "Tools Gopath": [
+    "go.toolsGopath"
+  ],
+  "Goroot": [
+    "go.goroot"
+  ],
+  "Test On Save": [
+    "go.testOnSave"
+  ],
+  "Cover On Save": [
+    "go.coverOnSave"
+  ],
+  "Cover On Test Package": [
+    "go.coverOnTestPackage"
+  ],
+  "Cover On Single Test": [
+    "go.coverOnSingleTest"
+  ],
+  "Cover On Single Test File": [
+    "go.coverOnSingleTestFile"
+  ],
+  "Cover Mode": [
+    "go.coverMode"
+  ],
+  "Cover Show Counts": [
+    "go.coverShowCounts"
+  ],
+  "Coverage Options": [
+    "go.coverageOptions"
+  ],
+  "Coverage Decorator": [
+    "go.coverageDecorator"
+  ],
+  "Test Timeout": [
+    "go.testTimeout",
+    "rubyLsp.testTimeout"
+  ],
+  "Test Env Vars": [
+    "go.testEnvVars"
+  ],
+  "Test Env File": [
+    "go.testEnvFile"
+  ],
+  "Test Flags": [
+    "go.testFlags"
+  ],
+  "Package Display Mode": [
+    "go.testExplorer.packageDisplayMode"
+  ],
+  "Always Run Benchmarks": [
+    "go.testExplorer.alwaysRunBenchmarks"
+  ],
+  "Concatenate Messages": [
+    "go.testExplorer.concatenateMessages"
+  ],
+  "Show Dynamic Subtests In Editor": [
+    "go.testExplorer.showDynamicSubtestsInEditor"
+  ],
+  "Show Output": [
+    "go.testExplorer.showOutput"
+  ],
+  "Experiments": [
+    "go.experiments"
+  ],
+  "Generate Tests Flags": [
+    "go.generateTestsFlags"
+  ],
+  "Tools Env Vars": [
+    "go.toolsEnvVars"
+  ],
+  "Use Language Server": [
+    "go.useLanguageServer"
+  ],
+  "Language Server Flags": [
+    "go.languageServerFlags"
+  ],
+  "Level": [
+    "go.logging.level",
+    "python.logging.level",
+    "jupyter.logging.level"
+  ],
+  "Go": [
+    "go.toolsManagement.go"
+  ],
+  "Check For Updates": [
+    "go.toolsManagement.checkForUpdates"
+  ],
+  "Enable Code Lens": [
+    "go.enableCodeLens"
+  ],
+  "Add Tags": [
+    "go.addTags"
+  ],
+  "Remove Tags": [
+    "go.removeTags"
+  ],
+  "Playground": [
+    "go.playground"
+  ],
+  "Prompt": [
+    "go.survey.prompt"
+  ],
+  "Editor Context Menu Commands": [
+    "go.editorContextMenuCommands"
+  ],
+  "Delve Config": [
+    "go.delveConfig"
+  ],
+  "Alternate Tools": [
+    "go.alternateTools"
+  ],
+  "Provide Default": [
+    "go.tasks.provideDefault"
+  ],
+  "Activate Environment": [
+    "go.terminal.activateEnvironment",
+    "python.terminal.activateEnvironment"
+  ],
+  "Gopls": [
+    "gopls"
+  ],
+  "Vulncheck": [
+    "go.diagnostic.vulncheck"
+  ],
+  "Assign Variable Types": [
+    "go.inlayHints.assignVariableTypes"
+  ],
+  "Composite Literal Fields": [
+    "go.inlayHints.compositeLiteralFields"
+  ],
+  "Composite Literal Types": [
+    "go.inlayHints.compositeLiteralTypes"
+  ],
+  "Constant Values": [
+    "go.inlayHints.constantValues"
+  ],
+  "Function Type Parameters": [
+    "go.inlayHints.functionTypeParameters"
+  ],
+  "Parameter Names": [
+    "go.inlayHints.parameterNames"
+  ],
+  "Range Variable Types": [
+    "go.inlayHints.rangeVariableTypes"
+  ],
+  "Ignored Error": [
+    "go.inlayHints.ignoredError"
+  ],
+  "Expand Menus": [
+    "google.datacloud.expandMenus"
+  ],
+  "Recent Projects Enabled": [
+    "google.datacloud.recentProjectsEnabled"
+  ],
+  "Project": [
+    "google.datacloud.project",
+    "google.cloud.project",
+    "google.datacloud.composer.project"
+  ],
+  "Starred Projects": [
+    "google.datacloud.starredProjects"
+  ],
+  "Billing Quota Project": [
+    "google.cloud.billingQuotaProject"
+  ],
+  "Gcloud Path": [
+    "google.datacloud.gcloudPath"
+  ],
+  "Bigquery Region": [
+    "google.datacloud.bigqueryRegion"
+  ],
+  "Region": [
+    "google.datacloud.composer.region",
+    "google.cloud.region"
+  ],
+  "Install Location": [
+    "google.datacloud.agent.skills.installLocation"
+  ],
+  "In Cell Monitoring Enabled": [
+    "google.datacloud.spark.notebooks.inCellMonitoringEnabled"
+  ],
+  "Execute Cell Tool For Notebook MCP": [
+    "google.datacloud.executeCellToolForNotebookMCP"
+  ],
+  "Execute Cell Tool Consent": [
+    "google.datacloud.executeCellToolConsent"
+  ],
+  "Use Script As Executable": [
+    "clangd.useScriptAsExecutable"
+  ],
+  "Arguments": [
+    "clangd.arguments"
+  ],
+  "Trace": [
+    "clangd.trace"
+  ],
+  "Fallback Flags": [
+    "clangd.fallbackFlags"
+  ],
+  "Server Completion Ranking": [
+    "clangd.serverCompletionRanking"
+  ],
+  "Restart After Crash": [
+    "clangd.restartAfterCrash"
+  ],
+  "Check Updates": [
+    "clangd.checkUpdates"
+  ],
+  "On Config Changed": [
+    "clangd.onConfigChanged"
+  ],
+  "On Config Changed Force Enable": [
+    "clangd.onConfigChangedForceEnable"
+  ],
+  "Detect Extension Conflicts": [
+    "clangd.detectExtensionConflicts"
+  ],
+  "Use Background Highlight": [
+    "clangd.inactiveRegions.useBackgroundHighlight"
+  ],
+  "Enable Code Completion": [
+    "clangd.enableCodeCompletion"
+  ],
+  "Enable Hover": [
+    "clangd.enableHover"
+  ],
+  "Lsp Path": [
+    "pyrefly.lspPath"
+  ],
+  "Lsp Arguments": [
+    "pyrefly.lspArguments"
+  ],
+  "Disable Language Services": [
+    "python.pyrefly.disableLanguageServices"
+  ],
+  "Disable Type Errors": [
+    "python.pyrefly.disableTypeErrors"
+  ],
+  "Type Checking Mode": [
+    "python.pyrefly.typeCheckingMode"
+  ],
+  "Display Type Errors": [
+    "python.pyrefly.displayTypeErrors"
+  ],
+  "Disabled Language Services": [
+    "python.pyrefly.disabledLanguageServices"
+  ],
+  "Show Hover Go To Links": [
+    "python.analysis.showHoverGoToLinks"
+  ],
+  "Complete Function Parens": [
+    "python.analysis.completeFunctionParens"
+  ],
+  "Auto Import Completions": [
+    "python.analysis.autoImportCompletions"
+  ],
+  "Diagnostic Mode": [
+    "python.analysis.diagnosticMode",
+    "python.pyrefly.diagnosticMode"
+  ],
+  "Import Format": [
+    "python.analysis.importFormat"
+  ],
+  "Inlay Hint Debounce Ms": [
+    "python.analysis.inlayHintDebounceMs"
+  ],
+  "Sync Notebooks": [
+    "python.pyrefly.syncNotebooks"
+  ],
+  "Runnable Code Lens": [
+    "python.pyrefly.runnableCodeLens"
+  ],
+  "Stream Diagnostics": [
+    "python.pyrefly.streamDiagnostics"
+  ],
+  "Comment Folding Ranges": [
+    "pyrefly.commentFoldingRanges"
+  ],
+  "Config Path": [
+    "python.pyrefly.configPath"
+  ],
+  "Debug Just My Code": [
+    "debugpy.debugJustMyCode",
+    "jupyter.debugJustMyCode"
+  ],
+  "Show Python Inline Values": [
+    "debugpy.showPythonInlineValues"
+  ],
+  "Active State Tool Path": [
+    "python.activeStateToolPath"
+  ],
+  "Extra Paths": [
+    "python.autoComplete.extraPaths"
+  ],
+  "Content Button": [
+    "python.createEnvironment.contentButton"
+  ],
+  "Trigger": [
+    "python.createEnvironment.trigger"
+  ],
+  "Conda Path": [
+    "python.condaPath"
+  ],
+  "Default Interpreter Path": [
+    "python.defaultInterpreterPath"
+  ],
+  "Env File": [
+    "python.envFile"
+  ],
+  "Use Environments Extension": [
+    "python.useEnvironmentsExtension"
+  ],
+  "Opt Into": [
+    "python.experiments.optInto",
+    "jupyter.experiments.optInto"
+  ],
+  "Opt Out From": [
+    "python.experiments.optOutFrom",
+    "jupyter.experiments.optOutFrom"
+  ],
+  "Global Module Installation": [
+    "python.globalModuleInstallation"
+  ],
+  "Language Server": [
+    "python.languageServer"
+  ],
+  "Info Visibility": [
+    "python.interpreter.infoVisibility"
+  ],
+  "Severity": [
+    "python.missingPackage.severity"
+  ],
+  "Locator": [
+    "python.locator"
+  ],
+  "Pipenv Path": [
+    "python.pipenvPath"
+  ],
+  "Poetry Path": [
+    "python.poetryPath"
+  ],
+  "Pixi Tool Path": [
+    "python.pixiToolPath"
+  ],
+  "Activate Env In Current Terminal": [
+    "python.terminal.activateEnvInCurrentTerminal"
+  ],
+  "Execute In File Dir": [
+    "python.terminal.executeInFileDir"
+  ],
+  "Focus After Launch": [
+    "python.terminal.focusAfterLaunch"
+  ],
+  "Launch Args": [
+    "python.terminal.launchArgs"
+  ],
+  "Enable REPL Smart Send": [
+    "python.REPL.enableREPLSmartSend"
+  ],
+  "Send To Native REPL": [
+    "python.REPL.sendToNativeREPL"
+  ],
+  "Provide Variables": [
+    "python.REPL.provideVariables"
+  ],
+  "Auto Test Discover On Save Enabled": [
+    "python.testing.autoTestDiscoverOnSaveEnabled"
+  ],
+  "Auto Test Discover On Save Pattern": [
+    "python.testing.autoTestDiscoverOnSavePattern"
+  ],
+  "Debug Port": [
+    "python.testing.debugPort"
+  ],
+  "Prompt To Configure": [
+    "python.testing.promptToConfigure"
+  ],
+  "Pytest Args": [
+    "python.testing.pytestArgs"
+  ],
+  "Pytest Enabled": [
+    "python.testing.pytestEnabled"
+  ],
+  "Pytest Path": [
+    "python.testing.pytestPath"
+  ],
+  "Unittest Args": [
+    "python.testing.unittestArgs"
+  ],
+  "Unittest Enabled": [
+    "python.testing.unittestEnabled"
+  ],
+  "Venv Folders": [
+    "python.venvFolders"
+  ],
+  "Venv Path": [
+    "python.venvPath"
+  ],
+  "Default Env Manager": [
+    "python-envs.defaultEnvManager"
+  ],
+  "Default Package Manager": [
+    "python-envs.defaultPackageManager"
+  ],
+  "Python Projects": [
+    "python-envs.pythonProjects"
+  ],
+  "Show Activate Button": [
+    "python-envs.terminal.showActivateButton"
+  ],
+  "Auto Activation Type": [
+    "python-envs.terminal.autoActivationType"
+  ],
+  "Use Env File": [
+    "python.terminal.useEnvFile"
+  ],
+  "Global Search Paths": [
+    "python-envs.globalSearchPaths"
+  ],
+  "Workspace Search Paths": [
+    "python-envs.workspaceSearchPaths"
+  ],
+  "Always Use Uv": [
+    "python-envs.alwaysUseUv"
+  ],
+  "Show Variable View When Debugging": [
+    "jupyter.showVariableViewWhenDebugging"
+  ],
+  "Widget Script Sources": [
+    "jupyter.widgetScriptSources"
+  ],
+  "Ask For Large Data Frames": [
+    "jupyter.askForLargeDataFrames"
+  ],
+  "Ask For Kernel Restart": [
+    "jupyter.askForKernelRestart"
+  ],
+  "Export With Output Enabled": [
+    "jupyter.exportWithOutputEnabled"
+  ],
+  "Jupyter Launch Timeout": [
+    "jupyter.jupyterLaunchTimeout"
+  ],
+  "Jupyter Launch Retries": [
+    "jupyter.jupyterLaunchRetries"
+  ],
+  "Jupyter Command Line Arguments": [
+    "jupyter.jupyterCommandLineArguments"
+  ],
+  "Notebook File Root": [
+    "jupyter.notebookFileRoot"
+  ],
+  "Use Default Config For Jupyter": [
+    "jupyter.useDefaultConfigForJupyter"
+  ],
+  "Jupyter Interrupt Timeout": [
+    "jupyter.jupyterInterruptTimeout"
+  ],
+  "Execute Selection": [
+    "jupyter.interactiveWindow.textEditor.executeSelection"
+  ],
+  "Normalize Selection": [
+    "jupyter.interactiveWindow.textEditor.normalizeSelection"
+  ],
+  "Split Run File Into Cells": [
+    "jupyter.interactiveWindow.splitRunFileIntoCells"
+  ],
+  "Variable Explorer Exclude": [
+    "jupyter.variableExplorerExclude"
+  ],
+  "Code Regex": [
+    "jupyter.interactiveWindow.cellMarker.codeRegex"
+  ],
+  "Markdown Regex": [
+    "jupyter.interactiveWindow.cellMarker.markdownRegex"
+  ],
+  "Theme Matplotlib Plots": [
+    "jupyter.themeMatplotlibPlots"
+  ],
+  "Decorate Cells": [
+    "jupyter.interactiveWindow.cellMarker.decorateCells"
+  ],
+  "Auto Move To Next Cell": [
+    "jupyter.interactiveWindow.textEditor.autoMoveToNextCell"
+  ],
+  "Allow Unauthorized Remote Connection": [
+    "jupyter.allowUnauthorizedRemoteConnection"
+  ],
+  "Commands": [
+    "jupyter.interactiveWindow.codeLens.commands"
+  ],
+  "Debug Commands": [
+    "jupyter.interactiveWindow.codeLens.debugCommands"
+  ],
+  "Debugpy Dist Path": [
+    "jupyter.debugpyDistPath"
+  ],
+  "Stop On First Line While Debugging": [
+    "jupyter.stopOnFirstLineWhileDebugging"
+  ],
+  "Disable Jupyter Auto Start": [
+    "jupyter.disableJupyterAutoStart"
+  ],
+  "Enable Goto Cell": [
+    "jupyter.interactiveWindow.codeLens.enableGotoCell"
+  ],
+  "Exclude Python Environments": [
+    "jupyter.kernels.excludePythonEnvironments"
+  ],
+  "Trusted": [
+    "jupyter.kernels.trusted"
+  ],
+  "Creation Mode": [
+    "jupyter.interactiveWindow.creationMode"
+  ],
+  "Notebook Repl": [
+    "jupyter.interactiveWindow.notebookRepl"
+  ],
+  "Cell Folding": [
+    "jupyter.interactiveWindow.textEditor.cellFolding"
+  ],
+  "View Column": [
+    "jupyter.interactiveWindow.viewColumn"
+  ],
+  "Magic Commands As Comments": [
+    "jupyter.interactiveWindow.textEditor.magicCommandsAsComments"
+  ],
+  "Python Export Method": [
+    "jupyter.pythonExportMethod"
+  ],
+  "Run Startup Commands": [
+    "jupyter.runStartupCommands"
+  ],
+  "Show Outline Button In Notebook Toolbar": [
+    "jupyter.showOutlineButtonInNotebookToolbar"
+  ],
+  "Auto Add New Cell": [
+    "jupyter.interactiveWindow.textEditor.autoAddNewCell"
+  ],
+  "Python Completion Trigger Characters": [
+    "jupyter.pythonCompletionTriggerCharacters"
+  ],
+  "Log Kernel Output Separately": [
+    "jupyter.logKernelOutputSeparately"
+  ],
+  "Exclude User Site Packages": [
+    "jupyter.excludeUserSitePackages"
+  ],
+  "Enable Extended Kernel Completions": [
+    "jupyter.enableExtendedKernelCompletions"
+  ],
+  "Enable Extended Python Kernel Completions": [
+    "jupyter.enableExtendedPythonKernelCompletions"
+  ],
+  "Enable Kernel Completions": [
+    "jupyter.enableKernelCompletions"
+  ],
+  "Format Stack Traces": [
+    "jupyter.formatStackTraces"
+  ],
+  "Completion Trigger Characters": [
+    "jupyter.completionTriggerCharacters"
+  ],
+  "Comment Code Lens Enabled": [
+    "chatgpt.commentCodeLensEnabled"
+  ],
+  "Cli Executable": [
+    "chatgpt.cliExecutable"
+  ],
+  "Open On Startup": [
+    "chatgpt.openOnStartup"
+  ],
+  "Follow Up Queue Mode": [
+    "chatgpt.followUpQueueMode"
+  ],
+  "Composer Enter Behavior": [
+    "chatgpt.composerEnterBehavior"
+  ],
+  "Review Delivery": [
+    "chatgpt.reviewDelivery"
+  ],
+  "Locale Override": [
+    "chatgpt.localeOverride"
+  ],
+  "Run Codex In Windows Subsystem For Linux": [
+    "chatgpt.runCodexInWindowsSubsystemForLinux"
+  ],
+  "Enabled Features": [
+    "rubyLsp.enabledFeatures"
+  ],
+  "Features Configuration": [
+    "rubyLsp.featuresConfiguration"
+  ],
+  "Addon Settings": [
+    "rubyLsp.addonSettings"
+  ],
+  "Ruby Version Manager": [
+    "rubyLsp.rubyVersionManager"
+  ],
+  "Custom Ruby Command": [
+    "rubyLsp.customRubyCommand"
+  ],
+  "Formatter": [
+    "rubyLsp.formatter"
+  ],
+  "Linters": [
+    "rubyLsp.linters"
+  ],
+  "Bundle Gemfile": [
+    "rubyLsp.bundleGemfile"
+  ],
+  "Pull Diagnostics On": [
+    "rubyLsp.pullDiagnosticsOn"
+  ],
+  "Use Bundler Compose": [
+    "rubyLsp.useBundlerCompose"
+  ],
+  "Bypass Typechecker": [
+    "rubyLsp.bypassTypechecker"
+  ],
+  "Ruby Executable Path": [
+    "rubyLsp.rubyExecutablePath"
+  ],
+  "Indexing": [
+    "rubyLsp.indexing"
+  ],
+  "Erb Support": [
+    "rubyLsp.erbSupport"
+  ],
+  "Feature Flags": [
+    "rubyLsp.featureFlags"
+  ],
+  "Sig Opacity Level": [
+    "rubyLsp.sigOpacityLevel"
+  ]
+}
