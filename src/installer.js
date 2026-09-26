@@ -344,10 +344,18 @@ function patchWslExtension(paths) {
     try {
       try { fs.chmodSync(wslFile, 0o666); } catch (e) {}
       let c = fs.readFileSync(wslFile, 'utf8');
-      if (c.includes('"default distro"')) {
-        c = c.replaceAll('"default distro"', '"Varsayılan Dağıtım"');
-        fs.writeFileSync(wslFile, c, 'utf8');
+      const wslReplacements = [
+        ['"default distro"', '"Varsayılan Dağıtım"'],
+        ['"Close Remote"', '"Uzak Bağlantıyı Kapat"'],
+        ['"Retry"', '"Yeniden Dene"'],
+        ['"Select WSL distro"', '"WSL dağıtımı seçin"'],
+        ['"Select the WSL distro to install"', '"Yüklenecek WSL dağıtımını seçin"'],
+        ['" (Workspace)"', '" (Çalışma Alanı)"'],
+      ];
+      for (const [en, tr] of wslReplacements) {
+        c = c.replaceAll(en, tr);
       }
+      fs.writeFileSync(wslFile, c, 'utf8');
     } catch (e) {}
   }
 }
@@ -441,7 +449,14 @@ function patchAntigravityRemoteExtensions(paths) {
       replacements: [
         ['"Enable SSH agent forwarding when connecting to devcontainers."', '"Dev container\'lara bağlanırken SSH aracısı iletimini etkinleştirin."'],
         ['"Disable the server checksum verification. This is only recommended for development and testing."', '"Sunucu sağlama toplamı doğrulamasını devre dışı bırakın. Bu yalnızca geliştirme ve test için önerilir."'],
-        ['"Use devcontainers within Antigravity"', '"Antigravity içinde dev container\'ları kullanın"']
+        ['"Use devcontainers within Antigravity"', '"Antigravity içinde dev container\'ları kullanın"'],
+        ['"Dev Containers (Antigravity)"', '"Geliştirme Kapsayıcıları (Antigravity)"'],
+        ['"Reopen in Container"', '"Kapsayıcıda Yeniden Aç"'],
+        ['"Show Antigravity Dev Containers Log"', '"Antigravity Geliştirme Kapsayıcıları Günlüğünü Göster"'],
+        ['"Open Folder in Container"', '"Klasörü Kapsayıcıda Aç"'],
+        ['"Reopen Folder Locally"', '"Klasörü Yerel Olarak Yeniden Aç"'],
+        ['"Attach to Running Container"', '"Çalışan Kapsayıcıya Bağlan"'],
+        ['"category": "Dev Containers"', '"category": "Geliştirme Kapsayıcıları"']
       ]
     },
     {
@@ -452,14 +467,45 @@ function patchAntigravityRemoteExtensions(paths) {
         ['"Experimental: The URL from where the Antigravity server will be downloaded. The following variables can be substituted: ${os}, ${arch}, ${ideVersion}, ${vscodeVersion} ${commit}, ${quality}."', '"Deneysel: Antigravity sunucusunun indirileceği URL. Şu değişkenler yerine konulabilir: ${os}, ${arch}, ${ideVersion}, ${vscodeVersion} ${commit}, ${quality}."'],
         ['"Experimental: The name of the server binary, use this if you are using a client without a corresponding server release, or if you are iterating on remote extensions."', '"Deneysel: Sunucu ikili dosyasının adı; ilgili sunucu sürümü olmayan bir istemci kullanıyorsanız veya uzak uzantılar üzerinde çalışıyorsanız bunu kullanın."'],
         ['"Experimental: Disable the server checksum verification. This is only recommended for development and testing."', '"Deneysel: Sunucu sağlama toplamı doğrulamasını devre dışı bırakın. Bu yalnızca geliştirme ve test için önerilir."'],
-        ['"Connect to remote machines over SSH using Antigravity"', '"Antigravity kullanarak SSH üzerinden uzak makinelere bağlanın"']
+        ['"Connect to remote machines over SSH using Antigravity"', '"Antigravity kullanarak SSH üzerinden uzak makinelere bağlanın"'],
+        ['"SSH (Antigravity)"', '"SSH Hedefleri (Antigravity)"'],
+        ['"Close SSH Process"', '"SSH İşlemini Kapat"'],
+        ['"Connect to SSH Host..."', '"SSH Ana Bilgisayarına Bağlan..."'],
+        ['"Connect to SSH Host in Current Window..."', '"Geçerli Pencerede SSH Ana Bilgisayarına Bağlan..."'],
+        ['"Show SSH Log..."', '"SSH Günlüğünü Göster..."'],
+        ['"Connect to SSH Host in New Window"', '"Yeni Pencerede SSH Ana Bilgisayarına Bağlan"'],
+        ['"Connect to SSH Host in Current Window"', '"Geçerli Pencerede SSH Ana Bilgisayarına Bağlan"'],
+        ['"Open on SSH Host in Current Window"', '"Geçerli Pencerede SSH Ana Bilgisayarında Aç"'],
+        ['"Open on SSH Host in New Window"', '"Yeni Pencerede SSH Ana Bilgisayarında Aç"'],
+        ['"Remove from List"', '"Listeden Kaldır"'],
+        ['"Refresh"', '"Yenile"'],
+        ['"Configure"', '"Yapılandır"'],
+        ['"Add New"', '"Yeni Ekle"'],
+        ['"Add Cloudtop URL"', '"Cloudtop URL\'si Ekle"'],
+        ['"category": "Remote-SSH"', '"category": "Uzak-SSH"']
       ]
     },
     {
       dir: 'antigravity-remote-wsl',
       replacements: [
         ['"The URL from where the Antigravity server will be downloaded. The following variables can be substituted: ${os}, ${arch}, ${ideVersion}, ${vscodeVersion} ${commit}, ${quality}."', '"Antigravity sunucusunun indirileceği URL. Şu değişkenler yerine konulabilir: ${os}, ${arch}, ${ideVersion}, ${vscodeVersion} ${commit}, ${quality}."'],
-        ['"Experimental: Disable the server checksum verification. This is only recommended for development and testing."', '"Deneysel: Sunucu sağlama toplamı doğrulamasını devre dışı bırakın. Bu yalnızca geliştirme ve test için önerilir."']
+        ['"Experimental: Disable the server checksum verification. This is only recommended for development and testing."', '"Deneysel: Sunucu sağlama toplamı doğrulamasını devre dışı bırakın. Bu yalnızca geliştirme ve test için önerilir."'],
+        ['"WSL Targets (Antigravity)"', '"WSL Hedefleri (Antigravity)"'],
+        ['"Connect to WSL"', '"WSL\'ye Bağlan"'],
+        ['"Connect to WSL in New Window"', '"Yeni Pencerede WSL\'ye Bağlan"'],
+        ['"Connect to WSL using Distro..."', '"Dağıtım Kullanarak WSL\'ye Bağlan..."'],
+        ['"Connect to WSL using Distro in New Window..."', '"Yeni Pencerede Dağıtım Kullanarak WSL\'ye Bağlan..."'],
+        ['"Show Log"', '"Günlüğü Göster"'],
+        ['"Connect in New Window"', '"Yeni Pencerede Bağlan"'],
+        ['"Connect in Current Window"', '"Geçerli Pencerede Bağlan"'],
+        ['"Open in Current Window"', '"Geçerli Pencerede Aç"'],
+        ['"Open in New Window"', '"Yeni Pencerede Aç"'],
+        ['"Remove From Recent List"', '"Son Kullanılanlar Listesinden Kaldır"'],
+        ['"Refresh"', '"Yenile"'],
+        ['"Add a Distro"', '"Dağıtım Ekle"'],
+        ['"Set as Default Distro"', '"Varsayılan Dağıtım Olarak Ayarla"'],
+        ['"Delete Distro"', '"Dağıtımı Sil"'],
+        ['"category": "Remote-WSL"', '"category": "Uzak-WSL"']
       ]
     },
     {
