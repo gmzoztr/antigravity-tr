@@ -504,11 +504,11 @@
       },
       {
         "search": "createTextNode(\" as a marketplace. This can be changed in \")",
-        "replace": "createTextNode(\" kullanır. Bu ayar, \")"
+        "replace": "createTextNode(\" kullanır. Bu tercihi \")"
       },
       {
-        "search": "`${this.productService.nameShort} settings`)",
-        "replace": "`${this.productService.nameShort} ayarlarından`)"
+        "search": "`${this.productService.nameShort} settings`);i.onclick=()=>this.commandService.executeCommand(\"workbench.action.openAntigravitySettingsWithId\",\"antigravity.marketplaceExtensionGalleryServiceURL\",\"Editor\"),this.marketplaceMessage.appendChild(i),this.marketplaceMessage.appendChild(document.createTextNode(\".\"))",
+        "replace": "`${this.productService.nameShort} ayarları`);i.onclick=()=>this.commandService.executeCommand(\"workbench.action.openAntigravitySettingsWithId\",\"antigravity.marketplaceExtensionGalleryServiceURL\",\"Editor\"),this.marketplaceMessage.appendChild(i),this.marketplaceMessage.appendChild(document.createTextNode(\" üzerinden değiştirebilirsiniz.\"))"
       },
       {
         "search": "var S2;(function(t){t.ON=\"On\",t.OFF=\"Off\"})(S2||(S2={}));",

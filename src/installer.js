@@ -244,93 +244,115 @@ function patchAntigravityExtension(paths) {
  * Google Cloud Data Agent Kit eklentisindeki (no project) ve menüleri yamalar.
  */
 function patchGoogleCloudExtension(paths) {
-  if (!paths.ide || !paths.ide.extensionsDir) return;
-  const dcDir = path.join(paths.ide.extensionsDir, 'googlecloudtools.datacloud-0.11.0-universal');
-  if (!fs.existsSync(dcDir)) return;
+  const dcDirs = [];
+  const searchBases = [
+    paths.ide?.extensionsDir,
+    path.join(process.env.USERPROFILE || 'C:\\Users\\Work-D', '.vscode', 'extensions')
+  ];
 
-  const jsFile = path.join(dcDir, 'datacloud_vscode.js');
-  if (fs.existsSync(jsFile)) {
-    try {
-      try { fs.chmodSync(jsFile, 0o666); } catch (e) {}
-      let c = fs.readFileSync(jsFile, 'utf8');
-      
-      const jsReplacements = [
-        ['(no project)', '(Proje Seçilmedi)'],
-        ['(proje seçilmedi)', '(Proje Seçilmedi)'],
-        ['`Signed in as ', '`Şununla oturum açıldı: '],
-        ['"Google Cloud Data Agent Kit - No Project Selected"', '"Google Cloud Data Agent Kit - Proje Seçilmedi"'],
-        ['"$(cloud) Select a Google Cloud project"', '"$(cloud) Bir Google Cloud Projesi Seçin"'],
-        ['"$(cloud) Bir Google Cloud projesi seçin"', '"$(cloud) Bir Google Cloud Projesi Seçin"'],
-        ['"Google Cloud: Switch Project"', '"Google Cloud: Proje Değiştir"'],
-        ['"Google Cloud: Set Billing/Quota Project"', '"Google Cloud: Faturalandırma/Kota Projesini Belirle"'],
-        ['"Default (Same as Project)"', '"Varsayılan (Proje ile Aynı)"'],
-        ['"Google Cloud: Sign Out"', '"Google Cloud: Oturumu Kapat"'],
-        ['"Google Cloud: Reset Billing/Quota Project to Default"', '"Google Cloud: Faturalandırma/Kota Projesini Varsayılana Sıfırla"'],
-        ['"Use the selected Google Cloud Project"', '"Seçilen Google Cloud Projesini Kullan"'],
-        ['"Select Billing/Quota Project"', '"Faturalandırma/Kota Projesini Seçin"'],
-        ['"Sign Out of Google Cloud"', '"Google Cloud Oturumunu Kapat"'],
-        ['label:"Starred Projects"', 'label:"Yıldızlı Projeler"'],
-        ['label:"Recent Projects"', 'label:"Son Kullanılan Projeler"'],
-        ['tooltip:"Remove from recent projects"', 'tooltip:"Son Kullanılan Projelerden Kaldır"'],
-        ['tooltip:"Star project"', 'tooltip:"Projeyi Yıldızla"'],
-        ['tooltip:"Unstar project"', 'tooltip:"Proje Yıldızını Kaldır"'],
-        ['tooltip:"Sign in to Google to manage projects"', 'tooltip:"Projeleri yönetmek için Google\'da oturum açın"'],
-        ['b.title="Google Cloud Data Agent Kit Auth Status"', 'b.title="Google Cloud Data Agent Kit Kimlik Doğrulama Durumu"'],
-        ['"Sign out of Google Cloud Data Agent Kit Extension"', '"Google Cloud Data Agent Kit Eklentisi Oturumunu Kapat"'],
-        ['label:"$(sign-out) Sign Out"', 'label:"$(sign-out) Oturumu Kapat"'],
-        ['"Please select a Google Cloud project to continue. If you don\'t have a project yet, you can create one in Cloud Console."', '"Devam etmek için lütfen bir Google Cloud projesi seçin. Henüz bir projeniz yoksa Cloud Console\'da oluşturabilirsiniz."'],
-        ['"Select a project"', '"Bir Proje Seçin"'],
-        ['"Create a project in Cloud Console"', '"Cloud Console\'da bir proje oluşturun"'],
-        ['"Please set a Google Cloud region to continue."', '"Devam etmek için lütfen bir Google Cloud bölgesi belirleyin."'],
-        ['"Set region"', '"Bölge Belirle"'],
-        ['NO_ITEMS_TO_DISPLAY_LABEL="No items to display"', 'NO_ITEMS_TO_DISPLAY_LABEL="Görüntülenecek Öğe Yok"'],
-        ['title:"Load more"', 'title:"Daha Fazla Yükle"'],
-        ['title:"Report Bug"', 'title:"Hata Bildir"'],
-        ['title:"Open Settings"', 'title:"Ayarları Aç"'],
-        ['title:"Open Quick Guide"', 'title:"Hızlı Başlangıç Kılavuzunu Aç"'],
-        ['PANEL_TITLE:"Quick Start Guide",LABEL:"Quick Start Guide"', 'PANEL_TITLE:"Hızlı Başlangıç Kılavuzu",LABEL:"Hızlı Başlangıç Kılavuzu"']
-      ];
-
-      for (const [s, r] of jsReplacements) {
-        if (c.includes(s)) {
-          c = c.replaceAll(s, r);
+  for (const base of searchBases) {
+    if (base && fs.existsSync(base)) {
+      try {
+        for (const d of fs.readdirSync(base)) {
+          if (d.startsWith('googlecloudtools.datacloud')) {
+            dcDirs.push(path.join(base, d));
+          }
         }
-      }
-
-      fs.writeFileSync(jsFile, c, 'utf8');
-    } catch (e) {}
+      } catch (e) {}
+    }
   }
 
-  const pkgFile = path.join(dcDir, 'package.json');
-  if (fs.existsSync(pkgFile)) {
-    try {
-      try { fs.chmodSync(pkgFile, 0o666); } catch (e) {}
-      let p = fs.readFileSync(pkgFile, 'utf8');
-      const pkgReplacements = [
-        ['"title": "Databases"', '"title": "Veritabanları"'],
-        ['"title": "Data Engineering"', '"title": "Veri Mühendisliği"'],
-        ['"title": "Catalog"', '"title": "Katalog"'],
-        ['"title": "Compiled Query"', '"title": "Derlenmiş Sorgu"'],
-        ['"title": "Runs History"', '"title": "Çalıştırma Geçmişi"'],
-        ['"title": "Query Results"', '"title": "Sorgu Sonuçları"'],
-        ['"title": "Orchestration Pipeline Runs History"', '"title": "Orkestrasyon İşlem Hattı Çalıştırma Geçmişi"'],
-        ['"name": "Catalog"', '"name": "Katalog"'],
-        ['"name": "Databases"', '"name": "Veritabanları"'],
-        ['"name": "Data Engineering"', '"name": "Veri Mühendisliği"'],
-        ['"name": "Compiled Query"', '"name": "Derlenmiş Sorgu"'],
-        ['"name": "Runs History"', '"name": "Çalıştırma Geçmişi"'],
-        ['"name": "Query Results"', '"name": "Sorgu Sonuçları"'],
-        ['"name": "General"', '"name": "Genel"'],
-        ['"name": "Managed Service for Apache Airflow Runs History"', '"name": "Managed Service for Apache Airflow Çalıştırma Geçmişi"']
-      ];
+  if (dcDirs.length === 0) return;
 
-      for (const [s, r] of pkgReplacements) {
-        if (p.includes(s)) {
-          p = p.replaceAll(s, r);
+  const jsReplacements = [
+    ['(no project)', '(Proje Seçilmedi)'],
+    ['(proje seçilmedi)', '(Proje Seçilmedi)'],
+    ['`Signed in as ', '`Şununla oturum açıldı: '],
+    ['"Google Cloud Data Agent Kit - No Project Selected"', '"Google Cloud Data Agent Kit - Proje Seçilmedi"'],
+    ['"$(cloud) Select a Google Cloud project"', '"$(cloud) Bir Google Cloud Projesi Seçin"'],
+    ['"$(cloud) Bir Google Cloud projesi seçin"', '"$(cloud) Bir Google Cloud Projesi Seçin"'],
+    ['"Google Cloud: Switch Project"', '"Google Cloud: Proje Değiştir"'],
+    ['"Google Cloud: Set Billing/Quota Project"', '"Google Cloud: Faturalandırma/Kota Projesini Belirle"'],
+    ['"Default (Same as Project)"', '"Varsayılan (Proje ile Aynı)"'],
+    ['"Google Cloud: Sign Out"', '"Google Cloud: Oturumu Kapat"'],
+    ['"Google Cloud: Reset Billing/Quota Project to Default"', '"Google Cloud: Faturalandırma/Kota Projesini Varsayılana Sıfırla"'],
+    ['"Use the selected Google Cloud Project"', '"Seçilen Google Cloud Projesini Kullan"'],
+    ['"Select Billing/Quota Project"', '"Faturalandırma/Kota Projesini Seçin"'],
+    ['"Sign Out of Google Cloud"', '"Google Cloud Oturumunu Kapat"'],
+    ['label:"Starred Projects"', 'label:"Yıldızlı Projeler"'],
+    ['label:"Recent Projects"', 'label:"Son Kullanılan Projeler"'],
+    ['tooltip:"Remove from recent projects"', 'tooltip:"Son Kullanılan Projelerden Kaldır"'],
+    ['tooltip:"Star project"', 'tooltip:"Projeyi Yıldızla"'],
+    ['tooltip:"Unstar project"', 'tooltip:"Proje Yıldızını Kaldır"'],
+    ['tooltip:"Sign in to Google to manage projects"', 'tooltip:"Projeleri yönetmek için Google\'da oturum açın"'],
+    ['b.title="Google Cloud Data Agent Kit Auth Status"', 'b.title="Google Cloud Data Agent Kit Kimlik Doğrulama Durumu"'],
+    ['"Sign out of Google Cloud Data Agent Kit Extension"', '"Google Cloud Data Agent Kit Eklentisi Oturumunu Kapat"'],
+    ['label:"$(sign-out) Sign Out"', 'label:"$(sign-out) Oturumu Kapat"'],
+    ['"Please select a Google Cloud project to continue. If you don\'t have a project yet, you can create one in Cloud Console."', '"Devam etmek için lütfen bir Google Cloud projesi seçin. Henüz bir projeniz yoksa Cloud Console\'da oluşturabilirsiniz."'],
+    ['"Select a project"', '"Bir Proje Seçin"'],
+    ['"Create a project in Cloud Console"', '"Cloud Console\'da bir proje oluşturun"'],
+    ['"Please set a Google Cloud region to continue."', '"Devam etmek için lütfen bir Google Cloud bölgesi belirleyin."'],
+    ['"Set region"', '"Bölge Belirle"'],
+    ['NO_ITEMS_TO_DISPLAY_LABEL="No items to display"', 'NO_ITEMS_TO_DISPLAY_LABEL="Görüntülenecek Öğe Yok"'],
+    ['title:"Load more"', 'title:"Daha Fazla Yükle"'],
+    ['title:"Report Bug"', 'title:"Hata Bildir"'],
+    ['title:"Open Settings"', 'title:"Ayarları Aç"'],
+    ['title:"Open Quick Guide"', 'title:"Hızlı Başlangıç Kılavuzunu Aç"'],
+    ['PANEL_TITLE:"Quick Start Guide",LABEL:"Quick Start Guide"', 'PANEL_TITLE:"Hızlı Başlangıç Kılavuzu",LABEL:"Hızlı Başlangıç Kılavuzu"']
+  ];
+
+  const pkgReplacements = [
+    ['"title": "Databases"', '"title": "Veritabanları"'],
+    ['"title": "Data Engineering"', '"title": "Veri Mühendisliği"'],
+    ['"title": "Catalog"', '"title": "Katalog"'],
+    ['"title": "Compiled Query"', '"title": "Derlenmiş Sorgu"'],
+    ['"title": "Runs History"', '"title": "Çalıştırma Geçmişi"'],
+    ['"title": "Query Results"', '"title": "Sorgu Sonuçları"'],
+    ['"title": "Orchestration Pipeline Runs History"', '"title": "Orkestrasyon İşlem Hattı Çalıştırma Geçmişi"'],
+    ['"title": "Managed Service for Apache Spark"', '"title": "Apache Spark Yönetilen Hizmeti"'],
+    ['"title": "Cloud Storage"', '"title": "Bulut Depolama"'],
+    ['"title": "Google Cloud Data Agent Kit"', '"title": "Google Cloud Veri Ajanı Kiti"'],
+    ['"name": "Catalog"', '"name": "Katalog"'],
+    ['"name": "Databases"', '"name": "Veritabanları"'],
+    ['"name": "Data Engineering"', '"name": "Veri Mühendisliği"'],
+    ['"name": "Compiled Query"', '"name": "Derlenmiş Sorgu"'],
+    ['"name": "Runs History"', '"name": "Çalıştırma Geçmişi"'],
+    ['"name": "Query Results"', '"name": "Sorgu Sonuçları"'],
+    ['"name": "General"', '"name": "Genel"'],
+    ['"name": "Managed Service for Apache Airflow Runs History"', '"name": "Managed Service for Apache Airflow Çalıştırma Geçmişi"'],
+    ['"name": "Managed Service for Apache Spark"', '"name": "Apache Spark Yönetilen Hizmeti"'],
+    ['"name": "Cloud Storage"', '"name": "Bulut Depolama"'],
+    ['"name": "Google Cloud Data Agent Kit"', '"name": "Google Cloud Veri Ajanı Kiti"']
+  ];
+
+  for (const dcDir of dcDirs) {
+    const jsFile = path.join(dcDir, 'datacloud_vscode.js');
+    if (fs.existsSync(jsFile)) {
+      try {
+        try { fs.chmodSync(jsFile, 0o666); } catch (e) {}
+        let c = fs.readFileSync(jsFile, 'utf8');
+        for (const [s, r] of jsReplacements) {
+          if (c.includes(s)) {
+            c = c.replaceAll(s, r);
+          }
         }
-      }
-      fs.writeFileSync(pkgFile, p, 'utf8');
-    } catch (e) {}
+        fs.writeFileSync(jsFile, c, 'utf8');
+      } catch (e) {}
+    }
+
+    const pkgFile = path.join(dcDir, 'package.json');
+    if (fs.existsSync(pkgFile)) {
+      try {
+        try { fs.chmodSync(pkgFile, 0o666); } catch (e) {}
+        let p = fs.readFileSync(pkgFile, 'utf8');
+        for (const [s, r] of pkgReplacements) {
+          if (p.includes(s)) {
+            p = p.replaceAll(s, r);
+          }
+        }
+        fs.writeFileSync(pkgFile, p, 'utf8');
+      } catch (e) {}
+    }
   }
 }
 
