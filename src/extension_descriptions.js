@@ -1,7 +1,7 @@
 /**
  * Antigravity eklentilerinin package.json dosyalarında yer alan İngilizce ayar açıklamalarını,
- * seçeneklerini (enumItemLabels, enumDescriptions), NLS yerelleştirme dosyalarını
- * ve kategori başlıklarını eksiksiz Türkçeleştiren akıllı modül.
+ * seçeneklerini (enumItemLabels, enumDescriptions), NLS yerelleştirme şablonlarını (%key%)
+ * doğrudan Türkçe metinlerle çözen ve kategori başlıklarını eksiksiz Türkçeleştiren akıllı modül.
  */
 
 const fs = require('fs');
@@ -134,7 +134,16 @@ const propertyTranslations = {
   "rubyLsp.testTimeout": "Zaman aşımına uğramadan önce bir testin bitmesi için beklenecek saniye cinsinden süre.",
   "rubyLsp.sigOpacityLevel": "Satır içi RBS açıklama imzaları için opaklık düzeyini denetler.",
   "rubyLsp.erbSupport": "ERB desteğini etkinleştirin.",
-  "rubyLsp.rubyExecutablePath": "Ruby kurulumunun yolu. Sürüm yöneticisi etkinleştirmesi başarısız olursa geri dönüş olarak kullanılır."
+  "rubyLsp.rubyExecutablePath": "Ruby kurulumunun yolu. Sürüm yöneticisi etkinleştirmesi başarısız olursa geri dönüş olarak kullanılır.",
+
+  // Jupyter
+  "jupyter.executionAnalysis.enabled": "Not defterlerinde yürütme analizini etkinleştirmeye yönelik deneysel özellik.",
+
+  // Diğer Yerleşik Eklentiler
+  "github-authentication.preferDeviceCodeFlow": "OAuth yerine cihaz kodu akışını tercih edin.",
+  "html.suggest.hideEndTagSuggestions": "Kapanış etiketi önerilerinin gizlenip gizlenmeyeceğini yapılandırır.",
+  "mermaid-chat.enabled": "Mermaid sohbet özelliklerini etkinleştirin.",
+  "typescript.implementationsCodeLens.showOnAllClassMethods": "Yalnızca arabirimleri uygulayan yöntemler yerine tüm sınıf yöntemlerinde uygulamalar CodeLens'ini gösterin."
 };
 
 /**
@@ -415,43 +424,92 @@ const titleTranslations = {
 };
 
 /**
+ * Bir uzantı için geçerli NLS Türkçe sözlüğünü yükler.
+ */
+function getExtensionNlsMap(extFullPath, extName) {
+  const dataDir = path.join(__dirname, 'data');
+  const lowerName = extName.toLowerCase();
+
+  if (lowerName.includes('ms-toolsai.jupyter')) {
+    const f = path.join(dataDir, 'jupyter.nls.tr.json');
+    if (fs.existsSync(f)) return JSON.parse(fs.readFileSync(f, 'utf8'));
+  }
+  if (lowerName.includes('ms-python.python-')) {
+    const f = path.join(dataDir, 'python.nls.tr.json');
+    if (fs.existsSync(f)) return JSON.parse(fs.readFileSync(f, 'utf8'));
+  }
+  if (lowerName.includes('ms-python.vscode-python-envs')) {
+    const f = path.join(dataDir, 'python-envs.nls.tr.json');
+    if (fs.existsSync(f)) return JSON.parse(fs.readFileSync(f, 'utf8'));
+  }
+  if (lowerName.includes('ms-python.debugpy')) {
+    const f = path.join(dataDir, 'debugpy.nls.tr.json');
+    if (fs.existsSync(f)) return JSON.parse(fs.readFileSync(f, 'utf8'));
+  }
+
+  // Yerleşik eklentiler için dil paketi dosyasını kontrol et
+  const userProfile = process.env.USERPROFILE || 'C:\\Users\\Work-D';
+  const langBases = [
+    path.join(userProfile, '.antigravity-ide', 'extensions', 'ms-ceintl.vscode-language-pack-tr-1.106.0-universal', 'translations', 'extensions'),
+    path.join(userProfile, '.vscode', 'extensions', 'ms-ceintl.vscode-language-pack-tr-1.106.0-universal', 'translations', 'extensions')
+  ];
+
+  for (const lb of langBases) {
+    if (!fs.existsSync(lb)) continue;
+    const candidates = [
+      `vscode.${extName}.i18n.json`,
+      `${extName}.i18n.json`,
+      `vscode.${extName.replace(/^vscode\./, '')}.i18n.json`
+    ];
+    for (const c of candidates) {
+      const p = path.join(lb, c);
+      if (fs.existsSync(p)) {
+        try {
+          const d = JSON.parse(fs.readFileSync(p, 'utf8'));
+          return d.contents?.package || null;
+        } catch (e) {}
+      }
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Değerdeki %nlsKey% şablonunu NLS haritasındaki Türkçe karşılığıyla çözer.
+ */
+function resolveNls(val, nlsMap) {
+  if (typeof val !== 'string') return val;
+  if (val.startsWith('%') && val.endsWith('%')) {
+    const key = val.slice(1, -1);
+    if (nlsMap && nlsMap[key]) {
+      return nlsMap[key];
+    }
+  }
+  return val;
+}
+
+/**
  * NLS (Yerelleştirme) dosyalarını Antigravity IDE'ye kusursuzca entegre eder.
  * Hem package.nls.tr.json dosyasını yazar hem de garanti fallback için package.nls.json'ı günceller.
  */
-function syncExtensionNls(extPath) {
-  const dataDir = path.join(__dirname, 'data');
-  const extName = path.basename(extPath).toLowerCase();
-
-  let trData = null;
-  if (extName.includes('ms-toolsai.jupyter')) {
-    const f = path.join(dataDir, 'jupyter.nls.tr.json');
-    if (fs.existsSync(f)) trData = JSON.parse(fs.readFileSync(f, 'utf8'));
-  } else if (extName.includes('ms-python.python-')) {
-    const f = path.join(dataDir, 'python.nls.tr.json');
-    if (fs.existsSync(f)) trData = JSON.parse(fs.readFileSync(f, 'utf8'));
-  } else if (extName.includes('ms-python.vscode-python-envs')) {
-    const f = path.join(dataDir, 'python-envs.nls.tr.json');
-    if (fs.existsSync(f)) trData = JSON.parse(fs.readFileSync(f, 'utf8'));
-  } else if (extName.includes('ms-python.debugpy')) {
-    const f = path.join(dataDir, 'debugpy.nls.tr.json');
-    if (fs.existsSync(f)) trData = JSON.parse(fs.readFileSync(f, 'utf8'));
-  }
-
-  if (!trData) return false;
+function syncExtensionNls(extPath, nlsMap) {
+  if (!nlsMap) return false;
 
   try {
     // 1. package.nls.tr.json oluştur / güncelle
     const trFile = path.join(extPath, 'package.nls.tr.json');
     try { fs.chmodSync(trFile, 0o666); } catch (e) {}
-    fs.writeFileSync(trFile, JSON.stringify(trData, null, 2), 'utf8');
+    fs.writeFileSync(trFile, JSON.stringify(nlsMap, null, 2), 'utf8');
 
     // 2. package.nls.json dosyasına da Türkçe çevirileri merge et (garanti fallback!)
     const enFile = path.join(extPath, 'package.nls.json');
     if (fs.existsSync(enFile)) {
       try {
         try { fs.chmodSync(enFile, 0o666); } catch (e) {}
-        const enData = JSON.parse(fs.readFileSync(enFile, 'utf8'));
-        const merged = { ...enData, ...trData };
+        let enData = {};
+        try { enData = JSON.parse(fs.readFileSync(enFile, 'utf8')); } catch (e) {}
+        const merged = { ...enData, ...nlsMap };
         fs.writeFileSync(enFile, JSON.stringify(merged, null, 2), 'utf8');
       } catch (e) {}
     }
@@ -465,7 +523,7 @@ function syncExtensionNls(extPath) {
 /**
  * Belirtilen dizinlerdeki tüm eklentilerin package.json dosyalarını tarar ve
  * ayar açıklamalarını, enumarasyon etiketlerini (enumItemLabels), enumarasyon açıklamalarını
- * ve NLS dosyalarını Türkçeleştirir.
+ * ve NLS şablonlarını doğrudan Türkçe metinlerle çözer.
  */
 function patchAllExtensions(paths) {
   const searchBases = [
@@ -484,10 +542,15 @@ function patchAllExtensions(paths) {
         const extFullPath = path.join(base, d);
         if (!fs.statSync(extFullPath).isDirectory()) continue;
 
-        // 1. NLS senkronizasyonu (Jupyter, Python, Debugpy vb.)
-        syncExtensionNls(extFullPath);
+        // 1. NLS sözlüğünü al
+        const nlsMap = getExtensionNlsMap(extFullPath, d);
 
-        // 2. package.json yamalaması
+        // 2. NLS dosyalarını senkronize et
+        if (nlsMap) {
+          syncExtensionNls(extFullPath, nlsMap);
+        }
+
+        // 3. package.json dosyasını DOĞRUDAN çöz ve güncelle
         const pkgPath = path.join(extFullPath, 'package.json');
         if (fs.existsSync(pkgPath)) {
           try {
@@ -497,32 +560,72 @@ function patchAllExtensions(paths) {
             let modified = false;
 
             // Display name
-            if (pkg.displayName && titleTranslations[pkg.displayName]) {
-              pkg.displayName = titleTranslations[pkg.displayName];
-              modified = true;
+            if (pkg.displayName) {
+              const resolvedDisplayName = resolveNls(pkg.displayName, nlsMap);
+              if (resolvedDisplayName !== pkg.displayName) {
+                pkg.displayName = resolvedDisplayName;
+                modified = true;
+              } else if (titleTranslations[pkg.displayName]) {
+                pkg.displayName = titleTranslations[pkg.displayName];
+                modified = true;
+              }
+            }
+
+            // Description of extension
+            if (pkg.description && nlsMap) {
+              const resolvedDesc = resolveNls(pkg.description, nlsMap);
+              if (resolvedDesc !== pkg.description) {
+                pkg.description = resolvedDesc;
+                modified = true;
+              }
             }
 
             // Configuration title & properties
             const configs = pkg.contributes?.configuration;
             const list = Array.isArray(configs) ? configs : (configs ? [configs] : []);
             for (const c of list) {
-              if (c.title && titleTranslations[c.title]) {
-                c.title = titleTranslations[c.title];
-                modified = true;
-              }
-              const props = c.properties || {};
-              for (const [k, v] of Object.entries(props)) {
-                // Açıklama çevirisi
-                if (propertyTranslations[k]) {
-                  if (v.description) v.description = propertyTranslations[k];
-                  if (v.markdownDescription) v.markdownDescription = propertyTranslations[k];
+              if (c.title) {
+                const resolvedTitle = resolveNls(c.title, nlsMap);
+                if (resolvedTitle !== c.title) {
+                  c.title = resolvedTitle;
+                  modified = true;
+                } else if (titleTranslations[c.title]) {
+                  c.title = titleTranslations[c.title];
                   modified = true;
                 }
+              }
+
+              const props = c.properties || {};
+              for (const [k, v] of Object.entries(props)) {
+                // Doğrudan tanımlı açıklama çevirisi
+                if (propertyTranslations[k]) {
+                  v.description = propertyTranslations[k];
+                  if (v.markdownDescription) v.markdownDescription = propertyTranslations[k];
+                  modified = true;
+                } else if (nlsMap) {
+                  // NLS şablonu çözümü (%key%)
+                  if (typeof v.description === 'string' && v.description.startsWith('%') && v.description.endsWith('%')) {
+                    const resolved = resolveNls(v.description, nlsMap);
+                    if (resolved !== v.description) {
+                      v.description = resolved;
+                      modified = true;
+                    }
+                  }
+                  if (typeof v.markdownDescription === 'string' && v.markdownDescription.startsWith('%') && v.markdownDescription.endsWith('%')) {
+                    const resolved = resolveNls(v.markdownDescription, nlsMap);
+                    if (resolved !== v.markdownDescription) {
+                      v.markdownDescription = resolved;
+                      modified = true;
+                    }
+                  }
+                }
+
                 // Açılır menü etiketleri (enumItemLabels)
                 if (enumItemLabelsMap[k]) {
                   v.enumItemLabels = enumItemLabelsMap[k];
                   modified = true;
                 }
+
                 // Enum açıklamaları (enumDescriptions)
                 if (enumDescriptionsMap[k]) {
                   v.enumDescriptions = enumDescriptionsMap[k];
@@ -551,6 +654,8 @@ module.exports = {
   enumItemLabelsMap,
   enumDescriptionsMap,
   titleTranslations,
+  getExtensionNlsMap,
+  resolveNls,
   syncExtensionNls,
   patchAllExtensions
 };
