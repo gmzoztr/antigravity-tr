@@ -1,0 +1,1701 @@
+[
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.environmentVariables",
+    "desc": "Environment variables to set when launching Claude.\n\nPrefer setting environment variables in Claude's settings.json.\nSee documentation: https://code.claude.com/docs/en/settings"
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.useTerminal",
+    "desc": "Launch Claude in the terminal instead of the native UI."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.allowDangerouslySkipPermissions",
+    "desc": "Allow bypass permissions mode. Recommended only for sandboxes with no internet access."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.claudeProcessWrapper",
+    "desc": "Executable path used to launch the Claude process."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.respectGitIgnore",
+    "desc": "Respect .gitignore files when performing file searches. Tip: You can still filter by other exclusion patterns in .ignore when this is disabled."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.initialPermissionMode",
+    "desc": "Initial permission mode for new conversations. Unset defers to the Claude Code CLI's resolved default for the session. 'manual' is an alias for 'default', the mode labeled Manual in the UI; set either to always start in Manual."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.disableLoginPrompt",
+    "desc": "When true, never prompt for login/authentication in the extension. Used when authentication is handled externally."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.focusView",
+    "desc": "Focus view: hide tool calls and other in-progress activity in the chat, showing only your prompts and Claude's responses. Folded activity stays one click away, and a live indicator names the tool currently running. Usually toggled from the chat input's command menu, the Claude Code: Toggle Focus view command, or its ctrl+alt+f keybinding."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.useCtrlEnterToSend",
+    "desc": "When enabled, use Ctrl/Cmd+Enter to send prompts instead of just Enter. This allows Enter to create new lines."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.preferredLocation",
+    "desc": "Where Claude opens by default. This setting updates automatically when you open Claude in a new location.",
+    "enumDescriptions": [
+      "Sidebar (Right)",
+      "Panel (New Tab)"
+    ]
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.lockEditorGroups",
+    "desc": "Lock the editor groups Claude starts for its tabs, so files you open while a Claude tab is focused go to another group instead of next to it. When off, Claude never locks an editor group. Groups that are already locked stay locked until you unlock them."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.enableNewConversationShortcut",
+    "desc": "Use the Cmd/Ctrl+N keyboard shortcut to start a new conversation when Claude is focused."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.enableReopenClosedSessionShortcut",
+    "desc": "Use Cmd/Ctrl+Shift+T to reopen the most recently closed Claude session tab. Only intercepts the shortcut when a Claude tab was the last thing closed; otherwise falls through to VS Code's normal reopen-closed-editor behavior."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.hideOnboarding",
+    "desc": "Hide the onboarding checklist in Claude Code."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.attachOpenFile",
+    "desc": "Add the file that is open in the editor to your messages, and show it in the message box. When off, only text you select is added."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.continueAfterReload",
+    "desc": "After a window reload, a restored session continues the step that was interrupted."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.scrollToBottomOnSend",
+    "desc": "Scroll the conversation to the bottom when you send a message. When off, the conversation stays where you left it."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.archiveInactiveSessions",
+    "desc": "Archive a session after this long with no activity. Sessions that are open, running, waiting for input, or unread are never archived automatically."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.283-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\anthropic.claude-code-2.1.283-win32-x64\\package.json",
+    "key": "claudeCode.usePythonEnvironment",
+    "desc": "Automatically activate the workspace's Python environment when running Claude. Requires the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.showWelcome",
+    "desc": "Specifies whether to show the Welcome experience on first install"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.buildOnSave",
+    "desc": "Compiles code on file save using 'go build' or 'go test -c'. Not applicable when using the language server."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.buildFlags",
+    "desc": "Flags to `go build`/`go test` used during build-on-save or running tests. (e.g. [\"-ldflags='-s'\"]) This is propagated to the language server if `gopls.build.buildFlags` is not specified."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.buildTags",
+    "desc": "The Go build tags to use for all commands, that support a `-tags '...'` argument. When running tests, go.testTags will be used instead if it was set. This is propagated to the language server if `gopls.build.buildFlags` is not specified."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testTags",
+    "desc": "The Go build tags to use for when running tests. If null, then buildTags will be used."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.disableConcurrentTests",
+    "desc": "If true, tests will not run concurrently. When a new test run is started, the previous will be cancelled."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.installDependenciesWhenBuilding",
+    "desc": "If true, then `-i` flag will be passed to `go build` everytime the code is compiled. Since Go 1.10, setting this may be unnecessary unless you are in GOPATH mode and do not use the language server."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.lintOnSave",
+    "desc": "Lints code on file save using the configured Lint tool. Options are 'file', 'package', 'workspace' or 'off'.",
+    "enumDescriptions": [
+      "lint the current file on file saving",
+      "lint the current package on file saving",
+      "lint all the packages in the current workspace root folder on file saving",
+      "do not run lint automatically"
+    ]
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.lintTool",
+    "desc": "Specifies an additional client-side linting tool that should be run by the Go extension. By default (unset), no additional linter is run. This feature is additional to diagnostics reported by the language server, gopls. Since Gopls incorporates the entire staticcheck analyzer suite, it is typically unnecessary to run the staticcheck tool as well. To configure gopls's linting, see the 'gopls.ui.diagnostic' settings."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.lintFlags",
+    "desc": "Flags to pass to Lint tool (e.g. [\"-min_confidence=.8\"])"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.vetOnSave",
+    "desc": "Vets code on file save using 'go tool vet'. Not applicable when using the language server's diagnostics.",
+    "enumDescriptions": [
+      "vet the current package on file saving",
+      "vet all the packages in the current workspace root folder on file saving",
+      "do not run vet automatically"
+    ]
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.vetFlags",
+    "desc": "Flags to pass to `go tool vet` (e.g. [\"-all\", \"-shadow\"]). Not applicable when using the language server's diagnostics."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.formatTool",
+    "desc": "Specifies the tool for formatting Go code. The default is `default`, which uses the language server `gopls` as formatting provider. To configure gopls's formatting, see the 'gopls.formatting' settings. When a specific tool (e.g., `gofmt`, `goimports`) is selected, the extension will run it instead."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.formatFlags",
+    "desc": "Flags to pass to format tool (e.g. [\"-s\"]). Not applicable when using the language server."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.inferGopath",
+    "desc": "Infer GOPATH from the workspace root. This is ignored when using Go Modules."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.gopath",
+    "desc": "Specify GOPATH here to override the one that is set as environment variable. The inferred GOPATH from workspace root overrides this, if go.inferGopath is set to true."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.toolsGopath",
+    "desc": "Location to install the Go tools that the extension depends on if you don't want them in your GOPATH."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.goroot",
+    "desc": "Specifies the GOROOT to use when no environment variable is set."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testOnSave",
+    "desc": "Run 'go test' on save for current package. It is not advised to set this to `true` when you have Auto Save enabled."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.coverOnTestPackage",
+    "desc": "If true, shows test coverage when Go: Test Package command is run."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.coverOnSingleTest",
+    "desc": "If true, shows test coverage when Go: Test Function at cursor command is run."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.coverOnSingleTestFile",
+    "desc": "If true, shows test coverage when Go: Test Single File command is run."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.coverMode",
+    "desc": "When generating code coverage, the value for -covermode. 'default' is the default value chosen by the 'go test' command."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.coverShowCounts",
+    "desc": "When generating code coverage, should counts be shown as --374--"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.coverageOptions",
+    "desc": "Use these options to control whether only covered or only uncovered code or both should be highlighted after running test coverage"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.coverageDecorator",
+    "desc": "This option lets you choose the way to display code coverage. Choose either to highlight the complete line or to show a decorator in the gutter. You can customize the colors and borders for the former and the style for the latter."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testTimeout",
+    "desc": "Specifies the timeout for go test in ParseDuration format."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testEnvVars",
+    "desc": "Environment variables that will be passed to the process that runs the Go tests"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testEnvFile",
+    "desc": "Absolute path to a file containing environment variables definitions. File contents should be of the form key=value."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testFlags",
+    "desc": "Flags to pass to `go test`. If null, then buildFlags will be used. This is not propagated to the language server."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testExplorer.enable",
+    "desc": "Enable the Go test explorer"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testExplorer.packageDisplayMode",
+    "desc": "Present packages in the test explorer flat or nested."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testExplorer.alwaysRunBenchmarks",
+    "desc": "Run benchmarks when running all tests in a file or folder."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testExplorer.concatenateMessages",
+    "desc": "Concatenate all test log messages for a given location into a single message."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testExplorer.showDynamicSubtestsInEditor",
+    "desc": "Set the source location of dynamically discovered subtests to the location of the containing function. As a result, dynamically discovered subtests will be added to the gutter test widget of the containing function."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.testExplorer.showOutput",
+    "desc": "Open the test output terminal when a test run is started."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.experiments",
+    "desc": "Disable experimental features. These features are only available in the pre-release version."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.generateTestsFlags",
+    "desc": "Additional command line flags to pass to `gotests` for generating tests."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.toolsEnvVars",
+    "desc": "Environment variables that will be passed to the tools that run the Go tools (e.g. CGO_CFLAGS) and debuggee process launched by Delve. Format as string key:value pairs. When debugging, merged with `envFile` and `env` values with precedence `env` > `envFile` > `go.toolsEnvVars`."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.useLanguageServer",
+    "desc": "Enable intellisense, code navigation, refactoring, formatting & diagnostics for Go. The features are powered by the Go language server \"gopls\"."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.languageServerFlags",
+    "desc": "Flags like -rpc.trace and -logfile to be used while running the language server."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.trace.server",
+    "desc": "Trace the communication between VS Code and the Go language server."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.toolsManagement.go",
+    "desc": "The path to the `go` binary used to install the Go tools. If it's empty, the same `go` binary chosen for the project will be used for tool installation."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.toolsManagement.checkForUpdates",
+    "desc": "Specify whether to prompt about new versions of Go and the Go tools (currently, only `gopls`) the extension depends on",
+    "enumDescriptions": [
+      "keeps notified of new releases by checking the Go module proxy (GOPROXY)",
+      "checks only the minimum tools versions required by the extension",
+      "completely disables version check (not recommended)"
+    ]
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.toolsManagement.autoUpdate",
+    "desc": "Automatically update the tools used by the extension, without prompting the user."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.enableCodeLens",
+    "desc": "Feature level setting to enable/disable code lens for references and run/debug tests"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.addTags",
+    "desc": "Tags and options configured here will be used by the Add Tags command to add tags to struct fields. If promptForTags is true, then user will be prompted for tags and options. By default, json tags are added."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.removeTags",
+    "desc": "Tags and options configured here will be used by the Remove Tags command to remove tags to struct fields. If promptForTags is true, then user will be prompted for tags and options. By default, all tags and options will be removed."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.playground",
+    "desc": "The flags configured here will be passed through to command `goplay`"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.survey.prompt",
+    "desc": "Prompt for surveys, including the gopls survey and the Go developer survey."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.editorContextMenuCommands",
+    "desc": "Experimental Feature: Enable/Disable entries from the context menu in the editor."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.delveConfig",
+    "desc": "Delve settings that applies to all debugging sessions. Debug configuration in the launch.json file will override these values."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.alternateTools",
+    "desc": "Alternate tools or alternate paths for the same tools used by the Go extension. Provide either absolute path or the name of the binary in GOPATH/bin, GOROOT/bin or PATH. Useful when you want to use wrapper script for the Go tools."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.tasks.provideDefault",
+    "desc": "enable the default go build/test task provider."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.terminal.activateEnvironment",
+    "desc": "Apply the Go & PATH environment variables used by the extension to all integrated terminals."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "gopls",
+    "desc": "Configure the default Go language server ('gopls'). In most cases, configuring this section is unnecessary. See [the documentation](https://github.com/golang/tools/blob/master/gopls/doc/settings.md) for all available settings."
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.inlayHints.assignVariableTypes",
+    "desc": "`\"assignVariableTypes\"` controls inlay hints for variable types in assign statements:\n```go\n\ti« int», j« int» := 0, len(r)-1\n```\n"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.inlayHints.compositeLiteralFields",
+    "desc": "`\"compositeLiteralFields\"` inlay hints for composite literal field names:\n```go\n\tPoint2D{«X: »1, «Y: »2}\n\n\tOuter{«Embedded.»Field: 0}\n```\n"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.inlayHints.compositeLiteralTypes",
+    "desc": "`\"compositeLiteralTypes\"` controls inlay hints for composite literal types:\n```go\n\tfor _, c := range []struct {\n\t\tin, want string\n\t}{\n\t\t«struct{ in string; want string }»{\"Hello, world\", \"dlrow ,olleH\"},\n\t}\n```\n"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.inlayHints.constantValues",
+    "desc": "`\"constantValues\"` controls inlay hints for constant values:\n```go\n\tconst (\n\t\tKindNone   Kind = iota« = 0»\n\t\tKindPrint«  = 1»\n\t\tKindPrintf« = 2»\n\t\tKindErrorf« = 3»\n\t)\n```\n"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.inlayHints.functionTypeParameters",
+    "desc": "`\"functionTypeParameters\"` inlay hints for implicit type parameters on generic functions:\n```go\n\tmyFoo«[int, string]»(1, \"hello\")\n```\n"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.inlayHints.parameterNames",
+    "desc": "`\"parameterNames\"` controls inlay hints for parameter names:\n```go\n\tparseInt(« str: » \"123\", « radix: » 8)\n```\n"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.inlayHints.rangeVariableTypes",
+    "desc": "`\"rangeVariableTypes\"` controls inlay hints for variable types in range statements:\n```go\n\tfor k« int», v« string» := range []string{} {\n\t\tfmt.Println(k, v)\n\t}\n```\n"
+  },
+  {
+    "ext": "golang.go-0.56.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\golang.go-0.56.1-universal\\package.json",
+    "key": "go.inlayHints.ignoredError",
+    "desc": "`\"ignoredError\"` inlay hints for implicitly discarded errors:\n```go\n\tf.Close()« // ignore error»\n```\nThis check inserts an `// ignore error` hint following any\nstatement that is a function call whose error result is\nimplicitly ignored.\n\nTo suppress the hint, write an actual comment containing\n\"ignore error\" following the call statement, or explicitly\nassign the result to a blank variable. A handful of common\nfunctions such as `fmt.Println` are excluded from the\ncheck.\n"
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.datacloud.project",
+    "desc": "Enter a Google Cloud project to use for the Data-Cloud extension"
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.datacloud.enableTelemetry",
+    "desc": "Enable usage and error reporting for the Google Cloud Data Agent Kit extension. Data collected is subject to the [Google Privacy Policy](https://policies.google.com/privacy)."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.datacloud.starredProjects",
+    "desc": "A list of starred project IDs"
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.cloud.project",
+    "desc": "Enter a Google Cloud project to use for the Data-Cloud extension"
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.cloud.billingQuotaProject",
+    "desc": "The Google Cloud project used for billing and quota purposes. If empty, the main project is used."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.datacloud.gcloudPath",
+    "desc": "Filesystem path to the Google Cloud CLI executable (e.g. /usr/bin/gcloud)."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.datacloud.composer.project",
+    "desc": "The Google Cloud project to use for Managed Service for Apache Airflow operations."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.datacloud.composer.region",
+    "desc": "The region to use for Managed Service for Apache Airflow operations."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.datacloud.composer.environment",
+    "desc": "The Managed Service for Apache Airflow environment to use for operations."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.cloud.region",
+    "desc": "Enter a Google Cloud region to use for the Data-Cloud extension"
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.datacloud.agent.skills.installLocation",
+    "desc": "Choose whether agent skills should be installed globally or locally within the current workspace."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.11.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\googlecloudtools.datacloud-0.11.0-universal\\package.json",
+    "key": "google.datacloud.executeCellToolForNotebookMCP",
+    "desc": "Enable execute_cell tool for Notebook MCP. Requires restarting IDE after changing."
+  },
+  {
+    "ext": "llvm-vs-code-extensions.vscode-clangd-0.6.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\llvm-vs-code-extensions.vscode-clangd-0.6.0-universal\\package.json",
+    "key": "clangd.serverCompletionRanking",
+    "desc": "Always rank completion items on the server as you type. This produces more accurate results at the cost of higher latency than client-side filtering."
+  },
+  {
+    "ext": "llvm-vs-code-extensions.vscode-clangd-0.6.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\llvm-vs-code-extensions.vscode-clangd-0.6.0-universal\\package.json",
+    "key": "clangd.onConfigChanged",
+    "desc": "What to do when clangd configuration files are changed. Ignored for clangd 12+, which can reload such files itself; however, this can be overridden with clangd.onConfigChangedForceEnable.",
+    "enumDescriptions": [
+      "Prompt the user for restarting the server",
+      "Automatically restart the server",
+      "Do nothing"
+    ]
+  },
+  {
+    "ext": "llvm-vs-code-extensions.vscode-clangd-0.6.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\llvm-vs-code-extensions.vscode-clangd-0.6.0-universal\\package.json",
+    "key": "clangd.inactiveRegions.useBackgroundHighlight",
+    "desc": "Use a background highlight rather than opacity to identify inactive preprocessor regions."
+  },
+  {
+    "ext": "llvm-vs-code-extensions.vscode-clangd-0.6.0-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\llvm-vs-code-extensions.vscode-clangd-0.6.0-universal\\package.json",
+    "key": "clangd.inactiveRegions.opacity",
+    "desc": "Opacity of inactive regions (used only if clangd.inactiveRegions.useBackgroundHighlight=false)"
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "pyrefly.lspPath",
+    "desc": "The command to run for the language server. Accepts an absolute path, a path relative to your workspace root, a path starting with ~, or a bare command name to look up on your $PATH. This is useful to guarantee version parity between your IDE and CLI, but means extension updates won't update which Pyrefly version you'll be using."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "pyrefly.lspArguments",
+    "desc": "Additional arguments that should be passed to the binary at pyrefly.lspPath"
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.pyrefly.disableTypeErrors",
+    "desc": "If true, Pyrefly will not provide diagnostics for files in this workspace."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.pyrefly.typeCheckingMode",
+    "desc": "[Preset](https://pyrefly.org/en/docs/configuration/#preset) to use for files not covered by a `pyrefly.toml`. The default `auto` migrates a nearby mypy/pyright config when present, otherwise uses `basic`."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.pyrefly.displayTypeErrors",
+    "desc": "If 'default', Pyrefly will only provide type check squiggles in the IDE if your file is covered by a Pyrefly configuration. If 'force-off', Pyrefly will never provide type check squiggles in the IDE. If 'force-on', Pyrefly will always provide type check squiggles in the IDE. If 'error-missing-imports', Pyrefly will only show errors for missing imports and missing sources (missing-import, missing-source, and missing-source-for-stubs)."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "pyrefly.trace.server",
+    "desc": "Set to 'verbose' to enable LSP trace in the console"
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.pyrefly.disabledLanguageServices",
+    "desc": "Disable specific language services. Set individual services to true to disable them."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.analysis.showHoverGoToLinks",
+    "desc": "Controls whether hover tooltips include 'Go to definition' and 'Go to type definition' navigation links."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.analysis.completeFunctionParens",
+    "desc": "Automatically insert parentheses when completing a function or method."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.analysis.autoImportCompletions",
+    "desc": "Controls whether completions include symbols that are not yet imported. When enabled, accepting such a completion also inserts the required import statement."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.analysis.diagnosticMode",
+    "desc": "Controls the scope of diagnostic analysis. When set to 'openFilesOnly', diagnostics are only provided for files currently open in the editor. When set to 'workspace', diagnostics are computed and published for all files in the workspace. If `python.pyrefly.diagnosticMode` is set, it takes precedence."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.analysis.importFormat",
+    "desc": "Format used when Pyrefly auto-inserts an import."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.analysis.inlayHintDebounceMs",
+    "desc": "Debounce window, in milliseconds, for inlay hints. While a file is being edited, inlay hint updates are held until editing pauses for this long, so hint widths don't jitter on every keystroke. Set to 0 to update inlay hints immediately."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.pyrefly.syncNotebooks",
+    "desc": "If true, Pyrefly will sync notebook documents with the language server. Set to false to disable notebook support."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.pyrefly.runnableCodeLens",
+    "desc": "Enable Pyrefly's Run/Test CodeLens actions for Python files."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.pyrefly.streamDiagnostics",
+    "desc": "If true (default), Pyrefly will stream diagnostics as they become available during recheck, providing incremental feedback. Set to false to only publish diagnostics after the full recheck completes."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.pyrefly.diagnosticMode",
+    "desc": "Controls the scope of Pyrefly's diagnostic analysis. When set to 'openFilesOnly', diagnostics are only provided for files that are currently open in the editor. When set to 'workspace', diagnostics are computed and published for all files in the workspace."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "pyrefly.commentFoldingRanges",
+    "desc": "Controls whether comment section folding ranges are included in the editor. When true, comments following the pattern '# Section Name ----' (with 4+ trailing dashes) create collapsible regions, similar to R's code section convention."
+  },
+  {
+    "ext": "meta.pyrefly-1.3.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\meta.pyrefly-1.3.1-win32-x64\\package.json",
+    "key": "python.pyrefly.configPath",
+    "desc": "Path to a pyrefly.toml or pyproject.toml configuration file. When set, the LSP will use this config for all files in your workspace instead of the default Pyrefly config-finding logic. Prefer to use default logic wherever possible."
+  },
+  {
+    "ext": "ms-toolsai.jupyter-2025.9.1-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\ms-toolsai.jupyter-2025.9.1-universal\\package.json",
+    "key": "jupyter.executionAnalysis.enabled",
+    "desc": "Experimental feature to enable execution analysis in notebooks"
+  },
+  {
+    "ext": "openai.chatgpt-26.721.30844-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\openai.chatgpt-26.721.30844-win32-x64\\package.json",
+    "key": "chatgpt.commentCodeLensEnabled",
+    "desc": "Enable CodeLens above TODO comments to implement with Codex."
+  },
+  {
+    "ext": "openai.chatgpt-26.721.30844-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\openai.chatgpt-26.721.30844-win32-x64\\package.json",
+    "key": "chatgpt.cliExecutable",
+    "desc": "DEVELOPMENT ONLY: Path to the Codex CLI executable. You do NOT need to set this unless you are actively developing the Codex CLI. If set this manually, parts of the extension may not work as expected."
+  },
+  {
+    "ext": "openai.chatgpt-26.721.30844-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\openai.chatgpt-26.721.30844-win32-x64\\package.json",
+    "key": "chatgpt.openOnStartup",
+    "desc": "Focus the Codex sidebar when the extension finishes starting up."
+  },
+  {
+    "ext": "openai.chatgpt-26.721.30844-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\openai.chatgpt-26.721.30844-win32-x64\\package.json",
+    "key": "chatgpt.followUpQueueMode",
+    "desc": "Control whether follow-up messages are queued or steer the current run. Press Cmd/Ctrl+Shift+Enter to do the opposite for a single in-progress follow-up."
+  },
+  {
+    "ext": "openai.chatgpt-26.721.30844-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\openai.chatgpt-26.721.30844-win32-x64\\package.json",
+    "key": "chatgpt.composerEnterBehavior",
+    "desc": "Enter behavior for the Codex composer."
+  },
+  {
+    "ext": "openai.chatgpt-26.721.30844-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\openai.chatgpt-26.721.30844-win32-x64\\package.json",
+    "key": "chatgpt.reviewDelivery",
+    "desc": "Start /review inline in the current chat when possible or launch a separate review chat"
+  },
+  {
+    "ext": "openai.chatgpt-26.721.30844-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\openai.chatgpt-26.721.30844-win32-x64\\package.json",
+    "key": "chatgpt.localeOverride",
+    "desc": "Preferred language for the Codex UI. Leave empty to auto detect."
+  },
+  {
+    "ext": "openai.chatgpt-26.721.30844-win32-x64",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\openai.chatgpt-26.721.30844-win32-x64\\package.json",
+    "key": "chatgpt.runCodexInWindowsSubsystemForLinux",
+    "desc": "Windows only: when Windows Subsystem for Linux (WSL) is installed, automatically run Codex inside WSL. Recommended for improved sandbox security and better performance - Agent mode on Windows currently requires WSL. Changing this setting reloads VS Code to take effect."
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.enabledFeatures",
+    "desc": "List of enabled LSP features"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.addonSettings",
+    "desc": "Settings that will be forwarded to configure the behavior of Ruby LSP addons. Keys are addon names, values are objects of settings"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.customRubyCommand",
+    "desc": "A shell command to activate the right Ruby version or add a custom Ruby bin folder to the PATH. Only used if rubyVersionManager is set to 'custom'"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.formatter",
+    "desc": "Which tool the Ruby LSP should use for formatting files",
+    "enumDescriptions": [
+      "Automatically detect formatter",
+      "RuboCop",
+      "Ruby LSP RuboCop integration",
+      "Syntax Tree",
+      "Standard (supported by community addon)",
+      "Rubyfmt (supported by community addon)",
+      "Do not use a formatter"
+    ]
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.linters",
+    "desc": "List of linter tools that the Ruby LSP should use for diagnostics"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.bundleGemfile",
+    "desc": "Relative or absolute path to the Gemfile to use for bundling the Ruby LSP server. Do not use this if you're working on a monorepo or your project's Gemfile is in a subdirectory (look into multiroot workspaces instead). Only necessary when using a separate Gemfile for the Ruby LSP"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.testTimeout",
+    "desc": "The amount of time in seconds to wait for a test to finish before timing out. Only used when running tests from the test explorer"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.pullDiagnosticsOn",
+    "desc": "When to pull diagnostics from the server (on change, save or both). Selecting 'save' may significantly improve performance on large files"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.useBundlerCompose",
+    "desc": "This is a temporary setting for testing purposes, do not use it! Replace the composed bundle logic by bundler-compose."
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.bypassTypechecker",
+    "desc": "Ignores if the project uses a typechecker. Only intended to be used while working on the Ruby LSP itself"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.rubyExecutablePath",
+    "desc": "Path to the Ruby installation. This is used as a fallback if version manager activation fails"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.indexing",
+    "desc": "Indexing configurations. Modifying these will impact which declarations are available for definition, completion and other features"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.erbSupport",
+    "desc": "Enable ERB support. This can only work with server versions v0.17.5 or above"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.featureFlags",
+    "desc": "Allows opting in or out of feature flags"
+  },
+  {
+    "ext": "shopify.ruby-lsp-0.10.6-universal",
+    "path": "C:\\Users\\Work-D\\.antigravity-ide\\extensions\\shopify.ruby-lsp-0.10.6-universal\\package.json",
+    "key": "rubyLsp.sigOpacityLevel",
+    "desc": "Controls the level of opacity for inline RBS comment signatures"
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.environmentVariables",
+    "desc": "Environment variables to set when launching Claude.\n\nPrefer setting environment variables in Claude's settings.json.\nSee documentation: https://code.claude.com/docs/en/settings"
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.useTerminal",
+    "desc": "Launch Claude in the terminal instead of the native UI."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.allowDangerouslySkipPermissions",
+    "desc": "Allow bypass permissions mode. Recommended only for sandboxes with no internet access."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.claudeProcessWrapper",
+    "desc": "Executable path used to launch the Claude process."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.respectGitIgnore",
+    "desc": "Respect .gitignore files when performing file searches. Tip: You can still filter by other exclusion patterns in .ignore when this is disabled."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.initialPermissionMode",
+    "desc": "Initial permission mode for new conversations. Unset defers to the Claude Code CLI's resolved default for the session. 'manual' is an alias for 'default', the mode labeled Manual in the UI; set either to always start in Manual."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.disableLoginPrompt",
+    "desc": "When true, never prompt for login/authentication in the extension. Used when authentication is handled externally."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.focusView",
+    "desc": "Focus view: hide tool calls and other in-progress activity in the chat, showing only your prompts and Claude's responses. Folded activity stays one click away, and a live indicator names the tool currently running. Usually toggled from the chat input's command menu, the Claude Code: Toggle Focus view command, or its ctrl+alt+f keybinding."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.useCtrlEnterToSend",
+    "desc": "When enabled, use Ctrl/Cmd+Enter to send prompts instead of just Enter. This allows Enter to create new lines."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.preferredLocation",
+    "desc": "Where Claude opens by default. This setting updates automatically when you open Claude in a new location.",
+    "enumDescriptions": [
+      "Sidebar (Right)",
+      "Panel (New Tab)"
+    ]
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.enableNewConversationShortcut",
+    "desc": "Use the Cmd/Ctrl+N keyboard shortcut to start a new conversation when Claude is focused."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.enableReopenClosedSessionShortcut",
+    "desc": "Use Cmd/Ctrl+Shift+T to reopen the most recently closed Claude session tab. Only intercepts the shortcut when a Claude tab was the last thing closed; otherwise falls through to VS Code's normal reopen-closed-editor behavior."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.hideOnboarding",
+    "desc": "Hide the onboarding checklist in Claude Code."
+  },
+  {
+    "ext": "anthropic.claude-code-2.1.263-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\anthropic.claude-code-2.1.263-win32-x64\\package.json",
+    "key": "claudeCode.usePythonEnvironment",
+    "desc": "Automatically activate the workspace's Python environment when running Claude. Requires the [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) extension."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.beta.forceOobLogin",
+    "desc": "Force first party auth to use OOB login (non localhost callback)"
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.enable",
+    "desc": "Enable Gemini Code Assist. Gemini Code Assist is your AI-powered collaborator to help you accomplish tasks more efficiently. [Learn more](https://developers.google.com/gemini-code-assist/ui/docs)\n\n**Note:**  Changing this setting requires a reload of VS Code. [Click here](command:workbench.action.reloadWindow) to reload."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.project",
+    "desc": "Enter a Google Cloud project to use for Gemini Code Assist.\n\nThis does not apply to Gemini Code Assist for individuals. If you are using Gemini Code Assist for individuals, and you'd like to use Google Code Assist with your Google Cloud Account, you can upgrade to a paid version of Gemini Code Assist. [Learn more](https://developers.google.com/gemini-code-assist/ui/versions)"
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.verboseLogging",
+    "desc": "Display extension debug information in the 'Gemini Code Assist Debug' output window."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.enableTelemetry",
+    "desc": "Enable sending usage statistics and crash reports to Google to improve its products and services.\n\nUsage statistics are subject to the [Google Privacy Policy](https://policies.google.com/privacy).\n\nThis setting does not implicate Google's use of your prompts, context code, and responses to train AI models.\n\nGemini Code Assist Standard and Enterprise editions never use your prompts, context code, or responses to train machine learning models. Similarly, if you are using  Gemini Code Assist through your Google AI Pro or Ultra subscription, we do not use your prompts, context code, or response to train machine learning models.\n\nIf you're using Gemini Code Assist for individuals, the free version of Gemini Code Assist, you can opt out of Google's use of your prompts, context code, and responses to train AI models in the [Gemini Code Assist for individuals privacy settings](command:geminicodeassist.privacyNotice)."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.recitation.maxCitedLength",
+    "desc": "This will block code suggestions which cite snippets greater than the length below.\n\n(-1 : disable blocking; 0 : block all code suggestions with citations)."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.displayInlineContextHint",
+    "desc": "Display a 'Pin to context' hint inline when text in the editor is highlighted."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.inlineSuggestions.enableAuto",
+    "desc": "Enable automatically providing inline suggestions. If set to false, inline suggestions can still be obtained manually with the 'Trigger Inline Suggestion' command (creating a keybind is recommended)."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.inlineSuggestions.suggestionSpeed",
+    "desc": "Controls the delay of displaying inline suggestions in code editor. Choose how quickly code suggestions appear as you type."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.inlineSuggestions.nextEditPredictions",
+    "desc": "Let Gemini suggest upcoming edits beyond the current line as you type."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.codeGenerationPaneViewEnabled",
+    "desc": "Enable the panel view interface shown when generating code via the 'Ctrl+Enter' hotkey. When enabled, this will result in code generation suggestions being opened in a separate tab in the editor. While disabled, this will result in suggestions rendering in the editor via ghost text."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.contextExclusionGitignore",
+    "desc": "Use .gitignore to specify files for AI to ignore. If .aiexclude and .gitignore are both in use, and there is a conflict, .aiexclude will take priority. [Learn more.](https://docs.cloud.google.com/gemini/docs/codeassist/create-aiexclude-file)"
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.contextExclusionFile",
+    "desc": "Specify a file containing patterns for files and folders that AI should ignore. Use the same format as a .gitignore file. Anything that matches will not be available for use in chat context. [Learn more.](https://docs.cloud.google.com/gemini/docs/codeassist/create-aiexclude-file)"
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.localCodebaseAwareness",
+    "desc": "Local codebase awareness improves the relevance of Gemini Code Assist's responses through indexing and supporting techniques."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.outlines.automaticOutlineGeneration",
+    "desc": "When the outline panel is open, automatically create outlines for all opened files. [Learn more.](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini#outline)"
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.customCommands",
+    "desc": "Custom commands available in smart actions. Defined with key value pairs.\n\n **Usage Example:** \n\n **Item**: `add-comments` \n\n **Value**: `add some comments to my code` \n\n This will result in an `/add-comments` command becoming available in the inline chat menu and smart actions menu.\n\n Invoking this command will then trigger a chat request with the provided value as the prompt."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.rules",
+    "desc": "Rules that Gemini Code Assist should use.\n\n**Note**: If this setting is modified at workspace level, both user-level and workspace-level rules are used."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.chat.automaticScrolling",
+    "desc": "Automatically scroll the chat during Gemini response streaming."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.chat.fileProcessingBatchSize",
+    "desc": "The batch size for yielding during workspace file processing."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.chat.folderExpansionBatchSize",
+    "desc": "The batch size for yielding during workspace folder expansion."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.chat.folderProcessingBatchSize",
+    "desc": "The batch size for yielding during workspace folder processing."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.languages",
+    "desc": "The list of language identifiers or file glob based specifiers to use for providing inline suggestions.  The default is to provide inline suggestions for all languages.\n\n**Note:**  Changing this setting requires a reload of VS Code. [Click here](command:workbench.action.reloadWindow) to reload."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.updateChannel",
+    "desc": "Automatically install the insiders version of Gemini Code Assist by changing this value to 'Insiders', or set the value as 'Default' to use the stable released version from the marketplace."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.chat.defaultCodeBlockDisplay",
+    "desc": "Choose the default display mode for code blocks in chat.\n\n**Note:**  Changing this setting requires a reload of VS Code. [Click here](command:workbench.action.reloadWindow) to reload."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.chat.enableStreaming",
+    "desc": "Enable streaming for chat responses. When enabled, chat responses will appear incrementally as they are generated. When disabled, the chat will wait for the entire response to be generated before displaying it.\n\n**Note:**  Changing this setting requires a reload of VS Code. [Click here](command:workbench.action.reloadWindow) to reload."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.chat.changeView",
+    "desc": "Sets the default layout for viewing Gemini’s code changes: display them directly in your current file or use default VS Code diff layout."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "cloudcode.duetAI.project",
+    "desc": "Enter a Google Cloud project to use for Gemini Code Assist Standard or Enterprise.\n\nThis does not apply to Gemini Code Assist for individuals, the free version of Gemini Code Assist, or if you are using Gemini Code Assist through your Google AI Pro or Ultra subscription. If you would like to use Gemini Code Assist with your Google Cloud account, you can purchase Gemini Code Assist Standard or Enterprise. [Learn more](https://developers.google.com/gemini-code-assist/ui/versions)"
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.a2a.address",
+    "desc": "The address for the A2A (Agent-to-Agent) server used by Gemini Code Assist."
+  },
+  {
+    "ext": "google.geminicodeassist-2.98.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\google.geminicodeassist-2.98.0\\package.json",
+    "key": "geminicodeassist.agentDebugMode",
+    "desc": "Enables debug logging for the agent"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.project",
+    "desc": "The Google Cloud project used by Cloud Code for viewing and interacting with project resources"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "google.cloud.project",
+    "desc": "The Google Cloud project used by Cloud Code for viewing and interacting with project resources"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.debug-kubernetes",
+    "desc": "Provide customizations for the Cloud Code debuggers."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.kubeconfigs",
+    "desc": "List of KubeConfig files that can be used in the Kubernetes Explorer. Switch between the default KubeConfig and KubeConfigs listed here with the `#cloudcode.active-kubeconfig#` setting."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.apigee.emulators",
+    "desc": "List of emulator tags to be enabled in the emulator view"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.active-kubeconfig",
+    "desc": "Name of the active KubeConfig used by the extension. This name should match the name of a KubeConfig stored in `#cloudcode.kubeconfigs#`. If a name isn't provided, the default KubeConfig will be used."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.beta.dataprocRegion",
+    "desc": "The region for Dataproc clusters and serverless runtime templates."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.kubectlExecShell",
+    "desc": "The shell to use when choosing 'Get Terminal' on a Pod in the Clusters Explorer. Commonly used choices include `sh` or `bash`."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.kubectlRequestTimeout",
+    "desc": "The length of time to wait before giving up on a single kubectl server request. Non-zero values should contain a corresponding time unit (e.g. 1s, 2m, 3h). A value of zero means don't timeout requests."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.samplesBranch",
+    "desc": "Branch to checkout from Google-maintained code sample repositories."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.beta.enableSkaffoldModules",
+    "desc": "Enable the new Skaffold modules integration for kubernetes applications."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.beta.enableGcloudOnDemand",
+    "desc": "Enable Installation of GCloud on demand"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.beta.enableSendLogs",
+    "desc": "Enables the ability to send logs on crashes and failures."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.beta.enableGettingStartedPage",
+    "desc": "Enable the Getting Started with CloudCode page"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.beta.skaffoldSubmitLogsFailureReasons",
+    "desc": "Enable submitting deployment logs on Skaffold errors of these types"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.beta.forceOobLogin",
+    "desc": "Force first party auth to use OOB login (non localhost callback)"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.enableMultiSkaffoldConfigsKey",
+    "desc": "Enable support for multiple skaffold configurations."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.enableTelemetry",
+    "desc": "Enable sending usage data to Google. Data collected is subject to the [Google Privacy Policy](https://policies.google.com/privacy)."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.updateAdcOnLogin",
+    "desc": "Append a `—-update-adc` flag to `gcloud auth login`. [Read about this flag](https://cloud.google.com/sdk/gcloud/reference/auth/login#--update-adc)."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.updateChannel",
+    "desc": "Automatically install the insiders version of Cloud Code by changing this value to 'Insiders', or set the value as 'Default' to use the stable released version from the marketplace. [Learn more about Insiders builds](https://cloud.google.com/code/docs/vscode/insiders)."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.enableMinikubeGcpAuthPlugin",
+    "desc": "Enable the [minikube gcp-auth plugin](https://minikube.sigs.k8s.io/docs/handbook/addons/gcp-auth/) when starting a Cloud Code run or debug session that is deploying to minikube."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.enableConfigLessExperience",
+    "desc": "Enable the experimental config-less run/debug experience for Kubernetes and Cloud Run apps."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.beta.enableBigqueryExplorer",
+    "desc": "Enable the Bigquery explorer"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.beta.enableGcsExplorer",
+    "desc": "Enable the GCS"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.yaml.trace.server",
+    "desc": "Trace the communication between VS Code and the language server in an output window."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.yaml.schemas",
+    "desc": "Associate schemas to YAML files in the current workspace."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.yaml.format.enable",
+    "desc": "Enable default YAML formatter. **Changing this setting requires a reload of VS Code. [Click here](command:workbench.action.reloadWindow) to reload**"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.yaml.format.singleQuote",
+    "desc": "Use single quotes instead of double quotes."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.yaml.format.proseWrap",
+    "desc": "Choose when to automatically wrap prose.",
+    "enumDescriptions": [
+      "Wrap prose; if it exceeds print-width.",
+      "Never wrap; keep prose on the same line.",
+      "Keep prose as-is."
+    ]
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.yaml.customTags",
+    "desc": "Custom tags the parser should recognize and validate against."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.yaml.clusterResourceCompletion",
+    "desc": "Enable resource completions from the active cluster. This setting may impact completion performance."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.yaml.yamlFileMatcher",
+    "desc": "Glob pattern matching YAML files in the workspace. YAML editing support such as completion, inline definitions, and linting would be available for this file type. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.yaml.kubernetesVersion",
+    "desc": "Select the Kubernetes version Cloud Code should utilize when providing YAML editing support."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.yaml.crdSchemaLocations",
+    "desc": "Array of locations pointing to Kubernetes CRD schema. Each of these can be set to a local path (example: `/files/crd.yaml`) or URL (example: `http://github.com/user/repo/crd.yaml`)."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.cloudshell.project",
+    "desc": "Default project to use in Cloud Shell. If not set, the existing default will be used or you will be prompted to set one. For more information on how to get started with developing in a Cloud Shell environment, view this [quickstart](https://cloud.google.com/code/docs/vscode/quickstart-remote-dev). This will also set the google.cloud.project setting to the same value."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.autoDependencies",
+    "desc": "Automatically install and update required Cloud Code dependencies such as the [Cloud SDK](https://cloud.google.com/sdk/gcloud), [Skaffold](https://skaffold.dev/), [minikube](https://minikube.sigs.k8s.io/docs/), and [Kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.verboseLogging",
+    "desc": "Display extension debug information in the 'Google Cloud Code Debug' output window."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.cloudSdkVerbosityLevel",
+    "desc": "Display Cloud SDK debug information in the 'Cloud Code' output window."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.customApplications",
+    "desc": "List of custom samples in Cloud Code"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.useGcloudAuthSkaffold",
+    "desc": "Use gcloud authentication for skaffold deployment"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.enableGkeAutopilotSupport",
+    "desc": "Enable deployment support for GKE-Autopilot clusters"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.enableCrashReporting",
+    "desc": "Enable reporting unexpected Cloud Code crashes to Google"
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.showWelcomeOrReleaseNotes",
+    "desc": "Enable displaying welcome and release notes on first use of cloud code and subsequent updates."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.migrateToContainers.mcdcExecutable",
+    "desc": "Path to mcdc executable binary."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.migrateToContainers.m2cExecutable",
+    "desc": "Path to m2c executable binary."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.dependencyPaths",
+    "desc": "Filesystem paths to the binaries Cloud Code has a dependency on. If not set, Cloud Code will attempt to find the binary in the `PATH` or use the managed version of the binary, depending on the value of the `cloudcode.autoDependencies` setting. A path must include the `.exe` extension if on Windows."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "cloudcode.compute.sshInternalIp",
+    "desc": "Connect to Compute instances using their internal IP addresses rather than their external IP addresses. Use this to connect from one instance to another on the same VPC network, over a VPN connection, or between two peered VPC networks."
+  },
+  {
+    "ext": "googlecloudtools.cloudcode-2.41.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.cloudcode-2.41.0\\package.json",
+    "key": "_cloudcode.beta.geminiCodeAssistUpdate",
+    "desc": "Enable update flow of gemini code asssit from cloud code only during dogfood"
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.datacloud.project",
+    "desc": "Enter a Google Cloud project to use for the Data-Cloud extension"
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.datacloud.enableTelemetry",
+    "desc": "Enable usage and error reporting for the Google Cloud Data Agent Kit extension. Data collected is subject to the [Google Privacy Policy](https://policies.google.com/privacy)."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.datacloud.starredProjects",
+    "desc": "A list of starred project IDs"
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.cloud.project",
+    "desc": "Enter a Google Cloud project to use for the Data-Cloud extension"
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.cloud.billingQuotaProject",
+    "desc": "The Google Cloud project used for billing and quota purposes. If empty, the main project is used."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.datacloud.gcloudPath",
+    "desc": "Filesystem path to the Google Cloud CLI executable (e.g. /usr/bin/gcloud)."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.datacloud.composer.project",
+    "desc": "The Google Cloud project to use for Managed Service for Apache Airflow operations."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.datacloud.composer.region",
+    "desc": "The region to use for Managed Service for Apache Airflow operations."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.datacloud.composer.environment",
+    "desc": "The Managed Service for Apache Airflow environment to use for operations."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.cloud.region",
+    "desc": "Enter a Google Cloud region to use for the Data-Cloud extension"
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.datacloud.agent.skills.installLocation",
+    "desc": "Choose whether agent skills should be installed globally or locally within the current workspace."
+  },
+  {
+    "ext": "googlecloudtools.datacloud-0.10.0",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\googlecloudtools.datacloud-0.10.0\\package.json",
+    "key": "google.datacloud.executeCellToolForNotebookMCP",
+    "desc": "Enable execute_cell tool for Notebook MCP. Requires restarting IDE after changing."
+  },
+  {
+    "ext": "ms-azuretools.vscode-azure-mcp-server-2.0.46-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-azuretools.vscode-azure-mcp-server-2.0.46-win32-x64\\package.json",
+    "key": "azureMcp.enabledServices",
+    "desc": "Service namespaces to enable. Leave empty to enable all. Choose from the list to avoid typing errors. **Note:** Changes require restarting the MCP server if MCP Autostart is not configured (Command Palette → MCP: List Servers → Azure MCP → Start/Restart)."
+  },
+  {
+    "ext": "ms-azuretools.vscode-azure-mcp-server-2.0.46-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-azuretools.vscode-azure-mcp-server-2.0.46-win32-x64\\package.json",
+    "key": "azureMcp.serverMode",
+    "desc": "Server Mode determines how tools are exposed: `single` collapses every tool (100+) into one (1) single tool that routes internally, `namespace` (default) collapses all tools down into logical Azure service namespace grouping (about 30 tools), while `all` exposes every MCP tool directly to the MCP client. We recommend namespace as the right balance between MCP tool count and tool selection accuracy. **Note:** Changes require restarting the MCP server if MCP Autostart is not configured (Command Palette → MCP: List Servers → Azure MCP → Start/Restart)."
+  },
+  {
+    "ext": "ms-azuretools.vscode-azure-mcp-server-2.0.46-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-azuretools.vscode-azure-mcp-server-2.0.46-win32-x64\\package.json",
+    "key": "azureMcp.readOnly",
+    "desc": "Start the Azure MCP server in read-only mode (operations that modify resources will be disabled). **Note:** Changes require restarting the MCP server if MCP Autostart is not configured (Command Palette → MCP: List Servers → Azure MCP → Start/Restart)."
+  },
+  {
+    "ext": "ms-azuretools.vscode-azure-mcp-server-2.0.46-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-azuretools.vscode-azure-mcp-server-2.0.46-win32-x64\\package.json",
+    "key": "azureMcp.dangerouslyWriteSupportLogsToDir",
+    "desc": "**DANGER:** Enables detailed debug-level logging for support and troubleshooting purposes. Specify a folder path where log files will be automatically created with timestamp-based filenames (e.g., azmcp_20251202_143052.log). **This may include sensitive information in logs.** Use with extreme caution and only when requested by support. Leave empty to disable. **Note:** Changes require restarting the MCP server if MCP Autostart is not configured (Command Palette → MCP: List Servers → Azure MCP → Start/Restart)."
+  },
+  {
+    "ext": "ms-python.vscode-pylance-2026.3.1",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-python.vscode-pylance-2026.3.1\\package.json",
+    "key": "python.analysis.useNearestConfiguration",
+    "desc": "**Experimental.** When enabled, Pylance will search for and use pyrightconfig.json or pyproject.toml files in subdirectories, creating virtual workspaces for each configuration. This allows different type-checking settings for different parts of your codebase."
+  },
+  {
+    "ext": "ms-python.vscode-pylance-2026.3.1",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-python.vscode-pylance-2026.3.1\\package.json",
+    "key": "python.analysis.usePerProjectEnvironments",
+    "desc": "When enabled, Pylance will use a separate Python environment (interpreter) for each project declared via `python-envs.pythonProjects`, so that sub-projects in a single-root workspace are type checked against their own interpreter. Note: each sub-project may also need its own `extraPaths` configuration so that cross-project imports resolve correctly. To have Pylance configure these automatically, enable `python.analysis.addExtraPathsForPythonProjects`."
+  },
+  {
+    "ext": "ms-python.vscode-pylance-2026.3.1",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-python.vscode-pylance-2026.3.1\\package.json",
+    "key": "python.analysis.addFoldersForPythonProjects",
+    "desc": "When enabled, Pylance will add a virtual workspace folder for each project declared via `python-envs.pythonProjects`. This ensures that each sub-project uses its own interpreter for type checking. Note: each sub-project may also need its own `extraPaths` configuration so that cross-project imports resolve correctly."
+  },
+  {
+    "ext": "ms-python.vscode-pylance-2026.3.1",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-python.vscode-pylance-2026.3.1\\package.json",
+    "key": "python.analysis.addExtraPathsForPythonProjects",
+    "desc": "**Experimental.** When enabled, Pylance will automatically add the source root of every project declared via `python-envs.pythonProjects` to `extraPaths`, so cross-project imports between sub-projects of a monorepo resolve without configuring `extraPaths` manually. The source root is detected per project: a `src` directory if present, otherwise the project's parent directory when the project folder is itself a package (contains `__init__.py`), otherwise the project folder. Any `extraPaths` you configure are preserved."
+  },
+  {
+    "ext": "ms-python.vscode-pylance-2026.3.1",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-python.vscode-pylance-2026.3.1\\package.json",
+    "key": "python.analysis.extraPathsForPythonProjects",
+    "desc": "**Experimental.** A manual map of folder → `extraPaths`, applied to the per-project workspace folders created for `python-envs.pythonProjects`. Each key is a folder (absolute, or relative to the workspace folder) and each value is a list of paths (absolute, or relative to the workspace folder) added to `extraPaths` for files under that folder. Keys and values may use `${workspaceFolder}`, `${workspaceFolder:Name}`, `${env:HOME}`, `${env:USERNAME}`, `${env:VIRTUAL_ENV}`, and a leading `~`, where `${workspaceFolder}` resolves to the workspace folder that contains the project. Use this as a relief valve when automatic detection (`#python.analysis.addExtraPathsForPythonProjects#`) cannot infer the right roots — for example monorepos with non-standard layouts. These overrides are applied whether or not automatic detection is enabled."
+  },
+  {
+    "ext": "ms-python.vscode-pylance-2026.3.1",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-python.vscode-pylance-2026.3.1\\package.json",
+    "key": "python.analysis.typeshedPaths",
+    "desc": "Paths to look for typeshed modules."
+  },
+  {
+    "ext": "ms-toolsai.jupyter-2025.9.1-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-toolsai.jupyter-2025.9.1-win32-x64\\package.json",
+    "key": "jupyter.executionAnalysis.enabled",
+    "desc": "Experimental feature to enable execution analysis in notebooks"
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.tracingGrpcPort",
+    "desc": "The port to use for the OpenTelemetry OTLP gRPC receiver"
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.tracingHttpPort",
+    "desc": "The port to use for the OpenTelemetry OTLP HTTP receiver"
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.enableRemoteFine-tuningAndInference",
+    "desc": "Enable to run fine-tuning and inference on Azure Container Apps (Reload Visual Studio Code after changing this setting to take effect)."
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.templateRef",
+    "desc": "Branch to pull from the template repo"
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.enableCudaForResourceUsage",
+    "desc": "Enable CUDA as GPU resource for 'show resource usage' in Playground and Profiling (Windows ML)"
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.intervalForResourceUsage",
+    "desc": "Interval for updating resource usage in Playground and Profiling (Windows ML) in milliseconds"
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.remoteInfereneEndpoints",
+    "desc": "List of remote inference endpoints"
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.externalOpenAIProviders",
+    "desc": "List of external providers to register"
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.modelLabGlobalCachePath",
+    "desc": "If set, use this global shared cache instead of per project in Model Conversion"
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.modelLabIntelUnifiedTelemetryPath",
+    "desc": "Point to the bin folder where ut.exe exists. When profiling for Intel (OpenVINO), it will provide OP level data."
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.autoCheckFoundrySkill",
+    "desc": "Automatically install and update the microsoft-foundry skill (to ~/.agents/skills/). If disabled, can use 'Foundry Toolkit: Install Foundry Skill' command to install manually."
+  },
+  {
+    "ext": "ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\ms-windows-ai-studio.windows-ai-studio-1.6.11-win32-x64\\package.json",
+    "key": "windowsaistudio.modelLabGradioPort",
+    "desc": "Port number for the Gradio web demo server. Default is 7860."
+  },
+  {
+    "ext": "openai.chatgpt-26.901.22334-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\openai.chatgpt-26.901.22334-win32-x64\\package.json",
+    "key": "chatgpt.commentCodeLensEnabled",
+    "desc": "Enable CodeLens above TODO comments to implement with Codex."
+  },
+  {
+    "ext": "openai.chatgpt-26.901.22334-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\openai.chatgpt-26.901.22334-win32-x64\\package.json",
+    "key": "chatgpt.cliExecutable",
+    "desc": "DEVELOPMENT ONLY: Path to the Codex CLI executable. You do NOT need to set this unless you are actively developing the Codex CLI. If set this manually, parts of the extension may not work as expected."
+  },
+  {
+    "ext": "openai.chatgpt-26.901.22334-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\openai.chatgpt-26.901.22334-win32-x64\\package.json",
+    "key": "chatgpt.openOnStartup",
+    "desc": "Focus the Codex sidebar when the extension finishes starting up."
+  },
+  {
+    "ext": "openai.chatgpt-26.901.22334-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\openai.chatgpt-26.901.22334-win32-x64\\package.json",
+    "key": "chatgpt.followUpQueueMode",
+    "desc": "Control whether follow-up messages are queued or steer the current run. Press Cmd/Ctrl+Shift+Enter to do the opposite for a single in-progress follow-up."
+  },
+  {
+    "ext": "openai.chatgpt-26.901.22334-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\openai.chatgpt-26.901.22334-win32-x64\\package.json",
+    "key": "chatgpt.composerEnterBehavior",
+    "desc": "Enter behavior for the Codex composer."
+  },
+  {
+    "ext": "openai.chatgpt-26.901.22334-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\openai.chatgpt-26.901.22334-win32-x64\\package.json",
+    "key": "chatgpt.reviewDelivery",
+    "desc": "Start /review inline in the current chat when possible or launch a separate review chat"
+  },
+  {
+    "ext": "openai.chatgpt-26.901.22334-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\openai.chatgpt-26.901.22334-win32-x64\\package.json",
+    "key": "chatgpt.localeOverride",
+    "desc": "Preferred language for the Codex UI. Leave empty to auto detect."
+  },
+  {
+    "ext": "openai.chatgpt-26.901.22334-win32-x64",
+    "path": "C:\\Users\\Work-D\\.vscode\\extensions\\openai.chatgpt-26.901.22334-win32-x64\\package.json",
+    "key": "chatgpt.runCodexInWindowsSubsystemForLinux",
+    "desc": "Windows only: when Windows Subsystem for Linux (WSL) is installed, automatically run Codex inside WSL. Recommended for improved sandbox security and better performance - Agent mode on Windows currently requires WSL. Changing this setting reloads VS Code to take effect."
+  }
+]

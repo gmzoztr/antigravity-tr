@@ -3,6 +3,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 const { getPaths } = require('./config');
 const { applyAllPatches, restoreAllPatches } = require('./patcher');
+const { patchAllExtensions } = require('./extension_descriptions');
 
 /**
  * GEMINI.md kuralını ekler veya günceller.
@@ -603,6 +604,7 @@ function patchClangdExtension(paths) {
   }
 }
 
+
 /**
  * Tam kurulum yürütür.
  */
@@ -656,6 +658,7 @@ function install() {
   patchWslExtension(paths);
   patchClaudeExtension(paths);
   patchCodexExtension(paths);
+  patchAllExtensions(paths);
   console.log('   [✓] Eklenti arayüzleri ve durum çubuğu güncellendi.');
 
   // 6. Önbellek Temizleme
