@@ -1,0 +1,9 @@
+{
+  "debugpy.command.clearCacheAndReload.title": "Önbelleği Temizle ve Pencereyi Yeniden Yükle",
+  "debugpy.command.debugInTerminal.title": "Python Hata Ayıklayıcısı: Python Dosyasında Hata Ayıkla",
+  "debugpy.command.debugUsingLaunchConfig.title": "Python Hata Ayıklayıcısı: launch.json Kullanarak Hata Ayıkla",
+  "debugpy.command.reportIssue.title": "Sorun Bildir...",
+  "debugpy.command.viewOutput.title": "Çıktıyı Göster",
+  "debugpy.debugJustMyCode.description": "Hata ayıklarken yalnızca kullanıcı tarafından yazılan kodda adım adım ilerleyin. Kitaplık koduna adım atmaya izin vermek için bunu devre dışı bırakın.",
+  "debugpy.showPythonInlineValues.description": "Hata ayıklama sırasında düzenleyicide satır içi değerlerin görüntülenip görüntülenmeyeceği."
+}
