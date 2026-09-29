@@ -4,6 +4,7 @@ const { execSync } = require('child_process');
 const { getPaths } = require('./config');
 const { applyAllPatches, restoreAllPatches } = require('./patcher');
 const { patchAllExtensions } = require('./extension_descriptions');
+const { patchDesktopApp, restoreDesktopApp } = require('./desktop_patcher');
 
 /**
  * GEMINI.md kuralını ekler veya günceller.
@@ -661,8 +662,19 @@ function install() {
   patchAllExtensions(paths);
   console.log('   [✓] Eklenti arayüzleri ve durum çubuğu güncellendi.');
 
-  // 6. Önbellek Temizleme
-  console.log('6. V8 Bytecode ve Electron önbelleği temizleniyor...');
+  // 6. Antigravity Desktop (Ajan & Sohbet Arayüzü) Yaması
+  if (fs.existsSync(paths.desktop.appPath)) {
+    console.log('6. Antigravity Desktop arayüzü yamalanıyor...');
+    const desktopRes = patchDesktopApp(paths);
+    if (desktopRes.success) {
+      console.log('   [✓] Antigravity Desktop (app.asar) arayüzü Türkçeleştirildi.');
+    } else {
+      console.log(`   [-] Antigravity Desktop: ${desktopRes.reason}`);
+    }
+  }
+
+  // 7. Önbellek Temizleme
+  console.log('7. V8 Bytecode ve Electron önbelleği temizleniyor...');
   clearElectronCache(paths);
   console.log('   [✓] Önbellek temizlendi, taze derleme hazır.');
 
@@ -690,6 +702,14 @@ function uninstall() {
       console.log(`   [✓] ${r.target}: Orijinal dosyaya dönüldü.`);
     } else {
       console.log(`   [-] ${r.target}: ${r.reason || 'Yedek bulunamadı.'}`);
+    }
+  }
+
+  // Desktop app geri yükle
+  if (fs.existsSync(paths.desktop.appPath)) {
+    const desktopRes = restoreDesktopApp(paths);
+    if (desktopRes.restored) {
+      console.log('   [✓] Antigravity Desktop: Orijinal app.asar dosyasına dönüldü.');
     }
   }
 
