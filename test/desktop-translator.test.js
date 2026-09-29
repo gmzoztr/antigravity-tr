@@ -55,3 +55,21 @@ test('custom menu items and select labels translate without changing option valu
     assert.deepEqual([...dom.window.document.querySelectorAll('option')].map(n => [n.value, n.textContent]), [['always', 'Her Zaman'], ['never', 'Asla']]);
   } finally { dom.window.close(); }
 });
+
+test('reported settings screens translate initial and asynchronously added labels', async () => {
+  const labels = ['New', 'Search tasks...', 'No scheduled tasks configured.', 'Five Hour Limit Remaining', 'Inherit Global', 'Full machine', 'Windows Subsystem for Linux', 'Connect', 'Version', 'App version', 'Automatic Check for Updates', 'Upgrade', 'Model Credits', 'Enable AI Credit Overages', 'Back', 'File Permissions', 'File Reads', 'File Writes', 'Allow', 'Deny'];
+  const dom = new JSDOM('<body><div role="dialog"></div></body>', { runScripts: 'outside-only' });
+  try {
+    dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));
+    await new Promise(resolve => dom.window.setTimeout(resolve, 10));
+    const container = dom.window.document.querySelector('[role="dialog"]');
+    for (const text of labels) { const node = dom.window.document.createElement('span'); node.textContent = text; container.append(node); }
+    const quota = dom.window.document.createElement('span'); quota.textContent = 'Resets in 16h 24m'; container.append(quota);
+    await new Promise(resolve => dom.window.setTimeout(resolve, 20));
+    labels.forEach((text, index) => assert.notEqual(container.children[index].textContent, text, text));
+    assert.equal(quota.textContent, '16 saat 24 dakika sonra yenilenir');
+    quota.textContent = 'Resets in 16h 23m';
+    await new Promise(resolve => dom.window.setTimeout(resolve, 20));
+    assert.equal(quota.textContent, '16 saat 23 dakika sonra yenilenir');
+  } finally { dom.window.close(); }
+});

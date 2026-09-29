@@ -2,6 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const { translateDynamic } = require('./desktop_dynamic');
 const { rewriteArchive, restoreArchive } = require('./desktop_archive');
 
 function transformDesktopSources(input) {
@@ -155,6 +156,7 @@ function rebuildLocalizedMenu(menu) {
 // ═══════════════════════════════════════════════════════════════════
 (function() {
   const dictionary = ${JSON.stringify(dictionary, null, 2)};
+  const translateDynamic = ${translateDynamic.toString()};
 
   function translateTextNode(node) {
     if (!node || node.nodeType !== 3) return;
@@ -170,8 +172,9 @@ function rebuildLocalizedMenu(menu) {
     const trimmed = val.trim();
     if (!trimmed) return;
 
-    if (Object.prototype.hasOwnProperty.call(dictionary, trimmed) && dictionary[trimmed] !== trimmed) {
-      node.nodeValue = val.replace(trimmed, dictionary[trimmed]);
+    const translated = Object.prototype.hasOwnProperty.call(dictionary, trimmed) ? dictionary[trimmed] : translateDynamic(trimmed);
+    if (translated !== trimmed) {
+      node.nodeValue = val.replace(trimmed, translated);
     }
   }
 
