@@ -1,5 +1,8 @@
 // Only recognized UI sentences are transformed; arbitrary numbers and content are untouched.
 function translateDynamic(text) {
+  const credits = /^Available AI Credits:\s*([\d.,]+)$/.exec(text);
+  if (credits) return 'Kullanılabilir AI Kredisi: ' + credits[1];
+  if (text === 'tokens)') return 'token)';
   function duration(value) {
     if (!/^(?:\d+\s*(?:days?|hours?|minutes?|seconds?|d|h|m|s)(?:,?\s*|$))+$/.test(value)) return null;
     return value.replace(/(\d+)\s*(days?|hours?|minutes?|seconds?|d|h|m|s)\b/g,

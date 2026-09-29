@@ -1,0 +1,442 @@
+[
+  {
+    "name": "accidental-data-loss-prevention",
+    "source": "**STOP AND VERIFY**: Before running any command or tool that results in irreversible data loss, you MUST obtain explicit user consent.\nWhen in doubt, ask. It is better to wait for confirmation than to accidentally delete production data or critical project assets.\nUse this for:\n- SQL: DROP TABLE/VIEW/SCHEMA/DATABASE, TRUNCATE, or broad DELETE (missing WHERE or using 1=1).\n- Cloud Storage: gsutil rm or gcloud storage rm targeting production data or critical buckets.\n- Infrastructure: gcloud projects delete, deleting Spanner/BigQuery/Dataproc resources, deleting secrets, or KMS key destruction.",
+    "translation": "Geri alınamayan veri kayıplarını önlemek için işlem öncesinde doğrulama ve açık kullanıcı onayı gerektirir. SQL tablolarını veya veritabanlarını silme, toplu kayıt silme, üretim verilerini depolamadan kaldırma ve bulut kaynaklarını ya da şifreleme anahtarlarını silme işlemlerini kapsar. Şüpheli durumlarda önce kullanıcıya sorulur."
+  },
+  {
+    "name": "agy-customizations",
+    "source": "Comprehensive guide and reference for the Antigravity Customization System. Use to explain how customizations work, their loading priority, discovery mechanisms, and to guide the creation of skills, rules, plugins, hooks, and MCP servers.",
+    "translation": "Antigravity özelleştirme sistemi için kapsamlı kullanım ve başvuru kılavuzu. Özelleştirmelerin nasıl yüklendiğini, öncelik sırasını ve keşif mekanizmalarını açıklar; beceri, kural, eklenti, kanca ve MCP sunucusu oluşturmayı anlatır."
+  },
+  {
+    "name": "alphafold-database-fetch-and-analyze",
+    "source": "Retrieve and analyze AlphaFold predicted structures for a protein. Use when the user provides a specific UniProt Accession ID and wants structural confidence metrics (pLDDT), domain boundary analysis, or disorder assessment. Do not use if the user only has a protein name, gene name, or amino acid sequence — ask for a UniProt ID first.",
+    "translation": "Bir protein için AlphaFold yapı tahminlerini getirir ve analiz eder. UniProt erişim kimliği üzerinden yapısal güven ölçümlerini (pLDDT), bölge sınırlarını ve düzensiz bölgeleri değerlendirir. Yalnızca protein adı, gen adı veya amino asit dizisi verildiyse önce UniProt kimliği istenir."
+  },
+  {
+    "name": "alphagenome-atlas-website-links",
+    "source": "Constructs deep-links and URLs for the AlphaGenome Atlas website. Supports generating single-variant exploration links (1-based chr:pos:ref>alt), genomic locus views (1-based closed chr:start-end), candidate summary tables, and AlphaGenome reference vs. alternate predictions. Use whenever visualizing, exploring, charting, or linking genetic variants and genomic loci on the AlphaGenome Atlas, or when asked to inspect, view, or link predictions for a genomic variant.",
+    "translation": "AlphaGenome Atlas için doğrudan bağlantılar oluşturur. Tek varyant incelemelerini, genomik bölge görünümlerini, aday özet tablolarını ve referans ile alternatif tahminlerin karşılaştırılmasını destekler. Genetik varyantları ve genomik bölgeleri görselleştirmek veya ilgili tahminlere bağlantı vermek için kullanılır."
+  },
+  {
+    "name": "alphagenome-single-variant-analysis",
+    "source": "Analyzes genetic variant effects on gene expression (RNA-seq), chromatin accessibility (DNASE), histone marks (ChIP), and transcription factors using the AlphaGenome API. Use when the user asks about non-coding variant effects, pathogenicity, clinical significance, disease associations, functional effects, gene expression changes, splicing disruption, or regulatory effects in promoters and enhancers. Also use for resolving biological terms to tissue/cell-type ontologies (UBERON/CL) or analyzing variants in chr:pos:ref>alt format.",
+    "translation": "AlphaGenome API ile genetik varyantların gen ifadesi, kromatin erişilebilirliği, histon işaretleri ve transkripsiyon faktörleri üzerindeki etkilerini analiz eder. Kodlamayan varyantlar, patojenite, klinik önem, hastalık ilişkileri, kesilip birleştirme ve düzenleyici etkileri inceler. Biyolojik terimleri doku ve hücre ontolojileriyle eşleştirmeyi de destekler."
+  },
+  {
+    "name": "alphagenome-variant-impact-score",
+    "source": "Score, annotate, and analyze the functional impact of genetic variants using AlphaGenome Variant Impact (AVI) scores. Query variants in chr:pos:ref>alt format, annotate VCF/tabular callsets, perform saturation mutagenesis window scans (1-based closed chr:start-end), and extract GENCODE v46 GTF gene/exon/junction coordinates all via the AlphaGenome Atlas API.",
+    "translation": "AlphaGenome Varyant Etki (AVI) puanlarıyla genetik varyantların işlevsel etkisini puanlar, açıklar ve analiz eder. Atlas API üzerinden chr:pos:ref>alt sorgularını, VCF ve tablo verilerinin açıklanmasını, doygunluk mutagenezi taramalarını ve GENCODE v46 gen, ekzon ve birleşim koordinatlarının alınmasını destekler."
+  },
+  {
+    "name": "android-cli",
+    "source": "Provides instructions for installing and using the `android` CLI. The `android` command-line tool is a critical tool for Android development and helps you create new Android projects, run Android apps on devices, manage and interact with Android virtual devices (including screenshots and UI inspection), manage Android SDK components, look up official Android documentation, and discover and install official Android skills.",
+    "translation": "Android komut satırı aracının kurulmasını ve kullanılmasını açıklar. Android projeleri oluşturma, uygulamaları cihazlarda çalıştırma, sanal cihazları yönetme, ekran görüntüsü alma, arayüz inceleme ve SDK bileşenlerini yönetme işlemlerini kapsar. Resmî Android belgelerini ve becerilerini bulmayı da destekler."
+  },
+  {
+    "name": "antigravity-guide",
+    "source": "Provides a comprehensive guide, quick reference, and sitemap for Google Antigravity (AGY), including the Antigravity CLI (agy), Antigravity 2.0, Antigravity IDE, Python SDK, slash commands, keybindings, and customizations (skills, rules, MCP, sidecars). Activate this skill when the user asks questions about how to use, configure, or customize Antigravity, AGY, the agy CLI, the Antigravity IDE, or Antigravity 2.0.",
+    "translation": "Google Antigravity için kapsamlı kullanım kılavuzu ve hızlı başvuru kaynağı. Antigravity CLI, Antigravity 2.0, IDE, Python SDK, eğik çizgi komutları, klavye kısayolları ve özelleştirmeleri kapsar. Antigravity araçlarının kullanımı, yapılandırılması ve kişiselleştirilmesiyle ilgili sorularda kullanılır."
+  },
+  {
+    "name": "bigquery-ai-ml",
+    "source": "Leverages BigQuery's built-in machine learning and GenAI capabilities for advanced data analytics. Use when you need to write SQL queries that perform time-series forecasting, detect outliers, find key drivers, or leverage generative AI capabilities in BigQuery.",
+    "translation": "BigQuery'nin yerleşik makine öğrenimi ve üretken yapay zekâ özellikleriyle gelişmiş veri analizi yapar. Zaman serisi tahmini, aykırı değer tespiti, temel etkenlerin belirlenmesi ve üretken yapay zekâ işlevleri için SQL sorguları hazırlar."
+  },
+  {
+    "name": "bigquery-bigframes",
+    "source": "Generates Python code using BigQuery DataFrames (BigFrames), the pandas/scikit-learn-style API over BigQuery. Use when writing BigFrames code or doing pandas-style dataframe/ML work against BigQuery (e.g. in a notebook). Don't use for SQL-first workflows or the google-cloud-bigquery client library — use bigquery-basics.",
+    "translation": "BigQuery üzerinde pandas ve scikit-learn benzeri bir arayüz sunan BigFrames ile Python kodu oluşturur. Veri çerçeveleri ve makine öğrenimi çalışmalarında kullanılır. SQL ağırlıklı iş akışları veya google-cloud-bigquery istemci kitaplığı için bigquery-basics tercih edilir."
+  },
+  {
+    "name": "bigquery-data-transfer-service",
+    "source": "Discovers and inspects BigQuery Data Transfer Service (DTS) configurations. Use this to identify existing ingestion pipelines and extract datasource or transfer config metadata for data pipelines. Use when a user asks for ingestion scenarios while building or managing data pipelines or when a user asks to \"ingest\" or \"add\" data that may already be managed by a DTS transfer.",
+    "translation": "BigQuery Veri Aktarım Hizmeti (DTS) yapılandırmalarını bulur ve inceler. Mevcut veri alma akışlarını belirler; veri kaynağı ve aktarım yapılandırması bilgilerini çıkarır. Veri akışları oluşturulurken veya yönetilirken, eklenmek istenen verinin mevcut bir DTS aktarımıyla yönetilip yönetilmediğini araştırır."
+  },
+  {
+    "name": "bigquery-graph",
+    "source": "Provides guidelines and best practices for querying and defining property graphs and semantic graphs in BigQuery using GQL (Graph Query Language). Use when creating property graphs or querying graph topologies in BigQuery.",
+    "translation": "BigQuery'de GQL ile özellik grafikleri ve anlamsal grafikler tanımlamak ve sorgulamak için yöntemler sunar. Özellik grafikleri oluşturma ve grafik yapıları üzerinde sorgu çalıştırma işlemlerinde kullanılır."
+  },
+  {
+    "name": "bigquery-sql",
+    "source": "Provides BigQuery SQL query optimization techniques, execution best practices, and performance tuning rules for high-efficiency querying. Use when optimizing BigQuery SQL queries, reducing query costs, or designing performant SQL transformations.",
+    "translation": "BigQuery SQL sorgularını iyileştirmek için sorgu optimizasyonu, çalıştırma ve performans önerileri sunar. Sorgu maliyetlerini azaltmak ve verimli SQL dönüşümleri tasarlamak için kullanılır."
+  },
+  {
+    "name": "bigtable-basics",
+    "source": "Assists in provisioning instances/tables, designing performant schemas, and querying data in Bigtable. Use when designing Bigtable row keys, configuring column families, writing SQL queries or client library code (Java, Go, Python) for Bigtable, or diagnosing performance/hotspotting issues. Also use when provisioning Bigtable clusters using gcloud or cbt CLIs. Don't use for generic Cloud SQL administration.",
+    "translation": "Bigtable örnekleri ve tabloları oluşturmayı, verimli şemalar tasarlamayı ve veri sorgulamayı destekler. Satır anahtarları, sütun aileleri, SQL sorguları, Java/Go/Python istemcileri ve performans sorunlarını kapsar. gcloud veya cbt ile küme oluşturmayı da destekler; genel Cloud SQL yönetimi için kullanılmaz."
+  },
+  {
+    "name": "building-data-apps",
+    "source": "Build modern data apps, dashboards, and interactive reports using either\nReact + Vite or Streamlit. Includes optional Gemini Data Analytics chat\nintegration for an AI powered \"chat with your data\" experience.\n\nRelevant when any of the following conditions are true:\n  1. User explicitly requests to build a data dashboard, data application, or visualization UI, and the UI pulls data from a GCP database (defaulting to BigQuery unless otherwise specified).\n  2. You need to generate a frontend web application to interact with, query, and visualize data from GCP data sources.\n  3. User wants to build a \"chat with your data\" experience or integrate the Gemini Data Analytics chat API into a web interface.\n\nDo NOT use when any of the following conditions are true:\n  1. The request is for building backend-only services.\n  2. The request is for simple CLI scripts or command-line applications.\n  3. The web application is not data-centric or does not involve visualizing/querying data from GCP sources.",
+    "translation": "React + Vite veya Streamlit ile veri uygulamaları, panolar ve etkileşimli raporlar oluşturur. GCP veri kaynaklarını sorgulayan ve görselleştiren arayüzler ile Gemini Data Analytics üzerinden verilerle sohbet özelliği geliştirmeyi destekler. Yalnızca arka uç hizmetleri, komut satırı araçları veya GCP verileriyle çalışmayan uygulamalar için kullanılmaz."
+  },
+  {
+    "name": "chembl-database",
+    "source": "Query the ChEMBL database for bioactive molecules, drug targets, bioactivity data, approved drugs, and chemical structures. Use when the user asks about compounds, targets, IC50/Ki values, drug mechanisms, or structure searches.",
+    "translation": "ChEMBL veritabanında biyoaktif molekülleri, ilaç hedeflerini, biyolojik etkinlik verilerini, onaylı ilaçları ve kimyasal yapıları sorgular. Bileşikler, hedefler, IC50/Ki değerleri, ilaç mekanizmaları ve yapı aramalarında kullanılır."
+  },
+  {
+    "name": "clinical-trials-database",
+    "source": "Query ClinicalTrials.gov via APIv2. Use when you want to search for trials by condition, drug, location, status, or phase; retrieve trial details by NCT ID; check eligibility/inclusion criteria; count trials across conditions or time periods; identify a sponsor's trial portfolio; find recruiting trials for patient matching.",
+    "translation": "ClinicalTrials.gov APIv2 üzerinden hastalık, ilaç, konum, durum veya evreye göre klinik araştırma arar. NCT kimliğiyle ayrıntıları getirir; katılım koşullarını, araştırma sayılarını ve sponsor portföylerini inceler. Katılımcı kabul eden araştırmaları bulmayı destekler."
+  },
+  {
+    "name": "clinvar-database",
+    "source": "Use when needing clinical significance, pathogenicity classifications (e.g., Pathogenic, Benign, VUS), clinical evidence rationales, or finding \"hard positive\" benchmark controls for human genomic variants.",
+    "translation": "İnsan genetik varyantlarının klinik önemini, patojenite sınıflandırmalarını ve klinik kanıtlarını inceler. Patojenik, iyi huylu ve önemi belirsiz varyantları araştırmak veya karşılaştırma için doğrulanmış pozitif örnekler bulmak amacıyla kullanılır."
+  },
+  {
+    "name": "credentials",
+    "source": "Instructions for handling API keys and credentials safely, verifying their presence, and prompting the user to add them if missing using a safe protocol.",
+    "translation": "API anahtarlarını ve kimlik bilgilerini güvenli biçimde yönetmeyi açıklar. Gerekli bilgilerin varlığını doğrular ve eksik olanların kullanıcı tarafından güvenli bir yöntemle eklenmesini sağlar."
+  },
+  {
+    "name": "data-autocleaning",
+    "source": "Automated data quality and transformation capabilities for Dataform/dbt/BigQuery pipelines. Processes data sourced from BigQuery or Cloud Storage (GCS), applying best practices for data ingestion, movement, schema mapping, and comprehensive data cleaning.",
+    "translation": "Dataform, dbt ve BigQuery veri akışlarında veri kalitesini ve dönüşümlerini otomatikleştirir. BigQuery veya Cloud Storage kaynaklarından gelen verileri alır; veri taşıma, şema eşleştirme ve kapsamlı veri temizleme yöntemlerini uygular."
+  },
+  {
+    "name": "dataform-bigquery",
+    "source": "Expertise in generating clean, correct, and efficient Dataform pipeline code for BigQuery ELT. Use this when creating or modifying Dataform pipelines, actions, or source declarations, when Dataform, SQLX, or BigQuery are mentioned in a transformation, when data needs to be ingested from GCS into BigQuery via Dataform, or when setting up a new Dataform project or configuring workflow_settings.yaml.",
+    "translation": "BigQuery ELT işlemleri için temiz, doğru ve verimli Dataform kodu üretir. Veri akışları, işlemler ve kaynak tanımları oluşturmayı veya düzenlemeyi; GCS verilerini BigQuery'ye aktarmayı ve workflow_settings.yaml yapılandırmasını kapsar."
+  },
+  {
+    "name": "dbsnp-database",
+    "source": "Use when you want to look up, map, and search for short genetic variants (SNPs, indels) in NCBI's dbSNP database. Resolves between rsIDs, genomic coordinates in VCF format, and HGVS strings. For an rsID, returns variant type, gene associations, clinical significance, allele frequencies, and genomic coordinates (GRCh38).",
+    "translation": "NCBI dbSNP veritabanında kısa genetik varyantları (SNP ve indel) arar ve eşleştirir. rsID, VCF koordinatları ve HGVS gösterimleri arasında dönüşüm yapar. Varyant türü, gen ilişkileri, klinik önem, alel sıklıkları ve GRCh38 koordinatlarını getirir."
+  },
+  {
+    "name": "dbt-bigquery",
+    "source": "Expert guidance for creating, modifying, and optimizing dbt pipelines for BigQuery. Use this skill whenever user asks for generating or modifying a dbt model or project. Activate this skill when the user - Creates, modifies, or troubleshoots **dbt models or pipelines** - Needs to **optimize SQL** within a dbt project - Is **setting up a new dbt project** or configuring existing one",
+    "translation": "BigQuery için dbt projeleri ve veri akışları oluşturma, düzenleme ve iyileştirme konusunda rehberlik eder. dbt modellerindeki sorunları çözme, SQL performansını artırma ve yeni projeleri yapılandırma işlemlerini kapsar."
+  },
+  {
+    "name": "developing-with-bigquery",
+    "source": "A repository of BigQuery-specific logic, knowledge, and specialized standards.\nUse this skill whenever you are doing anything with BigQuery, including:\n  1. BigQuery query optimization\n  2. BigFrames Python code\n  3. BigQuery ML/AI functions.",
+    "translation": "BigQuery'ye özgü bilgiler, yöntemler ve geliştirme standartları sunar. BigQuery sorgu optimizasyonu, BigFrames Python kodu ve makine öğrenimi ile yapay zekâ işlevleri üzerinde çalışırken kullanılır."
+  },
+  {
+    "name": "discovering-gcp-data-assets",
+    "source": "Finds and inspects data assets within Google Cloud.\nRelevant when any of the following conditions are true:\n  1. The user request involves finding, exploring, or inspecting data assets\n     in Google Cloud, such as:\n       - BigQuery datasets, tables, or views\n       - BigLake catalog or tables\n       - Spanner instances, databases or tables\n       - etc.\n  2. You need to retrieve the schema, metadata, or governance policies for a\n     GCP data asset.\n  3. You have a keyword or topic (e.g., \"sales data\") but lack the specific\n     table or resource ID.\n  4. You are attempting to find data using `bq ls`, as this skill offers a\n     superior approach.\nDon't use when:\n  - Assets are outside Google Cloud",
+    "translation": "Google Cloud içindeki veri kaynaklarını bulur ve inceler. BigQuery, BigLake ve Spanner kaynaklarının şemalarını, üst verilerini ve yönetişim politikalarını getirir. Kaynak kimliği bilinmediğinde konu veya anahtar kelimeyle arama yapmayı destekler. Google Cloud dışındaki kaynaklar için kullanılmaz."
+  },
+  {
+    "name": "embl-ebi-ols",
+    "source": "Query and search the EMBL-EBI Ontology Lookup Service (OLS) for biomedical ontology terms, definitions, and hierarchies across 250+ ontologies (e.g., GO, DOID, HP). Use when the user asks to search for terms, retrieve details, navigate hierarchies (parents, children, ancestors), look up properties and individuals, get autocomplete suggestions, or access ontology metadata and statistics.",
+    "translation": "EMBL-EBI Ontoloji Arama Hizmeti üzerinden 250'den fazla biyomedikal ontolojide terim, tanım ve hiyerarşi arar. Üst ve alt kavramları, özellikleri, otomatik tamamlama önerilerini, ontoloji bilgilerini ve istatistiklerini getirir."
+  },
+  {
+    "name": "encode-ccres-database",
+    "source": "Query the ENCODE Registry of cis-Regulatory Elements (cCREs) via the SCREEN GraphQL API, or make custom queries to the ENCODE Portal REST API for experiments and files (ChIP-seq peaks, etc.). Use when you want to query regulatory annotations or raw experimental data across human cell types.",
+    "translation": "SCREEN GraphQL API üzerinden ENCODE cis düzenleyici elementlerini (cCRE) sorgular. ENCODE Portal REST API ile deney ve dosya aramaları da yapar. İnsan hücre türlerindeki düzenleyici açıklamaları ve ham deney verilerini incelemek için kullanılır."
+  },
+  {
+    "name": "enforcing-resource-attribution",
+    "source": "Enforces resource attribution for CLI commands. Use this skill whenever you are running `bq` or `gcloud` commands via `run_command`. It ensures mandatory labeling for supported `bq` operations while avoiding invalid flags on read-only commands.",
+    "translation": "bq ve gcloud komutlarında kaynak etiketlemesini düzenler. Desteklenen bq işlemlerine gerekli etiketleri eklerken salt okunur komutlara geçersiz parametre eklenmesini önler."
+  },
+  {
+    "name": "ensembl-database",
+    "source": "Query the Ensembl database to resolve gene, transcript, and protein IDs, fetch genomic or protein sequences, retrieve gene structures (exons), and get variant consequence and effect predictions (VEP). Use this skill as a primary ID translator, genomic sequence database and variant effect prediction tool.",
+    "translation": "Ensembl üzerinden gen, transkript ve protein kimliklerini eşleştirir; genom ve protein dizilerini, ekzon yapılarını ve varyant etki tahminlerini (VEP) getirir. Kimlik dönüşümü, dizi sorgulama ve varyant etkisi incelemelerinde kullanılır."
+  },
+  {
+    "name": "federate-lakehouse-catalog",
+    "source": "Sets up Google Cloud Lakehouse federated catalogs to remote Iceberg REST Catalogs. Currently supported catalogs: Databricks Unity, AWS Glue. Supported clouds hosting those catalogs: GCP, AWS. The primary use case is connecting to remote data to query it from GCP engines (BigQuery, Spark). Examples of when to use this: \"federate my lakehouse catalog to databricks\", \"query data in databricks\", \"query data in s3\", \"connect to aws glue\". Do NOT use for direct remote database SQL execution (e.g., Databricks SQL) or managing remote clusters and infrastructure (e.g., Databricks clusters, AWS Glue jobs).",
+    "translation": "Google Cloud Lakehouse kataloglarını uzak Iceberg REST kataloglarına bağlar. GCP ve AWS üzerindeki Databricks Unity ile AWS Glue kataloglarını destekler; uzak verilerin BigQuery veya Spark ile sorgulanmasını sağlar. Uzak veritabanında doğrudan SQL çalıştırma ya da uzak küme ve altyapı yönetimi için kullanılmaz."
+  },
+  {
+    "name": "foldseek-structural-search",
+    "source": "Performs 3D structural searches of proteins against various databases (PDB, AlphaFold, CATH, MGnify, etc.) using the Foldseek API. Use ONLY when the user provides a physical 3D coordinate file (.cif, .mmcif, or .pdb) and wants to find structurally similar proteins. Do NOT use if the user only provides a protein sequence, gene name, or UniProt ID.",
+    "translation": "Foldseek API ile PDB, AlphaFold, CATH ve MGnify gibi veritabanlarında benzer üç boyutlu protein yapıları arar. Bir .cif, .mmcif veya .pdb koordinat dosyası gerektirir. Yalnızca protein dizisi, gen adı veya UniProt kimliğiyle kullanılmaz."
+  },
+  {
+    "name": "gcloud-auth-verification",
+    "source": "Guidelines for identifying and resolving missing Google Cloud authentication and Application Default Credentials (ADC). Use this skill if `gcloud`, `bq`, `dataform`, or Python libraries return authentication errors.",
+    "translation": "Google Cloud kimlik doğrulaması ve varsayılan uygulama kimlik bilgilerindeki (ADC) eksikleri belirlemeyi ve gidermeyi açıklar. gcloud, bq, dataform veya Python kitaplıklarının kimlik doğrulama hatalarında kullanılır."
+  },
+  {
+    "name": "gcp-composer-troubleshooting",
+    "source": "Provides expert guidance for troubleshooting Cloud Composer (Apache Airflow) and Orchestration pipelines. Use this skill when the user asks to generate Root Cause Analysis (RCA), troubleshoot or fix a failed pipeline, DAG in Composer environment and generate RCA report.",
+    "translation": "Cloud Composer, Apache Airflow ve düzenleme akışlarındaki sorunları çözmeye yardımcı olur. Başarısız veri akışlarını ve DAG'leri inceler; kök neden analizi yapar ve rapor hazırlar."
+  },
+  {
+    "name": "gcp-data-pipelines",
+    "source": "Primary entry point for building, managing, and orchestrating data pipelines on Google Cloud. Guides users to the appropriate skill for dbt, Dataflow (Apache Beam), Dataform, Spark (Dataproc Serverless), BigQuery Data Transfer Service (DTS) or orchestration pipeline using Cloud Composer. Clarify requirements and resolve ambiguity for creating, updating and running data pipelines.",
+    "translation": "Google Cloud üzerinde veri akışları oluşturma, yönetme ve düzenleme için başlangıç noktasıdır. İhtiyaca göre dbt, Dataflow, Dataform, Spark, BigQuery DTS veya Cloud Composer becerilerine yönlendirir. Akışları oluşturma, güncelleme ve çalıştırma gereksinimlerini netleştirir."
+  },
+  {
+    "name": "gcp-dataflow",
+    "source": "Provides guidance for writing, packaging and executing Apache Beam pipelines on GCP using Cloud Dataflow. Use when: - Creating an Apache Beam Dataflow pipeline. - Creating a Google Flex Template.",
+    "translation": "Cloud Dataflow üzerinde Apache Beam veri akışları yazmayı, paketlemeyi, çalıştırmayı ve sorunlarını gidermeyi destekler. Java, Python ve Go projelerini, Flex Templates, Cloud Build, iş sağlığı, darboğazlar ve otomatik ölçeklendirme analizini kapsar. Dataflow ile ilgisiz GCP yönetimi veya farklı veri akışı teknolojileri için kullanılmaz."
+  },
+  {
+    "name": "gcp-dataflow",
+    "source": "Guides writing, packaging, executing, and troubleshooting Apache Beam pipelines on Dataflow. Use when creating new pipelines, configuring Flex Templates, or analyzing performance of Dataflow jobs. Capabilities include Java/Python/Go setup, Cloud Build integration, and deep diagnostic analysis of job health and autoscaling.\nUse when: - Creating an Apache Beam Dataflow pipeline. - Creating a Google Dataflow Flex Template. - Using an existing Google Dataflow Template. - Debugging Dataflow pipeline - Troubleshooting Dataflow pipeline - Analyzing Performance of Dataflow pipeline.\nKey capabilities: Java/Python/Go project setup, Flex Templates (with Cloud Build), and diagnostics for streaming job health, bottlenecks, and autoscaling.\nDo NOT use for: - General GCP resource management unrelated to Dataflow. - Issues with other GCP services (e.g., GCE, GCS, BigQuery) unless directly\n  impacting Dataflow pipeline execution.\n- Pipeline technologies other than Apache Beam on Dataflow.",
+    "translation": "Cloud Dataflow üzerinde Apache Beam veri akışları yazmayı, paketlemeyi, çalıştırmayı ve sorunlarını gidermeyi destekler. Java, Python ve Go projelerini, Flex Templates, Cloud Build, iş sağlığı, darboğazlar ve otomatik ölçeklendirme analizini kapsar. Dataflow ile ilgisiz GCP yönetimi veya farklı veri akışı teknolojileri için kullanılmaz."
+  },
+  {
+    "name": "gcp-managed-airflow-dag-authoring",
+    "source": "Guides the authoring and validation of Apache Airflow DAGs for Managed Service for Apache Airflow (MSAA; formerly Cloud Composer). Covers environment context discovery, Airflow 2 vs 3 compatibility, authoring best practices, and local/remote validation processes. Use when creating or extending an Airflow DAG. Don't use when authoring Python code unrelated to Airflow DAGs.",
+    "translation": "Managed Service for Apache Airflow için DAG yazma ve doğrulama süreçlerini açıklar. Ortam keşfi, Airflow 2 ve 3 uyumluluğu, geliştirme yöntemleri ile yerel ve uzak doğrulamayı kapsar. Airflow DAG'leriyle ilgisiz Python kodu için kullanılmaz."
+  },
+  {
+    "name": "gcp-managed-airflow-migrations",
+    "source": "Provides guidance for migrating Apache Airflow DAGs in Managed Service for Apache Airflow (MSAA; formerly Cloud Composer). Covers migration to Airflow 2.11.1 (MSAA Gen 2 and 3) and Airflow 3 (MSAA Gen 3), including environment inspection, GCS download/upload and scanning patterns for breaking changes.",
+    "translation": "Managed Service for Apache Airflow ortamlarında DAG geçişlerini planlar. Airflow 2.11.1 ve Airflow 3'e geçişte ortam inceleme, GCS dosya aktarımı ve uyumluluğu bozan değişikliklerin taranmasını kapsar."
+  },
+  {
+    "name": "gcp-managed-airflow-recommendations",
+    "source": "Provides recommendations and best practices for creating, configuring, tuning and optimizing Managed Service for Apache Airflow (MSAA, Cloud Composer) environments. Use when the user asks for guidance, recommendations, or best practices on configuring Cloud Composer, scaling Airflow environments, preventing workload restarts, or analyzing system health.",
+    "translation": "Managed Service for Apache Airflow ve Cloud Composer ortamlarını oluşturma, yapılandırma ve iyileştirme önerileri sunar. Ölçeklendirme, iş yüklerinin yeniden başlamasını önleme ve sistem sağlığını değerlendirme konularını kapsar."
+  },
+  {
+    "name": "gcp-pipeline-orchestration",
+    "source": "This skill helps the agent generate or update orchestration pipeline definitions for Google Cloud Composer to initialize orchestration pipeline or update the orchestration definition for orchestration of various data pipelines, like dbt pipelines, notebooks, Spark jobs, Dataform, Python scripts or inline BigQuery SQL queries. This skill also helps deploy and trigger orchestration pipelines.",
+    "translation": "Google Cloud Composer için veri akışı düzenleme tanımları oluşturur ve günceller. dbt akışları, not defterleri, Spark işleri, Dataform, Python betikleri ve BigQuery SQL sorgularını bir araya getirir. Akışları yayımlamayı ve tetiklemeyi de destekler."
+  },
+  {
+    "name": "gcp-pipeline-resource-provisioning",
+    "source": "Automates declarative resource creation and provisioning for data pipelines, supporting BigQuery, Dataform, Dataproc, BigQuery Data Transfer Service (DTS), and other resources. It manages environment-specific configurations (dev, staging, prod) through a deployment.yaml file.\nUse when:\n- Modifying or creating deployment.yaml for deployment settings.\n- Resolving environment-specific variables (e.g., Project IDs, Regions) for deployment.\n- Provisioning supported infrastructure like BigQuery datasets/tables, Dataform resources, or DTS resources via deployment.yaml.\nDo not use when:\n- Resources already exist.\n- Managing resources not supported by `gcloud beta orchestration-pipelines resource-types list`.\n- Managing general cloud infrastructure (VMs, networks, Kubernetes, IAM policies), which are better suited for Terraform.\n- Infrastructure spans multiple cloud providers (AWS, Azure, etc.).\n- Already uses Terraform for the target resources.",
+    "translation": "deployment.yaml üzerinden BigQuery, Dataform, Dataproc ve DTS gibi veri akışı kaynaklarını oluşturur. Geliştirme, hazırlık ve üretim ortamlarının ayarlarını yönetir. Mevcut kaynakları, desteklenmeyen kaynak türlerini, genel bulut altyapısını, birden fazla bulut sağlayıcısını veya zaten Terraform ile yönetilen kaynakları kapsamaz."
+  },
+  {
+    "name": "gcp-spark",
+    "source": "Develops and executes Spark code on Dataproc Clusters and Serverless.\nReads and writes data using BigLake Iceberg catalogs, BigQuery and Spanner.\nDebugs execution failures.\nUse when:\n- Writing Spark ETL pipelines on GCP.\n- Training or running inference with ML models with spark on GCP.\n- Managing Spark clusters, jobs, batches, and interactive sessions.\nDon't use when:\n- Writing generic Python scripts that don't use Spark.\n- Performing simple SQL queries that can be done directly in BigQuery.",
+    "translation": "Google Cloud Dataproc kümelerinde ve sunucusuz ortamlarda Spark kodu geliştirir ve çalıştırır. BigLake Iceberg, BigQuery ve Spanner verilerini okur ve yazar; çalışma hatalarını giderir. ETL, makine öğrenimi, küme, iş ve etkileşimli oturum yönetimini kapsar. Spark kullanmayan Python betikleri veya doğrudan BigQuery'de yapılabilecek basit sorgular için kullanılmaz."
+  },
+  {
+    "name": "gcp-spark",
+    "source": "Develops and executes Spark code on Managed Spark on Google Cloud (Dataproc Clusters and Serverless).\nReads and writes data using BigLake Iceberg catalogs, BigQuery and Spanner.\nDebugs execution failures.\nUse when:\n- Writing Spark ETL pipelines on Google Cloud Platform.\n- Training or running inference with Machine Learning models with spark on Google Cloud Platform.\n- Managing Spark clusters, jobs, batches, and interactive sessions.\nDon't use when:\n- Writing generic Python scripts that don't use Spark.\n- Performing simple SQL queries that can be done directly in BigQuery.",
+    "translation": "Google Cloud Dataproc kümelerinde ve sunucusuz ortamlarda Spark kodu geliştirir ve çalıştırır. BigLake Iceberg, BigQuery ve Spanner verilerini okur ve yazar; çalışma hatalarını giderir. ETL, makine öğrenimi, küme, iş ve etkileşimli oturum yönetimini kapsar. Spark kullanmayan Python betikleri veya doğrudan BigQuery'de yapılabilecek basit sorgular için kullanılmaz."
+  },
+  {
+    "name": "gcs-security-assessment",
+    "source": "Assesses the security posture of Google Cloud Storage (GCS) buckets and projects. Grounds every finding in gathered telemetry, evaluates buckets against Google security best practices (public access, IAM over-granting, CMEK, VPC Service Controls, audit logging), and correlates signals to flag toxic combinations of individually low-risk settings, with actionable remediation. Use whenever a user asks for a security scan, audit, review, vulnerability check, or compliance assessment (including SAIF) — or simply asks whether their buckets, project, or data are secure, exposed, public, or misconfigured, who can access their data, or wants storage hardened or locked down, e.g. before a launch. Don't use for diagnosing a specific access failure or 403, managing or configuring storage, investigating a live outage, or non-GCS resources (Compute Engine, GKE, etc.).",
+    "translation": "Google Cloud Storage depolarının ve projelerinin güvenlik durumunu inceler. Bulguları toplanan verilere dayandırır; herkese açık erişim, IAM yetkileri, CMEK, VPC Service Controls ve denetim kayıtlarını değerlendirir. Riskli ayar birleşimleri için uygulanabilir öneriler sunar. Tekil erişim hataları, canlı kesintiler, depolama yapılandırması veya GCS dışındaki kaynaklar için kullanılmaz."
+  },
+  {
+    "name": "generative_ui",
+    "source": "How to render rich interactive HTML widgets inline in the chat or as standalone artifacts. Use this skill when you want to show the user diagrams, data visualizations, interactive controls, educational walkthroughs, or any rich visual content beyond plain text and markdown.",
+    "translation": "Sohbet içinde veya ayrı çıktılar olarak etkileşimli HTML bileşenleri oluşturmayı açıklar. Diyagram, veri görselleştirmesi, etkileşimli kontrol ve adım adım anlatım gibi zengin görsel içeriklerde kullanılır."
+  },
+  {
+    "name": "gnomad-database",
+    "source": "Query the Genome Aggregation Database (gnomAD). Use when determining the rarity or allele frequency of specific genetic variants, retrieving gene constraint metrics (pLI, LOEUF) to assess loss-of-function intolerance, finding variants in a genomic region or gene, or querying structural variants. Don't use for analyzing individual patient genomes, tracking somatic mutations in cancer (use COSMIC), or requesting raw sequencing reads (use ENA).",
+    "translation": "gnomAD veritabanında genetik varyantların nadirliğini ve alel sıklığını araştırır. Gen kısıtlılık ölçümlerini (pLI, LOEUF), bölge veya gen içindeki varyantları ve yapısal varyantları getirir. Bireysel hasta genomları, kanserin somatik mutasyonları veya ham dizileme okumaları için kullanılmaz."
+  },
+  {
+    "name": "google-antigravity-sdk",
+    "source": "Design, implement, and debug autonomous AI agents and multi-agent systems using the Google Antigravity (AGY) SDK. ACTIVATE this skill when the user wants to create, configure, or orchestrate Google Antigravity agents.",
+    "translation": "Google Antigravity SDK ile otonom yapay zekâ ajanları ve çok ajanlı sistemler tasarlar, geliştirir ve hatalarını giderir. Antigravity ajanları oluşturma, yapılandırma ve koordine etme çalışmalarında kullanılır."
+  },
+  {
+    "name": "google-cloud-auth-verification",
+    "source": "Mandatory Step 0 pre-flight execution order and authentication verification for Google Cloud Platform (GCP), Application Default Credentials (ADC), gcloud CLI, Spark, Dataproc, BigQuery, GCS, and notebook runtimes. Use whenever interacting with GCP resources, running Spark/PySpark pipelines, BigQuery queries, GCS paths (gs://), or creating/running notebooks.",
+    "translation": "Google Cloud işlemlerinden önce kimlik doğrulamasını, varsayılan uygulama kimlik bilgilerini ve çalışma ortamını kontrol eder. gcloud, Spark, Dataproc, BigQuery, GCS ve not defterleriyle çalışırken gerekli ön kontrolleri tanımlar."
+  },
+  {
+    "name": "google-cloud-storage-basics",
+    "source": "Stores, retrieves, and manages data as objects in Cloud Storage (Google Cloud Storage, or GCS) buckets. Use when you need to interact with Cloud Storage — create or configure buckets, upload, download, stream, or transfer data, organize objects with folders, generate signed URLs, control access (IAM, ACLs, public access prevention), set storage classes and tiering (Standard, Nearline, Coldline, Archive), manage cost and lifecycle, protect data (versioning, encryption/CMEK, retention and Bucket Lock, object holds, soft delete), host static websites, trigger Pub/Sub notifications on object changes, mount buckets as a file system (gcsfuse), or optimize storage performance at any scale. Covers the gcloud storage / gsutil CLI, JSON and XML APIs, client libraries, Terraform, and Cloud Storage MCP servers. Don't use for block storage (Persistent Disk), data warehousing/analytics (BigQuery), or databases (Cloud SQL, Spanner, Bigtable, Firestore).",
+    "translation": "Cloud Storage depolarındaki nesneleri saklar, getirir ve yönetir. Depo yapılandırma, yükleme, indirme, aktarım, klasörler, imzalı bağlantılar, erişim izinleri, depolama sınıfları, maliyet ve yaşam döngüsünü kapsar. Sürümleme, şifreleme, saklama kilitleri, statik siteler, Pub/Sub bildirimleri ve gcsfuse kullanımını da destekler. Blok depolama, veri ambarları veya veritabanları için kullanılmaz."
+  },
+  {
+    "name": "google-cloud-storage-bucket-architect",
+    "source": "Creates Cloud Storage (Google Cloud Storage, or GCS) buckets. Analyzes the workload (sensitive data, media hosting, ingestion, web hosting, archiving, backup, logging, analytics, AI/ML, or general-purpose), validates project-level security settings, and designs a secure-by-default, cost-effective configuration (location, storage class, uniform bucket-level access, public access prevention, soft delete, lifecycle) before creating it. Use whenever a user wants to create, make, set up, provision, or spin up a bucket, or needs object storage for an app, service, pipeline, or dataset — even a \"simple\" or \"default\" bucket, or when bucket creation is one step in a larger workflow. Outputs or executes the creation via gcloud, the JSON/REST API, Terraform, or SDK client libraries (C++, Java, Python, Go). Don't use for anything other than creating new buckets — for uploads, downloads, access changes, or reconfiguring existing buckets, use google-cloud-storage-basics.",
+    "translation": "Yeni Cloud Storage depoları oluşturur. İş yükünü ve proje güvenliğini değerlendirerek konum, depolama sınıfı, erişim, silme koruması ve yaşam döngüsü ayarlarını maliyet ve güvenlik açısından planlar. gcloud, REST API, Terraform veya SDK ile oluşturmayı destekler. Mevcut depoların yönetimi için google-cloud-storage-basics kullanılır."
+  },
+  {
+    "name": "google-cloud-storage-fuse",
+    "source": "Mounts Cloud Storage buckets as a POSIX file system with Cloud Storage FUSE (gcsfuse). Use when you need to interact with gcsfuse — decide whether FUSE, native gs:// reads, or Filestore/Managed Lustre fits a workload, deploy tuned mounts on GKE, Compute Engine, or Cloud Run, enable and size the file, stat, and list caches, tune mount flags or config-file settings, apply workload profiles, keep ML checkpointing safe (rename atomicity, hierarchical namespace, close-time finalization, concurrent writers), or diagnose slow training, low throughput, or GCS bill spikes on existing mounts with gcsfuse metrics. Covers mount semantics, the gcsfuse CLI and config file, the GKE gcsfuse CSI driver (Workload Identity principal:// bindings, profile StorageClasses, sidecar sizing), and Cloud Run volume mounts. Don't use for bucket administration or data management without a mount (google-cloud-storage-basics) or for fully POSIX-compliant shared file systems (Filestore, Managed Lustre).",
+    "translation": "Cloud Storage depolarını gcsfuse ile dosya sistemi olarak bağlar. GKE, Compute Engine ve Cloud Run bağlantılarını, önbellekleri, iş yükü profillerini ve performans ayarlarını düzenler. Makine öğrenimi kontrol noktalarının güvenliğini ve depolama maliyetlerini inceler. Bağlama gerektirmeyen depo yönetimi veya tam POSIX uyumlu paylaşımlı dosya sistemleri için kullanılmaz."
+  },
+  {
+    "name": "gtex-database",
+    "source": "Use when you want to retrieve quantitative RNA expression data and variant eQTL information from the GTEx (Genotype-Tissue Expression) Project across 54 non-diseased tissue sites.",
+    "translation": "GTEx projesinden, hastalık bulunmayan 54 doku bölgesine ait nicel RNA ifadesi verilerini ve varyant eQTL bilgilerini getirir."
+  },
+  {
+    "name": "human-protein-atlas-database",
+    "source": "Use when you want to retrieve semi-quantitative protein expression and spatial localisation data from the Human Protein Atlas (HPA).",
+    "translation": "Human Protein Atlas üzerinden yarı nicel protein ifadesi ve proteinlerin dokulardaki veya hücrelerdeki konumlarına ilişkin verileri getirir."
+  },
+  {
+    "name": "interpro-database",
+    "source": "Identify domains, families, and sites in proteins; find all proteins in a family or sharing a domain; explore species distribution for a domain; annotate genomes with protein families and GO terms. InterPro combines 14 databases (e.g., Pfam, CDD) into one searchable resource. InterPro-N significantly expands annotation and sequence coverage with deep learning. Includes domain architecture (IDA) search.",
+    "translation": "Protein bölgelerini, ailelerini ve işlevsel noktalarını tanımlar. Aynı aile veya bölgeyi paylaşan proteinleri bulur; tür dağılımını inceler ve genomları protein aileleri ile GO terimleriyle açıklar. InterPro'nun birleşik veritabanlarını, InterPro-N kapsamını ve bölge mimarisi aramasını destekler."
+  },
+  {
+    "name": "jaspar-database",
+    "source": "Query the JASPAR database for Transcription Factor (TF) binding profiles. Use when retrieving Position Frequency Matrices (PFMs) or Position Weight Matrices (PWMs) for specific TFs, resolving gene symbols to JASPAR Matrix IDs, or getting TF metadata. Supports multiple output formats (MEME, TRANSFAC, PFM, JASPAR, YAML).",
+    "translation": "JASPAR veritabanında transkripsiyon faktörlerinin bağlanma profillerini sorgular. PFM ve PWM matrislerini getirir, gen simgelerini matris kimliklerine dönüştürür ve faktör bilgilerini sunar. MEME, TRANSFAC, PFM, JASPAR ve YAML çıktılarını destekler."
+  },
+  {
+    "name": "karpathy-guidelines",
+    "source": "Behavioral guidelines to reduce common LLM coding mistakes derived from Andrej Karpathy's observations. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
+    "translation": "Andrej Karpathy'nin gözlemlerinden hareketle yaygın yapay zekâ kodlama hatalarını azaltan ilkeler sunar. Kod yazarken veya incelerken gereksiz karmaşıklığı önlemeyi, sınırlı değişiklikler yapmayı, varsayımları belirtmeyi ve doğrulanabilir başarı ölçütleri belirlemeyi amaçlar."
+  },
+  {
+    "name": "literature-search-arxiv",
+    "source": "Search for scientific papers, preprints, and publications on arXiv. Extract metadata, abstracts, and download full-text PDFs or HTML versions of papers. Use when the user asks to find research papers, literature, or specific arXiv IDs.",
+    "translation": "arXiv üzerinde bilimsel makale, ön baskı ve yayın arar. Yayın bilgilerini ve özetleri çıkarır; tam metin PDF veya HTML sürümlerini indirir. Konu veya arXiv kimliğiyle kaynak bulmak için kullanılır."
+  },
+  {
+    "name": "literature-search-biorxiv",
+    "source": "Browse, filter, and download life sciences, biology, and medical preprints from bioRxiv and medRxiv. Supports fetching paper metadata by DOI, and browsing by date range with category and keyword filters. Keyword filtering is local, so date ranges MUST be narrow (1-4 weeks) with a category to prevent timeouts.",
+    "translation": "bioRxiv ve medRxiv üzerindeki biyoloji, yaşam bilimleri ve tıp ön baskılarını arar, süzer ve indirir. DOI veya tarih, kategori ve anahtar kelimeyle sorgulamayı destekler. Anahtar kelimeler yerel olarak süzüldüğünden zaman aşımını önlemek için kategorilerle birlikte 1–4 haftalık dar tarih aralıkları kullanılır."
+  },
+  {
+    "name": "literature-search-europepmc",
+    "source": "Search Europe PMC for scientific literature and download open-access full texts and PDFs. Retrieve full-text XML/plain text by PMCID, get citation lists and bibliography.",
+    "translation": "Europe PMC üzerinde bilimsel yayın arar; açık erişimli tam metinleri ve PDF'leri indirir. PMCID üzerinden XML veya düz metin getirir, atıf listelerini ve kaynakçaları çıkarır."
+  },
+  {
+    "name": "literature-search-openalex",
+    "source": "Query the OpenAlex scholarly database for research papers, authors, institutions, topics, sources, publishers, funders, geo-locations, and keywords. Use when searching academic papers, resolving DOIs, downloading open-access PDFs, finding an author's publications, aggregating bibliometric data (citation counts, h-index, impact factor), exploring the research taxonomies, or performing DOI lookups.",
+    "translation": "OpenAlex üzerinden yayın, yazar, kurum, konu, yayıncı, fon sağlayıcı ve anahtar kelime arar. DOI sorgulama, açık erişimli PDF bulma, yazar yayınları, atıf sayıları, h-indeksi ve araştırma sınıflandırmalarını incelemeyi destekler."
+  },
+  {
+    "name": "managing-python-dependencies",
+    "source": "Ensures proper Python dependency management, avoiding global `pip install` and\nadhering to project-specific tooling.\n\nUse this skill if any of the following are true:\n  1. Attempting to run `pip install {package_name}`.\n  2. Python packages or dependencies need to be added or modified.\n  3. Initiating a new Python project.\n  4. Creating a new notebook, even if just using BigQuery cells.\n  5. Generating Python code that includes `import` statements for third-party libraries.\n  6. Before executing Python scripts via the terminal to ensure the correct virtual environment is active.",
+    "translation": "Python bağımlılıklarını projeye uygun araçlar ve sanal ortamlarla yönetir. Genel ortama paket yüklemeyi önler; paket ekleme, yeni proje veya not defteri oluşturma ve üçüncü taraf kitaplıkları kullanan betikleri çalıştırma öncesindeki kontrolleri tanımlar."
+  },
+  {
+    "name": "migrate-workflows",
+    "source": "Automatically migrate legacy workflows to modern skills across global and workspace configurations. Scans for existing workflows, creates target SKILL.md files, and safely archives old workflow files.",
+    "translation": "Eski iş akışlarını genel ve çalışma alanı yapılandırmalarında yeni becerilere dönüştürür. Mevcut akışları tarar, SKILL.md dosyalarını oluşturur ve eski dosyaları güvenli biçimde arşivler."
+  },
+  {
+    "name": "ml-best-practices",
+    "source": "CRITICAL RULE: You MUST use this skill whenever the task involves any machine learning tasks or data analysis.\nUse this skill if the user's prompt or requirements mention any of the following:\n  * Clustering\n  * Classification\n  * Regression\n  * Time series forecasting\n  * Statistical testing\n  * Model comparison\n  * ML\n  * Data analysis\n\nSQL/BigQuery ML HANDOFF: If the user requires a SQL solution, use this skill to dictate the ANALYSIS STEPS (e.g., markdown analysis cells, visualization logic), but defer to `bigquery` for all SQL syntax.",
+    "translation": "Makine öğrenimi ve veri analizi için çalışma ilkeleri sunar. Kümeleme, sınıflandırma, regresyon, zaman serisi tahmini, istatistiksel test ve model karşılaştırmasını kapsar. SQL çözümlerinde analiz adımlarını ve görselleştirmeyi yönlendirir; SQL sözdizimi için BigQuery becerisine başvurur."
+  },
+  {
+    "name": "ncbi-sequence-fetch",
+    "source": "Retrieve protein and nucleotide sequences from NCBI databases using E-utilities. Supports direct accession lookup, CDS translation, gene+organism search, locus lookup, PubMed-linked sequences, patent protein extraction, and organism+length fallback search. Use when you need to fetch biological sequences by accession, gene name, locus tag, PubMed ID, or patent number.",
+    "translation": "NCBI E-utilities üzerinden protein ve nükleotit dizilerini getirir. Erişim kimliği, gen ve organizma, lokus etiketi, PubMed kimliği veya patent numarasıyla aramayı; CDS çevirisini ve organizma ile dizi uzunluğuna göre sorgulamayı destekler."
+  },
+  {
+    "name": "notebook-guidance",
+    "source": "This skill guides the use of Jupyter notebooks for data analysis, exploration, and visualization, particularly with BigQuery. It outlines best practices for notebook execution and validation (supporting both cell-by-cell execution and full notebook generation depending on tool availability), library installation, and structuring notebooks for clarity. It also covers specific rules for data cleaning, plotting, and integrating with BigQuery SQL and machine learning workflows.\nRelevant when any of the following conditions are true:\n  1. The user request involves a data analysis, data exploration, data visualization, or data insights task that requires multiple steps, queries, or visualizations to answer.\n  2. The user explicitly requests a notebook (.ipynb).\n  3. You are creating, editing, or executing cells in a Jupyter notebook.\n  4. You need to query BigQuery from within a notebook. DO NOT use the Python BigQuery client library; instead, you MUST use the `%%bqsql` magics explained in this skill.",
+    "translation": "Jupyter not defterlerinde veri analizi, keşif ve görselleştirme süreçlerini açıklar. Hücre çalıştırma, doğrulama, kitaplık kurulumu, veri temizleme ve grafik oluşturmayı kapsar. BigQuery sorguları ve makine öğrenimiyle bütünleştirmeyi destekler; BigQuery için Python istemcisi yerine %%bqsql kullanımını tanımlar."
+  },
+  {
+    "name": "openfda-database",
+    "source": "Query, search, and download data from the openFDA API for drugs, devices, foods, tobacco, cosmetics, animal and veterinary products, substances, and transparency data. Use for FDA adverse events, recalls, labeling, approvals, shortages, 510(k) clearances, NDC lookups, and any FDA safety or regulatory data query across all 28 API endpoints.",
+    "translation": "openFDA üzerinden ilaç, cihaz, gıda, tütün, kozmetik ve veteriner ürünlerine ait verileri sorgular ve indirir. Yan etki bildirimleri, geri çağırmalar, etiketler, onaylar, ürün kıtlıkları, 510(k) izinleri ve NDC sorguları dahil 28 API uç noktasını kapsar."
+  },
+  {
+    "name": "opentargets-database",
+    "source": "Query Open Targets Platform for target-disease associations, drug target discovery, tractability/safety data, genetics/omics evidence, known drugs, for therapeutic target identification.",
+    "translation": "Open Targets Platform üzerinden hedef ve hastalık ilişkilerini, ilaç hedeflerini, tedaviye uygunluğu, güvenlik verilerini ve genetik kanıtları araştırır. Tedavi hedeflerini belirlemek için bilinen ilaç ve omik verilerini inceler."
+  },
+  {
+    "name": "pdb-database",
+    "source": "Use when you want to search for or download experimentally-determined 3D structures for biomolecules (proteins, nucleic acids, bound ligands). Supports searching by sequence similarity, structure similarity, chemical and other attributes. Also use to get metadata about biomolecular structure experiments.",
+    "translation": "Proteinler, nükleik asitler ve bağlı ligandlar için deneysel olarak belirlenmiş üç boyutlu yapıları arar ve indirir. Dizi, yapı benzerliği, kimyasal özellikler ve diğer ölçütlerle aramayı; yapı deneylerine ilişkin bilgileri getirmeyi destekler."
+  },
+  {
+    "name": "permissioned-github",
+    "source": "Guidelines for interacting with GitHub and request permissions from the user when commands fail due to restrictions in the agent environment.",
+    "translation": "GitHub ile çalışma yönergeleri sunar. Ajan ortamındaki kısıtlamalar nedeniyle komutlar başarısız olduğunda kullanıcıdan gerekli iznin nasıl isteneceğini açıklar."
+  },
+  {
+    "name": "ponytail",
+    "source": "Lazy senior developer mode (Ponytail). Use when writing, reviewing, or refactoring code to enforce maximum simplicity, zero boilerplate, minimal diffs, standard library reuse, and eliminating unnecessary abstractions or dependencies.",
+    "translation": "Kod yazma, inceleme ve yeniden düzenleme çalışmalarında sadeliği esas alır. Gereksiz şablon kodunu, soyutlamaları ve bağımlılıkları azaltır; küçük değişiklikleri ve standart kitaplıkların yeniden kullanımını teşvik eder."
+  },
+  {
+    "name": "predictingthepast",
+    "source": "Ancient text restoration, attribution, dating, contextualization, and embedding via Aeneas (Latin) / Ithaca (Ancient Greek). Use when asked to \"restore\", \"attribute\", \"date\", \"contextualize\", \"find parallels\", \"where was it written\", \"when was it written\", \"embed\", or \"analyze\" an ancient text, inscription, or epigraphic document, or when the user mentions \"Aeneas\", or \"Ithaca\".",
+    "translation": "Aeneas ve Ithaca ile Latince ve Antik Yunanca metinleri onarır, tarihlendirir ve bağlamına yerleştirir. Yazıtlar ve eski belgeler için köken belirleme, benzer metinleri bulma, analiz ve vektör temsili oluşturmayı destekler."
+  },
+  {
+    "name": "protein-sequence-msa",
+    "source": "Performs multiple sequence alignment of proteins with EBI Clustal Omega. Use when you need to align multiple sequences to assess similarity, domain conservation, or key residue conservation. Supports up to 4000 sequences and a maximum file size of 4 MB. Do not use to search for homologous proteins in a database (use MMseqs2, BLAST), align non-protein sequences (DNA, RNA), perform structural alignment (use Foldseek, PyMOL), or if you only have a single sequence.",
+    "translation": "EBI Clustal Omega ile protein dizilerini çoklu olarak hizalar. Benzerliği, bölge korunmasını ve önemli amino asitlerin korunmasını inceler. En fazla 4.000 dizi ve 4 MB dosyayı destekler. Tek dizi, DNA/RNA hizalama, yapısal hizalama veya veritabanında homolog protein arama için kullanılmaz."
+  },
+  {
+    "name": "protein-sequence-similarity-search",
+    "source": "Searches for homologous protein sequences using MMseqs2 (fast, default) or BLAST (comprehensive, fallback). Trigger this whenever the user provides a protein sequence or FASTA file and asks to find homologues, sequence matches, or wants to infer protein function based on sequence similarity, but not when the user wants to infer protein function based on structural similarity.",
+    "translation": "MMseqs2 veya gerektiğinde BLAST ile homolog protein dizileri arar. Protein dizisi ya da FASTA dosyasından dizi eşleşmelerini bulur ve dizi benzerliğinden işlev çıkarımını destekler. Yapısal benzerliğe dayalı işlev çıkarımı için kullanılmaz."
+  },
+  {
+    "name": "pubchem-database",
+    "source": "Query PubChem, search by name/CID/SMILES, retrieve properties, similarity/substructure searches, bioactivity, for cheminformatics. Use when a user asks about a specific chemical, drug, or molecule.",
+    "translation": "PubChem üzerinde ad, CID veya SMILES ile kimyasal bileşik arar. Özellikleri ve biyolojik etkinlik verilerini getirir; benzerlik ve alt yapı aramaları yapar. Kimyasal madde, ilaç ve molekül araştırmalarında kullanılır."
+  },
+  {
+    "name": "pubmed-database",
+    "source": "Search PubMed for scientific literature, including published clinical trials. Fetch abstracts and full text. Link published research to biological databases (gene, protein, nucleotide, PubChem) to discover associations between papers and specific compounds or genes. Verify medical spelling, match raw citations, and cache result sets for bulk processing. Interfaces NCBI E-utilities and PMC BioC APIs.",
+    "translation": "PubMed üzerinde klinik araştırmalar dahil bilimsel yayın arar; özetleri ve tam metinleri getirir. Yayınları gen, protein, nükleotit ve PubChem kayıtlarıyla ilişkilendirir. Terim ve atıf doğrulaması ile toplu işlemler için sonuç önbelleğini destekler."
+  },
+  {
+    "name": "pymol",
+    "source": "Visualize, analyze, and render protein and molecular structures using PyMOL. Use when the user wants to create images of protein structures, perform structural alignments or superposition, measure distances or contacts, highlight binding sites or active site residues, color by B-factor/pLDDT, or analyze protein-ligand interactions. Do not use for docking, molecular dynamics, or sequence-only analysis.",
+    "translation": "PyMOL ile protein ve molekül yapılarını görselleştirir ve analiz eder. Yapısal hizalama, uzaklık ve temas ölçümü, bağlanma bölgelerini vurgulama, B-faktörü veya pLDDT ile renklendirme ve protein-ligand etkileşimlerini kapsar. Kenetleme, moleküler dinamik veya yalnızca dizi analizi için kullanılmaz."
+  },
+  {
+    "name": "quickgo-database",
+    "source": "Query the QuickGO and Evidence & Conclusion Ontology (ECO) REST API. Use this when you need to map genes to biological processes, molecular functions, or cellular components, find genes associated with a specific pathway/GO term, or explore the Gene Ontology hierarchy. Do not use for querying drug targets (use OpenTargets) or mechanistic signaling pathway diagrams (use KEGG).",
+    "translation": "QuickGO ve ECO üzerinden genleri biyolojik süreç, moleküler işlev ve hücresel bileşenlerle eşleştirir. GO terimleriyle ilişkili genleri ve ontoloji hiyerarşisini araştırır. İlaç hedefleri için OpenTargets, mekanistik yolak şemaları için KEGG tercih edilir."
+  },
+  {
+    "name": "reactome-database",
+    "source": "Query the Reactome database (Analysis and Content Services). Use when the user asks about pathway analysis, gene list enrichment, retrieving results by token, finding unmapped or not-found identifiers, mapping identifiers, reaction participants (inputs, outputs), pathway hierarchy (including top-level pathways), diagram export, cross-reference mapping, or searching the knowledgebase.",
+    "translation": "Reactome üzerinden yolak analizi ve gen listesi zenginleştirme yapar. Kimlik eşleştirmelerini, eşleşmeyen kayıtları, reaksiyon katılımcılarını ve yolak hiyerarşisini getirir. Diyagram dışa aktarma, çapraz kaynak eşleştirme ve bilgi tabanı aramasını destekler."
+  },
+  {
+    "name": "schema-mapping",
+    "source": "Guides the process of analyzing, mapping, and documenting transformations between source and target schemas for any database, data warehouse, or data platform. Focuses exclusively on creating a high-fidelity mapping plan (Mapping Manifesto). Used when initiating an ETL, ELT, or data integration task with schema mapping specification for multiple tables (i.e. more than 3 tables) before writing code. Do NOT use this skill for basic SQL generation without mapping requirements, or when the user already has a complete mapping specification.",
+    "translation": "Kaynak ve hedef veri şemaları arasındaki dönüşümleri analiz eder ve ayrıntılı eşleştirme planı hazırlar. Üçten fazla tablo içeren ETL, ELT veya veri entegrasyonu çalışmalarında kod yazılmadan önce kullanılır. Basit SQL üretimi veya eşleştirme planı zaten tamamlanmış işler için kullanılmaz."
+  },
+  {
+    "name": "science-skills-common",
+    "source": "Shared Python package for Science Skills, currently containing http_client -- a unified HTTP client with rate limiting, retries, and exponential backoff. Not a standalone agent skill. Do not invoke directly.",
+    "translation": "Bilim becerilerinin kullandığı ortak Python paketi. İstek sınırlandırma, yeniden deneme ve üstel bekleme özelliklerine sahip ortak bir HTTP istemcisi içerir. Bağımsız bir ajan becerisi olarak çağrılmaz."
+  },
+  {
+    "name": "scienceskillscommon",
+    "source": "Shared Python package for Science Skills, currently containing http_client -- a unified HTTP client with rate limiting, retries, and exponential backoff. Not a standalone agent skill. Do not invoke directly.",
+    "translation": "Bilim becerilerinin kullandığı ortak Python paketi. İstek sınırlandırma, yeniden deneme ve üstel bekleme özelliklerine sahip ortak bir HTTP istemcisi içerir. Bağımsız bir ajan becerisi olarak çağrılmaz."
+  },
+  {
+    "name": "skill-repair",
+    "source": "Use this to fix and re-install agent skills that have failed installation.\nThis skill provides the necessary context and permissions to surgically update\nthe `manifest.json` after a fix has been applied.",
+    "translation": "Kurulumu başarısız olan ajan becerilerini düzeltir ve yeniden kurar. Onarım sonrasında manifest.json dosyasının gerekli bölümlerini güncellemek için gereken bilgileri sağlar."
+  },
+  {
+    "name": "string-database",
+    "source": "Query the STRING database for protein-protein interactions (PPIs), functional enrichment, and homology. Use when the user asks about interactions between specific proteins, interaction evidence, confidence scores, protein interaction partners, or pathway enrichments.",
+    "translation": "STRING veritabanında proteinler arası etkileşimleri, işlevsel zenginleştirmeyi ve homolojiyi sorgular. Belirli proteinlerin etkileşim ortaklarını, kanıtlarını, güven puanlarını ve yolak ilişkilerini inceler."
+  },
+  {
+    "name": "ucsc-conservation-and-tfbs",
+    "source": "Fetch Evolutionary Conservation scores (phyloP, phastCons) and Transcription Factor Binding Sites (TFBS) from the UCSC Genome Browser. Use when analyzing whether genomic variants or regions are evolutionarily conserved, functionally important, or bounded by TF regulators across major projects (ENCODE, JASPAR, ReMap).",
+    "translation": "UCSC Genome Browser üzerinden evrimsel korunma puanlarını ve transkripsiyon faktörü bağlanma bölgelerini getirir. ENCODE, JASPAR ve ReMap gibi kaynaklarla genomik varyantların veya bölgelerin korunmuşluğunu ve düzenleyici ilişkilerini inceler."
+  },
+  {
+    "name": "unibind-database",
+    "source": "Queries the UniBind database for experimentally validated transcription factor (TF) binding sites. Use when retrieving direct TF-DNA interaction datasets, downloading binding site coordinates (BED/FASTA) for local analysis, or listing available datasets by species, cell line, or TF name. Don't use to query specific intervals, locations, genes, motif models or expression data.",
+    "translation": "UniBind üzerinden deneysel olarak doğrulanmış transkripsiyon faktörü bağlanma bölgelerini sorgular. TF-DNA etkileşim verilerini ve BED/FASTA koordinatlarını getirir; tür, hücre hattı veya faktör adına göre veri kümelerini listeler. Belirli aralık, gen, motif modeli veya ifade verisi sorguları için kullanılmaz."
+  },
+  {
+    "name": "uniprot-database",
+    "source": "Access protein metadata, function, taxonomy, and sequences across UniProtKB, UniParc, and UniRef. Use when searching for proteins, mapping identifiers, or retrieving functional annotations and publications. Don't use for sequence alignment, protein folding, or sequence similarity search (use specialized skills for those tasks).",
+    "translation": "UniProtKB, UniParc ve UniRef üzerinden protein bilgilerini, işlevlerini, taksonomilerini ve dizilerini getirir. Protein arama, kimlik eşleştirme ve işlevsel açıklamalar ile yayınları bulmak için kullanılır. Dizi hizalama, protein katlanması veya dizi benzerliği araması için ilgili uzman beceriler tercih edilir."
+  },
+  {
+    "name": "uv",
+    "source": "Checks whether the uv Python package manager is installed and installs it if missing. Ensures uv is on PATH. Use when another skill requires uv as a prerequisite.",
+    "translation": "uv Python paket yöneticisinin kurulu olduğunu kontrol eder, eksikse kurar ve PATH üzerinden erişilebilir olmasını sağlar. Başka bir becerinin uv gerektirdiği durumlarda kullanılır."
+  },
+  {
+    "name": "workflow-skill-creator",
+    "source": "Distills a completed user workflow or interaction into a reusable agent skill. Use when the user asks to turn their workflow, interaction, or multi-step process into a skill, or when they say \"make this a skill\", \"create a skill from what we just did\", \"package this workflow\" or similar. Do not use for creating skills from scratch without an existing workflow (use a generic skill-creator for that).",
+    "translation": "Tamamlanmış bir iş akışını veya kullanıcı etkileşimini yeniden kullanılabilir bir ajan becerisine dönüştürür. Mevcut bir süreci beceri olarak kaydetmek ve paketlemek için kullanılır. Önceden yapılmış bir iş akışı olmadan sıfırdan beceri oluşturmak için genel beceri oluşturma aracı tercih edilir."
+  }
+]

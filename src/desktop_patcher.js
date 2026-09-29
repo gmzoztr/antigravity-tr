@@ -133,7 +133,7 @@ function rebuildLocalizedMenu(menu) {
       "Create Project": "Proje Oluştur",
       "Command Palette": "Komut Paleti",
       "Rename": "Yeniden Adlandır",
-      "Unpin": "Sabitlemeden Kaldır",
+      "Unpin": "Sabitlemeyi Kaldır",
       "Archive": "Arşivle",
       "Remote Control": "Uzaktan Kontrol",
       "Split": "Böl",
