@@ -1,0 +1,220 @@
+const fs = require('fs');
+const path = require('path');
+
+const reportFile = path.join(__dirname, 'desktop_english_strings.json');
+const data = JSON.parse(fs.readFileSync(reportFile, 'utf8'));
+
+// Zaman formatlarını (14d, 2mo vb.) ve sohbet başlıklarını filtrele
+const timeRegex = /^\d+(d|h|mo|m|s|w|y)$/;
+
+const uiStrings = data.filter(item => {
+  const t = item.text.trim();
+  if (timeRegex.test(t)) return false;
+  // Sohbet geçmişi başlıklarını ele (sayfası sadece 'Ana Ekran' olan ve özel isim içerenler)
+  if (item.pages.length === 1 && item.pages[0] === 'Ana Ekran' && !['Sidebar', 'More options', 'Projects', 'Settings', 'New Conversation', 'Conversation History', 'Scheduled Tasks', 'Pinned Conversations', 'Conversations', 'No Project', 'Open IDE'].includes(t)) {
+    return false;
+  }
+  return true;
+});
+
+console.log(`Filtrelenmiş saf UI metni sayısı: ${uiStrings.length}`);
+
+// Temel çeviriler
+const manualTranslations = {
+  // Üst Çubuk & Gezinme
+  'Open IDE': "IDE'yi Aç",
+  'Antigravity': 'Antigravity',
+  'File': 'Dosya',
+  'View': 'Görünüm',
+  'Window': 'Pencere',
+  'Help': 'Yardım',
+  'New Conversation': 'Yeni Konuşma',
+  'Conversation History': 'Konuşma Geçmişi',
+  'Scheduled Tasks': 'Zamanlanmış Görevler',
+  'Pinned Conversations': 'Sabitlenmiş Konuşmalar',
+  'Projects': 'Projeler',
+  'Conversations': 'Konuşmalar',
+  'Settings': 'Ayarlar',
+  'Shortcuts': 'Kısayollar',
+  'Provide Feedback': 'Geri Bildirimde Bulun',
+  'No Project': 'Proje Yok',
+  'Select project, current: No Project': 'Proje seçin, geçerli: Proje Yok',
+  'Create New Project': 'Yeni Proje Oluştur',
+  'Display Options': 'Görünüm Seçenekleri',
+  'Sidebar': 'Kenar Çubuğu',
+  'Toggle Sidebar': 'Kenar Çubuğunu Aç/Kapat',
+  'Go Back': 'Geri Git',
+  'Go Forward': 'İleri Git',
+  'Notifications': 'Bildirimler',
+  'More options': 'Daha fazla seçenek',
+  'More actions': 'Daha fazla işlem',
+  'Unpin conversation': 'Konuşmayı sabitlemeden kaldır',
+  'Archive conversation': 'Konuşmayı arşivle',
+  'Stop execution': 'Yürütmeyi durdur',
+  'Message input': 'İleti girişi',
+  'Add context': 'Bağlam ekle',
+  'Record voice memo': 'Ses kaydı yap',
+  'Send message': 'İleti gönder',
+  'Typeahead menu': 'Otomatik tamamlama menüsü',
+  'Select model': 'Model seç',
+
+  // Ayarlar Sol Menü
+  'General': 'Genel',
+  'Application': 'Uygulama',
+  'Appearance': 'Görünüm',
+  'Models': 'Modeller',
+  'Customizations': 'Özelleştirmeler',
+  'Browser': 'Tarayıcı',
+  'Not In Project': 'Proje Dışı',
+
+  // Ayarlar - Genel
+  'Configure agent execution, queued message delivery, and permissions.': 'Ajan yürütmesini, kuyruktaki ileti teslimini ve izinleri yapılandırın.',
+  'Execution': 'Yürütme',
+  'Queued Messages': 'Kuyruktaki İletiler',
+  'Configure when follow-up messages are sent.': 'Takip iletilerinin ne zaman gönderileceğini yapılandırın.',
+  'Queue': 'Kuyruğa Ekle',
+  'Send Immediately': 'Hemen Gönder',
+  'Queue until after the current turn.': 'Mevcut tur bitene kadar kuyrukta beklet.',
+  'Interrupt the agent and send immediately.': 'Ajanı durdur ve hemen gönder.',
+  'Keyboard shortcuts': 'Klavye kısayolları',
+  'Genel İzinler': 'Genel İzinler',
+  'Güvenlik Önayarı': 'Güvenlik Önayarı',
+  'Security Preset': 'Güvenlik Önayarı',
+  'Controls the actions the agent can take.': 'Ajanın gerçekleştirebileceği eylemleri denetler.',
+  'Modified in Outside of Project': 'Proje Dışı alanında değiştirildi',
+  'Learn more about Turbo mode': 'Turbo mod hakkında daha fazla bilgi edinin',
+  'Turbo mode': 'Turbo mod',
+  'Turbo Mode': 'Turbo Mod',
+  'Normal Mode': 'Normal Mod',
+  'Plan Mode': 'Plan Modu',
+  'Tool Permissions': 'Araç İzinleri',
+  'Modify permissions for file, terminal, and MCP tools.': 'Dosya, terminal ve MCP araçları için izinleri düzenleyin.',
+  'Open': 'Aç',
+  'Close': 'Kapat',
+  'Ajan Davranışı': 'Ajan Davranışı',
+  'Agent Behavior': 'Ajan Davranışı',
+  'Plan İnceleme İlkesi': 'Plan İnceleme İlkesi',
+  'Plan Review Policy': 'Plan İnceleme İlkesi',
+  'Whether the agent asks you to review its documents.': 'Ajanın belgelerini incelemenizi isteyip istemeyeceği.',
+  'Always Proceed': 'Her Zaman Devam Et',
+  'Ask Before Proceeding': 'Devam Etmeden Önce Sor',
+  'Never Proceed': 'Asla Devam Etme',
+  'Ajanın plan oluşturması için / yazın ve plan öğesini seçin.': 'Ajanın plan oluşturması için / yazın ve plan öğesini seçin.',
+  'Network Permissions': 'Ağ İzinleri',
+  'Ağ Erişim Kuralları': 'Ağ Erişim Kuralları',
+  'Network Access Rules': 'Ağ Erişim Kuralları',
+  'Configure allowed and denied URLs for reading.': 'Okuma için izin verilen ve reddedilen URL\'leri yapılandırın.',
+  'Commands Outside Sandbox': 'Korumalı Alan Dışı Komutlar',
+  'Configure allowed commands outside the sandbox.': 'Korumalı alan dışında izin verilen komutları yapılandırın.',
+  'Show 1 breakdown': '1 ayrıntıyı göster',
+  'Show 79 breakdowns': '79 ayrıntıyı göster',
+  'Sign Out': 'Oturumu Kapat',
+  'Terms of Service': 'Hizmet Şartları',
+  'Outside of Project': 'Proje Dışı',
+
+  // Ayarlar - Görünüm
+  'Theme': 'Tema',
+  'System': 'Sistem',
+  'Light': 'Açık',
+  'Dark': 'Koyu',
+  'Default Light': 'Varsayılan Açık',
+  'Default Dark': 'Varsayılan Koyu',
+  'Narrow': 'Dar',
+  'Wide': 'Geniş',
+  'Default': 'Varsayılan',
+  'Strong': 'Belirgin',
+  'Simplified': 'Basitleştirilmiş',
+  'The full developer experience.': 'Eksiksiz geliştirici deneyimi.',
+  'Simplified interface without developer tooling.': 'Geliştirici araçları olmadan basitleştirilmiş arayüz.',
+  'Open Editor Settings': 'Düzenleyici Ayarlarını Aç',
+  'Go to General settings': 'Genel ayarlara git',
+
+  // Ayarlar - Modeller
+  'Model Quota': 'Model Kotası',
+  'Gemini Models': 'Gemini Modelleri',
+  'Weekly Limit Remaining': 'Kalan Haftalık Limit',
+  'Claude and GPT models': 'Claude ve GPT Modelleri',
+  'Refresh quota and credits data': 'Kota ve kredi verilerini yenile',
+  'Select Model': 'Model Seç',
+  'Temperature': 'Sıcaklık',
+  'Max Tokens': 'Maksimum Token',
+  'Context Window': 'Bağlam Penceresi',
+  'API Key': 'API Anahtarı',
+  'API Keys': 'API Anahtarları',
+
+  // Ayarlar - Özelleştirmeler
+  'Skills': 'Beceriler',
+  'Rules': 'Kurallar',
+  'Add MCP': 'MCP Ekle',
+  'Customize': 'Özelleştir',
+  'copy link': 'bağlantıyı kopyala',
+  'Copy path': 'Yolu kopyala',
+  'Refresh MCP servers': 'MCP sunucularını yenile',
+  'Delete server': 'Sunucuyu sil',
+  'Delete plugin': 'Eklentiyi sil',
+  'Open System Preferences': 'Sistem Tercihlerini Aç',
+  'Advanced Settings': 'Gelişmiş Ayarlar',
+  'Enter bot name (optional)': 'Bot adı girin (isteğe bağlı)',
+  'Enter avatar URL (optional)': 'Avatar URL\'si girin (isteğe bağlı)',
+
+  // Ayarlar - Konuşmalar Sekmesi
+  'Agent settings and permissions for conversations outside of projects.': 'Projeler dışındaki konuşmalar için ajan ayarları ve izinleri.',
+  'Agent Settings': 'Ajan Ayarları',
+  'Local Permissions': 'Yerel İzinler',
+  'Also includes': 'Şunları da içerir:',
+  'when working in this project.': 'bu projede çalışırken.',
+  'Also includes Global Permissions when working in this project. Learn more.': 'Bu projede çalışırken Genel İzinleri de içerir. Daha fazla bilgi edinin.',
+  'File Access Rules': 'Dosya Erişim Kuralları',
+  'Configure allowed and denied paths for file reads and writes.': 'Dosya okuma ve yazma işlemleri için izin verilen ve reddedilen yolları yapılandırın.',
+  'Terminal Commands': 'Terminal Komutları',
+  'Configure allowed terminal commands.': 'İzin verilen terminal komutlarını yapılandırın.',
+  'MCP Tools': 'MCP Araçları',
+  'Configure external tools via Model Context Protocol.': 'Model Context Protocol üzerinden harici araçları yapılandırın.',
+  'Core tools and knowledge required to develop for Android': 'Android geliştirmek için gereken temel araçlar ve bilgiler',
+  'Reliable automation, in-depth debugging, and performance analysis in Chrome using Chrome DevTools and Puppeteer': 'Chrome DevTools ve Puppeteer kullanarak Chrome\'da güvenilir otomasyon, derinlemesine hata ayıklama ve performans analizi',
+  'Using the Google Antigravity Python SDK to build AI agents': 'Yapay zeka ajanları oluşturmak için Google Antigravity Python SDK\'sını kullanma',
+  'Curated collection of agent skills for modern web development.': 'Modern web geliştirme için derlenmiş ajan becerileri koleksiyonu.',
+  'Curated collection of agent skills for science tasks.': 'Bilimsel görevler için derlenmiş ajan becerileri koleksiyonu.',
+  'Science': 'Bilim',
+
+  // Geri Bildirim
+  'Describe the bug you encountered...': 'Karşılaştığınız hatayı açıklayın...',
+  'Please list the steps to reproduce the issue': 'Sorunu yeniden oluşturma adımlarını yazın',
+  'Submit': 'Gönder',
+  'Enter device name...': 'Cihaz adı girin...',
+
+  // Diğer Genel Metinler
+  'Learn more': 'Daha fazla bilgi edinin',
+  'Learn more.': 'Daha fazla bilgi edinin.',
+  'Edit': 'Düzenle',
+  'Delete': 'Sil',
+  'Save': 'Kaydet',
+  'Cancel': 'İptal',
+  'Confirm': 'Onayla',
+  'Ask anything, @ to mention, / for actions': 'Bir şey sorun, @ ile bahsedin, / ile eylemler',
+  'Ask anything, @ to mention / for actions': 'Bir şey sorun, @ ile bahsedin, / ile eylemler',
+  'Thought for': 'Düşünme süresi:',
+  'Thinking': 'Düşünülüyor',
+  'Thinking...': 'Düşünülüyor...'
+};
+
+console.log(`Hazır sözlük madde sayısı: ${Object.keys(manualTranslations).length}`);
+
+// Çevirisi olmayanları listele
+const missing = [];
+for (const item of uiStrings) {
+  const t = item.text.trim();
+  if (!manualTranslations[t]) {
+    missing.push(t);
+  }
+}
+
+console.log(`\nEksik kalan string sayısı: ${missing.length}`);
+if (missing.length > 0) {
+  console.log('Eksiklerden ilk 30:');
+  missing.slice(0, 30).forEach((m, i) => console.log(`  ${i+1}. "${m}"`));
+}
+
+// Dosyaya yaz
+fs.writeFileSync(path.join(__dirname, 'desktop_dictionary.json'), JSON.stringify(manualTranslations, null, 2), 'utf8');
+console.log('\n[✓] desktop_dictionary.json kaydedildi.');
