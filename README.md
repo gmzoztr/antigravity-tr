@@ -1,104 +1,82 @@
-# Antigravity Türkçe Yerelleştirme Paketi 🇹🇷
+# Antigravity Türkçe Yama
 
-Google Antigravity ve Antigravity IDE için **kapsamlı Türkçe dil desteği**, **akıllı yapay zeka davranış kuralları** ve **özel bileşen yama aracı**.
+Google Antigravity Desktop ve Antigravity IDE için topluluk tarafından geliştirilen Türkçe yerelleştirme araçları. Google'ın resmi ürünü veya resmi dil paketi değildir.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-brightgreen.svg)]()
-[![Antigravity](https://img.shields.io/badge/Google%20Antigravity-IDE%20%26%20Desktop-orange.svg)]()
+Mevcut IDE çevirileri, ayar sözlükleri ve Türkçe asistan kuralları korunmuştur. **1.0.1 sürümü, Desktop Türkçe yamasının siyah ekrana yol açan sonsuz çeviri döngüsünü düzeltir.**
 
----
+## Doğrulanmış kapsam
 
-## 🌟 Neler İçerir?
+- Windows, kullanıcı dizinine kurulmuş **Antigravity Desktop 2.17.0**.
+- Node.js **22.12 veya üstü** ve npm.
+- Desktop menüleri, sözlükteki düğmeler, ayar metinleri ve araç ipuçları.
+- Masaüstü uygulamasının açılması gerçek kullanıcı tarafından doğrulandı.
+- DOM çevirisi, tekrar kurulum, arşivdeki diğer dosyaların korunması ve yedekten geri dönüş otomatik testlerle denetlenir.
 
-| Katman | Kapsam | Açıklama |
-| :--- | :--- | :--- |
-| 🧠 **Yapay Zeka Asistanı** | `GEMINI.md` | Antigravity AI asistanının düşünce akışını, araç bildirimlerini (*"Dosya okunuyor"*, *"Test çalıştırılıyor"*), planlama şablonlarını (*Uygulama Planı*, *Uygulama Özeti*) ve iletişim dilini akıcı Türkçeye çevirir. |
-| 🖥️ **IDE Arayüzü** | `VS Code Entegrasyonu` | Tüm menüleri (Dosya, Düzenle, Görünüm, Terminal, Gezgin, Git vb.) ve ayarlar panelini Türkçe yapar. |
-| 🎯 **Özel Google Yamaları** | `Patcher Motoru` | Resmi Microsoft dil paketinde bulunmayan, Google'a özgü özel butonları (**"Record Audio"** ➔ *"Ses Kaydet"*, **"Editor-Specific Settings"** ➔ *"Editöre Özel Ayarlar"*, vb.) güvenle yamalar. |
-| 🛡️ **Güvenli Yedekleme** | `.bak Sistemi` | Yapılan tüm dosya değişiklikleri öncesinde otomatik yedek alır; dilediğiniz zaman tek komutla orijinal haline döndürülebilir. |
+IDE için mevcut kapsamlı kurucu korunmuştur; bu düzeltmede IDE'ye yeniden yama uygulanmadı. Her ekranın ve her yeni sürümün bütünüyle Türkçe olduğu iddia edilmez. macOS ve Linux bu dağıtımın desteklenen hedefleri değildir. Desktop kurucusu bilinmeyen uygulama sürümüne yazmayı reddeder.
 
----
+## Kurulum
 
-## 🚀 Hızlı Kurulum
-
-### Yöntem 1: PowerShell ile Tek Komut (Windows)
-
-PowerShell pencerenizi açın ve şu komutu çalıştırın:
+Kaynak ZIP dosyasını bir klasöre çıkarın. Antigravity pencerelerini kapatın; kurucu çalışan uygulamaya yazmaz.
 
 ```powershell
-irm https://raw.githubusercontent.com/gmzoztr/antigravity-tr/main/install.ps1 | iex
+npm ci --ignore-scripts
+node bin/antigravity-tr.js install-desktop
 ```
 
-### Yöntem 2: NPX ile Kurulum (Çapraz Platform)
+Alternatif: aynı klasörde `./install.ps1` çalıştırın. Bu seçenek yalnızca Desktop'ı yamalar.
 
-```bash
-npx antigravity-tr
+npm üzerinde yayımlanmış bir paket varsayılmaz; `npx antigravity-tr` yerine bu yerel komutları kullanın.
+
+### Eski yamadan sonra siyah ekran
+
+Yalnızca bilinen V2 çeviri döngüsünü düzeltmek için:
+
+```powershell
+node bin/antigravity-tr.js repair-desktop
 ```
 
-### Yöntem 3: Depoyu Klonlayarak Kurulum
+Bu komut mevcut çevirileri koruyarak sadece `dist/preload.js` içindeki hatalı koşulu değiştirir.
 
-```bash
-git clone https://github.com/gmzoztr/antigravity-tr.git
-cd antigravity-tr
+### IDE ve Desktop kapsamlı kurulum
+
+Önceki projenin IDE dil paketi, özel bileşenler, eklenti açıklamaları ve `GEMINI.md` Türkçe iletişim kurallarını uygulayan komutu:
+
+```powershell
 node bin/antigravity-tr.js install
 ```
 
-> [!NOTE]
-> Kurulum tamamlandıktan sonra değişikliklerin devreye girmesi için açık olan Antigravity ve Antigravity IDE pencerelerini bir kez kapatıp yeniden başlatmanız gerekir.
+Bu geniş kapsamlı komut IDE, Desktop, bazı VS Code eklentileri ve kullanıcı dil ayarlarına da yazar. İki uygulamayı da kapatın. IDE güncellemelerinde mevcut `.bak` yedeklerinin eski sürümden kalabileceğini kontrol edin; geniş kurucu için sürümler arası güvenilirlik henüz doğrulanmadı. Yalnızca Desktop düzeltmesi gerekiyorsa `install-desktop` kullanın.
 
----
+## Yedekleme ve geri alma
 
-## 🔄 Güncellemelerden Sonra Ne Olur?
+Desktop işlemleri, değiştirmeden önce paket yanında benzersiz `app.asar.backup-...` yedeği oluşturur. Sonuçta yedek yolu yazdırılır. Yeni arşivde tüm dosyaların içeriği doğrulanır; değişiklik kapsamı dışındaki paket içeriği ve paket dışı dosyaların türü korunur. Sohbet verileri yama paketine dahil edilmez.
 
-Google Antigravity güncellendiğinde arayüz bundle dosyaları orijinal haline dönebilir. Böyle bir durumda tek yapmanız gereken kurulum komutunu tekrar çalıştırmaktır:
-
-```bash
-npx antigravity-tr install
-```
-
----
-
-## ↩️ Geri Alma / Orijinale Dönüş (Uninstall)
-
-Tüm Türkçe ayarları ve yama dosyalarını orijinal haline döndürmek için:
-
-```bash
-npx antigravity-tr restore
-```
-Veya PowerShell ile:
 ```powershell
-.\restore.ps1
+node bin/antigravity-tr.js restore-desktop "C:\...\resources\app.asar.backup-..."
 ```
 
----
+Yol verilmezse varsa eski `app.asar.bak`, yoksa en eski yeni yedek seçilir. Geri alma, uygulama sürümü farklıysa veya dosya bütünlüğü doğrulanamazsa durur. Geri alma öncesindeki durum da ayrıca yedeklenir. Eski hatalı yamayı içeren bir yedek seçerseniz siyah ekran geri gelebilir; bu durumda `repair-desktop` kullanılabilir.
 
-## 📂 Proje Yapısı
+`node bin/antigravity-tr.js restore` önceki geniş IDE geri alma akışıdır; eklentiler ve kullanıcı ayarlarının tamamı için birebir durum geri yükleme garantisi verilmez.
 
-```
-antigravity-tr/
-├── locales/
-│   └── tr.json          # Google/Antigravity'ye özgü arayüz metinleri sözlüğü
-├── rules/
-│   └── GEMINI.md        # Antigravity yapay zeka Türkçe davranış yönergeleri
-├── src/
-│   ├── config.js        # Platform ve dizin tespit modülü
-│   ├── patcher.js       # Güvenli yedeklemeli yama ve restore motoru
-│   └── installer.js     # Tam kurulum ve dil senkronizasyon yöneticisi
-├── bin/
-│   └── antigravity-tr.js# CLI çalıştırılabilir giriş noktası
-├── install.ps1          # Tek satırlık Windows kurulum betiği
-├── restore.ps1          # Tek satırlık orijinal ayarlara dönüş betiği
-└── package.json
+## Çeviriye katkı
+
+- Desktop sözlüğü: `scripts/desktop_full_dictionary.json`.
+- IDE arayüz kuralları: `locales/tr.json`.
+- IDE ayar sözlüğü: `src/settings_dictionary.js`.
+- Türkçe asistan yönergeleri: `rules/GEMINI.md`.
+
+Çeviriler yalnızca görünür etiketleri hedeflemelidir; teknik ayar değerlerini, model kimliklerini veya kullanıcı içeriklerini değiştirmeyin. Metin düğümlerindeki eşleşmeler tam metin üzerinden yapılır. Kod/editör alanları ve tanınan mesaj alanları atlanır; yeni arayüz sürümlerinde bu seçicilerin tekrar kontrol edilmesi gerekir.
+
+```powershell
+npm ci --ignore-scripts
+npm test
 ```
 
----
+Testler kurulu Antigravity dosyalarına yazmaz; geçici örnek arşivler ve DOM ortamı kullanır. Ayrıntılar: [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## 🤝 Katkıda Bulunma
+## Dağıtım
 
-Eksik gördüğünüz çevirileri veya yeni gelen Antigravity butonlarını eklemek için lütfen [CONTRIBUTING.md](CONTRIBUTING.md) dosyasını inceleyin. Her türlü Pull Request ve geri bildirim memnuniyetle karşılanır!
+GitHub kaynak paketi; yama kaynakları, sözlükler, testler ve belgeleri içerir. Antigravity uygulamasının kendisi, `app.asar`, kullanıcı konuşmaları, `.memory`, yerel deneme çıktıları ve orijinal uygulama bundle'ları dağıtıma dahil edilmez. Yerel geliştirme deposunun eski geçmişini incelemeden doğrudan herkese açık depoya göndermeyin; temiz kaynak paketini kullanın.
 
----
-
-## 📄 Lisans
-
-Bu proje [MIT Lisansı](LICENSE) altında açık kaynak olarak dağıtılmaktadır.
+Projenin kendi kaynak kodu [MIT](LICENSE) lisanslıdır. Antigravity, Google ve üçüncü taraf bileşenlerinin hakları kendi sahiplerine aittir.

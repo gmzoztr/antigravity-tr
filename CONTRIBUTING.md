@@ -1,30 +1,11 @@
-# Katkıda Bulunma Kılavuzu (Contributing)
+# Katkıda bulunma
 
-`antigravity-tr` projesine katkıda bulunmak istediğiniz için teşekkürler! Antigravity geliştirme ortamını ve yapay zeka deneyimini Türkçe kullanan herkes için daha iyi hale getirmeyi amaçlıyoruz.
+1. Windows üzerinde Node.js 22.12+ kurun; `npm ci --ignore-scripts` çalıştırın.
+2. Desktop etiketleri için `scripts/desktop_full_dictionary.json`, IDE kuralları için `locales/tr.json` veya `src/settings_dictionary.js` dosyalarını düzenleyin.
+3. `npm test` ile regresyon testlerini çalıştırın. Testler kurulu uygulamaya yazmaz.
+4. Gerçek uygulama kontrolünü ayrı yapın: pencereyi kapatın, `install-desktop` uygulayın, tekrar açın. Açılış, ayarlar, sohbet listesi, metin girişi ve araç ipuçlarını denetleyin.
+5. PR açıklamasına test edilen uygulama sürümünü, etkilenen etiketleri ve canlı kontrol sonucunu yazın.
 
-## Nasıl Katkı Sağlayabilirsiniz?
+Aynı İngilizce ve Türkçe değerler döngü yaratmamalıdır. Çevirmen yeniden kurulduğunda aynı kaynak üretilmelidir. Kod, model kimlikleri ve kullanıcı mesajları çeviri hedefi değildir. Ekran görüntülerine hesap bilgisi veya özel konuşma eklemeyin.
 
-1. **Yeni Çeviriler Eklemek:**
-   - Antigravity veya Antigravity IDE güncellendikçe yeni İngilizce kalan butonlar veya etiketler çıkabilir.
-   - `locales/tr.json` dosyasına yeni `search` ve `replace` kuralları ekleyerek bir Pull Request (PR) açabilirsiniz.
-
-2. **Yapay Zeka Kurallarını İyileştirmek:**
-   - `rules/GEMINI.md` dosyasında asistanın Türkçesini, kod yorumlama tarzını veya planlama formatını geliştirecek öneriler sunabilirsiniz.
-
-3. **Hata Bildirimi (Issue):**
-   - Karşılaştığınız eksik çevirileri, hatalı eşleşmeleri veya güncelleme sonrası oluşan durumları GitHub Issues sekmesinden bildirebilirsiniz.
-
-## Geliştirme Adımları
-
-1. Depoyu forklayın (`Fork`).
-2. Yeni bir özellik dalı oluşturun: `git checkout -b ozellik/yeni-ceviri`
-3. Değişikliklerinizi yapın ve test edin:
-   ```bash
-   node bin/antigravity-tr.js install
-   ```
-4. Commit oluşturun:
-   ```bash
-   git commit -m "feat(locales): Record Audio ve Editor Settings çevirileri eklendi"
-   ```
-5. Dalınızı gönderin: `git push origin ozellik/yeni-ceviri`
-6. Bir Pull Request açın.
+Yeni uygulama sürümünü desteklenen listeye eklemeden önce değişen kaynak biçimini ve tüm testleri doğrulayın. Yedekleri veya hata kontrollerini kaldırmayın.

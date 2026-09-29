@@ -6,3 +6,8 @@ Thumbs.db
 
 scratch/
 main.js
+*.tgz
+*.asar
+*.backup-*
+.antigravity-tr-*/
+node_modules/

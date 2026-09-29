@@ -1,35 +1,15 @@
-# Antigravity Türkçe Otomatik Kurulum Betiği (antigravity-tr)
+# Antigravity Türkçe kurulum yardımcısı. Kaynak klasöründen çalıştırın.
 [CmdletBinding()]
-param()
-
-$ErrorActionPreference = "Stop"
-
-Write-Host "============================================================" -ForegroundColor Cyan
-Write-Host "   Antigravity Türkçe Dil Paketi ve Yama Aracı (antigravity-tr)" -ForegroundColor Cyan
-Write-Host "============================================================" -ForegroundColor Cyan
-Write-Host ""
-
-# Node.js kontrolü
-$nodePath = Get-Command node -ErrorAction SilentlyContinue
-if (-not $nodePath) {
-    Write-Host "[HATA] Sistemde Node.js kurulu değil. Lütfen önce Node.js yükleyin: https://nodejs.org/" -ForegroundColor Red
-    exit 1
-}
-
-$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-
-# Eğer script doğrudan GitHub'dan çekilip web üzerinden çalıştırıldıysa geçici dizinde çalıştır
-if (-not $ScriptDir -or -not (Test-Path "$ScriptDir\src\installer.js")) {
-    $TempDir = Join-Path $env:TEMP "antigravity-tr"
-    if (Test-Path $TempDir) { Remove-Item -Path $TempDir -Recurse -Force }
-    Write-Host "[*] Kaynak dosyalar GitHub üzerinden indiriliyor..." -ForegroundColor Yellow
-    git clone --depth 1 https://github.com/gmzoztr/antigravity-tr.git $TempDir
-    $ScriptDir = $TempDir
-}
-
-Write-Host "[*] Kurulum motoru başlatılıyor..." -ForegroundColor Green
-node "$ScriptDir\bin\antigravity-tr.js" install
-
-Write-Host ""
-Write-Host "[✓] Kurulum başarıyla tamamlandı!" -ForegroundColor Green
-Write-Host "[!] Lütfen değişikliklerin geçerli olması için Antigravity / Antigravity IDE'yi yeniden başlatın." -ForegroundColor Yellow
+param([ValidateSet('desktop','full','repair')][string]$Target = 'desktop')
+$ErrorActionPreference = 'Stop'
+if (-not (Get-Command node -ErrorAction SilentlyContinue)) { throw 'Node.js 22.12 veya üstü gerekiyor.' }
+if (-not (Get-Command npm -ErrorAction SilentlyContinue)) { throw 'npm bulunamadı.' }
+Push-Location -LiteralPath $PSScriptRoot
+try {
+    & npm ci --omit=dev --ignore-scripts
+    if ($LASTEXITCODE -ne 0) { throw 'Bağımlılıklar kurulamadı.' }
+    $taskCommand = switch ($Target) { 'full' { 'install' } 'repair' { 'repair-desktop' } default { 'install-desktop' } }
+    & node (Join-Path $PSScriptRoot 'bin\antigravity-tr.js') $taskCommand
+    if ($LASTEXITCODE -ne 0) { throw 'Yama tamamlanamadı. Yukarıdaki hata mesajını inceleyin.' }
+    Write-Host 'Yama tamamlandı. Antigravity uygulamasını açabilirsiniz.' -ForegroundColor Green
+} finally { Pop-Location }

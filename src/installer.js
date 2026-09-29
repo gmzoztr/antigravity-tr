@@ -249,7 +249,7 @@ function patchGoogleCloudExtension(paths) {
   const dcDirs = [];
   const searchBases = [
     paths.ide?.extensionsDir,
-    path.join(process.env.USERPROFILE || 'C:\\Users\\Work-D', '.vscode', 'extensions')
+    path.join(require('node:os').homedir(), '.vscode', 'extensions')
   ];
 
   for (const base of searchBases) {
@@ -387,7 +387,7 @@ function patchWslExtension(paths) {
 function patchClaudeExtension(paths) {
   const dirs = [
     paths.ide?.extensionsDir,
-    path.join(process.env.USERPROFILE || 'C:\\Users\\Work-D', '.vscode', 'extensions')
+    path.join(require('node:os').homedir(), '.vscode', 'extensions')
   ];
   const replacements = [
     ['Claude Code: Open in New Tab', 'Claude Code: Yeni Sekmede Aç'],
@@ -425,7 +425,7 @@ function patchClaudeExtension(paths) {
 function patchCodexExtension(paths) {
   const dirs = [
     paths.ide?.extensionsDir,
-    path.join(process.env.USERPROFILE || 'C:\\Users\\Work-D', '.vscode', 'extensions')
+    path.join(require('node:os').homedir(), '.vscode', 'extensions')
   ];
   const replacements = [
     ['"Open Codex Sidebar"', '"Codex Kenar Çubuğunu Aç"'],
@@ -565,7 +565,7 @@ function patchAntigravityRemoteExtensions(paths) {
 function patchClangdExtension(paths) {
   const dirs = [
     paths.ide?.extensionsDir,
-    path.join(process.env.USERPROFILE || 'C:\\Users\\Work-D', '.vscode', 'extensions')
+    path.join(require('node:os').homedir(), '.vscode', 'extensions')
   ];
 
   const replacements = [
@@ -609,7 +609,7 @@ function patchClangdExtension(paths) {
 /**
  * Tam kurulum yürütür.
  */
-function install() {
+async function install() {
   const paths = getPaths();
   const dictPath = path.join(__dirname, '..', 'locales', 'tr.json');
   const dict = JSON.parse(fs.readFileSync(dictPath, 'utf8'));
@@ -665,11 +665,11 @@ function install() {
   // 6. Antigravity Desktop (Ajan & Sohbet Arayüzü) Yaması
   if (fs.existsSync(paths.desktop.appPath)) {
     console.log('6. Antigravity Desktop arayüzü yamalanıyor...');
-    const desktopRes = patchDesktopApp(paths);
+    const desktopRes = await patchDesktopApp(paths);
     if (desktopRes.success) {
       console.log('   [✓] Antigravity Desktop (app.asar) arayüzü Türkçeleştirildi.');
     } else {
-      console.log(`   [-] Antigravity Desktop: ${desktopRes.reason}`);
+      throw new Error(`Antigravity Desktop: ${desktopRes.reason}`);
     }
   }
 
@@ -685,7 +685,7 @@ function install() {
 /**
  * Tam geri alma (uninstall) yürütür.
  */
-function uninstall() {
+async function uninstall() {
   const paths = getPaths();
   console.log('--- Antigravity Türkçe Ayarları Geri Alınıyor ---');
 
@@ -707,7 +707,8 @@ function uninstall() {
 
   // Desktop app geri yükle
   if (fs.existsSync(paths.desktop.appPath)) {
-    const desktopRes = restoreDesktopApp(paths);
+    const desktopRes = await restoreDesktopApp(paths);
+    if (!desktopRes.restored) throw new Error(desktopRes.reason);
     if (desktopRes.restored) {
       console.log('   [✓] Antigravity Desktop: Orijinal app.asar dosyasına dönüldü.');
     }

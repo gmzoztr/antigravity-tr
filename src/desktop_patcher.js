@@ -1,68 +1,47 @@
-/**
- * Antigravity Desktop (Electron + Language Server) Uygulamasını Türkçeleştirme Modülü
- */
+/** Antigravity Desktop Turkish patch. Existing dictionaries are preserved. */
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const { rewriteArchive, restoreArchive } = require('./desktop_archive');
 
-const fs = require('fs');
-const path = require('path');
-const { execSync } = require('child_process');
-
-function patchDesktopApp(paths) {
-  const asarPath = path.join(paths.desktop.appPath, 'resources', 'app.asar');
-  const backupPath = path.join(paths.desktop.appPath, 'resources', 'app.asar.bak');
-  const extractDir = path.join(paths.desktop.dataPath || path.join(paths.home, '.antigravity'), 'asar_extracted');
-
-  if (!fs.existsSync(asarPath)) {
-    return { success: false, reason: 'app.asar bulunamadı: ' + asarPath };
-  }
-
-  // 1. Yedekleme
-  try {
-    if (!fs.existsSync(backupPath)) {
-      fs.copyFileSync(asarPath, backupPath);
-    }
-  } catch (e) {
-    return { success: false, reason: 'Yedekleme başarısız: ' + e.message };
-  }
-
-  // 2. Çıkarma
-  try {
-    if (fs.existsSync(extractDir)) {
-      fs.rmSync(extractDir, { recursive: true, force: true });
-    }
-    fs.mkdirSync(extractDir, { recursive: true });
-    execSync(`npx asar extract "${asarPath}" "${extractDir}"`, { stdio: 'ignore' });
-  } catch (e) {
-    return { success: false, reason: 'asar çıkarma başarısız: ' + e.message };
-  }
-
+function transformDesktopSources(input) {
+  const sources = new Map(input);
+  const fileName = name => 'dist/' + name;
   // 3. loadingOverlay.js Yamalama
-  const loadingPath = path.join(extractDir, 'dist', 'loadingOverlay.js');
-  if (fs.existsSync(loadingPath)) {
-    let c = fs.readFileSync(loadingPath, 'utf8');
+  const loadingPath = fileName('loadingOverlay.js');
+  if (sources.has(loadingPath)) {
+    let c = sources.get(loadingPath);
     c = c.replace('Loading Antigravity', 'Antigravity Yükleniyor...');
-    fs.writeFileSync(loadingPath, c, 'utf8');
+    sources.set(loadingPath, c);
   }
 
   // 4. provisionSplash.js Yamalama
-  const splashPath = path.join(extractDir, 'dist', 'provisionSplash.js');
-  if (fs.existsSync(splashPath)) {
-    let c = fs.readFileSync(splashPath, 'utf8');
+  const splashPath = fileName('provisionSplash.js');
+  if (sources.has(splashPath)) {
+    let c = sources.get(splashPath);
     c = c.replace('Setting up WSL:', 'WSL Yapılandırılıyor:');
-    fs.writeFileSync(splashPath, c, 'utf8');
+    sources.set(splashPath, c);
   }
 
   // 5. tray.js Yamalama
-  const trayPath = path.join(extractDir, 'dist', 'tray.js');
-  if (fs.existsSync(trayPath)) {
-    let c = fs.readFileSync(trayPath, 'utf8');
+  const trayPath = fileName('tray.js');
+  if (sources.has(trayPath)) {
+    let c = sources.get(trayPath);
     c = c.replace('No agents running', 'Çalışan ajan yok').replace('Quit', 'Çıkış');
-    fs.writeFileSync(trayPath, c, 'utf8');
+    sources.set(trayPath, c);
   }
 
   // 6. menu.js Yamalama
-  const menuPath = path.join(extractDir, 'dist', 'menu.js');
-  if (fs.existsSync(menuPath)) {
-    let c = fs.readFileSync(menuPath, 'utf8');
+  const menuPath = fileName('menu.js');
+  if (sources.has(menuPath)) {
+    let c = sources.get(menuPath);
+    if (c.trimStart().startsWith('function menuToTemplate(menu)')) {
+      const originalStart = c.indexOf('"use strict";');
+      if (originalStart < 0 || !c.slice(0, originalStart).includes('function rebuildLocalizedMenu(menu)')) {
+        throw new Error('Eski menü yamasının sınırları doğrulanamadı.');
+      }
+      c = c.slice(originalStart);
+    }
 
     c = c.replace(/'New Window'/g, "'Yeni Pencere'")
          .replace(/'Connect to WSL'/g, "'WSL\\'ye Bağlan'")
@@ -131,12 +110,12 @@ function rebuildLocalizedMenu(menu) {
       'electron_1.Menu.setApplicationMenu(rebuildLocalizedMenu(menu));'
     );
 
-    fs.writeFileSync(menuPath, c, 'utf8');
+    sources.set(menuPath, c);
   }
 
   // 7. preload.js Yamalama
-  const preloadPath = path.join(extractDir, 'dist', 'preload.js');
-  if (fs.existsSync(preloadPath)) {
+  const preloadPath = fileName('preload.js');
+  if (sources.has(preloadPath)) {
     const dictFile = path.join(__dirname, '..', 'scripts', 'desktop_full_dictionary.json');
     let dictionary = {};
     if (fs.existsSync(dictFile)) {
@@ -168,7 +147,7 @@ function rebuildLocalizedMenu(menu) {
       "This account is ineligible for higher rate limits through a Google AI plan at this time.": "Bu hesap şu anda bir Google AI planı aracılığıyla daha yüksek istek limitleri için uygun değildir."
     });
 
-    let preloadContent = fs.readFileSync(preloadPath, 'utf8');
+    let preloadContent = sources.get(preloadPath);
 
     const translatorScript = `
 // ═══════════════════════════════════════════════════════════════════
@@ -184,28 +163,28 @@ function rebuildLocalizedMenu(menu) {
     const tag = parent.tagName ? parent.tagName.toLowerCase() : '';
     if (tag === 'script' || tag === 'style' || tag === 'pre' || tag === 'code') return;
     if (parent.isContentEditable) return;
-    if (parent.closest && parent.closest('.monaco-editor')) return;
+    if (parent.closest && parent.closest('script,style,pre,code,textarea,input,.monaco-editor,.markdown,[data-message-author-role],[data-antigravity-tr-ignore]')) return;
 
     const val = node.nodeValue;
     if (!val) return;
     const trimmed = val.trim();
     if (!trimmed) return;
 
-    if (dictionary[trimmed]) {
+    if (Object.prototype.hasOwnProperty.call(dictionary, trimmed) && dictionary[trimmed] !== trimmed) {
       node.nodeValue = val.replace(trimmed, dictionary[trimmed]);
     }
   }
 
   function translateAttributes(el) {
     if (!el || el.nodeType !== 1) return;
-    if (el.placeholder && dictionary[el.placeholder.trim()]) {
+    if (el.placeholder && Object.prototype.hasOwnProperty.call(dictionary, el.placeholder.trim()) && dictionary[el.placeholder.trim()] !== el.placeholder) {
       el.placeholder = dictionary[el.placeholder.trim()];
     }
-    if (el.title && dictionary[el.title.trim()]) {
+    if (el.title && Object.prototype.hasOwnProperty.call(dictionary, el.title.trim()) && dictionary[el.title.trim()] !== el.title) {
       el.title = dictionary[el.title.trim()];
     }
     const aria = el.getAttribute('aria-label');
-    if (aria && dictionary[aria.trim()]) {
+    if (aria && Object.prototype.hasOwnProperty.call(dictionary, aria.trim()) && dictionary[aria.trim()] !== aria) {
       el.setAttribute('aria-label', dictionary[aria.trim()]);
     }
   }
@@ -243,7 +222,12 @@ function rebuildLocalizedMenu(menu) {
       translateTree(document.body);
     }
 
+    const options = { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ['placeholder', 'title', 'aria-label'] };
+    const observedRoot = document.documentElement || document.body;
+    if (!observedRoot) return;
     const observer = new MutationObserver((mutations) => {
+      observer.disconnect();
+      try {
       for (let i = 0; i < mutations.length; i++) {
         const m = mutations[i];
         if (m.type === 'childList') {
@@ -252,22 +236,14 @@ function rebuildLocalizedMenu(menu) {
           }
         } else if (m.type === 'characterData') {
           translateTextNode(m.target);
+        } else if (m.type === 'attributes') {
+          translateAttributes(m.target);
         }
       }
+      } finally { observer.observe(observedRoot, options); }
     });
-
-    observer.observe(document.documentElement || document.body, {
-      childList: true,
-      subtree: true,
-      characterData: true
-    });
-
-    let checks = 0;
-    const interval = setInterval(() => {
-      if (document.body) translateTree(document.body);
-      checks++;
-      if (checks > 10) clearInterval(interval);
-    }, 500);
+    observer.observe(observedRoot, options);
+    window.addEventListener('pagehide', () => observer.disconnect(), { once: true });
   }
 
   if (document.readyState === 'loading') {
@@ -278,43 +254,54 @@ function rebuildLocalizedMenu(menu) {
 })();
 `;
 
-    if (preloadContent.includes('ANTIGRAVITY DESKTOP TÜRKÇE CANLI ARAYÜZ ÇEVİRMENİ')) {
-      preloadContent = preloadContent.replace(/\/\/ ═+[\s\S]*?ANTIGRAVITY DESKTOP TÜRKÇE CANLI ARAYÜZ ÇEVİRMENİ[\s\S]*?\n\}\)\(\);\n?/m, '');
+    const marker = 'ANTIGRAVITY DESKTOP TÜRKÇE CANLI ARAYÜZ ÇEVİRMENİ';
+    const markerIndex = preloadContent.indexOf(marker);
+    if (markerIndex >= 0) {
+      const start = preloadContent.lastIndexOf('// ═', markerIndex);
+      const end = preloadContent.indexOf('\n})();', markerIndex);
+      if (start < 0 || end < 0 || preloadContent.slice(end + 6).trim()) {
+        throw new Error('Eski çeviri katmanının sınırları doğrulanamadı.');
+      }
+      preloadContent = preloadContent.slice(0, start).trimEnd();
     }
 
     preloadContent += '\n' + translatorScript;
-    fs.writeFileSync(preloadPath, preloadContent, 'utf8');
+    sources.set(preloadPath, preloadContent);
   }
 
-  // 8. Yeniden Paketleme
+  for (const [name, source] of sources) new vm.Script(source, { filename: name });
+  return sources;
+}
+
+async function patchDesktopApp(paths) {
   try {
-    const tempAsar = path.join(path.dirname(extractDir), 'app.asar.new');
-    execSync(`npx asar pack "${extractDir}" "${tempAsar}"`, { stdio: 'ignore' });
-    fs.copyFileSync(tempAsar, asarPath);
-    try { fs.rmSync(tempAsar, { force: true }); } catch (e) {}
-    try { fs.rmSync(extractDir, { recursive: true, force: true }); } catch (e) {}
-    return { success: true };
-  } catch (e) {
-    return { success: false, reason: 'Paketleme/yazma başarısız: ' + e.message };
-  }
-}
-
-function restoreDesktopApp(paths) {
-  const asarPath = path.join(paths.desktop.appPath, 'resources', 'app.asar');
-  const backupPath = path.join(paths.desktop.appPath, 'resources', 'app.asar.bak');
-
-  if (fs.existsSync(backupPath)) {
-    try {
-      fs.copyFileSync(backupPath, asarPath);
-      return { restored: true };
-    } catch (e) {
-      return { restored: false, reason: e.message };
+    const asar = await import('@electron/asar');
+    const archive = path.join(paths.desktop.appPath, 'resources', 'app.asar');
+    asar.uncacheAll();
+    const version = JSON.parse(asar.extractFile(archive, 'package.json').toString()).version;
+    if (version !== '2.17.0') throw new Error(`Desktop ${version} henüz doğrulanmadı; desteklenen sürüm: 2.17.0.`);
+    const names = ['loadingOverlay.js', 'provisionSplash.js', 'tray.js', 'menu.js', 'preload.js'];
+    const sources = new Map();
+    for (const name of names) {
+      const key = 'dist/' + name;
+      sources.set(key, asar.extractFile(archive, path.normalize(key)).toString('utf8'));
     }
+    const next = transformDesktopSources(sources);
+    const changes = new Map([...next].filter(([name, value]) => value !== sources.get(name)).map(([name, value]) => [name, Buffer.from(value)]));
+    if (!changes.size) return { success: true, changedFiles: [], message: 'Yama zaten güncel.' };
+    return await rewriteArchive(archive, changes);
+  } catch (error) {
+    return { success: false, reason: error.message };
   }
-  return { restored: false, reason: 'Yedek bulunamadı' };
 }
 
-module.exports = {
-  patchDesktopApp,
-  restoreDesktopApp
-};
+async function restoreDesktopApp(paths, selectedBackup) {
+  const archive = path.join(paths.desktop.appPath, 'resources', 'app.asar');
+  const backup = selectedBackup || (fs.existsSync(archive + '.bak') ? archive + '.bak' :
+    fs.readdirSync(path.dirname(archive)).filter(n => /^app\.asar\.backup-\d+-[a-f0-9]+$/.test(n)).sort().map(n => path.join(path.dirname(archive), n))[0]);
+  if (!backup) return { restored: false, reason: 'Yedek bulunamadı.' };
+  try { return await restoreArchive(archive, path.resolve(backup)); }
+  catch (error) { return { restored: false, reason: error.message }; }
+}
+
+module.exports = { patchDesktopApp, restoreDesktopApp, transformDesktopSources };

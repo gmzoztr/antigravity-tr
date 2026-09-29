@@ -1,6 +1,6 @@
 {
   "name": "antigravity-tr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Google Antigravity ve Antigravity IDE için Kapsamlı Türkçe Dil Paketi ve Otomatik Yama Aracı",
   "main": "src/installer.js",
   "bin": {
@@ -10,7 +10,8 @@
     "start": "node bin/antigravity-tr.js",
     "install-tr": "node bin/antigravity-tr.js install",
     "restore": "node bin/antigravity-tr.js restore",
-    "scan": "node -e \"console.log(require('./src/scanner').scanUiStrings())\""
+    "scan": "node -e \"console.log(require('./src/scanner').scanUiStrings())\"",
+    "test": "node --test test/*.test.js"
   },
   "keywords": [
     "antigravity",
@@ -33,9 +34,26 @@
   },
   "homepage": "https://github.com/gmzoztr/antigravity-tr#readme",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=22.12.0"
   },
   "dependencies": {
+    "@electron/asar": "4.3.1",
     "playwright-core": "^1.63.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "locales/",
+    "rules/",
+    "scripts/desktop_full_dictionary.json",
+    "install.ps1",
+    "restore.ps1",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md"
+  ],
+  "devDependencies": {
+    "jsdom": "26.1.0"
   }
 }

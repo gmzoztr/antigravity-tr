@@ -1,0 +1,14 @@
+# Değişiklikler
+
+## 1.0.1 — 2026-09-29
+
+- Desktop V2 çevirmenindeki değişmeyen metinlerin sonsuz MutationObserver döngüsü düzeltildi.
+- Çevirmen kendi DOM yazımlarını tekrar gözlemlemiyor; değişen araç ipuçlarını takip ediyor.
+- Tekrar kurulumda çevirmen ve menü yardımcılarının çoğalması önlendi.
+- ASAR paketleme için sürümü sabitlenmiş @electron/asar kullanılıyor; doğrulama, anlık yedek ve atomik dosya değiştirme eklendi.
+- Desktop'a özel kurulum, onarım ve geri alma komutları eklendi.
+- Çalışan uygulama kontrolü ve Desktop 2.17.0 sürüm sınırı eklendi.
+- PowerShell yardımcıları gerçek hata kodlarını bildiriyor.
+- Tekrarlı çeviri, DOM davranışı, arşiv koruma ve geri alma testleri eklendi.
+
+Canlı kabul: kullanıcı, ilk döngü düzeltmesinin ardından masaüstü arayüzünün açıldığını doğruladı. IDE kurulumu bu çalışmada yeniden uygulanmadı.

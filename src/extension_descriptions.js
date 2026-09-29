@@ -500,7 +500,7 @@ function getExtensionNlsMap(extFullPath, extName) {
   }
 
   // Yerleşik eklentiler için dil paketi dosyasını kontrol et
-  const userProfile = process.env.USERPROFILE || 'C:\\Users\\Work-D';
+  const userProfile = require('node:os').homedir();
   const langBases = [
     path.join(userProfile, '.antigravity-ide', 'extensions', 'ms-ceintl.vscode-language-pack-tr-1.106.0-universal', 'translations', 'extensions'),
     path.join(userProfile, '.vscode', 'extensions', 'ms-ceintl.vscode-language-pack-tr-1.106.0-universal', 'translations', 'extensions')
@@ -581,7 +581,7 @@ function patchAllExtensions(paths) {
   const searchBases = [
     paths.ide?.appPath ? path.join(paths.ide.appPath, 'resources', 'app', 'extensions') : null,
     paths.ide?.extensionsDir,
-    path.join(process.env.USERPROFILE || 'C:\\Users\\Work-D', '.vscode', 'extensions')
+    path.join(require('node:os').homedir(), '.vscode', 'extensions')
   ].filter(Boolean);
 
   let patchedCount = 0;
