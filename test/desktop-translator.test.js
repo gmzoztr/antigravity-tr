@@ -45,3 +45,13 @@ test('DOM translation settles, follows added UI and attribute changes, preserves
     observer.disconnect();
   } finally { dom.window.close(); }
 });
+
+test('custom menu items and select labels translate without changing option values', async () => {
+  const dom = new JSDOM('<body><div role="menu"><span>Zoom In</span><span>Zoom Out</span><span>Reset Zoom</span><span>Minimize</span><span>Maximize</span></div><select><option value="always">Always</option><option value="never">Never</option></select></body>', { runScripts: 'outside-only' });
+  try {
+    dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));
+    await new Promise(resolve => dom.window.setTimeout(resolve, 20));
+    assert.deepEqual([...dom.window.document.querySelectorAll('[role="menu"] span')].map(n => n.textContent), ['Yakınlaştır', 'Uzaklaştır', 'Yakınlaştırmayı Sıfırla', 'Simge Durumuna Küçült', 'Ekranı Kapla']);
+    assert.deepEqual([...dom.window.document.querySelectorAll('option')].map(n => [n.value, n.textContent]), [['always', 'Her Zaman'], ['never', 'Asla']]);
+  } finally { dom.window.close(); }
+});
