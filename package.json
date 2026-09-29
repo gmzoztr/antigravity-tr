@@ -34,5 +34,8 @@
   "homepage": "https://github.com/gmzoztr/antigravity-tr#readme",
   "engines": {
     "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "playwright-core": "^1.63.0"
   }
 }

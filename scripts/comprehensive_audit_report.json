@@ -1,0 +1,203 @@
+{
+  "timestamp": "2026-09-29T12:21:19.177Z",
+  "summary": {
+    "totalSettingsFound": 766,
+    "fullyTranslated": 766,
+    "untranslatedDescriptions": 0,
+    "untranslatedEnums": 0,
+    "byExtension": {
+      "anthropic.claude-code-2.1.284-win32-x64": {
+        "total": 21,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "golang.go-0.56.1-universal": {
+        "total": 67,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "googlecloudtools.datacloud-0.11.0-universal": {
+        "total": 18,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "llvm-vs-code-extensions.vscode-clangd-0.6.0-universal": {
+        "total": 17,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "meta.pyrefly-1.3.1-win32-x64": {
+        "total": 21,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "ms-python.debugpy-2026.6.0-win32-x64": {
+        "total": 2,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "ms-python.python-2026.4.0-universal": {
+        "total": 41,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "ms-python.vscode-python-envs-1.20.1-universal": {
+        "total": 9,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "ms-toolsai.jupyter-2025.9.1-universal": {
+        "total": 54,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "openai.chatgpt-26.721.30844-win32-x64": {
+        "total": 8,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "shopify.ruby-lsp-0.10.6-universal": {
+        "total": 17,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "antigravity": {
+        "total": 5,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "antigravity-dev-containers": {
+        "total": 2,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "antigravity-remote-openssh": {
+        "total": 5,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "antigravity-remote-wsl": {
+        "total": 2,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "css-language-features": {
+        "total": 98,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "emmet": {
+        "total": 12,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "git": {
+        "total": 99,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "github": {
+        "total": 4,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "github-authentication": {
+        "total": 3,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "grunt": {
+        "total": 1,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "gulp": {
+        "total": 1,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "html-language-features": {
+        "total": 25,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "ipynb": {
+        "total": 2,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "jake": {
+        "total": 1,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "json-language-features": {
+        "total": 8,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "markdown-language-features": {
+        "total": 40,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "markdown-math": {
+        "total": 2,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "media-preview": {
+        "total": 2,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "merge-conflict": {
+        "total": 4,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "mermaid-chat-features": {
+        "total": 1,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "microsoft-authentication": {
+        "total": 3,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "ms-vscode.js-debug": {
+        "total": 12,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "npm": {
+        "total": 11,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "php-language-features": {
+        "total": 4,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "references-view": {
+        "total": 1,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "simple-browser": {
+        "total": 1,
+        "missingDesc": 0,
+        "missingEnum": 0
+      },
+      "typescript-language-features": {
+        "total": 142,
+        "missingDesc": 0,
+        "missingEnum": 0
+      }
+    },
+    "coreNlsTotalMessages": 16555
+  },
+  "untranslatedSettings": []
+}
