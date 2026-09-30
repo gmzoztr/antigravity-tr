@@ -173,6 +173,14 @@ function rebuildLocalizedMenu(menu) {
     if (!trimmed) return;
 
     const translated = Object.prototype.hasOwnProperty.call(dictionary, trimmed) ? dictionary[trimmed] : translateDynamic(trimmed);
+    if (translated === trimmed && parent.childNodes.length > 1 && Array.from(parent.childNodes).every(n => n.nodeType === 3)) {
+      const combined = parent.textContent.trim();
+      if (Object.prototype.hasOwnProperty.call(dictionary, combined) && dictionary[combined] !== combined) {
+        parent.childNodes[0].nodeValue = dictionary[combined];
+        for (let i = 1; i < parent.childNodes.length; i++) parent.childNodes[i].nodeValue = '';
+        return;
+      }
+    }
     if (translated !== trimmed) {
       node.nodeValue = val.replace(trimmed, translated);
     }

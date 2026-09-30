@@ -2,7 +2,7 @@
 
 Google Antigravity Desktop ve Antigravity IDE için topluluk tarafından geliştirilen Türkçe yerelleştirme araçları. Google'ın resmi ürünü veya resmi dil paketi değildir.
 
-Mevcut IDE çevirileri, ayar sözlükleri ve Türkçe asistan kuralları korunmuştur. **1.0.1 sürümü, Desktop Türkçe yamasının siyah ekrana yol açan sonsuz çeviri döngüsünü düzeltir.**
+Mevcut IDE çevirileri, ayar sözlükleri ve Türkçe asistan kuralları korunmuştur. **1.0.2 sürümü, Desktop ayarları, beceri açıklamaları ve menü çevirilerini tamamlar; eklenti adlarını özgün biçimiyle korur.**
 
 ## Doğrulanmış kapsam
 
