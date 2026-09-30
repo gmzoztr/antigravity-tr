@@ -303,7 +303,7 @@ async function patchDesktopApp(paths) {
     const archive = path.join(paths.desktop.appPath, 'resources', 'app.asar');
     asar.uncacheAll();
     const version = JSON.parse(asar.extractFile(archive, 'package.json').toString()).version;
-    if (version !== '2.17.0') throw new Error(`Desktop ${version} henüz doğrulanmadı; desteklenen sürüm: 2.17.0.`);
+    if (!['2.17.0', '2.18.1'].includes(version)) throw new Error(`Desktop ${version} henüz doğrulanmadı; desteklenen sürümler: 2.17.0, 2.18.1.`);
     const names = ['loadingOverlay.js', 'provisionSplash.js', 'tray.js', 'menu.js', 'preload.js', 'main.js'];
     const sources = new Map();
     for (const name of names) {

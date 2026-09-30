@@ -577,5 +577,7 @@
   "Good Response": "İyi Yanıt",
   "Bad Response": "Kötü Yanıt",
   "files changed": "Dosya Değiştirildi",
-  "file changed": "Dosya Değiştirildi"
+  "file changed": "Dosya Değiştirildi",
+  "External tools the agent can call via Model Context Protocol.": "Ajanın Model Context Protocol (MCP) üzerinden kullanabileceği harici araçlar.",
+  "Enter tool name or server...": "Araç veya sunucu adını girin..."
 }
