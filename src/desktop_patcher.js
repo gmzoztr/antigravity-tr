@@ -24,12 +24,25 @@ function transformDesktopSources(input) {
     sources.set(splashPath, c);
   }
 
-  // 5. tray.js Yamalama
+  // 5. tray.js ve main.js Yamalama
   const trayPath = fileName('tray.js');
   if (sources.has(trayPath)) {
     let c = sources.get(trayPath);
     c = c.replace('No agents running', 'Çalışan ajan yok').replace('Quit', 'Çıkış');
+    c = c.replace(
+      "(count > 0 ? `${count}` : 'No') +\n                    ' agent' +\n                    (count === 1 ? '' : 's') +\n                    ' running'",
+      "(count > 0 ? `${count} ajan çalışıyor` : 'Çalışan ajan yok')"
+    );
     sources.set(trayPath, c);
+  }
+
+  const mainPath = fileName('main.js');
+  if (sources.has(mainPath)) {
+    let c = sources.get(mainPath);
+    c = c.replace("'No agents running'", "'Çalışan ajan yok'")
+         .replace("'Quit'", "'Çıkış'")
+         .replace("'New Window'", "'Yeni Pencere'");
+    sources.set(mainPath, c);
   }
 
   // 6. menu.js Yamalama
@@ -291,7 +304,7 @@ async function patchDesktopApp(paths) {
     asar.uncacheAll();
     const version = JSON.parse(asar.extractFile(archive, 'package.json').toString()).version;
     if (version !== '2.17.0') throw new Error(`Desktop ${version} henüz doğrulanmadı; desteklenen sürüm: 2.17.0.`);
-    const names = ['loadingOverlay.js', 'provisionSplash.js', 'tray.js', 'menu.js', 'preload.js'];
+    const names = ['loadingOverlay.js', 'provisionSplash.js', 'tray.js', 'menu.js', 'preload.js', 'main.js'];
     const sources = new Map();
     for (const name of names) {
       const key = 'dist/' + name;
