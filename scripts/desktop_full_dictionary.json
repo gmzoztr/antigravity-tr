@@ -572,5 +572,10 @@
   "Sort Conversations": "Konuşmaları Sırala",
   "Last Prompt": "Son İstek",
   "Last Updated": "Son Güncelleme",
-  "Enter a prompt for the agent to run...": "Ajanın gerçekleştireceği isteği yazın..."
+  "Enter a prompt for the agent to run...": "Ajanın gerçekleştireceği isteği yazın...",
+  "Review": "İncele",
+  "Good Response": "İyi Yanıt",
+  "Bad Response": "Kötü Yanıt",
+  "files changed": "Dosya Değiştirildi",
+  "file changed": "Dosya Değiştirildi"
 }
