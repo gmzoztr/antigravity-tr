@@ -1,8 +1,30 @@
-# Antigravity Türkçe Yama
+# 🇹🇷 Google Antigravity & Antigravity IDE Türkçe Dil Paketi
+### (Community Turkish Localization & Engineering Infrastructure for Google Antigravity)
 
-Google Antigravity Desktop ve Antigravity IDE için topluluk tarafından geliştirilen Türkçe yerelleştirme araçları. Google'ın resmi ürünü veya resmi dil paketi değildir.
+<div align="center">
+
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Tested On](https://img.shields.io/badge/Antigravity%20Desktop-v2.17.0-purple.svg)](https://antigravity.google)
+[![Tests Passing](https://img.shields.io/badge/Tests-14%2F14%20Passing-brightgreen.svg)](test/)
+[![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](#-kurulum)
+[![GitHub stars](https://img.shields.io/github/stars/gmzoztr/antigravity-tr?style=social)](https://github.com/gmzoztr/antigravity-tr)
+
+[⭐ **Yıldız Ver (Star)**](https://github.com/gmzoztr/antigravity-tr) • 
+[💬 **Geri Bildirim / Hata Bildir**](https://github.com/gmzoztr/antigravity-tr/issues) • 
+[📥 **Sürümler (Releases)**](https://github.com/gmzoztr/antigravity-tr/releases)
+
+</div>
+
+---
+
+> [!TIP]
+> 🌟 **Bu projeyi faydalı bulduysanız ve Antigravity'yi Türkçe kullanmaktan memnunsanız, sağ üst köşeden projeye bir Yıldız (Star ⭐) vererek destek olabilirsiniz!**  
+> GitHub yıldızlarınız projenin görünürlüğünü artırır ve Google Antigravity ekibinin Türkçe dil desteğini doğrudan çekirdeğe (native) eklemesini hızlandırır.
+
+Google Antigravity Desktop ve Antigravity IDE için topluluk tarafından geliştirilen kapsamlı Türkçe yerelleştirme araçları. Google'ın resmi ürünü veya resmi dil paketi değildir.
 
 Mevcut IDE çevirileri, ayar sözlükleri ve Türkçe asistan kuralları korunmuştur. **1.0.2 sürümü, Desktop ayarları, beceri açıklamaları ve menü çevirilerini tamamlar; eklenti adlarını özgün biçimiyle korur.**
+
 
 ## Doğrulanmış kapsam
 
