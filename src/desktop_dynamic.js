@@ -1,5 +1,7 @@
 // Only recognized UI sentences are transformed; arbitrary numbers and content are untouched.
 function translateDynamic(text) {
+  const readAll = /^Mark all (\d+) conversations as read$/.exec(text);
+  if (readAll) return readAll[1] + ' Konuşmanın Tümünü Okundu Olarak İşaretle';
   const credits = /^Available AI Credits:\s*([\d.,]+)$/.exec(text);
   if (credits) return 'Kullanılabilir AI Kredisi: ' + credits[1];
   if (text === 'tokens)') return 'token)';
