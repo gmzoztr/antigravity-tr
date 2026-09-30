@@ -4,7 +4,7 @@
 <div align="center">
 
 [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Tested On](https://img.shields.io/badge/Antigravity%20Desktop-v2.17.0-purple.svg)](https://antigravity.google)
+[![Tested On](https://img.shields.io/badge/Antigravity%20Desktop-v2.17.0%20%7C%20v2.18.1-purple.svg)](https://antigravity.google)
 [![Tests Passing](https://img.shields.io/badge/Tests-14%2F14%20Passing-brightgreen.svg)](test/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](#-kurulum)
 [![GitHub stars](https://img.shields.io/github/stars/gmzoztr/antigravity-tr?style=social)](https://github.com/gmzoztr/antigravity-tr)
@@ -28,7 +28,8 @@ Mevcut IDE çevirileri, ayar sözlükleri ve Türkçe asistan kuralları korunmu
 
 ## Doğrulanmış kapsam
 
-- Windows, kullanıcı dizinine kurulmuş **Antigravity Desktop 2.17.0**.
+- Windows, kullanıcı dizinine kurulmuş **Antigravity Desktop 2.17.0 ve 2.18.1**.
+
 - Node.js **22.12 veya üstü** ve npm.
 - Desktop menüleri, sözlükteki düğmeler, ayar metinleri ve araç ipuçları.
 - Masaüstü uygulamasının açılması gerçek kullanıcı tarafından doğrulandı.
