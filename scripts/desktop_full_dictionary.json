@@ -191,7 +191,7 @@
   "Installed MCP Servers": "Yüklü MCP Sunucuları",
   "Plugins": "Eklentiler",
   "Build With Google Plugins": "Google ile Geliştirme Eklentileri",
-  "Browse and enable plugins from the Build With Google catalog.": "Build With Google kataloğundaki eklentilere göz atın ve etkinleştirin.",
+  "Browse and enable plugins from the Build With Google catalog.": "Google eklenti kataloğuna göz atın ve kullanmak istediğiniz eklentileri etkinleştirin.",
   "Enter bot name (optional)": "Bot adı girin (isteğe bağlı)",
   "Enter avatar URL (optional)": "Avatar URL'si girin (isteğe bağlı)",
   "Jetski Chat": "Jetski Sohbet",
@@ -543,5 +543,9 @@
   "Keep your coding agent up to date with the latest web best practices.": "Kodlama ajanınızı güncel web geliştirme yöntemleriyle destekleyin.",
   "Using the Antigravity Python SDK to build AI agents": "Antigravity Python SDK ile yapay zekâ ajanları geliştirme.",
   "Curated collection of agent skills for science.": "Bilimsel çalışmalar için derlenmiş ajan becerileri.",
-  "Prototype, build & run modern apps users love with Firebase’s backend, AI, and operational infrastructure.": "Firebase’in arka uç, yapay zekâ ve işletim altyapısıyla modern uygulamalar tasarlayın, geliştirin ve çalıştırın."
+  "Prototype, build & run modern apps users love with Firebase’s backend, AI, and operational infrastructure.": "Firebase’in arka uç, yapay zekâ ve işletim altyapısıyla modern uygulamalar tasarlayın, geliştirin ve çalıştırın.",
+  "Project Settings": "Proje Ayarları",
+  "Project settings": "Proje Ayarları",
+  "Send message Enter": "Mesaj Gönder Enter",
+  "Select Project": "Proje Seç"
 }
