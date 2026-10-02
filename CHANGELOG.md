@@ -12,3 +12,8 @@
 - Tekrarlı çeviri, DOM davranışı, arşiv koruma ve geri alma testleri eklendi.
 
 Canlı kabul: kullanıcı, ilk döngü düzeltmesinin ardından masaüstü arayüzünün açıldığını doğruladı. IDE kurulumu bu çalışmada yeniden uygulanmadı.
+
+## 1.0.3 — 2026-10-02
+- Desktop 2.19.1 sürüm desteği.
+- 14 otomatik test ve ana arayüz açılışı doğrulandı.
+
