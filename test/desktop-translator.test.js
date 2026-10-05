@@ -13,6 +13,18 @@ function fixture() {
   ]);
 }
 
+test('customization budget translates split React text nodes and copy tooltip', async () => {
+  const dom = new JSDOM('<body><div id="budget"></div><button title="Copy Path">Copy Path</button></body>', { runScripts: 'outside-only' });
+  try {
+    const budget = dom.window.document.getElementById('budget');
+    for (const value of ['1.148', ' / ', '20.000', ' tokens (', '5.7', '%)']) budget.append(dom.window.document.createTextNode(value));
+    dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));
+    await new Promise(resolve => dom.window.setTimeout(resolve, 20));
+    assert.equal(budget.textContent, '1.148 / 20.000 token (5.7%)');
+    assert.equal(dom.window.document.querySelector('button').title, 'Yolu Kopyala');
+  } finally { dom.window.close(); }
+});
+
 test('repeated installation produces identical valid JavaScript and exactly one translator', () => {
   const first = transformDesktopSources(fixture());
   const second = transformDesktopSources(first);
@@ -72,4 +84,30 @@ test('reported settings screens translate initial and asynchronously added label
     await new Promise(resolve => dom.window.setTimeout(resolve, 20));
     assert.equal(quota.textContent, '16 saat 23 dakika sonra yenilenir');
   } finally { dom.window.close(); }
+});
+test('sidebar status and shortcut tooltip fit while message text stays intact', async () => {
+  const dom = new JSDOM('<body><div class="markdown">Copy<div role="tooltip">Copy</div></div><div id="shortcut" style="white-space:nowrap">Alt+Enter On empty prompt, sends next in queue</div><span id="updated">Updated 3 Eki, 14:09</span><span>Archived Only</span></body>', {runScripts:'outside-only'});
+  try {
+    dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));
+    await new Promise(resolve => dom.window.setTimeout(resolve,20));
+    const doc=dom.window.document;
+    assert.equal(doc.querySelector('.markdown').firstChild.nodeValue,'Copy');
+    assert.equal(doc.querySelector('[role="tooltip"]').textContent,'Kopyala');
+    assert.equal(doc.querySelector('#shortcut').style.whiteSpace,'normal');
+    assert.equal(doc.querySelector('#shortcut').style.overflowWrap,'anywhere');
+    assert.equal(doc.querySelector('#shortcut').textContent,'Alt+Enter: Alan boşsa sıradaki iletiyi gönderir');
+    assert.equal(doc.querySelector('#updated').textContent,'Güncellendi: 3 Eki, 14:09');
+  } finally {dom.window.close();}
+});
+test('native context menu translates nested labels and preserves actions and IDs', () => {
+  const vm=require('node:vm');
+  const input=fixture();
+  input.set('dist/ipcHandlers.js', 'function buildContextMenuTemplate(items, onSelect) { return items.map(item => ({id:item.id,label:item.label,submenu:item.submenu?buildContextMenuTemplate(item.submenu,onSelect):undefined,click:()=>onSelect(item.id)})); }');
+  const output=transformDesktopSources(input);
+  assert.deepEqual(transformDesktopSources(output),output);
+  const context={};vm.createContext(context);vm.runInContext(output.get('dist/ipcHandlers.js'),context);
+  let selected;
+  const result=context.buildContextMenuTemplate([{id:'rename',label:'Rename'},{id:'read',label:'Mark Unread'},{id:'copy',label:'Copy',submenu:[{id:'unknown',label:'Custom project title'},{id:'name',label:'Conversation Name'},{id:'cid',label:'Conversation ID'},{id:'project',label:'Project Name'},{id:'right',label:'Split Right'},{id:'down',label:'Split Down'}]},{id:'split',label:'Split'},{id:'archive',label:'Archive'},{id:'delete',label:'Delete'}],id=>selected=id);
+  assert.deepEqual(Array.from(result,x=>x.label),['Yeniden Adlandır','Okunmadı Olarak İşaretle','Kopyala','Böl','Arşivle','Sil']);
+  assert.deepEqual(Array.from(result[2].submenu,x=>x.label),['Custom project title','Konuşma Adı','Konuşma Kimliği','Proje Adı','Sağa Böl','Aşağı Böl']);result[0].click();assert.equal(selected,'rename');
 });

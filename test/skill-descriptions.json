@@ -206,8 +206,8 @@
   },
   {
     "name": "gcp-spark",
-    "source": "Develops and executes Spark code on Dataproc Clusters and Serverless.\nReads and writes data using BigLake Iceberg catalogs, BigQuery and Spanner.\nDebugs execution failures.\nUse when:\n- Writing Spark ETL pipelines on GCP.\n- Training or running inference with ML models with spark on GCP.\n- Managing Spark clusters, jobs, batches, and interactive sessions.\nDon't use when:\n- Writing generic Python scripts that don't use Spark.\n- Performing simple SQL queries that can be done directly in BigQuery.",
-    "translation": "Google Cloud Dataproc kümelerinde ve sunucusuz ortamlarda Spark kodu geliştirir ve çalıştırır. BigLake Iceberg, BigQuery ve Spanner verilerini okur ve yazar; çalışma hatalarını giderir. ETL, makine öğrenimi, küme, iş ve etkileşimli oturum yönetimini kapsar. Spark kullanmayan Python betikleri veya doğrudan BigQuery'de yapılabilecek basit sorgular için kullanılmaz."
+    "source": "Develops, optimizes and executes Spark code on Managed Spark on Google Cloud (Dataproc Clusters and Serverless).\nReads and writes data using BigLake Iceberg catalogs, BigQuery and Spanner.\nDebugs execution failures.\nUse when:\n- Writing Spark ETL pipelines on Google Cloud Platform.\n- Optimizing PySpark or Spark SQL code for performance, memory, or OOM risks.\n- Preparing Spark workloads for production submission.\n- Training or running inference with Machine Learning models with spark on Google Cloud Platform.\n- Managing Spark clusters, jobs, batches, and interactive sessions.\nDon't use when:\n- Writing generic Python scripts that don't use Spark.\n- Performing simple SQL queries that can be done directly in BigQuery.\n- Troubleshooting failed Spark workloads or analyzing logs (use @skill:gcp-spark-troubleshooting).",
+    "translation": "Google Cloud Managed Spark üzerinde (Dataproc kümeleri ve sunucusuz ortamlar) Spark kodu geliştirir, iyileştirir ve çalıştırır. BigLake Iceberg katalogları, BigQuery ve Spanner üzerinden veri okur ve yazar; çalıştırma hatalarını giderir. Google Cloud üzerinde Spark ETL akışları yazarken, PySpark veya Spark SQL performansını, bellek kullanımını ve bellek yetersizliği risklerini iyileştirirken, işleri üretime hazırlarken, Spark ile makine öğrenmesi modellerini eğitirken veya tahmin çalıştırırken ve kümeleri, işleri, toplu işleri ve etkileşimli oturumları yönetirken kullanılır. Spark kullanmayan genel Python betikleri ve doğrudan BigQuery ile yapılabilen basit SQL sorguları için kullanılmaz. Başarısız Spark işlerini incelemek veya günlükleri analiz etmek için @skill:gcp-spark-troubleshooting kullanılır."
   },
   {
     "name": "gcp-spark",
@@ -438,5 +438,15 @@
     "name": "workflow-skill-creator",
     "source": "Distills a completed user workflow or interaction into a reusable agent skill. Use when the user asks to turn their workflow, interaction, or multi-step process into a skill, or when they say \"make this a skill\", \"create a skill from what we just did\", \"package this workflow\" or similar. Do not use for creating skills from scratch without an existing workflow (use a generic skill-creator for that).",
     "translation": "Tamamlanmış bir iş akışını veya kullanıcı etkileşimini yeniden kullanılabilir bir ajan becerisine dönüştürür. Mevcut bir süreci beceri olarak kaydetmek ve paketlemek için kullanılır. Önceden yapılmış bir iş akışı olmadan sıfırdan beceri oluşturmak için genel beceri oluşturma aracı tercih edilir."
+  },
+  {
+    "name": "automation",
+    "source": "Interactive guide to design and create a scheduled background automation. Use this skill when the user wants to create an automated or recurring scheduled task (e.g. \"summarize my emails every morning\", \"every Monday send me a to-do list\"). Also triggered by the /automation slash command.",
+    "translation": "Zamanlanmış arka plan otomasyonları tasarlamak ve oluşturmak için etkileşimli rehber. Kullanıcı otomatik veya yinelenen bir görev oluşturmak istediğinde kullanılır; örneğin her sabah e-postalarını özetlemek veya her pazartesi yapılacaklar listesi göndermek. /automation komutuyla da başlatılır."
+  },
+  {
+    "name": "gcp-spark-troubleshooting",
+    "source": "Provides expert guidance for troubleshooting Google Cloud Spark and Dataproc workloads (Dataproc Serverless batches and standard Dataproc clusters), and inspecting, streaming, searching, tailing, or summarizing Spark driver outputs and event logs in Cloud Storage. Use when the user asks to debug, troubleshoot, diagnose, or perform Root Cause Analysis (RCA) on failed Spark jobs, PySpark batches, or Spark event logs.",
+    "translation": "Google Cloud Spark ve Dataproc iş yüklerindeki sorunları gidermek için uzman rehberlik sunar. Dataproc sunucusuz toplu işleri ve standart Dataproc kümelerini kapsar; Cloud Storage içindeki Spark sürücü çıktılarını ve olay günlüklerini incelemeyi, canlı izlemeyi, aramayı, son satırlarını takip etmeyi ve özetlemeyi destekler. Başarısız Spark işleri, PySpark toplu işleri veya Spark olay günlükleri için hata ayıklama, teşhis, sorun giderme ya da kök neden analizi (RCA) istendiğinde kullanılır."
   }
 ]

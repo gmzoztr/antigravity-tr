@@ -127,6 +127,19 @@ function rebuildLocalizedMenu(menu) {
     sources.set(menuPath, c);
   }
 
+  const ipcPath = fileName('ipcHandlers.js');
+  if (sources.has(ipcPath)) {
+    let content = sources.get(ipcPath);
+    content = content.replace(/\n    \/\/ ANTIGRAVITY_TR_NATIVE_CONTEXT\n    const labels = [^\n]+;\n    items = items\.map\(item => \([^\n]*?\}\)\);/, '');
+    if (!content.includes('// ANTIGRAVITY_TR_NATIVE_CONTEXT')) {
+      const anchor = 'function buildContextMenuTemplate(items, onSelect) {';
+      if (!content.includes(anchor)) throw new Error('Yerel sağ tık menüsü yapısı doğrulanamadı.');
+      const labels = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'scripts', 'desktop_full_dictionary.json'), 'utf8'));
+      content = content.replace(anchor, anchor + '\n    // ANTIGRAVITY_TR_NATIVE_CONTEXT\n    const labels = ' + JSON.stringify(labels) + ';\n    items = items.map(item => ({ ...item, label: Object.prototype.hasOwnProperty.call(labels, item.label) ? labels[item.label] : item.label }));');
+    }
+    sources.set(ipcPath, content);
+  }
+
   // 7. preload.js Yamalama
   const preloadPath = fileName('preload.js');
   if (sources.has(preloadPath)) {
@@ -178,21 +191,29 @@ function rebuildLocalizedMenu(menu) {
     const tag = parent.tagName ? parent.tagName.toLowerCase() : '';
     if (tag === 'script' || tag === 'style' || tag === 'pre' || tag === 'code') return;
     if (parent.isContentEditable) return;
-    if (parent.closest && parent.closest('script,style,pre,code,textarea,input,.monaco-editor,.markdown,[data-message-author-role],[data-antigravity-tr-ignore]')) return;
+    if (parent.closest && parent.closest('script,style,pre,code,textarea,input,.monaco-editor,[data-antigravity-tr-ignore]')) return;
+    if (parent.closest && parent.closest('.markdown,[data-message-author-role]') && !parent.closest('[role=tooltip]')) return;
 
     const val = node.nodeValue;
     if (!val) return;
     const trimmed = val.trim();
     if (!trimmed) return;
 
-    const translated = Object.prototype.hasOwnProperty.call(dictionary, trimmed) ? dictionary[trimmed] : translateDynamic(trimmed);
+    const normalized = trimmed.replace(/\\s+/g, ' ');
+    const translated = Object.prototype.hasOwnProperty.call(dictionary, trimmed) ? dictionary[trimmed] :
+      Object.prototype.hasOwnProperty.call(dictionary, normalized) ? dictionary[normalized] : translateDynamic(trimmed);
     if (translated === trimmed && parent.childNodes.length > 1 && Array.from(parent.childNodes).every(n => n.nodeType === 3)) {
-      const combined = parent.textContent.trim();
+      const combined = parent.textContent.trim().replace(/\\s+/g, ' ');
       if (Object.prototype.hasOwnProperty.call(dictionary, combined) && dictionary[combined] !== combined) {
         parent.childNodes[0].nodeValue = dictionary[combined];
         for (let i = 1; i < parent.childNodes.length; i++) parent.childNodes[i].nodeValue = '';
         return;
       }
+    }
+    if (['Enter Queues after the turn', 'Alt+Enter Sends immediately', 'Alt+Enter On empty prompt, sends next in queue', 'Queues after the turn', 'Sends immediately', 'On empty prompt, sends next in queue'].includes(trimmed)) {
+      parent.style.whiteSpace = 'normal';
+      parent.style.overflowWrap = 'anywhere';
+      parent.style.minWidth = '0';
     }
     if (translated !== trimmed) {
       node.nodeValue = val.replace(trimmed, translated);
@@ -304,7 +325,7 @@ async function patchDesktopApp(paths) {
     asar.uncacheAll();
     const version = JSON.parse(asar.extractFile(archive, 'package.json').toString()).version;
     if (!['2.17.0', '2.18.1', '2.19.1'].includes(version)) throw new Error(`Desktop ${version} henüz doğrulanmadı; desteklenen sürümler: 2.17.0, 2.18.1, 2.19.1.`);
-    const names = ['loadingOverlay.js', 'provisionSplash.js', 'tray.js', 'menu.js', 'preload.js', 'main.js'];
+    const names = ['loadingOverlay.js', 'provisionSplash.js', 'tray.js', 'menu.js', 'preload.js', 'main.js', 'ipcHandlers.js'];
     const sources = new Map();
     for (const name of names) {
       const key = 'dist/' + name;

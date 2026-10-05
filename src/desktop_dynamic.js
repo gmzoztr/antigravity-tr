@@ -1,5 +1,12 @@
 // Only recognized UI sentences are transformed; arbitrary numbers and content are untouched.
 function translateDynamic(text) {
+  const updated = /^Updated (\d{1,2} [A-Za-zÇçĞğİıÖöŞşÜü.]+, \d{1,2}:\d{2})$/.exec(text);
+  if (updated) return 'Güncellendi: ' + updated[1];
+  if (text === 'tokens (') return 'token (';
+  const breakdown = /^Show (\d+) breakdowns?$/.exec(text);
+  if (breakdown) return breakdown[1] + ' Ayrıntıyı Göster';
+  const tokenBudget = /^([\d.,]+\s*\/\s*[\d.,]+) tokens (\([\d.,]+%\))$/.exec(text);
+  if (tokenBudget) return tokenBudget[1] + ' token ' + tokenBudget[2];
   const changedFiles = /^(\d+) files? changed$/.exec(text);
   if (changedFiles) return changedFiles[1] + ' Dosya Değiştirildi';
   const readAll = /^Mark all (\d+) conversations as read$/.exec(text);

@@ -1,0 +1,57 @@
+[
+  {
+    "name": "LSEG",
+    "source": "Explore deep global markets data and financial analytics from LSEG (London Stock Exchange Group). This MCP server connects your AI tools to LSEG Financial Analytics (LFA) to price bonds and bond futures, analyze yield and credit curves, evaluate FX spot and forward carry trades, value options with full Greeks, and access IBES consensus estimates, company fundamentals, historical pricing, and macroeconomic indicators.",
+    "translation": "LSEG (London Stock Exchange Group) üzerinden kapsamlı küresel piyasa verilerini ve finans analizlerini inceleyin. Bu MCP sunucusu, yapay zekâ araçlarınızı LSEG Financial Analytics (LFA) hizmetine bağlar. Tahvil ve tahvil vadeli işlemlerini fiyatlandırabilir, getiri ve kredi eğrilerini analiz edebilir, döviz spot ve vadeli taşıma işlemlerini değerlendirebilir, tüm Yunan harfi risk ölçümleriyle opsiyonları değerleyebilir; IBES ortak tahminlerine, şirketlerin temel finans verilerine, geçmiş fiyatlara ve makroekonomik göstergelere erişebilirsiniz."
+  },
+  {
+    "name": "Harvey",
+    "source": "Bring Harvey's legal intelligence into your AI tools for general legal inquiries, Vault project analysis, and specialized knowledge source research. The Harvey MCP server lets you ask general legal questions, analyze documents in your Vault projects, and query specialized legal research knowledge sources.",
+    "translation": "Genel hukuk soruları, Vault proje analizi ve özel bilgi kaynaklarında araştırma için Harvey’nin hukuk alanındaki yeteneklerini yapay zekâ araçlarınıza taşıyın. Harvey MCP sunucusu, genel hukuk soruları sormanızı, Vault projelerinizdeki belgeleri analiz etmenizi ve özel hukuki araştırma kaynaklarını sorgulamanızı sağlar."
+  },
+  {
+    "name": "Docusign",
+    "source": "Connect with your Docusign account using natural language. This MCP server allows you to search and locate Docusign envelopes, templates, and documents, read item details and metadata, create and update envelopes, and trigger or cancel workflow instances directly from your AI tools.",
+    "translation": "Docusign hesabınızla doğal dil kullanarak çalışın. Bu MCP sunucusu, Docusign zarflarını, şablonlarını ve belgelerini arayıp bulmanızı, öğe ayrıntılarını ve üst verilerini okumanızı, zarfları oluşturup güncellemenizi ve iş akışı örneklerini doğrudan yapay zekâ araçlarınızdan başlatmanızı veya iptal etmenizi sağlar."
+  },
+  {
+    "name": "LegalZoom",
+    "source": "LegalZoom's MCP connector gives users instant access to legal product information, business formation guidance, and on-demand attorney consultations, all without leaving the conversation.",
+    "translation": "LegalZoom MCP bağlantısı, konuşmadan ayrılmadan hukuki ürün bilgilerine, işletme kurma rehberliğine ve talep üzerine avukat danışmanlığına anında erişmenizi sağlar."
+  },
+  {
+    "name": "NetDocuments",
+    "source": "Search and retrieve documents from your NetDocuments repository using natural language. This MCP server allows AI tools to securely search documents and emails, filter by metadata, and read document contents and details while respecting your existing NetDocuments permissions and governance controls.",
+    "translation": "NetDocuments deponuzdaki belgeleri doğal dille arayın ve alın. Bu MCP sunucusu, mevcut NetDocuments izinlerinize ve yönetişim denetimlerinize uyarak yapay zekâ araçlarının belgeleri ve e-postaları güvenle aramasını, üst verilere göre süzmesini ve belge içeriklerini ve ayrıntılarını okumasını sağlar."
+  },
+  {
+    "name": "iManage",
+    "source": "Interact with your iManage Work platform using natural language. This MCP server connects to your iManage account to search workspaces, folders, and documents, inspect document profiles and version histories, read document contents, and manage legal and knowledge work workflows directly from your AI tools.",
+    "translation": "iManage Work platformunuzla doğal dil kullanarak çalışın. Bu MCP sunucusu, iManage hesabınıza bağlanarak çalışma alanlarını, klasörleri ve belgeleri aramanızı, belge profillerini ve sürüm geçmişlerini incelemenizi, belge içeriklerini okumanızı ve hukuk ile bilgi yönetimi iş akışlarını doğrudan yapay zekâ araçlarınızdan yönetmenizi sağlar."
+  },
+  {
+    "name": "Salesforce",
+    "source": "Search and manage Salesforce records from your Salesforce remote MCP server. Connect to your Salesforce instance to search across objects (SOSL), execute SOQL queries, inspect object schemas, traverse related records, and create, update, or delete records.",
+    "translation": "Salesforce uzak MCP sunucunuz üzerinden Salesforce kayıtlarını arayın ve yönetin. Salesforce ortamınıza bağlanarak nesneler arasında SOSL aramaları yapabilir, SOQL sorguları çalıştırabilir, nesne şemalarını inceleyebilir, ilişkili kayıtlar arasında gezinebilir ve kayıtları oluşturabilir, güncelleyebilir veya silebilirsiniz."
+  },
+  {
+    "name": "Courtroom5",
+    "source": "Civil legal guidance for people navigating court without a lawyer. This MCP server provides educational guidance for self-represented litigants in U.S. civil legal matters across all 50 states, including case intake assessments, procedural deadline calculations, and prioritized next-step guidance directly from your AI tools.",
+    "translation": "Avukat olmadan mahkeme süreçlerini yürüten kişiler için medeni hukuk rehberliği. Bu MCP sunucusu, ABD’nin 50 eyaletindeki medeni hukuk konularında kendisini temsil eden taraflara eğitici rehberlik sunar. Yapay zekâ araçlarınız üzerinden dava başvurusu değerlendirmeleri, usule ilişkin son tarih hesaplamaları ve öncelik sırasına göre sonraki adım önerileri sağlar."
+  },
+  {
+    "name": "Forge",
+    "source": "Forge is an AI-powered platform that automates the earliest, most time-consuming phase of software development — the \"Day 0\" planning that typically takes weeks of meetings, documents, and back-and-forth. Exposes project/repo linking, PRD/BRD/architecture artifact retrieval, work-order management, commit/PR automation, and CI/CD pipeline tools directly to your AI coding agent.",
+    "translation": "Forge, yazılım geliştirmenin en erken ve en çok zaman alan aşamasını otomatikleştiren yapay zekâ destekli bir platformdur. Genellikle haftalar süren toplantılar, belgeler ve karşılıklı görüşmeler gerektiren “0. Gün” planlamasını kapsar. Proje ile depo ilişkilendirme, PRD/BRD ve mimari belgelerini alma, iş emri yönetimi, commit ve birleştirme isteği otomasyonu ile CI/CD işlem hattı araçlarını doğrudan yapay zekâ kodlama ajanınıza sunar."
+  },
+  {
+    "name": "Endor Labs",
+    "source": "Bring Endor Labs security into your AI tools. With this MCP server, you can check dependency safety before adding a new package, scan your open source dependencies for vulnerabilities and malware, find leaked secrets accidentally committed in your Git history, run static analysis (SAST) on your code, and perform AI security reviews on your code changes.",
+    "translation": "Endor Labs güvenlik yeteneklerini yapay zekâ araçlarınıza taşıyın. Bu MCP sunucusuyla yeni bir paket eklemeden önce bağımlılıkların güvenliğini kontrol edebilir, açık kaynak bağımlılıklarınızı güvenlik açıkları ve kötü amaçlı yazılımlar için tarayabilir, Git geçmişine yanlışlıkla kaydedilmiş gizli bilgileri bulabilir, kodunuzda statik analiz (SAST) çalıştırabilir ve kod değişikliklerinizi yapay zekâ destekli güvenlik incelemesinden geçirebilirsiniz."
+  },
+  {
+    "name": "Canva",
+    "source": "The Canva MCP server enables AI assistants to seamlessly interact with Canva's design capabilities. By exposing Canva's capabilities (including design creation and editing, asset and brand management, library search, export, and commenting) as MCP-compatible tools, you can give your users access to Canva's design capabilities through natural language, directly from the AI tools they already use.",
+    "translation": "Canva MCP sunucusu, yapay zekâ asistanlarının Canva’nın tasarım özellikleriyle çalışmasını sağlar. Tasarım oluşturma ve düzenleme, varlık ve marka yönetimi, kitaplık araması, dışa aktarma ve yorum yapma özelliklerini MCP uyumlu araçlar olarak sunar. Kullanıcılarınız, zaten kullandıkları yapay zekâ araçlarından doğal dille Canva’nın tasarım özelliklerine erişebilir."
+  }
+]

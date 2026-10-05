@@ -1,0 +1,18 @@
+[
+  {
+    "source": "Search and retrieve comprehensive financial and corporate data from S&P Global using natural language. This MCP server connects to S&P Global Market Intelligence (via Kensho) to query company profiles, identifiers (CUSIP, ISIN), financial statements (balance sheets, income statements, cash flows), historical stock prices, market capitalization, earnings call transcripts, M&A transactions, funding rounds, consensus analyst estimates, and executive profiles directly from your AI tools.",
+    "translation": "S&P Global üzerindeki kapsamlı finans ve şirket verilerini doğal dille arayın ve alın. Bu MCP sunucusu, Kensho aracılığıyla S&P Global Market Intelligence’a bağlanır. Şirket profillerini, CUSIP ve ISIN kimliklerini, bilançoları, gelir ve nakit akışı tablolarını, geçmiş hisse fiyatlarını, piyasa değerlerini, kazanç görüşmesi dökümlerini, birleşme ve satın alma işlemlerini, finansman turlarını, analistlerin ortak tahminlerini ve yönetici profillerini doğrudan yapay zekâ araçlarınızdan sorgulamanızı sağlar."
+  },
+  {
+    "source": "Search Guidepoint's expert network for interview transcripts, browse curated event catalogs, and retrieve your personal event schedule. This MCP server also allows you to manage your event participation by registering for, requesting approval for, or canceling upcoming Guidepoint events directly from your AI tools.",
+    "translation": "Guidepoint uzman ağında görüşme dökümlerini arayın, derlenmiş etkinlik kataloglarına göz atın ve kişisel etkinlik takviminizi alın. Bu MCP sunucusu, yaklaşan Guidepoint etkinliklerine doğrudan yapay zekâ araçlarınızdan kaydolmanıza, katılım onayı istemenize veya katılımınızı iptal etmenize de olanak tanır."
+  },
+  {
+    "source": "Access institutional-grade financial data in your AI tools, delivering fundamentals, ratios, KPIs, segments, adjusted metrics, SEC filings, earnings calls, and market quotes within minutes of earnings.",
+    "translation": "Yapay zekâ araçlarınızda kurumsal düzeyde finans verilerine erişin. Kazanç açıklamalarından sonraki dakikalar içinde temel finans verilerini, oranları, temel performans göstergelerini, faaliyet bölümlerini, düzeltilmiş ölçümleri, SEC bildirimlerini, kazanç görüşmelerini ve piyasa kotasyonlarını alın."
+  },
+  {
+    "source": "Intelligent DevSecOps automation for your development workflow, powered by natural language. Connects your AI coding agent (Antigravity) to 150+ integrated DevOps tools via MCP — security scanning, pipeline generation, compliance auditing, and documentation, all via plain-English commands without leaving the IDE. Source code analysis runs locally; only structured results are returned to the portal.",
+    "translation": "Geliştirme iş akışınız için doğal dille çalışan akıllı DevSecOps otomasyonu. Antigravity kodlama ajanınızı MCP üzerinden 150’den fazla bütünleşik DevOps aracına bağlar. IDE’den ayrılmadan sade İngilizce komutlarla güvenlik taraması, işlem hattı oluşturma, uygunluk denetimi ve belgelendirme yapabilirsiniz. Kaynak kodu analizi yerel olarak çalışır; portala yalnızca yapılandırılmış sonuçlar gönderilir."
+  }
+]

@@ -1,5 +1,15 @@
 # Değişiklikler
 
+## 1.0.4 — 2026-10-05
+
+- Desktop 2.19.1 için ayar, beceri, eklenti ve MCP katalog açıklamaları genişletildi.
+- Windows yerel sağ tık menüleri ve Kopyala/Böl alt menüleri Türkçeleştirildi.
+- Konuşma geçmişinin filtre ve görüntüleme etiketleri tamamlandı.
+- Dinamik kullanım sayıları ve güncelleme zamanları çevrildi; boşluk ve satır sonu eşleştirmeleri düzeltildi.
+- Kısayol bilgi kutusu açıklamaları kısaltıldı ve satır kaydırma eklendi.
+- 20 otomatik test geçti; ana sağ tık menüsü ve Kopyala menüsü canlı arayüzde doğrulandı.
+
+
 ## 1.0.1 — 2026-09-29
 
 - Desktop V2 çevirmenindeki değişmeyen metinlerin sonsuz MutationObserver döngüsü düzeltildi.

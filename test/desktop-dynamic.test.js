@@ -1,6 +1,12 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { translateDynamic } = require('../src/desktop_dynamic');
+test('customization counts keep their live numeric values', () => {
+  assert.equal(translateDynamic('Show 67 breakdowns'), '67 Ayrıntıyı Göster');
+  assert.equal(translateDynamic('Show 1 breakdown'), '1 Ayrıntıyı Göster');
+  assert.equal(translateDynamic('1.148 / 20.000 tokens (5.7%)'), '1.148 / 20.000 token (5.7%)');
+  assert.equal(translateDynamic('Show my breakdowns'), 'Show my breakdowns');
+});
 test('quota durations translate without freezing the countdown', () => {
   assert.equal(translateDynamic('Resets in 16h 24m'), '16 saat 24 dakika sonra yenilenir');
   assert.equal(translateDynamic('Resets in 1d 18h'), '1 gün 18 saat sonra yenilenir');
