@@ -1,5 +1,15 @@
 # Değişiklikler
 
+## 1.0.5 — 2026-10-06
+
+- Karşılama, giriş, kimlik doğrulama ve başarı durumları Türkçeleştirildi.
+- Güvenlik ve veri kullanımı açıklaması ile bağlantılar arasında bölünen onay paragrafı çevrildi; onay kutusu ve bağlantılar korundu.
+- Model kotası, düşünme süresi ve güncelleme saati dinamik çevirilere eklendi.
+- Tepsi menüsündeki Antigravity açma etiketi çevrildi.
+- browser-automation ve vm-uia-automation becerilerinin açıklamaları eklendi.
+- 21 otomatik test geçti; son arayüz kullanıcı tarafından kabul edildi.
+
+
 ## 1.0.4 — 2026-10-05
 
 - Desktop 2.19.1 için ayar, beceri, eklenti ve MCP katalog açıklamaları genişletildi.

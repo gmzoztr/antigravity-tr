@@ -111,3 +111,14 @@ test('native context menu translates nested labels and preserves actions and IDs
   assert.deepEqual(Array.from(result,x=>x.label),['Yeniden Adlandır','Okunmadı Olarak İşaretle','Kopyala','Böl','Arşivle','Sil']);
   assert.deepEqual(Array.from(result[2].submenu,x=>x.label),['Custom project title','Konuşma Adı','Konuşma Kimliği','Proje Adı','Sağa Böl','Aşağı Böl']);result[0].click();assert.equal(selected,'rename');
 });
+test('consent split across inline elements translates without changing checkbox or policy link', async () => {
+  const dom = new JSDOM('<body><label><input type="checkbox" checked><span>Yes, I agree to help improve Antigravity by allowing Google to collect and use my </span><span>Interactions data, subject to the Google Antigravity </span><a href="https://example.test/terms">Terms of Service</a></label></body>', {runScripts:'outside-only'});
+  try {
+    dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));
+    await new Promise(resolve=>dom.window.setTimeout(resolve,20));
+    assert.ok(!dom.window.document.querySelector('label').textContent.includes('Interactions data'));
+    assert.ok(dom.window.document.querySelector('label').textContent.includes('etkileşim verilerimi'));
+    assert.equal(dom.window.document.querySelector('input').checked,true);
+    assert.equal(dom.window.document.querySelector('a').href,'https://example.test/terms');
+  } finally {dom.window.close();}
+});

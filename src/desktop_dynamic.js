@@ -1,7 +1,16 @@
 // Only recognized UI sentences are transformed; arbitrary numbers and content are untouched.
 function translateDynamic(text) {
+  const thought = /^Thought for (\d+(?:\.\d+)?)s$/.exec(text);
+  if (thought) return thought[1] + ' saniye düşündü';
+  const updatedTime = /^Updated (\d{1,2}:\d{2})$/.exec(text);
+  if (updatedTime) return 'Güncellendi: ' + updatedTime[1];
+  const consentPrefix = /^Yes, I agree to help improve Antigravity by allowing Google to collect and use my\s+Interactions data, subject to the(?=\s|$)/;
+  if (consentPrefix.test(text)) return text.replace(consentPrefix, 'Evet, Google’ın etkileşim verilerimi aşağıdaki koşullara tabi olarak toplamasına ve kullanmasına izin vererek Antigravity’nin geliştirilmesine katkıda bulunmayı kabul ediyorum:');
+
   const updated = /^Updated (\d{1,2} [A-Za-zÇçĞğİıÖöŞşÜü.]+, \d{1,2}:\d{2})$/.exec(text);
   if (updated) return 'Güncellendi: ' + updated[1];
+  const baselineQuota = /^Your plan's baseline quota will refresh on (.+)\.$/.exec(text);
+  if (baselineQuota) return 'Planınızın temel kotası ' + baselineQuota[1] + ' tarihinde yenilenecek.';
   if (text === 'tokens (') return 'token (';
   const breakdown = /^Show (\d+) breakdowns?$/.exec(text);
   if (breakdown) return breakdown[1] + ' Ayrıntıyı Göster';

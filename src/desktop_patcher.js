@@ -41,7 +41,8 @@ function transformDesktopSources(input) {
     let c = sources.get(mainPath);
     c = c.replace("'No agents running'", "'Çalışan ajan yok'")
          .replace("'Quit'", "'Çıkış'")
-         .replace("'New Window'", "'Yeni Pencere'");
+         .replace("'New Window'", "'Yeni Pencere'")
+         .replace('`Open ${electron_1.app.getName()}`', '`Antigravity’yi Aç`');
     sources.set(mainPath, c);
   }
 
@@ -201,7 +202,7 @@ function rebuildLocalizedMenu(menu) {
 
     const normalized = trimmed.replace(/\\s+/g, ' ');
     const translated = Object.prototype.hasOwnProperty.call(dictionary, trimmed) ? dictionary[trimmed] :
-      Object.prototype.hasOwnProperty.call(dictionary, normalized) ? dictionary[normalized] : translateDynamic(trimmed);
+      Object.prototype.hasOwnProperty.call(dictionary, normalized) ? dictionary[normalized] : translateDynamic(normalized);
     if (translated === trimmed && parent.childNodes.length > 1 && Array.from(parent.childNodes).every(n => n.nodeType === 3)) {
       const combined = parent.textContent.trim().replace(/\\s+/g, ' ');
       if (Object.prototype.hasOwnProperty.call(dictionary, combined) && dictionary[combined] !== combined) {
@@ -236,6 +237,31 @@ function rebuildLocalizedMenu(menu) {
 
   function translateTree(root) {
     if (!root) return;
+    // The consent sentence can be split across inline elements before its policy links.
+    if (root.querySelectorAll) {
+      const candidates = Array.from(root.querySelectorAll('label,div,p,span')).reverse();
+      for (const el of candidates) {
+        if (el.closest('.markdown,[data-message-author-role],[data-antigravity-tr-ignore]')) continue;
+        const link = el.querySelector('a');
+        if (!link || !/^Yes, I agree to help improve Antigravity/.test(el.textContent.trim())) continue;
+        const range = document.createRange();
+        range.selectNodeContents(el);
+        range.setEndBefore(link);
+        const prefix = range.toString().replace(/\\s+/g, ' ').trim();
+        if (!prefix.includes('Interactions data, subject to the')) continue;
+        const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+        const beforeLink = [];
+        let part;
+        while ((part = walker.nextNode())) {
+          if (link.contains(part)) break;
+          if (!part.parentElement.closest('button,input,a')) beforeLink.push(part);
+        }
+        if (beforeLink.length) {
+          beforeLink[0].nodeValue = 'Evet, Google Antigravity Hizmet Şartları ve Google Gizlilik Politikası kapsamında Google’ın etkileşim verilerimi toplamasına ve kullanmasına izin vererek Antigravity’nin geliştirilmesine katkıda bulunmayı kabul ediyorum. İlgili koşullar: ';
+          for (let i = 1; i < beforeLink.length; i++) beforeLink[i].nodeValue = '';
+        }
+      }
+    }
     if (root.nodeType === 3) {
       translateTextNode(root);
       return;
