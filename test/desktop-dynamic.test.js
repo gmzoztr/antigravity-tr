@@ -16,3 +16,11 @@ test('quota durations translate without freezing the countdown', () => {
   assert.equal(translateDynamic('(1.148 tokens)'), '(1.148 token)');
   for (const text of ['16h 24m', 'My project 123', 'Resets in unknown', 'Gemini 3.8 Flash']) assert.equal(translateDynamic(text), text);
 });
+test('baseline quota keeps date separate from the credit overage sentence', () => {
+  const {translateDynamic}=require('../src/desktop_dynamic');
+  assert.equal(translateDynamic("Your plan's baseline quota will refresh on 07.10.2026 11:36:49. To continue using this model now, enable AI Credit overages."), 'Planınızın temel kotası 07.10.2026 11:36:49 tarihinde yenilenecek. Bu modeli şimdi kullanmaya devam etmek için AI kredisiyle kota aşımını etkinleştirin.');
+});
+test('weekly limit notice preserves the changing refresh duration', () => {
+  const {translateDynamic}=require('../src/desktop_dynamic');
+  assert.equal(translateDynamic('You have hit your weekly limit, the 5-hour limit does not currently apply. Your weekly limit will fully refresh in 4 days, 23 hours.'), 'Haftalık limitinize ulaştınız; beş saatlik limit şu anda geçerli değil. Haftalık limitiniz 4 gün, 23 saat sonra tamamen yenilenir.');
+});

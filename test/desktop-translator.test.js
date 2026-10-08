@@ -122,3 +122,18 @@ test('consent split across inline elements translates without changing checkbox 
     assert.equal(dom.window.document.querySelector('a').href,'https://example.test/terms');
   } finally {dom.window.close();}
 });
+test('new marketplace and automation UI preserves product names, form values and button behavior', async () => {
+  const catalog=require('./marketplace-oct8.json');
+  const dom=new JSDOM('<body><input placeholder="Search automations..." value="My automation"><button id="add">Add Automation</button><h2>New Automation</h2><span>Installed</span><span>Worktree</span></body>',{runScripts:'outside-only'});
+  try {
+    const doc=dom.window.document;
+    for(const item of catalog){const card=doc.createElement('div');const title=doc.createElement('h3');title.textContent=item.name;const description=doc.createElement('p');description.textContent=item.description;card.append(title,description);doc.body.append(card);}
+    let clicked=false;doc.querySelector('#add').onclick=()=>clicked=true;
+    dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));
+    await new Promise(r=>dom.window.setTimeout(r,20));
+    assert.equal(doc.querySelector('input').value,'My automation');assert.equal(doc.querySelector('input').placeholder,'Otomasyonlarda ara...');
+    assert.equal(doc.querySelector('#add').textContent,'Otomasyon Ekle');doc.querySelector('#add').click();assert.equal(clicked,true);
+    [...doc.querySelectorAll('h3')].forEach((el,i)=>assert.equal(el.textContent,catalog[i].name));
+    [...doc.querySelectorAll('p')].forEach((el,i)=>assert.notEqual(el.textContent,catalog[i].description,catalog[i].name));
+  }finally{dom.window.close();}
+});

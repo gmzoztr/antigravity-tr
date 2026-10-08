@@ -8,6 +8,12 @@ const { rewriteArchive, restoreArchive } = require('./desktop_archive');
 function transformDesktopSources(input) {
   const sources = new Map(input);
   const fileName = name => 'dist/' + name;
+  const updaterPath = fileName('updater.js');
+  if (sources.has(updaterPath)) {
+    sources.set(updaterPath, sources.get(updaterPath)
+      .replace(/'Check for Updates'/g, "'Güncellemeleri Denetle'")
+      .replace(/'No updates available'/g, "'Yeni güncelleme yok'"));
+  }
   // 3. loadingOverlay.js Yamalama
   const loadingPath = fileName('loadingOverlay.js');
   if (sources.has(loadingPath)) {
@@ -40,8 +46,8 @@ function transformDesktopSources(input) {
   if (sources.has(mainPath)) {
     let c = sources.get(mainPath);
     c = c.replace("'No agents running'", "'Çalışan ajan yok'")
-         .replace("'Quit'", "'Çıkış'")
-         .replace("'New Window'", "'Yeni Pencere'")
+         .replace(/'Quit'/g, "'Çıkış'")
+         .replace(/'New Window'/g, "'Yeni Pencere'")
          .replace('`Open ${electron_1.app.getName()}`', '`Antigravity’yi Aç`');
     sources.set(mainPath, c);
   }
@@ -336,7 +342,7 @@ function rebuildLocalizedMenu(menu) {
       preloadContent = preloadContent.slice(0, start).trimEnd();
     }
 
-    preloadContent += '\n' + translatorScript;
+    preloadContent = preloadContent.trimEnd() + '\n' + translatorScript;
     sources.set(preloadPath, preloadContent);
   }
 
@@ -350,8 +356,8 @@ async function patchDesktopApp(paths) {
     const archive = path.join(paths.desktop.appPath, 'resources', 'app.asar');
     asar.uncacheAll();
     const version = JSON.parse(asar.extractFile(archive, 'package.json').toString()).version;
-    if (!['2.17.0', '2.18.1', '2.19.1'].includes(version)) throw new Error(`Desktop ${version} henüz doğrulanmadı; desteklenen sürümler: 2.17.0, 2.18.1, 2.19.1.`);
-    const names = ['loadingOverlay.js', 'provisionSplash.js', 'tray.js', 'menu.js', 'preload.js', 'main.js', 'ipcHandlers.js'];
+    if (!['2.17.0', '2.18.1', '2.19.1', '2.21.1'].includes(version)) throw new Error(`Desktop ${version} henüz doğrulanmadı; desteklenen sürümler: 2.17.0, 2.18.1, 2.19.1, 2.21.1.`);
+    const names = ['loadingOverlay.js', 'provisionSplash.js', 'tray.js', 'menu.js', 'preload.js', 'main.js', 'ipcHandlers.js', 'updater.js'];
     const sources = new Map();
     for (const name of names) {
       const key = 'dist/' + name;

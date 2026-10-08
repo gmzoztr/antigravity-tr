@@ -1,5 +1,24 @@
 // Only recognized UI sentences are transformed; arbitrary numbers and content are untouched.
 function translateDynamic(text) {
+  const worked = /^Worked for (\d+)s$/.exec(text);
+  if (worked) return worked[1] + ' saniye çalıştı';
+  const activityParts = text.split(', ');
+  const activities = { 'Exploring file': 'Dosya inceleniyor', 'Exploring files': 'Dosyalar inceleniyor', 'running commands': 'komutlar çalıştırılıyor', 'editing file': 'dosya düzenleniyor', 'editing files': 'dosyalar düzenleniyor' };
+  if (activityParts.length && activityParts.every(part => Object.prototype.hasOwnProperty.call(activities, part))) return activityParts.map(part => activities[part]).join(', ');
+  const explored = /^Explored (\d+ files?(?:, \d+ tasks?)?)(?:, ran (\d+) commands?)?$/.exec(text);
+  if (explored) return explored[1].replace(/files?/g, 'dosya').replace(/tasks?/g, 'görev') + ' incelendi' + (explored[2] ? ', ' + explored[2] + ' komut çalıştırıldı' : '');
+  const runningCommands = /^Running (\d+) commands?$/.exec(text);
+  if (runningCommands) return runningCommands[1] + ' komut çalıştırılıyor';
+  const ranCommands = /^Ran (\d+) commands?$/.exec(text);
+  if (ranCommands) return ranCommands[1] + ' komut çalıştırıldı';
+  const commandAction = /^(Ran|Run|Canceled) ((?:python|node|npm|git|powershell|pwsh|Get-ChildItem|Get-Content|Select-String) .+)$/.exec(text);
+  if (commandAction) return ({ Ran: 'Çalıştırıldı: ', Run: 'Çalıştır: ', Canceled: 'İptal edildi: ' }[commandAction[1]]) + commandAction[2];
+  const taskAction = /^(Checked|Killed) task (.+)$/.exec(text);
+  if (taskAction) return (taskAction[1] === 'Checked' ? 'Görev kontrol edildi: ' : 'Görev sonlandırıldı: ') + taskAction[2];
+  const analyzed = /^Analyzed (.+)$/.exec(text);
+  if (analyzed) return 'İncelendi: ' + analyzed[1];
+  const retry = /^Model unavailable, retrying in (\d+)s \(attempt (\d+)\/(\d+)\)(\.\.\.|…)$/.exec(text);
+  if (retry) return 'Model kullanılamıyor; ' + retry[1] + ' saniye sonra yeniden denenecek (deneme ' + retry[2] + '/' + retry[3] + ')' + retry[4];
   const thought = /^Thought for (\d+(?:\.\d+)?)s$/.exec(text);
   if (thought) return thought[1] + ' saniye düşündü';
   const updatedTime = /^Updated (\d{1,2}:\d{2})$/.exec(text);
@@ -9,8 +28,8 @@ function translateDynamic(text) {
 
   const updated = /^Updated (\d{1,2} [A-Za-zÇçĞğİıÖöŞşÜü.]+, \d{1,2}:\d{2})$/.exec(text);
   if (updated) return 'Güncellendi: ' + updated[1];
-  const baselineQuota = /^Your plan's baseline quota will refresh on (.+)\.$/.exec(text);
-  if (baselineQuota) return 'Planınızın temel kotası ' + baselineQuota[1] + ' tarihinde yenilenecek.';
+  const baselineQuota = /^Your plan's baseline quota will refresh on (.+?)\.(?: To continue using this model now, enable AI Credit overages\.)?$/.exec(text);
+  if (baselineQuota) return 'Planınızın temel kotası ' + baselineQuota[1] + ' tarihinde yenilenecek.' + (text.endsWith('enable AI Credit overages.') ? ' Bu modeli şimdi kullanmaya devam etmek için AI kredisiyle kota aşımını etkinleştirin.' : '');
   if (text === 'tokens (') return 'token (';
   const breakdown = /^Show (\d+) breakdowns?$/.exec(text);
   if (breakdown) return breakdown[1] + ' Ayrıntıyı Göster';
@@ -30,6 +49,8 @@ function translateDynamic(text) {
   }
   let match = /^Resets in (.+)$/.exec(text);
   if (match) { const time = duration(match[1]); return time ? time + ' sonra yenilenir' : text; }
+  match = /^You have hit your weekly limit, the 5-hour limit does not currently apply\. Your weekly limit will fully refresh in (.+)\.$/.exec(text);
+  if (match) { const time = duration(match[1]); return time ? 'Haftalık limitinize ulaştınız; beş saatlik limit şu anda geçerli değil. Haftalık limitiniz ' + time + ' sonra tamamen yenilenir.' : text; }
   match = /^(Claude (?:Sonnet|Opus) [\d.]+|GPT-OSS \d+B) \((Thinking|Medium|High|Low)\)$/.exec(text);
   if (match) return match[1] + ' (' + ({ Thinking: 'Düşünme', Medium: 'Orta', High: 'Yüksek', Low: 'Düşük' }[match[2]]) + ')';
   match = /^You have used some of your (weekly|5-hour) limit, it will fully refresh in (.+)\.$/.exec(text);

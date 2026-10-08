@@ -1,5 +1,14 @@
 # Değişiklikler
 
+## 1.0.6 — 2026-10-08
+
+- Desktop 2.21.1 desteği eklendi.
+- Otomasyon ekranları, mağaza açıklamaları, konuşma arama bildirimi ve Böl alt menüsü genişletildi.
+- İşlem özetleri, çalışma süreleri ve kota yenilenme açıklamaları dinamik olarak çevrildi.
+- Yerel güncelleme iletişim kutuları çevrildi; tekrar kurulum tutarlılığı düzeltildi.
+- 24 otomatik test geçti; yeni yama yerel Desktop 2.21.1 kurulumuna uygulandı.
+
+
 ## 1.0.5 — 2026-10-06
 
 - Karşılama, giriş, kimlik doğrulama ve başarı durumları Türkçeleştirildi.
