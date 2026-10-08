@@ -14,6 +14,12 @@ function transformDesktopSources(input) {
       .replace(/'Check for Updates'/g, "'Güncellemeleri Denetle'")
       .replace(/'No updates available'/g, "'Yeni güncelleme yok'"));
   }
+  const notificationPath = fileName('ipcHandlers.js');
+  if (sources.has(notificationPath)) {
+    sources.set(notificationPath, sources.get(notificationPath)
+      .replace('title: options.title,', "title: options.title === 'Action requires your attention' ? 'İşlem için müdahaleniz gerekiyor' : options.title,")
+      .replace('body: options.body,', "body: options.body === 'The agent is waiting for your input.' ? 'Ajan sizden giriş bekliyor.' : options.body,"));
+  }
   // 3. loadingOverlay.js Yamalama
   const loadingPath = fileName('loadingOverlay.js');
   if (sources.has(loadingPath)) {

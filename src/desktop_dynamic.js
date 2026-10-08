@@ -1,5 +1,10 @@
 // Only recognized UI sentences are transformed; arbitrary numbers and content are untouched.
 function translateDynamic(text) {
+  const asked = /^Asked (\d+) questions?$/.exec(text);
+  if (asked) return asked[1] + ' Soru Soruldu';
+  const asking = /^Asking (\d+) questions?$/.exec(text);
+  if (asking) return asking[1] + ' Soru Soruluyor';
+  if (text.startsWith('(Recommended) ')) return '(Önerilen) ' + text.slice('(Recommended) '.length);
   const worked = /^Worked for (\d+)s$/.exec(text);
   if (worked) return worked[1] + ' saniye çalıştı';
   const activityParts = text.split(', ');

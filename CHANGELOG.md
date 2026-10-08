@@ -1,5 +1,13 @@
 # Değişiklikler
 
+## 1.0.7 — 2026-10-08
+
+- Windows ajan bildirimi ve URL okuma izin seçenekleri Türkçeleştirildi.
+- Ortak soru ekranı, önerilen seçenek, özel yanıt alanı ve araç ipuçları tamamlandı.
+- Sabitle menüsü, soru sorma/bekleme/sonuç durumları ve Az Önce etiketi eklendi.
+- Seçenek değerleri, onay durumu, URL ve kullanıcı yanıtları korundu; 28 otomatik test geçti.
+
+
 ## 1.0.6 — 2026-10-08
 
 - Desktop 2.21.1 desteği eklendi.

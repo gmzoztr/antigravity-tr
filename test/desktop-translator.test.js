@@ -137,3 +137,26 @@ test('new marketplace and automation UI preserves product names, form values and
     [...doc.querySelectorAll('p')].forEach((el,i)=>assert.notEqual(el.textContent,catalog[i].description,catalog[i].name));
   }finally{dom.window.close();}
 });
+
+test('notification labels translate exactly and preserve other notification options',()=>{
+ const vm=require('node:vm');const input=fixture();input.set('dist/ipcHandlers.js','function buildContextMenuTemplate(items, onSelect) { return items.map(item => ({id:item.id,label:item.label})); } function notify(options){ return {title: options.title, body: options.body, silent: options.silent,};}');
+ const output=transformDesktopSources(input);assert.deepEqual(transformDesktopSources(output),output);const context={};vm.createContext(context);vm.runInContext(output.get('dist/ipcHandlers.js'),context);
+ const n=context.notify({title:'Action requires your attention',body:'The agent is waiting for your input.',silent:true});assert.equal(n.title,'İşlem için müdahaleniz gerekiyor');assert.equal(n.body,'Ajan sizden giriş bekliyor.');assert.equal(n.silent,true);
+ const custom=context.notify({title:'My task',body:'User content',silent:false});assert.equal(custom.title,'My task');assert.equal(custom.body,'User content');
+});
+test('URL approval translates labels while preserving URL and permission values',async()=>{
+ const labels=['Yes, allow this time','Yes, and always allow in this conversation','Yes, and always allow when not in a project','Yes, and always allow','No (tell the agent what to do instead)'];
+ const dom=new JSDOM('<body><h2>Allow reading this URL?</h2><code>evren.ssyz.org.tr</code>'+labels.map((s,i)=>`<label><input type="radio" name="permission" value="${i}" ${i===0?'checked':''}>${s}</label>`).join('')+'<button>Skip</button></body>',{runScripts:'outside-only'});
+ try{dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));await new Promise(r=>dom.window.setTimeout(r,20));const d=dom.window.document;assert.equal(d.querySelector('h2').textContent,'Bu URL’nin okunmasına izin verilsin mi?');assert.equal(d.querySelector('code').textContent,'evren.ssyz.org.tr');assert.equal(d.querySelector('input:checked').value,'0');assert.deepEqual([...d.querySelectorAll('input')].map(x=>x.value),['0','1','2','3','4']);assert.equal(d.querySelector('button').textContent,'Atla');for(const label of d.querySelectorAll('label'))assert.ok(!label.textContent.startsWith('Yes')&&!label.textContent.startsWith('No'));}finally{dom.window.close();}
+});
+
+
+test('question modal translates shared labels and recommended prefix without changing answers',async()=>{
+ const dom=new JSDOM('<body><h2>Hangi konuyu seçiyorsunuz?</h2><label><input type="radio" name="q" value="first" checked>(Recommended) Evet, sayfayı oku ve özetle</label><label><input type="radio" name="q" value="no">Hayır, okuma</label><label>Other (write your answer)<textarea>My own answer</textarea></label><button title="Skip (esc), Skip All (Ctrl+esc)">Skip</button><button title="Cancel questionnaire and stop the agent (Ctrl+D)">Submit</button><div class="markdown">(Recommended) Original message</div></body>',{runScripts:'outside-only'});
+ try{dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));await new Promise(r=>dom.window.setTimeout(r,20));const d=dom.window.document;assert.equal(d.querySelector('h2').textContent,'Hangi konuyu seçiyorsunuz?');assert.equal(d.querySelector('label').textContent,'(Önerilen) Evet Sayfayı Oku ve Özetle');assert.equal(d.querySelectorAll('label')[1].textContent,'Hayır, Okuma');assert.ok(d.querySelectorAll('label')[2].textContent.startsWith('Diğer (Yanıtınızı Yazın)'));assert.equal(d.querySelector('textarea').value,'My own answer');assert.equal(d.querySelector('input:checked').value,'first');assert.equal(d.querySelector('.markdown').textContent,'(Recommended) Original message');assert.equal(d.querySelectorAll('button')[0].title,'Atla (Esc), Tümünü Atla (Ctrl+Esc)');assert.equal(d.querySelectorAll('button')[1].title,'Soruları İptal Et ve Ajanı Durdur (Ctrl+D)');}finally{dom.window.close();}
+});
+
+test('question status counts and unanswered UI translate without changing message content',async()=>{
+ const dom=new JSDOM('<body><span>Asked 1 question</span><span>Asked 3 questions</span><span>Asking 2 questions</span><span>No answer provided</span><span>just now</span><div class="markdown">No answer provided</div></body>',{runScripts:'outside-only'});
+ try{dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));await new Promise(r=>dom.window.setTimeout(r,20));assert.deepEqual([...dom.window.document.querySelectorAll('span')].map(x=>x.textContent),['1 Soru Soruldu','3 Soru Soruldu','2 Soru Soruluyor','Yanıt Verilmedi','Az Önce']);assert.equal(dom.window.document.querySelector('.markdown').textContent,'No answer provided');}finally{dom.window.close();}
+});
