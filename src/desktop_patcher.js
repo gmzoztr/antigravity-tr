@@ -217,8 +217,9 @@ function rebuildLocalizedMenu(menu) {
       Object.prototype.hasOwnProperty.call(dictionary, normalized) ? dictionary[normalized] : translateDynamic(normalized);
     if (translated === trimmed && parent.childNodes.length > 1 && Array.from(parent.childNodes).every(n => n.nodeType === 3)) {
       const combined = parent.textContent.trim().replace(/\\s+/g, ' ');
-      if (Object.prototype.hasOwnProperty.call(dictionary, combined) && dictionary[combined] !== combined) {
-        parent.childNodes[0].nodeValue = dictionary[combined];
+      const combinedTranslation = Object.prototype.hasOwnProperty.call(dictionary, combined) ? dictionary[combined] : translateDynamic(combined);
+      if (combinedTranslation !== combined) {
+        parent.childNodes[0].nodeValue = combinedTranslation;
         for (let i = 1; i < parent.childNodes.length; i++) parent.childNodes[i].nodeValue = '';
         return;
       }
@@ -240,6 +241,8 @@ function rebuildLocalizedMenu(menu) {
     }
     if (el.title && Object.prototype.hasOwnProperty.call(dictionary, el.title.trim()) && dictionary[el.title.trim()] !== el.title) {
       el.title = dictionary[el.title.trim()];
+    } else if (el.title && /^\\d+ questions?$/.test(el.title.trim())) {
+      el.title = translateDynamic(el.title.trim());
     }
     const aria = el.getAttribute('aria-label');
     if (aria && Object.prototype.hasOwnProperty.call(dictionary, aria.trim()) && dictionary[aria.trim()] !== aria) {

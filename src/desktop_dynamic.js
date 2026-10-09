@@ -1,5 +1,11 @@
 // Only recognized UI sentences are transformed; arbitrary numbers and content are untouched.
 function translateDynamic(text) {
+  const runningTasks = /^(\d+) tasks? running$/.exec(text);
+  if (runningTasks) return runningTasks[1] + ' Görev Çalışıyor';
+  const completedTask = /^(.+) finished$/.exec(text);
+  if (completedTask) return completedTask[1] + ' Tamamlandı';
+  const questionCount = /^(\d+) questions?$/.exec(text);
+  if (questionCount) return questionCount[1] + ' Soru';
   const asked = /^Asked (\d+) questions?$/.exec(text);
   if (asked) return asked[1] + ' Soru Soruldu';
   const asking = /^Asking (\d+) questions?$/.exec(text);

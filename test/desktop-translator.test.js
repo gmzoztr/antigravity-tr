@@ -160,3 +160,13 @@ test('question status counts and unanswered UI translate without changing messag
  const dom=new JSDOM('<body><span>Asked 1 question</span><span>Asked 3 questions</span><span>Asking 2 questions</span><span>No answer provided</span><span>just now</span><div class="markdown">No answer provided</div></body>',{runScripts:'outside-only'});
  try{dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));await new Promise(r=>dom.window.setTimeout(r,20));assert.deepEqual([...dom.window.document.querySelectorAll('span')].map(x=>x.textContent),['1 Soru Soruldu','3 Soru Soruldu','2 Soru Soruluyor','Yanıt Verilmedi','Az Önce']);assert.equal(dom.window.document.querySelector('.markdown').textContent,'No answer provided');}finally{dom.window.close();}
 });
+
+test('split question status and native count tooltip translate without replacing controls',async()=>{
+ const dom=new JSDOM('<body><button id="split" title="1 question"></button><button id="nested">Asked <span>2 questions</span><svg></svg></button></body>',{runScripts:'outside-only'});
+ try{const d=dom.window.document;for(const t of ['Asked ','1',' question'])d.querySelector('#split').append(d.createTextNode(t));dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));await new Promise(r=>dom.window.setTimeout(r,20));assert.equal(d.querySelector('#split').title,'1 Soru');assert.ok(!d.querySelector('#split').textContent.includes('Asked'));assert.ok(!d.querySelector('#nested').textContent.includes('questions'));assert.ok(d.querySelector('#nested svg'));}finally{dom.window.close();}
+});
+
+test('task status fragments translate and preserve task names and command text',async()=>{
+ const dom=new JSDOM('<body><span>1 task running</span><span>3 tasks running</span><div><span>Checked task</span> <b>llama.cpp CUDA paketleri indiriliyor</b></div><div><span>Killed task</span> <b>llama.cpp CUDA paketleri indiriliyor</b></div><span>Çoklu bağlantı hızı ölçülüyor finished</span><code>python download_engine.py</code><div class="markdown">My task finished</div></body>',{runScripts:'outside-only'});
+ try{dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));await new Promise(r=>dom.window.setTimeout(r,20));const d=dom.window.document;assert.deepEqual([...d.querySelectorAll('span')].map(x=>x.textContent),['1 Görev Çalışıyor','3 Görev Çalışıyor','Görev Kontrol Edildi:','Görev Sonlandırıldı:','Çoklu bağlantı hızı ölçülüyor Tamamlandı']);for(const b of d.querySelectorAll('b'))assert.equal(b.textContent,'llama.cpp CUDA paketleri indiriliyor');assert.equal(d.querySelector('code').textContent,'python download_engine.py');assert.equal(d.querySelector('.markdown').textContent,'My task finished');}finally{dom.window.close();}
+});

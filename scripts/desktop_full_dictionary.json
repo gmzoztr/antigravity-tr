@@ -831,7 +831,7 @@
   "This plugin provides a specialized suite of skills for data engineers and database practitioners working on Google Cloud. It acts as an expert assistant, allowing you to use natural language prompts in your preferred coding agent to architect complex data pipelines, transform data with dbt, write Spark and BigQuery SQL notebooks, and orchestrate end-to-end workflows across GCP's data ecosystem.": "Google Cloud üzerinde çalışan veri mühendisleri ve veritabanı uzmanları için özel beceriler sunar. Kodlama ajanınıza doğal dille istekler vererek karmaşık veri akışları tasarlamanızı, dbt ile veri dönüştürmenizi, Spark ve BigQuery SQL not defterleri yazmanızı ve GCP veri ekosisteminde uçtan uca iş akışlarını düzenlemenizi sağlar.",
   "Replace With New": "Yeni Konuşmayla Değiştir",
   "Analyzed": "İncelendi",
-  "finished": "tamamlandı",
+  "finished": "Tamamlandı",
   "Finished": "Tamamlandı",
   "Exploring file": "Dosya inceleniyor",
   "running commands": "komutlar çalıştırılıyor",
@@ -859,5 +859,11 @@
   "Pin": "Sabitle",
   "Waiting for user input.": "Yanıtınız Bekleniyor.",
   "No answer provided": "Yanıt Verilmedi",
-  "just now": "Az Önce"
+  "just now": "Az Önce",
+  "now": "Şimdi",
+  "Asked": "Soruldu",
+  "Checked task": "Görev Kontrol Edildi:",
+  "Killed task": "Görev Sonlandırıldı:",
+  "task running": "Görev Çalışıyor",
+  "tasks running": "Görev Çalışıyor"
 }

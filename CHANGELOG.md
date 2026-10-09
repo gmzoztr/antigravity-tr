@@ -1,5 +1,13 @@
 # Değişiklikler
 
+## 1.0.8 — 2026-10-09
+
+- Parçalı soru durumları ve soru sayısı araç ipuçları çevrildi.
+- Çalışan görev sayısı, görev kontrol/sonlandırma etiketleri ve Tamamlandı durumu eklendi.
+- Konuşma listesindeki now etiketi Şimdi olarak çevrildi.
+- 30 test geçti; Desktop 2.21.1 kurulumu ve değişiklik yapmayan ikinci kurulum doğrulandı.
+
+
 ## 1.0.7 — 2026-10-08
 
 - Windows ajan bildirimi ve URL okuma izin seçenekleri Türkçeleştirildi.
