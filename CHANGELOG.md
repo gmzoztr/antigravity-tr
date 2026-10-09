@@ -1,5 +1,13 @@
 # Değişiklikler
 
+## 1.0.9 — 2026-10-09
+
+- Dosya, inceleme ve genel bakış panellerindeki menüler, bölüm başlıkları ve yorum alanları çevrildi.
+- Araç ipuçları, tümünü gör sayıları, gizli satır sayıları ve ajan düzenlemeleri etiketleri tamamlandı.
+- Dakika/saat çalışma süreleri ve göreli zamanlar dinamik değerlerini koruyarak çevrildi.
+- 31 test geçti; Desktop 2.21.1 kurulumu ve değişiklik yapmayan ikinci kurulum doğrulandı.
+
+
 ## 1.0.8 — 2026-10-09
 
 - Parçalı soru durumları ve soru sayısı araç ipuçları çevrildi.

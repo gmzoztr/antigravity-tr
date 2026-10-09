@@ -1,5 +1,15 @@
 // Only recognized UI sentences are transformed; arbitrary numbers and content are untouched.
 function translateDynamic(text) {
+  const workedDuration = /^Worked for (\d+h(?: \d+m)?|\d+m(?: \d+s)?)$/.exec(text);
+  if (workedDuration) return workedDuration[1].replace(/[hms]/g, unit => ({h:' saat',m:' dakika',s:' saniye'}[unit])) + ' çalıştı';
+  const ago = /^(\d+)(s|m|h|d) ago$/.exec(text);
+  if (ago) return ago[1] + ' ' + ({s:'Saniye',m:'Dakika',h:'Saat',d:'Gün'}[ago[2]]) + ' Önce';
+  const seeAll = /^See all \((\d+)\)$/.exec(text);
+  if (seeAll) return 'Tümünü Gör (' + seeAll[1] + ')';
+  const moreLines = /^(\+?\d+) more lines$/.exec(text);
+  if (moreLines) return moreLines[1] + ' Satır Daha';
+  const agentEdits = /^(.+) \(all agent edits\)$/.exec(text);
+  if (agentEdits) return agentEdits[1] + ' (Tüm Ajan Düzenlemeleri)';
   const runningTasks = /^(\d+) tasks? running$/.exec(text);
   if (runningTasks) return runningTasks[1] + ' Görev Çalışıyor';
   const completedTask = /^(.+) finished$/.exec(text);
