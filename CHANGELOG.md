@@ -1,5 +1,13 @@
 # Değişiklikler
 
+## 1.0.10 — 2026-10-10
+
+- Desktop 2.22.0 desteği eklendi.
+- İnceleme paneli menüleri, arama seçenekleri ve panel büyütme araç ipucu tamamlandı.
+- Güncellemek İçin Yeniden Başlat ve komut/dosya işlem özeti çevrildi.
+- 33 test geçti; gerçek 2.22.0 dosyalarında sözdizimi, kurulum ve tekrar kurulum tutarlılığı doğrulandı.
+
+
 ## 1.0.9 — 2026-10-09
 
 - Dosya, inceleme ve genel bakış panellerindeki menüler, bölüm başlıkları ve yorum alanları çevrildi.

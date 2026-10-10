@@ -177,3 +177,15 @@ test('file panels translate menus, comments, elapsed time and diff labels while 
  const dom=new JSDOM('<body>'+values.map(t=>'<span>'+t+'</span>').join('')+'<textarea placeholder="Leave a comment">My comment</textarea><code>Copy Content</code><div class="markdown">Worked for 17m</div></body>',{runScripts:'outside-only'});
  try{dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));await new Promise(r=>dom.window.setTimeout(r,20));const d=dom.window.document;assert.deepEqual([...d.querySelectorAll('span')].map(x=>x.textContent),expected);assert.equal(d.querySelector('textarea').placeholder,'Yorum Yazın');assert.equal(d.querySelector('textarea').value,'My comment');assert.equal(d.querySelector('code').textContent,'Copy Content');assert.equal(d.querySelector('.markdown').textContent,'Worked for 17m');}finally{dom.window.close();}
 });
+
+test('review toolbar and find controls translate while retaining query, code and handlers',async()=>{
+ const pairs=[['For Turn','Bu Tur İçin'],['Agent Edits','Ajan Düzenlemeleri'],['View Split Diff','Farkları Yan Yana Görüntüle'],['Hide Whitespace Changes','Boşluk Değişikliklerini Gizle'],['Collapse All','Tümünü Daralt'],['No Results','Sonuç Yok']];
+ const dom=new JSDOM('<body>'+pairs.map(([text])=>'<button>'+text+'</button>').join('')+'<input placeholder="Find" value="my query"><button id="case" title="Match Case (Aa)">Aa</button><code>Find</code></body>',{runScripts:'outside-only'});
+ try{const d=dom.window.document;let clicked=false;d.querySelector('button').onclick=()=>clicked=true;dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));await new Promise(r=>dom.window.setTimeout(r,20));pairs.forEach(([,expected],i)=>assert.equal(d.querySelectorAll('button')[i].textContent,expected));assert.equal(d.querySelector('input').placeholder,'Bul');assert.equal(d.querySelector('input').value,'my query');assert.equal(d.querySelector('#case').title,'Büyük/Küçük Harf Eşleştir (Aa)');assert.equal(d.querySelector('code').textContent,'Find');d.querySelector('button').click();assert.equal(clicked,true);}finally{dom.window.close();}
+});
+
+test('find bar option tooltips translate together without changing search settings',async()=>{
+ const pairs=[['Match Whole Word (ab)','Tam Sözcük Eşleştir (ab)'],['Use Regular Expression (.*)','Düzenli İfade Kullan (.*)'],['Close (Escape)','Kapat (Escape)'],['Previous Match (Shift+Enter)','Önceki Eşleşme (Shift+Enter)'],['Next Match (Enter)','Sonraki Eşleşme (Enter)']];
+ const dom=new JSDOM('<body><input value="a.*b">'+pairs.map(([text])=>'<button title="'+text+'" aria-label="'+text+'" aria-pressed="false">icon</button>').join('')+'</body>',{runScripts:'outside-only'});
+ try{dom.window.eval(transformDesktopSources(fixture()).get('dist/preload.js'));await new Promise(r=>dom.window.setTimeout(r,20));const d=dom.window.document;pairs.forEach(([,expected],i)=>{const b=d.querySelectorAll('button')[i];assert.equal(b.title,expected);assert.equal(b.getAttribute('aria-label'),expected);assert.equal(b.getAttribute('aria-pressed'),'false');});assert.equal(d.querySelector('input').value,'a.*b');}finally{dom.window.close();}
+});
